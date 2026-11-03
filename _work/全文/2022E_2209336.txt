@@ -1,0 +1,1097 @@
+
+<<<PAGE 1>>>
+Problem Chosen
+E
+2022
+MCM/ICM
+Summary Sheet
+Team Control Number
+2209336
+E3 −M Model for Forest Management Plans
+Summary
+ 
+ 
+Due to the huge role of forests in alleviating the greenhouse eﬀect, people are very concerned about 
+the carbon sequestration of forests. However, in addition to carbon sequestration, forests also have 
+many values that deserve attention and utilization.
+In this paper, in order to comprehensively evaluate all aspects of forest value and formulate a rea-
+sonable plan to promote forest development, we established an Eﬃciency-Estimation-Evaluation-
+Management Model (E3 −M Model) . E3 −M Model is a decision model composed of three
+sub models and forest management plans. Both The ﬁrst E model and The second E model are
+used to analyze the carbon sequestration of forests, while The third E model is used to evaluate the
+comprehensive value of forests and analyze the eﬃcacy of various management plans.
+E3: Evaluation Model is a model that can evaluate the comprehensive value of forests, including
+ﬁve indicators. We use The ﬁrst E and The second E to calculate the total carbon sequestration
+and calculate the weight of each indicator by combining AHP and EWM. Finally, we will quantify
+the comprehensive value of the forest in the form of a score. Then we will predict the future score
+of the forest according to the BP neural network, and determine the best forest management plan
+based on the change of the score.
+Management plans: : Making the best forest management plan for the forest is our ultimate
+goal. Our management plan can be divided into two parts: forest transition plan and commodity
+system transformation plan. The adjustment of cutting cycle is the core content of the management
+plan and we have discussed and analyzed it in detail in this article. Our model is applied to four
+kinds of forests. Then we choose Bach Ma National Park in Vietnam as the speciﬁc research object.
+The research conclusions are as follows:
+• The total carbon sequestration of the forest in 100 years is 1.68 × 107 t.
+• Increasing the cutting cycle can enhance the sustainability of forest development.
+• Increasing the cutting cycle doesnt necessarily lead to the transition stage and transition point.
+• The contents of the optimal management plan for Bach Ma National Park include setting the
+cutting cycle to 25 years, increasing the logging amount of ﬁr and reducing the logging amount of
+other tree species, introducing Dalbergia hupeana Hance and Camellia oleifera Abel, raising the
+tax rate on forest products, upgrading technology to increase soybean yield per unit.
+Finally, we discuss the indispensable position of deforestation in forest management plan.
+Keywords: E3 −M Model, Cutting cycle, Carbon Sequestration, Transition Point, Soil Fertility
+
+<<<PAGE 2>>>
+
+Contents
+1
+Introduction
+1
+1.1
+Problem Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+1.2
+Problem Restatement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+1.3
+Our Approach . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2
+Assumptions and Justiﬁcations
+3
+3
+Notation
+4
+4
+Idea of Eﬃciency-Estimation-Evaluation-Management Model
+4
+5
+First E : Eﬃciency Model for Carbon Sequestration
+5
+5.1
+Selection of Indicators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+5.2
+Establishment of Eﬃciency Model for Carbon Sequestration . . . . . . . . . . . .
+6
+5.2.1
+Introducing the Parameters . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+5.2.2
+Eﬃciency of carbon sequestration . . . . . . . . . . . . . . . . . . . . . .
+7
+6
+Second E: Estimation model of forest area
+7
+6.1
+Introducing the Parameters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+6.2
+Forest Area Model
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+6.2.1
+Establishment of forest area model . . . . . . . . . . . . . . . . . . . . . .
+8
+6.2.2
+Function of coeﬃcient r . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+7
+Third E: Evaluation Model for the Value of Forests
+9
+7.1
+Selection of indicators
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+7.2
+Establishment of Evaluation Model . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+7.3
+Determination of Weights-Combination of AHP and EWM . . . . . . . . . . . . .
+10
+8
+Management Plans
+10
+8.1
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+8.2
+Forest Transition Plan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+
+<<<PAGE 3>>>
+
+9
+Harvesting and Transition Points in Forest Management Plans
+12
+9.1
+What are the drivers of deforestation? . . . . . . . . . . . . . . . . . . . . . . . .
+12
+9.2
+What conditions will keep the forest from being deforested? . . . . . . . . . . . . .
+13
+9.3
+Do the transition points always exist when the management plan is applied to any
+forest? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+9.4
+How can transition points in a management plan be identiﬁed subject to the
+characteristics of the forest and its location? . . . . . . . . . . . . . . . . . . . . .
+15
+10 Forests in four temperature zones
+16
+10.1 Forest scores in 2020 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+10.2 Trends in comprehensive forest value scores . . . . . . . . . . . . . . . . . . . . .
+16
+10.3 Carbon Sequestration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+10.4 Bach Ma National Park . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+11 Strengths and Weaknesses
+20
+11.1 Strengths
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+11.2 Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+12 The positive role of logging in forest management(newspaper article)
+20
+
+<<<PAGE 4>>>
+
+1
+Introduction
+1.1
+Problem Background
+According to the statistic on website Our World in Data, carbon dioxide emissions are the
+primary driver of global climate change. We now emit over 34 billion tones each year( ﬁgure 1). It
+is widely recognized that to avoid the worst impacts of climate change, the world needs to urgently
+reduce the amount of carbon dioxide in the atmosphere.
+Forests are an eﬀective means to achieve carbon sequestration, and appropriate forest manage-
+ment strategies are very beneﬁcial to the sustainable development of the environment. Currently,
+the total area covered by forests has reached 4.06 billion hectares (ﬁgure 2). In addition, forests also
+have many values, such as protecting biodiversity. Therefore, we have established the E3 −M
+Model to help forest managers manage and assess various forests and develop forest management
+plans.
+Figure 1: Annual CO2 emissions(2020)1
+Figure 2: Forest area(2020)2
+1.2
+Problem Restatement
+According to the information of the problem and the actual situation, we need to complete the
+following work.
+♣Fully consider the various values of forests, establish a decision model, and determine
+the scope of forest management plan in the decision model
+We should use some algorithms and formulas to build a decision model. The model can not
+only evaluate the value of all aspects of the forest (including the annual carbon sequestration
+of the forest), but also analyze and decide on an eﬀective forest management plan to inform
+forest managers how to maximize the value of the forest. On this basis, we also need to
+determine the scope of the management plan of the decision-making model according to the
+social needs and the actual situation.
+1https://ourworldindata.org/grapher/annual-co2-emissions-per-country tab=chart&country= OWID_WRL
+2https://ourworldindata.org/grapher/forest-area-km country= OWID_WRL
+
+<<<PAGE 5>>>
+
+♣Only considering the value of forest carbon sequestration, the forest management plan
+is determined according to the decision model.
+♣Answer questions about deforestation and transition points
+• What factors drive deforestation?
+• What conditions will keep the forest from being deforested?
+• Do the transition points always exist when the management plan is applied to any forest?
+• How can transition points in a management plan be identiﬁed subject to the character-
+istics of the forest and its location?
+♣Apply our model to various forests, and then answer the following questions according
+to a speciﬁc forest
+•
+What is the total amount of carbon sequestered in this forest and its products over a
+100-year period?
+• What is the best forest management plan for this forest? Why?
+•
+Is it part of our best management plan to increase the rotation period by 10 years?
+Taking into account the needs of forest managers and all forest users, develop a strategy
+for the transition from the existing time axis to the new time axis.
+♣Combined with the actual situation and our model, this paper explains the positive role
+of logging in forest management and then discusses that deforestation is an indispensable
+part of a reasonable management plan.
+1.3
+Our Approach
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+As consumers of carbon dioxide, forests have been called the lungs of the earth.
+This 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+  
+  
+ 
+  
+ 
+designation not only directly reflects the importance of forests in sequestration, but also
+provides inspiration for our creation.
+similar to lungs. As shown in Figure 3.
+On this basis, we build a flow chart with a structure
+Firstly, we establish a decision-making model: Eﬃciency-Estimation-Evaluation-Management
+Model, which is abbreviated as E3 −M Model . Our model comprehensively analy
+,
+ze
+w
+s
+hich can
+carbon
+sequestration, soil eﬃciency, biodiversity, economy, culture and entertainment
+objectively reﬂect the comprehensive value of forest in the form of score, and can also judge
+the advantages and disadvantages of management plan.
+Our E3 −M Model includes three
+sub-models. Each sub-model is represented by an "E", and "M" represents our proposed forest
+management plans. They are shown and explained in the following article.
+Secondly, combined with the requirements of the established model and problems, we describe 
+in detail the relevant contents of the transition phases and transition points caused by the application 
+of management scheme. At the same time, we also determine the core position of cutting cycle in 
+the management plans because of its important impact on the sustainability of forest development.
+Thirdly, we apply
+−M Model to four diﬀerent types of forests and use BP neural network to
+E3
+predict their future comprehensive value scores. Then we developed several management schemes
+for Bach Ma National Park and found the best one.
+
+<<<PAGE 6>>>
+
+Figure 3: Our Approach
+2
+Assumptions and Justiﬁcations
+In order to further simplify and clarify the problem, we make the following assumptions, which
+is also the premise of the practicability of our model. Additionally, if necessary, other speciﬁc
+assumptions will be mentioned and explained in the process of building the model.
+• Assumption 1: We ignore the impact of extreme natural disasters on forest development
+Justiﬁcation: Forest natural disasters vary from region to region. The United States is
+dominated by forest ﬁres, forest pests, forest diseases and forest birds and animals; Europe is
+dominated by forest meteorological disasters and forest pests; In China, forest diseases and
+insect pests and forest ﬁres pose the greatest threat to forest resources and cause the greatest
+losses. We ignore the impact of extreme natural disasters on forests and assume that the
+forests we choose are in a normal state.
+• Assumption 2:We think that the maximum area of a forest is the area of the region
+where the forest is located
+Justiﬁcation: Forest area refers to in-situ trees at least 5 meters under natural forests or
+planted forests, regardless of whether they are productive or not. For convenience, we think
+that the maximum area of a forest is the area of the region where the forest is located.
+• Assumption 3: We ignore the anthropogenic carbon dioxide emissions from logging,
+transportation, etc.
+Justiﬁcation: According to statistics from the Our World in Data website, greenhouse gas
+emissions from transportation and deforestation are much less than carbon sequestration in
+forests, so we can ignore these emissions.
+
+<<<PAGE 7>>>
+
+• Assumption 4: The soil fertility in the same area is the same
+Justiﬁcation: We are talking about the macro system of the whole forest, and this assumption
+can ignore many complex factors.
+• Assumption 5: The cutting intensity is constant
+Justiﬁcation: In this paper, we are concerned with the cutting cycle and not the cutting
+intensity.
+• Assumption 6: The data we get from the website is accurate and reliable
+Justiﬁcation: Our data are mostly obtained from authoritative websites, such as FAO, FSC
+and global forest watch. Authoritative and professional data acquisition channels greatly
+increase the reliability of our data and models.
+3
+Notation
+For convenience, some notations are introduced below.
+Symbol
+Meaning
+TFCSi
+t
+Carbon sequestration per hectare of the i-th trees in year t (no products)
+PCSi
+t
+Carbon sequestration of products in year t
+CSi
+t
+Total carbon sequestration per hectare of the i th trees in year t
+T(t)
+The amount of carbon sequestered per hectare of forest
+S(t)
+Forest area in year t
+r
+Coeﬃcient that can reﬂect the change speed of forest area
+TCS(t)
+Annual carbon sequestration by forests
+D
+Gleason Index which reﬂects biodiversity
+If necessary, other speciﬁc symbols will be mentioned and explained when we build the model.
+4
+Ideaof Eﬃciency-Estimation-Evaluation-ManagementModel
+E3 −M Model
+The main contribution of forests to climate change mitigation is the reduction of greenhouse
+gases in the atmosphere through carbon sequestration.
+In addition, forests also have multiple
+values, such as economic and social value. Based on the current situation and the requirements of
+
+<<<PAGE 8>>>
+
+the problem, we develop a decision model named Eﬃciency-Estimation-Evaluation-Management
+Model. And we shall call it E3 −M Model in the following paper for short.
+We can combine the ﬁrst E and second E models to calculate and predict the annual carbon
+sequestration of forests. And the third E model is used to evaluate the comprehensive value of the
+forest. Finally, we will propose a series of forest management plans based on our needs and apply
+the E3 Model to make decisions. Here is a brief description of our model.
+• First E: Eﬃciency Model for Carbon Sequestration
+Based on the diﬀerent forms of carbon sequestration in forests and the carbon sequestration of
+forest products, we developed an eﬃciency model to calculate the annual carbon sequestration
+per hectare of forest.
+• Second E : Estimation model of forest area
+Area is one of the most important attributes of a forest and related to many aspects of forest
+value, so we built an estimation model to analyze the relation between the annual rate of
+change in forest area and factors.
+• Third E: Evaluation model for the value of forests
+In order to make the most eﬃcient use of forest resources and make it most beneﬁcial to
+society, we established an evaluation model for the value of forests. Applying this model, we
+can score diﬀerent forests and compare the strengths and weaknesses of forest management
+plans.
+5
+First E : Eﬃciency Model for Carbon Sequestration
+5.1
+Selection of Indicators
+For convenience, we chose ﬁve indicators to express the annual carbon sequestration per unit
+area of forest.
+• Carbonin above-groundbiomass(CAB)Carbonsequestrationin trees trunks, bark, branches,
+leaves, etc. above the ground.
+• Carbon in below-ground biomass(CBB)
+Carbon sequestration in underground roots (coarse, medium and ﬁne roots).
+• Carbon in dead wood(CDW)
+Carbon sequestration in all dead woody biomass not contained by litter. Dead wood includes
+wood on the surface, dead roots and stumps, etc.
+• Carbon in litter(CL)
+Carbon sequestration in all abiotic biomass with a diameter smaller than the smallest diameter
+of dead wood above mineral or organic soils.
+
+<<<PAGE 9>>>
+
+• Soil carbon(SC)
+Carbon sequestration in minerals and in organic soils at a depth of 30 cm.
+5.2
+Establishment of Eﬃciency Model for Carbon Sequestration
+5.2.1
+Introducing the Parameters
+Part I : Parameters of the forest itself
+In order to calculate the amount of carbon sequestered by the forest itself per hectare per year,
+we introduced the following parameters.
+CABi
+t: Carbon in above-ground biomass in the i th trees per hectare in year t, t/ha.
+CBBi
+t : Carbon in below-ground biomass in the i th trees per hectare in year t, t/ha.
+CDW i
+t : Carbon in dead wood in the i th trees per hectare in year t, t/ha.
+CLi
+t : Carbon in litter in the i th trees per hectare in year t, t/ha.
+SCi
+t : Soil carbon in the i th trees per hectare in year t, t/ha.
+By summing the above parameters, the following equation can be obtained.
+TFCSi
+t = CABi
+t + CBBi
+t + CDW i
+t + CLi
+t + SCi
+t
+(1)
+TFCSi
+t ,whose unit is t/ha represents the total carbon sequestration per hectare of the i th trees in
+yeart.
+Part II : Parameters of forest products
+pi
+t : products volume of the ith trees per hectare in yeart.
+µi : the coeﬃcient related to the amount of carbon sequestered by the i th trees.
+Considering the lifespan of forest products, the total amount of new and used products in year
+t can be expressed as
+P i
+t =
+t
+∑
+j=2020
+pi
+t · exp
+(j −t
+τ i
+)
+(2)
+where τ i is the lifespan of the i th trees products, P i
+t is the cumulative volume of new and used
+products per hectare of the ith trees in the last t years.
+Combined with products carbon sequestration correlation coeﬃcient µi, we can obtain an
+expression for the carbon sequestration of products.
+PCSi
+t = µiP i
+t = µi
+t
+∑
+j=2020
+pi
+t · exp
+(j −t
+τ i
+)
+(3)
+
+<<<PAGE 10>>>
+
+5.2.2
+Eﬃciency of carbon sequestration
+We can consider the annual amount of carbon sequestered per hectare of forest and its products
+as the eﬃciency of carbon sequestration by the forest.
+Based on the amount of carbon sequestered by the forest and its products, we can write the
+expression for total carbon sequestration as
+CSi
+t = TFCSi
+t + PCSi
+t = TFCSi
+t + µi
+t
+∑
+j=0
+pi
+t · exp
+(j −t
+τ i
+)
+(4)
+where CSi
+t is the total amount of carbon sequestered per hectare of thei th trees in yeart,
+including itself and its products. We then determine the coeﬃcient αi based on the proportion of
+each trees species in the forest to obtain an expression for the amount of carbon sequestered per
+hectare of forest.
+T(t) =
+n
+∑
+i=1
+αi · CSi
+t
+(5)
+Therefore, T(t) can reﬂect the magnitude of carbon sequestration eﬃciency. According to its
+expression, we can improve the eﬃciency of carbon sequestration by the following measures.
+Adjust the cutting cycle to increase TFCSi
+t .
+Raise the proportion of trees with high carbon sequestration eﬃciency to increase αi.
+Improve the chemical technology to increase the proportion of lignin and extracts in the product,
+which can increase µi.
+Promote processing technology upgrade to extend products lifespan τ i.
+6
+Second E: Estimation model of forest area
+6.1
+Introducing the Parameters
+According to the website Our World in Data and inspired by literature, there are a range of
+indicators that aﬀect forest area. Consequently, three major indicators are selected to estimate
+the ﬂuctuation of forest area of some countries.
+They are respectively the annual amount of
+deforestation, the latitude of forest and GDP of the countries managing the forest.
+The Annual Amount of Deforestation
+It is well known that excessive deforestation is an important reason for the reduction of forest
+area. Therefore, when we need to estimate forest area, we give high priority to annual amount of
+deforestation.
+The Latitude of the Forest
+Forests at diﬀerent latitudes have diﬀerent temperature, precipitation, and soil conditions, which
+aﬀect the growth rate of forest trees and make a selective diﬀerence on species of trees. Therefore,
+latitude has a signiﬁcant impact on the annual rate of change in forest area.
+
+<<<PAGE 11>>>
+
+GDP of Country
+We can ﬁnd a signiﬁcant relation between the state of national development and the annual rate
+of change in forest cover by analyzing the data over the years. Consequently, We choose the GDP
+of country as a parameter to help us analyze the changing law of forest area.
+6.2
+Forest Area Model
+6.2.1
+Establishment of forest area model
+We set the forest area of the country as Stake the area in 2020 as the initial value S0, and the
+relationship betweenS and time t satisﬁes the Logistic Model.
+
+
+
+
+
+dS
+dt = rS
+(
+1 −
+S
+Smax
+)
+S(2020) = S0
+(6)
+The solution is
+S(t) =
+Smax
+1 +
+(
+Smax
+S0 −1
+)
+e−rt
+(7)
+where Smaxis the limit of the forest area that can be equivalent to the national land area,r is a
+variable coeﬃcient whose magnitude reﬂects the speed of change in forest area. And the direction
+of forest area change depends on the positive or negative of r.
+6.2.2
+Function of coeﬃcient r
+There are many factors aﬀecting R, involving ever-growing ﬁelds. In line with data from 1990
+to 2020 , we selected three representative factors the annual amount of deforestation, the latitude
+of forest and GDP of the country to simulate the value of R and their standardized values are XD,
+XL andXG respectively.
+We can get the equations about the explanatory variables XD, XL, XG and the explained
+variable r by Multi Factor Line Regression Method.
+r = b0 + b1XD + b2XL + b3XG + ϵ
+(8)
+With the aid of MATLAB software, we found out the value of these coeﬃcients and got the
+conclusion that r is positively correlated withXG and negatively correlated withXD andXL.
+Because the geographical location of forests is ﬁxed and it is diﬃcult for the country’s GDP to
+rise sharply in the short term, we can only make plans to reduce the annual deforestation to increase
+the value of r.
+
+<<<PAGE 12>>>
+
+7
+Third E: Evaluation Model for the Value of Forests
+7.1
+Selection of indicators
+People pay more and more attention to the ecological value of forests, so we established an
+evaluation model for the value of forest with ecological value as the core. After consulting the
+relevant literature, we selected ﬁve indicators from a variety of indicators to evaluate the ecological
+value of forests. They are total carbon sequestration, soil fertility, biodiversity, economic beneﬁts
+and comprehensive value index of culture and entertainment.
+• Total Carbon Sequestration (TCS)
+The total carbon sequestration we are dealing with is the annual carbon sequestration by
+forests and it is the undisputed indicator about the value of forests. According to the results
+T(t)andS(t) of the ﬁrst and second E models, we can get
+TCS(t) = T(t) · S(t)
+(9)
+• Soil Fertility (SF)
+Soil fertility is the ability of the soil to sustain plant growth. And fertile soil leads to high
+yield and better quality of plants. Its feasible that we opt for the nitrogen concentration of
+soil as the standard to measure soil fertility.
+• Biodiversity (BI)
+Species diversity is the manifestation of biodiversity in species, and it is also the key to
+biodiversity. It not only reﬂects the complex relationship between organisms and the envi-
+ronment, but also reﬂects the richness of biological resources.
+In this paper, the Gleason Index is applied to biodiversity because it basically enables a
+macro-analysis of species diversity in forest communities.
+D =
+S
+ln A
+(10)
+where Dis the Gleason Index of the total species of the forest community in the sample
+plotsis the number of all species in the sample plot,Ais the area of forest sample plot.
+• Economic Beneﬁts (EB)
+The economic beneﬁts of forests are the driving force of deforestation and are generally
+opposed to ecological beneﬁts. But economic beneﬁts are also an important component of
+the forest’s value and are generally negatively correlated with cutting cycle. Therefore, if the
+value score of the forest is to be improved, the cutting cycle needs to be given high priority.
+• Comprehensive Value Index of Culture and Entertainment (CVI)
+The recreational value and cultural value of forests are often overlooked, but they are a direct
+reﬂection of the contribution of forests to human society. For convenience, we equate the
+annual number of tourists to the forest with the comprehensive value index of culture and
+entertainment.
+
+<<<PAGE 13>>>
+
+7.2
+Establishment of Evaluation Model
+Our evaluation model consists of the above four indicators. Whats more, we deﬁne the set L to
+describe these metrics.
+L = {L1, L2, L3, L4, L5} = {TCS, SF, BI, EB, CVI}
+(11)
+TCS,SF,BI,EB,CVI stand for total carbon sequestration, soil fertility, biodiversity, economic ben-
+eﬁts and comprehensive value index of culture and entertainment respectively. Then we use V to
+denote the result of a linear combination of these ﬁve indicators.
+V =
+5
+∑
+j=1
+ωjLj
+(12)
+where ωi is the weight corresponding to each indicator. We combine AHP and EWM to determine
+the weight, the speciﬁc operation will be described below.
+7.3
+Determination of Weights-Combination of AHP and EWM
+Although EWM has objective advantages, it ignores the subjective intentions of decision makers,
+which may lead to deviations from the actual results. Therefore, in order to obtain more easonable
+weights, we decided to use a method that combines EWM with the subjective weight method AHP
+to calculate the weights of these indicators. The new expression for weight is
+ωj =
+√ωj,AHP · ωj,EWM
+∑5
+j=1
+√ωj,AHP · ωj,EWM
+(13)
+The ultimate weights are
+{ω1, ω2, ω3, ω4, ω5} = {33.41%, 32.56%, 10.85%, 16.11%, 7.07%}
+(14)
+8
+Management Plans
+8.1
+Introduction
+In the context of global climate change, eﬃcient forest management plans can help improve the
+carbon sequestration of forests to maintain good ecosystems. In the past, forest management plans
+focused on economic beneﬁts and did not pay enough attention to ecological beneﬁts[1]. As the
+concept of forest management changes, maintaining sustainable development becomes the primary
+task of forest management plans. The sustainable forest management plan we have established
+has four dimensions: environmental, economic, social and technological. To this end, we have
+established two sub-plans within the forest management plan. At the same time, they were given a
+concrete plan as shown in Figure 4.
+8.2
+Forest Transition Plan
+Forest Transition Plan include determining what trees should be cut down, which trees should
+be left standing,cutting cycle, and how to regenerate the forest.
+
+<<<PAGE 14>>>
+
+Figure 4: Management Plans
+• Cut down or Left standing
+We judge whether a tree should be cut down based on its age and species. As trees grow
+older, their carbon sequestration capacity continues to decline[2], so old trees with relatively
+low carbon sequestration capacity and trees with high growth rates should be cut down ﬁrst
+when planning deforestation.
+The amount of carbon sequestration in wood is related to many factors, among which the
+content of lignin in wood plays a key role. The higher the proportion of lignin, the higher
+the carbon sequestration. According to Frederique Bertaud, trees with slower growth rates
+still have more lignin. This leads us to prioritise cutting trees that grow faster.
+• Cutting cycle
+Cutting cycle is the production cycle of trees that conform to the target in the process of tree
+cultivation, which aﬀects the possibility of forest adjustment, and thus aﬀects the distribution
+of forest age grade. It is the primary task of forest management to determine the reasonable
+rotation period[3].
+According to the FORECAST model evaluation method proposed by Blanco et al.[4], and
+the research results of other scholars, it can be known that for the forest of the same tree
+type, the longer the cutting cycle, the less the total biological carbon. This is because longer
+cycles reduce the number of harvests. With diﬀerent cutting cycles, the biomass carbon could
+be kept relatively stable under poor soil fertility conditions, while the carbon sequestration
+decreased under good soil fertility conditions, and the shorter the cutting cycle, the more
+obvious the decrease. In addition, short cycles will increase the frequency of disturbance
+in forest land, which will have a negative impact on biodiversity. Therefore, we need to
+determine the appropriate cutting cycle according to the soil fertility conditions and forest
+types in each region to support the sustainable development of forest carbon sequestration. It
+is expected to shorten the cutting cycle when economic beneﬁts are taken as the focus. When
+ecological beneﬁt is the focus, it is expected to extend the cutting cycle and give full play to
+the ecological service function of forests. Therefore, the relationship between the two needs
+
+<<<PAGE 15>>>
+
+to be balanced scientiﬁcally.
+• Regenerate the forest
+Artiﬁcial aﬀorestation can eﬀectively increase the forest coverage rate, improve the poor
+soil conditions and improve the carbon sequestration capacity. At the same time, diﬀerent
+cycles and the selection of diﬀerent tree species also aﬀect biodiversity and other factors.
+Therefore, when formulating forest management plans, it is necessary to consider how
+artiﬁcial aﬀorestation can be done.
+• Commodity System Transformation Plan
+In the following chapters, we analyze the driving factors of deforestation. The top factors are
+closely related to goods. This means that if we can reduce demand for forest products such
+as soy, palm oil and beef, less forest will be cut down. Commodity System Transformation
+Plan Makes speciﬁc plans from two aspects of Tax and Upgrading Technology. We want to
+reduce deforestation by changing taxes to control public demand for certain goods. At the
+same time, we look forward to the improvement of production technology, ﬁnd substitutes
+for corresponding products, and solve the problem of demand from the root.
+9
+Harvestingand TransitionPointsin ForestManagementPlans
+In order to better illustrate our model, we provide a further introduction to ’logging’ and
+’transition points’ in forest management plans in the form of Q&A.
+9.1
+What are the drivers of deforestation?
+Based on the data in Our World in Data, we found that the main factors driving deforestation
+are as follows.
+1. Agriculture
+According to FAO, around 5 million hectares of forests have been cut down around the world
+every year since 2000. At least three-quarters of that deforestation is driven by agriculture.
+Farmland for soybeans and palm oil (the oilseed) is in high demand, so deforestation is used
+to grow these crops.
+2. Animal Husbandry
+In Figure ??, we can see tropical deforestation by production type, with beef standing out.
+Ranch expansion to raise cattle is responsible for 41 percent of tropical deforestation.
+3. Forestry Products
+Forestry products are materials made from harvested wood, such as paper, furniture and so
+on. It can be seen that the manufacturing and consumption of forestry products is also one
+of the important factors driving deforestation.
+From the data, we can ﬁnd the factors driving deforestation, which is more conducive to our
+rational development of forest management plans from multiple perspectives.
+
+<<<PAGE 16>>>
+
+9.2
+What conditions will keep the forest from being deforested?
+As you can see in the Q&A above, people cut down forests for two reasons:
+1. Forest resources
+wood for fuel, building materials or paper
+2. Forest land
+People use forest land to grow crops, to raise livestock, or to build cities.
+As country’s population grows, the need of space and food and so on are increasing. Pop-
+ulation growth rates tend to slow when country gets richer. Wealthier developed countries
+are no longer using wood as their daily fuel, turning to fossil fuels. At the same time, crop
+yields are increasing due to the advancement of science and technology, so we need less
+agricultural land. In addition, a good economic level can also support the country’s import
+of forest products, rather than large-scale deforestation.
+To sum up, countries with good economic conditions and science and technology do not need
+to cut down forests.
+9.3
+Do the transition points always exist when the management plan is
+applied to any forest?
+Figure 5: The relation between cutting cycle of ﬁr and concentration
+According to Dr. Wang Weifeng’s research, we can learn that the relation between cutting cycle
+of ﬁr and concentration of Nitrogen in soil. As shown in Figure 5
+After consulting a large number of literatures, we ﬁnd a reasonable conclusion. Under natural
+conditions, the longer the cutting cycle, the slower the forest soil nitrogen concentration declines
+with time. However, the concentration of Nitrogen in soil will ﬂuctuate as a result of applying
+fertilizer by human under real conditions. There is no doubt that increasing cutting cycle will bring
+more beneﬁts to soil fertility.
+As to a forest system, we can estimate future concentration of Nitrogen in soil with the data we
+have, and set its annual gradient of Nitrogen as γ0(t). Therefore, we can reasonably formulate an
+expression to represent annual gradient of Nitrogen after changing cutting cycle γ(t) is
+γ(t) =
+
+
+
+C
+C0γ0(t), γ0(t) > 0
+C0
+C γ0(t), γ0(t) < 0
+(15)
+
+<<<PAGE 17>>>
+
+where c is the cutting cycle after adjustment, c0 is the initial cutting cycle. According this
+expression, we can learn that future concentration of Nitrogen in soil after increasing cutting cycle
+is higher than concentration of Nitrogen in soil corresponding to c0. So increasing cutting cycle will
+make the mark of Soil Fertility (SF) index higher, but lead to annual carbon sequestration per hectare
+of forest (Tt) and economic beneﬁt decrease. In consequence, the inﬂuence of comprehensive value
+of forest through simply increasing cutting cycle remains uncertain. However, it is positive for forest
+that increasing cutting cycle in a long run. To balance the comprehensive value and sustainability
+of forest, the key of forest management is increasing cutting cycle. As to Bach Ma National Park
+and Plaka Forest, we respectively observe the mark of them after increasing 10 years of cutting
+cycle and plot the result in Figure as follow.
+Figure 6: a
+Figure 7: b
+In Figure(a) and (b), the blue full line represents current and future circumstance when nothing
+is done, and the red full line represents future circumstance when adjustment is made. We ﬁnd that
+the increasing of cutting cycle is positive to two diﬀerent forests from 2020 to 2080 on the whole
+while the mark in the course of changing trending diﬀerently.
+As to Bach Ma National Park, the mark of comprehensive value decline more than the initial
+at the early stage after adjusting cutting cycle, and the mark rise approximately from 2035. What
+is called transition point when the mark of the forest after adjusting is equal to the mark under
+original condition between 2040 and 2045. After the excessive point, the mark of comprehensive
+value of forest goes on rising, which means the sustainability of forest is great. The reasons for this
+course of changing of mark is that the income of forest products is an important economic source as
+a result of economic of underdevelopment of the area that the forest stands. Therefore, increasing
+cutting cycle will reduce the economic beneﬁts of this forest and the mark of comprehensive value
+of the forest will drop rapidly. However, the rationality of our management plan will show out
+after a period of time because increasing cutting cycle will help build up soil fertility and enhance
+biodiversity greatly that will lead to the constant climb of the mark of comprehensive value of
+forest. We set the stage before adjusting as the pre-transition phase, the stage after adjustment to
+transition point is set as the transition phase, which is divided into the early transition phase and
+the late transition phase on the basis of the trend, and the stage after the transition point is set as
+
+<<<PAGE 18>>>
+
+the post-transition phase.
+As to Plaka Forest, the mark of comprehensive value is higher than the original at the same
+period all the time, and there is no transition point from beginning to the end. That is because
+the place that forest standing is an economically developed area with diverse source of economic
+income and not depend on the income of forest products, which lead that the decline of income
+of forest products make little diﬀerence to economic beneﬁts of forest, and for the same time, soil
+fertility of forest is rising. In consequence, there is no trend of decline and transition point of the
+mark of comprehensive value of forest.
+In conclusion, our management plans will enhance sustainability and raise the mark of compre-
+hensive value as a form of trend of rise overall in a long time while applying to all forests. However,
+there is uncertainly a transition point after applying our management plans to all the forest.
+9.4
+How can transition points in a management plan be identiﬁed subject
+to the characteristics of the forest and its location?
+• The geographical location of forest has a signiﬁcant impact on biodiversity, tree species, area
+size and other attributes. First of all, according to the latitude from low to high, forests can
+be divided into four types: Tropical Rainforest, Subtropical Evergreen Broad-leaved Forest,
+Temperate Deciduous Broad-leaved Forest and Border Coniferous Forest.
+• Next, we will discuss in detail according to the ﬁve indicators included in the third E model.
+Since the adjustment of cutting cycle is the core content of our forest management plan, here
+we only discuss the impact of cutting cycle on four kinds of forests. Moreover, we ignore
+the impact of cutting cycle on biodiversity and cultural value, because the impact of cutting
+cycle on them is relatively small. So we choose Tropical Rainforest as the research object.
+• If we increase the cutting cycle of Tropical Rainforest, the decline of its annual carbon
+sequestration is usually greater than that of the other three forest types. This is because the
+carbon sequestration rate of the forest in the early growth stage is greater than that in the
+mature stage, while the growth rate of the plant of tropical rainforest is fast, which leads it to
+reach the mature stage soon. This will greatly reduce the average annual carbon sequestration
+of Tropical Rainforest.
+• In addition, increasing the cutting cycle has the weakest promoting eﬀect on the soil fertility
+of Tropical Rainforest. Because the growth and metabolism of tropical rainforest plants are
+very fast, they produce a large amount of organic matter as natural fertilizer. The impact of
+these natural fertilizers on soil fertility is much greater than that caused by cutting cycle.
+• Finally, because most of the regions where Tropical Rainforest is located belong to econom-
+ically underdeveloped areas, the local area is highly dependent on the income of forests. The
+negative eﬀect of increasing the cutting cycle on Tropical Rainforest is strong and rapid,
+which will lead to a lot of decline in the score of Tropical Rainforest in the economic beneﬁt
+indicator.
+• To sum up, the impact of increasing the cutting cycle on Tropical Rainforest is likely to be
+negative for a long time, so we need to consider carefully when formulating our management
+
+<<<PAGE 19>>>
+
+plan.
+• In conclusion, if the comprehensive value score and change trend of these four forests are the
+same in the future, and their rotation period is increased by the same amount at the same time,
+the time required for the emergence of their transition point from short to long is Temperate
+Deciduous Broad-leaved forestBoreal Coniferous ForestSubtropical Evergreen Broad-leaved
+ForestTropical Rainforest.
+10
+Forests in four temperature zones
+According to the survey of FAO, forest covers one third of the worlds land nearly, and tropical
+forest account for the largest proportion of the world’s forests (45%), followed by northern, temperate
+and subtropical forests.
+The proportion and distribution of global forest area by climatic domain as shown in this ﬁgure.
+Inspired by this, we apply E3 −M Model to four forests standing in diﬀerent temperature zones
+to evaluate forests and draw up plans. What is worth noting is that, we assume the upper limit of
+area of every forest is the area of region that forest locating, to determine the relative parameters
+which will be applied in the second E Model. In the end, we choose Mulu Caves National Park,
+Bach Ma National Park, Plaka Forest and Oulanka National Park, respectively locating in tropical,
+subtropical, temperate and boreal, basing on screening of data.
+We can evaluate and analyze the development status of forest by applying E3 −M Model to
+diﬀerent four kinds of forest.
+10.1
+Forest scores in 2020
+We determine the parameters of the ﬁrst E Model and second E Model by consulting relative
+data and policies of the forests. On this basis, using the third E Model to horizontally compare
+scores of each forest in each dimension.(ﬁgure8 , ﬁgure9)
+10.2
+Trends in comprehensive forest value scores
+We scored the forest system for each year based on historical data. On this basis, we use BP
+neural network to predict the comprehensive forest value scores of four forests. The result is shown
+in Figure 10.
+Oulanka National Park has a high score and relatively stable development, almost stable at
+around 70 points. The scores of Mulu Caves National Park are also relatively high, we can ﬁnd
+that the scores of Mulu Caves National Park show a trend of slow decline, with slightly lower
+sustainability. Plaka Forest has gone through a transition stage before 2020, and the current score
+shows a trend of steady increase, indicating that the Forest development is relatively sustainable.
+The score of Bach Ma National Park declined the most, indicating that current forest management
+policies do not take into account the sustainable development of forests, and there is an urgent need
+for rehabilitation
+Bach Ma National Park is located in the subtropical region with an area of about 22,000 square
+kilometers and an elevation of 1,200 meters. Artiﬁcial ﬁr forests are dominant in subtropical forest
+
+<<<PAGE 20>>>
+
+Figure 8: Comparison of the scores of the four forests in each dimension(2020)
+ecosystems. Fir is a subtropical tree species, like warm and humid, foggy calm wind climate
+environment and has high requirements for soil.
+10.3
+Carbon Sequestration
+♣What is the total amount of carbon sequestered in this forest and its products over a
+100-year period?
+We can obtained the result of the eﬃciency of carbon sequestration of the forest by applying
+First E Model, namely to the annual amount of carbon sequestered per hectare of forest T(t). We can
+calculate the area of forest by applying Second E Model. Therefore, the annual carbon sequestration
+of forestTCS(t) = T(t) · S(t) .
+According to the data between 1990 and 2020, we can predict that T(t) and S(t) by applying
+BP neural networks. In consequence, total carbon sequestration in the 100-year period from 2021
+to 2120 of Bach Ma National Park is
+2120
+∑
+t=2021
+TCS(t) =
+2120
+∑
+t=2021
+T(t) · S(t) ≈1.68 × 107t
+(16)
+10.4
+Bach Ma National Park
+♣What is the best forest management plan for this forest? Why?
+
+<<<PAGE 21>>>
+
+Figure 9: Individual Forest Score(2020)
+Figure 10: Forest Score Prediction
+Finding the best cutting cycle is the most eﬀective way to improve Bach Ma National Park’s
+comprehensive value score. According to known conditions, the original cutting cycle was 15 years,
+so we proposed three plans to set the cutting cycle to 20 years, 25 years and 50 years respectively,
+and named them as A, B and C. According to our E3 −M model, we can know the inﬂuence of
+changing only cutting cycle on the comprehensive value score of Bach Ma National Park. The
+result is shown below.
+We can know that the transition points corresponding to plan A, B and C are respectively 2030,
+2036 and 2045. The goal of achieving comprehensive forest value score of 70 is not achievable in
+
+<<<PAGE 22>>>
+
+Figure 11: Composite Value Score Prediction
+Plan A for 60 years, while plans B and C will take 42 and 51 years respectively. In addition, we
+can conclude from the trend of several curves that the positive eﬀects of implementing Plan B and
+PLAN C will be similar after 2080.
+Before implementing Plan B, Bach Ma National Park’s Soil Fertility scores were far lower than
+other indicators. If we want to improve the health of this forest, we should focus on improving its Soil
+Fertility. However, the economic underdevelopment of the region where Bach Ma National Park
+is located leads to the great inﬂuence of increased cutting cycle on economic beneﬁts, combined
+with the attenuation of carbon sequestration, so the situation is complicated.
+We focus on the ﬁr forest that plays a leading role in Bach Ma National Park. According to the
+data consulted, we know that the cutting cycle of local Chinese ﬁr corresponds to 838.97mg /hA in
+15 years, 744.63mg /hA in 25 years, and 462.48mg /hA in 50 years. When the Cutting cycle was
+set at 25 years, soil nitrogen content was signiﬁcantly higher than that in Plan A and slightly lower
+than that in Plan C. Therefore, plan B can realize the growth of Soil Fertility as soon as possible and
+fully compensate for the loss of Total Carbon Sequestration and Economic Beneﬁts, with strong
+sustainability. In short, a cutting cycle of 25 years is most beneﬁcial for improving the health of
+the forest.
+To maximize the comprehensive value of the forest, we also need to improve the management
+plan. Bach Ma National Park has a large proportion of Chinese ﬁr trees and few other tree species,
+so it lacks in biodiversity. In addition, the product price of ﬁr is high, so we can increase the cutting
+amount of ﬁr and reduce the cutting of other types of trees, which can make up for the reduction
+of economic beneﬁts. We should also carry out forest species mixing, and the introduction of
+Dalbergia Hupeana Hance and Camellia Oleifera Abel is feasible solutions. We believe that raising
+the tax rate of forest products can reduce the dependence of local economy on forestry, which will
+reduce the amount of forest logging and promote the expansion of forest area. Finally, technology
+
+<<<PAGE 23>>>
+
+upgrading is also a plan that needs to be mentioned. Because local forests are being reduced to
+make room for soybean planting, technological upgrades are needed to increase soybean yield per
+unit to reduce soybean acreage.
+To sum up, the optimal forest management plan for Bach Ma National Park is to set the cutting
+cycle to 25 years to increase the logging amount of ﬁr and reduce the logging amount of other
+tree species. Introducing two species, Dalbergia Hupeana Hance and Camellia Oleifera Abel.
+Appropriately raise the tax rate on forest products. Upgrade technology to increase soybean yield
+per area.
+11
+Strengths and Weaknesses
+11.1
+Strengths
+• According to the sensitivity analysis, the results of our model are stable and conform to the
+common experience.
+• Our model takes into account ﬁve indicators of forest value, making our model more com-
+prehensive and objective.
+• Our model scores for each forest and comes up with a management plan. The model is highly
+adaptable.
+• After simulation, we found that the target forest (Bach Ma National Park) showed signiﬁcant
+progress in sustainability and comprehensive scores, indicating that our model was eﬀective.
+11.2
+Weaknesses
+• Some of the data we can’t be accessed directly from authoritative websites, so we get some
+of our data through interpretation and analysis of policies.
+• Factors inﬂuencing carbon sequestration conditions of mixed forest are more complex, in-
+cluding forest composition. Therefore, only pure forest was selected in the case analysis.
+12
+The positive role of logging in forest management(newspaper
+article)
+Logging - an eﬀective means of forest management
+Climate change today already poses a great threat to life as we know it. To mitigate the eﬀects
+of climate change, we need to take strong action to reduce greenhouse gases in the atmosphere.
+Carbon sequestration is the main way to reduce carbon dioxide in the atmosphere. As the main
+force of carbon sequestration, forest should be the focus of protection. From this point of view
+alone, forest management should not require us to cut down forests. But is this really the case?
+To address this issue, we ﬁrst need to understand the main drivers of deforestation. Globally, we
+cut down about 10 million hectares of forest every year, according to estimates from FAO’s Forest
+Resource Assessment. Researchers have found that we cut down forests for two reasons: obtain
+
+<<<PAGE 24>>>
+
+forest products and take forestry land. Forest products can be used for fuel, building materials or
+wood for paper. The occupied land could be used as farmland to grow crops, pasture for livestock,
+or roads and cities. Moreover, this demand for resources and land is not always driven by the
+domestic market. According to FAO, 14% of deforestation is now driven by consumers in rich
+countries. The expansion of rangeland for beef production, the expansion of farmland for soy and
+palm oil, and the increasing conversion of virgin forests to tree plantations for paper and pulp are
+key drivers of this situation.
+From the above analysis, we can ﬁnd that deforestation has become a way for us to use forests to
+obtain economic value. Proper deforestation will bring economic beneﬁts to the area, so it should
+be included in the forest management plan. This is one of the reasons why logging is used for forest
+management.
+Secondly, forests sequester carbon dioxide in products produced by living plants, including
+furniture and other forest products. These forest products absorb carbon dioxide over their lifetime.
+Some products have a short life span, while others may outlive the trees from which they were pro-
+duced. The carbon absorbed by some forest products, combined with the regrowth of young forests,
+has the potential to absorb more carbon over time than would be the case with no deforestation at
+all. Therefore, reasonable logging plans can be more conducive to carbon sequestration. It could
+help us mitigate climate problems more eﬀectively. That’s the second reason.
+Thirdly, reasonable rotation period can adjust the forest structure and prolong the sustainability
+of forest management. Therefore, determining reasonable cutting cycle is the primary task of forest
+management. Continuous planting of pure forest will lead to fertility decline and productivity
+decline. For The Cunninghamia lanceolata forest in Vietnam, the fertility decline of Cunninghamia
+lanceolata was closely related to the choice of cutting cycle[5]. In a complete cutting cycle, the stand
+composition structure will change constantly, such as tree height, litter, etc. The longer the cutting
+cycle, the longer the growth cycle, the higher the carbon sequestration. According to the analysis of
+the E3 −M model established by us and previous studies[6], diﬀerent cutting cycles have a certain
+impact on the dynamic characteristics of carbon sequestration. Short cycle is the stage of rapid
+growth of carbon sequestration capacity, but due to the incomplete stand diﬀerentiation process,
+stand competition and less litter and other comprehensive factors, the consumption of the opposite
+land is more serious. In the long cycle period, the carbon sequestration capacity decreased, but
+due to the inﬂuence of the accumulation of litter and the development of understory vegetation,
+the restoration of the opposite land was more favorable. According to the analysis of the E3 −M
+model, the forest system in Vietnam was healthiest when the cutting cycle of Chinese ﬁr forest was
+25 years.
+To sum up, logging is an integral part of a sound and sound forest management plan. As long
+as the previous experience, scientiﬁc research and implementation of the situation, formulate a
+reasonable cutting cycle and appropriate amount of deforestation, then can make deforestation have
+a positive impact on forest value.
+
+<<<PAGE 25>>>
+
+References
+[1] Cuddeford, D. , Woodhead, A. , & Muirhead, R. . (2010). A comparison between the nutritive
+value of shortcutting cycle, high temperaturedried alfalfa and timothy hay for horses. Equine
+Veterinary Journal, 24(2), 84-89.
+[2] Xiao, X. , Wang, X. , Ouyang, X. , & University, J. A. . (2015). The characteristic of soil
+organic carbon and relation-ship with litter quality in pinus massoniana plantation. Journal of
+Nanjing Forestry University(Natural Sciences Edition).
+[3] Chertov, O. , Bhatti, J. S. , Komarov, A. , Mikhailov, A. , & Bykhovets, S. . (2009). Inﬂuence
+of climate change, ﬁre and harvest on the carbon dynamics of black spruce in central canada.
+Forest Ecology & Management, 257(3), 941-950.
+[4] Bi, J. , Blanco, J. A. , Seely, B. , Kimmins, J. P. , Ding, Y. , & Welham, C. . (2007). Yield
+decline in chinese-ﬁr planta-tions: a simulation investigation with implications for model
+complexity. Canadian Journal of Forest Research, 37(9), 1615-1630.
+[5] Chen, H. . (2003). Phosphatase activity and p fractions in soils of an 18-year-old chinese ﬁr
+(cunninghamia lanceolata) plantation. Forest Ecology and Management.
+[6] Wang, W. F. , Duan, Y. X. , Zhang, L. X. , Wang, B. , & Xiao-Jing, L. I. . (2016). Eﬀects
+of diﬀerent rotations on car-bon sequestration in chinese ﬁr plantations. Chinese Journal of
+Plant Ecology, 40(7), 669-678.
+[7] AS Inc. The United States Forest Service (USFS) ﬁghts wildﬁres and other natural disasters in
+more than 155 national forests and 20 national grasslands, totaling an estimated 193 million
+acres or 30% of all federally-managed lands.
+[8] Rudel, & TK. (1998). Is there a forest transition? deforestation, reforestation, and develop-
+ment. RURAL SOCIOL.
+[9] CHANG, & SJ. (1981). Determination of the optimal growing stock and cutting cycle for an
+uneven-aged stand. Forest Sci.
+[10] Erice, G. , Irigoyen, J. J. , P Pérez, R Martínez-Carrasco, & M Sánchez-Díaz. (2010). Eﬀect of
+elevated co2, temperature and drought on photosynthesis of nodulated alfalfa during a cutting
+regrowth cycle. Physiologia Plantarum, 126(3), 458-468.
+[11] Huang, H. . (2007). Evaluation of investment economic revenue and conﬁrmation of the best
+economic cutting cycle of industrial raw material forest eucalyptus. Scientia Silvae Sinicae.
+[12] Gumbo, B. . (2005). Short-cutting the phosphorus cycle in urban ecosystems. A.a.balkema.

@@ -1,0 +1,1217 @@
+
+<<<PAGE 1>>>
+Problem Chosen
+A
+2024
+MCM/ICM
+Summary Sheet
+Team Control Number
+2425397
+Population analysis of lampreys: a discrete population dynamics model based on age grouping
+Abstract
+In this paper, we model the ecosystem of lampreys and analyze the impacts of changes in the
+sex ratio of lampreys on populations and ecosystems.First, we establish a discrete population dy-
+namics model with age groups. Based on the biological characteristics of lampreys, we divide
+the lampreys population into seven age groups, and consider the ecosystems in which they live as
+well as bait for larvae, competitors for larvae, bait for adults, competitors for adults, and artificial
+fisheries. The model takes into account the fact that the sex ratio varies according to the external
+environment.
+For task 1, we focus on the effects of changes in the sex ratio of lampreys on the larger ecosys-
+tem. The results of the discrete population dynamics model reflect that the changeable sex ratio of
+lampreys is conducive to the stabilization of its population size, making it dominant in the ecosys-
+tem. Compared with the changes in population size before and after the invasion of lampreys in an
+ecosystem, we conclude that the variable sex ratio of lampreys as an invasive species is detrimental
+to the native population of the ecosystem, but at the same time, the larvae of lampreys can purify
+the water quality and promote nutrient cycling in the benthic environment.
+For task 2, we apply our model by focusing on the advantages and disadvantages of the biolog-
+ical characteristics of variable sex ratio, metamorphosis, one-time reproduction and migration of
+lampreys for their own populations. Through the discrete population dynamics model to calculate
+the situation of changing environmental resources and sudden changes in the external environment,
+we obtain that the population of lampreys with metamorphic and variable sex ratio is more stable,
+and the population of lampreys with metamorphic is more capable of realizing the full use of en-
+vironmental resources. By simulating the impacts of human influence on the migratory spawning
+process of lampreys and the drastic decrease in the number of spawners in a given year, we conclude
+that the migratory characteristics of lampreys and the disadvantages of one-time reproduction are
+that the migratory process may be dangerous, and that the larvae of lampreys are habitat-dependent,
+and that the low survival rate of a given generation puts the entire population at risk.
+For task 3, we pay a close attention on the effects of the variable sex ratio of lampreys on
+ecosystem stability. We take the resistance stability, resilience stability and sustainability of the
+ecosystem as evaluation indexes. Numerical simulations of the discrete population dynamics model
+show that: the degree of ecosystem fluctuation is 23.28% and 33.19% respectively when the number
+of lampreys and plankton populations with variable sex ratios is abruptly changed, and the recovery
+time is 18 years and 28 years respectively. Compared with the numerical simulation results when
+the sex ratio of lampreys is not variable, the lampreys population with variable sex ratio makes
+the ecosystem have stronger resistance stability and recovery stability. The ecosystems in which
+the lampreys population with variable sex ratio are sustainable after the introduction of artificial
+interventions.
+For task 4, we mainly analyze the effects of variable sex ratios of lampreys on other species with
+our model. We add parasite populations to a discrete population dynamics model, and the model
+results show that the variable sex ratio of lampreys favors other parasite organisms and populations.
+In conclusion, the changes in the sex ratio of lampreys are beneficial to ensure the stability of
+their population numbers when facing harsh environments. This, in turn, contributes to the stability
+and sustainability of the larger ecosystem.
+Keywords: Discrete Population Dynamics Modeling; Lampreys Sex Ratio; Lampreys Meta-
+morphosis; Ecosystem Stability
+
+<<<PAGE 2>>>
+
+Contents
+1
+Introduction
+3
+1.1
+Problem Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.2
+Restatement of the Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.3
+Our Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2
+Assumptions and Notations
+4
+2.1
+Assumptions
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2.2
+Notations
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+3
+The Lampreys Ecosystem Model
+5
+3.1
+Model Preparation: Age Grouping of the Lampreys Population . . . . . . . . . . .
+5
+3.1.1
+Age Profile of Lampreys and its Subgroups . . . . . . . . . . . . . . . . .
+5
+3.1.2
+Lampreys Ecosystem . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+3.2
+Discrete Population Dynamics Model Based on Grouping with Age
+. . . . . . . .
+6
+3.2.1
+Ecosystem Modeling of Larval Populations in Lampreys . . . . . . . . . .
+6
+3.2.2
+Lampreys Ecosystem Modeling of Adult Populations . . . . . . . . . . . .
+8
+3.2.3
+External Artificial Intervention Model . . . . . . . . . . . . . . . . . . . .
+8
+3.3
+Model Overview
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+4
+Task1: Impact on the Larger Ecological System
+10
+4.1
+Analysis of Changes in Population Gender Ratio
+. . . . . . . . . . . . . . . . . .
+10
+4.2
+The Impact of the Ecosystem . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+4.3
+Result Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+5
+Task2: Advantages and Disadvantages of Populations
+14
+5.1
+Advantages of Populations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+5.2
+Disadvantages of Populations . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+6
+Task3: Impact of Sex Ratio on Ecosystem Stability
+17
+6.1
+Classification of Ecosystem Stability . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+6.2
+Ecosystem Resistance Stability and Resilience Stability . . . . . . . . . . . . . . .
+18
+6.3
+Sustainability of Ecosystems . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+6.4
+Conclusion
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+7
+Task4: Impact of Changing Sex Ratio on Other Species
+21
+7.1
+Add Parasite Populations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+7.2
+Model Solution and Result Analysis . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+8
+Analysis on Model’s Sensitivity
+23
+8.1
+Impact Analysis of Model Parameters . . . . . . . . . . . . . . . . . . . . . . . .
+23
+8.2
+Effects of Human Intervention and Parasite Populations on Models . . . . . . . . .
+23
+8.3
+Conclusion
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+9
+Strengths and Weaknesses
+24
+References
+25
+
+<<<PAGE 3>>>
+
+1
+Introduction
+1.1
+Problem Background
+In nature, the sex ratio of different species is different. Most species have a sex ratio of 1:1, but
+the sex ratio of sea lampreys changes in response to changes in the external environment. We call
+this phenomenon of changing the sex ratio of a species to adapt to environmental demands adaptive
+sex ratio change.
+Lampreys live mainly in coastal and freshwater areas in most temperate regions. Lampreys
+significantly impact ecosystems as parasites in several lake habitats, and as a member of the food
+chain, providing a source of food for areas such as Scandinavia, the Baltic Sea, and the Pacific
+Northwest of North America.
+The rate of development of the larval stages of lampreys determines their sex ratio, and their
+growth rate is affected by food availability. When the food supply is insufficient, the population’s
+sex is dominated by males, with a proportion of about 78%; when the food supply is sufficient, the
+proportion of males is about 56%, and the proportion of males and females is almost equal.
+Figure 1: Sex Ratio of Lampreys in Different Environments
+1.2
+Restatement of the Problems
+For the problem of sex ratios in lampreys and their dependence on local conditions, we develop
+plausible mathematical models that provide insights into the interactions that arise in ecosystems
+and answer the following questions:
+• Analyze the effects on the ecosystems in which lampreys are found when their sex ratio is
+correlated with their population size.
+• Analyze and justify the strengths and weaknesses of the lampreys population with the model
+that has been developed accordingly.
+• Analyze the impact of the lampreys sex ratio on ecosystem stability, considering that it varies
+according to the external environment.
+• Explain whether lampreys can provide an advantage to other species in the ecosystem (e.g.
+
+<<<PAGE 4>>>
+
+parasites) based on the specificity of the sex ratio of their populations
+1.3
+Our Work
+Figure 2: Our Work
+2
+Assumptions and Notations
+2.1
+Assumptions
+• Assumption 1: We assume that all lampreys were bred in the seventh year and that the
+parents died at the end of the breeding.
+Justification: The lampreys are one-time reproducing organisms and have a lifespan of seven
+years, so to make it easier to calculate the number of newborn hatchlings produced by the
+lampreys’ reproduction, we assume that all of them reproduce in their seventh year.
+• Assumption 2: We assume that lampreys’ change of gender is accomplished the instant they
+enter their fifth year.
+Justification: We have grouped lampreys by age in our model and calculated the population
+size of lampreys of each age in yearly intervals, so for easy calculation of the number, we
+consider the behavior of changing the sex of lampreys to be done instantaneously.
+• Assumption 3: We assume that lampreys have no natural predators, i.e., we do not consider
+lampreys as bait but are mainly threatened by human activities.
+Justification: Larval lampreys live in relatively secretive environments and are largely pro-
+tected from regular predation, and adult lampreys are relatively less exposed to threats from
+natural enemies due to their size and habits. We therefore do not consider predator popu-
+lations of lampreys, but instead add an artificial intervention term to model the impact of
+lampreys populations on human activities.
+• Assumption 4: We assume that the parasite population of lampreys only parasitizes lam-
+preys’ mature bodies.
+
+<<<PAGE 5>>>
+
+Justification: Existing studies on parasites of lampreys show that more than 80% of parasites
+are found in lampreys’ mature body populations, and only 11% of parasites are present in
+lampreys’ juvenile populations, so to simplify the model we mainly consider the effect of
+parasites on lampreys mature body populations.
+2.2
+Notations
+Table 1: Notations Description
+Notations
+Definition
+Mt
+Proportion of females
+βm
+Natural mortality rate of larvae
+βB
+Natural mortality rate under bait deprivation
+α
+Reproduction coefficient
+rx
+Natural rate of growth
+3
+The Lampreys Ecosystem Model
+3.1
+Model Preparation: Age Grouping of the Lampreys Population
+3.1.1
+Age Profile of Lampreys and its Subgroups
+According to the data collection [1], the lifespan of lampreys is 7 years, the first 4 years are
+larvae without sex difference, and they feed on plankton; in the 5th year, they start to change their
+morphology, and there are male and female, and the sex ratio is mainly affected by the food supply.
+Therefore, the amount of food during the larval period of lampreys can affect the sex ratio during
+the morphological change and thus the population size of lampreys, and the influence relationship
+is shown in Figure 3.
+Figure 3: Lampreys Intraspecific Influence Relationships
+In this paper, we divide the age of the lampreys population into seven stages, each segment
+taken upwards as an integer (i.e., lampreys’ age starts at 1 year), as shown in Figure 4, where 1 - 4
+
+<<<PAGE 6>>>
+
+years old lampreys are larvae with no sex differences, and 5-7 years old lampreys are adults with
+sex differences occurring.
+Figure 4: Lampreys Age Division
+3.1.2
+Lampreys Ecosystem
+The larvae of lampreys mainly prey on zooplankton, while the mature bodies of lampreys par-
+asitize fish. After considering artificial fishing we divide the ecosystem where lampreys are found
+into three parts, and their relationships include competition, parasitism, and so on. The ecosystem
+relationship diagram is shown in Figure 5.
+Figure 5: Lampreys Ecosystem Relationship Map
+3.2
+Discrete Population Dynamics Model Based on Grouping with Age
+3.2.1
+Ecosystem Modeling of Larval Populations in Lampreys
+1).Larval Populations of Lampreys
+According to our age grouping of lampreys and their lampreys species characteristics, larvae
+are unable to propagate. When there is no food bait in the environment, the natural mortality rate
+of larvae is
+Xi+1,t+1 −Xi,t
+Xi,t
+= −1.
+(1)
+The larvae will only partially die when food bait is present in the environment, at which point the
+mortality rate is
+Xi+1,t+1 −Xi,t
+Xi,t
+= −1 + 1 −βm
+Kx
+xt,
+(2)
+
+<<<PAGE 7>>>
+
+where xt is the population size of the larval feeder, βm is the natural mortality rate of larvae when the
+feeder is sufficient, and Kx is the environmental holding capacity of xt.Considering the population
+of competitors Bt that share the same food bait as the larvae and the competition between larvae at
+different ages, the natural growth rate of the larvae is
+Xi+1,t+1 −Xi,t
+Xi,t
+= −1 + 1 −βm
+Kx
+xt −
+4
+∑
+i=1
+˜kiXi,t −ktBt,
+(3)
+where ˜ki is the coefficient of mutual competition at different ages of larvae, kt is the coefficient of
+competition of competitors.
+According to our assumptions, lampreys only reproduce at age 7, so the number of newborn
+larvae in the larval population is
+X1,t+1 = αMtX7,t.
+(4)
+According to relevant studies, population abundance is positively correlated with the proportion of
+males in the population [2]
+Mt =
+ε1 + ε2
+7
+∑
+j=5
+Xj,t
+ε3 + ε4
+7
+∑
+j=5
+Xj,t
+,
+(5)
+where α is the reproduction coefficient, εi(i = 1, 2, 3, 4) is a nonlinear function parameter.
+2).Lampreys Competitor Populations
+The natural growth rate of competing populations of lampreys larvae in the absence of feeding
+bait is
+Bt+1 −Bt
+Bt
+= −βB.
+(6)
+When feeding bait is present, its natural growth rate is
+Bt+1 −Bt
+Bt
+= −βB + γB + βB
+Kx
+xt.
+(7)
+When competition between species is considered, the above equation becomes
+Bt+1 −Bt
+Bt
+= −βB + γB + βB
+Kx
+xt −
+4
+∑
+i=1
+kiXi,t −˜ktBt,
+(8)
+where βB is the natural mortality rate under bait deprivation , γB is the natural growth rate under
+bait sufficiency, ki is the coefficient of competition of lampreys larvae on this population, and ˜kt is
+the coefficient of intraspecific competition.
+3).Lampreys Feeder Populations
+For a feeder population, its population size conforms to Logistic growth when there are no
+predators on it:
+xt+1 −xt
+xt
+= rx
+(
+1 −xt
+Kx
+)
+.
+(9)
+When considering the presence of its predators, then there is
+xt+1 −xt
+xt
+= rx
+(
+1 −xt
+Kx
+)
+−
+4
+∑
+i=1
+kiXi,t −ktBt,
+(10)
+where rx is the natural rate of growth when resources are sufficient.
+
+<<<PAGE 8>>>
+
+3.2.2
+Lampreys Ecosystem Modeling of Adult Populations
+1).Lampreys Adult Population
+The natural growth rate of lampreys as they change from larvae to adults can be expressed as
+X5,t+1 −X4,t
+X4,t
+= −1 + 1 −βm
+Kx
+xt −
+4
+∑
+i=1
+˜kiXi,t −ktBt.
+(11)
+Considering the actual situation, the natural growth rate in the presence of bait and competition is
+similar to the case of juveniles, and similarly we can obtain the relation
+Xj+1,t+1 −Xj,t
+Xj,t
+= −1 + 1 −βn
+Ky
+yt −
+7
+∑
+j=5
+˜kjXj,t −kLCt,
+(12)
+where yt is the number of feeder populations of lampreys adults, Ct is the number of competitor
+populations of lampreys adults, βm is the natural mortality rate when there is sufficient feeders, kj is
+the coefficient of intraspecies competition, and kL is the coefficient of competitor competition for
+adults.
+2).Lampreys Competitor Populations
+Adults develop from larvae and are similar to larval populations, which shows the relationship
+between changes in the population size of adult competitors
+Ct+1 −Ct
+Ct
+= −ωy + ηy + ωy
+Ky
+yt −
+7
+∑
+j=5
+k jXj,t −˜kLCt.
+(13)
+Relationships between changes in population sizes of feeders
+yt+1 −yt
+yt
+= ry
+(
+1 −yt
+Ky
+)
+−
+7
+∑
+j=5
+k jXj,t −kLCt,
+(14)
+where ky is the environmental holding capacity of the feeder population yt.
+3.2.3
+External Artificial Intervention Model
+Considering the long-term pressure of artificial intervention on the population of lampreys,
+assuming an annual intervention intensity of F, then for Equations (3), (11) and (17), there are
+
+Xi+1,t+1 −Xi,t
+Xi,t
+= −1 + 1 −βm
+Kx
+xt −
+4
+∑
+i=1
+˜kiXi,t −ktBt −F(i = 1, 2, 3),
+X5,t+1 −X4,t
+X4,t
+= −1 + 1 −βm
+Kx
+xt −
+4
+∑
+i=1
+˜kiXi,t −ktBt −F,
+Xj+1,t+1 −Xj,t
+Xj,t
+= −1 + 1 −βn
+Ky
+yt −
+7
+∑
+j=5
+˜k jXj,t −kLCt −F( j = 5, 6).
+(15)
+This better represents the natural growth rate of juvenile and mature populations of lampreys.
+
+<<<PAGE 9>>>
+
+3.3
+Model Overview
+In summary, if the number of larva and adult populations is represented as Xi(i = 1, 2, 3, 4) and
+Xj(j = 5, 6, 7), respectively, with bait quantities of xt and yt, and competitors of Bt and Ct, then the
+number of newborn larva is
+X1,t+1 = αMtX7,t,
+where α represents the reproductive coefficient, Mt represents the proportion of females, and the
+proportion of females is
+Mt =
+ε1 + ε2
+7
+∑
+j=5
+X j,t
+ε3 + ε4
+7
+∑
+j=5
+Xj,t
+.
+When considering human intervention (i.e. F , 0), the relationship between population size
+changes is shown in Tables 2 and 3, where ˜ki, ˜k j, ˜kt and ˜kL are intra species competition coefficients.
+Table 2: Adult: Population Quantity Variation Relationship
+Names
+Changing Relationships
+Adult
+X5,t+1 −X4,t
+X4,t
+= −1 + 1 −βm
+Kx
+xt −
+4
+∑
+i=1
+˜kiXi,t −ktBt −F
+Xj+1,t+1 −Xj,t
+Xj,t
+= −1 + 1 −βn
+Ky
+yt −
+7
+∑
+j=5
+˜kjXj,t −kLCt −F
+Competitor
+Ct+1 −Ct
+Ct
+= −ωy + ηy + ωy
+Ky
+yt −
+7
+∑
+j=5
+k jXj,t −˜kLCt
+Prey
+yt+1 −yt
+yt
+= ry
+(
+1 −yt
+Ky
+)
+−
+7
+∑
+j=5
+k jXj,t −kLCt
+Table 3: Larva: Population Quantity Variation Relationship
+Names
+Changing Relationships
+Larva
+Xi+1,t+1 −Xi,t
+Xi,t
+= −1 + 1 −βm
+Kx
+xt −
+4
+∑
+i=1
+˜kiXi,t −ktBt −F
+Competitor
+Bt+1 −Bt
+Bt
+= −βB + γB + βB
+Kx
+xt −
+4
+∑
+i=1
+kiXi,t −˜ktBt
+Prey
+xt+1 −xt
+xt
+= rx
+(
+1 −xt
+Kx
+)
+−
+4
+∑
+i=1
+kiXi,t −ktBt
+
+<<<PAGE 10>>>
+
+4
+Task1: Impact on the Larger Ecological System
+4.1
+Analysis of Changes in Population Gender Ratio
+According to the previous lampreys ecosystem model based on age grouping we can draw as
+shown in Figure 6 and its initial values are set as shown in Table 4.
+(a) Lampreys Overall
+(b) Lampreys Larvae and Adults
+Figure 6: Changes in the Populations of Individual Species in the Lampreys Ecosystem
+Table 4: Model Initial Parameter Values
+Type
+Parameter Symbols and Numerical Values
+Symbol
+X1,1
+X2,1
+X3,1
+X4,1
+X5,1
+X6,1
+X7,1
+B1
+Value
+0.4
+0.35
+0.3
+0.25
+0.2
+0.15
+0.1
+1
+Symbol
+x1
+yt
+C1
+M1
+T
+α
+βm
+kx
+Value
+1
+1
+1
+0.3
+100
+12
+0.01
+1
+Symbol
+˜ki
+ki
+˜kt
+kt
+βB
+γy
+rx
+βn
+Value
+0.001
+0.1
+0.001
+0.01
+0.1
+0.1499
+0.5
+0.01
+Symbol
+ky
+˜kj
+k j
+˜kL
+kL
+ωy
+ηy
+ry
+Value
+1
+0.001
+0.1
+0.001
+0.01
+0.1
+0.0471
+0.5
+After the system reached stability, according to Figure 6(a), we obtain that the population size
+of lampreys forms a fluctuation with a period of 7 years within a range of ±4%. And Figure 6(b)
+presents the changes in the population size of lampreys larvae and adults, which also fluctuated
+over a period of 7 years. Therefore we smooth the data and transform it by the following equation
+∆i,t = 1
+7
+3
+∑
+τ=−3
+∆i,t+τ,
+(16)
+where ∆i,t denotes the number of various populations, from which the smoothed curve can be ob-
+tained, as shown in Figure 7.
+
+<<<PAGE 11>>>
+
+(a) Lampreys Overall
+(b) Lampreys Larvae and Adults
+Figure 7: Variable Sex Ratio ( Smoothing Figure 6)
+We can see from Figure 7 that the ecosystem reaches equilibrium in year 24, with more lampreys
+larvae populations than mature ones. This is due to the fact that lampreys adults spawn much more
+than the number of parents that die during the same period. In addition, lamprey larvae diminish
+in number as they grow, and the number that become adult will be much less than their spawning
+capacity. Because there are so many lampreys larvae, they are at an advantage when competing
+with their competitors. On the other hand, lamprey adults are fewer in number, which puts them at
+a disadvantage in the competition.
+Assuming that the proportion of males and females is fixed and that the proportions are 50%
+each, we plot the image shown in Figure 8 when all other conditions are the same as in Figure
+7. Compared with the case where the sex of lampreys is variable, in the case where the sex is
+constant, the population of lampreys will be larger but the number of its feeder population will
+decrease, which will lead to a smaller amount of environmental resources allocated to each indi-
+vidual lampreys and a decrease in the quality of life of the population. In addition, a constant sex
+ratio of lampreys will lead to a decrease in the number of other organisms in the ecosystem or even
+extinction, which is detrimental to the diversity of the ecosystem.
+(a) Lampreys Overall
+(b) Lampreys Larvae and Adults
+Figure 8: Constant Sex Ratio
+
+<<<PAGE 12>>>
+
+4.2
+The Impact of the Ecosystem
+1).Harming Native Populations in Ecosystems as Invasive Species
+To simulate the invasion of lampreys into the Great Lakes as an exotic species, we first create an
+ecosystem without lampreys as shown in Figure 9(a). Before lampreys invade the system in Figure
+9(a), the various populations of the system are in a stable state. If lampreys invade from the state
+of the current stable ecosystem, the image shown in Figure 9(b) can be obtained, where the stable
+value of the number of various populations in Figure 9(a) is used as the initial value of the number
+of various populations in Figure 9(b).
+(a) Before Invasion
+(b) After Invasion
+Figure 9: Number of Populations Before and After Biological Invasion by Lampreys
+After invading the ecosystem, the lampreys have no natural enemies, so they can reproduce
+in large numbers in a short period and eventually stabilize the population due to the amount of
+environmental resources. During this process, the native population declines significantly, which
+may even lead to the extinction of a population. Taking the invasion of lampreys into the Great
+Lakes of North America as an example, the changes in fish population size are similar to those in
+Figure 9(b). The substantial decline during the invasion of lampreys caused great losses to the local
+fishery economy [3].
+2).Purifying Water Quality
+From the trend of the curve in Figure 7(a), we can find that the number of lampreys larvae
+accounted for a significantly larger proportion of the total, and a large number of lampreys larvae
+feed on the microorganisms and plankton in the aquatic environment, which can play a role in
+purifying the water quality [4][5].
+3).Impacting the Benthic Ecosystem
+The larvae of lampreys live on the bottoms of freshwater rivers and streams, where they feed
+mainly on filter-feeding organic debris and microorganisms. They construct habitats by excavating
+sediments [6], an activity that increases the oxidation of bottom sediments and promotes nutrient
+cycling in the benthic environment.
+
+<<<PAGE 13>>>
+
+4.3
+Result Analysis
+We validate Eqation (5), all of which are shown in Figure 10 as unsmoothed data.
+(a) Percentage of Females and Population of Adults (b) Percentage of Females and Environment sources
+Figure 10: Validation of the Plausibility of the Female Percentage
+From Figure 10(a), we can see that the female proportion of lampreys is negatively correlated
+with the number of mature body population, and the female proportion of lampreys decreases when
+the number of mature body population rises, which is the same as the study in literature [2]. From
+Figure 10(b), we can see that the sex ratio of lampreys has the same trend with the amount of
+environmental resources, the female ratio of lampreys increases when the amount of environmen-
+tal resources increases, and the female ratio of lampreys decreases when the amount of resources
+decreases, which is in line with the description of problem background. This shows that our de-
+scription of the way the sex ratio of the lampreys population changes is reasonable.
+Since we smooth the fluctuating data, this needs to be validated for plausibility.
+(a) Larvae of Lampreys on Track with Plankton
+(b) Adultes of Lampreys on Track with Plankton
+Figure 11: Smoothing Process Rationalization Verification
+The closed-loop curves in Figure 11 show that the population sizes of lampreys larvae and
+plankton, lampreys maturity, and fish all fluctuate periodically, reflecting the fact that the system is
+
+<<<PAGE 14>>>
+
+stable, so it is reasonable for us to take a 7-year average of the raw data.
+5
+Task2: Advantages and Disadvantages of Populations
+5.1
+Advantages of Populations
+1).The Advantages of Metamorphosis: Resistant to Harsh Environments
+In order to simulate changes in the environment, we vary the amount of bait available to the
+lampreys population, as well as varying the growth rates of plankton and fish, and the environmental
+holding capacity.
+(a) The Decrease in Environmental Resources
+(b) The Increase in Environmental Resources
+Figure 12: Changes in the Amount of Environmental Resources on the Larvae of Lampreys
+(a) The Decrease in Environmental Resources
+(b) The Increase in Environmental Resources
+Figure 13: Changes in the Amount of Environmental Resources on the Adults of Lampreys
+We reduce the amount of environmental resources and draw the larvae and adults of lampreys
+
+<<<PAGE 15>>>
+
+with their feeding bait and competitors in Figures 12(a) and 13(a), respectively. We then increase
+the amount of environmental resources and draw Figures 12(b) and 13(b), respectively.
+Based on Figure 12(a) and Figure 12(b), we can see that lampreys larvae are more affected by
+changes in the amount of environmental resources, and the larval population continues to decline
+after the decline in the amount of food bait, and may even become extinct. In contrast, Figure 13
+shows that lampreys mature individuals will have a decline in population size after the decrease
+in the amount of food bait but will eventually reach a relatively stable state. Therefore, metamor-
+phosis of lampreys can improve their resistance to harsh environments, so lampreys can effectively
+improve the adaptive ability of the population through metamorphosis, which ensures the normal
+reproduction of the population.
+Both adult and larval populations are consistently increasing after a rise in the number of baits,
+thus suggesting that lampreys are more competitive and more likely to reproduce in food-rich en-
+vironments.
+2).The Advantages of Metamorphosis: Making Full Use of Environmental Resources
+To investigate the effect of whether or not they can metamorphose on lampreys populations,
+we assume lampreys larvae not to metamorphose into adults, create an ecological model with only
+lampreys larvae, larval competitors, and plankton to obtain Figure 14(a), and then compare the
+number of lampreys in the two ecological models of whether or not they can metamorphose with
+the number of plankton to obtain Figure 14(b).
+Compared with Figure 14(a) and Figure 14(b), we conclude that the population size of lampreys
+without sex change is smaller than that with sex change, indicating that the sex change of lampreys is
+favorable to population reproduction. We analyze the reason for this is that lampreys have different
+feeding bait before and after the change of sexual state, which effectively reduces the intraspecific
+competition and realizes the full utilization of environmental resources.
+(a) No Sex Change
+(b) Comparison before and after Sex Change
+Figure 14: Before and after Lampreys Sex Change
+3).Advantages of Variable Sex Ratio: Having the Ability to Resist Mutations
+To simulate the event of a plankton outbreak, we make a large increase in plankton at day 75,
+obtaining Figure 15.
+According to Figure 15, we observe that a significant increase in the plankton population within
+
+<<<PAGE 16>>>
+
+the ecosystem triggers changes in the environmental resources, which in turn induce alterations in
+the sex ratio of the lamprey population. This adaptive mechanism allows the lamprey population to
+initially expand in response to the environmental changes, followed by a contraction, and ultimately
+stabilizes at a level nearly akin to its size prior to the perturbation. From this, we deduce that lamprey
+populations, characterized by their flexible sex ratios, exhibit enhanced resilience to environmental
+fluctuations.
+Figure 15: Resistance of Lampreys to Environmental Mutations
+5.2
+Disadvantages of Populations
+1).Migratory Disadvantages: Human Intervention Can Have a Greater Suppression of
+Populations
+To model the effects of human intervention on lampreys species, we make a reduction in the
+number of lampreys returning to spawn in the seventh year to get Figure 16.
+The artificial intervention reduces the number of migratory spawning lampreys, and thus the
+number of lampreys larvae, and the lampreys population produces a greater suppression of the
+population. Figure 16 reflects the decline of lampreys’ migratory spawning under the effect of
+artificial intervention.
+Figure 16: Effects of Artificial Interventions on the Migratory Spawning of lampreys
+
+<<<PAGE 17>>>
+
+2).Highly Influenced by Habitat Environment
+According to Figure 16 we find that lampreys larvae are very sensitive to changes in the amount
+of environmental resources, and that habitat degradation can greatly affect the population size of
+lampreys larvae, which can lead to a decline in the population as a whole.
+3).Risk of One-time Reproduction
+According to the population biology of lampreys, lampreys reproduce once and then die. We
+simulate that a certain generation of lampreys was subjected to artificial interventions or environ-
+mental influences that resulted in too low a survival rate of spawning, halving the number of lam-
+preys spawned in the 50th year, to obtain Figure 17. When the survival rate of a certain generation
+of lampreys is too low for spawning due to artificial intervention or environmental impacts, the
+population of lampreys decreases significantly, which greatly threatens the resilience of the pop-
+ulation and leads to the decline of the population size, which puts the population in an existential
+crisis.
+Figure 17: Effect of One-time Breeding of Lampreys on Population Size
+6
+Task3: Impact of Sex Ratio on Ecosystem Stability
+6.1
+Classification of Ecosystem Stability
+We divided the evaluation indexes of ecosystem stability into resistance stability, resilience
+stability, and sustainability of the ecosystem. We introduce a perturbation term in our model to
+simulate the effect of emergencies on the population in the ecosystem, and an artificial intervention
+term to simulate the effect of annual human activities on the population of lampreys. According
+to our simulations, the effects of changes in the sex ratio of lampreys populations on ecosystem
+stability are as follows.
+
+<<<PAGE 18>>>
+
+6.2
+Ecosystem Resistance Stability and Resilience Stability
+1).Mutations in the Population Size of Lampreys Populations
+We introduce an impulse perturbation term E into the model, assuming that human exploitation
+of lampreys in year t0 has resulted in a significant decline in population size by E. We then analyze
+the stability of the ecosystems in which lampreys populations can and cannot change their sex ratios,
+respectively.
+(a) Sex Ratio Can Change
+(b) Sex Ratio Unchanged
+Figure 18: Mutations in the Population Size of Lampreys Populations
+The data for the variable and constant sex ratio cases in Figure 18 are shown in Table 5, where
+t∆= t2 −t1,
+(17)
+where t1 is the start time of the perturbation, t2 is the recovery end time.In addition, the degree of
+fluctuation is the sum of the fluctuations of the various groups
+∑
+ϕ =
+∑|∆i,t+τ −∆i,t|
+∆i,t
+,
+(18)
+
+<<<PAGE 19>>>
+
+where τ is the time taken for the largest fluctuations, ϕ is the percentage of fluctuation.
+Table 5: Data on Population Mutation of Lampreys
+Situation
+Recovery
+Duration
+Fluctuation
+Level
+Lampreys
+Larva
+Competitors
+Plankton
+Variable
+18
+23.28%
+8.46%
+12.52%
+2.30%
+Invariant
+22
+30.41%
+8.72%
+18.06%
+3.63%
+2).Mutations in Plankton Populations
+In order to study the sudden change in the plankton populations, we introduce the impulse
+perturbation term F and assume that there is a sudden change in the plankton populations in this
+ecosystem in year t1.
+(a) Sex Ratio Can Change
+(b) Sex Ratio Unchanged
+Figure 19: Mutations in Plankton Populations
+
+<<<PAGE 20>>>
+
+The data for the variable and constant sex ratio cases in Figure 19 are shown in Table 6, using
+the Equation (17) and (18).
+Table 6: Data on Sudden Changes in the Number of Planktonic Organisms
+Situation Recovery
+Duration
+Fluctuation
+Level
+Lampreys
+Larva
+Competitors Plankton
+Adult
+Competitors
+Variable
+28
+33.19%
+18.46%
+2.74%
+5.24%
+6.75%
+Invariant
+38
+49.75%
+18.84%
+20.85%
+5.40%
+4.66%
+Based on the above images and data, we find that the resistance stability and resilience stability
+of the ecosystems of lampreys with changeable sex ratios are stronger than those of lampreys with
+unchangeable sex ratios. Therefore when the sex ratio of lampreys is changeable, the stability of
+the ecosystem in which it is located is better.
+6.3
+Sustainability of Ecosystems
+To study the sustainability of the ecosystem of lampreys populations, we add an artificial in-
+tervention of intensity F to the number of lampreys populations Xj in this ecosystem to simulate
+changes in the numbers of various populations in this ecosystem when it is exposed to long-term
+pressures from humans.
+Figure 20: Changes in Ecosystem Population Size after Artificial Intervention
+Figure 20 shows that the population of lampreys declines but stabilizes when the sex ratio is
+variable and there is a long-term intervention. The other populations in the ecosystem are also
+stable when they undergo the same slight changes. This suggests that ecosystems with variable sex
+ratios of lampreys are sustainable.
+
+<<<PAGE 21>>>
+
+6.4
+Conclusion
+In summary, a change in the sex ratio of a population of lampreys makes the ecosystem in which
+it is found more stable. Whether it is a sudden change in population size within an ecosystem or
+long-term pressure on the ecosystem, the lampreys population can become more stable through
+changes in sex ratio.
+7
+Task4: Impact of Changing Sex Ratio on Other Species
+7.1
+Add Parasite Populations
+When we study the parasites of lampreys’ populations, more than 80% of the reports (includ-
+ing life stages) originate from lampreys’ mature bodies, and only 11% of the reports originate from
+lampreys’ larvae. This may indicate that parasites of lampreys’ populations are predominantly para-
+sitized by lampreys’ mature bodies [7]. We therefore introduce the parasite population of lampreys’
+mature body population in our model and consider the effect of its parasitism on the lampreys’ ma-
+ture body population.
+If the population of parasites is Pt, without artificial intervention (i.e. F = 0), then the natural
+rate of growth of lampreys maturity is
+Xj+1,t+1 −Xj,t
+Xj,t
+= −1 + 1 −βn
+Ky
+yt −
+7
+∑
+j=5
+˜kjXj,t −kLCt −DPt,
+(19)
+where D is the increased risk of death for lampreys infected with the parasite. And the natural
+growth rate of the parasite is
+Pt+1 −Pt
+Pt
+= −d + ζ + d
+km
+7
+∑
+i=5
+Xj,t −˜kpPt,
+(20)
+where Pt is the parasite population size, d is the natural mortality rate of the parasite in the absence
+of host presence, ζ is the natural growth rate of the parasite in the presence of a sufficient number of
+hosts, ˜kp is the coefficient of intraspecies competition, and km is the environmental holding capacity
+of the lampreys mature body.
+7.2
+Model Solution and Result Analysis
+1).From the Perspective of the Total Population of Lampreys
+Figure 21 shows the curve of population size change after the addition of parasites without
+distinguishing between larvae and mature individuals. In terms of the overall population size of
+lampreys, the sex ratio of lampreys is variable compared with non-variable, the former parasite
+population is more numerous, indicating that when the sex ratio of lampreys is variable, it is favor-
+able to the parasite population in this ecosystem, and it can promote the reproduction of the parasite
+population. As for the plankton, the plankton population was also more numerous in ecosystems
+with variable sex ratios. Both indicate that the characteristic of variable sex ratio is also beneficial
+to the plankton population.
+
+<<<PAGE 22>>>
+
+(a) Changes in Gender
+(b) No Changes in Gender
+Figure 21: After Adding Parasites (no distinction between larvae and adults)
+2).From the Perspective of Larval and Adult Numbers in Lampreys Populations
+From Figure 22, we can see that the parasites mainly parasitize the mature bodies of lampreys,
+which leads to a decrease in the population size of mature bodies, making the number of repro-
+duction decrease, thus affecting the number of lampreys larvae. When the sex ratio of lampreys
+population is variable, the population will change the proportion of females with the change of the
+amount of environmental resources, so that the fluctuation degree of the population of lampreys is
+small, and the number of parasites population can be increased stably. When the sex ratio of the
+population of lampreys is not constant, the fluctuation degree of the hatchling population is larger
+after being affected by parasites, which is not conducive to the increase in the number of parasitic
+populations. At the same time, a variable sex ratio will reduce the number of larvae, making the
+number of plankton rise, which is favorable to the development of plankton.
+(a) Changes in Gender
+(b) No Changes in Gender
+Figure 22: After Adding Parasites (distinction between larvae and adults)
+
+<<<PAGE 23>>>
+
+8
+Analysis on Model’s Sensitivity
+8.1
+Impact Analysis of Model Parameters
+To analyze the influence of the model parameters, we focus on the effects of the female per-
+centage Mt, the reproduction coefficient α, and the intensity of human intervention F on the model
+output when varied over a small range. We perturbed each parameter in the model by ±5% to
+analyze lampreys population size to obtain the most influential parameters on model output.
+From Figure 23, we can see that changes in the reproduction coefficient α and the proportion of
+females Mt caused the fluctuations in the population size of lampreys to reach 17.56% and 16.03%
+at t = 100, while the fluctuations caused by the other parameters were within 3.34%, which shows
+that changes in the population size of lampreys are very sensitive to the reproduction coefficient
+and its sex ratio, and that α and Mt are the most influential parameters of the model.
+Figure 23: Sensitivity Analysis of the Model to Changes in the Parameters
+8.2
+Effects of Human Intervention and Parasite Populations on Models
+To analyze the effects of artificial interventions and parasite populations on the model, we obtain
+Figure 24(a) by adjusting the intensity of artificial interventions F, and varying the coefficient of
+risk of death of lampreys after being parasitized by parasites D to obtain Figure 24(b).
+From Figure 24 (a) we can see that the population size of lampreys decreases as the intensity of
+artificial intervention increases, so artificial intervention is one of the effective methods to control
+the population size of lampreys. From Figure 24 (b) we can see that the population of lampreys
+decreases as the risk of death of lampreys after being parasitized rises, which indicates that the
+changes in the population of lampreys after being parasitized by different parasite populations are
+related to the degree of damage caused by the parasite, and that there may be no significant change
+in the population of lampreys, or there may be a significant decrease in the population of lampreys.
+
+<<<PAGE 24>>>
+
+(a) Effect of Changing F on Lampreys
+(b) Effect of Changing D on Lampreys
+Figure 24: Effect of Changing Parameters on the Model
+8.3
+Conclusion
+Changes in the number of lampreys populations are very sensitive to their reproduction coeffi-
+cients and sex ratios, and if it is necessary to control the number of their populations, it is possible
+to control the changes in the number of their populations by controlling their migratory spawn-
+ing, and also by changing the amount of environmental resources to control the sex ratios of their
+populations, thus controlling the reproduction of their populations. The effect of parasites on the
+population of lampreys is related to the degree of damage caused by the parasite population, and
+the introduction of parasites of lampreys can be considered to inhibit the growth of the population
+of lampreys when certain lampreys organisms are invaded.
+9
+Strengths and Weaknesses
+Strengths:
+• We make age grouping of lampreys populations, which can effectively take into account the
+changes in population size of lampreys at different stages, and facilitate the analysis of the
+metamorphosis process of lampreys to make the model more consistent with reality.
+• Our description of changes in sex ratios in lampreys populations incorporates specialized
+studies from the relevant literature, and the fitted function is scientifically valid.
+Weaknesses:
+• In reality, there will be some species that occasionally prey on lampreys, and our model does
+not take into account lampreys being preyed upon, so the model results will deviate somewhat
+from reality.
+
+<<<PAGE 25>>>
+
+References
+[1] Zhu Y, Jun L, Yue P, et al. Lampreys: an important model animal for biological evolution and
+disease research[J]. Genetics, 2020, 42 (09): 847-857.
+[2] Hardisty M W. Sex Composition of Lamprey populations[J]. Nature, 1961, 191: 1116–1117.
+[3] Johnson N S, Jubar A K, Keffer D A, et al. A case study of sea lamprey (Petromyzon marinus)
+control and ecology in a microcosm of the Great Lakes[J]. Journal of Great Lakes Research,
+2021, 47: 492-505.
+[4] Docker M F. Lampreys: Biology, Conservation and Control[M]. Springer, 2015.
+[5] Boeker, C., Geist, J. Lampreys as ecosystem engineers: burrows of Eudontomyzon sp. and
+their impact on physical, chemical, and microbial properties in freshwater substrates[J]. Hy-
+drobiologia, 2016, 777: 171–181.
+[6] Daniel M. Weaver, Stephen M. Coghlan Jr. , Joseph Zydlewski. Effects of sea lamprey sub-
+strate modification and carcass nutrients on macroinvertebrate assemblages in a small Atlantic
+coastal stream[J]. Journal of Freshwater Ecology, 2018, 33(1), 19-30.
+[7] Megan A. Shavalier, Mohamed Faisal, Mary L. Moser, Thomas P. Loch. Parasites and mi-
+crobial infections of lamprey (order Petromyzontiformes Berg 1940): A review of existing
+knowledge and recent studies[J]. Journal of Great Lakes Research, 2021, 47: 90-111.
+
+<<<PAGE 26>>>
+Report on Use of AI
+1.GPT-4 Turbo
+Query1: What events can cause a sudden increase or decrease in plankton?
+Output: Plankton populations can increase or decrease suddenly as a result of a variety of
+natural and anthropogenic factors. The following are some of the events that can lead to changes
+in plankton populations:
+Events that lead to a sudden increase in phytoplankton:
+• Increased light: For photosynthesis-dependent phytoplankton (planktonic algae), long day-
+light hours in spring and summer can promote rapid growth.
+• Nutrient inputs: Influxes of nutrients (e.g. nitrogen, phosphorus) from land into the water col-
+umn, especially through agricultural runoff or municipal wastewater discharges, can rapidly
+promote phytoplankton blooms, resulting in ”blooms”. 3. Changes in water temperature:
+Water temperatures can vary greatly.
+• Changes in water temperature: The increase in water temperature favors the growth rate of
+certain plankton, especially in temperate and boreal waters.
+• Artificial fertilizers: Chemical or organic fertilizers are artificially added to aquaculture wa-
+ters to promote phytoplankton growth, which in turn provides sufficient food for farmed fish
+or other aquatic animals.
+Events that lead to a sudden decrease in phytoplankton:
+• Increased predation pressure: An increase in the population of zooplankton (e.g. copepods)
+or heavy feeding by fish can rapidly reduce phytoplankton populations.
+• Toxic discharges: Discharges of industrial effluents, pesticides, and other toxic chemicals
+into the water column can lead to massive plankton die-offs.
+• Extreme weather events: Extreme weather events such as floods, droughts or cold snaps can
+indirectly affect the survival of phytoplankton by changing the chemical or physical condi-
+tions of the water.
+• Reduced light: Persistent rainy weather, increased turbidity, and other factors reduce the
+amount of light in the water column, affecting the growth of phytoplankton, on which pho-
+tosynthesis depends.
+• Eutrophication: Although the increase of nutrients initially promotes the growth of phyto-
+plankton, prolonged and excessive eutrophication may lead to a lack of oxygen in the water
+body, which in turn triggers the death of a large number of zooplankton and other aquatic
+organisms.
+Each of these events can be represented in an ecosystem model by pulse terms to simulate their
+transient effects on plankton populations.
+2.GPT-4 Turbo
+Query2: How do you determine the stability of an ecosystem?
+Output: The stability of an ecosystem is its ability to maintain its structure and function un-
+changed or to recover rapidly in the face of external disturbances and pressures. Judging ecosys-
+tem stability involves a number of dimensions, including biodiversity, productivity, resistance, re-
+silience and persistence. The following are some of the key aspects and methods for assessing
+ecosystem stability:
+
+<<<PAGE 27>>>
+• Species diversity: Species richness and species evenness are important indicators of ecosys-
+tem stability. High species diversity generally implies that ecosystems are more resilient to
+external disturbances, as a diversity of species can perform a diversity of ecological functions
+and increase the redundancy of the system.
+• Primary productivity: Primary productivity refers to the rate at which producers in an ecosys-
+tem (e.g. plants) convert inorganic matter into organic matter through photosynthesis or
+chemical synthesis. High primary productivity indicates that an ecosystem has a strong ca-
+pacity for energy conversion and material cycling, and is one of the most important indicators
+of ecosystem stability.
+• Resilience: the ability of an ecosystem to maintain its structure and function in the face of
+disturbance.
+• Resilience: the speed and extent to which an ecosystem can recover to its original state after
+being subjected to disturbance. The stability of an ecosystem can be judged by evaluating its
+recovery in the face of natural disasters, human intervention and other disturbances.
+• Duration of the system: The ability of an ecosystem to maintain its basic functions and struc-
+ture over a long period of time and not easily collapse due to external disturbances indicates
+a high degree of stability.
+• Multiple species performing the same ecological function: When multiple species are able to
+perform the same ecological function, the overall function of the ecosystem can be maintained
+by other species even if some species are reduced or disappear due to disturbances, which is
+an important aspect of measuring ecosystem stability.
+Method of judgment:
+• Long-term ecological research: assessing trends and responses to disturbances through long-
+term monitoring of indicators such as species composition, biomass and energy flow in
+ecosystems.
+• Model simulation: Use ecological models to simulate the dynamic changes of ecosystems
+under different disturbances and predict their stability.
+• Comparative analysis: Compare the responses of different ecosystems or the same ecosystem
+under different disturbance conditions to assess the differences in their stability.
+• Experimental studies: Observe ecosystem responses to disturbances by setting up controlled
+experiments, such as artificially adding or removing species, to assess their stability.
+In summary, judging the stability of an ecosystem requires the integrated consideration of mul-
+tiple ecological indicators and methods, and a comprehensive understanding of the ecosystem’s re-
+sponse and adaptive capacity in the face of changes and disturbances can only be achieved through
+long-term observation and careful study.

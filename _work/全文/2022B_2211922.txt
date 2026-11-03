@@ -1,0 +1,1742 @@
+
+<<<PAGE 1>>>
+Problem Chosen
+B
+2021
+MCM/ICM
+Summary Sheet
+Team Control Number
+2211922
+Reservoir Management: The Art of Proper Allocation
+People have long used dams to store water to facilitate their lives. Reservoirs not only provide people
+with water for production and living, but also make contributions to hydropower generation. In recent
+days, the hot and dry weather with little rainfalls strongly affects the water level in reservoirs. The
+passage mainly solves the problem encountered in the 2 dams – the Glen Canyon dam and the Hoover
+dam along the Colorado River. By studying their water level and suggest operations, the passage gets
+some results that can finally facilitate people’s lives, and can ensure their basic demand by arranging
+the water scheduling operations in the reservoirs rationally.
+For the first task, a "Double-Dam" system is abtracted, then we build a difference equation model
+to simulate the water flows inside and outside from the system and an optimization model that fits
+the demand well. Firstly, we collect relevant data in terms of agriculture, industry, population and
+electricity utility respectively, then convert the data into the demand for water, which can better relate
+to the water volume of the two dams. Then, two sequences respectively represent the water level of the
+two dams in the model play important parts in the indication that how long will the supply miss the
+demand. The model subtly simulates the water flows between the "Double-Dam" system and external
+environment, and the relationship of the two dams can be incorporated as well.
+The result shows that under given condition, the water should be drawn from Lake Powell is about
+430 million m3, and 225 million m3 drawn from Lake Mead (on average). If the additional water only
+comes from the upstream, after 61 days, the demand and the lower bound of electricity generation
+would no longer meet. To deal with such a problem, about 40.7 million m3 is needed daily to guarantee
+the need. Besides, the result also shows that there exists periodic fluctuation of the water storage
+volume in the reservoirs with a macro downtrend. Therefore, the model should re-run every 100 days
+according to such a period.
+For the second task, in order to deal with the competitive relationship of electricity production, a
+multi-objective model is built and the genetic algorithm is used to find the best allocation plan for
+general usage and power production. As an extension of the model in Task 1, the algorithm helps find
+the best distribution ratio in the five states. The result shows that California is allocated the most water
+sources, with a proportion for nearly 50%. Besides, the proportion of water for electricity generation in
+California and Arizona states is slightly more than that for general usage, and the situation is opposite
+in the rest three states.
+The third task asks for solutions when reservoir resources are scarce. When the water really cannot
+meet the demand, the distribution method is changed by evaluating the importance of the 5 states in
+each aspect. Using the principal component analysis (PCA) method, we evaluate the importance
+of the 5 states in each aspect, then rearrange the proportion for each state and each usage. California
+takes up the majority of water usage since its advanced development. In terms of the usage, electricity
+production takes up for slightly over 50%.
+Finally, sensitivity analysis is performed. The model output is analyzed by adjusting parameters
+of water volume, taking measures on water-saving, development in renewable energy technologies,
+growth and shrinkage on population, agriculture scale, industry and power generation, and finally the
+suppliment of the water inflows from upstream. The model is robust and self-adjustable according to
+the results. The concrete information is shown in Section 7.
+Key words: "Double-Dam" System, Management, Difference Equation Model, Optimization Model,
+Multi-objective Programming, Genetic Algorithm, Principal Component Analysis
+
+<<<PAGE 2>>>
+Team 2211922
+Page 1
+Contents
+1
+Introduction
+2
+1.1
+Problem Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.2
+Problem Restatement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.3
+Our Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+2
+Assumptions and Explanations
+3
+3
+Abbreviations and Symbol Notations
+4
+4
+Arrangements and Changes of Water Supply and Demand
+5
+4.1
+Overview: The Data for Each Aspect . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+4.2
+Analysis: The "In and Out" of Water in the Reservoirs . . . . . . . . . . . . . . . . . .
+7
+4.3
+Construction: The Double-Dam System . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+4.4
+Result: The Allocation and Changes . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+5
+Balance of Water Distribution for Two Opposite Usages
+10
+5.1
+Analyzing – The Distribution for Different Utilities . . . . . . . . . . . . . . . . . . .
+10
+5.2
+Extending – The Distribution Model Based on the Double-Dam System . . . . . . . .
+11
+5.3
+Solving – The Arrangement for Competitive Demands
+. . . . . . . . . . . . . . . . .
+12
+5.3.1
+The Genetic Algorithm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+5.3.2
+The Model Result . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+6
+Thoughts on Water Shortage in Reservoirs
+14
+6.1
+Method Development: The Proper Distribution with Focuses . . . . . . . . . . . . . .
+14
+6.2
+The Evaluation of the Importance for Each State . . . . . . . . . . . . . . . . . . . . .
+14
+6.3
+Result Statement: The Actual Distribution of Water . . . . . . . . . . . . . . . . . . .
+16
+7
+Sensitivity and Robustness Analysis of the Model
+16
+8
+Model Advantages and Drawbacks
+18
+8.1
+Advantages
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+8.2
+Drawbacks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+9
+Appendix
+21
+9.1
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+9.2
+The Method of Solving the Water Volume Changes . . . . . . . . . . . . . . . . . . .
+21
+9.3
+Part of Data and Results
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+9.3.1
+Data in Section 4.1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+9.3.2
+The result in Task 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+9.3.3
+The result in Task 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+9.4
+Code for the Optimization Function of Task 1 . . . . . . . . . . . . . . . . . . . . . .
+22
+9.5
+Code of the Genetic Algorithm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+
+<<<PAGE 3>>>
+Team 2211922
+Page 2
+1
+Introduction
+1.1
+Problem Background
+Humans have been using water for a long time to facilitate their lives. There is no doubt that dams are
+one of the most general water conservancy infrastructures throughout the world. By intercepting rivers
+and forming reservoirs, dams can not only be used to prevent floods, provide water for production and
+domestic use, but more importantly, can also be used to generate electricity, which can give support
+for people’s daily life in surrounding districts.
+Along the Colorado River in the western part of the United States, there are two famous dams that
+cross it. They are the Glen Canyon dam and the Hoover dam. The Glen Canyon dam plays a crucial
+role in storing the water resources and providing the need in surrounding communities since the dam
+is located in the arid southwestern region. The Hoover dam, built in 1936, also plays an important rule
+in flood prevention, irrigation, power generation, shipping and water supply.
+Figure 1: The Glen Canyon Dam (left) and the Hoover Dam (right), from Microsoft Bing
+However, as the climate change evolves, water storage in these dams is decreasing. The reduction
+of the water volume of these dams will not only affect the water demand for production and living,
+but simultaneously, will also affect the electricity generation, so that the comprehensive benefit of the
+dams will gradually decline. Therefore, in order to help the 5 states – Arizona (AZ), California (CA),
+Wyoming (WY), New Mexico (NM) and Colorado (CO) better use the water resource which derives
+from the Glen Canyon dam and the Hoover dam, a proper water distribution plan is badly required.
+1.2
+Problem Restatement
+For the requirements given, we restate them to help better position the focus of our work.
+• Assume that the water level in Lake Mead is 𝑀, and in Lake Powell is 𝑃, and part of water inflows
+to Lake Mead from Lake Powell. Task 1 firstly asks for the arrangement of water drawn from each
+lake to meet the demands. Then, it is also required to estimate how long it will take until the demands
+are not met under the circumstance that no additional water is supplied and the demand is fixed. After
+
+<<<PAGE 4>>>
+Team 2211922
+Page 3
+that, it is required to make discussions on the supply amount of additional water under the condition
+formerly mentioned with the interests of Mexico incorporated. Finally, it would be advisible to address
+how long should the model to re-run to adapt to changes of condition.
+• Since there exists a competing relationship between general usage and electricity production of
+water in the reservoirs, Task 2 demands to come up with the best means to balance the different utilities
+of water and state the criteria in an explicit way. Note that there exists a lower bound for electricity
+generation.
+• Task 3 requires to suggest approaches to tackle with the shortage of water which cannot meet
+all the demands of electricity production and general usages (including agricultural, industrial and
+residential usages).
+• Finally, a sensitivity analysis is required to perfom. When fluctuations of usage of water in
+agriculture, industry and population, and the changes in the electricity use appear, the response of the
+model should be revealed.
+1.3
+Our Work
+Based on the restatement of requirements, our work can be concluded as follows:
+(1) Analyze the demand of water in 5 states – AZ, CA, WY, NM and CO. Then build a difference
+equation model and a optimization model for water distribution of reservoirs that not only meets
+various demands (ariculture, industry, resident and electricity generation) but also takes the water level
+of 2 dams into account. Except that, analyze the supply and demand when additional water resources
+are scarce according to the detailed condition given by Task 1 The water that outflows to Mexico should
+also be addressed.
+(2) Suggest a multi-objective programming model to balance the usage of water for general
+approach and electricity production, since they have competitive interests.
+(3) Based on the demand for each state in each usage, reallocate the water distribution by evaluating
+the importance of them using principal component analysis (PCA) method.
+(4) Make sensitivity analysis when parameters like population, agricultural and industrial grows
+or shrinks. Moreover, the impact of increased use of renewable energy and water & electricity saving
+measures on the model output also needs to be taken into consideration.
+The flow chart of our work is presented by Figure 2.
+2
+Assumptions and Explanations
+In actual practice, there are many complicated conditions that may affect the output of the model. In
+order to make model more stable and less complex, the following assumptions and their explanations
+are incorporated.
+• The water level of the reservoir is proportional to the water volume. Since the dams are built
+according to the terrain, the relationship between the actual water level and water volume is difficult to
+analyze. Therefore, this assumption is aiming to simplify the problem.
+• The inflow of water from upstream remains unchanged within a short period of time. In
+actual, the water inflows from upstream may vary over time. However, to better abstract the model, we
+assume the inflow amount is relatively fixed.
+
+<<<PAGE 5>>>
+Team 2211922
+Page 4
+Difference Equation 
+Model
+Simulation 
+for 
+Storage of Dam
+The daily moisture content   
+of 
+Glen Canyon 𝒂𝒏
+Electricity Use
+The Period 
+of 
+Water Addition
+The daily moisture content   
+of 
+Hoover 𝒃𝒏
+𝑇
+𝑉𝑜𝑙𝑢𝑚𝑒
+General 
+Use
+𝑈𝐸𝛿1,𝛿1∗. 𝑈𝐺𝛿2,𝛿2∗
+Single Objective Programming
+CO
+WY
+NM
+AZ
+CA
+Electricity Use
+CO
+CA
+WY
+NM
+General Use
+GA Algorithm 𝐹𝑖𝑡(𝑥) = 𝑓(𝑥) + 𝜁𝑝(∑𝐶𝑜𝑛𝑠𝑡𝑟𝑎𝑖𝑛𝑡)
+CA
+AZ
+NM
+CO
+WY
+E
+A
+I
+P
+𝑏1 The distribution of each purpose 
+𝑏2 The distribution ratio of each state
+PCA
+Sensitivity
+and
+Robustness Analysis
+AZ
+Figure 2: The Flow Chart of Our Work
+• The proportion of power generation usages of water is fixed to a constant in every state, so
+as other usages. In order to finely estimate the water distribution amount for each state, we assume
+that the water usage for every aspect is the same in different states.
+• Rainfall is omitted to solve the model. Because the officials speculate that there will be no
+rainfall appear in the near future, so the solution of the model only take the inflows of water from
+upstream of Colorado river into consideration.
+3
+Abbreviations and Symbol Notations
+In order to make fomula and equations more intuitive and to present our article in a concise manner,
+we use these abbreviations or notations to represent different entities.
+Abbreviations
+Description
+𝐷𝑔
+Water demand for general usage
+𝐷𝑒
+Water demand for power generation
+𝐷𝑎
+Water demand for agriculture
+𝐷𝑖
+Water demand for power generation
+𝐷𝑟
+Water demand for daily life
+{𝑎𝑛}
+The water volume of the Glen Canyon Dam on n’th day after water shortage
+{𝑏𝑛}
+The water volume of the Hoover Dam on n’th day after water shortage
+
+<<<PAGE 6>>>
+Team 2211922
+Page 5
+𝑈𝐴
+Coordination level of water resource utilization
+𝐹𝑖𝑡(𝑥)
+Fitness function in the genetic function
+A
+Water demand matrix
+𝚺
+Covariance matrix of A after standardization
+b
+The distribution ratio for each usage /each state
+4
+Arrangements and Changes of Water Supply and Demand
+4.1
+Overview: The Data for Each Aspect
+In order to better define the demand for water, it is essentially important to get related data. Since
+there’re no direct data given, we get several data such as electricity consumption, cultivated land area,
+population and the number of laborers in the 5 states (the data source is attached in the Reference in
+Appendix 9.1).
+• Electricity Generation: We collect data of the electricity consumption per capita in these 5
+states from 1960 to 2019, by assuming that the usage of the electricity is generally increasing with
+time going by, we take the electricity consumption in 2019 as our target of analysis. Figure 3 gives an
+intuitive way to represent them by visualization.
+0
+5000
+10000
+15000
+20000
+25000
+30000
+AZ
+CA
+WY
+NM
+CO
+Electricity Consumption: Kw·h
+States
+The Electricity Consumption Per Capita in the 5 States
+Figure 3: The Electricity Consumption Per Capita in the 5 States
+The usage of electricity is relevant to the amount of the hydropower generation. Since the hy-
+dropower takes up 6.98% of the total amount of the electricity usage in the U.S. annually, we regard
+the generation of hydroelectric power by the Glen Canyon dam and the Hoover dam takes up the same
+ratio in people’s daily use of power in the 5 states. We also get information from the Internet that
+about 3.67m3 of water can produce 1kW· h of power, therefore, the daily water demand of electricity
+
+<<<PAGE 7>>>
+Team 2211922
+Page 6
+generation can be described as:
+𝐷𝑒= 𝐶𝑒×
+
+5
+∑︁
+𝑖=1
+𝑃𝑜𝑝
+
+× 6.98% × 3.67 ÷ 365
+Where 𝐷𝑒stands for the water demand for power generation, 𝐶𝑒represents the electricity consump-
+tion in the surrounding communities per capita, and 𝑃𝑜𝑝stands for the population of that state.
+• General Usage of Water: For agriculture, industry and family usage of the water, we also
+collected relevant data. The visualization of this part of data is shown in Figure 4.
+-8,000,000
+2,000,000
+12,000,000
+22,000,000
+32,000,000
+42,000,000
+AZ
+CA
+WY
+NM
+CO
+Area: acres
+States
+Area of Farm Land in the 5 States
+0
+2000000
+4000000
+6000000
+8000000
+10000000
+12000000
+14000000
+16000000
+18000000
+AZ
+CA
+WY
+NM
+CO
+Number of Laborers
+States
+Number of Laborers in the 5 States
+0
+5000000
+10000000
+15000000
+20000000
+25000000
+30000000
+35000000
+40000000
+AZ
+CA
+WY
+NM
+CO
+Population
+States
+Population in the 5 States
+Figure 4: The Condition of Agriculture, Industry and Population in the 5 States
+With respect to agriculture, the area of farm land is collected (unit: acre). By assuming that the
+water in need for every farmland is fixed, we can easily estimate the water demand 𝐷𝑎for agricultural
+usage by mutiplying the farmland area 𝐶𝑎with the average demand for a unit area annually, which is
+364.50m3/acre.
+𝐷𝑎= 𝐶𝑎× 364.50 ÷ 365
+For industry, we collect the number of laborers and project water expenses annually in each state.
+Through the calculation of these two data items and water tariff per unit, the water demand required by
+industry can be estimated as:
+𝐷𝑖= 𝐶𝑖×
+
+5
+∑︁
+𝑖=1
+𝐿𝑏𝑠
+
+÷ 𝐶𝑤÷ 365
+Where 𝐷𝑖indicates the water demand for industry, 𝐶𝑖stands for the water expense in industry per
+capita annually, 𝐿𝑏𝑠is the number of laborers for a certain state, and 𝐶𝑤is the water tariff per unit.
+Relevant data is attached to the Appendix 9.3.1.
+Finally for residential usage, we collect data from the Internet about the water consumption per
+capita, which is 0.54m3. By timing this item with the population, the water demand for families 𝐷𝑟
+
+<<<PAGE 8>>>
+Team 2211922
+Page 7
+can be easily estimated as
+𝐷𝑟=
+
+5
+∑︁
+𝑖=1
+𝑃𝑜𝑝
+
+× 0.54
+Add four demands together, the water demand 𝐷𝑔for general use can be calculated, which is:
+𝐷𝑔= 𝐷𝑎+ 𝐷𝑖+ 𝐷𝑟
+4.2
+Analysis: The "In and Out" of Water in the Reservoirs
+The Glen Canyon dam and the Hoover dam provide water and hydropower to surrounding states
+together. What’s more, part of the water in the Glen Canyon dam flows into the Hoover dam, making
+the two dams more closely linked. When the water level and the demand are fixed, how much water to
+draw from each dam is the problem.
+For the Glen Canyon dam, it not only supplies water for general use and power generation, but
+part of water from it outflows into the Hoover dam. In contrast, the Hoover dam mainly support the
+general and power-generate usage and has no concern about the outflow. But in order to take the
+river environment and the interests of Mexico into consideration, apparently the water in the Hoover
+dam shouldn’t be totally drawn. The process of water flow in Colorado river between the 2 dams are
+described in the picture shown as Figure 5, which is the basis of the model.
+The Glen Canyon Dam
+The Hoover Dam
+General Use
+Power Generation
+Figure 5: The Relationship between Two Dams (The arrows stand for water flows)
+As no additional water is available but only comes from the upstream, the water in the reservoir
+gradually dwindles to the point where it cannot supply the demand. Besides, to ensure the generation
+of electricity, the lower bound of the water volume is calculated, which is about 19.4 billion.
+Under such a condition, a rational estimation ought to be addressed, so that relevant departments can
+perform certain operations to fulfill the water volume to satisfy the demand. Moreover, an estimation
+of the additional water volume is also needed.
+4.3
+Construction: The Double-Dam System
+Based on the analysis in Section 4.1, we build a difference equation model to simulate changes of the
+two dams, and a optimization model to offer suggestions to negotiators to help them better perform
+the water distribution process.
+
+<<<PAGE 9>>>
+Team 2211922
+Page 8
+Firstly, we abstract the two dams into two nodes as a system. Since part of the water from the
+Glen Canyon dam flows along the Colorado River into the Hoover dam, we use a one-directional arrow
+between the two nodes to represent the flow of water. From the perspective of such a system, there
+is extra water inflows into it (only from upstreams of the river), and water should be drawn out of it.
+What’s more, there will be part of water left to go down to satisfy the need for other regions (e.g. for
+Mexico). The flowchart of the system with several parameters is shown in Figure 6.
+𝐷𝑎𝑚1
+𝐷𝑎𝑚2
+𝐸𝑥𝑡𝑟𝑎
+𝑘13
+𝑘24
+𝑘14
+𝑘23
+Electricity
+Life  & Production
+𝑎𝑛
+𝑏𝑛
+𝑎𝑛
+𝑏𝑛
+𝑇𝑘13
+𝑘23
+𝐹1
+𝐹2
+𝐹1
+𝑎𝑛
+𝑏𝑛
+𝑇𝑘14
+𝑘24
+𝐹2
+Mexico
+Figure 6: The Double-Dam System and the Water Flows
+There are several parameters in the diagram, 𝑎𝑛and 𝑏𝑛represents the water level (which is directly
+connected to the water volume) in the two dams in n’th day after additional water shortage under the
+assumption that 𝑎0 = 𝑉𝑝and 𝑏0 = 𝑉𝑚, 𝑉𝑝and 𝑉𝑚is proportional to the given water level 𝑃and 𝑀.
+The 𝐷𝑎𝑚1 stands for the Glen Canyon dam while the 𝐷𝑎𝑚2 stands for the Hoover dam. Specifically,
+parameters 𝑘𝑖𝑗are coefficients which is the ratio of water that outflows from its original dam. For the
+total outflows of the water, 2 major usages are seperated – the general use (agricultural, industrial and
+residential) which is represented by 𝐹1 and the power generation represented by 𝐹2.
+When additional water shortage occurs, the volume will gradually shrink within a certain period of
+time. Therefore, the numbers of elements in the two sequences will change over time as 𝑛increases.
+So when the total water volume is too low to feed the demand, the 𝑛is the number of days that need to
+be solved. The {𝑎𝑛} and {𝑏𝑛} can be described as the difference equation below:
+𝑎𝑛−𝑎𝑛−1 = −𝑘13𝑎𝑛−1 −𝑘14𝑎𝑛−1 + 𝑒
+𝑏𝑛−𝑏𝑛−1 = 𝑘14𝑎𝑛−1 −𝑘23𝑏𝑛−1 −𝑘24𝑏𝑛−1
+In the fomula above, the items in both sides of equation represent the increment of water volume
+in the dam. What’s more, 𝑒is the extra volume of water that inflows from upstream of the Colorado
+River, which is regarded as a constant within a certain period. Besides, {𝑎𝑛} and {𝑏𝑛} are internally
+correlated. The method of solving the general formula of {𝑎𝑛} and {𝑏𝑛} is attached to the Appendix in
+9.2. We solve the equation and find the concrete form of {𝑎𝑛} and {𝑏𝑛} as:
+
+<<<PAGE 10>>>
+Team 2211922
+Page 9
+𝑎𝑛= (1 −𝑘13 −𝑘14)𝑛
+𝑉𝑝−
+𝑒
+𝑘13 + 𝑘14
+
++
+𝑒
+𝑘13 + 𝑘14
+𝑏𝑛= 𝑘14(1 −𝑘13 −𝑘14)[(1 −𝑘23 −𝑘24)𝑛−(1 −𝑘13 −𝑘14)𝑛]
+𝑘13 + 𝑘14 −𝑘23 −𝑘24
+
+𝑉𝑝−
+𝑒
+𝑘13 + 𝑘14
+
++ (1 −𝑘23 −𝑘24)𝑛h
+𝑉𝑚−
+𝑒𝑘14
+(𝑘23 + 𝑘24)(𝑘13 + 𝑘14)
+i
++
+𝑒𝑘14
+(𝑘23 + 𝑘24)(𝑘13 + 𝑘14)
+In order to meet both the general demand and power generation demand, we construct the following
+optimization model to optimize the deployment of the water resource from the two dams:
+𝑚𝑖𝑛
+𝑘13,𝑘23
+𝐷𝑔−𝑎𝑛𝑘13 −𝑏𝑛𝑘23
+
+𝑚𝑖𝑛
+𝑘14,𝑘24 |𝐷𝑒−𝑎𝑛𝑘14 −𝑏𝑛𝑘24|
+𝑠.𝑡. 𝐷𝑒+ 𝐷𝑔< 𝑉𝑚+ 𝑉𝑝
+0 < 𝑘13 + 𝑘23 < 1
+0 < 𝑘14 + 𝑘24 < 1
+The 2 objective functions represent the absolute difference between the demand and the water usage
+for general use and electricity generation respectively. In practice, the water drawn from reservoirs
+should bestly fit the demand, or else the waste of water will occur. The objective functions above
+ensure the water drawn from the two dams generates a minimum amount of waste on the basis of meet
+the fundamental demands. In order to minimize the objective function, a few constraint conditions is
+added, which includes that the demand should less than the total volume of the two reservoirs, and the
+sum of nonnegative coefficients 𝑘13, 𝑘23 and 𝑘14, 𝑘24 be less than 1 to limit the extraction of water. The
+general term of {𝑎𝑛} and {𝑏𝑛} is used to optimize the objective function. The model perfectly abstracts
+the "in and out" water flow problem in the 2 dams.
+4.4
+Result: The Allocation and Changes
+By defining the value of parameters according to previous data, we solve the water volume which should
+be extracted from each dam, the time interval between the occurence of additional water shortage and
+the shortage for demand, and the additional water volume that should be supplied.
+When the water storage of the Glen Canyon dam is about 24.1 billion m3, and the storage of the
+Hoover dam is 25.6 billion m3 (which corresponds to a fixed set of 𝑃and 𝑀), the water that should be
+drawn from Lake Powell is about 430 million m3 while the water drawn from Lake Mead is about 225
+million m3 (Unit: per day, on average). The concrete data is shown in the Appendix. Mention that
+since we consider the water inflows to Lake Mead from Lake Powell over time, the actual result may
+fluctuate according to the situation.
+When the additional water is no longer available, the model shows that the water can supply the
+demand until the 61st day. Until then, additional water should be suppplied, with a relatively stable
+volume at 40.7 million m3 per day (about 2 trillion m3 within 61 days)
+
+<<<PAGE 11>>>
+Team 2211922
+Page 10
+What’s more, a special pattern occurs along with the outcome of the result – the water storage
+shows a periodic rebound in the overall declining trend like the trend shown in Figure 7. This is based
+0.00E+00
+1.00E+08
+2.00E+08
+3.00E+08
+4.00E+08
+5.00E+08
+6.00E+08
+7.00E+08
+1
+31
+61
+91
+121
+151
+181
+211
+241
+271
+301
+331
+361
+Actual Demand
+Sum of Water Supply
+Supplement Cycle
+When the dam is in the recovery period (the 
+diagram on the left), the in-time replenish-
+ment of water during this period can prevent 
+the shortage of water for later periods.
+𝑇
+𝑉𝑜𝑙𝑢𝑚𝑒
+Figure 7: Result of the Periodic Decrease for Water Storage
+on the assumption that the extra water inflows the double-dam system is a constant – the flow volume
+of the Colorado river, which coincides with the objective phenomenon that the system has the ability
+of self-regulation. Of course, in terms of the overall trend, the storage is always decreasing over time.
+We also get from this pattern that the time in a phase is about 100 days (over 3 months). If the
+negotiators want to make the model more accurate, the parameters should be redefined and the model
+should re-run every 100 days. Certainly, if the additional water is supplied by water transfer projects
+or other policies, the restart of the model is also needed. Finally, since part of the water outflows from
+the Glen Canyon dam supply the input to the Hoover dam, about 150 million m3 of water should be
+operated to flow from the Glen Canyon dam to the Hoover dam.
+Ultimately, in order to take the interests of Mexico into consideration, the rest of water volume
+should be at a proper level. In our model, this can be represented as 𝑏𝑛· 𝑘24 at most. That is because
+the water used for power generation of the Hoover dam outflows to the downstram, and there are some
+losses along the way.
+5
+Balance of Water Distribution for Two Opposite Usages
+5.1
+Analyzing – The Distribution for Different Utilities
+The Glen Canyon dam and the Hoover dam provide the surrounding areas with water for production,
+living and electricity generation.
+However, with climate change, the water in the dam needs to
+
+<<<PAGE 12>>>
+Team 2211922
+Page 11
+be distributed more rationally to make it most effective. The water in reservoirs, in general, can be
+seperated into 4 major utilities: agricultural, industrial, residential usage (we call it "general usage") and
+electricity generation. Therefore, rational allocation of water resources requires an fully understanding
+of how water in the dams affects these activities. The content of this part is described below.
+Firstly, the water is mainly for general usage and electricity production. Besides, in the general
+usage, the water in the reservoir is also partially converted into electricity for agriculture, industry and
+families. Therefore, the effects of water in the reservoir on general and power generation usages are
+interrelated and can be intuitively presented using the diagram in Figure 8.
+Water in the Reservoirs
+Agriculture
+Industry
+Family
+Electricity
+Figure 8: The Utilities of Water in Reservoirs
+The above analysis shows that ideal results can be produced as long as the water allocation process
+is clarified. What’s more, the demand of water for general usage and power generation are competitive.
+That is to say, when the usage of one demand increases, another usage will decrease correspondingly.
+Therefore, a rational plan should be established to balance them reasonably.
+5.2
+Extending – The Distribution Model Based on the Double-Dam System
+We extend the model in Task 1 – study the distribution of water for the demand (𝐷𝑒and 𝐷𝑔), with the
+aim of using the water in a more proper and rational way.
+For a fixed demand, 4 mainly usages can be seperated: agricultural, industrial, residential and
+power generation. The main conflicting parties for water allocation, in short, are power generation and
+other utilities which are called "general usage".
+In order to combine the scheduling and actual use of water resources, coordination level of water
+resource utilization for utility A is defined in a functional manner as 𝑈𝐴(𝛿, 𝛿∗):
+𝑈𝐴=
+(
+1
+𝛿≥𝛿∗
+𝑒𝑥𝑝[−(𝛿−𝛿∗)2/𝑆2
+𝐴]
+𝛿< 𝛿∗
+
+<<<PAGE 13>>>
+Team 2211922
+Page 12
+In the formula above, the parameter 𝛿stands for the ratio of water allocation for a certain usage, for
+instance, the ratio of water used for power generation. It can be calculated as
+𝛿= 𝑢𝑠𝑒𝑓𝑜𝑟𝐴
+𝑡𝑜𝑡𝑎𝑙𝑢𝑠𝑒
+𝛿∗= 𝑑𝑒𝑚𝑎𝑛𝑑𝑓𝑜𝑟𝐴
+𝑡𝑜𝑡𝑎𝑙𝑑𝑒𝑚𝑎𝑛𝑑
+The constant 𝛿∗stands for the demand ratio. Besides, the 𝑆2
+𝐴stands for the variance of the difference
+between the demand 𝐷𝑘and the supply of water 𝑥𝑘in this usage among different subregions in the
+district:
+𝑆2
+𝐴= 1
+𝑛
+𝑛
+∑︁
+𝑘=0
+(𝐷𝑘−𝑥𝑘)2
+The inequality 𝛿≥𝛿∗represents that when the allocation ratio is no less than the demand, the
+demand is well satisfied. Therefore, the coordination level can be defined to 1, which is the highest
+value. When 𝛿≤𝛿∗, which means the supply cannot meet the demand. Under such circumstance, the
+Gaussian Distribution function is used to represent the difference between them.
+The main contradiction of the water distribution – the distribution for general and power generation,
+should firstly be considered. According to the definition of coordination level of water resource
+utilization above, for these two utilities, we define two functions: 𝑈𝐸(𝛿1, 𝛿∗
+1) which is related to
+the electricity generation and 𝑈𝐺(𝛿2, 𝛿∗
+2) represents for the general usage. To best coordinate the
+distribution of the water in the reservoir, 𝑈𝐸and 𝑈𝐺should both be maximized:
+𝑚𝑎𝑥𝑓(𝑥) =
+√︃
+𝑈𝐸(𝛿1, 𝛿∗
+1) · 𝑈𝐺(𝛿2, 𝛿∗
+2)
+5.3
+Solving – The Arrangement for Competitive Demands
+5.3.1
+The Genetic Algorithm
+To solve such a problem, genetic algorithm is used. From the beginning, we define a vector x with
+10 dimensions with 𝑥1 to 𝑥5 respectively represent the water demand for electricity generation for each
+state while 𝑥6 to 𝑥10 represent the demand for general usages.
+Step 1 First, we initialize the number of population to 200, for each individual within the population,
+the formula below (which is called "mutation operator" later) can help initialize elements for each
+individual randomly:
+𝑥𝑖= 𝑟𝑎𝑛𝑑𝑜𝑚(𝑙𝑏, 𝑢𝑏)
+Where 𝑙𝑏is the predefined lower bound value and 𝑢𝑏is the upper bound value, which are restricted
+by the situation of the problem. The function 𝑟𝑎𝑛𝑑𝑜𝑚(𝑎, 𝑏) generates a random value in interval
+[𝑎, 𝑏].
+Step 2 On the basis of our objective function, we reconfigure it into the adaption function to judge
+the strengths and weaknesses of individuals. The adaption function can be defined as:
+𝐹𝑖𝑡(𝑥) = 𝑓(𝑥) + 𝜁𝑝
+h
+5
+∑︁
+𝑖=1
+(𝐸𝑐𝑜𝑠𝑡𝑖−𝑥𝑖) +
+10
+∑︁
+𝑖=6
+(𝐺𝑐𝑜𝑠𝑡𝑖−𝑥𝑖)
+i
+𝐸𝑐𝑜𝑠𝑡and 𝐺𝑐𝑜𝑠𝑡represent the demand for electricity generation and general usage in each state.
+The difference between the distributed water and the demand reflects the adaption level for a certain
+
+<<<PAGE 14>>>
+Team 2211922
+Page 13
+individual. The penalty factor 𝜁𝑝decreases the function value when constraint is not satisfied, which
+makes it more accurate for evaluating the adaption level of that individual.
+Step 3 Evaluate each initialized population individual by means of the adaptation function.
+Step 4 Use Roulette Selection Method to select individuals in random. That is, if the adaption
+level for each individual is 𝑎𝑘(𝑘= 1, 2, ..., 200), then for a certain individual, it’s probability to be
+chosen can be calculated as:
+𝑃(𝑎𝑖) =
+𝑎𝑖
+Í200
+𝑘=1 𝑎𝑘
+Step 5 Define crossover and mutation operators to update the elements for individuals by imitating
+the cross-exchange and variation of genes in nature. In crossover operation, 2 individuals are randomly
+chosen as 𝑥1 and 𝑥2, and perform the operations presented in pseudocode below:
+Crossover Operation
+r = random(0, 1);
+𝑡𝑒𝑚𝑝1 = 𝑟𝑥1 + (1 −𝑟)𝑥2;
+𝑡𝑒𝑚𝑝2 = 𝑟𝑥2 + (1 −𝑟)𝑥1;
+𝑥1 = 𝑡𝑒𝑚𝑝1;
+𝑥2 = 𝑡𝑒𝑚𝑝2;
+Step 6 Select best individuals that can fit the situation well
+Step 7 Repeat from Step 4 to Step 6 several times, then get the individuals remain as the result.
+CO
+Origin 
+Population
+EU
+GU
+…
+…
+…
+…
+Solutions 𝑖
+Solutions 𝑗
+…
+…
+…
+…
+…
+…
+Crossover
+Mutation
+…
+…
+GN<N ?
+No
+Yes
+Best Solutions
+Origin 
+Population
+Roulette Wheel
+CA
+WY
+NM
+AZ
+CO
+CA
+WY
+NM
+AZ
+Fit function with 
+Roulette Wheel Selection
+𝐹𝑖𝑡(𝑥) = 𝑓(𝑥) + 𝜁𝑝( ෍
+𝑖= 1
+5
+(𝐸𝑐𝑜𝑠𝑡𝑖−𝑥𝑖) + ෍
+𝑖=6
+10
+(𝐺𝑐𝑜𝑠𝑡𝑖−𝑥𝑖) )
+Best Solutions
+Figure 9: The Flow Chart of Genetic Algorithm
+The code of implementing such an algorithm is attached to the Appendix 9.4.
+
+<<<PAGE 15>>>
+Team 2211922
+Page 14
+5.3.2
+The Model Result
+The result solved by the model is shown in the Figure 10.
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+California
+Arizona
+New Mexico
+Colorado
+Wyoming
+Unit: million
+The Allocation of Water
+Electricity Generation
+General Usage
+Figure 10: The Allocation of Water for Each State
+From the figure, California takes most of the water supply, and the water supply for general use in
+the New Mexico, Colorado and Wyoming States are relatively greater than the generation of electricity.
+This may result from the fact that California is relatively more developed than other states, and the
+source of electricity in California are mainly from hydropower than other powers. The concrete data is
+presented in the Appendix 9.3.2.
+6
+Thoughts on Water Shortage in Reservoirs
+6.1
+Method Development: The Proper Distribution with Focuses
+When water shortage occurs, relevant personnel must change water operations from reservoirs in time
+to suit the current situation. Since the water tranfer projects can not be constructed within a short
+period of time to supply the need, and the water in the reservoirs cannot meet all the demands of the
+five states, a proper allocation plan with focuses is needed to ensure maximum economic benefits.
+That is to say, the water can be bestly utilized.
+6.2
+The Evaluation of the Importance for Each State
+When the water shortage appears, it is advisible to reallocate the water with focuses according to the
+water demand in each aspects for the 5 states. The principal component analysis (PCA) method is
+used to evaluate the allocation ratio, and the allocation ratio can be used to reflect the importance for
+each state. The main steps are describe below.
+• With respect to the 4 aspects descibed in section 4.1 for each state, we represent them in the table
+below, where 𝑥𝑖𝑗stands for the water demand of state 𝑗in aspect 𝑖
+
+<<<PAGE 16>>>
+Team 2211922
+Page 15
+CA
+AZ
+NM
+CO
+WY
+Electricity
+𝑥11
+𝑥12
+𝑥13
+𝑥14
+𝑥15
+Agriculture
+𝑥21
+𝑥22
+𝑥23
+𝑥24
+𝑥25
+Industry
+𝑥31
+𝑥32
+𝑥33
+𝑥34
+𝑥35
+Daily Life
+𝑥41
+𝑥42
+𝑥43
+𝑥44
+𝑥45
+Therefore, we define a matrix to represent the table above as:
+A4×5 = A(𝑥𝑖𝑗),
+𝑖= 1, 2, 3, 4; 𝑗= 1, 2, 3, 4, 5
+• Standardization: Firstly, solve the average and the sample variance for each row:
+𝑥𝑖= 1
+5
+5
+∑︁
+𝑗=1
+𝑥𝑖𝑗,
+𝑠2
+𝑖=
+1
+5 −1
+5
+∑︁
+𝑗=1
+(𝑥𝑖𝑗−𝑥𝑖)2
+Then, standardize A and let the matrix after standardization to be A′, that is: A′4×5 = A′(𝑥′
+𝑖𝑗). For
+each element in matrix A, there is:
+𝑥′
+𝑖𝑗= 𝑥𝑖𝑗−𝑥𝑖
+𝑠𝑖
+• Represent A′ as (a1 a2 a3 a4 a5), and an is regarded as a column vector. Then solve the covariance
+matrix 𝚺of matrix A′ with respect to these column vectors.
+𝚺= 𝐶𝑜𝑣(a1 a2 a3 a4 a5)
+=
+©­­­­
+«
+𝐶𝑜𝑣(a1, a1)
+𝐶𝑜𝑣(a1, a2)
+· · ·
+𝐶𝑜𝑣(a1, a5)
+𝐶𝑜𝑣(a2, a1)
+𝐶𝑜𝑣(a2, a2)
+· · ·
+𝐶𝑜𝑣(a2, a5)
+...
+...
+...
+...
+𝐶𝑜𝑣(a5, a1)
+𝐶𝑜𝑣(a5, a2)
+· · ·
+𝐶𝑜𝑣(a5, a5)
+ª®®®®
+¬
+Where
+𝐶𝑜𝑣(an, am) = 1
+4
+4
+∑︁
+𝑖=1
+
+(𝑥′
+𝑖𝑛−𝑥′𝑛)(𝑥′
+𝑖𝑚−𝑥′𝑚)
+
+.
+𝑥′𝑛= 1
+4
+4
+∑︁
+𝑖=1
+𝑥′
+𝑖𝑛,
+𝑥′𝑚= 1
+4
+4
+∑︁
+𝑖=1
+𝑥′
+𝑖𝑚
+• Find the 5 eigenvalues of the matrix 𝚺, select eigenvectors v with relatively larger eigenvalues
+than others.
+• Let b = Av, then normalize every element of the column vector b. The element of b after
+normalization is the proportion ratio of the water distribution for each usage.
+• Exchange the rows and columns of A, find the water distribution proportion for each state using
+the same approach.
+• Multiple the total amount of water to the distribution ratio for each state, then time it by the ratio
+for a sepcific usage. Finally the concrete distribution amount of this usage in that state is solved.
+
+<<<PAGE 17>>>
+Team 2211922
+Page 16
+6.3
+Result Statement: The Actual Distribution of Water
+The result shows that when the water shortage really occurs, the distribution plan should be rearranged.
+Most of the water supply is allocated to California with a ratio for more than 50% since its strength in
+almost every aspect including agriculture, industry, etc. While in terms of usages, about a half of the
+water is allocated to the generation of electricity. The charts are shown in Figure 11 to make intuitive
+visualizations, while the concrete data are attached to the Appendix.
+13.31%
+0.69%
+Colorado
+Distribution Ratio of Water for Each Purpose
+Distribution Ratio of Water for Each State
+Figure 11: The Overview of the Result When Water Shortage Occurs
+The concrete data is shown in the Appendix 9.3.3.
+7
+Sensitivity and Robustness Analysis of the Model
+When fluctuations in the parameters occurs, for instance, the water demand for agriculture increases
+or decreases over time, what will happen to the output of the model is crucial in a large sense, which
+may result in direct changes in operation of the two dams. Therefore, sensitivity analysis is performed
+to evaluate the model.
+Firstly, the satisfaction rate is defined to represent the satisfaction level of water ( 𝑆𝑢𝑝𝑝𝑙𝑦
+𝐷𝑒𝑚𝑎𝑛𝑑) supply
+under a certain circumstance. From the upper left diagram of Figure 12, we can see that when the
+demand multiplies as shown in the horizontal axis, the water storage gradually decreases over time.
+However, the storage value will ultimately approach a constant. This phenomenon is originated from
+the constraint of the lower bound of water volume in the two dams. The result shows that the robustness
+of model can satisfy the expectation that it can not only meet the demand but can also function normally.
+After that, the upper right diagram of Figure 12 shows the model output when water-saving
+measures are taken and the proportion of renewable technologies is increasing. We define the day
+𝑛= 65, which indicates that the reservoir can no longer meet the demand. Under such a circumstance,
+
+<<<PAGE 18>>>
+Team 2211922
+Page 17
+-3.00E+09
+-2.50E+09
+-2.00E+09
+-1.50E+09
+-1.00E+09
+-5.00E+08
+0.00E+00
+5.00E+08
+1
+2
+3
+4
+5
+6
+7
+8
+9 10 11 12 13 14 15 16 17 18 19
+Demand and Distribution Gap
+Normal Condition
+Water Saving = 0.8
+New Energy Using = 0.8
+1.11
+1.12
+1.13
+1.14
+1.15
+1.16
+1.17
+1.18
+1.19
+1.2
+1.21
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+6
+6.5
+7
+Satisfaction Rate
+n = 15
+n = 10
+n = 5
+0.00E+00
+5.00E+08
+1.00E+09
+1.50E+09
+2.00E+09
+2.50E+09
+3.00E+09
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+6
+6.5
+7
+Changes of Demands Accompanied with Growth 
+in Different Usages
+Population
+Agriculture
+Electricity
+Industry
+Usage
+0.00E+00
+2.00E+08
+4.00E+08
+6.00E+08
+8.00E+08
+1.00E+09
+1.20E+09
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+Extra Increase
+n = 30
+n = 65
+n = 85
+S Rate
+Multiple
+T
+Gap
+Multiple
+Multiple
+Usage
+Figure 12: The Result of Sensitivity Analysis
+to take measures may offer help to the lack of supply. So we make the dams work for 20 days to see
+the results.
+After water-saving measures are taken, the supply can meet 80% of demand (shown in red dotted
+line) for 11 days. Nonetheless, the result will sharply decrease in later days, so that the demand can
+not be well satisfied. Moreover, when renewable energy usage increases, similar situation also occurrs
+– the supply can meet about 80% for 11 days but decreases afterwards, but not as badly as the result of
+taking water-saving measures. The result also displays that the implementation of water makes little
+contribution to the increase of the water level in reservoirs
+Then, the relationship between the growth and shrinkage of population, agriculture, industry and
+power generation and the water level is presented at the lower left diagram of the Figure. By increasing
+the demand for each aspect and raise the value through 7 times of the original ones, we can see that
+the electricity generation aspect has a maximum slope, and population aspect has a minimum one.
+In general, water demand for electricity generation should be firstly satisfied, then the industrial one,
+then agriculture. Fianlly, the influence on the water level in the dams brought by "ups and downs" of
+population is relatively small.
+When we shift our target to the water inflows from the upstream, the result is shown in the lower
+right diagram of the Figure. Similarly to the first diagram, the 𝑛represents the extent of water shortage.
+When the water volume is sufficient, the allocation varies little because the current water volume can
+already meet the demand. But when the water is scarce in the reservoir, the allocation will gradually
+increase, and will approach the allocation amount ultimately, which shows that the model can adjuct
+itself when external conditions are proper.
+
+<<<PAGE 19>>>
+Team 2211922
+Page 18
+8
+Model Advantages and Drawbacks
+Finally, to have a more comprehensive perspective of our model, we make conclusions about the
+advantages and drawbacks of it.
+8.1
+Advantages
+The model based on the "Double-Dam" system well abstracts the operations of the Glen Canyon and
+the Hoover dams. And the difference equation model inside the system natually take the inflows and
+outflows of water to each whereabouts. What’s more, the original water level (water storage) of the
+two dams 𝑀and 𝑃is incorporated by 𝑎0 and 𝑏0. Therefore, the model comprehensively simulates
+the working process and for reservoir managers, it can be easier to make rapid decisions on relevant
+allocation changes. What’s more, the model can be easily calculated by programming, no complicated
+theorems or theories are used. Last, when rainfall comes, constants can be added to the difference
+model (see constants 𝐶and 𝐹in the Appendix 10.1) so that more complex situations can be fully
+embraced.
+8.2
+Drawbacks
+Even though the model functions and simulates the situation well, there are a few drawbacks. At first,
+the approach the model uses may call for complicated calculation condition. Besides, the model cannot
+always fit the actual changes of situation. It should re-run for every 100 days routinely. Especially,
+when some new policies that can affect the water volume in reservoirs, the parameters in the model
+should be modified to fit the new situation.
+
+<<<PAGE 20>>>
+Drought and Thirst 
+ 
+February 2022 
+ 
+ 
+A 
+  
+ 
+ 
+The Drying Colorado River Dams 
+The Colorado River, with a total 
+length of 1,450 miles, derives from 
+the North Central part of Colorado. 
+Two famous dams go across the 
+river – the Glen Canyon Dam and 
+the Hoover Dam, both of whom 
+have a history for over 80 years. 
+However, in recent years, the 
+water in the dam shrinks so rapid 
+that the basic demand can no 
+longer meet. Is the construction of 
+dams that to be condemned? 
+Actually, proper distribution of 
+water plays an important role in 
+the water conservation. 
+Dam Operations – The Secret of 
+Proper Distribution 
+  Undoubtedly, too much extrac- 
+Should Dams Be Condemned? 
+tion of water can inevitably result 
+in the accelerated drying of rivers. 
+Recently, researchers have built a 
+model to simulate the operation of 
+the two dams, called the “Double-
+Dam System”. The system mainly 
+analyzes the operation of the water 
+extraction for power generation, 
+agriculture, industry and domestic 
+use.  
+  When the water level of the dams 
+maintains normally, about 2.1% of 
+water should be drawn from Lake 
+Powell and nearly 1% of water 
+should be drawn from Lake Mead. 
+Such an extraction calls for accurate 
+operation of reservoir staffs. For 
+them, the water outflows from Lake 
+Powell, which flows to Lake Mead,  
+should be cautiously extended. 
+Because this part of water can be 
+used to generate power. 
+Occurrence of Water Shortage – 
+What Will Happen Exactly? 
+The shortage of rainfalls and the 
+persistent high temperature doe-
+sn’t seem like to change within a 
+short period of time. Thus, many 
+people in the southwestern part of 
+the U.S. are concerned about their 
+demand, which will no longer be 
+met if such weather continues. The 
+“Double-Dam” system. 
+The researchers use the model to 
+simulate the drought by assuming 
+that the additional water like rainfall 
+and water transferred from other 
+reservoirs is no longer available. The  
+model  indi- 
+  
+ 
+ 
+ 
+cates  that  
+s the most important river in the southwestern part of the United 
+States, the Colorado river offers various functions like po- 
+wer generating, fishing, irrigating to satisfy surrounding dis- 
+tricts. However, The Colorado River has been drying up in 
+recent years. Most people believe that the reason why water  
+level of the river is lowering is because the dams have drained 
+too much water. Is that so? This article will answer such a question 
+by taking the Glen Canyon dam and the Hoover dam as example. 
+                                                                      
+1 
+—Discussion about the Colorado river dams 
+
+<<<PAGE 21>>>
+Drought and Thirst 
+ 
+February 2022 
+ 
+ 
+Figure: The Periodic Fluctuation Schematic 
+ 
+    2 
+after approximately 2 months, the 
+water supply will be inadequate. 
+Moreover, the model also indi-
+cates an interesting phenomenon: 
+the water in the Glen Canyon dam 
+and the Hoover dam periodically 
+fluctuates (see in Figure), which is 
+opposite to our common sense. The 
+periodic fluctuation may result 
+from the self-adjustment of the 
+reservoir based on the assumptions 
+that there are a certain extra water 
+inflows from the upstream of the 
+Colorado River. 
+Method to Tackle with Water 
+Shortage – What Should We Do? 
+When the water shortage in 
+reservoirs happens, reservoir wor-
+kers should respond rapidly to 
+deal with such a situation. 
+The water is used mainly for 
+agriculture, industry, people’s dai-
+ly life and power generation. In a 
+word, the utility of water is mostly 
+for economic growth. When shor-
+tage occurs, to ensure the normal 
+function of the economics is of 
+essential importance. Based on this 
+purpose, researchers take the main 
+service communities of the two 
+dams – the California, Arizona, 
+New Mexico, Colorado and Wyo-
+ming states, as their subject. As a 
+result, the water should pre-
+ferentially delivered to California, 
+whose 
+economic 
+development 
+takes up a dominant place among 5 
+states. In volume, over 60% of 
+water should be drawn to Cali-
+fornia state according to the model. 
+With respect to utilities, the elec-
+tricity generation and other general 
+usages both take up for about 50%, 
+which indicates the importance of 
+water in power generation. 
+Future Trends – What If Other 
+Measures Are Taken? 
+Nowadays, many environment-
+tally-friendly measures or policies 
+are taken. Such as power saving 
+policy, measures for developing 
+new energies, etc. 
+With respect to the researcher’s 
+model, the result is rather negative 
+– the predicted demand won’t in-
+crease significantly under these 
+methods unless these measures are 
+implemented with extreme force.  
+Should Dams Be Condemned? 
+Ostensibly, the construction of 
+water dams does account for the 
+drying process of the Colorado 
+river in a way. However, in an ob-
+jective perspective, it is the climate 
+change that really needs to be con-
+demned, rather than the cons-
+truction of reservoirs. 
+Therefore, to bring the water 
+level of Colorado River back up, 
+not only the efforts of reservoir 
+managers make sense. Actually, it 
+is the efforts of the whole society to 
+protect the environment.  ◼ 
+ 
+(Editor: Team #2211922) 
+
+<<<PAGE 22>>>
+Team 2211922
+Page 21
+9
+Appendix
+9.1
+References
+[1] Manli H., Jian Z., Dafa D., et al. Research on the optimal allocation of regional water resources
+based on genetic algorithm [J]. People’s Yangtze River, 2008, 39(6):4.
+[2] SEDS, EIA, U.S. Energy Information Administration, https://www.eia.gov/
+[3] USDA National Agricultural Statistics Service Information, https://www.nass.usda.gov/
+[4] Data USA, https://datausa.io/
+[5] Xuemin. C. Glen Canyon Hydropower Station in the United States[J]. Water Conservancy and
+Hydropower Technology, 1960(3):59-60.
+[6] Zhenghua.
+L. The Hoover Dam in the United States [J].
+Management and Management,
+1999(10):46.
+9.2
+The Method of Solving the Water Volume Changes
+The original equations can be abstracted into the following problem:
+𝑎𝑛= 𝐴𝑎𝑛−1 + 𝐵𝑏𝑛−1 + 𝐶
+𝑏𝑛= 𝐷𝑎𝑛−1 + 𝐸𝑏𝑛−1 + 𝐹
+Objective: Given 𝑎0, 𝑏0 and 𝐴𝐸−𝐵𝐷≠0, and 𝐴𝐸−𝐵𝐷+ 𝐵−𝐸≠0 Find the general formula of
+{𝑎𝑛} and {𝑏𝑛}.
+Homogenize the original equation
+
+
+𝑎𝑛+
+𝐶𝐸−𝐵𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸= 𝐴
+
+𝑎𝑛−1 +
+𝐶𝐸−𝐵𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
++ 𝐵
+
+𝑏𝑛−1 + 𝐴𝐹−𝐶𝐷+ 𝐶−𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
+𝑏𝑛+ 𝐴𝐹−𝐶𝐷+ 𝐶−𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸= 𝐷
+
+𝑎𝑛−1 +
+𝐶𝐸−𝐵𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
++ 𝐸
+
+𝑏𝑛−1 + 𝐴𝐹−𝐶𝐷+ 𝐶−𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
+Let 𝑥𝑛= 𝑎𝑛+
+𝐶𝐸−𝐵𝐹
+𝐴𝐸−𝐵𝐷+𝐵−𝐸, 𝑦𝑛= 𝑏𝑛+ 𝐴𝐹−𝐶𝐷+𝐶−𝐹
+𝐴𝐸−𝐵𝐷+𝐵−𝐸, then
+𝑥𝑛
+𝑦𝑛
+
+=
+ 𝐴
+𝐵
+𝐷
+𝐸
+ 𝑥𝑛−1
+𝑦𝑛−1
+
+= ... =
+ 𝐴
+𝐵
+𝐷
+𝐸
+𝑛𝑥0
+𝑦0
+
+Let M =
+ 𝐴
+𝐵
+𝐷
+𝐸
+
+, then there exists an invertible matrix P, such that:
+𝑃−1𝑀𝑃=
+𝛼
+0
+0
+𝛽
+
+Apparently, 𝛼and 𝛽are the 2 eigenvalues of M, and P =
+ −𝐵
+𝐸−𝛽
+𝐴−𝛼
+−𝐷
+
+, Therefore
+M𝑛= 𝑃
+𝛼
+0
+0
+𝛽
+𝑛
+𝑃−1
+=
+1
+(𝐴−𝛼)(𝐸−𝛽) −𝐵𝐷
+(𝐴−𝛼)(𝐸−𝛽)𝛽𝑛−𝐵𝐷𝛼𝑛
+(𝐸−𝛽)𝐵(𝛼𝑛−𝛽𝑛)
+(𝐴−𝑎)𝐷(𝛼𝑛−𝛽𝑛)
+(𝐴−𝛼)(𝐸−𝛽)𝛼𝑛−𝐵𝐷𝛽𝑛
+
+
+<<<PAGE 23>>>
+Team 2211922
+Page 22
+Bring 𝑎𝑛and 𝑏𝑛back to the original fomula, we can get the general formula of {𝑎𝑛} and {𝑏𝑛}
+𝑎𝑛= (𝐴−𝛼)(𝐸−𝛽)𝛽𝑛−𝐵𝐷𝛼𝑛
+(𝐴−𝛼)(𝐸−𝛽) −𝐵𝐷
+
+𝑎0 +
+𝐶𝐸−𝐵𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
++
+(𝐸−𝛽)𝐵(𝛼𝑛−𝛽𝑛)
+(𝐴−𝛼)(𝐸−𝛽) −𝐵𝐷
+
+𝑏0 + 𝐴𝐹−𝐶𝐷+ 𝐶−𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
+−
+𝐶𝐸−𝐵𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+𝑏𝑛=
+(𝐴−𝛼)𝐷(𝛼𝑛−𝛽𝑛)
+(𝐴−𝛼)(𝐸−𝛽) −𝐵𝐷
+
+𝑎0 +
+𝐶𝐸−𝐵𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
++
+(𝐴−𝛼)(𝐸−𝛽)𝛼𝑛−𝐵𝐷𝛽𝑛
+(𝐴−𝛼)(𝐸−𝛽) −𝐵𝐷
+
+𝑏0 + 𝐴𝐹−𝐶𝐷+ 𝐶−𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+
+−𝐴𝐹−𝐶𝐷+ 𝐶−𝐹
+𝐴𝐸−𝐵𝐷+ 𝐵−𝐸
+9.3
+Part of Data and Results
+9.3.1
+Data in Section 4.1
+𝐶𝑖: $56000
+𝐶𝑤: $1.21/𝑚3
+9.3.2
+The result in Task 2
+CA
+AZ
+NM
+CO
+WY
+Electricity Generation
+88255883
+27379684
+8757475
+19895462
+5885614
+General Usage
+85325544
+25959557
+23937562
+27590832
+15559389
+9.3.3
+The result in Task 3
+The table below represents the water distribution ratio for each state in several aspects.
+CA
+AZ
+NM
+CO
+WY
+Electricity
+0.345354
+0.042054
+0.068108
+0.003527
+0.052510
+Agriculture
+0.032067
+0.003905
+0.006324
+0.000327
+0.004876
+Industry
+0.254182
+0.030952
+0.050128
+0.002596
+0.038648
+Population
+0.043506
+0.005298
+0.008579
+0.000444
+0.006615
+9.4
+Code for the Optimization Function of Task 1
+1
+function f = fun1(x,n,A,B,P,M,C)
+2
+w1 = 0.5;
+3
+w2 = 1 - w1;
+4
+an = (P - C./( x(1)+x(2))) .* (1 - x(1) - x(2)).^n + C./(x(1)+x(2));
+
+<<<PAGE 24>>>
+Team 2211922
+Page 23
+5
+bn = (x(2).*(1 - x(1) - x(2)).*( (1- x(3) -x(4) ).^n - (1 - x(1) - x(2)).^n
+)).*(P - C./(x(1)+x(2)))./(x(1) + x(2) - x(3) -x(4)) + (M - (C.*x(2))./(
+(x(3)+x(4)).*(x(1) + x(2)) )).*(1 - x(3) -x(4) ).^n +
+(C.*x(2))./((x(3)+x(4)).*(x(1)+x(2)));
+6
+f1 = abs( A - (an.*x(1) + bn.* x(3)) ) ;
+7
+f2 = abs( B - (an.*x(2) + bn.* x(4)) ) ;
+8
+f = w1.*f1 + w2.*f2;
+9
+end
+9.5
+Code of the Genetic Algorithm
+1
+NP = 200; %% The number of the population which is an even number
+2
+L = 10; %% Length of genes
+3
+Pc = 0.8; %% Crossover probability: 0.25 ~ 1
+4
+Pm = 0.1; %% Mutation probability: 0.001 ~ -5.9
+5
+G = 1000; %% Inheritance index
+6
+Xs = ub .* 0.9; %% Upper bound of feasible solution
+7
+Xx = lb; %% Lower bound of feasible solution
+8
+f = randi([0,1],NP,L); %% Initialization
+9
+for i = 1:NP
+10
+for j = 1:10
+11
+f(i,j) = Xx(1,j) + (Xs(1,j) - Xx(1,j)).*rand;
+12
+end
+13
+end
+14
+for k = 1:G
+15
+for i = 1:NP
+16
+Fit(i) = fun1(f(i,1:10));
+17
+end
+18
+maxFit = max(Fit);
+19
+minFit = min(Fit);
+20
+rr = find(Fit == maxFit);
+21
+fBest = f(rr(1,1),:); % Best gene type for each generation
+22
+Fit = (Fit - minFit)/(maxFit - minFit);
+23
+%%%%%The Copy Opration of the Roulette Selection Method%%%%%
+24
+sum_Fit = sum(Fit);
+25
+fitvalue = Fit./sum_Fit;
+26
+fitvalue = cumsum(fitvalue);
+27
+ms = sort(rand(NP,1));
+28
+fiti = 1;
+29
+newi = 1;
+30
+while newi <= NP
+31
+if(ms(newi) < fitvalue(fiti))
+32
+nf(newi,:) = f(fiti,:);
+33
+newi = newi+1;
+34
+else
+35
+fiti = fiti+1;
+
+<<<PAGE 25>>>
+Team 2211922
+Page 24
+36
+end
+37
+end
+38
+%%%%Crossover based on probability%%%%%
+39
+for i = 1:2:NP
+40
+p = rand;
+41
+if p <Pc
+42
+q = rand(1,L);
+43
+for j = 1:L
+44
+%%Arith Crossover Algorithm
+45
+Cross_Temp_1 = nf(i,j).* q(j) + nf(i+1,j) .* (1 - q(j));
+46
+Cross_Temp_2 = nf(i+1,j).* q(j) + nf(i,j) .* (1 - q(j));
+47
+nf(i,j) = Cross_Temp_1;
+48
+nf(i+1,j) = Cross_Temp_2;
+49
+end
+50
+end
+51
+end
+52
+i = 1;
+53
+while i<=round(NP*Pm)
+54
+h = randi([1,NP],1,1);
+55
+for j = 1:round(L*Pc)
+56
+g = randi([1,L],1,1);
+57
+nf(h,g) = lb(1,g) + (nf(h,g) - lb(1,g)).*rand;
+58
+end
+59
+i = i+1;
+60
+end
+61
+f = nf;
+62
+f(1,:) = fBest; % Find the best individual
+63
+trace(k) = maxFit;
+64
+end

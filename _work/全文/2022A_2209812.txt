@@ -1,0 +1,1307 @@
+
+<<<PAGE 1>>>
+Problem Chosen
+A
+2022
+MCM/ICM
+Summary Sheet
+Team Control Number
+2209812
+Power Curve Make Cyclists Faster and Faster
+Summary
+Every ride has a pace—whether or not you’re in control of that pace all comes down to essential
+planning based on his or her power profile. In this paper, we develop models to guide cycling races
+based on power curves (PC), measure the sensitivity to weather and power distribution’s deviation,
+and optimal power use for a team time trial.
+In Task 1 & 2: First, we choose a three-parameter hyperbolic model based on exercise physi-
+ology that is more accurate in the critical power (CP) model. Based on it, we utilize data to define
+the PC of male and female time trial specialists, male and female sprinters (Figure 7). Among them,
+the sprinters have higher explosive power, but the time trial specialists (TTS) have more long-term
+endurance, and female players have less explosive power and endurance than male players.
+After that, we found out the fatigue and recovery (FR) model, forming optimal pacing control.
+Then we obtain the necessary condition based on the Pontryagin’s Minimum Principle (PMP)
+and the numerical solution of Behrman equation based on dynamic programming (DP) and
+Behrman’s principle. We apply the PC to the time trial course of Tokyo Olympic, UCI World
+Championship and own design, which is located at Italy’s San Felice Circeo (Figure 12), and the
+power distribution of cyclists are shown in Figure 10, 11, and 13. We found this result to be
+consistent with the characteristics of the cyclists above, which including the duration of man time
+trial specialist in Tokyo Olympic is 1h:41m:29.4s (3641.49 s), and the woman is 0h:33m:4.51s
+(1984.51 s).
+In Task 3 & 4: in this section, we measure the sensitivity of our model to weather and power
+distribution’s deviation.
+For wind, the sensitivity to wind effect is up to corresponding course. The closer the course is
+to a bar or strip, the more regular the wind direction and velocity is to the cyclist, otherwise the
+more uncertain it is. For temperature influence, in a suitable range, the lower the temperature, the
+better for cyclists. Thus, cyclists should observe the terrain well, make reasonable use of the wind
+direction, and pay attention to do certain heat dissipation measures.
+For power distribution’s deviation, the greater deviation probability, the greater the time cost
+and the trend of time cost.Therefore, maintaining good pacing stability is the key to getting good
+results. For power deviations occurring on different sections, the impact on cyclists is more sensi-
+tive when the elevation is more undulating, and less so when the undulation is smaller. Maintaining
+their pedaling rhythm while riding uphill, while resting and attempting to maintain high speed when
+riding downhill are significant to cyclists.
+In Task 5: this section shows how team riding reduces resistance and maximizes the team power.
+We found that the real-time position of the cyclist in the team and the time the cyclist lead each
+time are key factors in determining the team’s performance. Based on them, we develop a team
+time trial Optimization Model to maximize power use.
+Finally, we evaluate the strengths and weaknesses of model. And a two-page rider’s race guid-
+ance has been written for a Directeur Sportif.
+Keywords: Power Curve, Dynamics Analysis, DP, PMP, Behrman Equation.
+
+<<<PAGE 2>>>
+
+Contents
+1
+Introduction
+3
+1.1
+Problem Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.2
+Literature Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.3
+Our Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2
+Preparation of the Models
+4
+2.1
+Assumptions and Explanations . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2.2
+Notations
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.3
+The Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.3.1
+Data Collection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.3.2
+Data Processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+3
+TASK 1 & 2: Guiding Cycling Races Based on Power Curves
+6
+3.1
+The Critical Power Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+3.1.1
+The 2-parameter Hyperbolic Model . . . . . . . . . . . . . . . . . . . . .
+6
+3.1.2
+The 3-parameter Hyperbolic Model . . . . . . . . . . . . . . . . . . . . .
+7
+3.2
+Define the Power Profiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+3.3
+Optimal Pacing of a Cyclist . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3.3.1
+Fatigue and Recovery of Cyclists
+. . . . . . . . . . . . . . . . . . . . . .
+8
+3.3.2
+Optimal Control Formulation
+. . . . . . . . . . . . . . . . . . . . . . . .
+9
+3.3.3
+Necessary Condition for Optimal Solution . . . . . . . . . . . . . . . . . .
+11
+3.3.4
+Numerical Solution of the Problem
+. . . . . . . . . . . . . . . . . . . . .
+12
+3.4
+Apply Model to Time Trial Courses
+. . . . . . . . . . . . . . . . . . . . . . . . .
+13
+3.4.1
+Determine the Constants’ Values.
+. . . . . . . . . . . . . . . . . . . . . .
+13
+3.4.2
+Simulation Results and Analysis . . . . . . . . . . . . . . . . . . . . . . .
+14
+4
+TASK 3 & 4: Sensitivity to Weather and Power Distribution’s Deviations
+16
+4.1
+The influence of the weather . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+4.1.1
+Wind Influence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+4.1.2
+Temperature Influence . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+4.2
+The Influence of Power Distribution’s Deviation . . . . . . . . . . . . . . . . . . .
+18
+4.2.1
+Sensitivity of Deviation Probability . . . . . . . . . . . . . . . . . . . . .
+18
+4.2.2
+Sensitivity of Location Deviation
+. . . . . . . . . . . . . . . . . . . . . .
+19
+5
+TASK 5: Optimal Power Use for a Team Time Trial
+20
+5.1
+The Benefit of Team Riding
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+5.2
+Team Time Trial Optimization Model
+. . . . . . . . . . . . . . . . . . . . . . . .
+20
+6
+Evaluation of Strengths and Weaknesses
+21
+6.1
+Strengths
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+6.2
+Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+References
+21
+Memo
+23
+
+<<<PAGE 3>>>
+
+1
+Introduction
+1.1
+Problem Background
+Every cyclist knows that time and intensity are inextricably linked. For example, sprinting for
+more than a few seconds is very difficult, yet easy endurance riding may be continued for several
+hours with correct feeding. A power curve (PC) is a representation of this relationship, and viewing
+it might provide valuable information about your relative strengths and limitations.
+The cyclists might use the PC to determine how much power applies based on the rider’s loca-
+tion on the race. In this problem, we need to accomplish the following objectives:
+• Define the power profiles of a time trial specialist and another type of rider while accounting
+for gender. Then put the model to the test on a variety of time trial courses.
+• Determine the weather’s possible influence and sensitivity, as well as how sensitive the results
+are to rider deviations from the target power distribution.
+• Extend the model to include optimal power use for a six-rider team time trial, with the team’s
+time being calculated after the fourth rider crosses the finish line.
+1.2
+Literature Review
+This question is maily about guide cyclist according to PC. In the last few years, there has
+been a hot line of research in both the analysis of cyclists from a physiological perspective and the
+optimization of cycling competition from a race perspective. Thus, this section focuses on the main
+models in these two aspects.
+• Above all, in terms of power curve description, one is a simple two-parameter critical power
+(CP) model with inappropriate physiological assumptions [5], whereas the other is a somewhat
+more difficult but more physiologically acceptable three-parameter CP model [10].
+• Regarding the optimization of the cyclist’s pace, the relationship between power distribution
+and power curve can be analyzed starting from the physiological model of fatigue and recovery
+[13]. It effectively explains the dynamic equilibrium process of fatigue and recovery of cyclists in
+the course of a race.
+• In terms of optimizing the cyclist’s speed, Ashtiani, Faraz, et al. [13] proposed a dynamics-
+based optimization model. It not only contains the force model of a cyclist, but also takes the effect
+of weather into full consideration.
+• The aerodynamic interaction between cyclists is very important to the effectiveness of a strat-
+egy, whick is the key to team strategy in team time trial.
+Cyclists' race 
+strategy
+Physiology
+Dynamics
+2-parameter CP Model
+Simple, Inappropriate
+3-parameter CP Model
+Complex, appropriate
+Fatigue-Recovery Model
+Task 1
+Task 2,3
+Pacing Optimization Model
+Aerodynamic Interaction
+Team Strategy
+Task 5
+Figure 1: Literature Review Framework
+
+<<<PAGE 4>>>
+
+1.3
+Our Work
+The work we have done in this problem is mainly shown in the following Figure (2).
+Fatigue-Recovery Model
+3-parameter CP Model
+Dynamics Solution
+Guiding Cycling Races Based on Power Curves
+Power Profile and Distribution
+Dynamic Solution
+Optimal Pacing Control
+Necessary Condition
+Dynamic Programming
+Behrman principle
+data
+Processing
+Weather
+Sensitivity{
+Wind Influence
+Location Deviation
+Temperature Influence
+Reduce Resistence
+Optimal Power Use for a Team Time Trial
+Maximize the Team Power
+Optimization Model
+Deviations
+Sensitvity{
+Deviation Probability
+Fatigue-Recovery Model
+3-parameter CP Model
+Dynamics Solution
+Guiding Cycling Races Based on Power Curves
+Power Profile and Distribution
+Dynamic Solution
+Optimal Pacing Control
+Necessary Condition
+Dynamic Programming
+Behrman principle
+data
+Processing
+Weather
+Sensitivity{
+Wind Influence
+Location Deviation
+Temperature Influence
+Reduce Resistence
+Optimal Power Use for a Team Time Trial
+Maximize the Team Power
+Optimization Model
+Deviations
+Sensitvity{
+Deviation Probability
+Figure 2: Our Work
+2
+Preparation of the Models
+2.1
+Assumptions and Explanations
+Considering that practical probelms always contain many complex factors, we made the fol-
+lowing assumptions to help us with our modeling.
+• Assumption 1: Brakes can be neglected [2].
+⇒Explanation: On the one hand, none of the bikes were equipped with a data logging system
+capable of measuring braking force. On the other hand, the only unwanted braking would be to
+avoid crashes, which is usually not an issue in individual time trials.
+• Assumption 2: Lateral movement can be neglected [2].
+⇒Explanation: From an energy point of view, this makes sense. For example, With a lateral
+velocity of 1 m/s and most of professional cyclists’ speed of more than 10 m/s, the lateral velocity
+accounts for less than 1% of the total speed.
+• Assumption 3: Bicycles are all the same size.
+⇒Explanation: The Olympic spirit tells us that human body limits and competition results are
+broken by the athletes themselves, not by their equipment. Therefore, unifying bicycle standards is
+not just about easy modeling, it’s also part of fair play. The corresponding values for bicycles will
+be given in Section 3.4.1.
+• Assumption 4: Cyclists will keep their posture constant during the race
+⇒Explanation: From an aerodynamic standpoint [2], the resistance area is heavily reliant on
+the cyclist’s position. Because the cyclist’s posture are always changing, the resistance area should
+be averaged. At the highest levels of competition, riders develop their unique riding rhythm and
+maintain a stable posture for extended periods of time. Therefore, it is reasonable to assume that.
+
+<<<PAGE 5>>>
+
+2.2
+Notations
+The primary notations used in this paper are listed in Table 1.
+Table 1: Notations
+Symbol
+Description
+P
+power output
+CP
+critical power
+W ′
+available work over CP (anaerobic work capacity)
+TTE
+time-to-exhaustion
+w
+remaining anaerobic energy
+wrec
+recovered anaerobic energy
+Trec
+recovery duration
+Pmax
+maximal power possible
+s
+cyclist’s traveled distance
+v
+cyclist’s cycling velocity
+ϕ
+angle of wind direction with north
+γ
+angle of cycling direction with north
+V
+wind velocity
+2.3
+The Data
+2.3.1
+Data Collection
+The data we used mainly include Body data of different types of cyclists, . The data sources are
+summarized in Table 2 below,
+Table 2: Data Source Websites
+Database Names
+Database Websites
+Training Peaks
+https://www.trainingpeaks.com/blog/power-profiling/
+STRAVA-Tokyo2020
+https://www.strava.com/activities/5678015293
+STRAVA-BelgiumUCI
+https://www.strava.com/activities/6006887196
+where data of Training Peaks includes cyclists’ power of different genders and types at 5 s, 1
+minute, 5 minutes, and functional threshold (FT). And the course data, including latitude, longi-
+tude and altitude, of STRAVA-Tokyo2020 is at 2021 Olympic Time Trial course in Tokyo, Japan,
+as well as STRAVA-BelgiumUCI is 2021 UCI World Championship men’s time trial course in
+Flanders, Belgium on September 22, 2021.
+2.3.2
+Data Processing
+For the course data of STRAVA-Tokyo2020 and STRAVA-BelgiumUCI, we need to discretize
+the track into multiple locations and get the distance and slope between adjacent locations. More
+details of data processing are shown in Figure 3 and 4 below.
+
+<<<PAGE 6>>>
+
+step1
+• Obtain the angle between two adjacent locations (approximately 
+600m-1000m apart) on the Earth‘s sphere (Figure 3).
+Step2
+• Convert the latitude and longitude of two adjacent locations to 
+their straight-line distance.
+Step3
+• Obtain the slope of adjacent locations based on straight-line 
+distance and elevation.
+Data processing
+Figure 3: Data Processing
+Figure 4: Distance calculation
+3
+TASK 1 & 2: Guiding Cycling Races Based on Power Curves
+3.1
+The Critical Power Model
+It is a common experience that cycling at a relatively fast yet comfortable pace can be continued
+for a considerable period without undue fatigue. Even a small increase in the speed, however, sig-
+nificantly increases the perceived effort and drastically limits the tolerated duration of exercise. The
+fact that these sensations have substantial mathematical and physiological foundations, which are
+enshrined in the critical power (CP) notion, is probably underappreciated. The CP thus represents
+an important parameter of aerobic function (in addition to gas exchange threshold (GET), maximal
+O2 uptake (VO2max), and exercise efficiency) [3]. It also offers a useful framework for studying and
+better understanding the processes of tiredness and exercises intolerance. Among several current
+PD models, the 2-parameter hyperbolic (CP2−hyp) model and the 3-parameter hyperbolic (CP3−hyp)
+model are studied the most [4].
+3.1.1
+The 2-parameter Hyperbolic Model
+From a mathematical point of view, within the severe-intensity domain, the CP is one of two
+(or three) empirical parameters that establish the link between power output (P) and time-to-
+exhaustion (TTE). This connection is known to be hyperbolic, with the power-asymptote repre-
+senting the CP and the curvature constant denoted W ′ (Figure 5a) [5, 6].
+TTE = W ′/(P−CP)
+(1)
+(a) The hyperbolic form
+(b) The linear form
+Figure 5: The Two-parameter Model
+
+<<<PAGE 7>>>
+
+where TTE denotes the motion maintenance time at a given power, W ′ is the available work in
+excess of CP, P is the average power over the duration of the exercise (the equation has another
+explaination at Section 3.3). CP defines the highest power output to maintain intracellular home-
+ostasis. The formula can be applied to predict the exercise maintenance time TTE for any given
+output power above CP, which has great potential application in training. It may also be useful to
+know which P must be chosen in order to achieve a given TTE. For this purpose the equation 1 is
+solved for P, thus giving it a linear form (Figure 5b):
+P = W ′/TTE +CP
+(2)
+For example, if we take a hypothetical athlete with a measured CP of 300 W and W ′ of 20 kJ,
+we can calculate (using Equation (1)) the amount of time that this athlete could sustain a given P.
+Despite the fact that this 2-parameter hyperbolic CP model can explain a wide range of occur-
+rences, it still has a number of incorrect assumptions that contravene known physiology [7]. They
+were presented below:
+• Power and velocity are not achievable instantaneously. The required power takes 2 minutes
+or more to become accessible through the oxygen delivery system, and the required velocity takes
+a few seconds to attain due to body acceleration or biomechanical considerations.
+• Power continues to decline below the asymptote defined by CP given enough time. The CP
+model is applicable to activity that lasts between 2 and 30 minutes in most persons, but up to 60
+minutes in some.
+• Power and velocity are not infinite since everyone has a maximum running speed that they
+can’t exceed [8].
+• At the point of fatigue, power does not have to be entirely exhausted. The individual in
+constant-power trials stops exercising when he or she can no longer maintain the required power
+output.
+3.1.2
+The 3-parameter Hyperbolic Model
+For middle and long distance races, studies had found that a athlete’s unique ideal velocity
+profile consists of three segments: a brief moment of maximum acceleration, followed by a long
+period of continuous (but not all-out) pace, and finally a brief period in which the racer collapses
+exhausted over the finish line [9]. Based on it, to overcome the limitations imposed by the two-
+parameter CP model’s assumptions, Morton created a three-parameter hyperbolic CP model [10].
+The three-parameter model overcomes the assumptions that maximal power output is infinite and
+that exhaustion occurs when power is depleted. His modification is expressed mathematically as
+follows:
+TTE =
+W ′
+P−CP +k
+(3)
+where k is the asymptote and assumes a negative value. Because the maximal power possible (Pmax)
+can only occur for instantaneous time (i.e., TTE = 0), it implies the following:
+TTE =
+W ′
+P−CP +
+Pmax
+CP−Pmax
+(4)
+3.2
+Define the Power Profiles
+Download the corresponding data from the Training Peaks website in Table 2. The dataset’s de-
+veloper established the maximum and lower limits of each range based on the known performance
+capacities of world-class athletes and untrained individuals. It includes cyclists of different genders
+
+<<<PAGE 8>>>
+
+and types at 5 s, 1 minute, 5 minutes, and functional threshold (FT) power, allowing us to fit the
+CP model based on them (Figure 6) [11].
+{
+Time Trialist 
+Male cyclists
+Female cyclists
+Rouleur 
+Sprinter 
+Pursuiter
+Data
+Data
+Fit model with the power
+at 1s, 1m, 5m and FT
+Power curve
+Figure 6: Cyclist Data Overview
+Using some data in Training Peaks (Table 2), the power curves PC of different gender cyclists
+of time trial specialist and sprinter are shown in the Figure 7.
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+Figure 7: the Result of Task 1
+Based on this picture, we can draw some conclusions, which are shown below:
+• When comparing the power of two kinds of cyclists, the sprinter has more power than the time
+trial specialist (PS > PT) when the duration is short (Time < 20s). This indicates that, in general,
+the Sprinter more dominating at the start of the race. However, as time continued to increase,
+the sprinter lost his edge more and more. It is obvious that when Time > 300s, the time trial
+specialist has the upper hand, and the longer the time, the more obvious the advantage.
+• From a gender perspective, female cyclists of the same type will always have weaker power
+than male cyclists. Even the female sprinter can hardly win the male time trial specialist in terms
+of explosive power, but over time, the female sprinter can prevail over the male time trial specalist,
+which shows that the female cyclist’s staying power is not too weak.
+3.3
+Optimal Pacing of a Cyclist
+3.3.1
+Fatigue and Recovery of Cyclists
+The concept of CP is defined as the maximum power output that can be maintained indefinitely
+and it’s controled by Equation (1) [12]. W ′ is available work over CP. From the perspective of phys-
+iology, it also can be explained as anaerobic work capacity. So the Equation (1) means that a cyclist
+can only maintain that power for a certain period of time before running out of anaerobic energy.
+During the race, the overall trend of the cyclist’s power decreases, and W ′ gradually recovers when
+
+<<<PAGE 9>>>
+
+the power is less than CP. Therefore, the cyclist is in a dynamic equilibrium based on a dynamic
+Fatigue-Recovery (PR) model until the final acceleration.
+As we discussed above, the maximum power a cyclist can produce if he or she maximizes his
+or her anaerobic work capacity (W ′) is CP. For further explanation, we define w as the remaining
+W ′ during the ride. As the following Equation (5) shows, the recovery process of w can be similar
+to its consumption. If the cyclist is pedaling at a constant power (P) below CP for the duration Trec,
+the actual amount of recovered energy (wrec) will be less than (CP−P)×Trec. Thus, we propose
+the notion of an adjusted recovery power Pad j as,
+Pad j = CP−wrec
+Trec
+(5)
+to be used in a switching model of energy expenditure and recovery as follows,
+dw
+dt =
+(
+−(P−CP) P ⩾CP
+−
+ Pad j −CP
+
+P < CP
+(6)
+where P is the pedaling power of the cyclist. We further hypothesize that the recovery power Pad j is
+solely determined by the pedaling power P and not by the duration Trec. Study shows that Pad j can
+be well approximated as a linear function of pedaling power P with constants a and b that should
+be determined for each cyclist [13]. Thus Pad j is defined as,
+Pad j = aP+b
+(7)
+The cyclist’s capacity to create instantaneous maximal power (Pmax) is influenced by W’ ex-
+penditure. A study [14] discovered the following linear connection between Pmax and anaerobic
+energy w:
+Pmax = aw+CP
+(8)
+3.3.2
+Optimal Control Formulation
+In this section, pacing of a cyclist is modeled as a restricted optimum control problem. The key
+dynamic state variables are: i) the cyclist’s remaining anaerobic energy w; ii) the cyclist’s traveled
+distance s; and iii) the cyclist’s cycling velocity v. The control input is the cyclist’s power at a
+function of time u(t). Thus the state-space model is of the form:
+˙x = f (x(t),u(t)) =
+
+f1
+f2
+f3
+T
+(9)
+where the state vector is,
+x(t) =
+
+s(t)
+v(t)
+w(t)
+T
+(10)
+and f is a nonlinear function that maps the input and states to the rate at which they change. f1 is
+just velocity in Equation (9), so,
+f1 = ds
+dt = v
+(11)
+And f2 is obtained using Newton’s second law (Figure 8),
+f2 = dv(t)
+dt
+= u(t)
+mv(t) −h(s)−1
+2mCdρAv(t)2
+(12)
+where
+h(s) = mb
+m g(sin(θ)+CR cos(θ))
+(13)
+and a is the joint acceleration of the cyclist and the bicycle, G is their effective gravity, FP is the
+pedaling force, and FW is the resistance of the oncoming wind (wind direction will be considered
+
+<<<PAGE 10>>>
+
+in Section 4.1), f1 and f2 are frictions of bicycle, FN1 and FN2 are support forces, mb is the mass
+of the bicycle and cyclist, g is gravity acceleration, Cd is aerodynamic drag coefficient, A is frontal
+area, ρ is the density of air which is assumed to be contant and unaffected by elevation, θ is the
+road slope which is positive for uphill and negative for downhill, and CR is the coefficient of rolling
+resistance of the road, and m is the effective mass of the bicycle, which is calculated by adding the
+impact of the wheels’ rotational inertia to mb,
+m = mb +2 Iw
+R2w
+(14)
+where Iw is the wheel rotational inertia, and Rw is the radius of bicycle wheel.
+G
+FW
+f2f2
+f2f2
+FN2
+FN2
+FN1
+FN1
+a
+M2
+M2
+M1
+M1
+q
+Figure 8: Cyclist and Bicycle Aerodynamic Forces
+We equate the propulsion power u(t) to the cyclist’s power on the pedals if the bicycle drivetrain
+is 100 percent efficient. Gear selection is not a consideration in our formulation since we use cyclist
+pedalling power rather than force as input, which would otherwise make the optimization more
+complicated.
+Note that the previously displayed Equation 6 is the third state equation for the time derivative
+of the cyclist’s remaining anaerobic energy,
+f3 = dw
+dt =
+(
+CP−u
+CP−(au+b)
+u ⩾CP
+u < CP
+(a)
+(b)
+(15)
+Now we can design a minimum-time optimum control problem for the pacing strategy in a
+time-trial. Time is the objective function to be minimised,
+min
+u(t) J =
+Z tf
+t0
+dt
+(16)
+subject to,
+
+<<<PAGE 11>>>
+
+
+
+
+
+
+
+
+
+
+state−space model :
+velocity limits :
+remaining energy limits :
+cyclist power limits :
+˙x = f (x(t),u(t))
+0 ⩽v(t) ⩽vmax
+0 ⩽w(t) ⩽W ′
+0 ⩽u(t) ⩽Pmax (w)
+(17)
+where Pmax is defined by Equation (8). The final position is specified and fixed in this formulation,
+while the other two states, v and w, are uncertain. The maximum speed vmax is assumed to be
+constant throughout the journey in the simulations in this research, including the case of sharp
+turns.
+3.3.3
+Necessary Condition for Optimal Solution
+In this part, we use the variational approach to investigate the given optimum control issue.
+The required condition for the optimality of input u, according to Pontryagin’s Minimum Principle
+(PMP), is that it minimizes the following Hamiltonian function,
+H (x(t),u(t),λ (t)) = L(x(t),u(t))+λ T (t){f (x(t),u(t))}
+(18)
+where
+λ =
+
+λ1
+λ2
+λ3
+T
+(19)
+where λ is the vector of co-state variables, L is the integrand in the cost function J in Equation
+(16), and f is the vector on the right hand side of the state equations with components represented
+in Equations (11), (12), and (15).
+When such an inequality restriction on control and state variables exists, the Hamiltonian equa-
+tion must be supplemented as follows,
+H = L+λ T f + µC
+(20)
+where
+µ
+(
+⩾0 C = 0
+= 0 C < 0
+(21)
+Additionally, the upper and lower limits on v and w presented in Equation (17) should be taken
+into account as,
+S(v,w) =
+
+
+v(t)−vmax
+−v(t)
+w(t)−W ′
+−w(t)
+
+⩽0
+(22)
+In this case, the first derivative of S(v,w) with respect to both v and w includes u. Then, we can
+treat S(1)(v;w) similar to C(v,w) and augment the Hamiltonian as follows,
+H = L+λ T f + µC +ηTS(1)
+(23)
+where η =
+
+η1
+η2
+η3
+η4
+T must obey the following conditions,
+ηi
+(
+⩾0 S(1)
+i
+= 0
+= 0 S(1)
+i
+< 0
+for i = 1,2,3,4
+(24)
+
+<<<PAGE 12>>>
+
+It should be emphasized that when restrictions are fulfilled, the Hamiltonian terms C and T S(1)
+will always be zero. The dynamics of the co-states are shown below,
+λ T = −Hx = −Lx −λ T fx −µCx −ηTS(1)
+x
+(25)
+Its expanded version will be,
+
+
+
+
+
+
+
+˙λ1 = λ2gmb
+m
+dθ(s)
+ds (cos(θ (s))−CR sin(θ (s)))
+˙λ2 = −λ1 −λ2
+mt
+
+u
+v2 −CdρAv
+
+˙λ3 = 0
+(26)
+The maximum value of u minimizes the function. We can consider four cases,
+Case I. λ2
+mv −λ3 < 0 AND
+λ2
+mv −aλ3 < 0
+The slope is negative in both the fatigue and recovery modes, indicating that the greatest value
+of u in each instance minimizes the Hamiltonian. The maximum input value in the fatigue mode
+is umax, while the maximum input value in the recovery mode is CP. The control with the least
+Hamiltonian is the best of the two,
+H∗= min
+
+Hfatigue (umax),Hrecovery (CP)
+	
+(27)
+where the subscripts of H distinguish between fatigue and recovery modes due to the somewhat
+differing equations of the two modes. We can’t tell which Hamiltonian is smaller by substituting
+the aforementioned u values. The ideal input may be written as,
+u∗=
+(
+umax Hfatigue (umax) < Hrecovery (CP)
+CP Hfatigue (umax) > Hrecovery (CP)
+(28)
+Note that in the event Hfatigue(umax) = Hrecovery(CP), both u = CP and u = umax are optimal.
+The solutions of Case II. λ2
+mv −λ3 > 0 AND
+λ2
+mv −aλ3 > 0, Case III. λ2
+mv −λ3 > 0 AND
+λ2
+mv −
+aλ3 < 0 and Case IV. λ2
+mv −λ3 < 0 AND
+λ2
+mv −aλ3 > 0 are based on same methods.
+Thus after considering all of the cases discussed above, the optimal power trajectory can only
+take values from the vector below,
+u∗=
+
+
+umax
+u˙v=0
+CP
+0
+
+
+(29)
+which is the equation provides the necessary conditions for optimality of u since it was based on a
+PMP analysis.
+3.3.4
+Numerical Solution of the Problem
+With a zero-order hold on input in between sampling intervals, the following discretized state-
+space equations are obtained,
+ti+1 = ti + ∆s
+vi
+(30)
+vi+1 = vi + ∆s
+vi
+ ui
+mtvi
+−g(sin(θi)+ µ cos(θi))−0.5CdρA
+mt
+v2
+i
+
+(31)
+
+<<<PAGE 13>>>
+
+(
+wi+1 = wi + ∆s
+vi (CP−ui)
+ui ⩾CP
+wi+1 = wi + ∆s
+vi (CP−aui −b) ui < CP
+(32)
+The cost function in Equation (16) is rewritten with position as the independent variable and
+discretized as follows,
+JN =
+i=N
+∑
+i=0
+∆si
+vi
+(33)
+According to the Bellman’s principle of optimality [16], when a system is on an optimum path
+from an initial state to a final state, it should follow an optimal policy throughout the duration of
+the trip, independent of any previous choice or condition. To discover the ideal state trajectory in
+dynamic programming, one may start at the final state and work backward, calculating the optimal
+cost-to-go from any state to the last step. J∗
+i+1,N stores the optimum costs and control inputs from
+all of the feasible (v,w) nodes at si+1 to the end state at sN. Among them,
+J∗
+i,N = min
+ui
+
+Ji,i+1 +J∗
+i+1,N (x)
+
+(34)
+where
+J∗
+i+1,N =
+min
+uiui+1,···,uN−1 [Ji+1,N]
+(35)
+The dynamic programming for Behrman’s equation is shown below,
+Initialize array 𝑣 arbitrarily (e.g., 𝑣(𝑠)=0 for all s 𝑆+ 
+Repeat 
+For each s 𝑆+: 
+Until 
+ (a small positive number) 
+Output a deterministic policy, 
+, such that 
+3.4
+Apply Model to Time Trial Courses
+3.4.1
+Determine the Constants’ Values.
+▶The Resistance
+It’s common knowledge that if we ride upright in a high wind, we’ll face a lot of resistance. Pro-
+fessional cyclists typically ride prone to reduce wind resistance, with the following riding posture:
+lower upper body, head slightly tilted forward; arms naturally bent to facilitate lumbar arch flexion,
+lowering the body’s center of gravity and preventing the transmission of impact to the entire body
+
+<<<PAGE 14>>>
+
+due to car bumps; hands lightly but firmly grip the handle, hips firmly on the car seat. The frontal
+Area (A) and drag coefficient (Cd) of various posture of cyclist are shown in Figure 9.
+Thus, Cd = 0.88, A =3.9 ft2. And in general, ρ = 1.29 kg/m3, CR = 0.015. They will be using
+in Equation (12) and (13).
+Bikes
+Frontal Area Drag Coefficient
+Upright commuter
+Racing
+Drafting
+Streamlined
+A = 5.5 ft2
+A = 3.9 ft2
+A = 3.9 ft2
+A = 5.0 ft2
+1.10
+0.88
+0.50
+0.12
+Figure 9: The Effect of Posture on Air Resistance
+▶The Effective Mass
+In Equation (14), for the sake of standardization and ease of calculation, we assume that the
+bicycles covered in this article are all the same, where two wheels of the same size, both with a
+radius of 0.35 m, weigh 1.2 kg, so that the Iw of each wheel is 0.147 kg·m2. Thus the effective mass
+(m) of the bicycle and the cyclist is to be about 2.3 kg larger than their actual weight (mb).
+3.4.2
+Simulation Results and Analysis
+Using processed data of STRAVA-Tokyo2020 and STRAVA-BelgiumUCI in Table 2 and the
+power curve in Figure 7, we obtained the optimal power profile for cyclists at the Tokyo Olympics
+(men and women are in different courses) and at the UCI World Championship’s individual time
+trial courses, which are shown in Figure 10 and 11 below,
+SM
+TM
+(a) Men
+SW
+TW
+(b) Women
+Figure 10: TTC of Tokyo Olympic
+SM
+TM
+SW
+SW
+Figure 11: TTC of UCI
+where in every subfigure, the upper part is the curve of power P with respect to distance s, and the
+lower part is the curve of elevation with respect to s.
+
+<<<PAGE 15>>>
+
+Figure 12 shows a course of own design located in the Italy’s San Felice Circeo, along the
+suburbs and beach. The route begins in the south along the sea (bottom of the image), circles
+the city, and returns to the starting place, which is also the ultimate destination. The whole race
+decreases in height and then maintains a distance before descending a sharp slope to the finish line,
+with a total length of around 16 kilometers (Figure 13). In the same way as above, we obtain the
+optimal power profile for cyclists at this couse in Figure 13 below.
+Figure 12: A Course of Own Design
+SM
+TM
+SW
+SW
+Figure 13: TTC of Own Design
+In addition, the minimised time cost of four cyclists in three location show in Table 3 below:
+Table 3: Minimised Time Cost (s)
+Cyclist
+Tokyo Olympic
+UCI
+Own Design
+Time Trial Specialist, Man
+3641.49
+3258.93
+1280.11
+Time Trial Specialist, Woman
+1984.51
+3373.95
+1321.25
+Sprinter, Man
+4117.69
+3407.07
+1322.85
+Sprinter, Woman
+3027.01
+3528.34
+1497.89
+In summary, we can conclude the following,
+• The model advocates utilizing as much power as possible at the start of a race, regardless of
+the kind of athlete. However, after a certain distance, aim to maintain the power at critical power.
+This implies that putting in a respectable all-out effort at the start of the race will have little
+effect on the backstretch.
+• As we can see, for all power profiles, the model suggests that cyclists ride uphill with a
+particular level of power then ride downhill with as little power as possible while maintaining pace.
+Therefore, in the actual race, cyclists should make reasonable use of riding downhill to rest and
+have some physical preparation for the upcoming ride uphill.
+
+<<<PAGE 16>>>
+
+4
+TASK 3 & 4: Sensitivity to Weather and Power Distribution’s
+Deviations
+4.1
+The influence of the weather
+In cycling, the weather is often unpredictable.
+Gusty winds, high temperature, and other
+weather changes can have an impact on competitors. Thus exploring the cyclist’s sensitivity to
+weather is of great significance in guiding the race.
+4.1.1
+Wind Influence
+The following Figure 14 has shown wind effect to a cyclist,
+North 
+Direction
+North 
+Direction
+Figure 14: Wind Effect to a Cyclist
+where ϕ is the angle of wind direction with due north direction, and γ is the angle of cycling
+direction with due north direction. As the Assumption 2 in Section 2.1 says, we should neglect
+lateral effect and deviation. Thus we equate the drag force on the cyclist to the drag force on them
+in the cycling direction,
+FW = 1
+2mCdρA[v−V cos(γ −ϕ)]2
+(36)
+where FW is the drag force.
+▶Result
+Based on Equation (36) above, the minimum time and optimal energy distribution of the athletes
+in section 3.4.2 were re-optimized for different wind directions and wind velocities in different time
+trial courses (TTC) , and the results were obtained as shown in the following Figure 15, where the
+velocity axis represents the magnitude of the velocity of the wind along its direction, and the angle
+axis represents the magnitude of the angle between the wind direction and the direction due north,
+and the influence axis represents the percentage of affected (includes positively and negatively) on
+the corresponding courses for all female cyclists.
+In the Figure 15, what we can see is that the results of TTC of Tokyo Olympic (Figure 15a) and
+own design (Figure 15b) are irregular while their route is close to a rectangular. However, the UCI
+World Championship (Figure 15c) is regular, which shows that when the wind direction is from
+north to south or south to north (wind direction is close to 0), the biggest effect occurs. And the
+larger the wind speed, the greater the impact that is more sensitive to wind. In summary, the model
+
+<<<PAGE 17>>>
+
+of sensitivity to wind effect is up to corresponding course. The closer the course is to a bar
+or strip, the more regular the wind direction and velocity is to the cyclist, otherwise the more
+uncertain it is.
+(a) Tokyo Olympic
+(b) UCI World Championship
+(c) Own Design
+Figure 15: Wind Effect to Defferent TTCs (Up is the north)
+4.1.2
+Temperature Influence
+The first thing that is affected by the temperature t (◦C) change is the air pressure and air density.
+From Equation (ddd), it is shown that they have a great influence on the power profile of the cyclist.
+According to air pressure p (Pa) relationship with the altitude h (m),
+p = −0.011h+100.8
+(37)
+and the air density is,
+ρ = 1.293p
+101.325 ×
+273.15
+273.15+t
+(38)
+where
+t = t0 −0.6h
+100
+(39)
+where t0 is the temperature when the h = 0. Therefore,
+ρ = f(t0,h)
+(40)
+Based on these, we use the data of women time trail specialist in Tokyo Olympic. Then we
+assume that match the expected temperature is 20◦C, change the temperature in steps of 0.5 degrees
+in the positive and negative directions, and finally we obtain the sensitivity to temperature in Figure
+(16) below,
+where the positive effect indicates that the cyclist spends less time and, conversely, more time.
+
+<<<PAGE 18>>>
+
+Figure 16: Sensitivity to Temperature
+So, under normal temperatures in non-extreme environments, the lower the temperature, the
+better for cyclists in general. Therefore, for cyclists, keeping their equipment light, being aware
+of hydration and wearing sportswear that facilitates heat dissipation are ways to help them achieve
+better results.
+4.2
+The Influence of Power Distribution’s Deviation
+4.2.1
+Sensitivity of Deviation Probability
+In this section, the ideal energy distribution (section (3.4.2)) is discretized into several sample
+points. We assume that each sampling point has a probability p of having an power shift. Using
+data from the Tokyo women’s time trial course, multiple minimum times were measured at different
+p.
+Figure 17: Average Minimum Time Cost and Cost Percentage for Deviation Probability
+Figure 17 shows a scatter plot with time cost and cost percentage respect to different time point
+and the average time point curve. Therefore, what we can conclude is that the greater deviation
+probability, the greater the time cost and the trend of time cost. In other words, an athlete’s
+
+<<<PAGE 19>>>
+
+inconsistent form will cause them to go in a bad direction. As a consequence, keeping his or her
+pacing during the race is critical for a cyclist to achieving a positive outcome.
+4.2.2
+Sensitivity of Location Deviation
+In the same way as in Section 4.2, the women’s time trail course of the Tokyo Olympics was
+divided into multiple sections (one section every 2 km) under an ideal energy distribution. Assume
+that the probability of energy shift is p (p = 0.1), and multiple measurements are taken to obtain
+multiple minimum times under each section. The scatter plot and radar plot of the effect of energy
+offset on the minimum time for each section are drawn as follows,
+Figure 18: Curve for Location Deviation
+Figure 19: Radar Plot for Location Deviation
+Figures (18) and (19) demonstrate how cyclists are influenced by deviations in the energy dis-
+tribution over various regions of the same deviation probability. The cyclists are clearly impacted
+more in the uphill parts of the 10-12km, 12-14km, and 16-18km. However, t he cyclists are less
+impacted by the variation of energy distribution in the downhill parts of 4-6km, 8-10km, and 14-
+16km. The following table shows the ideal time of arrival at these critical points in time and the
+deviations caused by the impact,
+Table 4: Critical Point
+Point
+Arrival Time (s)
+Point
+Arrival Time (s)
+6 km
+468.05±8.66
+14 km
+1196.94±33.84
+8 km
+608.76±14.95
+16 km
+1334.84±36.20
+10 km
+795.81±18.10
+18 km
+1636.44±42.49
+12 km
+1023.94±25.97
+Based on these, we can conclude that a cyclist who does not have a proper power distribu-
+tion while riding uphill will have a greater impact, although violating his energy distribution
+limit when riding downhill will not have a significant influence. Therefore, to attain better out-
+comes, bikers should aim to maintain their pedaling rhythm while riding uphill, while resting and
+attempting to maintain high speed when riding downhill.
+
+<<<PAGE 20>>>
+
+5
+TASK 5: Optimal Power Use for a Team Time Trial
+5.1
+The Benefit of Team Riding
+▶Reduce Resistance
+As shown in Figure 20 below, in a cycling team race, the first person will have the largest
+windward area, and will therefore suffer the greatest wind resistance. And, in this case, this cyclist
+must also maintain a certain speed to lead the team forward.
+Figure 20: An Overview of Cycling Team for the Impact of Air Resistance [15]
+Each cyclist in a team has a different air resistance,
+D = 1
+2ρCdrCdAv2
+(41)
+where Cdr is coefficient of drag reduction and Cd is coefficient of drag.
+▶Maximize the Team Power
+As presented in figure 21 below, the strategy that is currently most used is to have a fixed
+order where every cyclist drives roughly ten to thirty seconds in first position and then changes
+to last position. In first position the drag is the highest, thus is the required power output is high.
+Depending on the capability of the cyclist and it’s state at the moment the cyclist will adjust the
+time spend in that position, shorter ifweaker or tired and longer if stronger or in a more energetic
+state. Cyclists that are much weaker than the others, are often dropped out of the group during the
+race.
+5.2
+Team Time Trial Optimization Model
+In this section, we discuss the team time trail optimization model, where the team consists of
+six cyclists and the team’s time is determined when the fourth rider crosses the finish line.
+We assume that the six cyclists are A,B,C,D,E,F. Thus, we develop a optimization model as
+follows,
+min
+u(t) J =
+Z t f
+t0
+dt
+(42)
+where
+J = f (∆1,∆2,∆3,∆4,∆5,∆6,∆7,∆8)
+(43)
+
+<<<PAGE 21>>>
+
+Figure 21: Regular Changing Dynamics in a Team Time Trial of Four Cyclists [15]
+where
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+∆1 = L(P0,P1,P2,···)
+∆2 = tfront−A
+∆3 = tfront−B
+···
+∆7 = tfront−F
+(44)
+where L(s) is a function respect to the order of the time, and tfront−A represents the time that A s
+first.
+6
+Evaluation of Strengths and Weaknesses
+6.1
+Strengths
+• This article’s model analyzes individual and team competition of cyclists by combining phys-
+iology, dynamics, and aerodynamics. It also makes extensive use of accurate data for simulation
+and analysis. The final outcomes are more consistent with common sense and have a high level of
+confidence.
+• A number of possibilities were evaluated for the sensitivity analysis. Sensitivity to weather is
+classified as sensitivity to wind and sensitivity to temperature. The sensitivity to power distribution
+deviation takes into account the deviation of power profile and the deviation of power profile in
+each section.
+6.2
+Weaknesses
+• When estimating the impacts of wind, the effects of air vortices and atmospheric pressure
+were not fully considered. Because cyclists’ velocity is frequently more than 10m/s and their form
+is not totally streamlined. As a result of being impacted by the wind and air, an air vortex forms
+behind it, and the resistance increases due to the action of atmospheric pressure.
+
+<<<PAGE 22>>>
+
+References
+[1] Clarke, David C., and Philip F. Skiba. "Rationale and resources for teaching the mathematical
+modeling of athletic training and performance." Advances in physiology education (2013).
+[2] Gede, Gilbert. Optimal pacing strategies for cyclist time trials. University of California, Davis,
+2014.
+[3] Jones, Andrew M., et al. "Critical power: implications for determination of VO2max and
+exercise tolerance." Med Sci Sports Exerc 42.10 (2010): 1876-90.
+[4] Maturana, Felipe Mattioni, et al. "Critical power: how different protocols and models affect
+its determination." Journal of Science and Medicine in Sport 21.7 (2018): 742-747.
+[5] Vanhatalo, Anni, Andrew M. Jones, and Mark Burnley. "Application of critical power in
+sport." International journal of sports physiology and performance 6.1 (2011): 128-136.
+[6] J. Qiao." Application of power-maintenance time curves and critical power in predicting cy-
+cling performance." Sports Research 42.03(2021):99-104. doi:
+[7] Clarke, David C., and Philip F. Skiba. "Rationale and resources for teaching the mathematical
+modeling of athletic training and performance." Advances in physiology education (2013).
+[8] Morton, R. Hugh. "A new modelling approach demonstrating the inability to make up for lost
+time in endurance running events." IMA Journal of Management Mathematics 20.2 (2009):
+109-120.
+[9] Keller, Joseph B. "Optimal velocity in a race." The American Mathematical Monthly 81.5
+(1974): 474-480.
+[10] Hugh Morton, R. "A 3-parameter critical power model." Ergonomics 39.4 (1996): 611-619.
+[11] Coggan, A. "Creating Your Power Profile" Training Peaks. n.p. 2019. Sat. 19 Feb 2022.
+https://www.trainingpeaks.com/blog/power-profiling/.
+[12] Monod, H., and J. Scherrer. "The work capacity of a synergic muscular group." Ergonomics
+8.3 (1965): 329-338.
+[13] Ashtiani, Faraz, et al. "Optimal Pacing of a Cyclist in a Time Trial Based on Individualized
+Models of Fatigue and Recovery." arXiv preprint arXiv:2007.11393 (2020).
+[14] Ashtiani, Faraz, et al. "Experimental modeling of cyclists fatigue and recovery dynamics en-
+abling optimal pacing in a time trial." 2019 American Control Conference (ACC). IEEE,
+2019.
+[15] Overtoom, Mats. "Optimal Team Time Trial Strategy in Road Cycling: Optimisation of
+Changing Strategy using a Mathematical Performance model." (2013).
+[16] Behrman, Richard E., and Stuart E. Dreyfus. Applied dynamic programming. Princeton uni-
+versity press, 2015.
+
+<<<PAGE 23>>>
+
+Memo
+Race Guidance
+▶How to Use a Power Curve?
+The value of a power curve is that it shows you the work you’ve done. Since it’s power plotted
+against time, it gives you a snapshot of your energy systems and a view of your strengths and
+weaknesses.
+Every cyclist has strengths and weaknesses. Typical power curves are easily distinguishable.
+For example, in the chart below, the Sprinter maintains more power for a short period of time, while
+the Time Trial Specialist maintains more power for a longer period of time. Proper use of power
+curves allows for more professional guidance to be developed for cyclists.
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+SM
+TM
+SW
+TW
+▶How to Determine Pacing of a Cyclist?
+Three principles for pacing:
+• No matter what happens, keep yourself first pacing rhythm
+Keeping his or her pacing during the race is critical for a cyclist to achieving a positive outcome.
+In addition, from a psychological point of view, the stable pacing can improve self-confidence.
+• putting in a respectable all-out effort at the start of the race.
+At the start of a race, enough speed makes the cyclist not easy to lag behind. And it doesn’t has
+a great influence to the rest journey.
+• making reasonable use of riding downhill to rest and having some physical preparation
+for the upcoming ride uphill
+The ride uphill part takes cyclists more time and energy, and has a greater impact, if cyclists’
+power profile deviations happen. However, the ride downhill part, it allows cyclists have more time
+to rest with easy ride.
+▶How to keep Stamina in a Time Trial?
+• Maintain the speed and pay attention to rest on your way down
+
+<<<PAGE 24>>>
+
+• As far as possible follow behind the other players
+▶How to Prepare for a Cycling Race?
+• Check the course
+On the one hand, Familiar with the course help cyclists determine power distribution to prevent
+deviations. On the other hand, it also help cyclists determine which direction of wind influence
+most.
+• Before the game to keep rest, pay attention to diet, make oneself of the stable condition
+• Check the weather ahead of time
+The weather forecast will tell the wind velocity and direction and temperature change in the
+race day. Based on it, what you need to do is to prepare. For example, prepare to cool down if
+meets the high temperature weather
+• Choosing the suitable equipment
+Heavy cycle will become the biggest burden of cyclists.
+Suitable equipment help cyclists
+against the situation not expected.

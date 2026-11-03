@@ -1,0 +1,942 @@
+
+<<<PAGE 1>>>
+Problem Chosen
+D
+2022
+MCM/ICM
+Summary Sheet
+Team Control Number
+2208928
+A Maturity Evaluation Model of D&A Systems
+Summary
+Data and analytics(D&A) systems, with which corporations utilize to manage data and analytics,
+are of great signiﬁcance in this era of big data. The more mature a D&A system is, the more beneﬁt
+a corporation can obtain from its database, and the more commercial advantages a company can gain.
+Thus, the maturity of a D&A system reﬂecting to what extent data is managed and taken advantage of,
+is worthy of attention. Aware of this, we establish a set of assessment and optimization models to assist
+not only Intercontinental Cargo Moving(ICM) Corporation, but also corporations in various industries
+with determination and improvement of the maturity level of their D&A systems.
+To begin with, we establish the DAS Accessment Model to evaluate the maturity level of a D&A
+system. We investigate into three components of a D&A system, which are people, technology and
+process, and come up with 12 key performance indicators(KPIs) that are strictly quantiﬁed. Two
+methods to calculate the score of a D&A system are adopted thereafter. The ﬁrst one is the Fuzzy
+Sythetic Evaluation Model. The second one is the EWM-AHP Method, which is an integrated process of
+weight calculation by the Entrophy Weight Method(EWM) and the Analytic Hierarchy Process(AHP).
+Further, we integrate two scores to obtain the ﬁnal score of the system, and decide in which level this
+D&A system locates according to the Capability Maturity Model.
+Next, the Vector Optimization Model is established in order to upgrade the level of maturity of a
+D&A system. A maturity vector with coordinates being the very scores of three components of a D&A
+system is placed in a three-dimensional coordinate system to reﬂect the current maturity, while the
+target maturity level is represented as a parameterized surface. By choosing an optimization vector such
+that the vector sum of these two vectors reaches the surface, the process of optimization is visualized.
+Then, concrete proposals to optimize the system are put forward accordingly. Meanwhile, detailed
+procedures for ICM Corporation on how to measure the eﬀectiveness of their D&A system are shown
+in ﬂow charts.
+Finally, we set up the Scale-Demand method so as to analyse the inﬂuence of the scale on the
+importance of three components of a D&A system. Based on the concept of demand in economics, this
+method enables us to apply our DAS Assessment Model to seaport corporations of diﬀerent scale, as
+well as corporations in diﬀerent industries. Afterwards, beneﬁts of using the same assessment model
+between diﬀerent industries are discussed. In the end, we check the reliability of our model.
+Keywords: data and analytics(D&A) systems, maturity level, KPIs, Fuzzy Synthetic Evaluation Model,
+AHP-EWM Method, Vector Optimization Model, Scale-Demand method.
+
+<<<PAGE 2>>>
+Team 2208928
+Contents
+1
+Introduction
+1
+1.1
+Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+1.2
+Our work
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+2
+Assumptions and Justiﬁcations
+2
+3
+Notations
+3
+4
+Maturity Assessment: DAS Maturity Assessment Model
+3
+4.1
+KPIs for Three Components
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+4.2
+The First Method: FESM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+4.3
+The Second Method: EWM-AHP Method . . . . . . . . . . . . . . . . . . . . . . . .
+6
+4.3.1
+Weight Calculation by EWM . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+4.3.2
+Weight Calculation by AHP . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+4.3.3
+Intergrated weight calculation . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+4.3.4
+Score Calculated by Taking Average . . . . . . . . . . . . . . . . . . . . . . .
+8
+4.4
+Maturity Level Determination
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+5
+Upgrade the Level: Vector Optimization Model
+9
+5.1
+Vector Optimization Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+5.2
+Recommended Changes in Each Component . . . . . . . . . . . . . . . . . . . . . . .
+11
+5.2.1
+People . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+5.2.2
+Technology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+5.2.3
+Process . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+6
+Protocols to Measure Eﬀectiveness
+13
+6.1
+People . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+6.2
+Technology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+6.3
+Process
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+7
+Model Extension
+15
+7.1
+The Scale-Demand Method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+7.2
+Application to Seaport Companies . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+7.3
+Application to Other Industries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+8
+Discussion
+18
+8.1
+Reliability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+8.2
+Strengths
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+8.3
+Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+9
+A Letter to Port Users
+19
+References
+20
+
+<<<PAGE 3>>>
+Team 2208928
+Page 1 of 20
+1
+Introduction
+1.1
+Background
+In today’s digital world, data has become strategic and valueable assets for more and more com-
+panies. Indeed, data are utilized as a tool to support strategic decisions and business intelligence.
+However, for data to be potent assets, they need to be of good quality and well-managed[5]. Since
+there are numerous data generated in various commercial activities, it is diﬃcult for many companies
+to preserve data, let alone properly use data to obtain a competetive advantage.
+Consequently, a well-operated data and analytics(D&A) system is urgently needed for every cor-
+poration which desires to derive value from data assets. The D&A system plays a role not only in
+data management and governance, but in every ﬁeld of business. The more mature a D&A system is,
+the more beneﬁt a corporation can gain from it. Generally speaking, a D&A system consists of three
+components, people, technology and process. To determine the maturity of a D&A system, it is thus
+particularly important to consider these three components.
+1.2
+Our work
+Considering the background, we analyse and slove the problems step-by-step:
+Step 1: We select proper key performance indicators and build an assessment model to evaluate
+the maturity level of the D&A system of ICM Corporation. Especially, we build our assessment model
+with a combination of both subjective and objective methods.
+Step 2: We use our assessment model set up in Step 1 to demonstrate how to otimize the D&A
+system of ICM Corporation once the information of KPIs of the corporation is given. Then, we answer
+the questions raised by hiring managers, Information Technology department and Information Security
+Oﬃcer at ICM Corporations on how to optimize the maturity level of D&A system, and come up with
+concrete proposals.
+Step 3: We are required to design procedures or systems for ICM Corporation to properly use
+our assessment model in Step 1 to measure the eﬀectiveness. Since in our model, eﬀectiveness is
+determined by the maturity levels, we design ﬂow charts to visualize our recommended procedures to
+assess the maturity levels.
+Step 4: We establish a new method to analyse the weights of three components of a D&A systems
+of diﬀerent-scale companies. Then we use this method to apply our assessment model to seaport
+companies of diﬀerent scale. Also, we apply our model to other industries, especially to trucking
+companies, to evaluate the maturity of their D&A systems. Finally, we discuss the beneﬁt to ICM
+Corporation when customers of it also adopt our assessment model.
+Step 5: We write an one-page letter to customers of ICM Corporation to brieﬂy introduce our
+assessment model, and to make them conﬁdent in the D&A system of ICM Corporation.
+For better arranging our process of problem sloving, the ﬂow diagram of our work is shown in
+Figure 1.
+
+<<<PAGE 4>>>
+Team 2208928
+Page 2 of 20
+Figure 1: Flow Chart of Our Work
+2
+Assumptions and Justiﬁcations
+To simplify the given problems, we make the following basic assumptions, all of which are properly
+justiﬁed.
+• Assuption: The data we collect is precise.
+Justiﬁcation: Since all of our data is collected from oﬃcial websites and databases, we assume
+the accuracy of our data.
+• Assumption: Expert scoring does not distinguish between the professional level of experts.
+Justiﬁcation: In AHP, there will be several experts to score, whose professionality is assumed
+to be identical.
+• Assumption: The data we need for determining the maturity of the D&A system of ICM
+Corporation are accessible.
+Justiﬁcation: Since ICM Corporation does not share speciﬁcs about there D&A system, we
+assume that all data needed for assessing the maturity can be collected by ICM Corporation.
+• Assumption: When establishing the assessment model to measure the maturity level, indicators
+that are relatively unimportant are neglected.
+Justiﬁcation: According to the Pareto principle, for many outcomes, roughly 80% of conse-
+quences come from 20% of causes. To assess the maturity level, we concentrate on key parts of
+the cause, and adopt key performance indicators so as to assess the maturity level.
+
+<<<PAGE 5>>>
+Team 2208928
+Page 3 of 20
+3
+Notations
+The key notations used in this papar are listed in Table 1.
+Table 1: Notations
+Notation
+Description
+KPI
+Key Performance Indicator
+DAS
+Data & Analysis System
+W𝐸
+The weight vector calculated by Entrophy Weight Method
+W𝐴
+The weight vector calculated by Analytic Hierarchy Process
+W
+Integrated weight
+𝑍𝐴
+The score of maturity of DAS calcutaled by taking average
+𝑍𝐹
+The score of maturity of DAS calculated by Fuzzy Synthetic Evaluation Model
+𝑍
+Integrated score
+D
+The diﬃculty vector when optimizing
+4
+Maturity Assessment: DAS Maturity Assessment Model
+In order to comprehensively assess the maturity level of ICM Corporation, we establish the DAS
+Maturity Assessment Model. Through the model, we deﬁne KPIs respectively for three principal
+components of DAS, namely people, technology and process, to evaluate business performance. Then,
+we integrate two methods to determine in which level the DAS of ICM Corporation locates. In the
+ﬁrst method, we adopt Fuzzy Synthetic Evaluation Model(FSEM), which depends on the experts
+to score for KPIs of each component. By using FSEM, the maturity of DAS is scored. The second
+method contains the combination of Entrophy Weight Method(EWM) and Analytic Hierarchy
+Process(AHP) to determine the weight of each KPIs, since the weight will be more convincing by
+the integration of these two weight-calculation methods. After the weight of each KPI is determined,
+average score is taken. Finally, these two scores generated by two methods are integrated, so as to
+grade the maturity level of DAS of ICM Corporation.
+As soon as this model is established, following questions will be discussed in detail.
+4.1
+KPIs for Three Components
+To meet the need of ICM Corporation, we deﬁne KPIs respectively for three components to evaluate
+their success. It is widely acknowledged that KPIs need to be “SMART”, that is, speciﬁc, measurable,
+attainable, relevant and time-bound. We attach great importance to measurablity of our KPIs, while
+avoiding overlooking other standards. 12 KPIs, 3 for people, 4 for technology and 5 for process in total
+are deﬁned.
+Now we make some justiﬁcations for our KPIs. In order to satisfy the need of measurablity, all
+KPIS are deﬁned by either formulas or ratios. Meanwhile, all KPIs are set to be nonnegative; if the
+calculation shows some KPI is negative, then it is treated as zero. Additionally, all KPIs are normalizes
+and set to be of beneﬁt-type, that is, the closer to 1, the better.
+
+<<<PAGE 6>>>
+Team 2208928
+Page 4 of 20
+The concrete indicators are shown in Table 2.
+Table 2: KPIs
+• People
+IR: IR reﬂects the creativity of a D&A person. When faced with diﬃculties, it is often innovation that
+helps solve the problem. Meanwhile, innovations often bring about improvement in eﬃciency, as well
+as accuracy. Thus, we take IR as a KPI to measure the creativity. It is deﬁnd as
+min{1, 𝑁𝐼
+¯𝑁𝐼
+},
+(1)
+where 𝑁𝐼is the number of innovative actions of a staﬀmember during accomplishment of a task, and
+¯𝑁𝐼is the average number.
+WE: WE contributes a lot to determining the D&A talent of staﬀmembers. A D&A person should
+either be competent for data analysing, or data engineering. These two abilities taken into account, WE
+is deﬁned as:
+WE = 1 −min{max{0,𝑇𝑎−¯𝑇𝑎}
+¯𝑇𝑎
+, max{0,𝑇𝑑−¯𝑇𝑑}
+¯𝑇𝑑
+},
+(2)
+where 𝑇𝑎,𝑇𝑑represent respectively the ﬁnish time of an anayltic task and an engineering task, while
+¯𝑇𝑎, ¯𝑇𝑑are the expected time.
+WQ: WQ sheds light on the quality of an accomplished task. The fomula is:
+WQ = 1 −𝑁𝑔𝛼,
+(3)
+
+<<<PAGE 7>>>
+Team 2208928
+Page 5 of 20
+where 𝛼is the diﬃculty coeﬃcient of a task determined by the manager, and 𝑁𝑔is the number of gab
+of a ﬁnished task.
+• Technology
+SA: SA focuses on the operative eﬃciency of a technology. It measures timeliness and ‘quality’ of a
+D&A technology[7], deﬁned as:
+1 −|ALT −PLT|
+PLT
+,
+(4)
+where ALT stands for the time between actual ﬁnish time and planned start time, while PLT stands for
+the time from planned start time to planned ﬁnish time.
+CA: CA measures the ability of a technology or a software to accomplish one task within the committed
+cost. It is calculated by:
+CA = 1 −ECost −CCost
+CCost
+,
+(5)
+with CCost representing the committed cost, and ECost representing the sum of actual cost and forecast
+cost[7].
+Rob: Rob reﬂects how strong and healthy a technology or a software can be when running a task. It is
+measured by:
+1 −𝑇𝑚
+𝑇𝑡
+,
+(6)
+where 𝑇𝑚is the total malfunction time and 𝑇𝑡is the total run time when ﬁnishing a task.
+DPC: To measure the ability of a technology to handle with data, we introduce DCP as an indicator.
+Let 𝑀𝑎be the size of data processed by a technology in due time, and let 𝑀𝑝stands for the planned
+size of data to be processes. DPC is deﬁned as:
+min{1, 𝑀𝑎
+𝑀𝑝
+}.
+(7)
+• Process
+MC: metadata is the data that provides information of other data, which is crucial in data governance.
+The consistency of metadata must be assured in a well-operated data governance program. To measure
+to what extend this is done, we introduce MC as the correct read rate(CRR) during a speciﬁc period of
+time 𝑇𝑝[8].
+DS: data security is key to every D&A system, since any data system cannot operate well under a risk
+of data insecurity. There are already indicators to measure the information security, namely the ISI
+Indicators[9], so we just use them for DC, after properly normalization.
+DPC: DPC reﬂects the eﬃciency of a D&A system of data manipulation, diﬀerent from DPC deﬁned
+above, which reﬂects the capacity of a technology. DPE is deﬁned as:
+min{1, 𝑀′
+𝑎
+𝑀′𝑝
+},
+(8)
+where 𝑀′
+𝑎is the actual size of data the system process in due time, and 𝑀′
+𝑝is the planned size of data.
+DACSR: since a good data governance program approves access and changes to data, DACSR is taken
+into consideration. This indicator measures the success rate of accessing and changing data in the
+D&A system. Taking both accessiblity and editablity into account, DACSR is deﬁned as:
+𝛿𝑁𝑠
+𝑁𝑡
++ (1 −𝛿)𝐶𝑠
+𝐶𝑡
+,
+(9)
+
+<<<PAGE 8>>>
+Team 2208928
+Page 6 of 20
+where 𝑁𝑡, 𝑁𝑠represent respectively the number of times the system is requested to be visited and the
+number of times the system is successfully visited, and 𝐶𝑡, 𝐶𝑠are the number to be changed, and
+successfully changed. 𝛿is deﬁnd as the ratio of 𝐶𝑠to 𝑁𝑠.
+DQ: data quality matters a lot when data is used to analyse and to make strategies. There have been
+indicators for numeric data quality[10], and we adopt it after proper normalization.
+4.2
+The First Method: FESM
+Since speciﬁcs of the three components of ICM Corporation are not given, fuzzy model is taken
+into consideration. We divide the standard for each components to ﬁve levels. Then, a group of experts
+is hired to:
+1. Determine the weights 𝑤1, 𝑤2, 𝑤3 of three components when evaluating the maturity. The weight
+is then denoted as a fuzzy vector 𝐴:
+A = (𝑤1, 𝑤2, 𝑤3).
+(10)
+2. Determine the fuzzy sythetic evaluation matrix 𝑅. Each expert grades for each component, and
+the result is denoted as a three-tuple 𝑅𝑖= (𝑟𝑖1, 𝑟𝑖2, 𝑟𝑖3, 𝑟𝑖4, 𝑟𝑖5). The evaluation matrix 𝑅is then
+formulated as:
+R =
+
+𝑟11
+𝑟12
+𝑟13
+𝑟14
+𝑟15
+𝑟21
+𝑟22
+𝑟23
+𝑟24
+𝑟25
+𝑟31
+𝑟32
+𝑟33
+𝑟34
+𝑟35
+
+.
+(11)
+Finally, the result of sythetic evaluation is calculated, and denoted as a vector:
+B = (𝑏1, 𝑏2, 𝑏3, 𝑏4, 𝑏5) = A · R.
+(12)
+The score 𝑍𝐹is taken to be the maximum of 𝑏𝑖, that is,
+𝑍𝑚= max
+𝑖=1,...,5{𝑏𝑖}.
+(13)
+4.3
+The Second Method: EWM-AHP Method
+4.3.1
+Weight Calculation by EWM
+The Entrophy Weight Method(EWM) is an objective weighting method, based on the principle
+that the greater the degree of dispersion, the greater the degree of diﬀerentiation, and thus the more
+information can be derived. We employ EWM to determine the weights of normalized indicators.
+Since all of all KPIs are normalized and are of beneﬁt-type, the normalization process for each
+indicator is:
+𝑟′
+𝑖=
+𝑟𝑖𝑗−min{𝑟𝑗}
+max{𝑟𝑗} −min{𝑟𝑗},
+(14)
+where 𝑟𝑖𝑗is the 𝑗𝑡ℎindex of the 𝑖𝑡ℎobject. We calculate the information entrophy of the 𝑗𝑡ℎKPI as:
+𝐸𝑗= −
+∑𝑚
+𝑖=1 𝑝𝑖𝑗ln 𝑝𝑖𝑗
+ln 𝑚
+,
+(15)
+
+<<<PAGE 9>>>
+Team 2208928
+Page 7 of 20
+where
+𝑝𝑖𝑗=
+𝑟′
+𝑖𝑗
+∑𝑚
+𝑖=1 𝑟′
+𝑖𝑗
+,
+(16)
+and 𝑛is the number of objects we select for calculation. Then the objective weight of each index is
+determined as:
+𝛽𝑗=
+1 −𝐸𝑗
+𝑛−∑𝑛
+𝑗=1 𝐸𝑗
+,
+(17)
+where 𝑚is the number of KPIs in each component.
+The weights calculated by EWM of three components, people(WE1), technology(WE2) and
+process(WE3), is shown as follows:
+WE1 = (0.2731, 0.4121, 0.3148);
+WE2 = (0.2833, 0.267, 0.2027, 0.247);
+WE3 = (0.1597, 0.085, 0.3812, 0.2418, 0.1326).
+(18)
+4.3.2
+Weight Calculation by AHP
+The Analytic Hierarchy Process(AHP) is a method for organizing and analyzing complex deci-
+sions, as well as determining weights of indicators. It is developed by Thomas L. Saaty in the 1970s
+and has been reﬁned since then. It is particularly useful when indicators of decisions are described
+subjectively.
+In each component, experts compare the magnitude between every two KPIs and grade for them,
+forming a judgement matrix. By calculating the eigenvectors of this matrix, the weights are ﬁgured
+out.
+The weights calculated by AHP of three components is shown as follows:
+WA1 = (0.5396, 0.1634, 0.297);
+WA2 = (0.4829, 0.2178, 0.1897, 0.0997);
+WA3 = (0.1599, 0.0972, 0.4186, 0.2625, 0.0618).
+(19)
+4.3.3
+Intergrated weight calculation
+We respectively calculate two sets of weight vector by seperately using AHP and EWM. Now we
+take both into consideration, and obtain ﬁnal weights W𝑖, 𝑖= 1, 2, 3 as:
+W𝑖= 𝜔WAi + (1 −𝜔)WEi.
+(20)
+The 𝜔here stands for the coeﬃcient of two methods, representing the importance of each. Since
+our KPIs are all measurable, we attach greater signiﬁcance to EWM, since EWM is more objective
+than AHP. We set 𝜔= 0.2, and the ﬁnal weights for each components are shown in Figure 2.
+
+<<<PAGE 10>>>
+Team 2208928
+Page 8 of 20
+Figure 2: Integrated Weight
+4.3.4
+Score Calculated by Taking Average
+Suppose we are given the KPI vectors of three components, namely k1, k2, k3. The ﬁrst method of
+calculating scores is taking simply arithmetic mean. The score is thus calculating as:
+∑3
+𝑖=1 k𝑖· W𝑇
+𝑖
+3
+(21)
+where the superscript “T” denotes the transpose of a matrix.
+4.4
+Maturity Level Determination
+Now, there are two scores, 𝑍𝐴and 𝑍𝐹, calculated by two distinct methods. We integrated them
+to generate our ﬁnal score, denoted as 𝑍. The EWM-AHP is a relatively objective calculation in
+two respects: on one hand, we attach equally importance to three components of DAS. The three
+components are integrated as an organic system, and the lack of any component will do great harm to
+the maturity of DAS. Second, this EWM-AHP Method is quantiﬁed, which means it is more operable
+when a corporation is willing to determine the maturity of their DAS, and to further optimize it.
+Consequently, the ﬁnal score is calculated as:
+𝑍= 0.8𝑍𝐴+ 0.2𝑍𝐹.
+(22)
+Finally, we decide which level the maturity of DAS should be located. We consider the Capability
+Maturity Model(CMM), which is developed by the Software Engineering Institute (SEI). It is applied
+to the process and structure of governing data, providing a framework to analyse and assess the
+approaches and procedures that the organization is following from a data governance perspective, and
+can be applied to many other processes as well[4].
+The CMM divides the maturity of a system into ﬁve stages, that is, Initial, Repeatable, Deﬁned,
+Managed, and Optimizing. The standard of each stage is listed as follows.
+• Initial: 𝑍< 0.2. It is characteristic of systems at this level that they are typically undocumented
+and in a state of dynamic change, tending to be driven in an ad-hoc, uncontrolled, and reactive
+manner by users or events. Data may exist in multiple ﬁles and databases; using multiple format;
+and stored redundantly across multiple systems[4].
+
+<<<PAGE 11>>>
+Team 2208928
+Page 9 of 20
+• Repeatable: 0.2 ≤𝑍< 0.4. Most systems at this level are repeatable, possibly with consistent
+results. Process discipline is unlikely to be rigorous, but where it exists it may help to ensure that
+existing processes are maintained during times of stress. Although the diﬀerences between the
+business and technical aspects of data are usually (though not always) understood at some level,
+there is less eﬀort made to document and capture the business meaning of data[4].
+• Deﬁned: 0.4 ≤𝑍< 0.6. It is characteristic of systems at this level that there are sets of deﬁned
+and documented standard processes established and subject to some degree of improvement over
+time. These standard processes are in place and are used to establish consistency of process
+performance across the organization. Corporation of this level, on data governance maturity
+scale, have documented and established a data governance program as a core component of their
+report development and data usage life-cycle[4].
+• Managed: 0.4 ≤𝑍< 0.8. An organization can move to this level after a managed metadata
+environment is set up, and measurable process metrics are carefully deﬁned. Data audits have
+been performed well to gauge production data quality[4].
+• Optimizing: 0.8 ≤𝑍< 1.0. Organizations use practices to continually improve the data access,
+data quality, and database performance. No change is ever introduced into a production data
+store without it ﬁrst being scrutinized by the data governance team and documented within the
+meta-data repository[4].
+5
+Upgrade the Level: Vector Optimization Model
+5.1
+Vector Optimization Model
+To make full use of data, we set the primary task for ICM Corporation to upgrade the level of
+maturity of DAS, which not only optimizes the system, but also helps to instill conﬁdence of customers
+in ICM’s DAS. Once the top level, the optimizing level is reached, it is then a long process to further
+maximize the potential of data.
+As a result, we primarily consider how to upgrade the level to
+optimizing.
+In order to use our assessment model to recommend optimization process, we introduce the Vector
+Optimization Model(VOM). As is discussed above, the score calculated by EWM-AHP Method is
+more quantiﬁable, and account for 80% in our assessment system, so we use this score as a metric
+in our optimization model. We set up a three dimensional coordinate system, and use one vector to
+represent the maturity of one DAS. When details of all KPIs of this DAS are collected, and made into
+three vectors k1, k2, k3, a three dimensional vector A = (a1, a2, a3) is determined as:
+
+
+𝑎1
+= v1 · 𝑊1
+𝑎2
+= v2 · 𝑊2
+𝑎3
+= v3 · 𝑊3
+.
+(23)
+The length of three projections of a vector a on three coordinate axes, according to this fomula, represent
+respectively the performance of a DAS(which is represented by the vector a) in three components: 𝑎1
+represents the performance of people; 𝑎2, technology; 𝑎3, process. In this case, a0 = (1, 1, 1) is the
+ideal vector of a DAS, which means all KPIs reach their maximum, that is, 1.
+
+<<<PAGE 12>>>
+Team 2208928
+Page 10 of 20
+Now we determine the target surface. As deﬁned above, the criterion that a system reaches the
+optimizing level is 𝑍≥0.8. To reach the optimizing level, a system should at least scored 0.8. The
+formula expression of the target surface 𝑆, representing the optimizing level and calculated by adopting
+the EWM-AHP Method to calculate the score, is thus as follows:
+
+
+𝑥+𝑦+𝑧
+3
+= 0.8
+𝑥≤1
+𝑦≤1
+𝑧≤1
+.
+(24)
+Given a representing the current maturity of DAS, the task of optimization is translated as: to ﬁnd
+a vector b = (𝑏1, 𝑏2, 𝑏3), such that the vector a + b reaches the surface 𝑆, that is,
+∑3
+𝑖=1(𝑎𝑖+ 𝑏𝑖)
+3
+= 0.8.
+(25)
+Now we introduce a diﬃculty vector D = (𝑑1, 𝑑2, 𝑑3), 𝑑1 + 𝑑2 + 𝑑3 = 1, 𝑑1, 𝑑2, 𝑑3 > 0 to measure the
+degree of diﬃculty for a company to improve the score in three components. The total diﬃculty is thus
+formulated as b · D.
+For every company, it is ideal to reach a higher maturity level with minimum diﬃculty.
+To
+summarize, our task is to ﬁnd that for which vector b, b · D reaches its minimum, while the end of the
+vector a + b lies precisely on the surface 𝑆. This process is visualized in Figure 3.
+Figure 3: Schematic Diagram for VOM
+As b = (𝑏1, 𝑏2, 𝑏3) is solved out, a company can further determine changes in the three components.
+To be speciﬁc, hiring managers should adjust the staﬀstructure to scored 𝑏1 higher than present; IT
+department should adopt new technology to improve the score by 𝑏2; and the ISO should set up a better
+data governance program or process so as to reach the score of 𝑎3 + 𝑏3.
+
+<<<PAGE 13>>>
+Team 2208928
+Page 11 of 20
+5.2
+Recommended Changes in Each Component
+Using our Vector Optimization Model, we are now capable of answering questions raised by three
+departments of ICM Corporation, and further recommend changes in each component.
+5.2.1
+People
+The D&A talent is deﬁned as the comprehensive competence of the followings:
+1. the ability of data analysis, including data visualizing, machine learning and presentation skills[3];
+2. the ability of data engineering, including coding, data warehousing and database system operat-
+ing;
+3. creativity, that is, the ability to solve a new problem with innovative methods;
+4. enough patience to stick to D&A work while avoiding making mistakes.
+The ﬁrst two abilities are mearsured by WE, while IR reﬂects the third ability and WQ measures
+the fourth. By adopting these three KPIs deﬁned above, the hiring managers are able to carry out
+employee evaluation and assess current D&A talent. After properly assessment, the talent shortfall,
+that is, the score 𝑏1 is obtained. Since three KPIs contributes to 𝑏1, and the weights of these KPIs are
+determined by EWM-AHP Method, hiring managers can decide of which ability the staﬀteam lacks
+most, and can then accordingly seek for D&A person.
+There are two ways to make up these shortfalls, that is, to directly hire and train new staﬀmembers,
+or to contract-to-hire skilled staﬀ. If there is a urgent need for a speciﬁc skill set to ﬁll a short-term
+need, like a project with a deﬁnite beginning and end point, then a contract-to-hire ensures paying only
+for that talent to complete that particular job and scaling down as soon as the project is over. However,
+for a long-term solution, a direct hire can save costs and time[2]. Thus, the choice depends on urgency.
+After a round of direct hire or contract to ﬁnish urgentwork, it is also necessary to carry out KPI
+assessment and calculate the score again, until reaching the optimal situation.
+The whole suggestions are shown in the following ﬂow chart, Figure 4.
+Figure 4: Flow Chart For Hiring Managers
+
+<<<PAGE 14>>>
+Team 2208928
+Page 12 of 20
+5.2.2
+Technology
+From the calculation of 𝑎3 and the determination of 𝑏2, IT department can preliminarily ﬁgure
+out which attributes their technology is weak at, and further choose whether to upgrade the current
+technology, or to replace it with a new one.
+When seeking for a new technology, the weights calculated by EWM-AHP Method show that the
+eﬃciency of a technology or a software should be taken priority over other KPIs. Therefore, when
+considering various product attributes, the most important one is the eﬃciency. However, since the
+diﬀerences between weights are not so large, other indicators, such as Rob, also need to be paid enough
+attention to.
+When compared a single product with a set of products, it is necessary to realize the advantages
+and drawbacks of both. A set of product solving a single task will be better in SA, since the division
+of labor is carried out. However, a single product can avoid incompatibility, so as to get higher score
+in Rob. As the weight of SA is larger than that of Rob, a set of products is recommended, unless the
+Rob of the set is considerably low.
+5.2.3
+Process
+A good data governance is a requisite for well-operated D&A process. Since data governance is
+new to ICM Corporation, analyse some key elements in data governance, and ﬁnally come up with a
+data governance process.
+1. DQ. There are six data quality dimensions to describe data quality: accuracy, timeliness, rele-
+vance, completeness, understood and trusted. The eﬀectiveness of any IT initiatives depends on
+the quality of the data. The reports generated and decisions made can only be as good as the
+quality of data[11]. In a word, data quality is essential for a corporation related with data. In our
+assessment model, data quality is measured by DQ.
+2. DACSR: Data Accessing Success Rate refers to the ratio of the number of successful access to
+data in the system to the total number of data-accessing request. Data Changing Success Rate
+refers to the ratio of the number of successful change of data to the total number of data-changing
+requests. DACSR is an integrated indicator including the two indicators above, which acts as an
+important indicator to measure the system maturity.
+3. MC: Metadata is the data providing information about other data, usually a description of the
+data and its contents. MC means that data is accessed consistently at diﬀerent times or on the
+same request. The higher the MC in the DAS, the more mature the data governance is, and the
+more eﬃcient the process is.
+4. DS: Data security refers to the process of protecting data from unauthorized access and data
+corruption throughout its lifecycle. If a company is willing to derive beneﬁt from data, it is a
+priority that the data is safe and accurate. DS measures to what extent the data is protected in a
+process.
+Alone with eﬃciency deﬁned for every process, we design a data governance process to manage
+the data throughout its entire lifecycle for ICM Corporation. After a large amount of data is generated
+by ships, custom inspections and cargo storage, they are stored respectively in distinct databases. Then,
+
+<<<PAGE 15>>>
+Team 2208928
+Page 13 of 20
+a data management system is made use of to create, transmit, exchange and summarize the data. As
+soon as the data is processed, a schedule will be made for cargo moving. The maturity of the whole
+data governance process is measured by both KPIs and the correctness of the schedule. If the schedule
+is correct, corresponding data will be deleted. The ﬂow chart of our data governance process is shown
+in Figure 5.
+Figure 5: Data Governance Process
+6
+Protocols to Measure Eﬀectiveness
+In our DAS Maturity Assessment Model, we use KPIs to determine the scores of three components,
+and ﬁnally decide to which level the maturity of the DAS of ICM Corporation belongs to. Once the
+KPIs are calculated, maturity level can be determined, and eﬀectiveness of the system can thus be
+evaluated.
+To measure the eﬀectiveness of the DAS, ICM Corporation needs some protocols, which are
+procedures or systems, to calculate KPIs. Consequently, we design three procedures to calculate KPIs
+of three components as a guidance to eﬀectiveness evaluation, according to our deﬁnition of KPIs.
+These procedures are shown in the following ﬂow charts.
+
+<<<PAGE 16>>>
+Team 2208928
+Page 14 of 20
+6.1
+People
+Figure 6: Flow Chart of People
+6.2
+Technology
+Figure 7: Flow Chart of Technology
+6.3
+Process
+
+<<<PAGE 17>>>
+Team 2208928
+Page 15 of 20
+Figure 8: Flow Chart of Process
+7
+Model Extension
+7.1
+The Scale-Demand Method
+To apply our assessment model to corporations of diﬀerent scales and industries, we reconsider
+the relation between people, technology and process. As the scale of a corporation varies, the weight
+of these three components may not be identical. As a result, the weight determination in EWM-
+AHP Method, simply taking arithmetic mean of scores of these three components need to be further
+modiﬁed. To extend our model and make it more applicable to diﬀerent situation, we introduce another
+method, the Scale-Demand Method(SDM), to determine the importance between three components.
+The concept of economies of scale in microeconomics, which indicates that as the scale of a
+corporation becomes larger, the average cost may be smaller, enlightens us. To measure the importance
+of people, technology and process for a DAS of a corporation, we consider the functional relationship
+between these three components and the scale of the corporation. Suppose that the scale of a corporation
+may be determined by one variable 𝑥, and the relationship functions are
+𝐷𝑖= 𝑓𝑖(𝑥);
+(26)
+where 𝐷1, 𝐷2, 𝐷3 are respectively the demand for people, technology and process.
+When 𝑥ranges in a closed interval 𝐼, maximum and minimum of these functions can be taken. As
+the demand of a resource represents the relatively importance of it, the weights of the three components
+𝜔𝑖can thus be determined as:
+𝜔𝑖=
+𝑑𝑖
+∑3
+𝑖=1 𝑑𝑖
+,
+(27)
+
+<<<PAGE 18>>>
+Team 2208928
+Page 16 of 20
+where
+𝑑𝑖=
+𝑓𝑖(𝑥) −min𝑥∈𝐼𝑓𝑖(𝑥)
+max𝑥∈𝐼𝑓𝑖(𝑥) −min𝑥∈𝐼𝑓𝑖(𝑥)
+(28)
+is the normalized demand for people, technology and process. Once the scale 𝑥is determined, the
+relatively importance of three components can be determined, and the weights are thus determined.
+7.2
+Application to Seaport Companies
+A berth is a space in a harbor where a ship stays for a period of time. The more of berthes there are
+in a seaport, the larger scale of a seaport company is. So we set the number of berth of a seaport as the
+variable 𝑥to quantify the scale. As for the demand of people, we adopt the number of technologists
+hired by a seaport company.
+To simplify our model, we assume that the weights of process and technology are identical, and use
+the throughput of cargo during a period of time to represent for the demand. The more cargo a seaport
+process during a period of time, the more complex a cargo system is, and thus the higher the demand
+for both technology and process is.
+We collect the data of seaport companies of diﬀerent berthes from the Ministry of Transport of the
+People’s Republic of China[1], so all the data is precise and accurate.
+Then, we handle the relationship between the number of technologists and the scale of companies.
+Also we investigate the relationship between technology, or precess, with the scale. Next, we use
+Formula (28) to normalize these t wo relationship functions, and combine them in Figure 9:
+Figure 9: Two Relationship Functions
+The diagram indicates that the two relationship functions admit the identical value at a point, where
+the weights of people, technology and process are the same, demonstrating that our assumption in
+EWM-AHP Method is reasonable when the number of perthes of the seaport is a certain value.
+
+<<<PAGE 19>>>
+Team 2208928
+Page 17 of 20
+Given these two relationship functions and the scale of a seaport, we can calculate the weights by
+using Formula (27). Given further information, the maturity level of seaports of diﬀerent scale can be
+assessed according to our DAS Maturity Assessment Model.
+7.3
+Application to Other Industries
+Our assessment mode is practicable to analyse the maturity of DASs in industries other than seaport
+management. However, there are slightly some diﬀerences that are needed to be point out:
+• When applying AHP to calculating the weights of KPIs, the result in another industry may diﬀer
+from that in seaport management, since the relative importance of KPIs may change between
+industries. As a result, the integrated weights may change. However, as AHP only contributes to
+20% in intergrated weight calculation, the integreted weight of each KPI will not change sharply.
+• When calculating the score of a DAS system, we integrate two methods, one of which is FSEM.
+In diﬀerent industries, the fuzzy matrix generated by scores of experts may also be diﬀerent.
+Again, since the score obtained by FSEM only makes up 20% in the integrated score, the ﬁnal
+result will not alter drastically.
+• When using SDM, we consider the relationship functions between demand and scale. In diﬀerent
+industries, these relationship functions diﬀer, so the weights put in people, technology and process
+diﬀer.
+In order to overcome these diﬀrences, some eﬀorts are to be made. Here, we show steps toapply
+our assessment model to evaluate the maturity level in the trucking industry.
+• Hire experts
+– to rank the importance between KPIs, and adopt AHP method to calculate the weight vector
+W′
+𝐴;
+– to form the new fuzzy matrix 𝑅′ and calculate the score 𝑍′
+𝐹
+• Calculate the intergrated weights with new W′
+𝐴and the same W𝐸.
+• Determine the relationship function, and obtain the weights of people, technology and process.
+• Figure out a new score 𝑍′
+𝐴with new weights.
+• Combine 𝑍′
+𝐴and 𝑍′
+𝐹to work out the intergrated score, and decide the maturity level accordingly.
+Finally, we discuss the beneﬁt to ICM Corporation if customers of it also adopt our assessment
+model. The possible beneﬁts are:
+• With the same criterion, it is easier for ICM Corporation to understand and quantify the maturity
+of DASs of its clients.
+• If the maturity of DASs ICM Corporation and its clients lie on the same level, the exchange of
+experience on how to further optimize D&A system can be carried out between them since the
+same model is adopted. Therefore, it is easier for ICM Corporation to ﬁnd out how to optimize
+their D&A system.
+
+<<<PAGE 20>>>
+Team 2208928
+Page 18 of 20
+• Once the same assessment model is used, ICM Corporation can better understand the need of
+their cilents, and oﬀer considerate and accurate service.
+8
+Discussion
+8.1
+Reliability
+The reliability of our model is guaranteed by the following:
+• When using AHP to calculate the weights, we carry out the consistency check, and all the
+dimensions pass the check, which reﬂects that the result is rational.
+• When using SDM on seaport companies, we conduct two quadratic ﬁttings, and the 𝑅2 of these
+two ﬁttings are 0.9758 and 0.9731, which suggest strong correlativity.
+8.2
+Strengths
+• We considere 12 KPIs in three components of the system, which represent most of the main
+factors that aﬀect the maturity of the DAS. Meanwhile, our KPIs are all able to be quantiﬁed,
+making it easier to determine the maturity level.
+• When assessing the maturity of the DAS of ICM Corporation, we establish a universal model,
+which is applicable to other industries.
+• When determining the weights of 12 KPIs, we integrate EWM and AHP in consideration of both
+the objective and the subjective aspects, which means the weights are more reasonable.
+8.3
+Weaknesses
+• In our optimization model, we only show how to upgrade the maturity level. Optimization within
+a maturity level could not be done in this model.
+• In SCM, the relationship between process of scale is not easy to quantiﬁed.
+
+<<<PAGE 21>>>
+Team 2208928
+Page 19 of 20
+9
+A Letter to Port Users
+Dear Sir/Madam:
+In order to further improve the maturity of the data and analytics(D&A) system to provide you with
+better service, Intercontinental Cargo Moving(ICM) Corporation commissioned us to develop a model
+to measure the maturity of its D&A system and provide optimization strategies. After continuous
+testing and improvement, we ﬁnally established DAS Maturity Assessment Model which helps ICM
+measure the Maturity of its D&A system„ and further maximize the potential of their data assets.
+For three key components of D&A system, people, technology and process, we deﬁne 12 KPIs
+respectively, to evaluate their success, including 3 for people(Innovation Rate, Work Eﬃciency, Work
+Quality), 4 for technology (Schedule Adherence, Cost Adherence, Robustness, Data Processing Capac-
+ity) and 5 for process(Metadata Consistency, Data Security, Data Processing Eﬃciency, Data Accessing
+and Changing Success Rate, Data Quality). All of these KPIs are strictly deﬁned and quantiﬁed, guar-
+anteeing the strictness of our assessment model.
+Then, we adopt two methods to calculate the score of the D&A system of ICM Corporation. The
+ﬁrst method is Fuzzy Synthetic Evaluation Model(FESM), mainly based on judgement of experts. A
+score of the D&A system is then accordingly ﬁgured out. The second one is EWM-AHP Method,
+which combines Entrophy Weight Method and Analytic Hierarchy Process to determine the weights of
+12 indicators, striking a good balance between subjectivity and the objectivity. After calculating every
+score of KPIs, we work out the scores for each of the three components and average them to get the
+overall score of the D&A system. Intergrating these two scores produced by two methods, a ﬁnal score
+of the D&A system is determined.
+The maturity of a D&A system is divided into ﬁve levels, initial, repeatable, deﬁned, managed and
+optimizing, by a well-known model in data governance. The level of initial is the bottom level, and
+the optimizing level is the top one. According to the ﬁnal score, we could decide in which level the
+maturity of the D&A system of ICM Corporation should be located.
+As the measurement procedure listed above, our assessment model is strictly quantitative, scientiﬁc
+and valid. Consequently, it could ensure the accuracy and authenticity of the maturity level of D&A
+system assessed. Further, we come up with an optimization model, which aims to upgrade the maturity
+level. Do not lack conﬁdence in the D&A system of ICM Corporation, if the out come of maturity
+level assessment is not optimizing. If this were the case, ICM would use our model, which is proved
+to be eﬀective, to optimize their current maturity of D&A system as soon as possible.
+Our team have every reason to believe that the D&A system of ICM Corporation is fully capable
+of managing large amounts of various types of data. Please do not hesitate to cooperate with ICM for
+high quality of service.
+Sincerely,
+Team #2208928
+
+<<<PAGE 22>>>
+Team 2208928
+Page 20 of 20
+References
+[1] Ministry of Transport of the People’s Republic of China. https://www.mot.gov.cn
+[2] “Direct Hire vs Contract to Hire - Advantages and Disadvantages." [Online]Available from
+https://www.nelito.com/blog/direct-hire-vs-contract-to-hire-advantages-and-disadvantages.html
+[3] S.W.O’Conner,
+“7
+Must-Have
+Skills
+For
+Data
+Analysts."
+[Online]Available
+from
+https://www.northeastern.edu/graduate/blog/data-analyst-skills/
+[4] R.
+S.
+Seiner,
+“A
+Data
+Governance
+Maturity
+Model."
+Vols.
+[online]Available
+from
+http://tdan.com/a-data-governance-maturity-model/16702, 2017.
+[5] Fleckenstein, M. & Fellows, L. (2018). Data governance. In Modern Data Strategy(pp. 63-76).
+Springer.
+[6] Marchildon, P., Bourdeau, S., Hadaya, P., & Labissière, A. (2018). Data governance maturity
+assessment tool: A design science approach. Projectics/Proyéctica/Projectique, (2), 155-193.
+[7] Antolić, Ž (2008). An example of using key performance indicators for software development
+process eﬃciency evaluation. R&D Center Ericsson Nikola Tesla, 6, 1-6.
+[8] Ding Haijun, & Lu jing. (2016). Elastic classiﬁcation based consistency service for cloud storage.
+Application Research of Computers, 33(7), 2039-2042.
+[9] ETSI GS ISI 001-1 (V1.1.2): ISI Indicators Part 1; A full set of operational indicators for
+organizations to use to benchmark their security posture (2015-06).
+[10] Marev, M. S., Compatangelo, E., & Vasconcelos, W. W. (2020). Intrinsic Indicators for Numerical
+Data Quality. In IoTBDS (pp. 341-348).
+[11] Olson, J 2003. Data Quality: The Accuracy Dimension. Published by Morgan Kaufmann Pub-
+lishers, USA
+[12] Mankiw, N. G. (2014). Principles of economics. Cengage Learning.

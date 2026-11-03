@@ -1,0 +1,80 @@
+年	题	文件	页	标题	方法(按词频)	章节	方法数
+2022	A	2200289.pdf	25	Game Theory in Cycling	敏感性分析、启发式算法、评价体系、仿真	假设/符号/敏感性/优缺点/参考文献	4
+2022	A	2207343.pdf	25	2022 MCM/ICM	非线性规划、评价体系、线性/整数规划、敏感性分析	假设/符号/敏感性/参考文献	4
+2022	A	2209466.pdf	25	2022 MCM/ICM	最优控制、敏感性分析、回归、评价体系	假设/符号/敏感性/优缺点/参考文献/附录	4
+2022	A	2209812.pdf	24	Power Curve Make Cyclists Faster and Faster	最优控制、评价体系、仿真、ODE/动力系统	假设/符号/敏感性/优缺点/参考文献/备忘录/信	4
+2022	A	2210307.pdf	25	Power Planning Model: Magic Weapon for Cyclists	非线性规划、线性/整数规划、贝叶斯/概率、评价体系、敏感性分析、回归	假设/符号/敏感性/参考文献	6
+2022	A	2212245.pdf	25	How to Ride a Cycling Time Trial	敏感性分析、评价体系	假设/符号/敏感性/优缺点/参考文献	2
+2022	A	2216547.pdf	25	Optimal Cycling Solution Based on Physiology, Newtonian Mechanics and Dynamic Programming	最优控制、仿真、评价体系、回归	假设/符号/敏感性/参考文献	4
+2022	B	2200084.pdf	24	Model for Better Use of Water Resources Based on Marginal Utility and Auction Theory	评价体系、敏感性分析、多目标、ODE/动力系统、统计推断、线性/整数规划	假设/符号/敏感性/优缺点/参考文献	6
+2022	B	2202748.pdf	25	2022 MCM/ICM	贝叶斯/概率、多目标、评价体系、敏感性分析、启发式算法、回归	假设/符号/敏感性/优缺点/参考文献	6
+2022	B	2207864.pdf	25	Water and Hydroelectric Power Sharing	评价体系、最优控制、多目标、贝叶斯/概率、敏感性分析、仿真	假设/符号/敏感性/参考文献	6
+2022	B	2211922.pdf	25	2021 MCM/ICM	启发式算法、评价体系、ODE/动力系统、敏感性分析、多目标	假设/符号/敏感性/优缺点/参考文献/附录	5
+2022	B	2213970.pdf	25	ecision System for Optimizing Water Allocation	博弈论、ODE/动力系统、启发式算法、评价体系、敏感性分析、贝叶斯/概率	假设/符号/敏感性/优缺点/参考文献	7
+2022	B	2228168.pdf	25	2022 MCM/ICM	启发式算法、评价体系、线性/整数规划、敏感性分析、非线性规划、ODE/动力系统	假设/符号/敏感性/参考文献	6
+2022	C	2200401.pdf	25	Grid the profit: Adaptive Periodic Grid Model with ARIMA Prediction	时间序列、机器学习、评价体系、敏感性分析、统计推断、回归	假设/符号/敏感性/优缺点/参考文献/附录/备忘录/信	6
+2022	C	2200688.pdf	24	2022 MCM/ICM	时间序列、机器学习、贝叶斯/概率、评价体系、统计推断、敏感性分析	假设/符号/敏感性/优缺点/参考文献/附录/备忘录/信	7
+2022	C	2203120.pdf	24	Trading Strategy Model Based on Dynamic Programming	时间序列、最优控制、机器学习、回归、评价体系	假设/符号/敏感性/参考文献/附录/备忘录/信	5
+2022	C	2204883.pdf	25	Gold Strategy for Gold & Bitcoin traders	线性/整数规划、时间序列、评价体系、多目标、机器学习、回归	假设/符号/敏感性/优缺点/参考文献/备忘录/信	6
+2022	C	2208834.pdf	25	n Improved Pairs Trading Strategy Based on Cointegration of Gold and Bitcoin	机器学习、时间序列、仿真、敏感性分析、回归、ODE/动力系统	假设/敏感性/优缺点/参考文献/附录/备忘录/信	8
+2022	C	2212336.pdf	25	2022 MCM/ICM	时间序列、启发式算法、最优控制、机器学习、ODE/动力系统、评价体系	假设/符号/敏感性/优缺点/参考文献/附录/备忘录/信	8
+2022	C	2218743.pdf	24	Gold-Bitcoin Market Portfolio Investment Strategy Model and Its Application	时间序列、敏感性分析、多目标、启发式算法、统计推断、贝叶斯/概率	假设/符号/敏感性/参考文献/备忘录/信	7
+2022	C	2218931.pdf	25	inding the Best Strategy with Quantitative Models	机器学习、时间序列、评价体系、非线性规划、仿真、敏感性分析	假设/符号/敏感性/优缺点/参考文献/备忘录/信	8
+2022	C	2224507.pdf	25	2022 MCM/ICM	评价体系、时间序列、ODE/动力系统	假设/符号/敏感性/参考文献/备忘录/信	3
+2022	C	2229059.pdf	24	For office use only F1 F2 F3 F4 2022 MCM/ICM	贝叶斯/概率、评价体系、ODE/动力系统	假设/优缺点/参考文献/附录/备忘录/信	3
+2022	D	2208928.pdf	22	Maturity Evaluation Model of D&A Systems	评价体系、回归、贝叶斯/概率	假设/符号/优缺点/参考文献/备忘录/信	3
+2022	D	2215444.pdf	22	2022 MCM/ICM	评价体系、仿真、系统动力学/ABM、贝叶斯/概率、线性/整数规划、敏感性分析	假设/符号/敏感性/参考文献/备忘录/信	7
+2022	D	2218897.pdf	23	Towards the Evaluation and Analysis of the D&A System from an Innovative Perspective	回归、评价体系、贝叶斯/概率	假设/符号/优缺点/参考文献	3
+2022	D	2224178.pdf	24	2022 MCM/ICM	评价体系、仿真、时间序列、贝叶斯/概率、敏感性分析、ODE/动力系统	假设/符号/敏感性/参考文献	7
+2022	E	2202171.pdf	24	etter Strategy: Carbon Sequestration by Forests Logging	敏感性分析、多目标、启发式算法、统计推断、回归	假设/符号/敏感性/优缺点/参考文献	5
+2022	E	2202666.pdf	21	2022 MCM/ICM	评价体系、敏感性分析、贝叶斯/概率	假设/符号/敏感性/优缺点/参考文献	3
+2022	E	2202838.pdf	25	What a Forest Management Plan!	评价体系、敏感性分析、启发式算法、非线性规划、线性/整数规划、回归	假设/符号/敏感性/优缺点/参考文献	7
+2022	E	2203489.pdf	25	2021 MCM/ICM	贝叶斯/概率、评价体系、线性/整数规划、ODE/动力系统、敏感性分析、统计推断	假设/符号/敏感性/优缺点/参考文献	7
+2022	E	2209336.pdf	25	3 −M Model for Forest Management Plans	评价体系、机器学习、贝叶斯/概率、回归、仿真	假设/符号/敏感性/优缺点/参考文献	5
+2022	E	2216618.pdf	25	18	评价体系、敏感性分析、贝叶斯/概率、回归	假设/符号/敏感性/优缺点/参考文献	4
+2022	E	2218144.pdf	25	hasing Better Forest Management Strategies	评价体系、回归、敏感性分析、ODE/动力系统	假设/符号/敏感性/优缺点/参考文献	4
+2022	E	2220714.pdf	25	2022 MCM/ICM	评价体系、仿真、敏感性分析、回归、贝叶斯/概率、统计推断	假设/符号/敏感性/优缺点/参考文献	6
+2022	E	2223269.pdf	25	69	回归、机器学习、多目标、评价体系、ODE/动力系统	假设/符号/敏感性/优缺点/参考文献	5
+2022	E	2223495.pdf	25	2022 MCM/ICM	ODE/动力系统、仿真、多目标、评价体系、博弈论、敏感性分析	目录/假设/符号/敏感性/参考文献/附录	7
+2022	F	2204803.pdf	23	Space For Global Equity	评价体系、多目标、敏感性分析	假设/符号/敏感性/优缺点/参考文献	3
+2022	F	2208238.pdf	25	One Space for All, All for an Equitable World!	仿真、ODE/动力系统、贝叶斯/概率、时间序列、回归、博弈论	假设/符号/敏感性/参考文献/附录	8
+2022	F	2209952.pdf	25	The Coming Asteroids Mining, the Future Global Equity	评价体系、回归、敏感性分析、博弈论、ODE/动力系统	假设/敏感性/优缺点/参考文献	5
+2022	F	2211240.pdf	25	Together for a Shared World	评价体系、敏感性分析	假设/敏感性/参考文献	2
+2022	F	2218577.pdf	25	Will Asteroid Mining Aﬀect Global Equity? Mathematical Modelling Based on Data from 32 Countries	评价体系、敏感性分析、时间序列、ODE/动力系统	假设/符号/敏感性/参考文献	4
+2022	F	2220722.pdf	25	2022 MCM/ICM	评价体系、敏感性分析、贝叶斯/概率、ODE/动力系统、统计推断、时间序列	假设/符号/敏感性/优缺点	6
+2022	F	2224021.pdf	25	Harvest in Space! Outlook & Equity	评价体系、ODE/动力系统、回归、敏感性分析、仿真	假设/符号/敏感性/优缺点/参考文献/附录	5
+2024	A	2400996.pdf	24	daptive Sex of Lamprey: gift or curse?	ODE/动力系统、仿真、敏感性分析、回归、评价体系	假设/符号/敏感性/优缺点/参考文献	5
+2024	A	2405424.pdf	25	2024 MCM/ICM	评价体系、回归、ODE/动力系统、仿真、敏感性分析	假设/符号/敏感性/优缺点/参考文献	5
+2024	A	2407093.pdf	27	oexist or Extinct? Relationship between Lampreys and Environment	评价体系、敏感性分析、ODE/动力系统、回归、仿真、博弈论	假设/符号/敏感性/优缺点/参考文献	6
+2024	A	2424371.pdf	25	Magic Sex Ratio : Exploring the Important Role of Lampreys in the Ecosystem	敏感性分析、ODE/动力系统、回归、评价体系	假设/符号/敏感性/优缺点/参考文献	4
+2024	A	2425397.pdf	27	2024 MCM/ICM	敏感性分析、评价体系、仿真、ODE/动力系统	假设/符号/敏感性/优缺点/参考文献	4
+2024	B	2407038.pdf	25	2024 MCM/ICM	贝叶斯/概率、时间序列、回归、多目标、仿真、机器学习	假设/符号/敏感性/参考文献/备忘录/信	8
+2024	B	2411570.pdf	25	rom Lost to Found: Roam in the Ionian Sea	ODE/动力系统、贝叶斯/概率、评价体系、仿真、敏感性分析	假设/符号/敏感性/优缺点/参考文献/备忘录/信	5
+2024	B	2419984.pdf	25	Time is Life: Precise Localization and Faster Search	贝叶斯/概率、仿真、启发式算法、评价体系、敏感性分析	假设/符号/敏感性/优缺点/参考文献/备忘录/信	5
+2024	B	2425792.pdf	25	Save the Submersible: An Combined Method of Computational Fluid Dynamics and Kalman Filter	贝叶斯/概率、评价体系、敏感性分析、回归、仿真、ODE/动力系统	假设/符号/敏感性/参考文献/备忘录/信	6
+2024	C	2401298.pdf	25	"""Momentum"" Exists In Tennis Game As Residual Effect - A Dual-Temporal Bayesian Network Model"	贝叶斯/概率、统计推断、评价体系、敏感性分析、时间序列、回归	假设/符号/敏感性/优缺点/参考文献/备忘录/信	6
+2024	C	2401445.pdf	26	Unveiling the Dynamics of Tennis	机器学习、仿真、评价体系、贝叶斯/概率、敏感性分析、ODE/动力系统	假设/符号/敏感性/优缺点/参考文献/附录/备忘录/信	6
+2024	C	2401919.pdf	27	Harnessing the Power of Momentum: How to Dominate a Tennis Match?	评价体系、统计推断、回归、ODE/动力系统、敏感性分析、贝叶斯/概率	假设/符号/敏感性/参考文献/附录	7
+2024	C	2403774.pdf	24	2024 MCM/ICM	机器学习、贝叶斯/概率、时间序列、回归、敏感性分析、评价体系	假设/符号/敏感性/优缺点/参考文献/备忘录/信	7
+2024	C	2406176.pdf	28	76	ODE/动力系统、统计推断、博弈论、回归、贝叶斯/概率、敏感性分析	假设/符号/敏感性/参考文献/附录/备忘录/信	6
+2024	C	2406324.pdf	27	ommand the Flow: Analysis and Prediction of Momentum in Tennis Matches	时间序列、机器学习、评价体系、敏感性分析、回归、ODE/动力系统	假设/符号/敏感性/优缺点/参考文献/备忘录/信	6
+2024	C	2409404.pdf	25	Riding the Momentum	统计推断、机器学习、评价体系、贝叶斯/概率、敏感性分析	假设/符号/敏感性/优缺点/参考文献/备忘录/信	5
+2024	C	2409961.pdf	25	Momentum Prediction and Core Feature Extraction Based on GRU with Integrated Gradients	时间序列、评价体系、机器学习	假设/符号/敏感性/参考文献/备忘录/信	3
+2024	C	2410482.pdf	26	82	统计推断、回归、时间序列、贝叶斯/概率、敏感性分析、评价体系	假设/符号/敏感性/优缺点/备忘录/信	6
+2024	C	2418251.pdf	24	Momentum: Powerful Magic for Winning	时间序列、机器学习、评价体系、敏感性分析、回归	假设/符号/敏感性/优缺点/参考文献/备忘录/信	5
+2024	C	2425454.pdf	31	hanging Tides: Momentum Swings in Tennis	贝叶斯/概率、统计推断、机器学习、仿真、评价体系、敏感性分析	假设/符号/敏感性/参考文献/附录/备忘录/信	6
+2024	D	2417004.pdf	25	微信公众号：数学模型 微信号：MATHmodels Problem Chosen 2024 MCM/ICM Summar	启发式算法、多目标、评价体系、敏感性分析、回归、ODE/动力系统	假设/符号/敏感性/参考文献/附录/备忘录/信	6
+2024	D	2417831.pdf	25	Harmony of the Great Lakes: A Water Level Balance Approach	ODE/动力系统、仿真、评价体系、启发式算法、敏感性分析、贝叶斯/概率	假设/符号/敏感性/参考文献/备忘录/信	8
+2024	D	2419588.pdf	27	2024 MCM/ICM	ODE/动力系统、仿真、评价体系、贝叶斯/概率、时间序列、回归	假设/符号/敏感性/参考文献/附录/备忘录/信	7
+2024	D	2429211.pdf	25	ynamic Dams Model: A Multigranular, Human-Centered Approach For Modeling Water In The Great Lakes	评价体系、线性/整数规划、回归、贝叶斯/概率、ODE/动力系统、网络流/图	假设/符号/敏感性/参考文献/附录/备忘录/信	7
+2024	E	2400860.pdf	27	2024 MCM/ICM	评价体系、贝叶斯/概率、统计推断、ODE/动力系统、敏感性分析	假设/符号/敏感性/优缺点/参考文献/备忘录/信	5
+2024	E	2401102.pdf	25	In Face of Increasingly Severe Extreme Weather: Sustainable Property Insurance under Risk	时间序列、评价体系、统计推断、ODE/动力系统、贝叶斯/概率	假设/符号/敏感性/优缺点/参考文献	5
+2024	E	2407414.pdf	28	Navigating the Climate Labyrinth: A Dual Approach to Insurance Resilience and Landmark Defense	统计推断、评价体系、贝叶斯/概率、敏感性分析、多目标、仿真	假设/符号/敏感性/参考文献/备忘录/信	7
+2024	E	2410578.pdf	25	Insured Properties, Assisted Developers and Protected Landmarks	评价体系、敏感性分析、统计推断、回归、ODE/动力系统	假设/符号/敏感性/参考文献/备忘录/信	5
+2024	E	2410889.pdf	24	ind a Home for Your Property	评价体系、仿真、贝叶斯/概率、回归、敏感性分析、启发式算法	假设/符号/敏感性/优缺点/参考文献	6
+2024	E	2413552.pdf	25	Sustainability Study of the Property Insurance Industry Under Extreme Weather Conditions	回归、评价体系、多目标、贝叶斯/概率、统计推断、敏感性分析	假设/符号/敏感性/优缺点/参考文献/备忘录/信	7
+2024	F	2409949.pdf	22	Roaring Silence: Can We Break the Chains of Illegal Wildlife Trade?	回归、评价体系、敏感性分析、统计推断	假设/符号/敏感性/优缺点/参考文献/附录/备忘录/信	4
+2024	F	2413565.pdf	25	2024 MCM/ICM	回归、评价体系、时间序列、敏感性分析、ODE/动力系统	假设/符号/敏感性/优缺点/参考文献/备忘录/信	5
+2024	F	2417340.pdf	27	2024 MCM/ICM	ODE/动力系统、机器学习、贝叶斯/概率、敏感性分析、启发式算法、评价体系	假设/符号/敏感性/参考文献/附录/备忘录/信	7
+2024	F	2422054.pdf	25	Illegal Wildlife Trade: A Model-Based Solution for Tanzania	敏感性分析、贝叶斯/概率	假设/符号/敏感性/优缺点/参考文献/备忘录/信	2
+2024	F	2426941.pdf	27	2024 MCM/ICM	评价体系、敏感性分析、ODE/动力系统、博弈论、仿真、回归	假设/符号/敏感性/优缺点/参考文献/备忘录/信	6

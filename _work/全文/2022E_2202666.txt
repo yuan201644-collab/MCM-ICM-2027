@@ -1,0 +1,992 @@
+
+<<<PAGE 1>>>
+To Cut or not to Cut, that is the Question 
+The issue of climate change has been a matter of international importance in recent dec-
+ades. Among them, the reduction of greenhouse gases in the atmosphere, especially carbon 
+dioxide, has been the center of discussion and efforts. There is an urgent challenge to balance 
+the need to harvest trees for forest products to sequester carbon and the need to preserve forests 
+to generate their social value. In this paper, we have developed two models. One is the Forestry 
+Carbon Sequestration model and the other is the Forest Value Evaluation Model. 
+Firstly, in the Forestry Carbon Sequestration model, we calculate the total amount of 
+carbon sequestration of a forest which is an important indicator of ecological value. By calcu-
+lating the carbon sequestration of living trees and the carbon sequestration of forest products, 
+we measure the forest carbon sequestration separately in part 1 and part 2. In part 1, we con-
+structed a model of carbon sequestration in living trees with harvesting rate using the idea of 
+area, carbon sequestration capacity of different tree species, and tree age using time series.  
+Secondly, in part 2, we divide forest products into two categories: "in use" and "landfill", 
+and calculate the carbon sequestration of forest products according to their different carbon 
+sequestration characteristics and lifespan using the Dynamic Optimization Programming. 
+Afterwards, we get the maximum carbon sequestration of 𝟖. 𝟔𝟐× 𝟏𝟎𝟗𝐤𝐠. 
+Thirdly, in Forest Value Evaluation Model, we design a three-dimension evaluation sys-
+tem of forest value – ESE Model and offer various forest management plans fitted for different 
+forest conditions. We choose three indexes, including six indicators, and then calculate their 
+value using real data – a sample of 186 forests worldwide. Next, we use the metric formula to 
+non-dimensionalize them into a consistent evaluation criterion.  
+Next, by applying the AHP method and K-means Algorithm, we determine all parame-
+ters in the model and propose evaluation criteria for the final score. In order to making the 
+appropriate program, we use the GE matrix. In this model, we also offer a series of forest 
+management plans which is a criterion of decision making as well. Based on the final resulting 
+scores, we determine an appropriate harvesting program for the forest. 
+Finally, we choose Beijing as the target forest and employ our model in the case study. The 
+total amount of carbon sequestration in 100 years is 𝟏. 𝟎𝟖× 𝟏𝟎𝟏𝟎𝐤𝐠. The actual score of Bei-
+jing Forest was calculated to be 4.0677. Thus, we obtain the result that Beijing needs the best 
+harvesting rate of 0.06% and the interval of 30 years. This has implications for Beijing's forests, 
+which have no fixed harvesting cycle in recent decades.  
+At the end of our paper, we evaluate our model by analyze the sensitivity and determine 
+its strength and weakness.  
+ 
+Keywords: Carbon Sequestration; Forestry Carbon Sequestration Model；Forest Value Evalu-
+ation Model; Forest management  
+Problem Chosen 
+E 
+2022 
+MCM/ICM 
+Summary Sheet 
+Team Control Number 
+2202666 
+
+<<<PAGE 2>>>
+Contents 
+1 Introduction ............................................................................................ 3 
+1.1 Problem Background ........................................................................................... 3 
+1.2 Our Work .............................................................................................................. 3 
+2 Assumptions and Justifications ............................................................ 4 
+3 Notations ................................................................................................. 5 
+4 Forestry Carbon Sequestration Model ................................................ 5 
+4.1 Part 1: Carbon Sequestration of Living Wood ..................................................... 6 
+4.2 Part 2: Carbon Sequestration of Forest Products ................................................. 8 
+4.3 Dynamic Optimization Process ............................................................................ 9 
+5 Forest Value Evaluation Model .......................................................... 10 
+5.1 ESE Model ......................................................................................................... 11 
+5.1.1 Ecological Values ..................................................................................... 11 
+5.1.2 Social Values............................................................................................. 12 
+5.1.3 Economic Values ...................................................................................... 12 
+5.2 Assessment Process ............................................................................................ 12 
+5.3 Decision-making analysis .................................................................................. 14 
+6 Case Study: Beijing .............................................................................. 15 
+6.1 Forestry Carbon Sequestration Model ............................................................... 15 
+6.2 Forest Value Evaluation Model .......................................................................... 16 
+7 Model Evaluation ................................................................................. 17 
+7.1 Sensitivity Analysis ............................................................................................ 17 
+7.2 Strengths and Weaknesses ................................................................................. 18 
+8 Conclusion ............................................................................................ 18 
+9 Newspaper Article ................................................................................ 19 
+References ................................................................................................ 21 
+ 
+
+<<<PAGE 3>>>
+1 Introduction 
+1.1 Problem Background 
+Climate change has long been recognized by the international community as one 
+of the major global environmental issues. Greenhouse gases produced by human activ-
+ities, such as carbon dioxide (CO2) and methane (CH4), have seriously affected the 
+chemical composition of the atmosphere. With their strong ability to absorb infrared 
+radiation, they have caused the rise both in the average temperature of the earth's sur-
+face and in sea level year by year, inducing incalculable damage to mankind. Therefore, 
+using forests, especially forest products, to absorb and sequestrate atmospheric carbon 
+dioxide is an effective and practical way to reduce greenhouse gases. In a forest eco-
+system, the carbon cycle can be divided into four stages [1], as shown in the figure 
+below.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 1: The carbon cycle 
+ 
+The first stage is the absorption of carbon dioxide by the forest through photosyn-
+thesis. The second stage is tree cutting, where part of it becomes logs to be used for the 
+production of HWP (harvested wood products) and the remainder will rot or burn to 
+release the organic carbon in it. The third stage is the wood use stage, where the amount 
+of carbon sequestered by logs in the production of HWP is also lost in the form of 
+carbon dioxide, but the HWP represented by durable wood products will slowly release 
+its stored organic carbon over a longer period of time. The fourth stage is the disposal 
+stage of HWP, when the discarded HWP enters the landfill and the carbon sequestration 
+will be permanently maintained. 
+ 
+1.2 Our Work 
+It is possible to achieve more carbon sequestration over time attributable to the sum 
+
+<<<PAGE 4>>>
+of carbon sequestration in forest products derived from deforestation and carbon se-
+questration generated by the young forests. We have developed a forest management 
+decision model based on an eco-environmental conservation perspective which con-
+tains the social value of forests while ensuring that forests and forest products sequester 
+as much carbon as possible. 
+First, as forest managers, we decide to transform the forest by means of controlling 
+the rate of cutting trees. In model 1, we construct a model for calculating the carbon 
+sequestration. The amount of carbon sequestered in a defined forest is determined by 
+the living trees and the forest products made from the harvested trees.  
+Then, we design a three-dimension evaluation system of forest value – ESE Model. 
+We classify forest values into the following three dimensions: ecological values, social 
+values and economic values, and six subsets in detail. We quantify the qualitative indi-
+cators first and then process the dataset. Using K-means Algorithm, we obtain the 
+weight of every indicator. After assigning scores to each of them, we get GE matrix for 
+the ESE Model. 
+Finally, we introduce Beijing as a real case to derive suitable forest management 
+scenarios with the help of Model 1, Model 2 and real data, and discuss the selection of 
+scenarios in the case of increasing harvest intervals. 
+ 
+Figure 2: Structure of our paper 
+2 Assumptions and Justifications 
+To simplify the problem, we make the following basic assumptions, each of which 
+is properly justified. Other assumptions based on different models will be listed in the 
+following model-related sections. 
+ 
+Assumption 1: All woods in the topic are primary forests.  
+Justification: Planted forests are those who have been artificially selected and culti-
+vated for profitable purposes. They are subject to high anthropogenic interference and 
+cannot be used for carbon sequestration. Therefore, we only consider primary forests. 
+
+<<<PAGE 5>>>
+ 
+Assumption 2: Different tree species depends on their geographical locations. 
+Justification: The geographical location of the forest determines the light, rainfall, soil, 
+temperature, and other environmental characteristics of the area, which determine the 
+species of native plants. 
+ 
+Assumption 3: The age of trees in primary forests shows a uniform distribution 
+and the age distributions of all forests are the same. 
+Justification: In the absence of extreme climatic and geological conditions changes, 
+the birth and death rates of trees remain at constant levels. Because of the high surviv-
+ability, we assume that in general trees do not die unexpectedly in the middle of their 
+life cycle or have negligibly low unexpected rates of mortality.  
+ 
+Assumption 4: Only the age of the tree is considered when cutting down trees, not 
+the type or location of the tree, and the maturity threshold is constant for all tree 
+species. 
+Justification: Trees will strike a balance between respiration and photosynthesis at ma-
+turity, when the net production of organic carbon is zero. Mature trees are unable to 
+provide more carbon sequestration as living trees and are therefore cut down. Forest 
+maturity thresholds are usually in the range of 80 to 100 years.[2] To simplify the cal-
+culation process, we reckon a fixed maturity threshold for all types of trees.  
+ 
+3 Notations 
+The key mathematical notations used in this paper are listed in Table 1. 
+Table 1: Notations used in this paper 
+Symbol 
+Definition 
+i 
+Time (year) 
+𝛼 
+The harvesting rate 
+t 
+The age of trees 
+j 
+The type of trees 
+C(𝑖) 
+The amount of carbon sequestration 
+LFS(𝑖) 
+Living forest surface area 
+HFS(𝑖) 
+Harvested forest surface area 
+TFS(𝑖) 
+Total forest surface area 
+𝐷(𝑡) 
+The carbon sequestration capacity 
+𝑎𝑔𝑒(𝑡) 
+The probability distribution of age 
+𝛾 
+The conversion factor 
+𝐼𝑚 
+The actual value 
+𝐸𝑚 
+The metric values 
+ 
+4 Forestry Carbon Sequestration Model 
+For ecological conservation purposes, our primary goal in forest management is 
+
+<<<PAGE 6>>>
+to ensure that carbon sequestration is maximized. The amount of carbon sequestered in 
+a defined forest is determined by the living trees and the forest products made from the 
+harvested trees. We measure the forest carbon sequestration by calculating the carbon 
+sequestration of living trees and the carbon sequestration of forest products separately, 
+and then find the forest management plan with the largest carbon sequestration.  
+We separate the model of total carbon sequestration into two parts, the first part is 
+the living wood carbon sequestration and the second part is the forest product carbon 
+sequestration. Total carbon sequestration amount in year i can be expressed as 
+𝐶𝑡(𝑖) = 𝐶𝑙(𝑖) + 𝐶𝑝(𝑖) 
+(1) 
+Where 𝐶𝑡(𝑖) represents the total amount of carbon sequestration, 𝐶𝑙(𝑖) repre-
+sents the carbon sequestration amount of living wood and 𝐶𝑝(𝑖) represents the car-
+bon sequestration amount of forest products.  
+The diagram below demonstrates the frame of the Forestry Carbon Sequestration 
+Model. The total amount of carbon sequestered in year i is given by the living wood 
+carbon sequestration and the forest product carbon sequestration in that year. The 
+young trees will continue to grow in the following years, while the mature trees will 
+be harvested to manufacture forest products. Forest products are generally classified 
+into four categories based on their carbon sequestration forms, which are in use, land-
+fill, energy and emission.[3] Since the carbon stored in the parts of energy and emis-
+sion will be released in the short term as carbon dioxide, we do not count it in the car-
+bon sequestration amount of forest products. The life cycle of carbon in forest prod-
+ucts in use follows the half-life while the amount of carbon in landfill maintains in the 
+long time. 
+ 
+Figure 3: The flow chart of Forestry Carbon Sequestration Model 
+ 
+4.1 Part 1: Carbon Sequestration of Living Wood 
+In the first part of the model, we consider that the amount of carbon sequestered 
+by existing wood is determined by the living forest surface area (𝐿𝐹𝑆(𝑖)), the carbon 
+
+<<<PAGE 7>>>
+sequestration capacity of trees (𝐷(𝑡)), and the probability distribution of trees at differ-
+ent age in the forest (𝑎𝑔𝑒(𝑡)).  
+The area of forest remaining in year i is determined by the current year's harvesting 
+rate and the area of forest remaining in the previous years. The harvested forest surface 
+area (HFS) equals to the product of the harvesting rate (𝛼) and the total forest surface 
+area (TFS) for the year. The total forest area of next year is equal to the living forest 
+surface area (LFS) of the current year. 
+Here, all the above areas as projected areas. Since trees can be planted on slopes, 
+and it has been proved that the larger the angle of a slope is, the greater the carbon 
+sequestration capacity is.[4] Therefore, we divide the existing area data by 𝑐𝑜𝑠𝜃 to 
+obtain the slope area, 𝜃 is the degree of the slope. The slope can be divided into five 
+levels, which are flat, gentle, slant, steep, sharp and extreme slope, corresponding to 0-
+5°, 6°-15°, 16°-25°, 26°-35° and 36°-45°. 
+They can be expressed respectively as 
+𝐻𝐹𝑆(𝑖) = 𝛼× 𝑇𝐹𝑆(𝑖)
+𝑐𝑜𝑠𝜃
+ 
+(2) 
+𝐿𝐹𝑆(𝑖) = (1 −𝑎) × 𝑇𝐹𝑆(𝑖) 
+𝑐𝑜𝑠𝜃
+ 
+ 
+(3) 
+ 
+Our study begins with only one tree type: aspen. Now, we define the carbon content 
+in living trees per unit area as the carbon sequestration capacity (𝐷(𝑡)). Figure 4 depicts 
+the change of 𝐷(𝑡) over five different phases. It can be clear seen that the carbon se-
+questration capacity increases at the beginning and reaches the peak in mature period 
+approximately, and then begins to fall considerably. Therefore, in order to sequester as 
+much carbon as possible, we fell only overmature trees and the cutting age is 81. The 
+fitted curve of carbon sequestration capacity of tree age is expressed as 
+𝐷(𝑡) = 𝑎𝑒(−(𝑡−𝑏
+𝑐)2) 
+(4) 
+among this, a, b, c are parameters of the fitted function. 
+ 
+ 
+ 
+Figure 4: The relationship between age and carbon sequestration capacity 
+ 
+
+<<<PAGE 8>>>
+ 
+According to assumption 3 and 4, the age of trees in primary forests shows a con-
+stant uniform distribution in observation period. This indicates that the number of 
+trees in the immature stage of the forest is constant and the number of trees in the ma-
+ture stage is influenced only by the harvesting rate. We define 𝛽 as the maturation 
+rate and thus the proportion of the immature trees in the current year equals to 1 −𝛽. 
+We can obtain that the probability distribution of age can be expressed as 
+𝑎𝑔𝑒(𝑡) =
+1
+(1 −𝛼
+𝛽)𝑡𝛽+ (1 −𝛽)
+ 
+(5) 
+Tree species vary from forest to forest, so we introduce j as the type of trees. 
+Meanwhile, we set the time horizon range to 100 years. In this way, we can express 
+the amount of carbon sequestered by living trees and harvested trees in the forest in 
+year i as 
+𝐶𝑙(𝑖) = ∑∑𝐷𝑗(𝑡)𝐿𝐹𝑆𝑗(𝑖)
+𝑛
+𝑗=1
+100
+𝑡=1
+𝑎𝑔𝑒(𝑡) 
+ 
+(6) 
+𝐶ℎ(𝑖) = ∑∑𝐷𝑗(𝑡)𝐻𝐹𝑆𝑗(𝑖)
+𝑛
+𝑗=1
+100
+𝑡=81
+𝑎𝑔𝑒(𝑡) 
+ 
+(7) 
+ 
+Substituting equation (3), (4) and (5) into (6), we get equation (8) 
+ 
+𝐶𝑙(𝑖) = ∑∑𝐷𝑗(𝑡)
+(1 −𝑎) × 𝑇𝐹𝑆𝑗(𝑖) 
+𝑐𝑜𝑠𝜃[(1 −𝛼
+𝛽)𝑡𝛽+ (1 −𝛽)]
+𝑛
+𝑗=1
+100
+𝑡=1
+ 
+ 
+(8) 
+ 
+Equation (8) is the amount of carbon sequestration of living wood. 
+ 
+4.2 Part 2: Carbon Sequestration of Forest Products 
+In the second part of ModelⅠ, we study the carbon sequestration of forest prod-
+ucts. In our model, we assume that the forest cut in the specific year becomes products 
+currently. 
+ 
+The amount of carbon sequestered by forest products in year i consists of the 
+amount of carbon sequestered by currently produced forest products in that year and 
+the amount of carbon sequestered by the accumulation of retained forest products in 
+previous years, which can be expressed as 
+𝐶𝑝(𝑖) = 𝐶𝑐𝑢𝑟𝑟𝑒𝑛𝑡(𝑖) + 𝐶𝑢𝑠𝑒(𝑖) + 𝐶𝑙𝑎𝑛𝑑𝑓𝑖𝑙𝑙(𝑖) 
+(9) 
+where 𝐶𝑢𝑠𝑒(𝑖) represents the accumulated carbon sequestration of forest products in 
+use in previous years and 𝐶𝑙𝑎𝑛𝑑𝑓𝑖𝑙𝑙(𝑖) represents the accumulated carbon sequestration 
+of discarded forest products in previous years.  
+ 
+Define k as the productivity of using logged wood to produce forest products. We 
+use the equation (7) in part 1 derive the amount of carbon sequestered by currently 
+produced forest products, which can be expressed as 
+𝐶𝑐𝑢𝑟𝑟𝑒𝑛𝑡(𝑖) = 𝑘× 𝐶ℎ(𝑖) 
+(10) 
+ 
+Since all of the harvested wood will be processed into forest products, we set two 
+weight coefficients 𝜔1 and 𝜔2 for products in use and in landfill separately, where 
+
+<<<PAGE 9>>>
+the sum of 𝜔1 and 𝜔2 equals to 1. 
+For the accumulated carbon sequestration of forest products in use in previous 
+years, the lifetime of carbon in forest products follows the half-life (T). The rate of 
+carbon emission is related to the use and service life of the product. Forest products are 
+divided into hardwood products and paper products, which have the half-life of 30 years 
+and 2 years, respectively. 
+ 
+𝐶𝑢𝑠𝑒(𝑖) = ∑𝜔1𝐶𝑐𝑢𝑟𝑟𝑒𝑛𝑡(𝑟−1) × (1
+2)
+[𝑖−(𝑟−1)]
+𝑇
+𝑖−1
+𝑟=1
+ 
+(11) 
+ 
+Carbon in landfill can be preserved over a long period of time, hence the accumu-
+lated carbon sequestration of discarded forest products in previous years can be ex-
+pressed as 
+𝐶𝑙𝑎𝑛𝑑𝑓𝑖𝑙𝑙(𝑖) = ∑𝜔2𝐶𝑐𝑢𝑟𝑟𝑒𝑛𝑡(𝑟−1)
+𝑖
+𝑟=1
+ 
+(12) 
+ 
+4.3 Dynamic Optimization Process 
+The solution to the problem is dynamic optimization, taking a particular forest as 
+an example (The parameters of an ideal forest are generated by random numbers [5]). 
+The range of strategies for forest cutting plans includes the harvesting rate (𝛼) of 0.1%, 
+0.3%, 0.5%, 0.7%, 0.9%. Setting the time horizon range to 100 years, we consider the 
+forest cutting decision for each of these years. Since our 𝛼 is small, the ideal solution 
+in this problem does not include the harvesting interval.  
+Using the curve in equation (4), fitted result is as a = 17.86, b = 69.65, c = 67.76. 
+According to the announcement published by China Forestry Administration, since the 
+average harvesting intensity of commercial forests is no more than 35% and the average 
+harvesting intensity of public welfare forests is no more than 20% while the rotation 
+cycle is about 49 years. We set the total harvesting rate for 100 years not to exceed 50%. 
+We set the initial forest area as 17.98 × 104 hm2 (area of primary forest in Bei-
+jing, 2014), with 𝑘= 0.6, 𝜔1 = 0.7 and 𝜔2 = 0.3. Our purpose is to maximize the 
+carbon sequestration in year i. Thus, we get 
+max 𝐶𝑡(𝑖) = 𝐶𝑙(𝑖) + 𝐶𝑝(𝑖) 
+s. t. ∑𝛼𝑖≤50%
+100
+i=1
+ 
+𝛼𝑖 = 0.1%, 0.3%, 0.5%, 0.7%, 0.9% 
+(13) 
+ 
+Each year of harvesting rate selection 𝛼𝑖  will change the carbon sequestration 
+𝐶𝑡(𝑖) in that year and each stage of 𝐶𝑡(𝑖) depends on the state variable 𝐶𝑡(𝑖) in the 
+previous period and the decision variable 𝛼𝑖 in the current period. 
+
+<<<PAGE 10>>>
+ 
+ 
+ 
+ 
+ 
+Figure 5: Solving process of the maximum carbon sequestration 
+ 
+The annual harvesting plan is as below. Figure 5 shows the harvesting rate in the 
+particular forest over a period of 100 years. Each dot represents The results of Mode l 
+present the cyclical nature of the harvesting rate. The model embodies the ideal har-
+vesting schedule for a harvesting cycle of approximately 20 years with alternating 
+high and low harvesting rates. 
+ 
+Figure 6: Annual harvesting plan 
+ 
+We use the algorithm of dynamic programming to solve for the maximum carbon 
+sequestration in 100 years, and the process of the solution is sketched out in Figure 4. 
+The maximum carbon sequestration is 8.62 × 109kg. 
+ 
+5 Forest Value Evaluation Model 
+The value of the forest goes beyond the absorption of carbon dioxide and has an 
+impact on various aspects of the lives of the people around it. With a high percentage 
+of the world's forest area, its added value cannot be ignored. 
+ 
+
+<<<PAGE 11>>>
+ 
+ 
+Figure 7: Global Forest Distribution 
+ 
+In the second model, we include multiple forms of forest values, including carbon 
+sequestration, in an attempt to determine the best management plan for a forest by find-
+ing a ubiquitously applicable evaluation mechanism. 
+ 
+5.1 ESE Model 
+ To better measure the form of forest values in 
+different dimensions, we choose Analytical Hierar-
+chy Process. It assigns separate scores to the subjec-
+tive indicators and then weights them to arrive at a 
+composite score of a forest, and finally determines 
+the management plan to be selected for the forest 
+based on the composite score. We classify the value 
+of forests into three dimensions, namely ecological 
+values, social values and economic values.            
+                               Figure 8: ESE Model               
+ 
+We define VI (Value Index) as ten-point system value index obtained by cluster 
+analysis. In order to quantify the metrics of different dimensions as scores under the 
+same criteria, we introduce conversion factor 𝛾. The highest value index in the value 
+type is the maximum value index for that value type. They indicate the importance of 
+different values, and the higher the value, the greater the VI.  
+ 
+5.1.1 Ecological Values 
+Ecological values include the value of carbon sequestration and the value of biodi-
+versity. Carbon sequestration value index measures the importance of total carbon se-
+questration which derives from real data. The higher scores of ecological values we get, 
+the more we have to protect the forest, rather than felling the trees. In addition, we select 
+the average biomass in a forest as measurement of biodiversity value. They can be ex-
+pressed as follows. 
+
+<<<PAGE 12>>>
+𝑉𝐼𝐶= 𝛾1 × 𝐶𝑡
+TFS 
+(14) 
+𝑉𝐼𝑏𝑖𝑜𝑑𝑖𝑣𝑒𝑟𝑠𝑖𝑡𝑦= 𝛾2 × 𝑏𝑖𝑜𝑚𝑎𝑠𝑠
+TFS
+ 
+(15) 
+ 
+5.1.2 Social Values 
+Social values include recreational value, cultural value and therapeutic value, 
+which is the positive emotional value that the forest brings to the people in the sur-
+rounding area. The higher the social values, the more the forest should be protected. 
+Recreational value, cultural value and therapeutic value can be expressed as below. 
+𝑉𝐼𝑟𝑒𝑐𝑟𝑒𝑎𝑡𝑖𝑜𝑛= 𝛾3 × 𝑎𝑛𝑛𝑢𝑎𝑙 𝑣𝑖𝑠𝑖𝑡𝑠 𝑡𝑜 𝑡ℎ𝑒 𝑓𝑜𝑟𝑒𝑠𝑡 
+(16) 
+𝑉𝐼𝑐𝑢𝑙𝑡𝑢𝑟𝑒= 𝛾4 × 𝑝𝑒𝑟 𝑐𝑎𝑝𝑖𝑡𝑎 𝑒𝑥𝑝𝑒𝑛𝑑𝑖𝑡𝑢𝑟𝑒 𝑜𝑓 𝑟𝑒𝑠𝑖𝑑𝑒𝑛𝑡𝑠 𝑜𝑛 𝑐𝑢𝑙𝑡𝑢𝑟𝑎𝑙 𝑐𝑜𝑛𝑠𝑢𝑚𝑝𝑡𝑖𝑜𝑛 
+(17) 
+𝑉𝐼𝑡ℎ𝑒𝑟𝑎𝑝𝑦= 𝛾5 × 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 𝑙𝑖𝑓𝑒 𝑒𝑥𝑝𝑒𝑐𝑡𝑎𝑛𝑐𝑦 𝑜𝑓 𝑟𝑒𝑠𝑖𝑑𝑒𝑛𝑡𝑠 
+(18) 
+ 
+5.1.3 Economic Values 
+Economic values include forest product value and tourism value which together 
+are called profitable value. The economic values of forests refer to the monetarily meas-
+urable wealth that forests can create for people. Since the value of tourism is difficult 
+to measure, we introduce the concept of opportunity cost in economics. In this case, the 
+opportunity cost paid to achieve the profits of tourism is the revenue of forest products 
+derived from the same area of the forest. 
+𝑉𝐼𝑝𝑟𝑜𝑓𝑖𝑡= 𝛾6 × (𝑡𝑜𝑡𝑎𝑙 𝑎𝑛𝑛𝑢𝑎𝑙 𝑟𝑒𝑣𝑒𝑛𝑢𝑒 𝑓𝑟𝑜𝑚 𝑡𝑜𝑢𝑟𝑖𝑠𝑚 𝑖𝑛𝑑𝑢𝑠𝑡𝑟𝑦 
+− 𝑡𝑜𝑡𝑎𝑙 𝑎𝑛𝑛𝑢𝑎𝑙 𝑟𝑒𝑣𝑒𝑛𝑢𝑒 𝑓𝑟𝑜𝑚 𝑓𝑜𝑟𝑒𝑠𝑡 𝑝𝑟𝑜𝑑𝑢𝑐𝑡𝑠) 
+ 
+(19) 
+ 
+5.2 Assessment Process 
+For the six indicators in the above three dimensions, we use the metric formula to 
+non-dimensionalize them into a consistent evaluation criterion, 
+𝐸𝑚=
+𝐼𝑚
+𝐼× 100 [6] 
+(19) 
+where 𝐼𝑚 represents the actual value of factor m and 𝐼 represents the value of factor 
+m in the whole area. For instance, recreational value is the annual visitation of the se-
+lected forest divided by the total annual visitation of the local area and so as remain 
+ones. 
+We select a representative country A for the study because of its large span. Each 
+factor is categorized into 10 classes, by clustering the dataset[7] into ten clusters using 
+the K-means Algorithm. Here we output six scatter plots of different factors (Figure 7) 
+and list the metric values of cluster centers corresponding to each VI (Table 2). 
+
+<<<PAGE 13>>>
+ 
+ 
+Figure 9: The scatter plots with clusters 
+ 
+Table 2: VI information based on K-means Algorithm 
+Em 
+VI  
+carbon  
+sequestration 
+biodiversity recreation 
+culture 
+therapy 
+profit 
+1 
+18.61 
+35.13 
+4.16  
+8.81  
+24.67 
+3.11  
+2 
+36.08 
+75.80 
+15.56  
+11.17  
+48.33 
+14.00  
+3 
+44.94 
+97.97 
+20.66  
+18.84  
+71.57 
+22.72  
+4 
+65.93 
+111.97 
+29.97  
+28.78  
+82.42 
+30.40  
+5 
+82.36 
+153.38 
+43.22  
+29.31  
+110.06 
+40.98  
+6 
+119.42 
+184.33 
+57.85  
+33.08  
+138.87 
+47.20  
+7 
+130.25 
+203.57 
+63.46  
+43.71  
+151.43 
+53.23  
+
+<<<PAGE 14>>>
+8 
+135.67 
+257.93 
+74.58  
+47.60  
+175.75 
+65.43  
+9 
+147.95 
+274.74 
+81.04  
+55.00  
+186.40 
+71.74  
+10 
+154.26 
+298.64 
+97.63  
+59.02  
+196.53 
+85.96  
+ 
+ 
+Using AHP, we obtain the weights of each factor in the relative indexes as well as 
+the weights of each of the three indexes. We can calculate the final VI and construct a 
+comprehensive evaluation model. It presents as below. 
+ 
+Table 3: Weights of factors determined by AHP 
+Dimension 
+Weight 
+Factor 
+Weight (dimension) 
+Weight 
+ecology 
+0.5816 
+carbon sequestration 
+0.6667 
+0.3878 
+biodiversity 
+0.3333 
+0.1938 
+society 
+ 
+0.1095 
+ 
+recreation 
+0.1283 
+0.0140 
+culture 
+0.2764 
+0.0303 
+therapy 
+0.5954 
+0.0652 
+economy 
+0.3090 
+profit 
+1 
+0.309 
+ 
+ 
+It was tested that all CRs were <0.10, so the consistency of the judgment matrix A 
+was acceptable. The forest value index can be expressed as 
+𝑉𝐼= 0.5816 × 𝑉𝐼𝑒𝑐𝑜𝑙𝑜𝑔𝑦+ 0.1095 × 𝑉𝐼𝑠𝑜𝑐𝑖𝑒𝑡𝑦+ 0.3090 × 𝑉𝐼𝑒𝑐𝑜𝑛𝑜𝑚𝑦 
+(20) 
+ 
+5.3 Decision-making analysis 
+Combining existing forest management measures and the above assumptions, we 
+propose five forest harvesting scenarios for different VI levels. Our harvesting pro-
+grams include different harvesting rates and harvesting intervals (Δ𝑖) in the case of se-
+lection cutting.  
+What is worth mentioning is that there is a slight change compared to modelⅠ. 
+To work out the harvesting programs, we regard the cutting process as a cutting cycle 
+that is the time it takes to cut mature trees and keep the remaining trees growing until 
+the total area of the forest returns to the state before cutting. On the basis of cutting 
+cycle, we develop 
+TFS × (1 −𝛼)(1 + 𝑔)Δ𝑖= 𝑇𝐹𝑆 
+(21) 
+After rearrange the formula, we have 
+Δ𝑖= −log (1 −𝛼)
+log (1 + g) 
+(22) 
+where g represents the annual growth rate of the forests. 
+In order to making the appropriate program, we use the GE (McKinsey Matrix) 
+matrix. Here, we consider using the GE matrix to describe the degree of programs. On 
+the one hand, the value index indicates the comprehensive value of the designated for-
+
+<<<PAGE 15>>>
+est. On the other hand, the harvesting rate reflects the status quo of the forest. There-
+fore, the GE matrix is introduced here, shown in Figure 8 and two related indicators 
+are defined according to the actual situation. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 10: GE metrix of harvesting programs 
+ 
+As a result, we find the corresponding 𝛼 and Δ𝑖 listed in Table 3. 
+ 
+ Table 4: The harvesting programs 
+Program 
+Ⅰ 
+Ⅱ 
+Ⅲ 
+Ⅳ 
+Ⅴ 
+𝛼 
+0.10% 
+0.08% 
+0.06% 
+0.04% 
+0.02% 
+Δ𝑖 
+10 
+20 
+30 
+40 
+50 
+ 
+6 Case Study: Beijing 
+We chose Beijing as the first target area because it is the capital of China and has a 
+large forest area with good statistical status. Since Beijing has sacrificed a good eco-
+logical environment for industrial development in the past decades, in recent years, the 
+government has introduced many relevant forest protection policies to restrict forest 
+harvesting. It is of considerable relevance to study the harvesting strategy of Beijing's 
+forests.  
+In the following subsections, we use our model to predict the total amount of car-
+bon sequestration and then to improve Beijing’s Forest management plans. After the 
+simulation of our model, we illustrate our modification of Beijing’s current forest policy. 
+ 
+6.1 Forestry Carbon Sequestration Model 
+Based on Beijing's forest and forest product manufacturing data, we determined 
+the values of parameters which k = 0.6, 𝜔1 = 0.65, 𝜔2 = 0.35 and TFS 
+=1.79 ∗104 hm2 . Bring the data into the first part for regression, and the fitted pa-
+rameters for different tree species are shown below. 
+ 
+ 
+
+<<<PAGE 16>>>
+Table 5: Fitted parameters 
+𝑫𝒋(𝒕) 
+a 
+b 
+c 
+Quercus spp 
+18.04 
+67.23 
+62.35 
+Other broadleaved forest 
+15.32 
+49.26 
+68.43 
+Broadleaved mixed forest 
+19.03 
+58.96 
+58.37 
+Platycladus orientalist 
+12.18 
+73.44 
+55.28 
+Populus spp 
+19.17 
+52.43 
+64.48 
+Betula spp 
+11.62 
+68.32 
+54.82 
+Coniferous and Broadleaved 
+mixed forest 
+13.45 
+63.43 
+65.59 
+Pinus tabuliformis 
+10.12 
+71.79 
+63.47 
+ 
+ 
+We get the carbon sequestration of this forest 𝐶𝑡(𝑖) = 1.08 × 1010kg. 
+ 
+6.2 Forest Value Evaluation Model 
+We performed cluster analysis on the forest data in Beijing and derived the weights 
+of different indicators and value indexes. There are as the table below. 
+ 
+Table 6: Indicator values 
+ 
+carbon  
+sequestration 
+biodiversity 
+recreation 
+culture 
+Therapy 
+Profit 
+Actual value 
+104.32 
+136.83 
+59.67 
+43.98 
+62.37 
+26.29 
+VI 
+5 
+4 
+6 
+7 
+2 
+3 
+Weight 
+0.3878  
+0.1938  
+0.0140  
+0.0303  
+0.0652  
+0.3090  
+Standardized value 
+1.939 
+0.7752 
+0.084 
+0.2121 
+0.1304 
+0.927 
+ 
+The actual score of Beijing Forest was calculated to be 4.0677. According to Table 
+3, the best forest management plan is number three, which means its best harvesting 
+rate is 0.06% and the interval is 30 years. 
+The optimal harvesting scenario for a given forest for carbon sequestration in the 
+first question shows the cyclical nature of harvesting, so in the second question we add 
+the cutting cycle as a factor. By bringing the Beijing Forest data into our model, we 
+evaluate its current implementation plan and conclude that it should adopt Option 3, 
+which suggests a larger cutting rate and a smaller harvesting interval than the actual 
+value of this forest. If we set the future logging interval to be ten years longer than the 
+current one, then the Beijing Forest should be located at this point on the GE matrix. 
+Therefore, considering the values of this forest and balancing the complementarity of 
+the values, we believe that we need to increase the harvest rate to 0.09% to achieve this 
+goal. 
+ 
+ 
+
+<<<PAGE 17>>>
+ 
+ 
+ 
+Figure 11: Decision change 
+ 
+7 Model Evaluation 
+7.1 Sensitivity Analysis 
+Finally, we perform sensitivity analysis on the key models related to our work 
+through changing parameters and comparing the difference between the original results 
+and changed results. As for the Forestry Carbon Sequestration Model, we set 𝛼= 1% 
+first and then assign the arithmetic progression from 10% to 100% to the three param-
+eters respectively: 𝛽, 𝑘 and 𝜔2 . Turning to the cutting cycle, we focus on the annual 
+growth rate of the forests while assigning 10% to 𝛼. The changes are delineated in line 
+graphs below. 
+ 
+Figure 12: Sensitivity analysis 
+ 
+The graph on the left side witnesses an upward trend of carbon sequestration 
+amount when the parameter values go up. The difference of the sensitivity in three pa-
+rameters is not obvious. However, we can still conclude that 𝛽 has the largest impact 
+on the result, following by 𝑘 and 𝜔2 . 
+The graph on the right side gives information about the influence of growth rate on 
+the harvesting interval. As is observed, there is a negative relationship between g and 
+
+<<<PAGE 18>>>
+Δ𝑖. Δ𝑖 drops rapidly at around 20% and then the decrease rate becomes slow. 
+The results demonstrate that our models can still keep their high effectiveness. In 
+other words, our models have high stability, high error-tolerant rate and extensive ap-
+plicability. 
+ 
+7.2 Strengths and Weaknesses 
+Strengths 
+ The premise of the model is based on the real situation therefore the results 
+obtained are compellent and consistent with the common sense. 
+ When weighing the indicators, we choose AHP weight average method 
+whose indicator weights are less dependent on the sample.  
+ The factors selected for all of our models are all objective factors. With 
+subjective factors excluded, the model is more stable in the evaluation pro-
+gress. 
+ 
+Weaknesses 
+ Since the previous forest manager also harvested trees according to his 
+own preferences, the assumption that tree ages follow a uniform distribu-
+tion is not robust enough. 
+ The definition of forest products varies from region to region, which 
+causes bias in the data and deviations of the results. 
+8 Conclusion 
+In summary, forest harvesting decisions are related to a variety of factors, includ-
+ing ecological, economic, and social factors. In this paper we develop a model that 
+contributes to climate change mitigation by regulating forest management plans so that 
+a forest can balance various values while maximizing its ecological role. 
+In this paper, we developed a forest value assessment model combining different 
+forms of values. The indicators include ecological values, social values and economic 
+values of the forest (ESE Model), of which carbon sequestration is classified as eco-
+logical value. By weighted average of the different value indexes, a composite score 
+for a particular forest can be derived. We offer different forest management solutions 
+for different scores. 
+Although our model is relatively well developed, there is still room for improve-
+ment in some extent. They are as follows： 
+ Set the harvesting function 𝐻𝑗 to figure out the structure of the species of 
+harvested trees. 
+ Add restriction conditions, in reality, different types of forest have different 
+harvesting intensity restrictions. 
+ Consider the depreciation of the HWP values, by measuring the net present 
+value of HWP. 
+ 
+ 
+
+<<<PAGE 19>>>
+9 Newspaper Article 
+ 
+More Harvesting, Huger Benefits 
+ 
+eople around the world may feel that 
+the climate has been getting steadily 
+warmer and warmer in recent years. 
+Places which used to be abundant in snowfall 
+have frequently experienced snow free win-
+ters, drought lasts longer in some dry areas 
+and people find that without air conditioners 
+they could hardly survive in hotter summer 
+days. The impact of carbon dioxide emissions 
+on the planet is more severe than we thought. 
+ 
+While countries around the world are taking 
+measures to limit carbon emissions, we 
+should not ignore the strong carbon seques-
+tration capacity of the ecological system. A 
+14-hectare forest in the temperate zone holds 
+4.83 × 109 KG of carbon sequestration, 
+which is about 1/5 times the world's average 
+annual carbon emissions. To maximize the 
+amount of carbon sequestration, the conven-
+tional wisdom is to reduce deforestation in 
+order to preserve as much forest as possible. 
+However, #2202666 research team has devel-
+oped an ESE (Ecosystem - Society - Eco-
+nomic) model and found that the appropriate 
+choice of harvesting option will benefit the 
+increase of carbon sequestration.  
+ 
+ESE model emphasizes ecological, social and 
+economic values and covers 6 factors includ-
+ing carbon sequestration, biodiversity, recre-
+ation, culture, therapy and profit in the mean-
+while. 
+ 
+The increase in forest value from harvesting 
+mainly comes from HWP (Harvested woods 
+products). The amount of carbon sequestra-
+tion will not increase after the forest grows 
+into mature forest. After the mature trees are 
+cut down and made into HWP, HWP will se-
+questrate carbon in a certain period. From 
+the ecological dimension, new trees con-
+tinue to sequester carbon, and forests rely on 
+their self-healing ability to compensate for bi-
+P 
+
+<<<PAGE 20>>>
+odiversity during this time. From the eco-
+nomic perspective, HWP will bring more 
+profits. Last but not least, an appropriate rate 
+of harvesting will have little impact on social 
+values in the short term and the value will 
+gradually recover as the forest grows. 
+ 
+ “Innovation sometimes requires going off 
+the beaten track, diving into the forest, and 
+you're sure to discover things you've never 
+seen before”，it’s time to think outside the 
+stereotype and add some creative ideas of 
+harvesting to the forest, which is the best for-
+est, and our common forest.
+
+<<<PAGE 21>>>
+References 
+[1]Yang , Y. hong-qiang H., Ji, J. chun-yi C., Li, Y. hui F., Nie, N. ying Y., & Chen, C. xing-
+liang X. (2013). Global Climate Change and China’s Contribution to Carbon Reduction: 
+Based on Carbon Storage Accounting of Chinese Harvested Wood Products. Journal of 
+Natural Resources, 28(12), 2023–2033. 
+[2]Hillier b, & Murphy r. (2000). Life Cycle Assessment of Forest Products—A Good Story to 
+Tell. Journal of the Institute of Wood Science, 15(3), 221–232. 
+[3]Colombo stephen j, chen, chen jiaxin  jiaxin, Ter-mikaelian michael t, & Heath linda s. 
+(2008). Future Carbon Storage in Harvested Wood Products from Ontario’s Crown Forests. 
+Canadian Journal of Forest, 38(7). 
+[4]Li, L. chenyu C., Zhu, Z. jianhua J., Zhang, Z. feng F., Li, L. qi Q., Tian, T. yu  yu, Xiao, 
+X. wenfa W., & Chen, C. weiqiang W. (2021). Factors Affecting Forest Carbon Sequestra-
+tion. Forestry and Ecology, 3, 40–41. 
+[5]Li, L. chenyu C., Zhu, Z. jianhua J., Zhang, Z. feng F., Li, L. qi Q., Tian, T. yu  yu, Xiao, 
+X. wenfa W., & Chen, C. weiqiang W. (2021). Carbon Sequestration Capacity of Beijing 
+Arbor Forest Based on NbS. Journal of Beijing Forestry University, 43(6), 13–22. 
+[6]Jiang, J. peng P., Li , H. li H., & Zhou, Z. liandi L. (2012). Application of Analytic Hierarchy 
+Process in Social Value Evaluation of Forest Resource Assets. Forestry Economics, 12, 
+88–91. 
+[7]Zhang, Z. hui-ru H., Lei, L. xiang-dong X., & Li, L. feng-ri F. (2020). Research Progress 
+and Prospects of Forest Management Science in China. Scientia Silvae Sinicae, 56(9), 
+130–142. 
+ 
+ 

@@ -1,0 +1,1093 @@
+
+<<<PAGE 1>>>
+ 
+Forests Need to be Harvested 
+Summary 
+As the lung of the earth, forest is the most powerful carbon sequestration player in 
+nature. An appropriate forest management is conducive to the realization of sequestra-
+tion potential. Therefore, we established the Tree-Products-Environment Carbon Se-
+questration (TPE) Model to calculate how much carbon the forests can save over a fixed 
+time, and proposed a set of forest management to maximize fixation efficiency. Then 
+considered ecological, economic, tourism and entertainment factors comprehensively, 
+established the Forest Management Evaluation (MFE) Model to score every manage-
+ment, finally pick the best one. 
+Firstly, net primary productivity (NPP) was used to measure the carbon sequestra-
+tion level of forest, then the NPP calculation model evaluated by GLO-PEM help us to 
+calculate the carbon synthesized by photosynthesis. Our TPE model points out that part 
+of the carbon is stored in the living tree to activate the carbon cycle, another is fixed in 
+forest products and decomposed over time, others is released into the atmosphere or 
+environment because of the natural death of trees. On this basis, we advance a “Rota-
+tion Regeneration” forest management, which prioritizes cutting the older trees, at the 
+same time, set a harvest cycle and cutting ratio, planting new seedlings while cutting 
+older trees. Then is applied to ChangBai forest, find that when the rotation period is 10 
+years and the cutting ratio is 20 %, which can be the most effective plan, the carbon 
+sequestration in 100 years is as high as 3.57 × 1010 𝑔. 
+Secondly, considering the applicability to society, in addition to the ecological 
+value of carbon sequestration, in terms of economic and tourism worth, we propound 
+another two indicators of tourism experience and management cost. And give a scoring 
+system by the MFE model based on AHP. Further, we put forward a management strat-
+egy that balances the three indicators above. Based on the data of ChangBai forest, we 
+get a best strategy when the rotation cycle is 15 years and the cutting proportion is 40 %, 
+then take a sensitivity analysis. Applying the MFE model in different forests, we found 
+that with the change of main tree species, the influence of three indicators on manage-
+ment strategies will also change, by the way, the optimal strategy transit to the direction 
+of forest value maximization. For example, from Muchuan forest with ornamental for-
+est mainly to tropical dry deciduous forest with economic forest in Jhumpa, India, the 
+best management will transit from long rotation cycle and low cutting proportion to a 
+short one and high one. 
+Finally, we contributed a magazine article to ICM about the necessity of harvesting 
+trees for forest management. 
+ 
+Keywords: AHP  NPP  the TPE model  the MFE model  harvesting strategy 
+ 
+ 
+Problem Chosen 
+E 
+2022 
+MCM/ICM 
+Summary Sheet 
+Team Control Number 
+2220714 
+
+<<<PAGE 2>>>
+Contents 
+1 
+Introduction ................................................................................................................ 3 
+1.1 
+Problem Background ..................................................................................................... 3 
+1.2 
+Restatement of the Problem ......................................................................................... 4 
+1.3 
+Our Work ......................................................................................................................... 4 
+2 
+Assumptions and Justifications ................................................................................. 5 
+3 
+Notations ...................................................................................................................... 6 
+4 
+Calculation of Total Forest Carbon Sequestration ................................................. 7 
+4.1 
+Calculation of Tree Carbon Sequestration Based on GLO-PEM ........................ 7 
+4.2 
+Calculation of Carbon Sequestration of Forest Products ....................................... 8 
+5 
+Tree-Products-Environment Carbon Sequestration（TPE） Model ................ 10 
+5.1 
+Data Collection ............................................................................................................. 10 
+5.2 
+The Establishment of TPE Model ............................................................................. 11 
+5.3 
+Simulation of TPE Model ........................................................................................... 13 
+6 
+Forest Management Evaluation (FME) Model ...................................................... 15 
+6.1 
+Evaluation Factors and Weight Distribution Based on AHP .............................. 15 
+6.2 
+Calculation Method of Evaluation Factors ............................................................. 16 
+6.3 
+TOPSIS Comprehensive Evaluation Method ......................................................... 17 
+6.4 
+Analysis of Results ...................................................................................................... 17 
+6.5 
+Scope of Management Plan ........................................................................................ 19 
+7 
+Sensitivity Analysis ................................................................................................... 20 
+8 
+Model Evaluation ..................................................................................................... 21 
+8.1 
+Strengths ......................................................................................................................... 21 
+8.2 
+Weaknesses .................................................................................................................... 21 
+9 
+Conclusion ................................................................................................................. 22 
+References ......................................................................................................................... 25 
+ 
+ 
+ 
+ 
+
+<<<PAGE 3>>>
+1 Introduction 
+1.1  Problem Background 
+In recent years, the concentration of greenhouse gases in the atmosphere has in-
+creased, resulting in global warming [1]. Carbon dioxide is the main influencing factor. 
+At present, the concentration of carbon dioxide in the atmosphere has increased from 
+280 𝑚𝐿· 𝑚−3 before the industrial revolution to 370 𝑚𝐿⋅𝑚−3 in 2001, and is in-
+creasing at the rate of 1~1.5 𝑚𝐿⋅𝑚−3 per year [2]. It is necessary to take correspond-
+ing measures to reduce carbon dioxide in the atmosphere.  
+Carbon sequestration is a process of capturing and storing carbon dioxide from the 
+atmosphere. Forest carbon sequestration means that forest plants absorb carbon dioxide 
+in the atmosphere and fix it in vegetation or soil, thereby reducing its concentration in 
+the atmosphere. The annual carbon exchange between forest light cooperation and res-
+piration and atmosphere is as high as 90% of the annual carbon exchange of terrestrial 
+ecosystem [3], which plays an important role in regulating global climate and maintain-
+ing global carbon balance. 
+Forests not only store carbon dioxide in living plants, but also exist in their forest 
+products. Over time, the carbon sequestration capacity of trees and the longevity of 
+forest products will change. In the long run, appropriate management strategies need to 
+be conducive to maximizing carbon sequestration. However, most forests in the world 
+have not been effectively managed, and carbon sequestration reaches the maximum [4]. 
+It is of great significance to develop a good forest management plan to effectively re-
+duce carbon dioxide in the atmosphere.   
+At the same time, forest manager also requires attention to value factors other than 
+carbon sequestration. Due to the different composition, interests and uses of forests, an 
+optimal forest management plan should be suitable for social needs and has the greatest 
+ecological, economic and cultural value. 
+Taking into account the above situation, we have constructed two models based 
+on the existing research model and data.  
+A Tree-Products-Environment Carbon Sequestration (TPE) Model was con-
+structed to estimate carbon sequestration in a forest area. Then carbon sequestration, 
+forest product value, deforestation frequency as ecological, economic, cultural and en-
+tertainment value indicators. We build a Forest Management Evaluation (FME) Model 
+to give the best management plan for society. Finally, the actual data are used for veri-
+fication. We use the two models to analyze the given strategies for the forest regions of 
+Changbai Mountain in China and the tropical dry deciduous forest in Jhumpa, Haryana 
+State in southern India. 
+ 
+ 
+
+<<<PAGE 4>>>
+1.2  Restatement of the Problem 
+Reasonable forest management plan is conducive to improving forest carbon se-
+questration capacity. Living plants in the forest can absorb carbon dioxide, and forest 
+products made of cut trees also have certain carbon dioxide storage. To maximize forest 
+carbon sequestration, over time, total non-deforestation will not guarantee maximum 
+forest carbon sequestration. As forest manager, the factors considered are not only lim-
+ited to forest carbon sequestration, but also need to consider the comprehensive value 
+of forest ecology, economy, culture and entertainment, so that forest management can 
+achieve a state that is most suitable for social development.  
+We mainly explore the optimal management plan of forests. Our team considers 
+the establishment of simulation prediction model and decision evaluation model to pre-
+dict the carbon sequestration of forests and evaluate the comprehensive management 
+plan. We need to solve the following problems: 
+▪ 
+How to estimate the total carbon sequestration of a forest? Determine the most 
+efficient management plan for carbon sequestration?  
+▪ 
+How to develop a forest value assessment model? Determine a management plan 
+that can balance various forest assessment indicators? Consider the scope of the 
+management plan and the transition points between different management plans, 
+as well as whether there any conditions in the model to prevent logging.  
+▪ 
+Apply the model to various forests, test the model and analyze the results. 
+1.3 Our Work 
+➢ Carbon sequestration capacity of living trees 
+GLO-PEM model is a commonly used NPP calculation model. Based on this 
+model, we calculate the NPP of live trees. We calculated the net primary productivity 
+of forests composed of different trees, and proposed a method to obtain the net primary 
+productivity of trees at different ages according to the existing research, which can ac-
+curately quantify the carbon sequestration capacity of trees. 
+➢ Carbon sequestration capacity of forest products 
+We divide forest products into three kinds: log, plywood, paper. Considering that 
+the production of forest products has a certain proportion, and the lifespan of different 
+forest products is different, the time of carbon sequestration is also different. Obviously, 
+the proportion and life of forest products will affect the carbon sequestration of forest 
+products. According to the existing research data of IPCC forest products, we deter-
+mined the proportion and lifespan of forest products made of cut trees. 
+➢ Tree-Products-Environment Carbon Sequestration (TPE) Model 
+On the basis of determining the method for calculating the carbon sequestration of 
+trees and forest products, a model for calculating the total carbon sequestration of for-
+ests was established. Applying the forest management plan to the model, we need to 
+consider which trees are cut every year, which trees are left, the cutting time and the 
+
+<<<PAGE 5>>>
+new species of trees, and add the factors of tree age and product lifespan changing over 
+time to simulate and predict the total forest carbon sequestration. 
+➢ Forest Management Evaluation (FME) Model 
+We divide the forest value into ecological value, economic value and tourism value, 
+and determine the calculation method and weight coefficient of the three values. TOP-
+SIS comprehensive evaluation method is used to score each management plan, and the 
+management plan with the highest score is selected as the optimal plan to balance the 
+various values of the forest. 
+ 
+Figure 1.1 Our Work 
+ 
+2 Assumptions and Justifications 
+To simplify the problem, we make the following basic assumptions, each of which 
+is properly justified. 
+➢ We assume that the data obtained are accurate and reliable. 
+We get data from trusted websites and papers. 
+➢ Trees grow at the same rate each year. 
+The growth rate of trees will be affected by climate change, and the growth rate 
+will be different between years. However, in the long run, the average growth rate 
+is relatively stable. 
+➢ Tree growth is healthy and normal without large-scale natural disasters. 
+Large-scale natural disasters are small probability events. We can ignore this 
+problem when we study models of general laws. 
+➢ Processing loss of forest products does not affect the total value of forests 
+In the process of producing forest products, certain losses will inevitably occur, 
+but these losses will be included in the cost of products and reflected in another 
+form of value, so the overall value of the forest is unchanged. 
+
+<<<PAGE 6>>>
+3 Notations 
+The key mathematical notations used in this paper are listed in Table 3.1. 
+Table 3.1: Partial symbols used in this paper 
+Symbol 
+Description 
+Unit 
+𝑁𝑃𝑃 
+Carbon content of carbon dioxide net absorbed by for-
+ests per unit time per unit area from the atmosphere 
+𝑔⋅𝑚−2𝑎−1 
+𝐶(𝑡) 
+Average cumulative carbon sequestration of forests at 𝑡 
+𝑔 
+𝑃(𝑡) 
+The cumulative total carbon sequestration of trees in the 
+forest at time 𝑡 
+𝑔 
+𝑄(𝑡) 
+Total remaining carbon sequestration of trees made into 
+forest products at 𝑡 
+𝑔 
+𝐷(𝑡) 
+Total carbon sequestration of natural dead trees at t time 
+𝑔 
+𝑹(𝒕) 
+Carbon Sequestration Vectors for Three Types of Forest 
+Products in Recent Years by 𝑡 
+𝑔 
+𝜶 
+Proportion vector of trees made into three types of forest 
+products 
+/ 
+𝝉 
+The service life vectors of three forest products 
+𝑎 
+𝑇 
+Rotation cycle, the interval between deforestation 
+𝑎 
+𝜂 
+Cutting proportion 
+/ 
+𝑊 
+Total carbon sequestration of trees cut down in one 
+felling 
+𝑔 
+Other symbols will be explained when used. 
+ 
+ 
+ 
+
+<<<PAGE 7>>>
+4 Calculation of Total Forest Carbon Sequestration 
+4.1  Calculation of Tree Carbon Sequestration Based on GLO-PEM 
+➢ Net Primary Productivity 
+Net primary productivity (NPP) is an important indicator for evaluating ecosystem 
+service level. It refers to the total amount of solar energy fixed by vegetation per unit 
+time and per unit area after consuming metabolic energy. Due to plant photosynthesis, 
+fixed solar energy is finally fixed in the form of carbon-containing organic matter in 
+plants, so NPP is used to measure the carbon sequestration of forests. The higher NPP 
+value indicates the higher forest carbon sequestration, and vice versa. 
+➢ NPP Calculation Model Based on GLO-PEM 
+By reference to conference, using GLO-PEM model. It is a typical light utilization 
+calculation model. NPP values in the study area are driven and inversed through remote 
+sensing, meteorological and field survey records provided by the Meteorology Bureau. 
+𝑁𝑃𝑃= 𝐴𝑃𝐴𝑅× 𝜀
+(4.1) 
+This model is mainly determined by the two variables of vegetation an ambient 
+pressure absorbance ratio (APAR) and light energy utilization (𝜀). 
+Calculation of APAR 
+APAR is obtained from photosynthetically active radiation (𝑃𝐴𝑅) and fraction of 
+photosynthetically active radiation (𝐹𝑃𝐴𝑅): 
+𝐴𝑃𝐴𝑅= 𝑃𝐴𝑅× 𝐹𝑃𝐴𝑅
+(4.2) 
+Using half of the total daily radiation (𝑆𝑄𝐿) as 𝑃𝐴𝑅, 𝑆𝑄𝐿 is calculated as fol-
+lows: 
+𝑆𝑄𝐿= 𝐻𝐿× (0.248 + 0.725 × 𝑆
+𝑆𝐿
+)
+(4.3) 
+In where, 𝑆𝑄𝐿 is the total daily radiation, 𝑆/𝑆𝐿 is the percentage of sunshine, 
+and 𝐻𝐿 is the solar radiation in clear sky. 
+𝐹𝑃𝐴𝑅= 𝐹𝑃𝐴𝑅𝑁𝐷𝑉𝐼+ 𝐹𝑃𝐴𝑅𝑆𝑅𝑉𝐼
+2
+(4.4) 
+𝐹𝑃𝐴𝑅𝑁𝐷𝑉𝐼 is the normalized vegetation index, which can be calculated by NDVI im-
+age and NDVI pixel value, 𝐹𝑃𝐴𝑅𝑆𝑅𝑉𝐼 is a simple ratio vegetation index. 
+Calculation of 𝜺 
+Light use efficiency refers to the vegetation will absorb photosynthetically active 
+radiation fixed for carbon-containing organic matter efficiency size. Under realistic 
+conditions, the utilization rate of light energy is affected by both temperature and hu-
+midity. 
+𝜀= 𝑇𝜀1 × 𝑇𝜀2 × 𝑊𝜀× 0.389
+(4.5) 
+In the formula, 𝑇𝜀1and 𝑇𝜀2 denote the effect of temperature on light energy utili-
+zation, 𝑊𝜀 denote the effect of moisture on light energy utilization.  
+
+<<<PAGE 8>>>
+➢ Establishment of relationship between tree age and NPP 
+Gross primary production (GPP) refers to all organic matter produced by auto-
+trophic organisms per unit area for a period of time, including net primary productivity 
+(NPP) of individual organs and respiration consumption (Ra) of plants during the same 
+period. Their relations are expressed as follows: 
+𝐺𝑃𝑃= 𝑁𝑃𝑃+ 𝑅𝑎
+(4.6) 
+GPP can be used as an important indicator to evaluate the coordination of ecosys-
+tem structure and function, and can be used to estimate the storage and release of carbon 
+in the ecosystem cycle and the effect of vegetation on the composition of the atmos-
+phere. We estimated NPP of trees at different tree ages by GPP and tree age trends. 
+According to the forest resources inventory of the Ministry of Forestry of China 
+and the classification standard of tree age class and age group, the forest life is divided 
+into five stages, Young Forest (<41), Middle Age Forest (41-80), Near Mature Forest 
+(81-100), Mature Forest (101-140), Overripe Tree (>141). With the increase of tree age, 
+biomass increases, and its average productivity decreases [6]. 
+Taking spruce forest and Pinus sylvestris as examples. With the increase of tree 
+age (𝑎), the change of average productivity (𝑡⋅ℎ𝑎−1 ⋅𝑎−1) is as follows. 
+Table 4.1 Change of Average Productivity with Tree Age 
+GPP 
+Young 
+Middle Age 
+Near Mature 
+Mature 
+Overripe 
+Average 
+Spruce Forest 
+10.56 
+10.03 
+8.81 
+7.90 
+7.21 
+8.40 
+Pinus Sylvestris 
+7.24 
+7.38 
+6.77 
+6.77 
+5.40 
+6.74 
+ 
+Figure 4.1 GPP of Two Forests 
+It can be seen from the above figure that after the trees mature, the average produc-
+tivity is lower than the average value and shows a decreasing trend. The NPP should 
+also conform to this trend. Obviously, with the increase of tree age, the cumulative 
+carbon sequestration of trees is increasing. 
+4.2  Calculation of Carbon Sequestration of Forest Products 
+➢ forest products market 
+We divide forest products into three categories, log, plywood, paper. The survey 
+data show that the carbon sequestration of forest products shows a very good develop-
+ment momentum and has great potential for carbon emission reduction [7]. Considering 
+
+<<<PAGE 9>>>
+the forest management behavior, some woody forests are processed into forest products. 
+Although carbon fixation by photosynthesis is no longer carried out, there is no life 
+activity that consumes carbon and no longer participates in the carbon cycle. Instead, 
+the carbon previously synthesized is preserved for a long period of time and slowly 
+released back to the atmosphere over time. As shown in Table 4.2. 
+Table 4.2 Cumulative carbon sequestration (unit: 𝑻𝒈) of forest products in use 
+in China  
+Year 
+1950 
+1955 
+1960 
+1965 
+1970 
+1975 
+1980 
+Log 
+127.8 
+145.6 
+165.2 
+186.6 
+210.3 
+236.4 
+265.2 
+Plywood 
+0.8 
+1.1 
+1.7 
+2.2 
+2.9 
+4.4 
+7.4 
+Paper 
+0.7 
+1.7 
+3.3 
+3.5 
+4.7 
+6.9 
+10.6 
+Year 
+1985 
+1990 
+1995 
+2000 
+2005 
+2010 
+2015 
+Log 
+297.2 
+332.7 
+372.1 
+407.7 
+433.1 
+497.6 
+564.8 
+Plywood 
+14.0 
+26.9 
+64.4 
+127.9 
+277.7 
+620.7 
+1458.7 
+Paper 
+15.1 
+23.6 
+46.1 
+79.8 
+157.1 
+287.6 
+423.0 
+Drawing the graph of carbon sequestration changing with time, the carbon seques-
+tration of different forest products showed an increasing trend year by year. 
+ 
+Figure 4.2 The Accumulate Carbon Sequestration of Forest Products in China 
+➢ Forest product distribution ratio and average life expectancy 
+The life span of different forest products is different, and the attenuation cycle and 
+attenuation speed are also different. According to the output ratio of wood forest prod-
+ucts from 2011 to 2015, the distribution ratio of three materials in the model is taken [7]. 
+For the life of forest products, we use IPCC (2014A) product half-life data [8], the spe-
+cific values are as follows: 
+Table 4.3 Forest Product Distribution Ratio and Average Life 
+material categories 
+Log 
+Plywood 
+Paper 
+Lifespan / % 
+13.83 
+54.97 
+31.20 
+Production Ratio / year(s) 
+35 
+25 
+2 
+ 
+ 
+
+<<<PAGE 10>>>
+5 Tree-Products-Environment Carbon Sequestration（TPE） 
+Model 
+5.1  Data Collection 
+➢ Changbai Mountain 
+Changbai Mountain, located in northeast China, is one of the main mountains in 
+eastern Northeast China. The sample plots (115° −135°02′𝐸, 38°42′ −53°55′𝑁) in 
+Changbai Mountain area were selected to include Changbai Mountain and its tributaries. 
+Forest types are diverse, mainly coniferous forest and broad-leaved forest, with an area 
+of 1708.8 square kilometers. 
+ 
+Figure 5.1 Changbai Mountain geographical location and potential vegetation 
+distribution (SOURCE: EarthStat/UMN IonE/LUGE Lab at UBC) 
+The average NPP of forest land from 2001 to 2015 was selected to reflect the 
+change of carbon sequestration of forest trees [5]. 
+Table 5.1 Year NPP (gC·m-2·a-1) 
+Year 
+2001 
+2003 
+2005 
+2007 
+NPP 
+760 
+750 
+650 
+780 
+Year 
+2009 
+2011 
+2013 
+2015 
+NPP 
+750 
+765 
+725 
+800 
+
+<<<PAGE 11>>>
+ 
+Figure 5.2 NPP of Forest in Changbai Mountain 
+It can be seen that the change was relatively stable, and the average value of  
+748 𝑔𝐶· 𝑚−2 · 𝑎−1 was taken as the NPP value of Changbai Mountain forest land in 
+recent years. 
+ 
+Figure 5.3 Spatial distribution of forest NPP in Changbai Mountains during 
+2001-2008, 2008-2015 and 2001–2015 [5] 
+➢ SO-AT Forest in India 
+The Haryana region is located in the south of India. We selected the SO-AT forest 
+in this region as the study area. (28°41′𝑁−28°46′𝑁, 75°31’ −75°51’𝐸) The forest 
+is a tropical dry deciduous forest. 
+The main trees in the forest are olive and acacia. According to the study ([10] 
+Vikram Singh Yadav, 2022), the net primary productivity of the forest is about 
+550 𝑔𝐶⋅𝑚−2 ⋅𝑎−1. The climate is tropical, semi-arid, hot, dry, hot in summer and cold 
+in winter.  
+5.2 The Establishment of TPE Model 
+We established a model to calculate the total amount of forest carbon sequestration, 
+mainly considering three parts: the carbon sequestration of growing trees, the carbon 
+stored in forest products and that existing in the atmosphere or soil environment.  
+Taking into account the changes over time, trees are growing, getting older, net 
+productivity will also change; Once forest products reach its life, the carbon they stored 
+
+<<<PAGE 12>>>
+will be released into the atmosphere; although new seedlings cannot immediately have 
+carbon sequestration capacity, they have great potential in the long term. The carbon 
+sequestration eventually accumulated will be affected by the type, number, time and 
+number of harvested trees. Therefore, our forest management strategy will be on three 
+aspects: tree cutting, cutting time and tree planting. 
+➢ Average of cumulative carbon sequestration 
+Forest 𝑆 can be divided into three parts: part 𝑆1 in trees haven’t been cut, part 
+𝑆2 in forest products and part 𝑆3 of natural death.  
+ 
+Figure 5.4 Chart of Carbon Sequestration Cycle 
+The cumulative total carbon sequestration of 𝑆1 part at 𝑡 time is 
+𝑃(𝑡) =
+∑
+∮𝑁𝑃𝑃∙𝑑𝑆
+ 
+𝑆1
+𝑡
+𝑖=1
+𝑡
+(5.1) 
+The cumulative total carbon sequestration of 𝑆2 part at 𝑡 time is 
+𝑄(𝑡) = ∑∑𝛼𝑖𝑅𝑗(𝑡)
+𝜏𝑖
+𝑗=1
+3
+𝑖=1
+(5.2) 
+In vector 𝑹, the value of 𝑅1 is determined by cutting strategy (as below), who ex-
+cept  𝑅1 are generated by recursion. 
+{𝑅𝑖−1 = 𝑅𝑖  , 𝑖≥3
+𝑅1 = 𝑊                 
+(5.3) 
+The cumulative total carbon sequestration of 𝑆2 part at 𝑡 time is 
+𝐷(𝑡) = 0.5𝐷(𝑡−1) + 𝐷0(𝑡)
+(5.4) 
+Then the average cumulative total carbon sequestration of the forest at t time is 
+𝐶(𝑡) = 𝑃(𝑡) + 𝑄(𝑡) + 𝐷(𝑡)
+(5.5) 
+
+<<<PAGE 13>>>
+➢ Harvesting range strategy  
+In the fourth part, we analyze that after the trees mature, their NPP is lower than 
+the average and shows a decreasing trend. Therefore, when selecting the forest part that 
+needs to be cut, the one with high carbon content but slow growth has a priority. In this 
+model, only the trees in mature and over-mature forest are allowed to be cut, and older 
+the tree is, faster the cutting become.  
+➢ Harvesting schedule strategy 
+After determining the Logging target, the rotation period T and the cutting ratio η 
+need to be given. We will determine the value of these two parameters by simulation. 
+➢ regeneration the forest strategy 
+The number of trees in forests decreases only due to deforestation and natural 
+death. Deforestation occurs only during rotation and natural death occurs as long as 
+trees exceed their life limit. For these two reasons, the regeneration of the forest strategy 
+means ' keep the forest area constant ', that is, how many trees are cut and how many 
+seedlings are planted that year. 
+5.3  Simulation of TPE Model 
+➢ Simulation Algorithm Steps 
+Algorithm: Simulation and Prediction of Average Carbon Storage 
+Input: 𝑆, 𝑇, 𝜂  
+Output: 𝐶(𝑡) 
+for t = 1 to 300 do 
+Age of all trees plus one in 𝑆 and delete natural dead trees 
+if t mod T is equal to 0 do 
+Determine the allowable range of deforestation (mature forest, overripe for-
+est) area, according to 𝜂 to calculate the need to deforestation forest area 
+The carbon sequestration content corresponding to the planned felling part 
+of the forest was pushed forward to 𝑅, and if the planned felling area was 
+not considered as 0 
+end 
+Determination of new seedlings based on reduced number of trees in forests 
+Calculate 𝐶(𝑡) under given 𝑇 and 𝜂 by formula (5.5). 
+end 
+➢ Analysis of Simulation Results 
+This paper takes ten thousand square meters of forest land in Changbai Mountain 
+area as the research object, and draws 𝐶(𝑡) −𝑡 curves under different combinations 
+of 𝑇 and 𝜂 according to the simulation prediction algorithm, as shown in Figure 5.5 
+and Figure 5.6. 
+
+<<<PAGE 14>>>
+ 
+Figure 5.5 Effect of rotation period 𝑇 on 𝐶(𝑡) −𝑡 curve under given cutting 
+portion 𝜂 
+ 
+Figure 5.6 Effect of cutting portion 𝜂 on 𝐶(𝑡) −𝑡 curve under given rotation 
+period 𝑇 
+From Figure 5.5 and Figure 5.6, it can be seen that when the rotation cycle 𝑇=
+10, cutting rotation 𝜂= 20% of the plan, the average cumulative carbon sequestra-
+tion of the forest is the largest, so choose the management plan of “rotation cycle is 10 
+years, cutting 20% of the trees in mature forest and overmature forest stage each time, 
+planting new seedlings every year to ensure the forest area unchanged”, which is the 
+most effective in absorbing carbon dioxide. According to this management plan, the 
+forest will absorb carbon dioxide 3.57 × 1010 𝑔 after 100 years, and completely with-
+out cutting trees, carbon dioxide 3.09 × 1010 𝑔 after 100 years. 
+ 
+ 
+ 
+
+<<<PAGE 15>>>
+6 Forest Management Evaluation (FME) Model 
+6.1  Evaluation Factors and Weight Distribution Based on AHP 
+➢ Establish the Structure of AHP (Analytic Hierarchy Process) 
+Forest, as the most complex ecosystem on the earth, not only has great ecological 
+value, its rich species diversity has also created development space for tourism. Trees 
+have unique growth environment, and are more economically valuable than plantation. 
+So, we measure the value of forests in terms of ecology, economy and tourism. Estab-
+lish the following three evaluation indicators: total carbon sequestration (CS), tourism 
+experience (TE), management costs (MC).  
+Next, we will introduce AHP to establish the evaluation model of three indexes, 
+as to obtain their weights. The hierarchical analysis structure is as follows: 
+ 
+Figure 6.1 The Various Ways that Forests are Valued 
+➢ Pairwise Comparison Matrix. 
+Starting from the second layer of the hierarchical structure model, for each factor 
+belonging to the upper layer, a pair comparison matrix is constructed with a pair com-
+parison method and a 1-9 comparison scale until the lowest level. 
+𝐴= (𝑎𝑖𝑗)𝑛×𝑚,   𝑎𝑖𝑗> 0,   𝑎𝑗𝑖= 1
+𝑎𝑖𝑗
+(6.1) 
+Figure 6.1 Relative Comparison Dimension 
+dimension (𝑎𝑖𝑗) 
+Intent (𝐶𝑖 to 𝐶𝑗) 
+dimension (𝑎𝑖𝑗) 
+Intent (𝐶𝑖 to 𝐶𝑗) 
+1 
+Equal 
+2  4  6  8 
+Between the above two 
+adjacent grades 
+3 
+Slightly Stronger 
+5 
+Strong 
+1
+2  1
+3 ⋯ 1
+9 
+the reciprocal number of 
+𝑎𝑖𝑗 
+7 
+Obviously Stronger 
+9 
+Absolutely Stronger 
+By searching keywords on Google Scholar, “forest ecological value” has 50.2 mil-
+lion results, “forest economic value” has 19.1 million, “forest tourism value ' has 12.2 
+
+<<<PAGE 16>>>
+million. On the basis of it, we estimate the relative importance of each index, and es-
+tablish a pairwise comparison matrix of target layer: 
+𝐴= [
+1
+3
+5
+1/3
+1
+1/8
+1/5
+8
+1
+] 
+➢ Weight Vector and Consistency Check 
+The maximum eigenvalue λ to matrix A calculated by MATLAB is 3.0, and the 
+normalized eigenvector is 𝜔= [0.74
+0.18
+0.08]. Therefore, it is used as the 
+weight vector between ecological value, economic value and tourism value. 
+In general, we need to test the consistency of comparison matrices. Therefore, 
+consistency index (𝐶𝐼) and random consistency index (𝑅𝐼) are introduced: 
+𝐶𝐼= 𝜆−𝑛
+𝑛−1
+(6.2) 
+Where, 𝑛 is the order of matrix 𝐴, 𝑅𝐼 can be found through the data table, and 
+then the 𝐶𝑅 calculation: 
+𝐶𝑅= 𝐶𝐼
+𝑅𝐼
+(6.3) 
+The final 𝐶𝑅= 0.038 < 0.1, that the degree of inconsistency is in the acceptable 
+range, pass the consistency test. 
+ 
+6.2  Calculation Method of Evaluation Factors 
+➢ Ecological Value 
+According to the algorithm described in model one, the total carbon sequestration 
+of forests after 100 years under a given plan was simulated. 
+➢ Economic Value 
+Economic value represents the income and expenditure when implementing the 
+forest management plan. In this paper, only the cost of tree planting and cutting and the 
+income of forest products are considered. 
+The income of forest products depends on the type and quantity of products. The 
+distribution ratio of trees to different types of forest products is given in the previous 
+paper, so the type of forest products is relatively fixed. In the case of ignoring the loss 
+of the production process, the number of forest products is proportional to the volume 
+of cut trees, and the volume is proportional to the carbon sequestration of trees, so the 
+relative size of forest products can be replaced by the carbon sequestration of cut trees. 
+The carbon sequestration of trees also determines the ecological value of forests. In 
+order to avoid repeated consideration, we ignore the income of forest products in dif-
+ferent plans when calculating economic value. 
+For the cost of planting and cutting trees, the cost per unit area is a fixed value, so 
+the economic value can be replaced by calculating the area of planting and cutting trees. 
+
+<<<PAGE 17>>>
+➢ Tourism Value 
+Obviously, for forests, if trees are cut down frequently and massively, their attrac-
+tion to tourists will naturally decrease, and tourism value will decrease. Therefore, the 
+management plan with short rotation period and high cutting proportion has low tour-
+ism value. We use AHP to quantitatively analyze the tourism value of forests, and ob-
+tain the tourism value scores of forests under different plans as shown in the following 
+table. 
+Table 6.2 Forest Tourism Value Scores under Different Plans 
+ 
+5 years 
+10 years 
+15 years 
+20 years 
+0% 
+0.20 
+0.30 
+0.40 
+0.50 
+20% 
+0.18 
+0.27 
+0.36 
+0.45 
+40% 
+0.16 
+0.24 
+0.32 
+0.40 
+60% 
+0.14 
+0.21 
+0.28 
+0.35 
+80% 
+0.12 
+0.18 
+0.24 
+0.30 
+100% 
+0.10 
+0.15 
+0.20 
+0.25 
+ 
+6.3  TOPSIS Comprehensive Evaluation Method 
+TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) sorts the 
+evaluation objects by means of the positive ideal solution and negative ideal solution 
+of the evaluation problem. The so-called positive ideal solution is a virtual optimal ob-
+ject, each index value is the best value of the index in all evaluation objects; the ideal 
+solution is another virtual worst object, and each index value is the worst negative value 
+of the index in all evaluation objects. The distance between each evaluation object and 
+positive ideal solution and negative ideal solution is calculated, and the advantages and 
+disadvantages of each evaluation object are sorted. 
+We use TOPSIS comprehensive evaluation method to score each management 
+plan according to the ecological value, tourism value and economic value of each man-
+agement plan, in which ecological value and tourism value are positive variables and 
+economic value is negative variable. Select the highest score management plan, that is, 
+the best plan to balance forest value in various ways. 
+ 
+6.4  Analysis of Results 
+➢ The Best Use of Forest 
+According to the evaluation model of forest value utilization rate, the management 
+plans of different combinations of rotation cycle and cutting proportion are scored re-
+spectively, and the scores are shown in the figure below. 
+
+<<<PAGE 18>>>
+ 
+Figure 6.2 Comprehensive Evaluation of Different Strategy Combinations 
+It can be seen that the management plan with a rotation cycle of 15 years and a 
+cutting proportion of 40 % scored the highest, namely, the optimal plan to balance forest 
+value. And there is no condition to prevent cutting trees. 
+➢ Transition Point 
+Since the FME model considers the value indicators of ecology, economy and 
+tourism, and with the change of forest function, the weights of the three indicators will 
+also change. For example, the tourism weight of ornamental forest accounts for a larger 
+proportion, and the economic weight of economic forest accounts for a larger propor-
+tion, which will make the best management applicable to the forest transit from one 
+plan to another. 
+Considering the characteristics of specific forests, the tropical dry deciduous forest 
+in Jhumpa, Haryana State, southern India, with economic forest as the main forest spe-
+cies, and the Muchuan National Forest Park, with ornamental forest as the main forest 
+species, were selected. The scores of different management plans were calculated by 
+FME model as follows. 
+ 
+Figure 6.3 (a) Ornamental Forest  Figure 6.3 (b) Economic Forest 
+
+<<<PAGE 19>>>
+It can be seen from the chart that the rotation period of ornamental forest is longer 
+and the proportion of felling is lower, and the score is higher than that of economic 
+forest. From ornamental forest to economic forest, the optimal management plan will 
+transit from the upper right corner to the lower left corner. 
+ 
+6.5  Scope of Management Plan 
+➢ Ecology  
+(1) Increasing the forest area and increasing the coverage rate of forest by means 
+of returning farmland to forest and reclamation. It will improve the carbon sequestration 
+potential of vegetation and soil, conserve soil and conserve water.  
+(2) Establish nature reserves to reduce human disturbance and protect biodiversity.  
+(3) Scientific planning of cutting degree, reducing destructive cutting, and reduc-
+ing the cost of planting regeneration are conducive to the restoration of forest ecology.  
+➢ Forestry economy 
+(1) Rational distribution of felling areas, dividing forests into economic forests 
+and ecological forests.  
+(2) Determination of the optimal rotation cycle and cutting proportion. 
+(3) Rational utilization of raw materials, improvement of wood utilization and re-
+duction of resource waste  
+➢ Raising  
+(1) Forest pest management  
+(2) Appropriate use of fertilizers to increase soil fertility  
+(3) Regular elimination of forest fire hazards.  
+➢ Cultural entertainment  
+(1) Planning tourism reasonably and developing ecotourism.  
+(2) Carry forward local ethnic characteristics and carry out cultural tourism. 
+ 
+ 
+ 
+
+<<<PAGE 20>>>
+7 Sensitivity Analysis 
+The goal of forest managers is to maximize the value of this forest. When the 
+interval between two harvests is limited, namely, the rotation cycle, it is necessary to 
+adjust the strategy of cutting proportion to make the management plan achieve an opti-
+mal solution. The results obtained from the algorithm simulation are shown in the fol-
+lowing figure. 
+ 
+Figure 7.1 The Relationship between Management Plan Effect and Cutting Pro-
+portion Under Different Rotation Cycles 
+From the above figure can be seen, for a smaller rotation cycle, the cutting propor-
+tion should not be too large; for a larger rotation cycle, a larger cutting proportion is 
+needed. The cutting strategies given in this paper are preferred to cut older trees to avoid 
+the waste of resources caused by natural death and corruption. If the rotation cycle is 
+too large and the cutting proportion is small, there will be more natural death and cor-
+ruption of trees in the two cutting times, which will lead to a large amount of waste of 
+resources. Therefore, in a large rotation cycle, a large proportion of cutting is needed to 
+cut and utilize trees that may naturally die within the interval of two cutting, so as to 
+make full use of the value of forests. 
+Long logging cycle will have a negative impact on forest products users. The sup-
+ply of forest products has the characteristics of long supply chain, many logistics nodes 
+and difficult storage. Long cutting cycle may lead to a shortage of forest products sup-
+ply, a decline in supply quality, and an increase in cost, further increasing the instability 
+of forest products supply and reducing market security, which will seriously affect the 
+economic benefits of forest industry and users, and is not conducive to the sustainable 
+development of forest industry. 
+ 
+ 
+ 
+
+<<<PAGE 21>>>
+8 Model Evaluation 
+8.1 Strengths 
+1) An accurate and reasonable carbon sequestration model. The carbon seques-
+tration model fully considers the carbon flow in the forest ecosystem, and the pro-
+posed cutting proportion fully considers the factors such as tree age, mortality, ro-
+tation cycle, and cutting proportion, so as to reasonably predict the change of forest 
+carbon sequestration in a time series. 
+2) The forest value evaluation model with multiple considerations and intuitive 
+results. Evaluating the value of forests from three aspects of ecology, economy 
+and tourism value is a more suitable scheme for society, and an intuitive rating 
+scale is given. 
+3) Considering the influence of forest species on transition point. Different forest 
+types have different weights for value evaluation indexes, making the given forest 
+management plan transit to the most realistic plan. And this transition process can 
+be intuitively reflected in our scoring table. 
+ 
+8.2 Weaknesses 
+1) The life differences of different tree species were ignored. In the first model, the 
+different life span of tree species may lead to different final carbon sequestration, 
+and the final calculation results have a certain error compared with the actual 
+2) Forest area remains constant, regardless of forest expansion. In the first model, 
+we set how many trees to cut and how many books to plant, keeping the forest area 
+unchanged, ignoring the impact of management plans such as returning farmland 
+to forest and desert afforestation. 
+ 
+ 
+ 
+ 
+ 
+
+<<<PAGE 22>>>
+9 Conclusion 
+We established the TPE model and took the forest land of 10000 square meters in 
+Changbai Mountain area as the research object. Through the simulation and prediction 
+algorithm, we obtained the most effective management plan in the absorption of carbon 
+dioxide as “rotation cycle is 10 years and the cutting proportion is 20%”.  
+According to this management plan, the forest and its products will absorb 
+3.57 × 1010 𝑔 of CO2 after 100 years. Without cutting trees at all, 3.09 × 1010 𝑔 of 
+CO2 will be absorbed after 100 years. 
+We combine the ecological, economic and tourism values of forests, and establish 
+an evaluation model of forest value utilization rate on the basis of carbon sequestration 
+model. Similarly, we take Changbai Mountain region as the research object, and the 
+optimal plan for balancing various ways of considering forest value is “the rotation 
+cycle is 15 years, and the cutting proportion is 40%”. Analyzing the score of each man-
+agement plan under different conditions, the score of non-cutting plan is the lowest, so 
+it is considered that there is no condition that will lead to forest not being cut. 
+For different types of forests, the relative importance of the three types of values 
+is different. The management plan of forest dominated by ecological value tends to be 
+“low rotation cycle and low cutting proportion”, while the management plan of forest 
+dominated by tourism value tends to be “high rotation cycle”, and the management plan 
+of forest dominated by economic value is between the two. 
+We studied the effect of increasing harvest interval, i.e. rotation cycle, on manage-
+ment plan. By analyzing the change trend of management plan, we obtained the con-
+clusion that “increasing rotation cycle needs to appropriately increase the cutting pro-
+portion to maintain high forest value utilization”. 
+ 
+ 
+ 
+ 
+
+<<<PAGE 23>>>
+Harvesting? 
+ 
+Protection? 
+ 
+ 
+  
+Rational Harvesting and Renewal to Protect Forest Resources 
+ 
+Forest resources play an important 
+role in protecting ecological environment 
+and improving climate. However, due to 
+unscientific logging and updating, forest 
+resources are destroyed, resulting in con-
+tinuous deterioration of forest ecological 
+environment, and frequent natural disas-
+ters such as floods, sandstorms and land 
+droughts. So I can ' t help asking, should 
+the forest be protected without logging? 
+The answer is not perfect either. 
+ 
+ 
+ 
+Forest harvesting and forest protec-
+tion are relatively organic combination. 
+Scientific research indicates that appro-
+priate harvesting of forests is beneficial 
+to the improvement of overall NPP(Net 
+Primary Productivity) of forests. How-
+ever, allowing the natural growth of for-
+ests, in regions with poor environmental 
+conditions, is easy to cause single tree 
+species and low biodiversity. A sudden 
+pest and fire may have a huge impact on 
+the forest ecosystem. So if we can do 
+some logging activities timely and appro-
+priately without damaging the environ-
+ment, it will improve the original ecolog-
+ical structure, enhance the tolerance of 
+the original forest ecosystem and pro-
+mote the sustainable development of eco-
+logical economy 
+ 
+ 
+
+<<<PAGE 24>>>
+The above figure shows that with the increase 
+of deforestation ratio, forest carbon seques-
+tration showed a trend of first rising and then 
+falling, but the overall carbon sequestration is 
+still higher than that without deforestation. 
+ 
+How to make a proper logging strategy? 
+ 
+Firstly, when formulating cutting 
+strategies, it should be adapted to local 
+conditions. According to the growth of 
+trees, water and woodland conditions, 
+the implementation plan of cutting and 
+updating construction work is formulated. 
+For example, for the rhododendron larch 
+forest type in the Greater Khingan Moun-
+tains, clear cutting can be taken if the 
+slope is less than 15 and the cutting is 
+well updated before. Also, shelter forest, 
+can choose tending cutting, gradual cut-
+ting or selective cutting, update the type 
+of application by artificial promotion or 
+natural regeneration. 
+Secondly, different cutting intensity 
+should be determined according to forest 
+type, forest age, altitude, slope aspect 
+and soil condition. Cutting intensity is of 
+great significance to the regulation of 
+forest ecological conditions. Different 
+cutting intensities have different effects 
+on the growth and development of seed-
+lings, saplings and reserved trees, espe-
+cially the light conditions and intensity in 
+the forest, which directly affect the 
+ground temperature. Therefore, it is nec-
+essary to control the cutting density and 
+rotation period. 
+Thirdly, the reasonable selection of 
+the collection method. Gathering opera-
+tion is an important part of ecological en-
+vironment protection in the whole forest 
+cutting operation. It effects greatly on 
+protecting forest vegetation, preventing 
+water loss and maintaining forest 
+productivity. The best way of gathering 
+should be selected according to the to-
+pography and slope of the cutting area. 
+Fourthly, pay attention to the clean-
+up and renewal of cutting sites. No matter 
+what cutting method, there are a certain 
+number of dead standing trees, rotten 
+trees and mechanically damaged trees 
+abandoned in the forest land. In particu-
+lar, the vertical and horizontal intersec-
+tion of shoot and branch cutting residues 
+is not conducive to the growth and devel-
+opment of seedlings, affecting forest re-
+generation, also provides favorable con-
+ditions for the reproduction of forest 
+pests and diseases, and is easy to cause 
+forest fires. In order to promote forest re-
+generation after logging, it is necessary 
+to clean up the remaining logging objects 
+on the trail ground according to certain 
+specifications and directions. 
+Moderate harvesting of forests can 
+not only create economic benefits, but 
+also enhance forest tolerance and im-
+prove ecological benefits. So under the 
+premise of protecting forest resources, 
+should be reasonable for logging, to cre-
+ate a better and comfortable environment 
+for human life. 
+ 
+ 
+ 
+(Chapter written by Team # 2220714) 
+
+<<<PAGE 25>>>
+References 
+[1]  Apps M J, Kurz W A. Carbon budget of the Canadian forest product sector[J]. 
+Environmental Science and Policy, 1999, Vol.2(NO.1):25-41. 
+[2]  Kirschbaum, UF M. To sink or burn? A discussion of the potential contributions 
+of forests to greenhouse gas balances through storing carbon or providing biofu-
+els[J]. Biomass and Bioenergy, 2003, Vol.24(No.4):297-310. 
+[3]  Winjum J K, Dixon R K, Schroeder P E.1993.Forest management and carbon stor-
+age: An analysis of 12 key forest nations. Water Air Soil Pollution, 70:239~257 
+[4]  Dixon RK, Brown S, Houghton RA, et al.1994.Carbon pools and flux of global  
+forest ecosystems. Science, 263:185~190 
+[5]  Wang Chunli. Temporal and spatial evolution characteristics, phenological regu-
+larity and multi-level driving mechanism of NPP of forest land in Changbai  
+Mountain Area [D]. Beijing Forestry University, 2020. DOI : 10.26949 /d. cnki.  
+gblyu. 2020.000772. 
+[6]  Luo Tianxiang. Bioproductivity pattern and mathematical model of major forest  
+types in China [D]. Graduate School of Chinese Academy of Sciences (Natural  
+Resources Comprehensive Investigation Committee of National Planning Com-
+mission) 
+[7]  Zhang Xiaobiao. Carbon budget and carbon emission reduction contribution of  
+Chinese wood forest products [D].Nanjing Forestry University 
+[8]  [IPCC]Intergovernmental Panel on Climate Change. 2013 Revised Supplemen-
+tary Methods andGood Practice Guidance Arising from the Kyoto Protocol[M].  
+Intergovernmental Panel on Climate Change, City Geneva,20146. 
+[9]  Vikram Singh Yadav, Surender Singh Yadav, Sharda Rani Gupta, Ram Swaroop  
+Meena, Rattan Lal, Narender Singh Sheoran, Manoj Kumar Jhariya,Carbon se-
+questration potential and CO2 fluxes in a tropical forest ecosystem,Ecological  
+Engineering, Volume 176,2022,106541 
+ 
+ 
+ 
+ 

@@ -1,0 +1,2015 @@
+
+<<<PAGE 1>>>
+微信公众号：数学模型
+微信号：MATHmodels
+Problem Chosen
+C
+2024
+MCM/ICM
+Summary Sheet
+Team Control Number
+2409404
+Riding the Momentum
+Summary
+"If you have momentum, you want to try to keep that momentum going, keep that conﬁdence
+rolling for you. You know, that’s why the streak is there," said Djokovis. Undoubtedly, momen-
+tum is the key to success for Djokovic. Does momentum effectively function? To effectively
+tackle this inquiry and offer valuable guidance to coaches and players, we present the fol-
+lowing thoughts.
+For task one, it is necessary to capture the ﬂow of play and identify crucial moments
+while also quantifying the player’s performance. We establish the Momentum Quantiza-
+tion Model Based on Sliding Windows (MQ-SW) that assesses the performance level of
+each player at given moments, taking into account the inﬂuence of past mistakes and other
+factors. Additionally, we incorporate the player’s serving advantage into the calculation.
+Furthermore, we discern the crucial aspects of the match by considering both the tennis
+regulations and the CUSUM algorithm. Figure 4 depicts the visual representation of the
+match progression between Carlos Alcaraz and Novak Djokovic. The model demonstrates
+proﬁciency in quantifying a player’s momentum and precisely identifying crucial moments.
+For task two, we need to examine the impact of "momentum" on the game and deter-
+mine if the ﬂuctuations in the game condition and successive player scores are random.
+Thus, we begin by examining the volatility of the game’s condition using the Point Vic-
+tor factor and the MQ-SW Model. Subsequently, we employ the Runs Test to assess the
+state of the game and the successive scores of the participants. Upon computation, the
+p −value < 0.01, indicating that the variability in the game scenario. Next, we discretize
+the momentum of both players at each instance and employ the Chi-square Test to com-
+pare the aforementioned indices. The experimental p −value < 0.01, indicating that the
+"momentum" element is highly likely to be the reason, as demonstrated in Table 5.
+For task three, we need to predict the volatility of the circumstances in a tennis match.
+The dependent variable is the discretized "momentum", whereas the independent variables
+consist of other factors associated with players. We established the Prediction for Match
+Trend Model Based on PCA&XGBoost (PMT-PX). The model uses the principal compo-
+nent analysis to examine the variation in scatter on a two-dimensional coordinate graph
+and subsequently utilizes XGBoost to train on the match data. From this, we have identi-
+ﬁed the most signiﬁcant inﬂuencing factors, namely "Point Victor" and "Break PT" at the
+current moment. The corresponding scores are displayed in Table 6.
+For task four, it requires an examination of the model’s effect and its capacity to general-
+ize. We assess the model using several metrics, such as the confusion matrix, classiﬁcation
+report, and ROC curve. The area under the curve (AUC) is 0.75, indicating a discernible ef-
+fect. We utilize the model to evaluate the U.S. Open women’s ﬁnal. The results indicate that
+the model exhibits a commendable level of generalization and is capable of efﬁciently and
+accurately identifying the target. Simultaneously, we conduct an analysis of the model’s
+drawbacks and provide the elements that should be taken into account in the future. Fur-
+thermore, the model sensitivity analysis is conducted by altering the dimensions of the
+sliding window along with the additional advantage parameter of the player’s serve. The
+outcomes indicate that the model exhibits a high level of robustness.
+We ﬁnally write a memorandum, including our model and strategy, for the coaches and
+players. We hope our memorandum can be valuable to them and actually help them.
+Keywords: Momentum, MQ-SW, Runs Test, Chi-square Test, PMT-PX
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 2>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+Contents
+1
+Introduction
+3
+1.1
+Probelm Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.2
+Restatement of the Problem . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.3
+Literature Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.4
+Our work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2
+Preparation of the Models
+5
+2.1
+Assumptions and Explanations . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.2
+Notations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.3
+Data Preparation
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.3.1
+Data Collection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.3.2
+Data Pre-processing
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+3
+Establish the Momentum Quantization Model Based on Sliding Windows
+6
+3.1
+Quantization of Momentum . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+3.2
+Identiﬁcation of Key Points in the Game . . . . . . . . . . . . . . . . . . . . . .
+7
+3.3
+Competition Flow Visualization . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+4
+Momentum’s Impact on the Game Situation
+10
+4.1
+The Runs Test —Stochastic Analysis . . . . . . . . . . . . . . . . . . . . . . . .
+10
+4.2
+The Chi-square Test —Correlation Analysis . . . . . . . . . . . . . . . . . . . .
+11
+4.3
+Reach a Verdict
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+5
+Establish the Prediction for Match Trend Model Based on PCA&XGBoost
+12
+5.1
+Principal Component Analysis —Determine the Model . . . . . . . . . . . . .
+12
+5.2
+XGBoost —Match Trend Prediction . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+5.3
+Factor Importance Extraction
+. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+5.4
+Tactical Suggestions for the Game . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+6
+Model Effect Analysis
+16
+6.1
+Model Testing on a New Race . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+6.2
+Generalized Ability Analysis —U.S. Open Women’s Singles
+. . . . . . . . . .
+18
+6.3
+Future Consideration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+7
+Sensitivity Analysis
+21
+8
+Model Evaluation
+22
+8.1
+Strengths . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+8.2
+Weaknesses and Improvements . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+9
+Conclusion
+22
+References
+23
+Memorandum
+24
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 3>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+1
+Introduction
+1.1
+Probelm Background
+In the men’s singles ﬁnal of the 2023 Wimbledon Open, Spanish rising star Carlos Al-
+caraz ended Novak Djokovic’s legendary player’s unbeaten run at Wimbledon since 2013.
+So What factors inﬂuenced the outcome of this seemingly unbalanced match?What factors
+contribute to the occurrence of analogous scenarios for individuals or players who appear to
+have a dominant position in the situation or game? Indeed, these conclusions are frequently
+ascribed to the phenomenon of "momentum".
+Momentum is deﬁned in the dictionary as "strength or force gained by motion or by a
+series of events", but in actual sports, a team or player may feel energized during a game,
+but it is difﬁcult to accurately measure this phenomenon. Furthermore, assuming that such
+momentum exists, it is difﬁcult to determine how the various events of a game generate
+or alter momentum. So, is there a computable and estimable frontal model of momentum
+available to aid players in achieving improved outcomes?
+1.2
+Restatement of the Problem
+Given the problem’s background information and constrained conditions, we must
+complete the following tasks:
+• Task 1: Build a model that captures the ﬂow of the match as it occurs and apply it to
+one or more matches to visualize the ﬂow of the match. The model needs to be able to
+identify the time period in the match when a player performs better and the degree of
+excellence within that time period.
+• Task 2: A coach is skeptical about the role of momentum, arguing that ﬂuctuations
+in match situations and consecutive wins by players occur randomly, use a model to
+evaluate this coach’s claim.
+• Task 3: Coaches need to be clear on whether there are indicators that can assist in
+determining when a game’s trend will shift.
+– Using data from at least one match, build a model that predicts the movement
+of a match and identify which factors, if any, have the greatest impact on the
+movement of a match.
+– Based on the difference in "momentum" in previous matches, help a player de-
+termine the correct strategy for a new match against a different opponent.
+• Task 4: Test the current model in one or more other games and evaluate the model’s
+prediction of in-game ﬂuctuations; if the prediction is poor, can factors be identiﬁed
+for inclusion in future models? How generalizable is the model to other games, tour-
+naments, ﬁeld types, and other sports?
+• Task 5: Write a memo summarizing the ﬁndings. Explain to a coach the role of "mo-
+mentum" and make recommendations to prepare players for events that affect the
+course of a tennis match.
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 4>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+1.3
+Literature Review
+The situation of a tennis match is rapidly changing. In the face of the variability of
+environment, strategy, and process, momentum, a factor that may turn the match around,
+has become a focus of research.
+Ben Moss et al. argue that the uncertainty of the momentum effect in tennis, which may
+vary from player to player, needs to be considered at an individual level
+[1]. In addition, if a
+player breaks his opponent’s serve when facing a game point, he is more likely to hold his
+serve in the next round of serve reception.
+Zhang Xiaofei suggests that the gain or loss of a key score will have a serious impact
+on a player’s momentum, thus affecting the direction of the match. In the face of changes
+in the score, some players may increase their momentum, attack courageously, and take the
+initiative. While some players may attach too much importance to the change of score, and
+whenever they encounter the change of key score, their momentum may be reduced, and
+then the game will turn around
+[2].
+Chen Liang suggests that there is a direct "attack-defense relationship" in tennis and
+that in order to win a match, one must maximize one’s own performance and inhibit one’s
+opponents to the maximum extent possible. Under the joint effect of oneself, opponent,
+and competition environment, the momentum of both sides usually will not remain stable
+during the competition, and the change of the contrast relationship will form the stage "rise
+and fall"
+[3] of the competitive performance.
+In conclusion, momentum affects different players in different ways, which is impor-
+tant for the psychological support of athletes.
+1.4
+Our work
+For ease of description and visualization, we have drawn a ﬂow chart (Figure 1) to
+represent our work.
+Prepare
+Data collection
+Data pre-processing
+Task 1
+Quantification of the momentum
+Identification of key points in the game
+Visual analysis of match flows
+Set the size of
+ the moving window
+Selection of 
+player-related 
+indicator factors
+Weighing 
+of indicators
+Game Point
+Tunning point of
+the momentum (CUSUM)
+Task 2
+Stochastic analysis of 
+situational fluctuations and 
+player continuity scores
+Correlation analysis of momentum
+The Runs Test
+Chi-square Test
+Task 3
+Prediction of the
+swings in the match
+PCA & XGBOOST
+Importance extraction 
+of factors
+Tactical suggestions for 
+the game
+Task 4
+Testing of the Model
+Confusion 
+Matrix
+Classification 
+Report
+ROC Curve
+Application capacity
+Model Enhancement
+（Prospects for the future）
+Final
+Advice for 
+Coaches and Athletes
+Figure 1: Flow chart of our work
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 5>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+2
+Preparation of the Models
+2.1
+Assumptions and Explanations
+To simplify the issue, we have made the following assumptions, each of which is ap-
+propriately reasonable.
+• Assumption 1: The entire game is not affected by external factors such as unfair deci-
+sions by the referee.
+,→Explanation: An unfair judgement by the referee will mislead our judgement of
+the player’s score, thus not accurately calculating the impact of momentum on the
+athlete.
+• Assumption 2: Players were in good physical condition throughout the game.
+,→Explanation: Physical condition will affect an athlete’s performance in a game,
+while existing data makes it difﬁcult to measure a player’s moment-to-moment con-
+dition.
+• Assumption 3: The athlete has not used illegal drugs such as doping and has not
+cheated in competition.
+,→Explanation: Doping can substantially increase an athlete’s level of competitive-
+ness, deviating from reality and affecting the calculation of momentum. Doping is
+also strictly prohibited in competition.
+2.2
+Notations
+The primary notations used in this paper are listed in Table 1.
+Table 1: Notations
+Symbol
+Deﬁnition
+α
+Extra Advantages of the Player’s Serve
+β
+Sliding Window Size
+i
+Scoring Moment
+E(·)
+Data Average
+V(·)
+Data Variance
+* Some variables are not listed here because they have different meanings in different places, so we will
+discuss them in detail in each section.
+2.3
+Data Preparation
+2.3.1
+Data Collection
+To enhance the credibility of our analysis, we have gathered a substantial quantity of
+information from the following sources, in addition to the data provided by the contest
+questions. Refer to Table 2.
+The data from the US Open Women’s Singles Final between C. Gauff and A. Sabalenka
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 6>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+on September 9, 2023, were collected using mathematical statistics and video observation
+methods to assess the model’s ability to make generalizations.
+Table 2: Data Sources and Websites
+Data Source
+Website
+CCTV
+https://sports.cctv.com/
+US Open
+https://www.usopen.org/index.html
+Wimbledon
+https://www.wimbledon.com/en_GB/index.html
+2.3.2
+Data Pre-processing
+Upon gathering and arranging the data, it becomes apparent that there are discrep-
+ancies between the data’s format and the data provided in the question. Therefore, it is
+imperative to preprocess the necessary data. Initially, the data header is standardized and
+the indicators are abbreviated to simplify the following listing. The corresponding details
+can be found in Table 3. Furthermore, it has been discovered that there are gaps in the mea-
+surements of "winner shot type", "serve width", "serve depth", and "return depth". Based
+on the data analysis, the vacancies are attributed to the lack of such occurrences, so we re-
+place them with a value of zero. Furthermore, it was discovered that the aforementioned
+indicators consisted of text-based categorical data. Therefore, the implementation of Label
+Encoder processing was deemed necessary, which involves providing a distinct numerical
+value to each category.
+Table 3: Abbreviations for factors
+Former
+Glossary
+Former
+Glossary
+Former
+Glossary
+match_id
+MI
+game_victor
+GAV
+p1_break_pt
+P1BP
+set_no
+SNO
+set_victor
+SEV
+p2_break_pt
+P2BP
+game_no
+GNO
+p1_ace
+P1ACE
+p1_break_pt_won
+P1BPW
+point_no
+PNO
+p2_ace
+P2ACE
+p2_break_pt_won
+P2BPW
+p1_sets
+P1SE
+p1_winner
+P1W
+p1_break_pt_missed
+P1BPM
+p2_sets
+P2SE
+p2_winner
+P2W
+p2_break_pt_missed
+P2BPM
+p1_games
+P1GA
+winner_shot_type
+WST
+p1_distance_run
+P1DR
+p2_games
+P2GA
+p1_double_fault
+P1DF
+p2_distance_run
+P2DR
+p1_score
+P1SC
+p2_double_fault
+P2DF
+rally_count
+RC
+p2_score
+P2SC
+p1_unf_err
+P1UE
+speed_mph
+SM
+server
+SER
+p2_unf_err
+P2UE
+serve_width
+SW
+serve_no
+SERNO
+p1_net_pt
+P1NP
+serve_depth
+SD
+point_victor
+PV
+p2_net_pt
+P2NP
+return_depth
+RD
+p1_points_won
+P1PW
+p1_net_pt_won
+P1NPW
+elapsed_time_seconds
+ETS
+p2_points_won
+P2PW
+p2_net_pt_won
+P2NPW
+momentum swings
+MS
+3
+Establish the Momentum Quantization Model Based on
+Sliding Windows
+3.1
+Quantization of Momentum
+To assess the current performance and level of excellence of a player during a game,
+we utilize the concept of a sliding window. This method considers the uncertainty of the
+game’s progression and calculates the player’s performance over a recent series of rounds.
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 7>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+By doing so, we can obtain a quantiﬁed measure of the player’s momentum at that particu-
+lar moment. The quantized momentum value for a player at time i (after the moment when
+the player scored) is deﬁned as:
+M =
+i
+∑
+i−β+1
+[GAi + SCi + (α + 1) SER + PVi + BPWi + ACEi + NPWi + Wi −UEi −DFi]
+(1)
+The variables in question are β, which represents the size of the moving window; α,
+which represents the percentage of the player’s additional advantage on serve, and GA,
+which represents the number of games won by the player during the window. SC represents
+the total number of sets won by the player. PV stands for "winner of the point", indicating
+the player who successfully wins a point. BPW refers to the number of times the player
+successfully wins a break point. ACE represents the number of times the player hits an
+untouchable winning serve. NPW indicates the number of net points gained by the player.
+W represents the frequency at which a player successfully executed an unbeatable winning
+shot, UE represents the frequency at which a player committed an unforced error, and DE
+represents the frequency at which a player failed to make both serves and hence lost the
+point.
+In this quantitative approach, two crucial parameters can be identiﬁed: the magnitude
+of the sliding window, denoted as β, and the proportion of additional advantage that is
+discounted due to the player’s serve, represented by α.
+By utilizing the provided formula, we can calculate the precise numerical value of mo-
+mentum for each player at any given moment. By comparing the momentum values be-
+tween the two sides of the game, we can determine which player is performing better at a
+speciﬁc moment. This allows us to derive the speciﬁc value of their performance.
+3.2
+Identiﬁcation of Key Points in the Game
+To comprehend the strengths and weaknesses of the aforementioned models in assess-
+ing player momentum values throughout a match, we will now outline several crucial as-
+pects of the match. These aspects will also be depicted in the forthcoming visualization of
+the match ﬂow.
+Scoring Rules
+Normal Circumstances
+best-of-five series
+best-of-three series
+Point
+Game
+Special Circumstances
+When the score is 40-40 in a Game
+When the score is 6-6 in a Set
+……
+……
+1
+7
+When the score is 5-5 in a Set
+AD
+One side wins two more games
+1
+15 points
+2
+30 points
+3
+40 points
+AD
+Advantange
+Set
+Tiebreak
+Figure 2: Rules of Tennis
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 8>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+• Game Point: This crucial point determines the winner of the set between the two play-
+ers and is ofﬁcially acknowledged in accordance with the established rules of tennis,
+as depicted in Figure 2.
+• Tuning Point of Momentum: The Cumulative Sum (CUSUM) technique is employed
+at this stage to identify the momentum of the participants. To detect any mutation,
+the data can be analyzed by calculating the cumulative total to track the cumulative
+change over time.
+3.3
+Competition Flow Visualization
+We are choosing the 2023 Wimbledon Men’s Singles Final between Carlos Alcaraz and
+Novak Djokovic. Associated with the data "2023-Wimbledon-1701" To begin with, we have
+provided a statistical analysis of the current state of this match, as illustrated in Figure 3.
+C. Alcaraz
+N. Djokovic
+ACES
+DOUBLE FAULTS
+TOTAL POINTS WON
+UNFORCED ERRORS
+DISTANCE COVERED
+FIRST SERVE % IN
+WIN % ON 1ST SERVE
+WIN % ON 2ND SERVE
+BREAK POINTS WON
+NET POINTS WON
+RECEIVING POINTS WON
+9
+7
+3
+168
+166
+45
+40
+6605.5 m
+6195.2 m
+94/150（63%）
+118/184（64%）
+66/94（70%）
+73/118（62%）
+28/56（50%）
+37/66（56%）
+5/19（26%）
+5/15（33%）
+28/46（61%）
+39/65（60%）
+74/184（40%）
+56/150（37%）
+2
+Figure 3: Technical Statistics
+Based on the graph, it is evident that Alcaraz’s serve is far superior to Djokovic’s. How-
+ever, Alcaraz also commits more errors. Both Alcaraz and Djokovic primarily focused on
+their ﬁrst serves, indicating that it is comparatively simpler to get points with the initial
+serve. Based on the comprehensive match statistics, Alcaraz demonstrated superior perfor-
+mance.
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+Elapsed Time (seconds)
+10
+0
+10
+20
+Momentum
+Carlos Alcaraz's Momentum
+Novak Djokovic's Momentum
+Carlos Alcaraz's Game Point
+Novak Djokovic's Game Point
+Carlos Alcaraz's Turning Point
+Novak Djokovic's Turning Point
+1   7 8   6   3   6
+6   6 6   1   6 
+Alcaraz
+Djokovic
+  4 
+Figure 4: Match Flow
+Now, equation (1) allows for the calculation of the quantitative momentum values of
+the two players at different moments. The sliding window size, denoted as β, is set to 5. The
+player’s serve advantage is discounted proportionally by a factor of α = 0.68. The value of α
+is determined through statistical analysis of the 31 matches provided in the attached table. It
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 9>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+is important to note that α should be determined based on various factors, such as different
+matches and different players.
+The quantitative values of momentum for both players at various periods in the match,
+including important points, are depicted in Figure 4. Furthermore, to more accurately il-
+lustrate the level of control a player has at a speciﬁc point, the momentum scatterplot is
+graphed, as depicted in Figure 5.
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+Elapsed Time (seconds)
+15
+10
+5
+0
+5
+10
+15
+20
+Momentum
+15
+10
+5
+0
+5
+10
+15
+Carlos Alcaraz
+10
+5
+0
+5
+10
+Novak Djokovic
+Figure 5: Match Flow Scatter
+By comparing the momentum change curve with the change in the athletes’ score, we
+ﬁnd that the momentum will increase when the athletes are on a winning streak or serve
+for points, and when the momentum is well ahead of their opponents, the athletes will be
+at their best and have a high probability of winning the match.
+In the ﬁrst set of the match, Djokovic won easily with a score of 6-1. In the ﬁrst game
+of the ﬁrst set, the two were neck and neck before Djokovic narrowly won the ﬁrst game,
+at which point their momentum barely changed. After Djokovic won the second set with
+consecutive points, we observed a signiﬁcant increase in momentum. Alcaraz’s loss of mo-
+mentum, caused by consecutive losses, led him to lose the next few games to Djokovic,
+almost all of them by large margins. Especially in the seventh game of the ﬁrst set, when
+Djokovic got the set point with a score of 5-1, his momentum also increased dramatically,
+and with this momentum, Djokovic did not allow his opponent to win a single ball in the
+seventh game.
+In the second set, the two entered a crucial tie-break. In the tie-break, Alcaraz, who
+had failed on his ﬁrst serve, still lost the point on his second serve, and Djokovic scored a
+mini-break, which drastically reduced the momentum of Alcaraz, who had already lost the
+set, and thus lost two more balls after that. However, at around 6600 s, Alcaraz clawed his
+way back into the set on serve, and at this point his momentum was extremely elevated and
+at its peak, while Djokovic was too nervous to face such a crucial point and his momentum
+was reduced, and Alcaraz eventually won the set. After that, Alcaraz used the momentum
+of the second set to score consecutive points, and the momentum reached its peak, winning
+two of the last three sets to ﬁnally win the whole match.
+Throughout the match, we ﬁnd that Alcaraz’s average momentum was higher than
+Derkovic’s, which is one of the reasons why Alcaraz got the victory. Also as can be seen by
+the scatter plot, the distribution of momentum in the sets won by Alcaraz was higher than
+that of Derkovic.
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 10>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+4
+Momentum’s Impact on the Game Situation
+4.1
+The Runs Test —Stochastic Analysis
+The runs test is a non-parametric technique used to assess the randomness of a binary
+sequence consisting of only two distinct values. The run is deﬁned as a consecutive series
+of parts in a sequence, where each section has the same numeric value as the number "r" of
+the journey. The duration of the run is denoted by l
+[4]. It is vital to assess the volatility of the
+scenario and the randomness of players’ consecutive scores.
+It is assumed that the binary sequence under analysis is composed of m A’s and n
+B’s. Prior to conducting the test, two contrasting hypotheses are established: the original
+hypothesis and the alternative hypothesis.
+• Original hypothesis H0: The arrangement of A and B is randomized;
+• Alternative hypothesis H1: The distribution of A and B isn’t random.
+If H0 holds, then we have:
+P (r = 2k) =
+2
+( m −1
+k −1
+) ( n −1
+k −1
+)
+( m + n
+m
+)
+(2)
+P (r = 2k + 1) =
+( m −1
+k −1
+) ( n −1
+k
+)
++
+( m −1
+k
+) ( n −1
+k −1
+)
+( m + n
+m
+)
+(3)
+Given that we have chosen 31 games, both m and n represent large samples. Conse-
+quently, the number of the runs, denoted as r, may be considered to follow an almost nor-
+mal distribution. As a result, we can calculate the mathematical expectation and variance
+of r:
+E (r) = 2mn
+m + n + 1
+(4)
+V (r) = 2mn (2mn −m −n)
+(m + n)2 (m + n −1)
+(5)
+The statistic is then derived from the count of the run.
+Z = r −E (r)
+√
+V (r)
+(6)
+To account for the variability of the circumstance, we utilize the Point Victor factor. In
+order to assess the ongoing performance of the participants, we initially employ the Point
+Victor factor, followed by the establishment of two indicators to measure continuous values.
+Subsequently, we evaluate the aforementioned sequence. Consequently, the outcomes can
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 11>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+be acquired as demonstrated in Table 4.
+Table 4: The Results of the Runs Test
+Testing Program
+Z
+p
+Point Victor
+-5.613
+0.00000001986<0.01
+Player 1 Consecutive Win
+-30.606
+0.000<0.01
+Player 2 Consecutive Win
+-29.866
+0.000<0.01
+Upon examining the table, it becomes evident that Z-scores are less than zero for all
+three indicators. This is attributed to the fact that the observations are located to the left
+of the mean. Given a signiﬁcance level of 0.01 and p < 0.01, we can be 99 % certain that
+the alternative hypothesis, H0 will be rejected. This suggests that the ﬂuctuations in the
+situation and the consecutive scoring situations of the players are not random, indicating
+the presence of a driving factor.
+4.2
+The Chi-square Test —Correlation Analysis
+To assess the variation of the scenario and the continual scoring of players in relation to
+Momentum, we employ the chi-square independence test. In contrast to Problem 1, when
+Momentum was quantiﬁed as a continuous variable, the chi-square test requires it to be a
+discrete categorical variable. First, we begin by discretizing the concept of momentum. Cur-
+rently, we possess the initial momentum values of Player 1 and Player 2, denoted as Mp1i
+and Mp2i, correspondingly, which are related by the following transformation equation:
+
+
+
+
+
+
+
+
+
+MP
+′
+1i =
+{ 1, MP1i > MP2i
+0, MP1i < MP2i
+MP
+′
+2i =
+{ 1, MP1i < MP2i
+0, MP1i > MP2i
+(7)
+Following the aforementioned equation, we get the categorical variables and next em-
+ploy the chi-square test. Here, it is imperative to assume that momentum is independent
+of ﬂuctuations in the game circumstances and the consecutive triumphs of a player. The
+calculated value representing the test statistic is:
+χ2 =
+R
+∑
+j=1
+C
+∑
+k=1
+(
+njk −n ˆpjk
+)2
+n ˆpjk
+(8)
+where R and C are the sizes of the R × C list of columns, and n ˆpjk is the maximum likelihood
+estimate obtained when H0 holds, i.e:
+ˆpjk = ˆpj· ˆp·k = nj·
+n · n·k
+n
+(9)
+For a given signiﬁcance level γ, the rejection domain of the test is
+W =
+{
+χ2 ≥χ2
+1−γ ((R −1) (C −1))
+}
+.
+(10)
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 12>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+Following the aforementioned procedure, the outcomes of the chi-square test can be
+obtained and are presented in Table 5.
+Table 5: The Results of the Chi-square Test
+TestingProgram
+Category
+p1W
+SUM
+χ2
+p
+TestingProgram
+Category
+p1 Game Point
+SUM
+χ2
+p
+0
+1
+0
+1
+p1N
+0
+1936
+1483
+3419
+151.617
+9.167 × 10−32
+p1N
+0
+3048
+371
+3419
+47.256
+1.243 × 10−9
+1
+1630
+2235
+3865
+1
+3230
+635
+3865
+SUM
+3566
+3718
+7284
+SUM
+6278
+1006
+7284
+TestingProgram
+Category
+p2W
+SUM
+χ2
+p
+TestingProgram
+Category
+p2 Game Point
+SUM
+χ2
+p
+0
+1
+0
+1
+p2N
+0
+2266
+1663
+3929
+150.065
+1.962 × 10−31
+p2N
+0
+3534
+395
+3929
+45.015
+3.948 × 10−9
+1
+1452
+1903
+3355
+1
+2843
+512
+3355
+SUM
+3718
+3566
+7284
+SUM
+6377
+907
+7284
+TestingProgram
+Category
+p2W
+SUM
+χ2
+p
+TestingProgram
+Category
+p2 Game Point
+SUM
+χ2
+p
+0
+1
+0
+1
+p1N
+0
+1483
+1936
+3419
+151.617
+9.167 × 10−32
+p1N
+0
+2901
+518
+3419
+43.047
+1.012 × 10−8
+1
+2235
+1630
+3865
+1
+3476
+389
+3865
+SUM
+3718
+3566
+7284
+SUM
+6377
+907
+7284
+TestingProgram
+Category
+p1W
+SUM
+χ2
+p
+TestingProgram
+Category
+p1 Game Point
+SUM
+χ2
+p
+0
+1
+0
+1
+p2N
+0
+1663
+2266
+3929
+150.065
+1.962 × 10−31
+p2N
+0
+3287
+642
+3929
+45.831
+2.671 × 10−9
+1
+1903
+1452
+3355
+1
+2991
+364
+3355
+SUM
+3566
+3718
+7284
+SUM
+6278
+1006
+7284
+Upon examining the table, it becomes apparent that the χ2 for each test is greater, as-
+suming a signiﬁcant level of 0.01 and p < 0.01. This implies a 99 % level of conﬁdence in
+rejecting the original hypothesis H0, indicating a correlation between the volatility of the
+situation and the consecutive scoring situation of the players with Momentum.
+4.3
+Reach a Verdict
+Based on the results of the Runs Test examining the unpredictability of circumstance
+ﬂuctuations and players’ successive scores, as well as a chi-square test assessing the rele-
+vance of Momentum, there is ample evidence to support the notion that Momentum plays
+a vital role in the outcome of a tennis match. The variability of the circumstance and the
+successive scores of the participants exhibit a non-random pattern, suggesting the presence
+of a driving element, most likely attributable to momentum.
+5
+Establish the Prediction for Match Trend Model Based on
+PCA&XGBoost
+5.1
+Principal Component Analysis —Determine the Model
+Based on our previous discussion, we have sufﬁcient evidence to suggest that the
+unpredictable ﬂuctuation in the game is connected to the momentum of the two players.
+Therefore, we will use momentum as the focus of our forecast. Nevertheless, in the quan-
+titative model of momentum, which provides continuous data on the momentum of both
+players at every moment, we contend that the ﬂuctuating pattern in the match can be inter-
+preted as a transfer of momentum. Speciﬁcally, if player 1’s momentum surpasses that of
+player 2, the momentum is deemed to have shifted to player 1, and vice versa for player 2.
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 13>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+The equation (7) can be used to express this technique. Let’s say that we are player 1. In this
+case, "1" indicates that momentum is in our favor, whereas "2" indicates that momentum is
+in the opposing side’s favor. By employing this discretization technique, we can obtain a
+crude depiction of the game’s ﬂuctuation pattern. Thus, we can consider it the dependent
+variable in our forecast, referred to as MS, while the autonomous variables can be the ones
+listed in Table 3. Excluding MI and MS, we have chosen 43 criteria to include in the table.
+To enhance model selection, we initially considered the ﬁrst 30 matches, excluding the
+Carlos Alcaraz VS. Novak Djokovic game.1 This analysis reduces the previously mentioned
+43 elements to two dimensions. We next create a scatter plot with two scales based on this
+analysis, as depicted in Figure 6.
+Figure 6: PCA Biplot
+Upon analyzing the graph, it becomes evident that:
+• Fluctuations in the match situation are challenging to classify on the two-dimensional
+principal components. The majority of factors do not have a signiﬁcant impact on PC1,
+but they have a greater inﬂuence on PC2. These factors include GNO, GA, DR, and
+RC.
+• Several parameters, including SNO, PNO, SE, PW, and ETS, have a greater impact
+on PC1 and a lesser one on PC2.
+• Only a small number of variables have a substantial impact on both PC1 and PC2.
+• PC2 may encounter challenges in accurately characterizing variations and establishing
+a more precise basis for classifying the outcomes.
+• The distribution of scenario ﬂuctuations has a distinct clustering pattern on PC1.
+• Data cannot be divided in a linear manner.
+• The clustering of the factor bisector plots is likely a result of the interconnection be-
+tween the factors, as supported by earlier investigations.
+Based on the above analysis, we believe that simple classiﬁcation models make it dif-
+ﬁcult to predict the ﬂuctuation of the game situation more accurately, so we consider the
+eXtreme Gradient Boosting (XGBoost) optimization model based on the tree model.
+5.2
+XGBoost —Match Trend Prediction
+In the previous analysis, we determined the inputs to the model as 43 factor indicators
+for the two players. These indicators serve as independent variables. The outputs of the
+model, on the other hand, are the ﬂuctuations in the match situation. We assume a value
+1This is because we must make a prediction for the entire game to avoid any data leaks.
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 14>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+of 1 for the own side and 0 for the other side, making it the dependent variable. Conse-
+quently, the problem can be succinctly described as a categorical prediction. The model
+was constructed using data from the initial 30 matches, and knowledge was acquired from
+these matches. The last match, "2023-wimbledon-1701", was then used as the basis for sub-
+sequent model evaluations. This approach can optimize the efﬁcient utilization of the avail-
+able dataset and, to some extent, enhance the effectiveness of the model. It is important to
+mention that while analyzing 30 games, we must individually compute the momentum of
+each player in each game. Then, we discretize it depending on the magnitude of the two
+in order to successfully prevent miscalculations caused by variations in the sliding window
+span across various games. The dependent variable can be explained as a dichotomous vari-
+able that changes from 1 to 0 or from 0 to 1 in two consecutive moments. This represents a
+change in the game’s circumstances at that time.
+5.3
+Factor Importance Extraction
+The XGBoost model learns from 30 matches, and we can calculate the extent to which
+each factor contributes to learning, denoted pη(η = 1, 2, · · · , 43). In order to identify the
+critical factors that signiﬁcantly impact the ﬂuctuations in the matches, we calculate the
+importance score FIη for each factor. We then normalize the pi values and calculate the
+percent score. The formula is as follows:
+FIη = 100 ×
+pη
+max (FI)
+(11)
+Based on the aforementioned computations, we will present the relevance scores of
+each factor, as depicted in Figure 7.
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+P2BP
+P1BP
+PV
+P1SE
+P2GA
+P1GA
+SER
+P1BPW
+P2DF
+ETS
+P2PW
+P1PW
+GNO
+P2BPM
+P2SC
+P2BPW
+SNO
+PNO
+P1UE
+P2SE
+P1SC
+GAV
+P1ACE
+P2NPW
+P2NP
+P1DF
+SM
+RC
+P1BPM
+SW
+P2DR
+P1W
+P1NP
+P2W
+RD
+P1NPW
+P1DR
+SERNO
+SD
+P2ACE
+WST
+P2UE
+SEV
+Importance of normalization
+Indicator abbreviations
+Figure 7: Factor Importance
+Out of the total of 43 indicators, 28 of them fall into the same category in pairs. For
+example, both P1BP and P2BP are considered break points. Therefore, we calculate the
+average importance scores for these indicators and provide them in Table 6.
+By integrating the aforementioned graphic and table, it becomes evident that both BP
+(break point) and PV (point victor) signiﬁcantly contribute to accurately forecasting the
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 15>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+Table 6: Importance of Factors after Organizing
+Factor
+Importance
+Factor
+Importance
+PV
+74.923
+P1
+P2
+AVERAGE
+SER
+30.771
+BP
+93.395
+100.000
+96.698
+ETS
+24.406
+GA
+36.801
+39.985
+38.393
+GNO
+21.387
+SE
+40.959
+19.217
+30.088
+SNO
+19.668
+BPW
+30.662
+19.786
+25.224
+PNO
+19.570
+PW
+23.023
+23.248
+23.136
+GAV
+18.524
+DF
+14.406
+26.983
+20.695
+SM
+14.060
+SC
+18.942
+19.936
+19.439
+RC
+13.912
+BPM
+13.880
+20.603
+17.241
+SW
+13.534
+UE
+19.353
+10.249
+14.801
+RD
+12.679
+ACE
+17.899
+11.626
+14.762
+SERNO
+12.000
+NPW
+12.677
+15.764
+14.221
+SD
+11.825
+NP
+12.898
+14.590
+13.744
+WST
+11.325
+DR
+13.375
+12.489
+12.932
+SEV
+6.477
+W
+12.993
+12.734
+12.864
+game’s trajectory. While the aforementioned two criteria may be more signiﬁcant, the in-
+trinsic impact of other aspects should not be disregarded. Factors such as ACE, DF, DR,
+SERNO, and others will also inﬂuence the game’s ﬂuctuations to a certain degree. Ulti-
+mately, we furnish tennis coaches with insights into the signiﬁcance of momentum and
+offer guidance on how players can sustain and control momentum throughout a match.
+5.4
+Tactical Suggestions for the Game
+Based on the above analysis, while analyzing the differential in past match "momen-
+tum" swings, give the player some constructive suggestions.
+• Reasonable distribution of physical ﬁtness. In the early stage of the game, we will try
+to attack, understand each other’s physical strength, tactics, etc., and retain our own
+physical strength; in the middle of the game, we will make reasonable use of "mo-
+mentum," adopt an aggressive or conservative playing style according to the current
+situation of the game, and appropriately consume the opponent’s physical strength;
+and the coaches and the players should pay attention to the changes in their physical
+state at this time, such as the existence of movement. Coaches and players should pay
+attention to the changes in physical condition, such as whether there is any movement
+stiffness, and take technical pause and other measures in time to ensure that the play-
+ers have a better momentum level. In the late stage of the game, the players synthesize
+the experience gained from the pre-momentum and mid-momentum to play the game
+and make appropriate adjustments to combine with their own physical condition.
+• Focus on the mental state during the match. Mental state also has a certain degree of
+inﬂuence on "momentum." If the player focuses too much on the score, especially in
+the key game or the key points in the game, his momentum may be greatly reduced
+because of the opponent’s scores. The player should discuss their own situation in
+the game with a psychological expert. Psychological experts should provide timely
+communication with the coaches, technical time-outs, and other measures to restore
+the player’s "momentum" Coaches should communicate with the players and take
+measures such as a technical pause to restore the players’ momentum. Players should
+also pay attention to the change in their own mentality during the game and adjust it
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 16>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+by appropriately slowing down the rhythm of offense.
+• Modify your style of play to counter the opponent’s momentum，in other words，you
+are never in danger if you know yourself and your rival. To lessen the opponent’s
+momentum in the game and boost your own momentum in this situation, familiarize
+yourself with the opposing players and the situations in which their momentum will
+increase or decrease prior to the game. Increase the growth of the game’s direction and
+make appropriate modiﬁcations if you discover that the circumstances on the ﬁeld are
+favoring the opponent’s momentum. Concurrently, consider how you can lessen the
+opponent’s momentum. Aim for as many points as you can on crucial shots that slow
+down the opposition’s momentum.
+• Utilize the two serves to your advantage. Even in the event of failure, there is always
+a second chance; in the event of a ﬁrst serve error, the second serve will go to the
+conservative main. In the ﬁrst serve, the ball’s speed and power present the biggest
+challenge to the high difﬁculty and high skills of the ace ball. When the other player
+serves for the ﬁrst time, prepare to hit the ball hard and quickly. Since your opponent’s
+power and speed are reduced when he serves again, it is simpler to score if you launch
+a swift counterattack at this point.
+• Focus on key points in the game. When a match reaches game point, set point, or a
+battle of seven, often a single point gained or lost can affect a dramatic shift in mo-
+mentum, which can change the course of the match.
+6
+Model Effect Analysis
+6.1
+Model Testing on a New Race
+To evaluate the efﬁcacy of the established model in forecasting game volatility, we con-
+ducted a test using "2023-wimbledon-1701" as the subject of analysis. The subsequent cri-
+teria were taken into account:accuracy,Confuse Matrix Thermal Charts, the classiﬁcation
+report and Receiver Operating Characteristic the Curve.
+• Accuracy: Accuracy refers to the proportion of accurate predictions in relation to the
+entire sample, i.e:
+Acc = NTruePredict
+NSample
+× 100 %
+(12)
+Tests have shown that NTruePredict = 231, NSample = 334, therefore, Acc = 69.16 %.
+• Confusion Matrix: The heat map displays the confusion matrix, where each row rep-
+resents the true category of the sample label, namely the actual value of the circum-
+stance ﬂuctuation. Each column represents the predicted category of the sample label,
+speciﬁcally the predicted value of the model. Hence, the total of the primary diago-
+nal elements in the matrix corresponds to the count of successfully predicted samples
+by the model. Furthermore, it is necessary to include four variables, namely TP, FN,
+FP, and TN, where T represents True and F represents False, indicating whether the
+predicted value matches the actual value; P represents Positive and N represents Neg-
+ative, showing whether the prediction falls into the positive or negative category. As
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 17>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+depicted in Figure 8, it is evident to see the prediction accuracy and error, as well as
+the level of distinction of the model for each group.
+0
+1
+Predicted
+0
+1
+Actual
+117
+37
+66
+114
+40
+60
+80
+100
+TN
+FP
+FN
+TP
+Figure 8: Confusion Matrix
+precision
+recall
+f1
+0.639
+0.760
+0.694
+0.755
+0.633
+0.689
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1
+0
+Figure 9: Classiﬁcation Report
+Observing the graph, we can see that the model is superior for predicting the ﬂuctua-
+tions of the game, with the main diagonal elements making up the majority, but there
+are some limitations, perhaps in the difﬁculty of identifying changes at key points.
+• Classiﬁcation Rport: The classiﬁcation report computes the Precision, Recall, and
+F1 −score for each category in the model. In the visualization graph, deeper colors
+imply higher values, which correspond to better results, as depicted in Figure 9. Three
+examples of metrics calculation are given below:
+– Precision is the percentage of correctness for all predictions in the positive cate-
+gory.
+Precision1 =
+TP
+TP + FP =
+114
+114 + 37 = 0.755
+(13)
+– Recall refers to the ratio of correctly identiﬁed positive categories out of all the
+actual positive categories.
+Recall1 =
+TP
+TP + FN =
+114
+114 + 66 = 0.633
+(14)
+– F1-score is calculated as the harmonic mean of Precision and Recall.
+F11 = 2 × Precision × Recall
+Precision + Recall
+= 2 × 0.755 × 0.633
+0.755 + 0.633
+= 0.689
+(15)
+In binary class classiﬁcation, it is desirable to have a balanced distribution of positive
+and negative class samples. Additionally, a higher F1-score indicates better perfor-
+mance in both Precision and Recall of the model.
+• Receiver Operating Characteristic (ROC) Curve: The ROC curverepresents the rela-
+tionship between the sensitivity and speciﬁcity of the model. It shows the false posi-
+tive rate (FPR) for each category on the horizontal axis and the true positive rate (TPR)
+on the vertical axis. Hence, the optimal point of this curve is situated in the top left
+corner, namely when the false positive rate (FPR) equals zero and the true positive
+rate (TPR) equals one. This indicates a more favorable impact of magic. Furthermore,
+another crucial statistic that may be derived is the area under the curve (AUC), which
+indicates the effectiveness of the model. A bigger AUC value signiﬁes a more effec-
+tive model. Prior to plotting this image, it is imperative that we grasp the underlying
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 18>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+measures.
+– Sensitivity: The deﬁnition of sensitivity, also known as the True-Positive rate, is
+follows:
+Sensitivity = TPR =
+TP
+TP + FN
+(16)
+– Speciﬁcity: The True-Negative rate, is also known as speciﬁcity and is deﬁned
+as:
+Speciﬁcity = TNR =
+TN
+TN + FP
+(17)
+– 1−Speciﬁcity: It is referred to as the False-Positive rate, deﬁned as:
+FPR = 1 −Speciﬁcity =
+FP
+FP + TN
+(18)
+– 1−Sensitivity: It is called False-Negative rate, deﬁned as:
+FNR = 1 −Sensitivity =
+FN
+FN + TP
+(19)
+To illustrate this model, we graph its ROC curve, depicted in Figure x. Upon exam-
+ining the graph, it is evident that the curve exhibits a tendency towards approaching
+the point (0, 1) more closely. Additionally, the AUC (Area Under the Curve) for the
+two categories is calculated to be 0.75. Furthermore, we have also computed the AUC
+for both micro-average and macro-average, both of which yield a value of 0.75. This
+indicates that the performance of the established model is relatively satisfactory.
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+False Positive Rate
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+True Positive Rate
+ROC of class 0, AUC = 0.75
+ROC of class 1, AUC = 0.75
+micro-average ROC curve, AUC = 0.75
+macro-average ROC curve, AUC = 0.75
+Figure 10: The ROC curve
+According to the analysis provided, it can be determined that the developed model has
+a certain degree of accuracy in predicting changes in the game’s trend. Nevertheless, there
+remain numerous enhancements to be made to the model in order to enhance the accuracy
+of the prediction. Here, we will explicitly study it by focusing on a particular women’s
+singles match at the US Open.
+6.2
+Generalized Ability Analysis —U.S. Open Women’s Singles
+For the purpose of evaluating the model’s capacity to make generalizations, we have
+selected the match between C. Gauff and A. Sabalenka, which took place on September 9,
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 19>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+2023, as the women’s singles ﬁnal of the U.S. Open, for our analysis. Initially, we quantiﬁed
+the technical components of the match, as depicted in Figure 11.
+C. Gauff
+A. Sabalenka
+ACES
+DOUBLE FAULTS
+WINNERS
+TOTAL POINTS WON
+UNFORCED ERRORS
+DISTANCE COVERED
+DISTANCE COVERED/PT.
+FIRST SERVE % IN
+WIN % ON 1ST SERVE
+WIN % ON 2ND SERVE
+BREAK POINTS WON
+NET POINTS WON
+RECEIVING POINTS WON
+2
+5
+6
+13
+25
+83
+74
+19
+46
+8702.4 ft
+8806.5 ft
+55.4 ft
+56.1 ft
+66%
+52%
+62%
+65%
+52%
+41%
+56%
+40%
+70%
+62%
+47%
+41%
+4
+Figure 11: Technical Statistics
+By examining the graph, it is evident that Gauff exhibits a notable reduction in unforced
+errors compared to Sabalenka. However, there is minimal disparity between the two players
+in terms of other statistics, such as distance covered and serve performance. Gauff gets
+defeated by Sabalenka’s unforced errors.
+We integrate the momentum quantitative model with the match ﬂuctuation prediction
+model and generate visualizations in the form of a ﬂowchart and scatterplot for the corre-
+sponding match, as depicted in Figure 12 and Figure 13.
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+Elapsed Time (seconds)
+10
+5
+0
+5
+10
+15
+20
+Momentum
+C. Gauff's Momentum
+A. Sabalenka's Momentum
+C. Gauff's Game Point
+A. Sabalenka's Game Point
+C. Gauff's Turning Point
+A. Sabalenka's Turning Point
+Gauff
+Sabalenka
+2     6     6
+6     4     2
+Figure 12: Match Flow
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+Elapsed Time (seconds)
+10
+5
+0
+5
+10
+15
+20
+Momentum
+10
+5
+0
+5
+10
+15
+C. Gauff
+5
+0
+5
+10
+15
+A. Sabalenka
+Figure 13: Match Flow Scatter
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 20>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+Upon analyzing the visualization with the score changes, it becomes evident that the
+momentum also inﬂuences the trajectory of the women’s singles match. In the initial set,
+Sabalenka consistently maintained a lead over Gauff by scoring consecutive points. With
+her strong momentum, Sabalenka easily secured victory in the ﬁrst set. However, start-
+ing with the second set, Sabalenka began to commit unforced errors, resulting in a shift of
+momentum in favor of Gauff. At this juncture, the disparity in momentum was not signif-
+icant; hence, Guaff emerged victorious in the second set by a narrow margin. Sabalenka’s
+signiﬁcant decline in momentum throughout the third set was primarily due to her high
+number of unforced errors. Consequently, she suffered a substantial defeat in the third set.
+Meanwhile, it is observed that Guaff consistently exhibits a larger average momentum than
+Sablenka throughout the match. Furthermore, the distribution of momentum in the sets
+won by Guaff is notably greater than that of Sablenka, as depicted in the scatterplot.
+Through the above analysis, combined with the technical statistics, the actual situation
+of the game, and the visualization of the game ﬂow, we can ﬁnd that the established model
+can be adapted to different types of games, with an excellent generalization ability.
+6.3
+Future Consideration
+Through the above analysis, we can ﬁnd that the model works better. However, there
+are still some deﬁciencies that need to be considered in future models, which are summa-
+rized.
+• The result of the referee’s call. Referees and players may not be consistent in their
+judgment of the game scenarios, and it is reasonable to expect wrong judgments, mis-
+judgments, and disputes. When the penalties exceed the coaches’ and athletes’ pre-
+game preparation and past experience, it will sharply reduce the momentum, leading
+to a critical response, disrupting the pre-game tactical deployment, and causing heart
+ﬂuctuations.
+• The athlete’s ability to self-adjust. Under high competition stress conditions, ath-
+letes’ psychological reactions are different from normal, and their emotional reactions
+are richer, which will lead to changes in their own momentum. However, the self-
+adjustment ability of different athletes varies greatly. Some athletes can quickly detach
+from the low momentum and reduce the impact of the momentum on themselves,
+while others have poor self-adjustment abilities and will be immersed in the low mo-
+mentum for a long time.
+• The level of the opponent. If your athlete has lost to the other athlete, or if the other
+athlete is a veteran whose strength is well known to the public, your athlete will over-
+estimate the opponent’s strength and develop fear and stage fright, which will seri-
+ously reduce your momentum.
+• Coach’s guidance. When an athlete’s momentum appears to diminish and affect his
+or her game form, effective coaching and reassurance from the coach can enable the
+athlete to regain his or her form and stabilize his or her momentum.
+• Type of venue. The probability of winning varies somewhat from athlete to athlete at
+different venues. For example, on hard courts, the Russians, Americans, and French
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 21>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+win the most matches. Looking at clay courts, Russians, Americans, and French are
+in the top three. On turf courts, Americans, Russians, and Australians are in the top
+three. On carpeted grounds, the Russians, the French, and the Australians take the
+top three spots. This has to do with their country’s training grounds; when an athlete
+plays on a ﬁeld they are familiar with, their momentum will increase and it will be
+easier to get into shape.
+• Spectators’ applause. When a player scores a point and the audience cheers for him,
+the player not only increases his momentum by scoring a point, but the audience’s
+applause also increases his momentum, and his status will be better in the following
+game. If a player loses points and the audience boos or even applauds because of
+dissatisfaction, the player’s momentum will be seriously affected, and his or her game
+status will be in tatters.
+7
+Sensitivity Analysis
+In order to quantitatively model momentum, we have already determined two signif-
+icant factors: the sliding window size, denoted as β, and the out-of-play advantage of a
+player’s serve, denoted as α. These parameters are now being modiﬁed to simulate various
+types of matches with varied serve advantages. Previously, we computed the momentum
+for each player. To enhance the presentation of the ﬁndings, we calculate the disparity in
+momentum between two players. Assuming player 1 as his reference point, when the curve
+is situated below the horizontal axis, it indicates that momentum is located on the other
+side, and vice versa. As depicted in Figure 14 and Figure 15.
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+Elapsed Time (seconds)
+30
+20
+10
+0
+10
+20
+30
+Momentum Difference
+α = 0.5, β = 5
+α = 0.6, β = 5
+α = 0.7, β = 5
+α = 0.8, β = 5
+Figure 14: The Sensitivity Test for α
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+Elapsed Time (seconds)
+30
+20
+10
+0
+10
+20
+30
+Momentum Difference
+α = 0.68, β = 3
+α = 0.68, β = 4
+α = 0.68, β = 5
+α = 0.68, β = 6
+Figure 15: The Sensitivity Test for β
+Upon examining the aforementioned graphs, it is evident that when subjected to a
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 22>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+speciﬁc perturbation of α and β, the disparity in the players’ momentum undergoes a dis-
+cernible alteration, particularly when β is modiﬁed. However, overall, the momentum’s
+trajectory stays unaltered. Put simply, the model effectively captures the player’s condition
+over various matches. Hence, it is logical and justiﬁable that the curve may undergo signiﬁ-
+cant changes at certain nodes. The pattern of the sensitivity test curve aligns with the actual
+condition once again, overall.
+8
+Model Evaluation
+8.1
+Strengths
+• The model is systematic. When selecting metrics for the purpose of calculating mo-
+mentum, this model encompasses the entirety of the race, rather than examining only
+a single segment. Makes the results more relevant.
+• When calculating the momentum, the scores of both the enemy and the opponent
+are considered at the same time, and the calculation results are more in line with the
+reality.
+• When studying whether the momentum will have an impact on the game situation,
+two models, namely, the tour test and the chi-square test, were used for comparative
+analysis, so as to make the results more accurate.
+• The distribution of data was obtained through principal component analysis to deter-
+mine the XGboost prediction model, which resulted in a higher accuracy of prediction.
+8.2
+Weaknesses and Improvements
+• This model is only applicable to individual matches. Team momentum is not simply
+the sum of individual momentum, if we want to solve the momentum problem of
+group matches, then we also need to consider the impact of teammates’ scores or
+losses on each other’s momentum.
+• When making predictions, optimisation algorithms such as Bayesian tuning can be
+combined to further optimise the model hyper-parameters in order to improve predic-
+tion accuracy. The main method is to ﬁt a proxy model with known hyperparameters
+x and model results y, then use the acquisition function to select the next best (x, y),
+and use this new (x, y) to optimise the proxy model, repeat the above process, and
+ﬁnally obtain the tuned parameters.
+9
+Conclusion
+Initially, we constructed a momentum quantiﬁcation model using a sliding-window
+approach. This involved specifying the size of the sliding window and evaluating the mo-
+mentum value of a player by considering their performance in each metric during that win-
+dow. In the model, we incorporate the extra beneﬁt of the player’s serve to replicate the
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 23>>>
+微信公众号：数学模型
+微信号：MATHmodels
+
+fact that in a tennis match, the serving player has a greater likelihood of winning. Simul-
+taneously, we analyze the crucial aspects of the match, from which we generate a visual
+representation of the match’s progression. This visualization allows for a clear assessment
+of the status and exceptional performance of each player.
+Subsequently, by employing the run test and chi-square test, it was determined that
+momentum plays a pivotal role in the game dynamics of tennis. Hence, it is imperative for
+coaches and players to acknowledge the signiﬁcance of momentum.
+Afterwards, the data distribution is examined through principal component analysis in
+order to construct a game ﬂuctuation prediction model using XGBoost. This model exhibits
+a higher level of accuracy, reaching up to 70 %, in predicting changes in game situations.
+Additionally, it identiﬁes signiﬁcant factors such as Double Fault, ACE, and consecutive
+scores of players.
+On this basis, we evaluate the model, assess its capacity to generalize, and conduct
+sensitivity tests on the US Open women’s singles matches. The analysis indicates that the
+model exhibits exceptional performance, possesses a high degree of generalization, demon-
+strates resilience, and can be easily modiﬁed for application to different types of matches.
+Furthermore, we provide an enumeration of the aspects that ought to be taken into account
+in the future to enhance the model.
+Ultimately, we furnish tennis coaches with insights into the signiﬁcance of momentum
+and offer guidance on how players can sustain and control momentum throughout a match.
+References
+[1] Ben Moss and Peter O’Donoghue. Momentum in us open men’s singles tennis. Interna-
+tional Journal of Performance Analysis in Sport, 15(3):884–896, 2015.
+[2] Xiaofei Zhang. Analysis of the characteristics of the key distribution points of world
+elite male tennis players. Master’s thesis, Guangzhou Sport University, 2019.
+[3] Liang Chen.
+Periodic "Fluctuate" Phenomenon of Resisting Event-Group Performance in
+Match. PhD thesis, Soochow University, 2013.
+[4] Jianwei Sun, Bianli Xu, Jia Su, and Xueyong Huang. Application and discussion on runs
+test in epidemiology. Preventive Medicine Tribune, 23(100-103+106), 2017.
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 24>>>
+微信公众号：数学模型
+微信号：MATHmodels
+Memorandum
+To: Tennis Coaches and Players
+From: Team # 2409404
+Date: Feb 5, 2024
+Subject: Momentum Comprehension, Momentum Mastery, and Momentum Application
+Dear sir or madam:
+Everyone desires success on the court, and our research indicates that momentum
+could be of assistance to you. In order to aid in the training of you and your players, we
+have developed a predictive model of the situation during a match and a quantitative
+model of players' momentum. Moreover, it furnishes players with constructive guidance
+on how to adapt to the ever-changing circumstances that transpire on the playing field.
+We have determined, through an analysis of past tennis matches, that momentum is a
+critical factor in the sport. Tennis players have the ability to reverse the ultimate result of a
+match by utilizing the force of momentum. A participant with momentum will experience a
+sense that everything is proceeding in their favor. Additionally, the player will be playing
+with increased assurance at this juncture, and the momentum will assist in sustaining that
+assurance. A player should continue to execute the shots that help him or her acquire
+momentum in tennis—perhaps aggressive play or solid play—in order to maintain
+momentum and thus play tennis fearlessly.
+The Momentum quantification model generates specific values by measuring each
+participant's momentum values at every instant to determine who is performing better at a
+particular moment in the match. Given the significant degree of unpredictability
+surrounding the trajectory of the match, this model employs the concept of a sliding
+window, which comprises two critical parameters: the sliding window's magnitude and the
+additional benefit that a player's serve can confer. It is adaptable and can be modified in
+accordance with various contests. The in-match situation prediction model can provide
+real-time forecasts of the match's fluctuating trajectory and identify significant influencing
+factors, including the player's Double Fault, ACE, and other relevant data.
+Furthermore, the majority of Momentum's fluctuations transpire when a player
+assumes the initiative and endeavors to maintain it throughout the course of the game.
+
+关注数学模型
+获取更多资讯
+2
+MATHmodels
+
+<<<PAGE 25>>>
+微信公众号：数学模型
+微信号：MATHmodels
+During this phase of the game, participants are averse to losing their lead and are reluctant
+to relinquish it. A shift in momentum does not warrant a loss of confidence in the game.
+Maintaining perseverance and a positive mindset are critical factors in regaining the upper
+hand. However, the player might be required to alter their playing manner or return to
+their initial approach to the game.
+Based on our analysis of the results, we propose the following recommendations
+(strategies):
+
+In order to mitigate the impact of referee errors, missed opportunities, and other
+such occurrences on players' confidence, coaches ought to prioritize the cultivation of
+psychological qualities. This entails supporting players in maintaining a positive outlook,
+exercising patience, and having self-belief throughout the game.
+
+A diversity of venues should be covered in player training so that players do not
+become nervous when playing in unfamiliar areas.
+
+Players ought to allocate physical energy judiciously; if physical energy is
+consumed too rapidly, the momentum value will remain in a comparatively low state.
+
+Analyze the playing technique of your opponent prior to the match and adjust
+your strategy accordingly to gain momentum on the field.
+
+Standardization of movements and techniques is required, and training must be
+reinforced.
+Of course, our model only plays the role of prediction, but it can be enough to help you.
+Thank you for reading our memo again in your busy schedule, and we hope our
+suggestions are useful to you!
+Yours Sincerely,
+Team # 2409404
+
+关注数学模型
+获取更多资讯
+2
+MATHmodels
