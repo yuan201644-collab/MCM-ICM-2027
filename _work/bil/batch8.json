@@ -1,0 +1,382 @@
+[
+ {
+  "id": "358",
+  "kind": "heading",
+  "en": "Men Elite Individual Time Trial Guidance"
+ },
+ {
+  "id": "359.0",
+  "kind": "para",
+  "en": "—— 2021 UCI World Championships in Flanders, Belgium"
+ },
+ {
+  "id": "360.0",
+  "kind": "para",
+  "en": "1. Analysis of the Race Track and Weather"
+ },
+ {
+  "id": "361.0",
+  "kind": "para",
+  "en": "The competition takes place in the Belgian province of Flanders."
+ },
+ {
+  "id": "361.1",
+  "kind": "para",
+  "en": "Riders need to travel from Knokke Heist to Bruges in northern Belgium."
+ },
+ {
+  "id": "362.0",
+  "kind": "para",
+  "en": "The height fluctuation of the race track is shown in figure 1."
+ },
+ {
+  "id": "362.1",
+  "kind": "para",
+  "en": "The total length of the track is 43.3 kilometers, the average altitude is 15m, the range is 15m, and the standard deviation is only 3m."
+ },
+ {
+  "id": "362.2",
+  "kind": "para",
+  "en": "The track is flat and is more suitable for Flat Time Trial Specialist."
+ },
+ {
+  "id": "364",
+  "kind": "caption",
+  "en": "Figure 1: Elevation map of the track"
+ },
+ {
+  "id": "365.0",
+  "kind": "para",
+  "en": "The track has 7 sharp turns, which are 1.5km, 2.4km, 2.7km, 11.2km, 14.3km, 17.6km and 27.6km."
+ },
+ {
+  "id": "365.1",
+  "kind": "para",
+  "en": "NOTE: Riders need to slow down early when going through these corners."
+ },
+ {
+  "id": "365.2",
+  "kind": "para",
+  "en": "It is recommended to control the speed below 10m/s to avoid rushing out of the track."
+ },
+ {
+  "id": "366.0",
+  "kind": "para",
+  "en": "According to the Zeebrugge Weather Observatory data provided by NOAA, the wind direction is 50° north by east at 16:00, on the day of the competition, that is, on September 19, 2021."
+ },
+ {
+  "id": "366.1",
+  "kind": "para",
+  "en": "The wind speed is 2m/s. It is downwind."
+ },
+ {
+  "id": "366.2",
+  "kind": "para",
+  "en": "The effect of wind on performance is about 1%, about ±10s."
+ },
+ {
+  "id": "367.0",
+  "kind": "para",
+  "en": "2. Analysis of the Cyclist's Profile"
+ },
+ {
+  "id": "368.0",
+  "kind": "para",
+  "en": "Based on the given rider data, the rider's power curve can be obtained and is listed in figure 2."
+ },
+ {
+  "id": "368.1",
+  "kind": "para",
+  "en": "His FTP is 4.79W/kg, so his aerobic respiration can provide high power efficiency."
+ },
+ {
+  "id": "368.2",
+  "kind": "para",
+  "en": "His total anaerobic energy is 56.28J/Kg, so his anaerobic respiration has poor short-term power efficiency."
+ },
+ {
+  "id": "368.3",
+  "kind": "para",
+  "en": "That means his staying power is good, but his short-term explosiveness is poor."
+ },
+ {
+  "id": "368.4",
+  "kind": "para",
+  "en": "He's the quintessential Flat Time Trial Specialist."
+ },
+ {
+  "id": "368.5",
+  "kind": "para",
+  "en": "He is more suitable for riding on flat terrain with few hills, which is in line with the characteristics of the track."
+ },
+ {
+  "id": "368.6",
+  "kind": "para",
+  "en": "Below is his power curve."
+ },
+ {
+  "id": "370",
+  "kind": "caption",
+  "en": "Figure 2: The power curve of a Time Trial Specialist"
+ },
+ {
+  "id": "371.0",
+  "kind": "para",
+  "en": "3. Overview of the Directions"
+ },
+ {
+  "id": "372.0",
+  "kind": "para",
+  "en": "By comprehensively analyzing the track model and the player's model, we can obtain the recommended power-distance distribution diagram for this rider who wants to achieve the best results."
+ },
+ {
+  "id": "372.1",
+  "kind": "para",
+  "en": "The P-D diagram is shown in Figure 3 below."
+ },
+ {
+  "id": "374",
+  "kind": "caption",
+  "en": "Figure 3: The P-D diagram"
+ },
+ {
+  "id": "375.0",
+  "kind": "para",
+  "en": "As can be seen, there are several key nodes that require more force to accelerate."
+ },
+ {
+  "id": "375.1",
+  "kind": "para",
+  "en": "Besides, there are also nodes that need to reduce power to restore stamina, including reducing power in downhill positions, and before sharp turns."
+ },
+ {
+  "id": "375.2",
+  "kind": "para",
+  "en": "The rider recommended to increase the output power at x=1km, 9.6km, 17.8km and other positions to complete the acceleration; while at x=1.6km, 2.7km and other positions to reduce power output to about 1W/kg."
+ },
+ {
+  "id": "375.3",
+  "kind": "para",
+  "en": "The rest of the time, try to maintain near the FTP, that is, the maximum value of aerobic respiration."
+ },
+ {
+  "id": "376.0",
+  "kind": "para",
+  "en": "Completing the entire track according to this curve can optimize the performance of the players, and the estimated finishing time is 3499s (58m 19s)."
+ },
+ {
+  "id": "377.0",
+  "kind": "para",
+  "en": "However, it is impossible to highly detailed follow the above power distribution."
+ },
+ {
+  "id": "377.1",
+  "kind": "para",
+  "en": "Small deviations in power output still yield near-optimal results."
+ },
+ {
+  "id": "377.2",
+  "kind": "para",
+  "en": "So, we provide acceptable time frames for riders to reach some positions, part of which are shown in the table below."
+ },
+ {
+  "id": "377.3",
+  "kind": "para",
+  "en": "As long as the range of players arriving at these positions is within the Max Time and Min Time, the final finishing time can be no later than 57h 19s , 1min later than the optimal time."
+ },
+ {
+  "id": "378",
+  "kind": "caption",
+  "en": "Table 1: Time constraints"
+ },
+ {
+  "id": "379.0",
+  "kind": "para",
+  "en": "Distance(Km)"
+ },
+ {
+  "id": "380.0",
+  "kind": "para",
+  "en": "4"
+ },
+ {
+  "id": "381.0",
+  "kind": "para",
+  "en": "8"
+ },
+ {
+  "id": "382.0",
+  "kind": "para",
+  "en": "12"
+ },
+ {
+  "id": "383.0",
+  "kind": "para",
+  "en": "16"
+ },
+ {
+  "id": "384.0",
+  "kind": "para",
+  "en": "20"
+ },
+ {
+  "id": "385.0",
+  "kind": "para",
+  "en": "24"
+ },
+ {
+  "id": "386.0",
+  "kind": "para",
+  "en": "28"
+ },
+ {
+  "id": "387.0",
+  "kind": "para",
+  "en": "32"
+ },
+ {
+  "id": "388.0",
+  "kind": "para",
+  "en": "36"
+ },
+ {
+  "id": "389.0",
+  "kind": "para",
+  "en": "40 Max time(s)"
+ },
+ {
+  "id": "390.0",
+  "kind": "para",
+  "en": "287"
+ },
+ {
+  "id": "391.0",
+  "kind": "para",
+  "en": "717"
+ },
+ {
+  "id": "392.0",
+  "kind": "para",
+  "en": "1188"
+ },
+ {
+  "id": "393.0",
+  "kind": "para",
+  "en": "1469"
+ },
+ {
+  "id": "394.0",
+  "kind": "para",
+  "en": "1856"
+ },
+ {
+  "id": "395.0",
+  "kind": "para",
+  "en": "2193"
+ },
+ {
+  "id": "396.0",
+  "kind": "para",
+  "en": "2518"
+ },
+ {
+  "id": "397.0",
+  "kind": "para",
+  "en": "3035"
+ },
+ {
+  "id": "398.0",
+  "kind": "para",
+  "en": "3316"
+ },
+ {
+  "id": "399.0",
+  "kind": "para",
+  "en": "3710 Min time(s)"
+ },
+ {
+  "id": "400.0",
+  "kind": "para",
+  "en": "283"
+ },
+ {
+  "id": "401.0",
+  "kind": "para",
+  "en": "703"
+ },
+ {
+  "id": "402.0",
+  "kind": "para",
+  "en": "1148"
+ },
+ {
+  "id": "403.0",
+  "kind": "para",
+  "en": "1429"
+ },
+ {
+  "id": "404.0",
+  "kind": "para",
+  "en": "1815"
+ },
+ {
+  "id": "405.0",
+  "kind": "para",
+  "en": "2152"
+ },
+ {
+  "id": "406.0",
+  "kind": "para",
+  "en": "2477"
+ },
+ {
+  "id": "407.0",
+  "kind": "para",
+  "en": "2974"
+ },
+ {
+  "id": "408.0",
+  "kind": "para",
+  "en": "3274"
+ },
+ {
+  "id": "409.0",
+  "kind": "para",
+  "en": "3665 4. Summary of Our Model"
+ },
+ {
+  "id": "410.0",
+  "kind": "para",
+  "en": "Our model starts from studying the aerobic and anaerobic respiration of the rider and determines the relationship between energy expenditure and power output."
+ },
+ {
+  "id": "410.1",
+  "kind": "para",
+  "en": "The model depicts the rider's energy profile, which is expressed externally as a power curve."
+ },
+ {
+  "id": "410.2",
+  "kind": "para",
+  "en": "For any given track, we simulate the relationship between the rider state and various resistances on the track."
+ },
+ {
+  "id": "410.3",
+  "kind": "para",
+  "en": "When combining the above models, we use dynamic programming to obtain the relationship between optimal output power and track position, which has great reference value for the rider."
+ },
+ {
+  "id": "410.4",
+  "kind": "para",
+  "en": "The best results are achieved as long as the rider performs for the given power output."
+ },
+ {
+  "id": "410.5",
+  "kind": "para",
+  "en": "In order to reduce the difficulty of the players' execution, we provide a relatively loose reference time, which can get close to the best results."
+ },
+ {
+  "id": "411.0",
+  "kind": "para",
+  "en": "Team # 2209466"
+ }
+]

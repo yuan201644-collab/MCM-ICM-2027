@@ -1,0 +1,527 @@
+[
+ {
+  "id": "203.0",
+  "kind": "para",
+  "en": "have power curves with similar trends."
+ },
+ {
+  "id": "203.1",
+  "kind": "para",
+  "en": "When they are applied to the same track conditions, the power distribution strategies obtained have the same trend."
+ },
+ {
+  "id": "204.0",
+  "kind": "para",
+  "en": "• Riders need to sprint more frequently in high-altitude races."
+ },
+ {
+  "id": "204.1",
+  "kind": "para",
+  "en": "While the average resistance at higher altitudes is less than it at lower altitudes, the gradients are more variable, so riders need to increase power to climb and then lower to recover."
+ },
+ {
+  "id": "204.2",
+  "kind": "para",
+  "en": "Therefore, on denser hills, the rider's power fluctuates more."
+ },
+ {
+  "id": "204.3",
+  "kind": "para",
+  "en": "At the same time, this also shows that the effect of gravity on the rider is greater than that of resistance."
+ },
+ {
+  "id": "205.0",
+  "kind": "para",
+  "en": "• Turning reduces the power output to the rider."
+ },
+ {
+  "id": "205.1",
+  "kind": "para",
+  "en": "It can be seen from the self-designed track that the rider has a certain degree of power reduction in the corners."
+ },
+ {
+  "id": "205.2",
+  "kind": "para",
+  "en": "This is also consistent with our previous analysis."
+ },
+ {
+  "id": "206.0",
+  "kind": "para",
+  "en": "• The Sprinter can launch a more powerful attack in the first half of the schedule than the Time Trial Specialist."
+ },
+ {
+  "id": "206.1",
+  "kind": "para",
+  "en": "Comparing the above picture horizontally, in the first half of the race, we can see that the power peak corresponding to the sprint initiated by the Sprinter is higher."
+ },
+ {
+  "id": "206.2",
+  "kind": "para",
+  "en": "In the second half of the race, the number of sprints and power peaks were slightly reduced due to the Sprinter's slightly poorer endurance."
+ },
+ {
+  "id": "207.0",
+  "kind": "para",
+  "en": "• The Sprinter is less affected by corners than the Time Trial Specialist."
+ },
+ {
+  "id": "207.1",
+  "kind": "para",
+  "en": "At Tokyo, where the corners are denser, the Sprinter has fewer power cuts."
+ },
+ {
+  "id": "207.2",
+  "kind": "para",
+  "en": "This may be related to the lower average power of this type of riders."
+ },
+ {
+  "id": "208.0",
+  "kind": "para",
+  "en": "• Sprinter is more affected by altitude than Time Trial Specialist."
+ },
+ {
+  "id": "208.1",
+  "kind": "para",
+  "en": "At the higher elevation and steeper slope changes at the Olympics track, the Sprinter's power curve has a lower center of undulation and lower average power."
+ },
+ {
+  "id": "209.0",
+  "kind": "para",
+  "en": "Due to space limitations, the optimal power strategy graph for the women's race and the women's UCI track map are attached in the appendix."
+ },
+ {
+  "id": "209.1",
+  "kind": "para",
+  "en": "Due to the difference between the men's and women's tracks in the Olympics track and the UCI track, in order to control the variables, we only analyze the tracks designed by ourselves, and we can draw the following conclusions:  The average power of women is lower than that of men."
+ },
+ {
+  "id": "209.2",
+  "kind": "para",
+  "en": "It can be seen that the power curve of women is generally lower."
+ },
+ {
+  "id": "210.0",
+  "kind": "para",
+  "en": " Women's sprint intensity in the first half of the race can reach higher, even more than the men's."
+ },
+ {
+  "id": "210.1",
+  "kind": "para",
+  "en": "The women's power curve peaked higher in the first half of the race.  Women are more affected by slopes and curves than men."
+ },
+ {
+  "id": "210.2",
+  "kind": "para",
+  "en": "The women's power map fluctuates more often on successive ramps and corners."
+ },
+ {
+  "id": "211.0",
+  "kind": "para",
+  "en": "In addition, we present a statistical graph of the minimum time required by the rider, providing intuitive data for analysis."
+ },
+ {
+  "id": "211.1",
+  "kind": "para",
+  "en": "As shown in Figure 12 below:"
+ },
+ {
+  "id": "213",
+  "kind": "caption",
+  "en": "Figure 12: Minimum time spent by the rider"
+ },
+ {
+  "id": "214.0",
+  "kind": "para",
+  "en": "Through this graph, we give the specific time of different riders under the optimal power distribution."
+ },
+ {
+  "id": "214.1",
+  "kind": "para",
+  "en": "As mentioned above, we only refer to the self-designed track for comparison between men and women."
+ },
+ {
+  "id": "214.2",
+  "kind": "para",
+  "en": "It can be seen that the men's players have a shorter time, 172s ahead of the women's players, and the average power is higher."
+ },
+ {
+  "id": "214.3",
+  "kind": "para",
+  "en": "In addition, the overall time of the Time Trial Specialist is shorter than that of the Sprinter, and the average score is about 300s ahead of the latter."
+ },
+ {
+  "id": "214.4",
+  "kind": "para",
+  "en": "Their average power is higher, their comprehensive ability is stronger, and they are less affected by altitude."
+ },
+ {
+  "id": "214.5",
+  "kind": "para",
+  "en": "Especially at high altitudes, the former leads the latter by 371s, which is the largest difference between the two among the three tracks."
+ },
+ {
+  "id": "214.6",
+  "kind": "para",
+  "en": "This is in great agreement with our previous model, while validating the validity and rationality of the model."
+ },
+ {
+  "id": "215",
+  "kind": "heading",
+  "en": "6 Sensitivity Analysis"
+ },
+ {
+  "id": "216",
+  "kind": "heading",
+  "en": "6.1 Weather and Environmental Effects"
+ },
+ {
+  "id": "217.0",
+  "kind": "para",
+  "en": "The model was revised to account for the potential effects of weather."
+ },
+ {
+  "id": "217.1",
+  "kind": "para",
+  "en": "We considered the effect of wind direction and wind strength (i.e. wind speed) on the model parameters and made new assumptions:"
+ },
+ {
+  "id": "218.0",
+  "kind": "para",
+  "en": "Wind direction and wind speed are only functions related to space, forming a vector field of wind in space, regardless of time."
+ },
+ {
+  "id": "218.1",
+  "kind": "para",
+  "en": "And we consider the wind as only horizontal air flow."
+ },
+ {
+  "id": "218.2",
+  "kind": "para",
+  "en": "This is due to the slow change of wind speed and direction on the field, and usually only the average wind speed within an hour is detected."
+ },
+ {
+  "id": "218.3",
+  "kind": "para",
+  "en": "Table 3 below gives the wind speed and direction data we used [10]:"
+ },
+ {
+  "id": "219",
+  "kind": "caption",
+  "en": "Table 3: Direction and Speed of the Wind in Course"
+ },
+ {
+  "id": "220.0",
+  "kind": "para",
+  "en": "Tokyo"
+ },
+ {
+  "id": "221.0",
+  "kind": "para",
+  "en": "Belgium"
+ },
+ {
+  "id": "222.0",
+  "kind": "para",
+  "en": "Data"
+ },
+ {
+  "id": "223.0",
+  "kind": "para",
+  "en": "Men"
+ },
+ {
+  "id": "224.0",
+  "kind": "para",
+  "en": "Women"
+ },
+ {
+  "id": "225.0",
+  "kind": "para",
+  "en": "Men"
+ },
+ {
+  "id": "226.0",
+  "kind": "para",
+  "en": "Women"
+ },
+ {
+  "id": "227.0",
+  "kind": "para",
+  "en": "Wind direction(°)"
+ },
+ {
+  "id": "228.0",
+  "kind": "para",
+  "en": "270"
+ },
+ {
+  "id": "229.0",
+  "kind": "para",
+  "en": "290"
+ },
+ {
+  "id": "230.0",
+  "kind": "para",
+  "en": "050"
+ },
+ {
+  "id": "231.0",
+  "kind": "para",
+  "en": "010"
+ },
+ {
+  "id": "232.0",
+  "kind": "para",
+  "en": "Wind speed(m/s)"
+ },
+ {
+  "id": "233.0",
+  "kind": "para",
+  "en": "0.5"
+ },
+ {
+  "id": "234.0",
+  "kind": "para",
+  "en": "1.0"
+ },
+ {
+  "id": "235.0",
+  "kind": "para",
+  "en": "2.0"
+ },
+ {
+  "id": "236.0",
+  "kind": "para",
+  "en": "6.0"
+ },
+ {
+  "id": "237.0",
+  "kind": "para",
+  "en": "The effect of wind on the model results is only due to air resistance."
+ },
+ {
+  "id": "237.1",
+  "kind": "para",
+  "en": "To simplify the model, we only consider wind in the same or opposite direction as the rider's travel to have an effect on the travel, wind in the vertical direction does not affect the ride."
+ },
+ {
+  "id": "237.2",
+  "kind": "para",
+  "en": "From this, we correct the total resistance in the previous model to be:"
+ },
+ {
+  "id": "238.0",
+  "kind": "para",
+  "en": "(14) where,is the angle between the traveling direction and the wind direction (less than or equal to the flat angle), which is essentially function of, denoted by.is the symbolic function.are the horizontal speed of the rider and the wind speed, respectively."
+ },
+ {
+  "id": "239.0",
+  "kind": "para",
+  "en": "To sum up, the new model is an improvement of the original model."
+ },
+ {
+  "id": "239.1",
+  "kind": "para",
+  "en": "We can solve the model using the above data and similar methods, and modify the values of wind direction and speed to analyze the sensitivity."
+ },
+ {
+  "id": "240.0",
+  "kind": "para",
+  "en": "In order to explore the influence of weather conditions on the results, we took the performance of women on the UCI track as an example, and set up 8 wind directions and 3 wind levels, with a total of 24 wind environments."
+ },
+ {
+  "id": "240.1",
+  "kind": "para",
+  "en": "In these environments, we simulated the performance of athletes in the wind."
+ },
+ {
+  "id": "240.2",
+  "kind": "para",
+  "en": "The results obtained are presented in Figure 13:"
+ },
+ {
+  "id": "242",
+  "kind": "caption",
+  "en": "Figure 13: Finishing times in different weather conditions"
+ },
+ {
+  "id": "243.0",
+  "kind": "para",
+  "en": "The wind direction adopts eight gradient settings of due north, due south, due west, due east, northeast, southeast, northwest, and southwest; the wind speed is set with three gradient settings of 1m/s, 2m/s and 3m/s."
+ },
+ {
+  "id": "244.0",
+  "kind": "para",
+  "en": "According to the above figure, When the wind direction is constant, every time the wind speed changes by one level, the completion time will change by 20~330s, and the change proportion is less than 10%."
+ },
+ {
+  "id": "244.1",
+  "kind": "para",
+  "en": "When the wind is constant, each time the wind direction changes in one direction, the completion time will change by 30~460s, and the maximum change ratio is 16%."
+ },
+ {
+  "id": "244.2",
+  "kind": "para",
+  "en": "Therefore, considering the influence of two factors, we believe that our model is more sensitive to changes in the weather environment."
+ },
+ {
+  "id": "245",
+  "kind": "heading",
+  "en": "6.2 Deviation effects"
+ },
+ {
+  "id": "246.0",
+  "kind": "para",
+  "en": "During a race, the rider cannot accurately implement the determined optimal power distribution strategy."
+ },
+ {
+  "id": "246.1",
+  "kind": "para",
+  "en": "For example, the rider did not increase to optimal power on a stage where he should have increased power."
+ },
+ {
+  "id": "246.2",
+  "kind": "para",
+  "en": "Thus, the rider's power position curve is likely to deviate from the optimal curve."
+ },
+ {
+  "id": "246.3",
+  "kind": "para",
+  "en": "To simulate this deviation, we randomly change the optimal power distribution curve so that the rider may output sub-optimal power at any position."
+ },
+ {
+  "id": "246.4",
+  "kind": "para",
+  "en": "We use the average absolute value of the deviation of the rider's actual output power curve from the optimal power curve at all positions as the degree to which the rider deviates from the optimal curve."
+ },
+ {
+  "id": "247.0",
+  "kind": "para",
+  "en": "We use random numbers to generate non-optimal power distributions and plug them into the model to solve for the corresponding finish times, as shown in Table 4:"
+ },
+ {
+  "id": "248",
+  "kind": "caption",
+  "en": "Table 4: Non-optimal Finish Time"
+ },
+ {
+  "id": "249.0",
+  "kind": "para",
+  "en": "Mean devia-"
+ },
+ {
+  "id": "250.0",
+  "kind": "para",
+  "en": "0"
+ },
+ {
+  "id": "251.0",
+  "kind": "para",
+  "en": "0.06"
+ },
+ {
+  "id": "252.0",
+  "kind": "para",
+  "en": "0.07"
+ },
+ {
+  "id": "253.0",
+  "kind": "para",
+  "en": "0.08"
+ },
+ {
+  "id": "254.0",
+  "kind": "para",
+  "en": "0.09"
+ },
+ {
+  "id": "255.0",
+  "kind": "para",
+  "en": "0.1"
+ },
+ {
+  "id": "256.0",
+  "kind": "para",
+  "en": "0.15"
+ },
+ {
+  "id": "257.0",
+  "kind": "para",
+  "en": "0.2 tion(W/Kg)"
+ },
+ {
+  "id": "258.0",
+  "kind": "para",
+  "en": "Finish time(s)"
+ },
+ {
+  "id": "259.0",
+  "kind": "para",
+  "en": "4001.5 4010.8 4144.1 4159.9 4174.4 4196.7 4200.0 4325.7 Delta-time(s)"
+ },
+ {
+  "id": "260.0",
+  "kind": "para",
+  "en": "0"
+ },
+ {
+  "id": "261.0",
+  "kind": "para",
+  "en": "+9.3"
+ },
+ {
+  "id": "262.0",
+  "kind": "para",
+  "en": "+142.6 +158.4 +172.9 +195.2 +198.5 +324.2 Percentage of"
+ },
+ {
+  "id": "263.0",
+  "kind": "para",
+  "en": "0"
+ },
+ {
+  "id": "264.0",
+  "kind": "para",
+  "en": "0.232"
+ },
+ {
+  "id": "265.0",
+  "kind": "para",
+  "en": "3.563"
+ },
+ {
+  "id": "266.0",
+  "kind": "para",
+  "en": "3.959"
+ },
+ {
+  "id": "267.0",
+  "kind": "para",
+  "en": "4.142"
+ },
+ {
+  "id": "268.0",
+  "kind": "para",
+  "en": "4.878"
+ },
+ {
+  "id": "269.0",
+  "kind": "para",
+  "en": "4.961"
+ },
+ {
+  "id": "270.0",
+  "kind": "para",
+  "en": "8.101 change(%)"
+ },
+ {
+  "id": "271.0",
+  "kind": "para",
+  "en": "From the data in the table, we can find that as the deviation value increases, the completion time of the rider gradually increases, which verifies that our model is indeed the best solution to a certain extent."
+ },
+ {
+  "id": "271.1",
+  "kind": "para",
+  "en": "When the average deviation is below 0.06, the variation in completion time"
+ }
+]

@@ -1,0 +1,287 @@
+[
+ {
+  "id": "122.0",
+  "kind": "para",
+  "en": "corresponding power-time curve, as shown in Figure 6:"
+ },
+ {
+  "id": "124",
+  "kind": "caption",
+  "en": "Figure 6: Power time curves for various types of riders"
+ },
+ {
+  "id": "125.0",
+  "kind": "para",
+  "en": "The graph above shows the power-time curves for each type of rider."
+ },
+ {
+  "id": "125.1",
+  "kind": "para",
+  "en": "Due to the different abilities of various riders, the model parameters are different, and so are the curves."
+ },
+ {
+  "id": "125.2",
+  "kind": "para",
+  "en": "The analysis leads to the following conclusions, which are consistent with the radar chart:"
+ },
+ {
+  "id": "126.0",
+  "kind": "para",
+  "en": "• Rouleur is balanced in all aspects, so his/her power-time curve is in the middle section as a whole."
+ },
+ {
+  "id": "126.1",
+  "kind": "para",
+  "en": "His/Her sprint ability is strong, and he/she can also maintain a certain power during long-term riding."
+ },
+ {
+  "id": "127.0",
+  "kind": "para",
+  "en": "• The Sprinter has a strong sprinting ability, and his/her power-time curve presents a very high front, that is, the extreme power is very large in a short time, which is suitable for short-term explosive riding."
+ },
+ {
+  "id": "127.1",
+  "kind": "para",
+  "en": "He/She has a relatively prominent anaerobic energy supply capacity and a large anaerobic pool energy storage."
+ },
+ {
+  "id": "128.0",
+  "kind": "para",
+  "en": "• Puncheur has poor endurance, and his/her power-time curve is generally low, with a certain explosive power in a short period of time."
+ },
+ {
+  "id": "128.1",
+  "kind": "para",
+  "en": "The anaerobic energy supply capacity is slightly better."
+ },
+ {
+  "id": "129.0",
+  "kind": "para",
+  "en": "• The time trial specialist has the strongest comprehensive ability, and can maintain a high power during a long-term riding process."
+ },
+ {
+  "id": "129.1",
+  "kind": "para",
+  "en": "He/She has a relatively prominent aerobic energy supply capacity and a high FTP, which corresponds to a larger aerobic energy supply rate in the above model."
+ },
+ {
+  "id": "130",
+  "kind": "heading",
+  "en": "5 Optimal Individual Power Distribution Model"
+ },
+ {
+  "id": "131.0",
+  "kind": "para",
+  "en": "By analyzing the force of the rider during the riding process, combined with the track conditions, we propose an Optimal Individual Power Distribution Model, and use the dynamic programming method to find the optimal power distribution suitable for riding."
+ },
+ {
+  "id": "132",
+  "kind": "heading",
+  "en": "5.1 Data Processing"
+ },
+ {
+  "id": "133.0",
+  "kind": "para",
+  "en": "We need to apply the first model built to three specific tracks."
+ },
+ {
+  "id": "133.1",
+  "kind": "para",
+  "en": "So, we need to collect the altitude data and camber data of the track."
+ },
+ {
+  "id": "133.2",
+  "kind": "para",
+  "en": "The relevant datasets and source websites are shown in Table 2:"
+ },
+ {
+  "id": "134",
+  "kind": "caption",
+  "en": "Table 2: Data and Database Websites"
+ },
+ {
+  "id": "135.0",
+  "kind": "para",
+  "en": "Database Names"
+ },
+ {
+  "id": "136.0",
+  "kind": "para",
+  "en": "Database Websites"
+ },
+ {
+  "id": "137.0",
+  "kind": "para",
+  "en": "Altitude and camber of Olympic Time Trial coursehttps://olympics.com/in Tokyo, Japan"
+ },
+ {
+  "id": "138.0",
+  "kind": "para",
+  "en": "Altitude and camber of UCI World Championshiphttps://www.flanders2021.com/ time trial course in Flanders, Belgium"
+ },
+ {
+  "id": "139.0",
+  "kind": "para",
+  "en": "In order to facilitate research analysis and application to modeling, we present the collected data in the form of a function graph in Figure 7:"
+ },
+ {
+  "id": "142",
+  "kind": "caption",
+  "en": "Figure 7: Altitude and Camber of the Course"
+ },
+ {
+  "id": "143.0",
+  "kind": "para",
+  "en": "From the figure, the top left picture among the three represents the data of the Tokyo Olympics time trial, the top right picture represents the data of UCI time trial, and the bottom picture is the data of self-designed track."
+ },
+ {
+  "id": "143.1",
+  "kind": "para",
+  "en": "In fact, in the UCI time trial, the men's and women's runners have different tracks."
+ },
+ {
+  "id": "143.2",
+  "kind": "para",
+  "en": "In the Olympics Time Trial, the men and women use the same track, but the men run an extra lap."
+ },
+ {
+  "id": "143.3",
+  "kind": "para",
+  "en": "Due to space limitations, the specific situation will be given in detail in the result analysis."
+ },
+ {
+  "id": "144.0",
+  "kind": "para",
+  "en": "We can see that the UCI time trial track has a lower altitude, is flatter but has slightly more corners."
+ },
+ {
+  "id": "144.1",
+  "kind": "para",
+  "en": "The track of the Olympics Time Trial Circuit has a higher altitude, is steeper, has fewer turns, and the turns are concentrated in the first half of the track."
+ },
+ {
+  "id": "144.2",
+  "kind": "para",
+  "en": "The altitude of our self-designed track is in between the two, the slopes are concentrated in the first half and the end of the race, and there are five corners, which are concentrated in the second half of the race."
+ },
+ {
+  "id": "144.3",
+  "kind": "para",
+  "en": "The purpose of our design is to distinguish between slopes and corners to a certain extent, so that it is convenient to study the effect of the two on the rider's power separately."
+ },
+ {
+  "id": "145",
+  "kind": "heading",
+  "en": "5.2 The Establishment of the Model"
+ },
+ {
+  "id": "146.0",
+  "kind": "para",
+  "en": "In the process of establishing the model, we mainly consider the resistance of the rider during his cycling, analyze the force of the rider, and propose a Riding Resistance Model."
+ },
+ {
+  "id": "147.0",
+  "kind": "para",
+  "en": "5.2.1 Riding Resistance Model"
+ },
+ {
+  "id": "148.0",
+  "kind": "para",
+  "en": "In individual races, the interference effects of other riders are not considered."
+ },
+ {
+  "id": "148.1",
+  "kind": "para",
+  "en": "Therefore, we consider that the resistance received by the rider during the riding process is mainly composed of two parts, one of which is aerodynamic resistance, and the other is the rolling friction between the bicycle and the ground."
+ },
+ {
+  "id": "148.2",
+  "kind": "para",
+  "en": "According to the experimental research of others [8], we give the total resistance received by the rider in the process of flat ground movement as:"
+ },
+ {
+  "id": "149.0",
+  "kind": "para",
+  "en": "(7) where,is the fluid density, and it is the air density here.is the frontal area of the total projection of the rider and the bicycle, that is, the effective area.is the resistance coefficient.is the speed of the rider relative to the fluid.is the coefficient of rolling friction. is the total mass of the rider and bike.is the gravitational acceleration."
+ },
+ {
+  "id": "150.0",
+  "kind": "para",
+  "en": "In order to obtain a more specific expression, we discuss the above parameters to directly use the existing data to facilitate the solution."
+ },
+ {
+  "id": "150.1",
+  "kind": "para",
+  "en": "For fluid density we have:"
+ },
+ {
+  "id": "151.0",
+  "kind": "para",
+  "en": "(8)"
+ },
+ {
+  "id": "152.0",
+  "kind": "para",
+  "en": "(9) where,is a constant, the general value is 1.293Kg/m3.is air pressure.is the temperature in Kelvin.is the local altitude."
+ },
+ {
+  "id": "153.0",
+  "kind": "para",
+  "en": "For the projected effective area, we have:"
+ },
+ {
+  "id": "154.0",
+  "kind": "para",
+  "en": "(10) where,are the rider's height and weight, respectively.is the horizontal declination angle of the rider's helmet, in order to simplify the problem, we take its value as zero."
+ },
+ {
+  "id": "155.0",
+  "kind": "para",
+  "en": "For the resistance coefficient, we have:"
+ },
+ {
+  "id": "156.0",
+  "kind": "para",
+  "en": "(11) Considering the coefficient of rolling friction, according to empirical data [9], the coefficient of rolling friction of mountain bikes on asphalt roads is 0.003, while the coefficient of rolling friction of road bicycles is usually smaller."
+ },
+ {
+  "id": "156.1",
+  "kind": "para",
+  "en": "Since rolling friction accounts for about 10% of the total resistance, and in order to simplify the problem, we do not consider the material of the track, we take."
+ },
+ {
+  "id": "157.0",
+  "kind": "para",
+  "en": "5.2.2 Abstract Course Model"
+ },
+ {
+  "id": "158.0",
+  "kind": "para",
+  "en": "For the individual cycling track, we mainly consider the situation analysis of the rider going up and down and turning during the riding process."
+ },
+ {
+  "id": "159.0",
+  "kind": "para",
+  "en": "For the uphill process, we simplify the rider as a mass point and perform force analysis on it, as shown in Figure 8:"
+ },
+ {
+  "id": "161",
+  "kind": "caption",
+  "en": "Figure 8: Analysis of the rider's force during the uphill process"
+ },
+ {
+  "id": "162.0",
+  "kind": "para",
+  "en": "As shown in the above analysis, we can simply get the physical model of the uphill process:"
+ },
+ {
+  "id": "163.0",
+  "kind": "para",
+  "en": "(12)"
+ },
+ {
+  "id": "164.0",
+  "kind": "para",
+  "en": "Where,is the motivation provided to the rider, which is related to the power provided by"
+ }
+]

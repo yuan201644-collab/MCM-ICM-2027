@@ -1,0 +1,622 @@
+[
+ {
+  "id": "272.0",
+  "kind": "para",
+  "en": "is small, less than 0.5%. After the deviation increases to a certain value between 0.06 and 0.07, the change in the completion time increases, but is less than 5%."
+ },
+ {
+  "id": "272.1",
+  "kind": "para",
+  "en": "But when the average deviation is between 0.15 and 0.2, the variation of completion time increases greatly, more than 5%."
+ },
+ {
+  "id": "272.2",
+  "kind": "para",
+  "en": "If the average deviation continues to increase, the rider will not be able to finish the race properly due to not meeting the finite energy limit."
+ },
+ {
+  "id": "273.0",
+  "kind": "para",
+  "en": "After the above analysis, when the average deviation changes by about 5%, the completion time changes by about 10%."
+ },
+ {
+  "id": "273.1",
+  "kind": "para",
+  "en": "Therefore, we believe that the model results have some insensitivity to the rider's deviation from the target power."
+ },
+ {
+  "id": "274.0",
+  "kind": "para",
+  "en": "Additionally, we divided the entire course into sections."
+ },
+ {
+  "id": "274.1",
+  "kind": "para",
+  "en": "The endpoint of each segment is a checkpoint."
+ },
+ {
+  "id": "274.2",
+  "kind": "para",
+  "en": "Through multiple simulations, we get the time frame for reaching each checkpoint."
+ },
+ {
+  "id": "274.3",
+  "kind": "para",
+  "en": "If the rider arrives at these checkpoints within these ranges, the final finish time is guaranteed to be no later than 1 minute after the optimal finish time."
+ },
+ {
+  "id": "274.4",
+  "kind": "para",
+  "en": "Table 5 shows the acceptable time range for arriving at each checkpoint after dividing the UCI Men's ITT circuit into 11 segments."
+ },
+ {
+  "id": "275",
+  "kind": "caption",
+  "en": "Table 5: Acceptable time range at each checkpoint"
+ },
+ {
+  "id": "276.0",
+  "kind": "para",
+  "en": "Dis-"
+ },
+ {
+  "id": "277.0",
+  "kind": "para",
+  "en": "4"
+ },
+ {
+  "id": "278.0",
+  "kind": "para",
+  "en": "8"
+ },
+ {
+  "id": "279.0",
+  "kind": "para",
+  "en": "12"
+ },
+ {
+  "id": "280.0",
+  "kind": "para",
+  "en": "16"
+ },
+ {
+  "id": "281.0",
+  "kind": "para",
+  "en": "20"
+ },
+ {
+  "id": "282.0",
+  "kind": "para",
+  "en": "24"
+ },
+ {
+  "id": "283.0",
+  "kind": "para",
+  "en": "28"
+ },
+ {
+  "id": "284.0",
+  "kind": "para",
+  "en": "32"
+ },
+ {
+  "id": "285.0",
+  "kind": "para",
+  "en": "36"
+ },
+ {
+  "id": "286.0",
+  "kind": "para",
+  "en": "40 tance(Km)"
+ },
+ {
+  "id": "287.0",
+  "kind": "para",
+  "en": "Max time(s)"
+ },
+ {
+  "id": "288.0",
+  "kind": "para",
+  "en": "287"
+ },
+ {
+  "id": "289.0",
+  "kind": "para",
+  "en": "717"
+ },
+ {
+  "id": "290.0",
+  "kind": "para",
+  "en": "1188"
+ },
+ {
+  "id": "291.0",
+  "kind": "para",
+  "en": "1469"
+ },
+ {
+  "id": "292.0",
+  "kind": "para",
+  "en": "1856"
+ },
+ {
+  "id": "293.0",
+  "kind": "para",
+  "en": "2193"
+ },
+ {
+  "id": "294.0",
+  "kind": "para",
+  "en": "2518"
+ },
+ {
+  "id": "295.0",
+  "kind": "para",
+  "en": "3035"
+ },
+ {
+  "id": "296.0",
+  "kind": "para",
+  "en": "3316"
+ },
+ {
+  "id": "297.0",
+  "kind": "para",
+  "en": "3710 Min time(s)"
+ },
+ {
+  "id": "298.0",
+  "kind": "para",
+  "en": "283"
+ },
+ {
+  "id": "299.0",
+  "kind": "para",
+  "en": "703"
+ },
+ {
+  "id": "300.0",
+  "kind": "para",
+  "en": "1148"
+ },
+ {
+  "id": "301.0",
+  "kind": "para",
+  "en": "1429"
+ },
+ {
+  "id": "302.0",
+  "kind": "para",
+  "en": "1815"
+ },
+ {
+  "id": "303.0",
+  "kind": "para",
+  "en": "2152"
+ },
+ {
+  "id": "304.0",
+  "kind": "para",
+  "en": "2477"
+ },
+ {
+  "id": "305.0",
+  "kind": "para",
+  "en": "2974"
+ },
+ {
+  "id": "306.0",
+  "kind": "para",
+  "en": "3274"
+ },
+ {
+  "id": "307.0",
+  "kind": "para",
+  "en": "3665"
+ },
+ {
+  "id": "308",
+  "kind": "heading",
+  "en": "7 Model Evaluation and Further Discussion"
+ },
+ {
+  "id": "309",
+  "kind": "heading",
+  "en": "7.1 Strengths"
+ },
+ {
+  "id": "310.0",
+  "kind": "para",
+  "en": "Our model offers the following strengths:"
+ },
+ {
+  "id": "311.0",
+  "kind": "para",
+  "en": "We performed a more in-depth analysis of the three-tank model and proposed aerobic and anaerobic energy fatigue models."
+ },
+ {
+  "id": "311.1",
+  "kind": "para",
+  "en": "Drawing on the research of others, we divided rider’s power output into aerobic and anaerobic components."
+ },
+ {
+  "id": "311.2",
+  "kind": "para",
+  "en": "Finally, we found that our model fits the data fairly well."
+ },
+ {
+  "id": "311.3",
+  "kind": "para",
+  "en": "The validity of the model has been verified."
+ },
+ {
+  "id": "312.0",
+  "kind": "para",
+  "en": "Considering a variety of factors, a rider track model is proposed."
+ },
+ {
+  "id": "312.1",
+  "kind": "para",
+  "en": "In this process, we considered various factors such as the rider's energy consumption limit and stress situation, the slope and camber of the track, wind direction and speed, etc., which is more comprehensive."
+ },
+ {
+  "id": "312.2",
+  "kind": "para",
+  "en": "The model is highly generalizable."
+ },
+ {
+  "id": "312.3",
+  "kind": "para",
+  "en": "When building model, we started with an individual time trial. Then we revised the model based on the characteristics of the team competition, and proposed the Draft strategy to generalize the model to be suitable for team time trials."
+ },
+ {
+  "id": "313",
+  "kind": "heading",
+  "en": "7.2 Weaknesses"
+ },
+ {
+  "id": "314.0",
+  "kind": "para",
+  "en": "Our model has the following limitations and related improvements:"
+ },
+ {
+  "id": "315.0",
+  "kind": "para",
+  "en": "In the Anaerobic Energy Fatigue Model, we treat the recovery factor as a constant."
+ },
+ {
+  "id": "315.1",
+  "kind": "para",
+  "en": "Doing so simplifies the model but reduces the authenticity of the model to some extent."
+ },
+ {
+  "id": "315.2",
+  "kind": "para",
+  "en": "In fact, due to loss of energy, it is more appropriate to describe the recovery factor as a variable."
+ },
+ {
+  "id": "316.0",
+  "kind": "para",
+  "en": "In the construction of the Optimal Individual Power Distribution Model, the consideration of the Abstract Course Model is relatively simple."
+ },
+ {
+  "id": "316.1",
+  "kind": "para",
+  "en": "We only care about whether there is a turn at a certain position on the race schedule, and do not consider the size of the corner"
+ },
+ {
+  "id": "317.0",
+  "kind": "para",
+  "en": "radius. Although the model is simplified, the authenticity of the model is weakened."
+ },
+ {
+  "id": "317.1",
+  "kind": "para",
+  "en": "In fact, this factor may affect a rider's low-power ride time, which in turn affects the results."
+ },
+ {
+  "id": "318",
+  "kind": "heading",
+  "en": "7.3 Model Extension"
+ },
+ {
+  "id": "319.0",
+  "kind": "para",
+  "en": "In this section, we mainly discuss the generalization of the model."
+ },
+ {
+  "id": "319.1",
+  "kind": "para",
+  "en": "The context for the model we built earlier was the individual time trial. As for the team time trial, Aristotle once said: \"A team is more than the sum of its parts.\" So, we need to further modify the model."
+ },
+ {
+  "id": "320.0",
+  "kind": "para",
+  "en": "According to the rules of the team time trial given by UCI [11], different teams should keep a certain distance, the team members should not push each other, and the following auxiliary vehicles should not be used."
+ },
+ {
+  "id": "320.1",
+  "kind": "para",
+  "en": "Therefore, the influence between teams and other factors that affect resistance, motivation and energy consumption are ignored."
+ },
+ {
+  "id": "320.2",
+  "kind": "para",
+  "en": "The important thing is that in team time trial, the front players can reduce drag for the rear players by arranging in front and back."
+ },
+ {
+  "id": "320.3",
+  "kind": "para",
+  "en": "Therefore, the main difference between team time trial and individual time trial is that we need to consider the different resistance between different riders."
+ },
+ {
+  "id": "321.0",
+  "kind": "para",
+  "en": "The resistance model needs to be revised first as follows:"
+ },
+ {
+  "id": "322.0",
+  "kind": "para",
+  "en": "(15)"
+ },
+ {
+  "id": "323.0",
+  "kind": "para",
+  "en": "where,is a constant, related to the total number of riders and the position of the rider in"
+ },
+ {
+  "id": "324.0",
+  "kind": "para",
+  "en": "the cohort."
+ },
+ {
+  "id": "325.0",
+  "kind": "para",
+  "en": "When the total number of team members is 6, the values in the expression of resistance received by riders at various positions are shown in Table 6 below:"
+ },
+ {
+  "id": "326",
+  "kind": "caption",
+  "en": "Table 6: Resistance coefficient of players at different positions"
+ },
+ {
+  "id": "327.0",
+  "kind": "para",
+  "en": "Sequence"
+ },
+ {
+  "id": "328.0",
+  "kind": "para",
+  "en": "First"
+ },
+ {
+  "id": "329.0",
+  "kind": "para",
+  "en": "Second"
+ },
+ {
+  "id": "330.0",
+  "kind": "para",
+  "en": "Third"
+ },
+ {
+  "id": "331.0",
+  "kind": "para",
+  "en": "Fourth"
+ },
+ {
+  "id": "332.0",
+  "kind": "para",
+  "en": "Fifth"
+ },
+ {
+  "id": "333.0",
+  "kind": "para",
+  "en": "Sixth"
+ },
+ {
+  "id": "334.0",
+  "kind": "para",
+  "en": "(%)"
+ },
+ {
+  "id": "335.0",
+  "kind": "para",
+  "en": "95"
+ },
+ {
+  "id": "336.0",
+  "kind": "para",
+  "en": "68"
+ },
+ {
+  "id": "337.0",
+  "kind": "para",
+  "en": "67"
+ },
+ {
+  "id": "338.0",
+  "kind": "para",
+  "en": "67"
+ },
+ {
+  "id": "339.0",
+  "kind": "para",
+  "en": "67"
+ },
+ {
+  "id": "340.0",
+  "kind": "para",
+  "en": "69"
+ },
+ {
+  "id": "341.0",
+  "kind": "para",
+  "en": "Furthermore, the decisions we need to consider are not limited to when to speed up and when to slow down."
+ },
+ {
+  "id": "341.1",
+  "kind": "para",
+  "en": "To make good use of the drag reduction brought by the team, the team as a whole needs to remain relatively static and move forward at a certain team speed."
+ },
+ {
+  "id": "341.2",
+  "kind": "para",
+  "en": "Because the players at the back of the team face less resistance, the movement is more labor-saving, and the players at the front are more laborious."
+ },
+ {
+  "id": "342.0",
+  "kind": "para",
+  "en": "In team time trial, teams tend to use \"Draft\" to achieve the balance of team workload."
+ },
+ {
+  "id": "342.1",
+  "kind": "para",
+  "en": "The process of \"Draft\" is: the first player of the team moves laterally out of the queue, making the second player the leader of the team, then the first player of the team slows down, moves to the tail of the team."
+ },
+ {
+  "id": "342.2",
+  "kind": "para",
+  "en": "A schematic diagram of the process (taking four players as an example) is shown in Figure 14:"
+ },
+ {
+  "id": "344",
+  "kind": "caption",
+  "en": "Figure 14: The strategy of Draft"
+ },
+ {
+  "id": "345.0",
+  "kind": "para",
+  "en": "So when and where to \"draft\" is a key decision in team time trials."
+ },
+ {
+  "id": "345.1",
+  "kind": "para",
+  "en": "So, we define a discretevalued function to represent the replacement case:"
+ },
+ {
+  "id": "346.0",
+  "kind": "para",
+  "en": "(16)"
+ },
+ {
+  "id": "347.0",
+  "kind": "para",
+  "en": "where,is the position that needs to be drafted in the schedule."
+ },
+ {
+  "id": "348.0",
+  "kind": "para",
+  "en": "This function provides a new decision variable, and we can find the optimal solution through more complex dynamic programming."
+ },
+ {
+  "id": "349.0",
+  "kind": "para",
+  "en": "In addition, since the competition is based on the performance of the fourth team member, we can combine the different abilities of different team members and discard the weak players at certain points during the march to obtain better results."
+ },
+ {
+  "id": "350.0",
+  "kind": "para",
+  "en": "There are more strategies in team time trials."
+ },
+ {
+  "id": "350.1",
+  "kind": "para",
+  "en": "In order to highlight the goal, we only select a representative strategy to simplify the decision."
+ },
+ {
+  "id": "350.2",
+  "kind": "para",
+  "en": "We can also consider that the rider who was at the front of the team does not move to the tail, but exchanges positions with the second rider or returns to other positions other than the tail of the team."
+ },
+ {
+  "id": "350.3",
+  "kind": "para",
+  "en": "This can also be modified according to the different ability levels of different riders."
+ },
+ {
+  "id": "351.0",
+  "kind": "para",
+  "en": "In the team time trials, based on our previous model, we can consider more constraints and decision variables, and propose an improved model to solve with more complex dynamic programming."
+ },
+ {
+  "id": "351.1",
+  "kind": "para",
+  "en": "Due to space limitations, the solution process of the model is not described here."
+ },
+ {
+  "id": "352",
+  "kind": "heading",
+  "en": "8 Conclusion"
+ },
+ {
+  "id": "353.0",
+  "kind": "para",
+  "en": "In this paper, we establish a model suitable for various types of riders to analyze the relationship between the power that the rider should apply and the position of the race, and give the optimal power distribution strategy."
+ },
+ {
+  "id": "354.0",
+  "kind": "para",
+  "en": "First, we established aerobic and anaerobic energy fatigue models."
+ },
+ {
+  "id": "354.1",
+  "kind": "para",
+  "en": "On this basis, we quantitatively give power curves for different rider types and genders, and use model parameters to define different types and genders of cyclists."
+ },
+ {
+  "id": "355.0",
+  "kind": "para",
+  "en": "Secondly, we consider the force of the rider, the slope of the track and the cornering situation, and combine the power curve of the player to establish Optimal Individual Power Distribution Model."
+ },
+ {
+  "id": "355.1",
+  "kind": "para",
+  "en": "We used dynamic programming to obtain the optimal power distribution diagram for different cyclists."
+ },
+ {
+  "id": "355.2",
+  "kind": "para",
+  "en": "In addition, we also give the characteristics of different players' adaptability to different track environments, such as slopes and corners, and calculated their shortest time."
+ },
+ {
+  "id": "356.0",
+  "kind": "para",
+  "en": "Thirdly, we take into account wind direction and speed to make corrections to the model, and perform a sensitivity analysis for weather conditions."
+ },
+ {
+  "id": "356.1",
+  "kind": "para",
+  "en": "We found that a 1m/s change in wind speed resulted in a change of no more than 10% in the results, and a 45-degree change in wind direction caused a change in the results by no more than 16%."
+ },
+ {
+  "id": "356.2",
+  "kind": "para",
+  "en": "So, we think our model is more sensitive to wind direction and wind speed."
+ },
+ {
+  "id": "356.3",
+  "kind": "para",
+  "en": "We also investigated the sensitivity of the model to deviation of the power distribution, only to find that our model is not sensitive to the deviation."
+ },
+ {
+  "id": "356.4",
+  "kind": "para",
+  "en": "Then we gave the acceptable range of deviation."
+ },
+ {
+  "id": "357.0",
+  "kind": "para",
+  "en": "Finally, we consider the effect of wind resistance on the team and generalize the individual time trial model to the team time trial model."
+ },
+ {
+  "id": "357.1",
+  "kind": "para",
+  "en": "We give considerations about draft and drop strategies."
+ },
+ {
+  "id": "357.2",
+  "kind": "para",
+  "en": "And at the end of the paper, we provide a race guide for rider and the Directeur."
+ }
+]

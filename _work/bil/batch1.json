@@ -1,0 +1,237 @@
+[
+ {
+  "id": "0",
+  "kind": "heading",
+  "en": "Optimal Power Distribution of a Cyclist"
+ },
+ {
+  "id": "1.0",
+  "kind": "para",
+  "en": "Bicycle road races have always been popular and competitive."
+ },
+ {
+  "id": "1.1",
+  "kind": "para",
+  "en": "For the cyclists, it is of vital importance to distribute the power properly on the course."
+ },
+ {
+  "id": "1.2",
+  "kind": "para",
+  "en": "In order to help riders distribute their limited energy reasonably, we established a model to simulate the rider's power output to find the optimal distribution of their power."
+ },
+ {
+  "id": "2.0",
+  "kind": "para",
+  "en": "Firstly, we established a Fatigue Physiological Model to characterize riders' power curve, which describes a rider's average power output as a function of sustained output time."
+ },
+ {
+  "id": "2.1",
+  "kind": "para",
+  "en": "From the perspective of aerobic respiration and anaerobic respiration, we fully consider the limitation of energy and the process of energy recovery, and establish Aerobic and Anaerobic Energy Fatigue Model."
+ },
+ {
+  "id": "2.2",
+  "kind": "para",
+  "en": "We fit the model to the obtained data using the ordinary least squares to verify the validity of the model, considering different types and genders of the riders."
+ },
+ {
+  "id": "2.3",
+  "kind": "para",
+  "en": "The power curves of different riders are provided, and the relationship between their features and model parameters was also explored."
+ },
+ {
+  "id": "2.4",
+  "kind": "para",
+  "en": "The specific results are shown in Figure 6 and its analysis."
+ },
+ {
+  "id": "3.0",
+  "kind": "para",
+  "en": "Secondly, we establish an Optimal Individual Power Distribution Model to provide an optimal power allocation strategy, which describes the relationship between the power applied by the rider and the position on the track."
+ },
+ {
+  "id": "3.1",
+  "kind": "para",
+  "en": "A Single Objective Programming model is established, using the race time as the optimization objective, the rider state and track conditions as constraints, and the power applied by the rider as the decision variable."
+ },
+ {
+  "id": "3.2",
+  "kind": "para",
+  "en": "A resistance model is built to describe resistance and a track undulation and turn model are used to describe the track conditions."
+ },
+ {
+  "id": "3.3",
+  "kind": "para",
+  "en": "Based on above model and rider's power curve, we use dynamic programming to obtain the optimal power distribution strategy and corresponding shortest time."
+ },
+ {
+  "id": "3.4",
+  "kind": "para",
+  "en": "The effect of track conditions and rider status on rider power distribution was also investigated."
+ },
+ {
+  "id": "3.5",
+  "kind": "para",
+  "en": "Distribution diagrams of power output and discussions will be shown in Section 5.4."
+ },
+ {
+  "id": "4.0",
+  "kind": "para",
+  "en": "Thirdly, we performed a sensitivity analysis for weather conditions, including wind direction and wind speed."
+ },
+ {
+  "id": "4.1",
+  "kind": "para",
+  "en": "The previous resistance model was improved to wind resistance model."
+ },
+ {
+  "id": "4.2",
+  "kind": "para",
+  "en": "In 24 environments with eight directions of wind and three levels of wind speed, the shortest game time was calculated, as shown in Figure 13."
+ },
+ {
+  "id": "4.3",
+  "kind": "para",
+  "en": "Completion time has changed greatly, reaching a maximum of 16%, so the results are considered sensitive to weather conditions."
+ },
+ {
+  "id": "5.0",
+  "kind": "para",
+  "en": "Fourthly, we performed a sensitivity analysis of rider deviations from the power distribution strategy."
+ },
+ {
+  "id": "5.1",
+  "kind": "para",
+  "en": "We use MATLAB to randomly make change on optimal power distribution strategy, using the mean absolute value of the deviation between the rider's actual power output and the optimal power at each position as a measure of the degree of deviation."
+ },
+ {
+  "id": "5.2",
+  "kind": "para",
+  "en": "The relationship between completion time and degree of deviation is shown in Table 4."
+ },
+ {
+  "id": "5.3",
+  "kind": "para",
+  "en": "Completion time did not increase by 10% until the average deviation change reached 5%."
+ },
+ {
+  "id": "5.4",
+  "kind": "para",
+  "en": "Therefore, we believe that the model results are insensitive to rider deviation from target power."
+ },
+ {
+  "id": "5.5",
+  "kind": "para",
+  "en": "For a near-optimal time, the time reference ranges for each position of the track are shown in Table 5."
+ },
+ {
+  "id": "6.0",
+  "kind": "para",
+  "en": "Finally, we consider the features of team time trial and generalize the individual game model to the Team Strategy Decision Model."
+ },
+ {
+  "id": "6.1",
+  "kind": "para",
+  "en": "We consider the effect of blocking wind among team members, modify the wind resistance model, and propose the draft strategy and drop strategy."
+ },
+ {
+  "id": "6.2",
+  "kind": "para",
+  "en": "In addition, we also provide a guidance for individual time trial."
+ },
+ {
+  "id": "7.0",
+  "kind": "para",
+  "en": "Keywords: Individual Time Trial, Power Curve, Optimal Power Distribution, Dynamic Programming"
+ },
+ {
+  "id": "8",
+  "kind": "heading",
+  "en": "1 Introduction"
+ },
+ {
+  "id": "9",
+  "kind": "heading",
+  "en": "1.1 Problem Background"
+ },
+ {
+  "id": "10.0",
+  "kind": "para",
+  "en": "There are many types of road cycling competitions, in which the individual time trial requires the cyclist to ride a certain distance alone, with the completion time as the result, and the one with the shortest time wins."
+ },
+ {
+  "id": "11.0",
+  "kind": "para",
+  "en": "The curvilinear relationship between power output and its duration can serve as an essential feature of high-intensity exercise, a concept known as a power curve."
+ },
+ {
+  "id": "11.1",
+  "kind": "para",
+  "en": "Essentially, this concept describes the tolerable duration of high-intensity exercise."
+ },
+ {
+  "id": "11.2",
+  "kind": "para",
+  "en": "It represents the maximum power an athlete can deliver over a certain period of time and has enormous potential applications in optimizing athletic training programs and performance and improving the quality of life of individuals with chronic diseases [1]."
+ },
+ {
+  "id": "12.0",
+  "kind": "para",
+  "en": "Different types of riders have different shapes of power curves."
+ },
+ {
+  "id": "12.1",
+  "kind": "para",
+  "en": "In a given time-trial run, they need to manage their power distribution so that to finish the race in the least amount of time."
+ },
+ {
+  "id": "12.2",
+  "kind": "para",
+  "en": "Figure 1 shows a cyclist in competition."
+ },
+ {
+  "id": "14",
+  "kind": "caption",
+  "en": "Figure 1: A cyclist in competition [2]"
+ },
+ {
+  "id": "15",
+  "kind": "heading",
+  "en": "1.2 Restatement of the Problem"
+ },
+ {
+  "id": "16.0",
+  "kind": "para",
+  "en": "Considering the background information and restricted conditions identified in the problem statement, we need to develop a model to determine the optimal power distribution of one rider for one course and solve the following problems:"
+ },
+ {
+  "id": "17.0",
+  "kind": "para",
+  "en": "• Problem 1: Give the definition of power profiles for both types of riders, taking into account riders of different genders."
+ },
+ {
+  "id": "17.1",
+  "kind": "para",
+  "en": "One of the riders is a time trial specialist; the other is required to be of another type."
+ },
+ {
+  "id": "18.0",
+  "kind": "para",
+  "en": "• Problem 2: Apply the above model to three specific time trial courses."
+ },
+ {
+  "id": "19.0",
+  "kind": "para",
+  "en": "• Problem 3: Analyze the influence of weather conditions on model results and sensitivity of the model to this influence."
+ },
+ {
+  "id": "20.0",
+  "kind": "para",
+  "en": "• Problem 4: Analyze the sensitivity of the model to deviation from the result power distribution."
+ },
+ {
+  "id": "21.0",
+  "kind": "para",
+  "en": "• Problem 5: Discuss how to develop the model to provide the best power usage scenario for a six-person team competing in a team time trial."
+ }
+]

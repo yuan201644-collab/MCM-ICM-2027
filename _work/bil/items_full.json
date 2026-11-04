@@ -1,0 +1,5821 @@
+[
+ {
+  "kind": "heading",
+  "page": 1,
+  "size": 16.1,
+  "y0": 99.93273162841797,
+  "y1": 117.73329162597656,
+  "text": "Optimal Power Distribution of a Cyclist",
+  "sents": [
+   "Optimal Power Distribution of a Cyclist"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "y0": 124.71797180175781,
+  "y1": 179.2819366455078,
+  "text": "Bicycle road races have always been popular and competitive. For the cyclists, it is of vital importance to distribute the power properly on the course. In order to help riders distribute their limited energy reasonably, we established a model to simulate the rider's power output to find the optimal distribution of their power.",
+  "sents": [
+   "Bicycle road races have always been popular and competitive.",
+   "For the cyclists, it is of vital importance to distribute the power properly on the course.",
+   "In order to help riders distribute their limited energy reasonably, we established a model to simulate the rider's power output to find the optimal distribution of their power."
+  ],
+  "nwords": 53,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "y0": 179.91798400878906,
+  "y1": 289.7319641113281,
+  "text": "Firstly, we established a Fatigue Physiological Model to characterize riders' power curve, which describes a rider's average power output as a function of sustained output time. From the perspective of aerobic respiration and anaerobic respiration, we fully consider the limitation of energy and the process of energy recovery, and establish Aerobic and Anaerobic Energy Fatigue Model. We fit the model to the obtained data using the ordinary least squares to verify the validity of the model, considering different types and genders of the riders. The power curves of different riders are provided, and the relationship between their features and model parameters was also explored. The specific results are shown in Figure 6 and its analysis.",
+  "sents": [
+   "Firstly, we established a Fatigue Physiological Model to characterize riders' power curve, which describes a rider's average power output as a function of sustained output time.",
+   "From the perspective of aerobic respiration and anaerobic respiration, we fully consider the limitation of energy and the process of energy recovery, and establish Aerobic and Anaerobic Energy Fatigue Model.",
+   "We fit the model to the obtained data using the ordinary least squares to verify the validity of the model, considering different types and genders of the riders.",
+   "The power curves of different riders are provided, and the relationship between their features and model parameters was also explored.",
+   "The specific results are shown in Figure 6 and its analysis."
+  ],
+  "nwords": 115,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "y0": 290.3680114746094,
+  "y1": 427.7519836425781,
+  "text": "Secondly, we establish an Optimal Individual Power Distribution Model to provide an optimal power allocation strategy, which describes the relationship between the power applied by the rider and the position on the track. A Single Objective Programming model is established, using the race time as the optimization objective, the rider state and track conditions as constraints, and the power applied by the rider as the decision variable. A resistance model is built to describe resistance and a track undulation and turn model are used to describe the track conditions. Based on above model and rider's power curve, we use dynamic programming to obtain the optimal power distribution strategy and corresponding shortest time. The effect of track conditions and rider status on rider power distribution was also investigated. Distribution diagrams of power output and discussions will be shown in Section 5.4.",
+  "sents": [
+   "Secondly, we establish an Optimal Individual Power Distribution Model to provide an optimal power allocation strategy, which describes the relationship between the power applied by the rider and the position on the track.",
+   "A Single Objective Programming model is established, using the race time as the optimization objective, the rider state and track conditions as constraints, and the power applied by the rider as the decision variable.",
+   "A resistance model is built to describe resistance and a track undulation and turn model are used to describe the track conditions.",
+   "Based on above model and rider's power curve, we use dynamic programming to obtain the optimal power distribution strategy and corresponding shortest time.",
+   "The effect of track conditions and rider status on rider power distribution was also investigated.",
+   "Distribution diagrams of power output and discussions will be shown in Section 5.4."
+  ],
+  "nwords": 140,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "y0": 428.38800048828125,
+  "y1": 496.8919982910156,
+  "text": "Thirdly, we performed a sensitivity analysis for weather conditions, including wind direction and wind speed. The previous resistance model was improved to wind resistance model. In 24 environments with eight directions of wind and three levels of wind speed, the shortest game time was calculated, as shown in Figure 13. Completion time has changed greatly, reaching a maximum of 16%, so the results are considered sensitive to weather conditions.",
+  "sents": [
+   "Thirdly, we performed a sensitivity analysis for weather conditions, including wind direction and wind speed.",
+   "The previous resistance model was improved to wind resistance model.",
+   "In 24 environments with eight directions of wind and three levels of wind speed, the shortest game time was calculated, as shown in Figure 13.",
+   "Completion time has changed greatly, reaching a maximum of 16%, so the results are considered sensitive to weather conditions."
+  ],
+  "nwords": 69,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "y0": 497.2879943847656,
+  "y1": 607.3219604492188,
+  "text": "Fourthly, we performed a sensitivity analysis of rider deviations from the power distribution strategy. We use MATLAB to randomly make change on optimal power distribution strategy, using the mean absolute value of the deviation between the rider's actual power output and the optimal power at each position as a measure of the degree of deviation. The relationship between completion time and degree of deviation is shown in Table 4. Completion time did not increase by 10% until the average deviation change reached 5%. Therefore, we believe that the model results are insensitive to rider deviation from target power. For a near-optimal time, the time reference ranges for each position of the track are shown in Table 5.",
+  "sents": [
+   "Fourthly, we performed a sensitivity analysis of rider deviations from the power distribution strategy.",
+   "We use MATLAB to randomly make change on optimal power distribution strategy, using the mean absolute value of the deviation between the rider's actual power output and the optimal power at each position as a measure of the degree of deviation.",
+   "The relationship between completion time and degree of deviation is shown in Table 4.",
+   "Completion time did not increase by 10% until the average deviation change reached 5%.",
+   "Therefore, we believe that the model results are insensitive to rider deviation from target power.",
+   "For a near-optimal time, the time reference ranges for each position of the track are shown in Table 5."
+  ],
+  "nwords": 117,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "y0": 607.7379760742188,
+  "y1": 662.5419311523438,
+  "text": "Finally, we consider the features of team time trial and generalize the individual game model to the Team Strategy Decision Model. We consider the effect of blocking wind among team members, modify the wind resistance model, and propose the draft strategy and drop strategy. In addition, we also provide a guidance for individual time trial.",
+  "sents": [
+   "Finally, we consider the features of team time trial and generalize the individual game model to the Team Strategy Decision Model.",
+   "We consider the effect of blocking wind among team members, modify the wind resistance model, and propose the draft strategy and drop strategy.",
+   "In addition, we also provide a guidance for individual time trial."
+  ],
+  "nwords": 55,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "y0": 697.5279541015625,
+  "y1": 726.8919677734375,
+  "text": "Keywords: Individual Time Trial, Power Curve, Optimal Power Distribution, Dynamic Programming",
+  "sents": [
+   "Keywords: Individual Time Trial, Power Curve, Optimal Power Distribution, Dynamic Programming"
+  ],
+  "nwords": 11,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 3,
+  "size": 16.1,
+  "y0": 79.78756713867188,
+  "y1": 97.81324768066406,
+  "text": "1 Introduction",
+  "sents": [
+   "1 Introduction"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 3,
+  "size": 13.9,
+  "y0": 111.29235076904297,
+  "y1": 126.89667510986328,
+  "text": "1.1 Problem Background",
+  "sents": [
+   "1.1 Problem Background"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 131.91798400878906,
+  "y1": 177.8419952392578,
+  "text": "There are many types of road cycling competitions, in which the individual time trial requires the cyclist to ride a certain distance alone, with the completion time as the result, and the one with the shortest time wins.",
+  "sents": [
+   "There are many types of road cycling competitions, in which the individual time trial requires the cyclist to ride a certain distance alone, with the completion time as the result, and the one with the shortest time wins."
+  ],
+  "nwords": 38,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 180.8780059814453,
+  "y1": 275.7819519042969,
+  "text": "The curvilinear relationship between power output and its duration can serve as an essential feature of high-intensity exercise, a concept known as a power curve. Essentially, this concept describes the tolerable duration of high-intensity exercise. It represents the maximum power an athlete can deliver over a certain period of time and has enormous potential applications in optimizing athletic training programs and performance and improving the quality of life of individuals with chronic diseases [1].",
+  "sents": [
+   "The curvilinear relationship between power output and its duration can serve as an essential feature of high-intensity exercise, a concept known as a power curve.",
+   "Essentially, this concept describes the tolerable duration of high-intensity exercise.",
+   "It represents the maximum power an athlete can deliver over a certain period of time and has enormous potential applications in optimizing athletic training programs and performance and improving the quality of life of individuals with chronic diseases [1]."
+  ],
+  "nwords": 74,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 278.8479919433594,
+  "y1": 324.5319519042969,
+  "text": "Different types of riders have different shapes of power curves. In a given time-trial run, they need to manage their power distribution so that to finish the race in the least amount of time. Figure 1 shows a cyclist in competition.",
+  "sents": [
+   "Different types of riders have different shapes of power curves.",
+   "In a given time-trial run, they need to manage their power distribution so that to finish the race in the least amount of time.",
+   "Figure 1 shows a cyclist in competition."
+  ],
+  "nwords": 41,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 3,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_03_1.png",
+  "w": 214.7,
+  "h": 142.9,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 3,
+  "size": 12.0,
+  "y0": 481.7232360839844,
+  "y1": 495.9320068359375,
+  "text": "Figure 1: A cyclist in competition [2]",
+  "sents": [
+   "Figure 1: A cyclist in competition [2]"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 3,
+  "size": 13.9,
+  "y0": 505.94244384765625,
+  "y1": 521.5467529296875,
+  "text": "1.2 Restatement of the Problem",
+  "sents": [
+   "1.2 Restatement of the Problem"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 531.39794921875,
+  "y1": 577.3219604492188,
+  "text": "Considering the background information and restricted conditions identified in the problem statement, we need to develop a model to determine the optimal power distribution of one rider for one course and solve the following problems:",
+  "sents": [
+   "Considering the background information and restricted conditions identified in the problem statement, we need to develop a model to determine the optimal power distribution of one rider for one course and solve the following problems:"
+  ],
+  "nwords": 35,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 580.1900024414062,
+  "y1": 626.3019409179688,
+  "text": "• Problem 1: Give the definition of power profiles for both types of riders, taking into account riders of different genders. One of the riders is a time trial specialist; the other is required to be of another type.",
+  "sents": [
+   "• Problem 1: Give the definition of power profiles for both types of riders, taking into account riders of different genders.",
+   "One of the riders is a time trial specialist; the other is required to be of another type."
+  ],
+  "nwords": 39,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 629.1699829101562,
+  "y1": 642.6219482421875,
+  "text": "• Problem 2: Apply the above model to three specific time trial courses.",
+  "sents": [
+   "• Problem 2: Apply the above model to three specific time trial courses."
+  ],
+  "nwords": 13,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 645.489990234375,
+  "y1": 675.261962890625,
+  "text": "• Problem 3: Analyze the influence of weather conditions on model results and sensitivity of the model to this influence.",
+  "sents": [
+   "• Problem 3: Analyze the influence of weather conditions on model results and sensitivity of the model to this influence."
+  ],
+  "nwords": 20,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 677.8900146484375,
+  "y1": 707.6919555664062,
+  "text": "• Problem 4: Analyze the sensitivity of the model to deviation from the result power distribution.",
+  "sents": [
+   "• Problem 4: Analyze the sensitivity of the model to deviation from the result power distribution."
+  ],
+  "nwords": 16,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "y0": 710.5599975585938,
+  "y1": 740.3319702148438,
+  "text": "• Problem 5: Discuss how to develop the model to provide the best power usage scenario for a six-person team competing in a team time trial.",
+  "sents": [
+   "• Problem 5: Discuss how to develop the model to provide the best power usage scenario for a six-person team competing in a team time trial."
+  ],
+  "nwords": 26,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 4,
+  "size": 13.9,
+  "y0": 72.62236785888672,
+  "y1": 88.22669219970703,
+  "text": "1.3 Literature Review",
+  "sents": [
+   "1.3 Literature Review"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 93.24794006347656,
+  "y1": 220.8219757080078,
+  "text": "The problem that this paper aims at is the power distribution of cyclist during cycling, which has been discussed in previous studies. Andrew M. Jones et al. introduced the power curve into intermittent high-intensity exercise, and used the existing two-parameter model (hyperbolic relationship between power and duration) to make better predictions for athlete fatigue monitoring [3]. Morton extended the two-parameter model to a three-parameter model, and established a new power curve model [4]. Dr. Andrew Coggan et al. used a three-parameter model to analyze the advantages and disadvantages of different types of riders through statistical data, and obtained the corresponding power curve [5].",
+  "sents": [
+   "The problem that this paper aims at is the power distribution of cyclist during cycling, which has been discussed in previous studies.",
+   "Andrew M. Jones et al. introduced the power curve into intermittent high-intensity exercise, and used the existing two-parameter model (hyperbolic relationship between power and duration) to make better predictions for athlete fatigue monitoring [3].",
+   "Morton extended the two-parameter model to a three-parameter model, and established a new power curve model [4].",
+   "Dr. Andrew Coggan et al. used a three-parameter model to analyze the advantages and disadvantages of different types of riders through statistical data, and obtained the corresponding power curve [5]."
+  ],
+  "nwords": 103,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 226.9779815673828,
+  "y1": 321.8919982910156,
+  "text": "There is also a lot of research on how to properly distribute power for the rider to win. The critical power model of Monod and Scherrer is a widely recognized model for optimizing pace strategy and analyzing the endurance capacity of cyclists. It consists of two parts: infinite aerobic and limited anaerobic [6]. A more complex model is the three-component Morton-Margaria model, or the 3-Tank model [7], which is another feasible bioenergy model that provides a direction for research on power distribution in bicycle racing.",
+  "sents": [
+   "There is also a lot of research on how to properly distribute power for the rider to win.",
+   "The critical power model of Monod and Scherrer is a widely recognized model for optimizing pace strategy and analyzing the endurance capacity of cyclists.",
+   "It consists of two parts: infinite aerobic and limited anaerobic [6].",
+   "A more complex model is the three-component Morton-Margaria model, or the 3-Tank model [7], which is another feasible bioenergy model that provides a direction for research on power distribution in bicycle racing."
+  ],
+  "nwords": 85,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 4,
+  "size": 13.9,
+  "y0": 327.1023864746094,
+  "y1": 342.7066955566406,
+  "text": "1.4 Our Work",
+  "sents": [
+   "1.4 Our Work"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 347.7279968261719,
+  "y1": 393.4320068359375,
+  "text": "We need a model that works for any type of rider to characterize the relationship between the rider's position on the track and the force applied. Our work mainly includes the following parts:",
+  "sents": [
+   "We need a model that works for any type of rider to characterize the relationship between the rider's position on the track and the force applied.",
+   "Our work mainly includes the following parts:"
+  ],
+  "nwords": 33,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 399.8280029296875,
+  "y1": 478.1719970703125,
+  "text": "Firstly, we refer to previous literature and propose our Cyclist’s Physiological Model of Fatigue based on the three-Tank model, including aerobic energy fatigue model and anaerobic energy fatigue model. We used this model to explain the rider's power curve. After that, we performed least squares fitting on the curves of different riders, and used the obtained parameters to distinguish riders into different categories.",
+  "sents": [
+   "Firstly, we refer to previous literature and propose our Cyclist’s Physiological Model of Fatigue based on the three-Tank model, including aerobic energy fatigue model and anaerobic energy fatigue model.",
+   "We used this model to explain the rider's power curve.",
+   "After that, we performed least squares fitting on the curves of different riders, and used the obtained parameters to distinguish riders into different categories."
+  ],
+  "nwords": 63,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 484.5679931640625,
+  "y1": 595.5619506835938,
+  "text": "Next, we established a resistance model dominated by aerodynamic resistance and rolling friction resistance, and revised the resistance model when considering the influence of weather conditions. In addition, we abstract the track as a function of ground undulation as a function of race schedule and curves as a function of race schedule. This is our Optimal Individual Power Distribution model. After that, we used the specific track data and the proposed fatigue physiological model to solve it by dynamic programming, and obtained the best power-race curve and the best finish time of the player on the track.",
+  "sents": [
+   "Next, we established a resistance model dominated by aerodynamic resistance and rolling friction resistance, and revised the resistance model when considering the influence of weather conditions.",
+   "In addition, we abstract the track as a function of ground undulation as a function of race schedule and curves as a function of race schedule.",
+   "This is our Optimal Individual Power Distribution model.",
+   "After that, we used the specific track data and the proposed fatigue physiological model to solve it by dynamic programming, and obtained the best power-race curve and the best finish time of the player on the track."
+  ],
+  "nwords": 97,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 601.9579467773438,
+  "y1": 631.3419799804688,
+  "text": "Then, we separately conduct sensitivity analysis to wind speed and direction and power deviation, and analyze the strengths and weaknesses of the model.",
+  "sents": [
+   "Then, we separately conduct sensitivity analysis to wind speed and direction and power deviation, and analyze the strengths and weaknesses of the model."
+  ],
+  "nwords": 23,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 637.9779663085938,
+  "y1": 716.0919799804688,
+  "text": "Finally, we generalized the model to team time trials. To account for the resistance reduction effect between teams, we reworked the resistance model for individuals in team matches. After that, we considered the possible strategies in the team game—Draft and Drop, and took the positions of these strategies as new decision variables, and theoretically the optimal solution in the team game can be obtained.",
+  "sents": [
+   "Finally, we generalized the model to team time trials.",
+   "To account for the resistance reduction effect between teams, we reworked the resistance model for individuals in team matches.",
+   "After that, we considered the possible strategies in the team game—Draft and Drop, and took the positions of these strategies as new decision variables, and theoretically the optimal solution in the team game can be obtained."
+  ],
+  "nwords": 64,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "y0": 722.7279663085938,
+  "y1": 752.0879516601562,
+  "text": "For better understanding of the overall model, a flowchart is provided to describe our process.",
+  "sents": [
+   "For better understanding of the overall model, a flowchart is provided to describe our process."
+  ],
+  "nwords": 15,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 5,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_05_2.png",
+  "w": 411.7,
+  "h": 277.8,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 5,
+  "size": 12.0,
+  "y0": 367.4280090332031,
+  "y1": 380.7120056152344,
+  "text": "Figure 2：Overview of our work",
+  "sents": [
+   "Figure 2：Overview of our work"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 5,
+  "size": 16.1,
+  "y0": 389.48760986328125,
+  "y1": 407.5132751464844,
+  "text": "2 Assumptions and Justifications",
+  "sents": [
+   "2 Assumptions and Justifications"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "y0": 416.14801025390625,
+  "y1": 462.0920104980469,
+  "text": "Considering that practical problems always contain many complex factors, first of all, we need to make reasonable assumptions to simplify the model, and each hypothesis is closely followed by its corresponding explanation:",
+  "sents": [
+   "Considering that practical problems always contain many complex factors, first of all, we need to make reasonable assumptions to simplify the model, and each hypothesis is closely followed by its corresponding explanation:"
+  ],
+  "nwords": 32,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "y0": 465.20001220703125,
+  "y1": 511.052001953125,
+  "text": "• Assumption 1: Cyclists will never be influenced by others during the race. According to the cycling individual time trial rules of UCI, the riders start alone at certain intervals. So, the rider will not be influenced by others during the race.",
+  "sents": [
+   "• Assumption 1: Cyclists will never be influenced by others during the race.",
+   "According to the cycling individual time trial rules of UCI, the riders start alone at certain intervals.",
+   "So, the rider will not be influenced by others during the race."
+  ],
+  "nwords": 42,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "y0": 514.1600341796875,
+  "y1": 560.0419311523438,
+  "text": "• Assumption 2: Energy of cyclists is limited during the race. On the one hand, this comes from the limitation of the topic, and on the other hand, cyclists usually do not supplement energy in actual races.",
+  "sents": [
+   "• Assumption 2: Energy of cyclists is limited during the race.",
+   "On the one hand, this comes from the limitation of the topic, and on the other hand, cyclists usually do not supplement energy in actual races."
+  ],
+  "nwords": 37,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "y0": 562.9100341796875,
+  "y1": 625.1019897460938,
+  "text": "• Assumption 3: The only sources of resistance are the viscous resistance of the air and the rolling friction of the ground. Because these two resistances account for the largest part [8], while the small resistance from the transmission efficiency of the bicycle chain can be ignored.",
+  "sents": [
+   "• Assumption 3: The only sources of resistance are the viscous resistance of the air and the rolling friction of the ground.",
+   "Because these two resistances account for the largest part [8], while the small resistance from the transmission efficiency of the bicycle chain can be ignored."
+  ],
+  "nwords": 47,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "y0": 628.2099609375,
+  "y1": 674.0619506835938,
+  "text": "• Assumption 4: Cyclists move in one dimension along the track, regardless of track width. This is a reasonable simplification of the model. Analysis of lateral motion introduces unnecessary complexity.",
+  "sents": [
+   "• Assumption 4: Cyclists move in one dimension along the track, regardless of track width.",
+   "This is a reasonable simplification of the model.",
+   "Analysis of lateral motion introduces unnecessary complexity."
+  ],
+  "nwords": 30,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "y0": 677.1699829101562,
+  "y1": 739.3719482421875,
+  "text": "• Assumption 5: The influence of weather on the players only exists in the wind direction and speed, and does not consider the influence of rainfall or snowfall. This is a reasonable simplification of the model, as actual races are generally not played in harsher weather conditions.",
+  "sents": [
+   "• Assumption 5: The influence of weather on the players only exists in the wind direction and speed, and does not consider the influence of rainfall or snowfall.",
+   "This is a reasonable simplification of the model, as actual races are generally not played in harsher weather conditions."
+  ],
+  "nwords": 47,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 6,
+  "size": 16.1,
+  "y0": 79.78756713867188,
+  "y1": 97.81324768066406,
+  "text": "3 Definitions and Notations",
+  "sents": [
+   "3 Definitions and Notations"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 6,
+  "size": 13.9,
+  "y0": 105.26238250732422,
+  "y1": 120.86670684814453,
+  "text": "3.1 Definitions",
+  "sents": [
+   "3.1 Definitions"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 126.15797424316406,
+  "y1": 155.5219268798828,
+  "text": "Power-to-weight ratio: The ratio of the rider's output power to his own body weight. The higher the value, the stronger the climbing ability.",
+  "sents": [
+   "Power-to-weight ratio: The ratio of the rider's output power to his own body weight.",
+   "The higher the value, the stronger the climbing ability."
+  ],
+  "nwords": 23,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 158.7979278564453,
+  "y1": 204.48194885253906,
+  "text": "Functional Threshold Power: The maximum average power a rider can achieve during an hour of full and steady riding. It is an important indicator of a rider's aerobic capacity. Also known as lactate threshold, it is usually determined by testing.",
+  "sents": [
+   "Functional Threshold Power: The maximum average power a rider can achieve during an hour of full and steady riding.",
+   "It is an important indicator of a rider's aerobic capacity.",
+   "Also known as lactate threshold, it is usually determined by testing."
+  ],
+  "nwords": 40,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 207.77796936035156,
+  "y1": 237.14198303222656,
+  "text": "Critical Power: The maximum average power a rider can get during a given period of time while riding with full force and stability.",
+  "sents": [
+   "Critical Power: The maximum average power a rider can get during a given period of time while riding with full force and stability."
+  ],
+  "nwords": 23,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 240.41798400878906,
+  "y1": 253.7019805908203,
+  "text": "Sharp turn: The turning angle is greater than or equal to 90 degrees within 50 meters.",
+  "sents": [
+   "Sharp turn: The turning angle is greater than or equal to 90 degrees within 50 meters."
+  ],
+  "nwords": 16,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 6,
+  "size": 13.9,
+  "y0": 258.67242431640625,
+  "y1": 274.2767333984375,
+  "text": "3.2 Notations",
+  "sents": [
+   "3.2 Notations"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 279.0880432128906,
+  "y1": 292.3720397949219,
+  "text": "The key mathematical notations used in this paper are listed in Table 1.",
+  "sents": [
+   "The key mathematical notations used in this paper are listed in Table 1."
+  ],
+  "nwords": 13,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 6,
+  "size": 12.0,
+  "y0": 299.0079650878906,
+  "y1": 312.2919616699219,
+  "text": "Table 1: Notations used in this paper",
+  "sents": [
+   "Table 1: Notations used in this paper"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 316.7679748535156,
+  "y1": 330.0519714355469,
+  "text": "Symbol",
+  "sents": [
+   "Symbol"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 316.7679748535156,
+  "y1": 330.0519714355469,
+  "text": "Description",
+  "sents": [
+   "Description"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 316.7679748535156,
+  "y1": 330.0519714355469,
+  "text": "Unit",
+  "sents": [
+   "Unit"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 334.0480041503906,
+  "y1": 347.3320007324219,
+  "text": "Aerobic respiratory energy output power",
+  "sents": [
+   "Aerobic respiratory energy output power"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 334.5279846191406,
+  "y1": 365.8119812011719,
+  "text": "W/Kgs-1",
+  "sents": [
+   "W/Kgs-1"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 352.5279846191406,
+  "y1": 365.8119812011719,
+  "text": "Consumption rate of aerobic pool energy ratio",
+  "sents": [
+   "Consumption rate of aerobic pool energy ratio"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 370.7879943847656,
+  "y1": 384.0719909667969,
+  "text": "Anaerobic respiration energy output power",
+  "sents": [
+   "Anaerobic respiration energy output power"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 370.7879943847656,
+  "y1": 402.3119812011719,
+  "text": "W/Kgs-1",
+  "sents": [
+   "W/Kgs-1"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 389.0279846191406,
+  "y1": 402.3119812011719,
+  "text": "Consumption rate of anaerobic pool energy ratio",
+  "sents": [
+   "Consumption rate of anaerobic pool energy ratio"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 407.50799560546875,
+  "y1": 420.7919921875,
+  "text": "Anaerobic energy storage",
+  "sents": [
+   "Anaerobic energy storage"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 407.50799560546875,
+  "y1": 420.7919921875,
+  "text": "J",
+  "sents": [
+   "J"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 425.50799560546875,
+  "y1": 457.052001953125,
+  "text": "Time Durationss-1",
+  "sents": [
+   "Time Durationss-1"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 443.76800537109375,
+  "y1": 457.052001953125,
+  "text": "Recovery rate of anaerobic pool energy ratio",
+  "sents": [
+   "Recovery rate of anaerobic pool energy ratio"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 462.48797607421875,
+  "y1": 475.77197265625,
+  "text": "Total output power of cyclist",
+  "sents": [
+   "Total output power of cyclist"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 462.48797607421875,
+  "y1": 475.77197265625,
+  "text": "W/Kg",
+  "sents": [
+   "W/Kg"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 480.7279968261719,
+  "y1": 494.0119934082031,
+  "text": "Total resistance",
+  "sents": [
+   "Total resistance"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 480.7279968261719,
+  "y1": 494.0119934082031,
+  "text": "N",
+  "sents": [
+   "N"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 498.7279968261719,
+  "y1": 512.011962890625,
+  "text": "Rider's Velocity Relative to Airm/s",
+  "sents": [
+   "Rider's Velocity Relative to Airm/s"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 516.9679565429688,
+  "y1": 530.251953125,
+  "text": "Rolling friction coefficient",
+  "sents": [
+   "Rolling friction coefficient"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 516.9679565429688,
+  "y1": 530.251953125,
+  "text": "/",
+  "sents": [
+   "/"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 534.9979248046875,
+  "y1": 548.2819213867188,
+  "text": "Power provided by the rider",
+  "sents": [
+   "Power provided by the rider"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 534.9979248046875,
+  "y1": 548.2819213867188,
+  "text": "N",
+  "sents": [
+   "N"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 553.2379760742188,
+  "y1": 566.52197265625,
+  "text": "Position of the rider on the coursem",
+  "sents": [
+   "Position of the rider on the coursem"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 571.4779663085938,
+  "y1": 584.761962890625,
+  "text": "Slope angle of the course",
+  "sents": [
+   "Slope angle of the course"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 571.4779663085938,
+  "y1": 584.761962890625,
+  "text": "°",
+  "sents": [
+   "°"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 589.9579467773438,
+  "y1": 603.241943359375,
+  "text": "Altitudem",
+  "sents": [
+   "Altitudem"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 608.697998046875,
+  "y1": 621.9819946289062,
+  "text": "Corners of the course",
+  "sents": [
+   "Corners of the course"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 608.697998046875,
+  "y1": 621.9819946289062,
+  "text": "/",
+  "sents": [
+   "/"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 627.177978515625,
+  "y1": 640.4619750976562,
+  "text": "The angle between the travel direction and the wind direction",
+  "sents": [
+   "The angle between the travel direction and the wind direction"
+  ],
+  "nwords": 10,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 627.177978515625,
+  "y1": 640.4619750976562,
+  "text": "°",
+  "sents": [
+   "°"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 645.41796875,
+  "y1": 658.7019653320312,
+  "text": "Wind speedm/s",
+  "sents": [
+   "Wind speedm/s"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 663.89794921875,
+  "y1": 677.1819458007812,
+  "text": "Optimal decision function for draft",
+  "sents": [
+   "Optimal decision function for draft"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 663.89794921875,
+  "y1": 677.1819458007812,
+  "text": "/",
+  "sents": [
+   "/"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 683.3379516601562,
+  "y1": 712.7319946289062,
+  "text": "Note: There are some variables that are not listed here and will be discussed in detail in each section.",
+  "sents": [
+   "Note: There are some variables that are not listed here and will be discussed in detail in each section."
+  ],
+  "nwords": 19,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 6,
+  "size": 16.1,
+  "y0": 721.74755859375,
+  "y1": 739.7732543945312,
+  "text": "4 Cyclist’s Physiological Model of Fatigue",
+  "sents": [
+   "4 Cyclist’s Physiological Model of Fatigue"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "y0": 748.4039916992188,
+  "y1": 761.68798828125,
+  "text": "We will now elaborate on our model. Based on the 3-Tank model, we propose an aerobic",
+  "sents": [
+   "We will now elaborate on our model.",
+   "Based on the 3-Tank model, we propose an aerobic"
+  ],
+  "nwords": 16,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 103.4120101928711,
+  "text": "and anaerobic energy fatigue model, and use the least squares fitting curve to obtain the powertime curves of different types of players.",
+  "sents": [
+   "and anaerobic energy fatigue model, and use the least squares fitting curve to obtain the powertime curves of different types of players."
+  ],
+  "nwords": 22,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 7,
+  "size": 13.9,
+  "y0": 108.62236785888672,
+  "y1": 124.22669219970703,
+  "text": "4.1 The Establishment of the Model",
+  "sents": [
+   "4.1 The Establishment of the Model"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 129.10997009277344,
+  "y1": 142.5619659423828,
+  "text": "4.1.1 Power Curve Model",
+  "sents": [
+   "4.1.1 Power Curve Model"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 146.11326599121094,
+  "y1": 201.8419952392578,
+  "text": "The three-Tank model [7] mentioned above theoretically holds that an aerobic source can provide unlimited energy. However, in the actual process, according to Assumption 2, the total energy is limited. So, we can assume that there is a negative correlation between aerobic respiratory power and duration.",
+  "sents": [
+   "The three-Tank model [7] mentioned above theoretically holds that an aerobic source can provide unlimited energy.",
+   "However, in the actual process, according to Assumption 2, the total energy is limited.",
+   "So, we can assume that there is a negative correlation between aerobic respiratory power and duration."
+  ],
+  "nwords": 46,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 202.25794982910156,
+  "y1": 257.0619812011719,
+  "text": "When a person is fully active, the power provided by aerobic respiration is limited due to the limited rate of aerobic respiration. When the output power exceeds the functional power threshold (FTP), anaerobic respiration is required to make up. So aerobic breathing power belongs to an interval with an upper limit, and the consumption rate also has an upper limit.",
+  "sents": [
+   "When a person is fully active, the power provided by aerobic respiration is limited due to the limited rate of aerobic respiration.",
+   "When the output power exceeds the functional power threshold (FTP), anaerobic respiration is required to make up.",
+   "So aerobic breathing power belongs to an interval with an upper limit, and the consumption rate also has an upper limit."
+  ],
+  "nwords": 60,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 257.4579772949219,
+  "y1": 298.3720397949219,
+  "text": "From the above two points, combined with other energy models, we normalize the energy of the aerobic pool and define the rate at which the rider consumes the energy of the aerobic pool as:",
+  "sents": [
+   "From the above two points, combined with other energy models, we normalize the energy of the aerobic pool and define the rate at which the rider consumes the energy of the aerobic pool as:"
+  ],
+  "nwords": 34,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 301.4079895019531,
+  "y1": 383.5920104980469,
+  "text": "(1) where,is aerobic respiratory energy output power.are both undetermined parameters. When the output power exceeds the functional power threshold, the aerobic respiration power reaches saturation, and the excess part needs to be supplemented by anaerobic respiration. And the initial power of anaerobic respiration can be approximated as FTP.",
+  "sents": [
+   "(1) where,is aerobic respiratory energy output power.are both undetermined parameters.",
+   "When the output power exceeds the functional power threshold, the aerobic respiration power reaches saturation, and the excess part needs to be supplemented by anaerobic respiration.",
+   "And the initial power of anaerobic respiration can be approximated as FTP."
+  ],
+  "nwords": 48,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 386.62799072265625,
+  "y1": 432.552001953125,
+  "text": "From the two-parameter model, there is a hyperbolic relationship between the anaerobic respiration power and the duration, that is, the energy storage of the anaerobic energy pool is a fixed value. Therefore, the output power of the anaerobic respiration part can be expressed as:",
+  "sents": [
+   "From the two-parameter model, there is a hyperbolic relationship between the anaerobic respiration power and the duration, that is, the energy storage of the anaerobic energy pool is a fixed value.",
+   "Therefore, the output power of the anaerobic respiration part can be expressed as:"
+  ],
+  "nwords": 44,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 443.76800537109375,
+  "y1": 457.052001953125,
+  "text": "(2)",
+  "sents": [
+   "(2)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 468.9679870605469,
+  "y1": 482.2519836425781,
+  "text": "where,represents the energy storage of the anaerobic energy pool. is time duration.",
+  "sents": [
+   "where,represents the energy storage of the anaerobic energy pool. is time duration."
+  ],
+  "nwords": 12,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 487.447998046875,
+  "y1": 549.7219848632812,
+  "text": "Considering that the higher the output power of the human body is, the faster the energy consumption is. According to the two-parameter model, we normalize the anaerobic energy pool to one, and define the rate at which the rider consumes the energy of the anaerobic energy pool as:",
+  "sents": [
+   "Considering that the higher the output power of the human body is, the faster the energy consumption is.",
+   "According to the two-parameter model, we normalize the anaerobic energy pool to one, and define the rate at which the rider consumes the energy of the anaerobic energy pool as:"
+  ],
+  "nwords": 48,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 553.4779663085938,
+  "y1": 600.8419799804688,
+  "text": "(3) where,is the ratio of the anaerobic energy consumption rate of the human body to the anaerobic respiration output power.",
+  "sents": [
+   "(3) where,is the ratio of the anaerobic energy consumption rate of the human body to the anaerobic respiration output power."
+  ],
+  "nwords": 20,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 601.4779663085938,
+  "y1": 656.0619506835938,
+  "text": "Additionally, a cyclist may choose to temporarily exceed the limits of their power curve. However, after the output power drops below FTP, the cyclist needs additional time to restore the energy of the anaerobic energy pool at a lower power level, and we define the speed of the rider to restore the energy ratio of the anaerobic energy pool here.",
+  "sents": [
+   "Additionally, a cyclist may choose to temporarily exceed the limits of their power curve.",
+   "However, after the output power drops below FTP, the cyclist needs additional time to restore the energy of the anaerobic energy pool at a lower power level, and we define the speed of the rider to restore the energy ratio of the anaerobic energy pool here."
+  ],
+  "nwords": 60,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 666.7779541015625,
+  "y1": 680.0619506835938,
+  "text": "(4)",
+  "sents": [
+   "(4)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 692.4879760742188,
+  "y1": 736.011962890625,
+  "text": "where,is the coefficient of recovery, which means that when the output power exceeds the limit of the curve, the rider needs roughly twice the time to restore the stored energy in the energy pool.",
+  "sents": [
+   "where,is the coefficient of recovery, which means that when the output power exceeds the limit of the curve, the rider needs roughly twice the time to restore the stored energy in the energy pool."
+  ],
+  "nwords": 34,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 7,
+  "size": 12.0,
+  "y0": 736.4039916992188,
+  "y1": 763.6079711914062,
+  "text": "Therefore, when the output power is kept constant, the time for the rider to maintain the power can be expressed as:",
+  "sents": [
+   "Therefore, when the output power is kept constant, the time for the rider to maintain the power can be expressed as:"
+  ],
+  "nwords": 21,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 82.20796203613281,
+  "y1": 95.4919662475586,
+  "text": "(5)",
+  "sents": [
+   "(5)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 106.20796203613281,
+  "y1": 161.0419464111328,
+  "text": "It should be noted that the above formula does not involve the recovery of anaerobic pool energy. This is because the rider keeps the power constant. When the output power is higher than FTP, the energy of the anaerobic pool is consumed and will not recover; when the output power is lower than FTP, the energy of the anaerobic pool will not be consumed.",
+  "sents": [
+   "It should be noted that the above formula does not involve the recovery of anaerobic pool energy.",
+   "This is because the rider keeps the power constant.",
+   "When the output power is higher than FTP, the energy of the anaerobic pool is consumed and will not recover; when the output power is lower than FTP, the energy of the anaerobic pool will not be consumed."
+  ],
+  "nwords": 64,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 161.4379425048828,
+  "y1": 188.64198303222656,
+  "text": "To sum up, we can get the relationship between the total output power and the duration as:",
+  "sents": [
+   "To sum up, we can get the relationship between the total output power and the duration as:"
+  ],
+  "nwords": 17,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 211.8579864501953,
+  "y1": 225.14198303222656,
+  "text": "(6)",
+  "sents": [
+   "(6)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 250.01795959472656,
+  "y1": 298.3720397949219,
+  "text": "where,are adjustment coefficients to ensure that the function satisfies . represents the rate of energy consumption when aerobic respiration supplies energy.",
+  "sents": [
+   "where,are adjustment coefficients to ensure that the function satisfies . represents the rate of energy consumption when aerobic respiration supplies energy."
+  ],
+  "nwords": 21,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 8,
+  "size": 13.9,
+  "y0": 304.5423583984375,
+  "y1": 320.14666748046875,
+  "text": "4.2 Result and Discussion",
+  "sents": [
+   "4.2 Result and Discussion"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 329.79998779296875,
+  "y1": 343.2519836425781,
+  "text": "4.2.1 Model Validation",
+  "sents": [
+   "4.2.1 Model Validation"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 349.40802001953125,
+  "y1": 444.3119812011719,
+  "text": "The above analysis provides a basic model for power-time curves for various types of cyclists. Parameters of different cyclists will differ due to their own conditions, thereby affecting their power-time curves. For different players, the specific power-time curve can be obtained by measurement to reflect various indicators, and then the consumption functions of the corresponding aerobic energy pool and anaerobic energy pool can be obtained, which is of great significance for fatigue monitoring and other aspects.",
+  "sents": [
+   "The above analysis provides a basic model for power-time curves for various types of cyclists.",
+   "Parameters of different cyclists will differ due to their own conditions, thereby affecting their power-time curves.",
+   "For different players, the specific power-time curve can be obtained by measurement to reflect various indicators, and then the consumption functions of the corresponding aerobic energy pool and anaerobic energy pool can be obtained, which is of great significance for fatigue monitoring and other aspects."
+  ],
+  "nwords": 76,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 8,
+  "size": 12.0,
+  "y0": 447.3680114746094,
+  "y1": 476.97198486328125,
+  "text": "Using the data mentioned above, we conducted the least squares method to fit the curve, and the fitting results of the power-time curve are shown in Figures 4 and 5 below:",
+  "sents": [
+   "Using the data mentioned above, we conducted the least squares method to fit the curve, and the fitting results of the power-time curve are shown in Figures 4 and 5 below:"
+  ],
+  "nwords": 31,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 8,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_08_3.png",
+  "w": 290.0,
+  "h": 116.0,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 8,
+  "size": 12.0,
+  "y0": 610.6179809570312,
+  "y1": 623.9019775390625,
+  "text": "Figure 3: Curve Fitting Results for Men",
+  "sents": [
+   "Figure 3: Curve Fitting Results for Men"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 8,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_08_4.png",
+  "w": 282.0,
+  "h": 112.8,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 8,
+  "size": 12.0,
+  "y0": 740.7239990234375,
+  "y1": 754.0079956054688,
+  "text": "Figure 4: Curve Fitting Results for Women",
+  "sents": [
+   "Figure 4: Curve Fitting Results for Women"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 9,
+  "size": 12.0,
+  "y0": 72.12800598144531,
+  "y1": 126.7219467163086,
+  "text": "First of all, it should be noted that since human beings have limits in power output, the output power when the output time is very short is not considered. So, the image abscissa starts at 10s. To describe the rider's power curve more fairly, we consider the power applied by the rider normalized by weight as the ordinate.",
+  "sents": [
+   "First of all, it should be noted that since human beings have limits in power output, the output power when the output time is very short is not considered.",
+   "So, the image abscissa starts at 10s.",
+   "To describe the rider's power curve more fairly, we consider the power applied by the rider normalized by weight as the ordinate."
+  ],
+  "nwords": 58,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 9,
+  "size": 12.0,
+  "y0": 127.35798645019531,
+  "y1": 296.6919860839844,
+  "text": "From the above figure, from the fitting effect, the result curve of the two fits well with the original data, especially for segments where. The result curve of women is more in line with the original data than the result curve of men, which may be related to the accuracy and chance of the data, or it may be related to the conservative estimation of model parameters. From the fitting results, the trend of the power time curves of men and women is the same, and the power decreases in an S-shaped manner with the increase of time. This is consistent with Assumption 2. The FTP of women is slightly smaller than that of men, but the limit power in a short time is higher than that of men. This reflects the effect of rider gender on that curve. The reason may be that women are lighter in weight and have higher power bursts for short periods of time, but weaker oxygen supply capacity for long periods of time. The difference between the two curves after a certain period of time is small, which indicates that in a relatively long period of riding, the difference caused by gender can be ignored.",
+  "sents": [
+   "From the above figure, from the fitting effect, the result curve of the two fits well with the original data, especially for segments where.",
+   "The result curve of women is more in line with the original data than the result curve of men, which may be related to the accuracy and chance of the data, or it may be related to the conservative estimation of model parameters.",
+   "From the fitting results, the trend of the power time curves of men and women is the same, and the power decreases in an S-shaped manner with the increase of time.",
+   "This is consistent with Assumption 2.",
+   "The FTP of women is slightly smaller than that of men, but the limit power in a short time is higher than that of men.",
+   "This reflects the effect of rider gender on that curve.",
+   "The reason may be that women are lighter in weight and have higher power bursts for short periods of time, but weaker oxygen supply capacity for long periods of time.",
+   "The difference between the two curves after a certain period of time is small, which indicates that in a relatively long period of riding, the difference caused by gender can be ignored."
+  ],
+  "nwords": 201,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 9,
+  "size": 12.0,
+  "y0": 307.0,
+  "y1": 320.4519958496094,
+  "text": "4.2.2 Power curves of different types of riders",
+  "sents": [
+   "4.2.2 Power curves of different types of riders"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 9,
+  "size": 12.0,
+  "y0": 326.6080017089844,
+  "y1": 470.49200439453125,
+  "text": "In addition to the gender of the rider, we should also consider the characteristics of different types of riders to determine their corresponding power-time curves. Sprinters need a lot of power against wind resistance, so they will have heavier body weight and muscle mass, and their anaerobic pools will have high energy storage, but their power-to-weight ratio will be less suitable for climbing. In order to resist gravity, the Puncheur is lighter in weight, has a low muscle limit, and a high sprinting ability, but it is inferior to sprinters. Rouleur is good in all aspects, has strong stamina, and is usually aggressive in attacking. In order to visually represent the relationship between the player's ability index and the model parameters, the radar chart of each type of rider's index is shown in Figure 5 below:",
+  "sents": [
+   "In addition to the gender of the rider, we should also consider the characteristics of different types of riders to determine their corresponding power-time curves.",
+   "Sprinters need a lot of power against wind resistance, so they will have heavier body weight and muscle mass, and their anaerobic pools will have high energy storage, but their power-to-weight ratio will be less suitable for climbing.",
+   "In order to resist gravity, the Puncheur is lighter in weight, has a low muscle limit, and a high sprinting ability, but it is inferior to sprinters.",
+   "Rouleur is good in all aspects, has strong stamina, and is usually aggressive in attacking.",
+   "In order to visually represent the relationship between the player's ability index and the model parameters, the radar chart of each type of rider's index is shown in Figure 5 below:"
+  ],
+  "nwords": 136,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 9,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_09_5.png",
+  "w": 240.4,
+  "h": 191.3,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 9,
+  "size": 12.0,
+  "y0": 673.7379760742188,
+  "y1": 687.02197265625,
+  "text": "Figure 5: Metrics for all types of cyclists",
+  "sents": [
+   "Figure 5: Metrics for all types of cyclists"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 9,
+  "size": 12.0,
+  "y0": 698.0079345703125,
+  "y1": 759.7679443359375,
+  "text": "As shown above, select FTP, restore factor, the model parameters, body weight, anaerobic pool energyas indicators to characterize the output power of various types of riders. Different weights are given and normalized according to the characteristics of each type of rider. Based on this, we assign different parameter values to the above model to obtain the",
+  "sents": [
+   "As shown above, select FTP, restore factor, the model parameters, body weight, anaerobic pool energyas indicators to characterize the output power of various types of riders.",
+   "Different weights are given and normalized according to the characteristics of each type of rider.",
+   "Based on this, we assign different parameter values to the above model to obtain the"
+  ],
+  "nwords": 56,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 72.12800598144531,
+  "y1": 85.4120101928711,
+  "text": "corresponding power-time curve, as shown in Figure 6:",
+  "sents": [
+   "corresponding power-time curve, as shown in Figure 6:"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 10,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_10_6.png",
+  "w": 250.5,
+  "h": 154.0,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 10,
+  "size": 12.0,
+  "y0": 250.73793029785156,
+  "y1": 264.0219421386719,
+  "text": "Figure 6: Power time curves for various types of riders",
+  "sents": [
+   "Figure 6: Power time curves for various types of riders"
+  ],
+  "nwords": 10,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 270.1780090332031,
+  "y1": 316.1319885253906,
+  "text": "The graph above shows the power-time curves for each type of rider. Due to the different abilities of various riders, the model parameters are different, and so are the curves. The analysis leads to the following conclusions, which are consistent with the radar chart:",
+  "sents": [
+   "The graph above shows the power-time curves for each type of rider.",
+   "Due to the different abilities of various riders, the model parameters are different, and so are the curves.",
+   "The analysis leads to the following conclusions, which are consistent with the radar chart:"
+  ],
+  "nwords": 44,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 319.0,
+  "y1": 365.0920104980469,
+  "text": "• Rouleur is balanced in all aspects, so his/her power-time curve is in the middle section as a whole. His/Her sprint ability is strong, and he/she can also maintain a certain power during long-term riding.",
+  "sents": [
+   "• Rouleur is balanced in all aspects, so his/her power-time curve is in the middle section as a whole.",
+   "His/Her sprint ability is strong, and he/she can also maintain a certain power during long-term riding."
+  ],
+  "nwords": 35,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 367.9800109863281,
+  "y1": 430.1520080566406,
+  "text": "• The Sprinter has a strong sprinting ability, and his/her power-time curve presents a very high front, that is, the extreme power is very large in a short time, which is suitable for short-term explosive riding. He/She has a relatively prominent anaerobic energy supply capacity and a large anaerobic pool energy storage.",
+  "sents": [
+   "• The Sprinter has a strong sprinting ability, and his/her power-time curve presents a very high front, that is, the extreme power is very large in a short time, which is suitable for short-term explosive riding.",
+   "He/She has a relatively prominent anaerobic energy supply capacity and a large anaerobic pool energy storage."
+  ],
+  "nwords": 52,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 433.0199890136719,
+  "y1": 479.13201904296875,
+  "text": "• Puncheur has poor endurance, and his/her power-time curve is generally low, with a certain explosive power in a short period of time. The anaerobic energy supply capacity is slightly better.",
+  "sents": [
+   "• Puncheur has poor endurance, and his/her power-time curve is generally low, with a certain explosive power in a short period of time.",
+   "The anaerobic energy supply capacity is slightly better."
+  ],
+  "nwords": 31,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 482.0,
+  "y1": 544.4419555664062,
+  "text": "• The time trial specialist has the strongest comprehensive ability, and can maintain a high power during a long-term riding process. He/She has a relatively prominent aerobic energy supply capacity and a high FTP, which corresponds to a larger aerobic energy supply rate in the above model.",
+  "sents": [
+   "• The time trial specialist has the strongest comprehensive ability, and can maintain a high power during a long-term riding process.",
+   "He/She has a relatively prominent aerobic energy supply capacity and a high FTP, which corresponds to a larger aerobic energy supply rate in the above model."
+  ],
+  "nwords": 47,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 10,
+  "size": 16.1,
+  "y0": 553.4575805664062,
+  "y1": 571.4832763671875,
+  "text": "5 Optimal Individual Power Distribution Model",
+  "sents": [
+   "5 Optimal Individual Power Distribution Model"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 580.1179809570312,
+  "y1": 625.8219604492188,
+  "text": "By analyzing the force of the rider during the riding process, combined with the track conditions, we propose an Optimal Individual Power Distribution Model, and use the dynamic programming method to find the optimal power distribution suitable for riding.",
+  "sents": [
+   "By analyzing the force of the rider during the riding process, combined with the track conditions, we propose an Optimal Individual Power Distribution Model, and use the dynamic programming method to find the optimal power distribution suitable for riding."
+  ],
+  "nwords": 39,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 10,
+  "size": 13.9,
+  "y0": 627.67236328125,
+  "y1": 643.2766723632812,
+  "text": "5.1 Data Processing",
+  "sents": [
+   "5.1 Data Processing"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 648.5379638671875,
+  "y1": 694.4619750976562,
+  "text": "We need to apply the first model built to three specific tracks. So, we need to collect the altitude data and camber data of the track. The relevant datasets and source websites are shown in Table 2:",
+  "sents": [
+   "We need to apply the first model built to three specific tracks.",
+   "So, we need to collect the altitude data and camber data of the track.",
+   "The relevant datasets and source websites are shown in Table 2:"
+  ],
+  "nwords": 37,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 10,
+  "size": 12.0,
+  "y0": 697.5279541015625,
+  "y1": 710.8119506835938,
+  "text": "Table 2: Data and Database Websites",
+  "sents": [
+   "Table 2: Data and Database Websites"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 715.5279541015625,
+  "y1": 728.8119506835938,
+  "text": "Database Names",
+  "sents": [
+   "Database Names"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 715.5279541015625,
+  "y1": 728.8119506835938,
+  "text": "Database Websites",
+  "sents": [
+   "Database Websites"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 10,
+  "size": 12.0,
+  "y0": 732.323974609375,
+  "y1": 761.927978515625,
+  "text": "Altitude and camber of Olympic Time Trial coursehttps://olympics.com/in Tokyo, Japan",
+  "sents": [
+   "Altitude and camber of Olympic Time Trial coursehttps://olympics.com/in Tokyo, Japan"
+  ],
+  "nwords": 10,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 11,
+  "size": 12.0,
+  "y0": 75.24794006347656,
+  "y1": 104.85201263427734,
+  "text": "Altitude and camber of UCI World Championshiphttps://www.flanders2021.com/ time trial course in Flanders, Belgium",
+  "sents": [
+   "Altitude and camber of UCI World Championshiphttps://www.flanders2021.com/ time trial course in Flanders, Belgium"
+  ],
+  "nwords": 13,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 11,
+  "size": 12.0,
+  "y0": 114.15797424316406,
+  "y1": 143.76197814941406,
+  "text": "In order to facilitate research analysis and application to modeling, we present the collected data in the form of a function graph in Figure 7:",
+  "sents": [
+   "In order to facilitate research analysis and application to modeling, we present the collected data in the form of a function graph in Figure 7:"
+  ],
+  "nwords": 25,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 11,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_11_7.png",
+  "w": 462.6,
+  "h": 106.9,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 11,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_11_8.png",
+  "w": 311.0,
+  "h": 98.6,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 11,
+  "size": 12.0,
+  "y0": 383.50799560546875,
+  "y1": 396.7919921875,
+  "text": "Figure 7: Altitude and Camber of the Course",
+  "sents": [
+   "Figure 7: Altitude and Camber of the Course"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 11,
+  "size": 12.0,
+  "y0": 404.38800048828125,
+  "y1": 499.2919921875,
+  "text": "From the figure, the top left picture among the three represents the data of the Tokyo Olympics time trial, the top right picture represents the data of UCI time trial, and the bottom picture is the data of self-designed track. In fact, in the UCI time trial, the men's and women's runners have different tracks. In the Olympics Time Trial, the men and women use the same track, but the men run an extra lap. Due to space limitations, the specific situation will be given in detail in the result analysis.",
+  "sents": [
+   "From the figure, the top left picture among the three represents the data of the Tokyo Olympics time trial, the top right picture represents the data of UCI time trial, and the bottom picture is the data of self-designed track.",
+   "In fact, in the UCI time trial, the men's and women's runners have different tracks.",
+   "In the Olympics Time Trial, the men and women use the same track, but the men run an extra lap.",
+   "Due to space limitations, the specific situation will be given in detail in the result analysis."
+  ],
+  "nwords": 91,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 11,
+  "size": 12.0,
+  "y0": 502.3280334472656,
+  "y1": 613.3219604492188,
+  "text": "We can see that the UCI time trial track has a lower altitude, is flatter but has slightly more corners. The track of the Olympics Time Trial Circuit has a higher altitude, is steeper, has fewer turns, and the turns are concentrated in the first half of the track. The altitude of our self-designed track is in between the two, the slopes are concentrated in the first half and the end of the race, and there are five corners, which are concentrated in the second half of the race. The purpose of our design is to distinguish between slopes and corners to a certain extent, so that it is convenient to study the effect of the two on the rider's power separately.",
+  "sents": [
+   "We can see that the UCI time trial track has a lower altitude, is flatter but has slightly more corners.",
+   "The track of the Olympics Time Trial Circuit has a higher altitude, is steeper, has fewer turns, and the turns are concentrated in the first half of the track.",
+   "The altitude of our self-designed track is in between the two, the slopes are concentrated in the first half and the end of the race, and there are five corners, which are concentrated in the second half of the race.",
+   "The purpose of our design is to distinguish between slopes and corners to a certain extent, so that it is convenient to study the effect of the two on the rider's power separately."
+  ],
+  "nwords": 122,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 11,
+  "size": 13.9,
+  "y0": 620.2323608398438,
+  "y1": 635.836669921875,
+  "text": "5.2 The Establishment of the Model",
+  "sents": [
+   "5.2 The Establishment of the Model"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 11,
+  "size": 12.0,
+  "y0": 642.5379638671875,
+  "y1": 671.9019775390625,
+  "text": "In the process of establishing the model, we mainly consider the resistance of the rider during his cycling, analyze the force of the rider, and propose a Riding Resistance Model.",
+  "sents": [
+   "In the process of establishing the model, we mainly consider the resistance of the rider during his cycling, analyze the force of the rider, and propose a Riding Resistance Model."
+  ],
+  "nwords": 30,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 11,
+  "size": 12.0,
+  "y0": 678.1300048828125,
+  "y1": 691.5819702148438,
+  "text": "5.2.1 Riding Resistance Model",
+  "sents": [
+   "5.2.1 Riding Resistance Model"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 11,
+  "size": 12.0,
+  "y0": 696.0879516601562,
+  "y1": 764.5679321289062,
+  "text": "In individual races, the interference effects of other riders are not considered. Therefore, we consider that the resistance received by the rider during the riding process is mainly composed of two parts, one of which is aerodynamic resistance, and the other is the rolling friction between the bicycle and the ground. According to the experimental research of others [8], we give the total resistance received by the rider in the process of flat ground movement as:",
+  "sents": [
+   "In individual races, the interference effects of other riders are not considered.",
+   "Therefore, we consider that the resistance received by the rider during the riding process is mainly composed of two parts, one of which is aerodynamic resistance, and the other is the rolling friction between the bicycle and the ground.",
+   "According to the experimental research of others [8], we give the total resistance received by the rider in the process of flat ground movement as:"
+  ],
+  "nwords": 76,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 74.28797912597656,
+  "y1": 160.08192443847656,
+  "text": "(7) where,is the fluid density, and it is the air density here.is the frontal area of the total projection of the rider and the bicycle, that is, the effective area.is the resistance coefficient.is the speed of the rider relative to the fluid.is the coefficient of rolling friction. is the total mass of the rider and bike.is the gravitational acceleration.",
+  "sents": [
+   "(7) where,is the fluid density, and it is the air density here.is the frontal area of the total projection of the rider and the bicycle, that is, the effective area.is the resistance coefficient.is the speed of the rider relative to the fluid.is the coefficient of rolling friction. is the total mass of the rider and bike.is the gravitational acceleration."
+  ],
+  "nwords": 59,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 163.1179962158203,
+  "y1": 190.3219757080078,
+  "text": "In order to obtain a more specific expression, we discuss the above parameters to directly use the existing data to facilitate the solution. For fluid density we have:",
+  "sents": [
+   "In order to obtain a more specific expression, we discuss the above parameters to directly use the existing data to facilitate the solution.",
+   "For fluid density we have:"
+  ],
+  "nwords": 28,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 200.8179473876953,
+  "y1": 214.10194396972656,
+  "text": "(8)",
+  "sents": [
+   "(8)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 227.2179718017578,
+  "y1": 276.9819641113281,
+  "text": "(9) where,is a constant, the general value is 1.293Kg/m3.is air pressure.is the temperature in Kelvin.is the local altitude.",
+  "sents": [
+   "(9) where,is a constant, the general value is 1.293Kg/m3.is air pressure.is the temperature in Kelvin.is the local altitude."
+  ],
+  "nwords": 18,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 280.0480041503906,
+  "y1": 293.3320007324219,
+  "text": "For the projected effective area, we have:",
+  "sents": [
+   "For the projected effective area, we have:"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 297.0880432128906,
+  "y1": 346.13201904296875,
+  "text": "(10) where,are the rider's height and weight, respectively.is the horizontal declination angle of the rider's helmet, in order to simplify the problem, we take its value as zero.",
+  "sents": [
+   "(10) where,are the rider's height and weight, respectively.is the horizontal declination angle of the rider's helmet, in order to simplify the problem, we take its value as zero."
+  ],
+  "nwords": 28,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 346.5279846191406,
+  "y1": 359.8119812011719,
+  "text": "For the resistance coefficient, we have:",
+  "sents": [
+   "For the resistance coefficient, we have:"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 362.62799072265625,
+  "y1": 448.1520080566406,
+  "text": "(11) Considering the coefficient of rolling friction, according to empirical data [9], the coefficient of rolling friction of mountain bikes on asphalt roads is 0.003, while the coefficient of rolling friction of road bicycles is usually smaller. Since rolling friction accounts for about 10% of the total resistance, and in order to simplify the problem, we do not consider the material of the track, we take.",
+  "sents": [
+   "(11) Considering the coefficient of rolling friction, according to empirical data [9], the coefficient of rolling friction of mountain bikes on asphalt roads is 0.003, while the coefficient of rolling friction of road bicycles is usually smaller.",
+   "Since rolling friction accounts for about 10% of the total resistance, and in order to simplify the problem, we do not consider the material of the track, we take."
+  ],
+  "nwords": 66,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 456.55999755859375,
+  "y1": 470.0119934082031,
+  "text": "5.2.2 Abstract Course Model",
+  "sents": [
+   "5.2.2 Abstract Course Model"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 476.1679992675781,
+  "y1": 505.77197265625,
+  "text": "For the individual cycling track, we mainly consider the situation analysis of the rider going up and down and turning during the riding process.",
+  "sents": [
+   "For the individual cycling track, we mainly consider the situation analysis of the rider going up and down and turning during the riding process."
+  ],
+  "nwords": 24,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 508.8080139160156,
+  "y1": 538.2019653320312,
+  "text": "For the uphill process, we simplify the rider as a mass point and perform force analysis on it, as shown in Figure 8:",
+  "sents": [
+   "For the uphill process, we simplify the rider as a mass point and perform force analysis on it, as shown in Figure 8:"
+  ],
+  "nwords": 23,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 12,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_12_9.png",
+  "w": 184.8,
+  "h": 111.0,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 12,
+  "size": 12.0,
+  "y0": 659.0979614257812,
+  "y1": 672.3819580078125,
+  "text": "Figure 8: Analysis of the rider's force during the uphill process",
+  "sents": [
+   "Figure 8: Analysis of the rider's force during the uphill process"
+  ],
+  "nwords": 11,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 683.3379516601562,
+  "y1": 696.6219482421875,
+  "text": "As shown in the above analysis, we can simply get the physical model of the uphill process:",
+  "sents": [
+   "As shown in the above analysis, we can simply get the physical model of the uphill process:"
+  ],
+  "nwords": 17,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 710.7279663085938,
+  "y1": 724.011962890625,
+  "text": "(12)",
+  "sents": [
+   "(12)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 12,
+  "size": 12.0,
+  "y0": 738.803955078125,
+  "y1": 752.0879516601562,
+  "text": "Where,is the motivation provided to the rider, which is related to the power provided by",
+  "sents": [
+   "Where,is the motivation provided to the rider, which is related to the power provided by"
+  ],
+  "nwords": 15,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 87.0919418334961,
+  "text": "the rider.is the slope angle, when the rider is going downhill, it is an obtuse angle.",
+  "sents": [
+   "the rider.is the slope angle, when the rider is going downhill, it is an obtuse angle."
+  ],
+  "nwords": 16,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 90.12800598144531,
+  "y1": 131.0419464111328,
+  "text": "It should be pointed out that the force analysis of the rider in the process of going downhill is the same as the force analysis in the process of going uphill, and the above physical model is applicable to both scenarios.",
+  "sents": [
+   "It should be pointed out that the force analysis of the rider in the process of going downhill is the same as the force analysis in the process of going uphill, and the above physical model is applicable to both scenarios."
+  ],
+  "nwords": 41,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 131.67799377441406,
+  "y1": 158.64198303222656,
+  "text": "For the curve process, in order to simplify the model and calculation, we consider the process as a circular motion. We perform a simple force analysis on it, as shown in Figure 8:",
+  "sents": [
+   "For the curve process, in order to simplify the model and calculation, we consider the process as a circular motion.",
+   "We perform a simple force analysis on it, as shown in Figure 8:"
+  ],
+  "nwords": 33,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 13,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_13_10.png",
+  "w": 195.4,
+  "h": 140.3,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 13,
+  "size": 12.0,
+  "y0": 301.8880310058594,
+  "y1": 315.1720275878906,
+  "text": "Figure 9: Analysis of the rider's force in the process of turning",
+  "sents": [
+   "Figure 9: Analysis of the rider's force in the process of turning"
+  ],
+  "nwords": 12,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 321.5679931640625,
+  "y1": 367.49200439453125,
+  "text": "According to the graph above, in the tangential direction of the corner, the rider is exposed to the total resistance as well as the power provided by himself. This is in line with what a rider would do when riding on straight roads.",
+  "sents": [
+   "According to the graph above, in the tangential direction of the corner, the rider is exposed to the total resistance as well as the power provided by himself.",
+   "This is in line with what a rider would do when riding on straight roads."
+  ],
+  "nwords": 43,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 370.5480041503906,
+  "y1": 448.8719787597656,
+  "text": "In the radial direction, the combined force of the rider's gravity and the supporting force of the road surface provides the centripetal force. However, due to the limited inclination of the rider to the road during cornering, the resultant force is limited. Therefore, during a turn, the rider's speed cannot exceed a certain threshold. In addition, we divide the corners into two categories according to the size of the turning radius, sharp turns and soft turns.",
+  "sents": [
+   "In the radial direction, the combined force of the rider's gravity and the supporting force of the road surface provides the centripetal force.",
+   "However, due to the limited inclination of the rider to the road during cornering, the resultant force is limited.",
+   "Therefore, during a turn, the rider's speed cannot exceed a certain threshold.",
+   "In addition, we divide the corners into two categories according to the size of the turning radius, sharp turns and soft turns."
+  ],
+  "nwords": 76,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 451.9280090332031,
+  "y1": 465.2120056152344,
+  "text": "From this, we get the processing method for the curve process:",
+  "sents": [
+   "From this, we get the processing method for the curve process:"
+  ],
+  "nwords": 11,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 468.08001708984375,
+  "y1": 546.8419799804688,
+  "text": "• For the sharp turning process, the speed of the rider should not be too high, and the rider should reduce the output power to lower the speed below this threshold, otherwise the turning process cannot be completed. That is to say, we consider the corners to be speed checkpoints on the track, which can only be passed below the speed threshold.",
+  "sents": [
+   "• For the sharp turning process, the speed of the rider should not be too high, and the rider should reduce the output power to lower the speed below this threshold, otherwise the turning process cannot be completed.",
+   "That is to say, we consider the corners to be speed checkpoints on the track, which can only be passed below the speed threshold."
+  ],
+  "nwords": 62,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 549.7100219726562,
+  "y1": 579.4819946289062,
+  "text": "• For the soft turning process, we regard it as a straight course and do not do special treatment.",
+  "sents": [
+   "• For the soft turning process, we regard it as a straight course and do not do special treatment."
+  ],
+  "nwords": 19,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 580.8379516601562,
+  "y1": 655.5819702148438,
+  "text": "We represent the track elevation map obtained earlier as a function of altitude as a function of the rider's position on the track. We think the rider is on an uphill course when the altitude goes up and downhill when the altitude goes down. Therefore, by taking the derivation of this function, we can get the slope angle as a function of the rider's position on the track.",
+  "sents": [
+   "We represent the track elevation map obtained earlier as a function of altitude as a function of the rider's position on the track.",
+   "We think the rider is on an uphill course when the altitude goes up and downhill when the altitude goes down.",
+   "Therefore, by taking the derivation of this function, we can get the slope angle as a function of the rider's position on the track."
+  ],
+  "nwords": 68,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 659.3379516601562,
+  "y1": 701.9019775390625,
+  "text": "In the same way, since we simplified the curve model, we only consider whether the current position of the rider is a straight or a curve, and do not care about the radius of the curve. So we express the camber of the track as a binary function",
+  "sents": [
+   "In the same way, since we simplified the curve model, we only consider whether the current position of the rider is a straight or a curve, and do not care about the radius of the curve.",
+   "So we express the camber of the track as a binary function"
+  ],
+  "nwords": 48,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 688.6179809570312,
+  "y1": 701.9019775390625,
+  "text": "，that is：",
+  "sents": [
+   "，that is："
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 720.8079833984375,
+  "y1": 734.0919799804688,
+  "text": "(13)",
+  "sents": [
+   "(13)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 13,
+  "size": 12.0,
+  "y0": 751.283935546875,
+  "y1": 764.5679321289062,
+  "text": "where,is the position of each corner in the track.",
+  "sents": [
+   "where,is the position of each corner in the track."
+  ],
+  "nwords": 9,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 87.0919418334961,
+  "text": "Through the above analysis, we summarize the basic idea of modeling as shown in below:",
+  "sents": [
+   "Through the above analysis, we summarize the basic idea of modeling as shown in below:"
+  ],
+  "nwords": 15,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 14,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_14_11.png",
+  "w": 369.9,
+  "h": 150.3,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 14,
+  "size": 12.0,
+  "y0": 253.3780059814453,
+  "y1": 266.6620178222656,
+  "text": "Figure 10: The framework of the model",
+  "sents": [
+   "Figure 10: The framework of the model"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 14,
+  "size": 13.9,
+  "y0": 273.3123779296875,
+  "y1": 288.91668701171875,
+  "text": "5.3 Solve the Model",
+  "sents": [
+   "5.3 Solve the Model"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 293.9679870605469,
+  "y1": 355.97198486328125,
+  "text": "We need to use the existing model to obtain the optimal power distribution of the rider in a race while ensuring that the energy of the aerobic pool and the anaerobic pool is not less than zero, so that the rider can reach the destination in the shortest time. Therefore, solving the model using a dynamic programming algorithm is a good choice.",
+  "sents": [
+   "We need to use the existing model to obtain the optimal power distribution of the rider in a race while ensuring that the energy of the aerobic pool and the anaerobic pool is not less than zero, so that the rider can reach the destination in the shortest time.",
+   "Therefore, solving the model using a dynamic programming algorithm is a good choice."
+  ],
+  "nwords": 62,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 359.00799560546875,
+  "y1": 404.9519958496094,
+  "text": "The dynamic programming algorithm is an algorithm that divides the problem and defines the relationship between the state of the problem and the state, so that the problem can be solved in a recursive way. When applying this method to the above model, the main ideas are:",
+  "sents": [
+   "The dynamic programming algorithm is an algorithm that divides the problem and defines the relationship between the state of the problem and the state, so that the problem can be solved in a recursive way.",
+   "When applying this method to the above model, the main ideas are:"
+  ],
+  "nwords": 47,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 408.05999755859375,
+  "y1": 519.2119750976562,
+  "text": " Break the original problem into sub-problems. Divide the track into a certain number of small sections, and find the minimum time to complete this part of the track when each section has the same amount of aerobic energy remaining, anaerobic energy remaining, and the end speed. Gradually increase with the schedule until the entire track is covered. Then the minimum time to complete the track is the minimum time calculated under the condition of any remaining aerobic energy, anaerobic energy remaining, and ending speed.",
+  "sents": [
+   " Break the original problem into sub-problems. Divide the track into a certain number of small sections, and find the minimum time to complete this part of the track when each section has the same amount of aerobic energy remaining, anaerobic energy remaining, and the end speed.",
+   "Gradually increase with the schedule until the entire track is covered.",
+   "Then the minimum time to complete the track is the minimum time calculated under the condition of any remaining aerobic energy, anaerobic energy remaining, and ending speed."
+  ],
+  "nwords": 85,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 521.8399658203125,
+  "y1": 571.5619506835938,
+  "text": " Determine the status. When the remaining amount of aerobic energy is, the remaining amount of anaerobic energy is, and the end speed is, the minimum time consumed bymeters before completion.",
+  "sents": [
+   " Determine the status. When the remaining amount of aerobic energy is, the remaining amount of anaerobic energy is, and the end speed is, the minimum time consumed bymeters before completion."
+  ],
+  "nwords": 31,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 576.5899658203125,
+  "y1": 606.1219482421875,
+  "text": " Given an initial value. The initial velocity is zero, the residual amount of aerobic energy is one, and the residual amount of anaerobic energy is one.",
+  "sents": [
+   " Given an initial value. The initial velocity is zero, the residual amount of aerobic energy is one, and the residual amount of anaerobic energy is one."
+  ],
+  "nwords": 27,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 609.25,
+  "y1": 671.1819458007812,
+  "text": " State transition. For every segment, the value of its state function may come from all state values of the previous segment of the track. Therefore, we try all power for all state values of the previous segment of the track. If it transitions to its own state, record it. Take the minimum value after the traversal is complete.",
+  "sents": [
+   " State transition. For every segment, the value of its state function may come from all state values of the previous segment of the track.",
+   "Therefore, we try all power for all state values of the previous segment of the track.",
+   "If it transitions to its own state, record it.",
+   "Take the minimum value after the traversal is complete."
+  ],
+  "nwords": 59,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 672.5379638671875,
+  "y1": 713.6919555664062,
+  "text": "It should be noted that, except for time, all values are discretized to ensure incremental traversal. When the difference between the values is sufficiently small, the resulting value can be considered accurate.",
+  "sents": [
+   "It should be noted that, except for time, all values are discretized to ensure incremental traversal. When the difference between the values is sufficiently small, the resulting value can be considered accurate."
+  ],
+  "nwords": 32,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 14,
+  "size": 13.9,
+  "y0": 719.3823852539062,
+  "y1": 734.9866943359375,
+  "text": "5.4 Results and Analysis",
+  "sents": [
+   "5.4 Results and Analysis"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 14,
+  "size": 12.0,
+  "y0": 740.0039672851562,
+  "y1": 769.6079711914062,
+  "text": "Taking into account the gender and type of runners, when applying the model to the track, we discussed the Time Trial Specialists and Sprinters divided into male and female runners.",
+  "sents": [
+   "Taking into account the gender and type of runners, when applying the model to the track, we discussed the Time Trial Specialists and Sprinters divided into male and female runners."
+  ],
+  "nwords": 30,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 103.4120101928711,
+  "text": "In the three tracks, the power distribution strategies of the two types of male riders are shown in Figure 11 below:",
+  "sents": [
+   "In the three tracks, the power distribution strategies of the two types of male riders are shown in Figure 11 below:"
+  ],
+  "nwords": 21,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 120.49993896484375,
+  "y1": 148.72998046875,
+  "text": "Type",
+  "sents": [
+   "Type"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 126.87800598144531,
+  "y1": 140.16200256347656,
+  "text": "Sprinter",
+  "sents": [
+   "Sprinter"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 126.87800598144531,
+  "y1": 140.16200256347656,
+  "text": "Time Trial Specialist",
+  "sents": [
+   "Time Trial Specialist"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 210.78997802734375,
+  "y1": 245.469970703125,
+  "text": "Tokyo",
+  "sents": [
+   "Tokyo"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 335.6199951171875,
+  "y1": 381.3599853515625,
+  "text": "Belgium",
+  "sents": [
+   "Belgium"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 457.3399963378906,
+  "y1": 520.5799560546875,
+  "text": "Own design",
+  "sents": [
+   "Own design"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 15,
+  "size": 12.0,
+  "y0": 554.677978515625,
+  "y1": 567.9619750976562,
+  "text": "Figure 11: Men's Rider Power Distribution Strategy",
+  "sents": [
+   "Figure 11: Men's Rider Power Distribution Strategy"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 575.5579833984375,
+  "y1": 719.4519653320312,
+  "text": "Based on the graph above, we got the optimal power distribution for different types of riders. According to this strategy, the corresponding power is applied at the corresponding position of the race schedule, and the rider will complete the race in the shortest time under his own conditions. When the curve increases sharply, the rider should initiate a sprint; when the curve drops sharply, the rider should reduce the power to restore the energy of the anaerobic pool; most of the time, the curve fluctuates around the FTP, and the rider should maintain a relatively stable power to ride. We have also plotted the changes in anaerobic pool energy and aerobic pool energy to testify to this. Details can be found in the appendix. Furthermore, we can draw the following conclusions:",
+  "sents": [
+   "Based on the graph above, we got the optimal power distribution for different types of riders.",
+   "According to this strategy, the corresponding power is applied at the corresponding position of the race schedule, and the rider will complete the race in the shortest time under his own conditions.",
+   "When the curve increases sharply, the rider should initiate a sprint; when the curve drops sharply, the rider should reduce the power to restore the energy of the anaerobic pool; most of the time, the curve fluctuates around the FTP, and the rider should maintain a relatively stable power to ride.",
+   "We have also plotted the changes in anaerobic pool energy and aerobic pool energy to testify to this.",
+   "Details can be found in the appendix.",
+   "Furthermore, we can draw the following conclusions:"
+  ],
+  "nwords": 131,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 15,
+  "size": 12.0,
+  "y0": 722.3200073242188,
+  "y1": 752.0879516601562,
+  "text": "• The power distribution strategies of various types of riders on the same track are basically the same. It can be seen from the foregoing that different types of riders",
+  "sents": [
+   "• The power distribution strategies of various types of riders on the same track are basically the same.",
+   "It can be seen from the foregoing that different types of riders"
+  ],
+  "nwords": 30,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 103.4120101928711,
+  "text": "have power curves with similar trends. When they are applied to the same track conditions, the power distribution strategies obtained have the same trend.",
+  "sents": [
+   "have power curves with similar trends.",
+   "When they are applied to the same track conditions, the power distribution strategies obtained have the same trend."
+  ],
+  "nwords": 24,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 106.52000427246094,
+  "y1": 184.8019561767578,
+  "text": "• Riders need to sprint more frequently in high-altitude races. While the average resistance at higher altitudes is less than it at lower altitudes, the gradients are more variable, so riders need to increase power to climb and then lower to recover. Therefore, on denser hills, the rider's power fluctuates more. At the same time, this also shows that the effect of gravity on the rider is greater than that of resistance.",
+  "sents": [
+   "• Riders need to sprint more frequently in high-altitude races.",
+   "While the average resistance at higher altitudes is less than it at lower altitudes, the gradients are more variable, so riders need to increase power to climb and then lower to recover.",
+   "Therefore, on denser hills, the rider's power fluctuates more.",
+   "At the same time, this also shows that the effect of gravity on the rider is greater than that of resistance."
+  ],
+  "nwords": 72,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 187.91001892089844,
+  "y1": 233.7819366455078,
+  "text": "• Turning reduces the power output to the rider. It can be seen from the self-designed track that the rider has a certain degree of power reduction in the corners. This is also consistent with our previous analysis.",
+  "sents": [
+   "• Turning reduces the power output to the rider.",
+   "It can be seen from the self-designed track that the rider has a certain degree of power reduction in the corners.",
+   "This is also consistent with our previous analysis."
+  ],
+  "nwords": 38,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 236.88999938964844,
+  "y1": 315.4120178222656,
+  "text": "• The Sprinter can launch a more powerful attack in the first half of the schedule than the Time Trial Specialist. Comparing the above picture horizontally, in the first half of the race, we can see that the power peak corresponding to the sprint initiated by the Sprinter is higher. In the second half of the race, the number of sprints and power peaks were slightly reduced due to the Sprinter's slightly poorer endurance.",
+  "sents": [
+   "• The Sprinter can launch a more powerful attack in the first half of the schedule than the Time Trial Specialist.",
+   "Comparing the above picture horizontally, in the first half of the race, we can see that the power peak corresponding to the sprint initiated by the Sprinter is higher.",
+   "In the second half of the race, the number of sprints and power peaks were slightly reduced due to the Sprinter's slightly poorer endurance."
+  ],
+  "nwords": 74,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 318.52001953125,
+  "y1": 364.3719787597656,
+  "text": "• The Sprinter is less affected by corners than the Time Trial Specialist. At Tokyo, where the corners are denser, the Sprinter has fewer power cuts. This may be related to the lower average power of this type of riders.",
+  "sents": [
+   "• The Sprinter is less affected by corners than the Time Trial Specialist.",
+   "At Tokyo, where the corners are denser, the Sprinter has fewer power cuts.",
+   "This may be related to the lower average power of this type of riders."
+  ],
+  "nwords": 40,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 367.260009765625,
+  "y1": 413.11199951171875,
+  "text": "• Sprinter is more affected by altitude than Time Trial Specialist. At the higher elevation and steeper slope changes at the Olympics track, the Sprinter's power curve has a lower center of undulation and lower average power.",
+  "sents": [
+   "• Sprinter is more affected by altitude than Time Trial Specialist.",
+   "At the higher elevation and steeper slope changes at the Olympics track, the Sprinter's power curve has a lower center of undulation and lower average power."
+  ],
+  "nwords": 37,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 414.4679870605469,
+  "y1": 496.8919982910156,
+  "text": "Due to space limitations, the optimal power strategy graph for the women's race and the women's UCI track map are attached in the appendix. Due to the difference between the men's and women's tracks in the Olympics track and the UCI track, in order to control the variables, we only analyze the tracks designed by ourselves, and we can draw the following conclusions:  The average power of women is lower than that of men. It can be seen that the power curve of women is generally lower.",
+  "sents": [
+   "Due to space limitations, the optimal power strategy graph for the women's race and the women's UCI track map are attached in the appendix.",
+   "Due to the difference between the men's and women's tracks in the Olympics track and the UCI track, in order to control the variables, we only analyze the tracks designed by ourselves, and we can draw the following conclusions:  The average power of women is lower than that of men.",
+   "It can be seen that the power curve of women is generally lower."
+  ],
+  "nwords": 88,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 497.3599853515625,
+  "y1": 552.1220092773438,
+  "text": " Women's sprint intensity in the first half of the race can reach higher, even more than the men's. The women's power curve peaked higher in the first half of the race.  Women are more affected by slopes and curves than men. The women's power map fluctuates more often on successive ramps and corners.",
+  "sents": [
+   " Women's sprint intensity in the first half of the race can reach higher, even more than the men's.",
+   "The women's power curve peaked higher in the first half of the race.  Women are more affected by slopes and curves than men.",
+   "The women's power map fluctuates more often on successive ramps and corners."
+  ],
+  "nwords": 55,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 16,
+  "size": 12.0,
+  "y0": 552.5179443359375,
+  "y1": 579.7219848632812,
+  "text": "In addition, we present a statistical graph of the minimum time required by the rider, providing intuitive data for analysis. As shown in Figure 12 below:",
+  "sents": [
+   "In addition, we present a statistical graph of the minimum time required by the rider, providing intuitive data for analysis.",
+   "As shown in Figure 12 below:"
+  ],
+  "nwords": 26,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 16,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_16_12.png",
+  "w": 231.7,
+  "h": 154.3,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 16,
+  "size": 12.0,
+  "y0": 745.0439453125,
+  "y1": 758.3279418945312,
+  "text": "Figure 12: Minimum time spent by the rider",
+  "sents": [
+   "Figure 12: Minimum time spent by the rider"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 217.4619903564453,
+  "text": "Through this graph, we give the specific time of different riders under the optimal power distribution. As mentioned above, we only refer to the self-designed track for comparison between men and women. It can be seen that the men's players have a shorter time, 172s ahead of the women's players, and the average power is higher. In addition, the overall time of the Time Trial Specialist is shorter than that of the Sprinter, and the average score is about 300s ahead of the latter. Their average power is higher, their comprehensive ability is stronger, and they are less affected by altitude. Especially at high altitudes, the former leads the latter by 371s, which is the largest difference between the two among the three tracks. This is in great agreement with our previous model, while validating the validity and rationality of the model.",
+  "sents": [
+   "Through this graph, we give the specific time of different riders under the optimal power distribution.",
+   "As mentioned above, we only refer to the self-designed track for comparison between men and women.",
+   "It can be seen that the men's players have a shorter time, 172s ahead of the women's players, and the average power is higher.",
+   "In addition, the overall time of the Time Trial Specialist is shorter than that of the Sprinter, and the average score is about 300s ahead of the latter.",
+   "Their average power is higher, their comprehensive ability is stronger, and they are less affected by altitude.",
+   "Especially at high altitudes, the former leads the latter by 371s, which is the largest difference between the two among the three tracks.",
+   "This is in great agreement with our previous model, while validating the validity and rationality of the model."
+  ],
+  "nwords": 142,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 17,
+  "size": 16.1,
+  "y0": 226.47756958007812,
+  "y1": 244.5032501220703,
+  "text": "6 Sensitivity Analysis",
+  "sents": [
+   "6 Sensitivity Analysis"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 17,
+  "size": 13.9,
+  "y0": 252.1923828125,
+  "y1": 267.79669189453125,
+  "text": "6.1 Weather and Environmental Effects",
+  "sents": [
+   "6.1 Weather and Environmental Effects"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 277.6479797363281,
+  "y1": 323.5719909667969,
+  "text": "The model was revised to account for the potential effects of weather. We considered the effect of wind direction and wind strength (i.e. wind speed) on the model parameters and made new assumptions:",
+  "sents": [
+   "The model was revised to account for the potential effects of weather.",
+   "We considered the effect of wind direction and wind strength (i.e. wind speed) on the model parameters and made new assumptions:"
+  ],
+  "nwords": 33,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 326.8480224609375,
+  "y1": 404.7120056152344,
+  "text": "Wind direction and wind speed are only functions related to space, forming a vector field of wind in space, regardless of time. And we consider the wind as only horizontal air flow. This is due to the slow change of wind speed and direction on the field, and usually only the average wind speed within an hour is detected. Table 3 below gives the wind speed and direction data we used [10]:",
+  "sents": [
+   "Wind direction and wind speed are only functions related to space, forming a vector field of wind in space, regardless of time.",
+   "And we consider the wind as only horizontal air flow.",
+   "This is due to the slow change of wind speed and direction on the field, and usually only the average wind speed within an hour is detected.",
+   "Table 3 below gives the wind speed and direction data we used [10]:"
+  ],
+  "nwords": 72,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 17,
+  "size": 12.0,
+  "y0": 411.5879821777344,
+  "y1": 424.8719787597656,
+  "text": "Table 3: Direction and Speed of the Wind in Course",
+  "sents": [
+   "Table 3: Direction and Speed of the Wind in Course"
+  ],
+  "nwords": 10,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 429.1080017089844,
+  "y1": 442.3919982910156,
+  "text": "Tokyo",
+  "sents": [
+   "Tokyo"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 429.1080017089844,
+  "y1": 442.3919982910156,
+  "text": "Belgium",
+  "sents": [
+   "Belgium"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 437.7480163574219,
+  "y1": 451.0320129394531,
+  "text": "Data",
+  "sents": [
+   "Data"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 446.1679992675781,
+  "y1": 459.4519958496094,
+  "text": "Men",
+  "sents": [
+   "Men"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 446.1679992675781,
+  "y1": 459.4519958496094,
+  "text": "Women",
+  "sents": [
+   "Women"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 446.1679992675781,
+  "y1": 459.4519958496094,
+  "text": "Men",
+  "sents": [
+   "Men"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 446.1679992675781,
+  "y1": 459.4519958496094,
+  "text": "Women",
+  "sents": [
+   "Women"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 463.2080078125,
+  "y1": 476.49200439453125,
+  "text": "Wind direction(°)",
+  "sents": [
+   "Wind direction(°)"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 463.2080078125,
+  "y1": 476.49200439453125,
+  "text": "270",
+  "sents": [
+   "270"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 463.2080078125,
+  "y1": 476.49200439453125,
+  "text": "290",
+  "sents": [
+   "290"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 463.2080078125,
+  "y1": 476.49200439453125,
+  "text": "050",
+  "sents": [
+   "050"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 463.2080078125,
+  "y1": 476.49200439453125,
+  "text": "010",
+  "sents": [
+   "010"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 479.5279846191406,
+  "y1": 492.8119812011719,
+  "text": "Wind speed(m/s)",
+  "sents": [
+   "Wind speed(m/s)"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 479.5279846191406,
+  "y1": 492.8119812011719,
+  "text": "0.5",
+  "sents": [
+   "0.5"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 479.5279846191406,
+  "y1": 492.8119812011719,
+  "text": "1.0",
+  "sents": [
+   "1.0"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 479.5279846191406,
+  "y1": 492.8119812011719,
+  "text": "2.0",
+  "sents": [
+   "2.0"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 479.5279846191406,
+  "y1": 492.8119812011719,
+  "text": "6.0",
+  "sents": [
+   "6.0"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 505.4480285644531,
+  "y1": 567.7219848632812,
+  "text": "The effect of wind on the model results is only due to air resistance. To simplify the model, we only consider wind in the same or opposite direction as the rider's travel to have an effect on the travel, wind in the vertical direction does not affect the ride. From this, we correct the total resistance in the previous model to be:",
+  "sents": [
+   "The effect of wind on the model results is only due to air resistance.",
+   "To simplify the model, we only consider wind in the same or opposite direction as the rider's travel to have an effect on the travel, wind in the vertical direction does not affect the ride.",
+   "From this, we correct the total resistance in the previous model to be:"
+  ],
+  "nwords": 62,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 571.7179565429688,
+  "y1": 656.5419311523438,
+  "text": "(14) where,is the angle between the traveling direction and the wind direction (less than or equal to the flat angle), which is essentially function of, denoted by.is the symbolic function.are the horizontal speed of the rider and the wind speed, respectively.",
+  "sents": [
+   "(14) where,is the angle between the traveling direction and the wind direction (less than or equal to the flat angle), which is essentially function of, denoted by.is the symbolic function.are the horizontal speed of the rider and the wind speed, respectively."
+  ],
+  "nwords": 41,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 656.93798828125,
+  "y1": 697.8219604492188,
+  "text": "To sum up, the new model is an improvement of the original model. We can solve the model using the above data and similar methods, and modify the values of wind direction and speed to analyze the sensitivity.",
+  "sents": [
+   "To sum up, the new model is an improvement of the original model.",
+   "We can solve the model using the above data and similar methods, and modify the values of wind direction and speed to analyze the sensitivity."
+  ],
+  "nwords": 38,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 17,
+  "size": 12.0,
+  "y0": 698.4879760742188,
+  "y1": 753.0479736328125,
+  "text": "In order to explore the influence of weather conditions on the results, we took the performance of women on the UCI track as an example, and set up 8 wind directions and 3 wind levels, with a total of 24 wind environments. In these environments, we simulated the performance of athletes in the wind. The results obtained are presented in Figure 13:",
+  "sents": [
+   "In order to explore the influence of weather conditions on the results, we took the performance of women on the UCI track as an example, and set up 8 wind directions and 3 wind levels, with a total of 24 wind environments.",
+   "In these environments, we simulated the performance of athletes in the wind.",
+   "The results obtained are presented in Figure 13:"
+  ],
+  "nwords": 62,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 18,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_18_13.png",
+  "w": 271.6,
+  "h": 171.7,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 18,
+  "size": 12.0,
+  "y0": 245.9379425048828,
+  "y1": 259.2219543457031,
+  "text": "Figure 13: Finishing times in different weather conditions",
+  "sents": [
+   "Figure 13: Finishing times in different weather conditions"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 262.0179748535156,
+  "y1": 307.7319641113281,
+  "text": "The wind direction adopts eight gradient settings of due north, due south, due west, due east, northeast, southeast, northwest, and southwest; the wind speed is set with three gradient settings of 1m/s, 2m/s and 3m/s.",
+  "sents": [
+   "The wind direction adopts eight gradient settings of due north, due south, due west, due east, northeast, southeast, northwest, and southwest; the wind speed is set with three gradient settings of 1m/s, 2m/s and 3m/s."
+  ],
+  "nwords": 35,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 310.7679748535156,
+  "y1": 405.6719970703125,
+  "text": "According to the above figure, When the wind direction is constant, every time the wind speed changes by one level, the completion time will change by 20~330s, and the change proportion is less than 10%. When the wind is constant, each time the wind direction changes in one direction, the completion time will change by 30~460s, and the maximum change ratio is 16%. Therefore, considering the influence of two factors, we believe that our model is more sensitive to changes in the weather environment.",
+  "sents": [
+   "According to the above figure, When the wind direction is constant, every time the wind speed changes by one level, the completion time will change by 20~330s, and the change proportion is less than 10%.",
+   "When the wind is constant, each time the wind direction changes in one direction, the completion time will change by 30~460s, and the maximum change ratio is 16%.",
+   "Therefore, considering the influence of two factors, we believe that our model is more sensitive to changes in the weather environment."
+  ],
+  "nwords": 84,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 18,
+  "size": 13.9,
+  "y0": 412.5623779296875,
+  "y1": 428.16668701171875,
+  "text": "6.2 Deviation effects",
+  "sents": [
+   "6.2 Deviation effects"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 437.98797607421875,
+  "y1": 549.001953125,
+  "text": "During a race, the rider cannot accurately implement the determined optimal power distribution strategy. For example, the rider did not increase to optimal power on a stage where he should have increased power. Thus, the rider's power position curve is likely to deviate from the optimal curve. To simulate this deviation, we randomly change the optimal power distribution curve so that the rider may output sub-optimal power at any position. We use the average absolute value of the deviation of the rider's actual output power curve from the optimal power curve at all positions as the degree to which the rider deviates from the optimal curve.",
+  "sents": [
+   "During a race, the rider cannot accurately implement the determined optimal power distribution strategy.",
+   "For example, the rider did not increase to optimal power on a stage where he should have increased power.",
+   "Thus, the rider's power position curve is likely to deviate from the optimal curve.",
+   "To simulate this deviation, we randomly change the optimal power distribution curve so that the rider may output sub-optimal power at any position.",
+   "We use the average absolute value of the deviation of the rider's actual output power curve from the optimal power curve at all positions as the degree to which the rider deviates from the optimal curve."
+  ],
+  "nwords": 106,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 552.0379638671875,
+  "y1": 581.4019165039062,
+  "text": "We use random numbers to generate non-optimal power distributions and plug them into the model to solve for the corresponding finish times, as shown in Table 4:",
+  "sents": [
+   "We use random numbers to generate non-optimal power distributions and plug them into the model to solve for the corresponding finish times, as shown in Table 4:"
+  ],
+  "nwords": 27,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 18,
+  "size": 12.0,
+  "y0": 588.2779541015625,
+  "y1": 601.5619506835938,
+  "text": "Table 4: Non-optimal Finish Time",
+  "sents": [
+   "Table 4: Non-optimal Finish Time"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 605.7979736328125,
+  "y1": 619.0819702148438,
+  "text": "Mean devia-",
+  "sents": [
+   "Mean devia-"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 627.261962890625,
+  "text": "0",
+  "sents": [
+   "0"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 627.261962890625,
+  "text": "0.06",
+  "sents": [
+   "0.06"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 627.261962890625,
+  "text": "0.07",
+  "sents": [
+   "0.07"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 627.261962890625,
+  "text": "0.08",
+  "sents": [
+   "0.08"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 627.261962890625,
+  "text": "0.09",
+  "sents": [
+   "0.09"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 627.261962890625,
+  "text": "0.1",
+  "sents": [
+   "0.1"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 627.261962890625,
+  "text": "0.15",
+  "sents": [
+   "0.15"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 613.9779663085938,
+  "y1": 635.4219360351562,
+  "text": "0.2 tion(W/Kg)",
+  "sents": [
+   "0.2 tion(W/Kg)"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 639.177978515625,
+  "y1": 652.4619750976562,
+  "text": "Finish time(s)",
+  "sents": [
+   "Finish time(s)"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 639.177978515625,
+  "y1": 668.781982421875,
+  "text": "4001.5 4010.8 4144.1 4159.9 4174.4 4196.7 4200.0 4325.7 Delta-time(s)",
+  "sents": [
+   "4001.5 4010.8 4144.1 4159.9 4174.4 4196.7 4200.0 4325.7 Delta-time(s)"
+  ],
+  "nwords": 9,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 655.4979858398438,
+  "y1": 668.781982421875,
+  "text": "0",
+  "sents": [
+   "0"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 655.4979858398438,
+  "y1": 668.781982421875,
+  "text": "+9.3",
+  "sents": [
+   "+9.3"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 655.4979858398438,
+  "y1": 685.1019897460938,
+  "text": "+142.6 +158.4 +172.9 +195.2 +198.5 +324.2 Percentage of",
+  "sents": [
+   "+142.6 +158.4 +172.9 +195.2 +198.5 +324.2 Percentage of"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 693.261962890625,
+  "text": "0",
+  "sents": [
+   "0"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 693.261962890625,
+  "text": "0.232",
+  "sents": [
+   "0.232"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 693.261962890625,
+  "text": "3.563",
+  "sents": [
+   "3.563"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 693.261962890625,
+  "text": "3.959",
+  "sents": [
+   "3.959"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 693.261962890625,
+  "text": "4.142",
+  "sents": [
+   "4.142"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 693.261962890625,
+  "text": "4.878",
+  "sents": [
+   "4.878"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 693.261962890625,
+  "text": "4.961",
+  "sents": [
+   "4.961"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 679.9779663085938,
+  "y1": 701.4219360351562,
+  "text": "8.101 change(%)",
+  "sents": [
+   "8.101 change(%)"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 18,
+  "size": 12.0,
+  "y0": 714.0879516601562,
+  "y1": 759.7679443359375,
+  "text": "From the data in the table, we can find that as the deviation value increases, the completion time of the rider gradually increases, which verifies that our model is indeed the best solution to a certain extent. When the average deviation is below 0.06, the variation in completion time",
+  "sents": [
+   "From the data in the table, we can find that as the deviation value increases, the completion time of the rider gradually increases, which verifies that our model is indeed the best solution to a certain extent.",
+   "When the average deviation is below 0.06, the variation in completion time"
+  ],
+  "nwords": 49,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 152.40199279785156,
+  "text": "is small, less than 0.5%. After the deviation increases to a certain value between 0.06 and 0.07, the change in the completion time increases, but is less than 5%. But when the average deviation is between 0.15 and 0.2, the variation of completion time increases greatly, more than 5%. If the average deviation continues to increase, the rider will not be able to finish the race properly due to not meeting the finite energy limit.",
+  "sents": [
+   "is small, less than 0.5%. After the deviation increases to a certain value between 0.06 and 0.07, the change in the completion time increases, but is less than 5%.",
+   "But when the average deviation is between 0.15 and 0.2, the variation of completion time increases greatly, more than 5%.",
+   "If the average deviation continues to increase, the rider will not be able to finish the race properly due to not meeting the finite energy limit."
+  ],
+  "nwords": 75,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 155.4379425048828,
+  "y1": 201.12196350097656,
+  "text": "After the above analysis, when the average deviation changes by about 5%, the completion time changes by about 10%. Therefore, we believe that the model results have some insensitivity to the rider's deviation from the target power.",
+  "sents": [
+   "After the above analysis, when the average deviation changes by about 5%, the completion time changes by about 10%.",
+   "Therefore, we believe that the model results have some insensitivity to the rider's deviation from the target power."
+  ],
+  "nwords": 37,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 207.2979278564453,
+  "y1": 302.2120056152344,
+  "text": "Additionally, we divided the entire course into sections. The endpoint of each segment is a checkpoint. Through multiple simulations, we get the time frame for reaching each checkpoint. If the rider arrives at these checkpoints within these ranges, the final finish time is guaranteed to be no later than 1 minute after the optimal finish time. Table 5 shows the acceptable time range for arriving at each checkpoint after dividing the UCI Men's ITT circuit into 11 segments.",
+  "sents": [
+   "Additionally, we divided the entire course into sections.",
+   "The endpoint of each segment is a checkpoint.",
+   "Through multiple simulations, we get the time frame for reaching each checkpoint.",
+   "If the rider arrives at these checkpoints within these ranges, the final finish time is guaranteed to be no later than 1 minute after the optimal finish time.",
+   "Table 5 shows the acceptable time range for arriving at each checkpoint after dividing the UCI Men's ITT circuit into 11 segments."
+  ],
+  "nwords": 78,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 19,
+  "size": 12.0,
+  "y0": 305.4880065917969,
+  "y1": 318.7720031738281,
+  "text": "Table 5: Acceptable time range at each checkpoint",
+  "sents": [
+   "Table 5: Acceptable time range at each checkpoint"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 323.2480163574219,
+  "y1": 336.5320129394531,
+  "text": "Dis-",
+  "sents": [
+   "Dis-"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "4",
+  "sents": [
+   "4"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "8",
+  "sents": [
+   "8"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "12",
+  "sents": [
+   "12"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "16",
+  "sents": [
+   "16"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "20",
+  "sents": [
+   "20"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "24",
+  "sents": [
+   "24"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "28",
+  "sents": [
+   "28"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "32",
+  "sents": [
+   "32"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 344.4519958496094,
+  "text": "36",
+  "sents": [
+   "36"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 331.1679992675781,
+  "y1": 352.61199951171875,
+  "text": "40 tance(Km)",
+  "sents": [
+   "40 tance(Km)"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "Max time(s)",
+  "sents": [
+   "Max time(s)"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "287",
+  "sents": [
+   "287"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "717",
+  "sents": [
+   "717"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "1188",
+  "sents": [
+   "1188"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "1469",
+  "sents": [
+   "1469"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "1856",
+  "sents": [
+   "1856"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "2193",
+  "sents": [
+   "2193"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "2518",
+  "sents": [
+   "2518"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "3035",
+  "sents": [
+   "3035"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 369.6520080566406,
+  "text": "3316",
+  "sents": [
+   "3316"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 356.3680114746094,
+  "y1": 385.99200439453125,
+  "text": "3710 Min time(s)",
+  "sents": [
+   "3710 Min time(s)"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "283",
+  "sents": [
+   "283"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "703",
+  "sents": [
+   "703"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "1148",
+  "sents": [
+   "1148"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "1429",
+  "sents": [
+   "1429"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "1815",
+  "sents": [
+   "1815"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "2152",
+  "sents": [
+   "2152"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "2477",
+  "sents": [
+   "2477"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "2974",
+  "sents": [
+   "2974"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "3274",
+  "sents": [
+   "3274"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 372.7080078125,
+  "y1": 385.99200439453125,
+  "text": "3665",
+  "sents": [
+   "3665"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 19,
+  "size": 16.1,
+  "y0": 400.047607421875,
+  "y1": 418.0732727050781,
+  "text": "7 Model Evaluation and Further Discussion",
+  "sents": [
+   "7 Model Evaluation and Further Discussion"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 19,
+  "size": 13.9,
+  "y0": 430.0823669433594,
+  "y1": 445.6866760253906,
+  "text": "7.1 Strengths",
+  "sents": [
+   "7.1 Strengths"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 450.9679870605469,
+  "y1": 464.2519836425781,
+  "text": "Our model offers the following strengths:",
+  "sents": [
+   "Our model offers the following strengths:"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 467.5279846191406,
+  "y1": 529.2919311523438,
+  "text": "We performed a more in-depth analysis of the three-tank model and proposed aerobic and anaerobic energy fatigue models. Drawing on the research of others, we divided rider’s power output into aerobic and anaerobic components. Finally, we found that our model fits the data fairly well. The validity of the model has been verified.",
+  "sents": [
+   "We performed a more in-depth analysis of the three-tank model and proposed aerobic and anaerobic energy fatigue models.",
+   "Drawing on the research of others, we divided rider’s power output into aerobic and anaerobic components.",
+   "Finally, we found that our model fits the data fairly well.",
+   "The validity of the model has been verified."
+  ],
+  "nwords": 53,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 532.5979614257812,
+  "y1": 627.261962890625,
+  "text": "Considering a variety of factors, a rider track model is proposed. In this process, we considered various factors such as the rider's energy consumption limit and stress situation, the slope and camber of the track, wind direction and speed, etc., which is more comprehensive. The model is highly generalizable. When building model, we started with an individual time trial. Then we revised the model based on the characteristics of the team competition, and proposed the Draft strategy to generalize the model to be suitable for team time trials.",
+  "sents": [
+   "Considering a variety of factors, a rider track model is proposed.",
+   "In this process, we considered various factors such as the rider's energy consumption limit and stress situation, the slope and camber of the track, wind direction and speed, etc., which is more comprehensive.",
+   "The model is highly generalizable.",
+   "When building model, we started with an individual time trial. Then we revised the model based on the characteristics of the team competition, and proposed the Draft strategy to generalize the model to be suitable for team time trials."
+  ],
+  "nwords": 88,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 19,
+  "size": 13.9,
+  "y0": 632.4723510742188,
+  "y1": 648.07666015625,
+  "text": "7.2 Weaknesses",
+  "sents": [
+   "7.2 Weaknesses"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 653.0979614257812,
+  "y1": 666.3819580078125,
+  "text": "Our model has the following limitations and related improvements:",
+  "sents": [
+   "Our model has the following limitations and related improvements:"
+  ],
+  "nwords": 9,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 669.657958984375,
+  "y1": 715.1319580078125,
+  "text": "In the Anaerobic Energy Fatigue Model, we treat the recovery factor as a constant. Doing so simplifies the model but reduces the authenticity of the model to some extent. In fact, due to loss of energy, it is more appropriate to describe the recovery factor as a variable.",
+  "sents": [
+   "In the Anaerobic Energy Fatigue Model, we treat the recovery factor as a constant.",
+   "Doing so simplifies the model but reduces the authenticity of the model to some extent.",
+   "In fact, due to loss of energy, it is more appropriate to describe the recovery factor as a variable."
+  ],
+  "nwords": 48,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 19,
+  "size": 12.0,
+  "y0": 718.407958984375,
+  "y1": 764.0879516601562,
+  "text": "In the construction of the Optimal Individual Power Distribution Model, the consideration of the Abstract Course Model is relatively simple. We only care about whether there is a turn at a certain position on the race schedule, and do not consider the size of the corner",
+  "sents": [
+   "In the construction of the Optimal Individual Power Distribution Model, the consideration of the Abstract Course Model is relatively simple.",
+   "We only care about whether there is a turn at a certain position on the race schedule, and do not consider the size of the corner"
+  ],
+  "nwords": 46,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 103.4120101928711,
+  "text": "radius. Although the model is simplified, the authenticity of the model is weakened. In fact, this factor may affect a rider's low-power ride time, which in turn affects the results.",
+  "sents": [
+   "radius. Although the model is simplified, the authenticity of the model is weakened.",
+   "In fact, this factor may affect a rider's low-power ride time, which in turn affects the results."
+  ],
+  "nwords": 30,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 20,
+  "size": 13.9,
+  "y0": 108.62236785888672,
+  "y1": 124.22669219970703,
+  "text": "7.3 Model Extension",
+  "sents": [
+   "7.3 Model Extension"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 129.27796936035156,
+  "y1": 175.2019805908203,
+  "text": "In this section, we mainly discuss the generalization of the model. The context for the model we built earlier was the individual time trial. As for the team time trial, Aristotle once said: \"A team is more than the sum of its parts.\" So, we need to further modify the model.",
+  "sents": [
+   "In this section, we mainly discuss the generalization of the model.",
+   "The context for the model we built earlier was the individual time trial. As for the team time trial, Aristotle once said: \"A team is more than the sum of its parts.\" So, we need to further modify the model."
+  ],
+  "nwords": 51,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 177.3132781982422,
+  "y1": 289.2219543457031,
+  "text": "According to the rules of the team time trial given by UCI [11], different teams should keep a certain distance, the team members should not push each other, and the following auxiliary vehicles should not be used. Therefore, the influence between teams and other factors that affect resistance, motivation and energy consumption are ignored. The important thing is that in team time trial, the front players can reduce drag for the rear players by arranging in front and back. Therefore, the main difference between team time trial and individual time trial is that we need to consider the different resistance between different riders.",
+  "sents": [
+   "According to the rules of the team time trial given by UCI [11], different teams should keep a certain distance, the team members should not push each other, and the following auxiliary vehicles should not be used.",
+   "Therefore, the influence between teams and other factors that affect resistance, motivation and energy consumption are ignored.",
+   "The important thing is that in team time trial, the front players can reduce drag for the rear players by arranging in front and back.",
+   "Therefore, the main difference between team time trial and individual time trial is that we need to consider the different resistance between different riders."
+  ],
+  "nwords": 103,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 292.2879943847656,
+  "y1": 305.5719909667969,
+  "text": "The resistance model needs to be revised first as follows:",
+  "sents": [
+   "The resistance model needs to be revised first as follows:"
+  ],
+  "nwords": 10,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 315.0880432128906,
+  "y1": 328.3720397949219,
+  "text": "(15)",
+  "sents": [
+   "(15)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 339.5679931640625,
+  "y1": 352.85198974609375,
+  "text": "where,is a constant, related to the total number of riders and the position of the rider in",
+  "sents": [
+   "where,is a constant, related to the total number of riders and the position of the rider in"
+  ],
+  "nwords": 17,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 365.26800537109375,
+  "y1": 378.552001953125,
+  "text": "the cohort.",
+  "sents": [
+   "the cohort."
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 384.7080078125,
+  "y1": 414.3119812011719,
+  "text": "When the total number of team members is 6, the values in the expression of resistance received by riders at various positions are shown in Table 6 below:",
+  "sents": [
+   "When the total number of team members is 6, the values in the expression of resistance received by riders at various positions are shown in Table 6 below:"
+  ],
+  "nwords": 28,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 20,
+  "size": 12.0,
+  "y0": 417.5879821777344,
+  "y1": 430.8719787597656,
+  "text": "Table 6: Resistance coefficient of players at different positions",
+  "sents": [
+   "Table 6: Resistance coefficient of players at different positions"
+  ],
+  "nwords": 9,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 435.3480224609375,
+  "y1": 448.63201904296875,
+  "text": "Sequence",
+  "sents": [
+   "Sequence"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 435.3480224609375,
+  "y1": 448.63201904296875,
+  "text": "First",
+  "sents": [
+   "First"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 435.3480224609375,
+  "y1": 448.63201904296875,
+  "text": "Second",
+  "sents": [
+   "Second"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 435.3480224609375,
+  "y1": 448.63201904296875,
+  "text": "Third",
+  "sents": [
+   "Third"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 435.3480224609375,
+  "y1": 448.63201904296875,
+  "text": "Fourth",
+  "sents": [
+   "Fourth"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 435.3480224609375,
+  "y1": 448.63201904296875,
+  "text": "Fifth",
+  "sents": [
+   "Fifth"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 435.3480224609375,
+  "y1": 448.63201904296875,
+  "text": "Sixth",
+  "sents": [
+   "Sixth"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 451.9280090332031,
+  "y1": 465.2120056152344,
+  "text": "(%)",
+  "sents": [
+   "(%)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 453.12799072265625,
+  "y1": 466.4119873046875,
+  "text": "95",
+  "sents": [
+   "95"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 453.12799072265625,
+  "y1": 466.4119873046875,
+  "text": "68",
+  "sents": [
+   "68"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 453.12799072265625,
+  "y1": 466.4119873046875,
+  "text": "67",
+  "sents": [
+   "67"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 453.12799072265625,
+  "y1": 466.4119873046875,
+  "text": "67",
+  "sents": [
+   "67"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 453.12799072265625,
+  "y1": 466.4119873046875,
+  "text": "67",
+  "sents": [
+   "67"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 453.12799072265625,
+  "y1": 466.4119873046875,
+  "text": "69",
+  "sents": [
+   "69"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 476.64801025390625,
+  "y1": 555.241943359375,
+  "text": "Furthermore, the decisions we need to consider are not limited to when to speed up and when to slow down. To make good use of the drag reduction brought by the team, the team as a whole needs to remain relatively static and move forward at a certain team speed. Because the players at the back of the team face less resistance, the movement is more labor-saving, and the players at the front are more laborious.",
+  "sents": [
+   "Furthermore, the decisions we need to consider are not limited to when to speed up and when to slow down.",
+   "To make good use of the drag reduction brought by the team, the team as a whole needs to remain relatively static and move forward at a certain team speed.",
+   "Because the players at the back of the team face less resistance, the movement is more labor-saving, and the players at the front are more laborious."
+  ],
+  "nwords": 76,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 20,
+  "size": 12.0,
+  "y0": 558.2779541015625,
+  "y1": 636.8619384765625,
+  "text": "In team time trial, teams tend to use \"Draft\" to achieve the balance of team workload. The process of \"Draft\" is: the first player of the team moves laterally out of the queue, making the second player the leader of the team, then the first player of the team slows down, moves to the tail of the team. A schematic diagram of the process (taking four players as an example) is shown in Figure 14:",
+  "sents": [
+   "In team time trial, teams tend to use \"Draft\" to achieve the balance of team workload.",
+   "The process of \"Draft\" is: the first player of the team moves laterally out of the queue, making the second player the leader of the team, then the first player of the team slows down, moves to the tail of the team.",
+   "A schematic diagram of the process (taking four players as an example) is shown in Figure 14:"
+  ],
+  "nwords": 75,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 20,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_20_14.png",
+  "w": 207.2,
+  "h": 110.2,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 20,
+  "size": 12.0,
+  "y0": 754.1639404296875,
+  "y1": 767.4479370117188,
+  "text": "Figure 14: The strategy of Draft",
+  "sents": [
+   "Figure 14: The strategy of Draft"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 73.80793762207031,
+  "y1": 103.4120101928711,
+  "text": "So when and where to \"draft\" is a key decision in team time trials. So, we define a discretevalued function to represent the replacement case:",
+  "sents": [
+   "So when and where to \"draft\" is a key decision in team time trials.",
+   "So, we define a discretevalued function to represent the replacement case:"
+  ],
+  "nwords": 25,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 120.15797424316406,
+  "y1": 133.4419708251953,
+  "text": "(16)",
+  "sents": [
+   "(16)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 150.63795471191406,
+  "y1": 163.9219512939453,
+  "text": "where,is the position that needs to be drafted in the schedule.",
+  "sents": [
+   "where,is the position that needs to be drafted in the schedule."
+  ],
+  "nwords": 11,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 167.4379425048828,
+  "y1": 194.64198303222656,
+  "text": "This function provides a new decision variable, and we can find the optimal solution through more complex dynamic programming.",
+  "sents": [
+   "This function provides a new decision variable, and we can find the optimal solution through more complex dynamic programming."
+  ],
+  "nwords": 19,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 196.73793029785156,
+  "y1": 242.66200256347656,
+  "text": "In addition, since the competition is based on the performance of the fourth team member, we can combine the different abilities of different team members and discard the weak players at certain points during the march to obtain better results.",
+  "sents": [
+   "In addition, since the competition is based on the performance of the fourth team member, we can combine the different abilities of different team members and discard the weak players at certain points during the march to obtain better results."
+  ],
+  "nwords": 40,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 245.6979522705078,
+  "y1": 324.2919616699219,
+  "text": "There are more strategies in team time trials. In order to highlight the goal, we only select a representative strategy to simplify the decision. We can also consider that the rider who was at the front of the team does not move to the tail, but exchanges positions with the second rider or returns to other positions other than the tail of the team. This can also be modified according to the different ability levels of different riders.",
+  "sents": [
+   "There are more strategies in team time trials.",
+   "In order to highlight the goal, we only select a representative strategy to simplify the decision.",
+   "We can also consider that the rider who was at the front of the team does not move to the tail, but exchanges positions with the second rider or returns to other positions other than the tail of the team.",
+   "This can also be modified according to the different ability levels of different riders."
+  ],
+  "nwords": 78,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 327.3280029296875,
+  "y1": 373.27197265625,
+  "text": "In the team time trials, based on our previous model, we can consider more constraints and decision variables, and propose an improved model to solve with more complex dynamic programming. Due to space limitations, the solution process of the model is not described here.",
+  "sents": [
+   "In the team time trials, based on our previous model, we can consider more constraints and decision variables, and propose an improved model to solve with more complex dynamic programming.",
+   "Due to space limitations, the solution process of the model is not described here."
+  ],
+  "nwords": 44,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 21,
+  "size": 16.1,
+  "y0": 382.047607421875,
+  "y1": 400.0732727050781,
+  "text": "8 Conclusion",
+  "sents": [
+   "8 Conclusion"
+  ],
+  "nwords": 2,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 408.7080078125,
+  "y1": 454.63201904296875,
+  "text": "In this paper, we establish a model suitable for various types of riders to analyze the relationship between the power that the rider should apply and the position of the race, and give the optimal power distribution strategy.",
+  "sents": [
+   "In this paper, we establish a model suitable for various types of riders to analyze the relationship between the power that the rider should apply and the position of the race, and give the optimal power distribution strategy."
+  ],
+  "nwords": 38,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 457.68798828125,
+  "y1": 503.61199951171875,
+  "text": "First, we established aerobic and anaerobic energy fatigue models. On this basis, we quantitatively give power curves for different rider types and genders, and use model parameters to define different types and genders of cyclists.",
+  "sents": [
+   "First, we established aerobic and anaerobic energy fatigue models.",
+   "On this basis, we quantitatively give power curves for different rider types and genders, and use model parameters to define different types and genders of cyclists."
+  ],
+  "nwords": 35,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 506.6479797363281,
+  "y1": 601.3219604492188,
+  "text": "Secondly, we consider the force of the rider, the slope of the track and the cornering situation, and combine the power curve of the player to establish Optimal Individual Power Distribution Model. We used dynamic programming to obtain the optimal power distribution diagram for different cyclists. In addition, we also give the characteristics of different players' adaptability to different track environments, such as slopes and corners, and calculated their shortest time.",
+  "sents": [
+   "Secondly, we consider the force of the rider, the slope of the track and the cornering situation, and combine the power curve of the player to establish Optimal Individual Power Distribution Model.",
+   "We used dynamic programming to obtain the optimal power distribution diagram for different cyclists.",
+   "In addition, we also give the characteristics of different players' adaptability to different track environments, such as slopes and corners, and calculated their shortest time."
+  ],
+  "nwords": 71,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 604.3579711914062,
+  "y1": 715.6119995117188,
+  "text": "Thirdly, we take into account wind direction and speed to make corrections to the model, and perform a sensitivity analysis for weather conditions. We found that a 1m/s change in wind speed resulted in a change of no more than 10% in the results, and a 45-degree change in wind direction caused a change in the results by no more than 16%. So, we think our model is more sensitive to wind direction and wind speed. We also investigated the sensitivity of the model to deviation of the power distribution, only to find that our model is not sensitive to the deviation. Then we gave the acceptable range of deviation.",
+  "sents": [
+   "Thirdly, we take into account wind direction and speed to make corrections to the model, and perform a sensitivity analysis for weather conditions.",
+   "We found that a 1m/s change in wind speed resulted in a change of no more than 10% in the results, and a 45-degree change in wind direction caused a change in the results by no more than 16%.",
+   "So, we think our model is more sensitive to wind direction and wind speed.",
+   "We also investigated the sensitivity of the model to deviation of the power distribution, only to find that our model is not sensitive to the deviation.",
+   "Then we gave the acceptable range of deviation."
+  ],
+  "nwords": 110,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 21,
+  "size": 12.0,
+  "y0": 718.64794921875,
+  "y1": 764.3279418945312,
+  "text": "Finally, we consider the effect of wind resistance on the team and generalize the individual time trial model to the team time trial model. We give considerations about draft and drop strategies. And at the end of the paper, we provide a race guide for rider and the Directeur.",
+  "sents": [
+   "Finally, we consider the effect of wind resistance on the team and generalize the individual time trial model to the team time trial model.",
+   "We give considerations about draft and drop strategies.",
+   "And at the end of the paper, we provide a race guide for rider and the Directeur."
+  ],
+  "nwords": 49,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 22,
+  "size": 16.1,
+  "y0": 80.01268768310547,
+  "y1": 97.81324768066406,
+  "text": "Men Elite Individual Time Trial Guidance",
+  "sents": [
+   "Men Elite Individual Time Trial Guidance"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 109.32795715332031,
+  "y1": 122.6119613647461,
+  "text": "—— 2021 UCI World Championships in Flanders, Belgium",
+  "sents": [
+   "—— 2021 UCI World Championships in Flanders, Belgium"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 131.91798400878906,
+  "y1": 145.2019805908203,
+  "text": "1. Analysis of the Race Track and Weather",
+  "sents": [
+   "1. Analysis of the Race Track and Weather"
+  ],
+  "nwords": 8,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 147.99794006347656,
+  "y1": 177.60194396972656,
+  "text": "The competition takes place in the Belgian province of Flanders. Riders need to travel from Knokke Heist to Bruges in northern Belgium.",
+  "sents": [
+   "The competition takes place in the Belgian province of Flanders.",
+   "Riders need to travel from Knokke Heist to Bruges in northern Belgium."
+  ],
+  "nwords": 22,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 180.63795471191406,
+  "y1": 226.58192443847656,
+  "text": "The height fluctuation of the race track is shown in figure 1. The total length of the track is 43.3 kilometers, the average altitude is 15m, the range is 15m, and the standard deviation is only 3m. The track is flat and is more suitable for Flat Time Trial Specialist.",
+  "sents": [
+   "The height fluctuation of the race track is shown in figure 1.",
+   "The total length of the track is 43.3 kilometers, the average altitude is 15m, the range is 15m, and the standard deviation is only 3m.",
+   "The track is flat and is more suitable for Flat Time Trial Specialist."
+  ],
+  "nwords": 50,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 22,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_22_15.png",
+  "w": 266.1,
+  "h": 113.5,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 22,
+  "size": 12.0,
+  "y0": 343.88800048828125,
+  "y1": 357.1719970703125,
+  "text": "Figure 1: Elevation map of the track",
+  "sents": [
+   "Figure 1: Elevation map of the track"
+  ],
+  "nwords": 7,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 359.98797607421875,
+  "y1": 405.9119873046875,
+  "text": "The track has 7 sharp turns, which are 1.5km, 2.4km, 2.7km, 11.2km, 14.3km, 17.6km and 27.6km. NOTE: Riders need to slow down early when going through these corners. It is recommended to control the speed below 10m/s to avoid rushing out of the track.",
+  "sents": [
+   "The track has 7 sharp turns, which are 1.5km, 2.4km, 2.7km, 11.2km, 14.3km, 17.6km and 27.6km.",
+   "NOTE: Riders need to slow down early when going through these corners.",
+   "It is recommended to control the speed below 10m/s to avoid rushing out of the track."
+  ],
+  "nwords": 44,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 408.947998046875,
+  "y1": 471.2120056152344,
+  "text": "According to the Zeebrugge Weather Observatory data provided by NOAA, the wind direction is 50° north by east at 16:00, on the day of the competition, that is, on September 19, 2021. The wind speed is 2m/s. It is downwind. The effect of wind on performance is about 1%, about ±10s.",
+  "sents": [
+   "According to the Zeebrugge Weather Observatory data provided by NOAA, the wind direction is 50° north by east at 16:00, on the day of the competition, that is, on September 19, 2021.",
+   "The wind speed is 2m/s. It is downwind.",
+   "The effect of wind on performance is about 1%, about ±10s."
+  ],
+  "nwords": 51,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 474.2480163574219,
+  "y1": 487.5320129394531,
+  "text": "2. Analysis of the Cyclist's Profile",
+  "sents": [
+   "2. Analysis of the Cyclist's Profile"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 22,
+  "size": 12.0,
+  "y0": 490.3280029296875,
+  "y1": 601.5619506835938,
+  "text": "Based on the given rider data, the rider's power curve can be obtained and is listed in figure 2. His FTP is 4.79W/kg, so his aerobic respiration can provide high power efficiency. His total anaerobic energy is 56.28J/Kg, so his anaerobic respiration has poor short-term power efficiency. That means his staying power is good, but his short-term explosiveness is poor. He's the quintessential Flat Time Trial Specialist. He is more suitable for riding on flat terrain with few hills, which is in line with the characteristics of the track. Below is his power curve.",
+  "sents": [
+   "Based on the given rider data, the rider's power curve can be obtained and is listed in figure 2.",
+   "His FTP is 4.79W/kg, so his aerobic respiration can provide high power efficiency.",
+   "His total anaerobic energy is 56.28J/Kg, so his anaerobic respiration has poor short-term power efficiency.",
+   "That means his staying power is good, but his short-term explosiveness is poor.",
+   "He's the quintessential Flat Time Trial Specialist.",
+   "He is more suitable for riding on flat terrain with few hills, which is in line with the characteristics of the track.",
+   "Below is his power curve."
+  ],
+  "nwords": 94,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 22,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_22_16.png",
+  "w": 255.2,
+  "h": 143.5,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 22,
+  "size": 12.0,
+  "y0": 751.5239868164062,
+  "y1": 764.8079833984375,
+  "text": "Figure 2: The power curve of a Time Trial Specialist",
+  "sents": [
+   "Figure 2: The power curve of a Time Trial Specialist"
+  ],
+  "nwords": 10,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 74.04798889160156,
+  "y1": 87.33199310302734,
+  "text": "3. Overview of the Directions",
+  "sents": [
+   "3. Overview of the Directions"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 90.12800598144531,
+  "y1": 136.08192443847656,
+  "text": "By comprehensively analyzing the track model and the player's model, we can obtain the recommended power-distance distribution diagram for this rider who wants to achieve the best results. The P-D diagram is shown in Figure 3 below.",
+  "sents": [
+   "By comprehensively analyzing the track model and the player's model, we can obtain the recommended power-distance distribution diagram for this rider who wants to achieve the best results.",
+   "The P-D diagram is shown in Figure 3 below."
+  ],
+  "nwords": 37,
+  "nozh": false
+ },
+ {
+  "kind": "img",
+  "page": 23,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_23_17.png",
+  "w": 237.0,
+  "h": 133.4,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 23,
+  "size": 12.0,
+  "y0": 286.0480041503906,
+  "y1": 299.3320007324219,
+  "text": "Figure 3: The P-D diagram",
+  "sents": [
+   "Figure 3: The P-D diagram"
+  ],
+  "nwords": 5,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 302.1280212402344,
+  "y1": 396.7919921875,
+  "text": "As can be seen, there are several key nodes that require more force to accelerate. Besides, there are also nodes that need to reduce power to restore stamina, including reducing power in downhill positions, and before sharp turns. The rider recommended to increase the output power at x=1km, 9.6km, 17.8km and other positions to complete the acceleration; while at x=1.6km, 2.7km and other positions to reduce power output to about 1W/kg. The rest of the time, try to maintain near the FTP, that is, the maximum value of aerobic respiration.",
+  "sents": [
+   "As can be seen, there are several key nodes that require more force to accelerate.",
+   "Besides, there are also nodes that need to reduce power to restore stamina, including reducing power in downhill positions, and before sharp turns.",
+   "The rider recommended to increase the output power at x=1km, 9.6km, 17.8km and other positions to complete the acceleration; while at x=1.6km, 2.7km and other positions to reduce power output to about 1W/kg.",
+   "The rest of the time, try to maintain near the FTP, that is, the maximum value of aerobic respiration."
+  ],
+  "nwords": 90,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 399.8280029296875,
+  "y1": 429.4320068359375,
+  "text": "Completing the entire track according to this curve can optimize the performance of the players, and the estimated finishing time is 3499s (58m 19s).",
+  "sents": [
+   "Completing the entire track according to this curve can optimize the performance of the players, and the estimated finishing time is 3499s (58m 19s)."
+  ],
+  "nwords": 24,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 432.4679870605469,
+  "y1": 511.052001953125,
+  "text": "However, it is impossible to highly detailed follow the above power distribution. Small deviations in power output still yield near-optimal results. So, we provide acceptable time frames for riders to reach some positions, part of which are shown in the table below. As long as the range of players arriving at these positions is within the Max Time and Min Time, the final finishing time can be no later than 57h 19s , 1min later than the optimal time.",
+  "sents": [
+   "However, it is impossible to highly detailed follow the above power distribution.",
+   "Small deviations in power output still yield near-optimal results.",
+   "So, we provide acceptable time frames for riders to reach some positions, part of which are shown in the table below.",
+   "As long as the range of players arriving at these positions is within the Max Time and Min Time, the final finishing time can be no later than 57h 19s , 1min later than the optimal time."
+  ],
+  "nwords": 79,
+  "nozh": false
+ },
+ {
+  "kind": "caption",
+  "page": 23,
+  "size": 12.0,
+  "y0": 514.3280029296875,
+  "y1": 527.6119995117188,
+  "text": "Table 1: Time constraints",
+  "sents": [
+   "Table 1: Time constraints"
+  ],
+  "nwords": 4,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "Distance(Km)",
+  "sents": [
+   "Distance(Km)"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "4",
+  "sents": [
+   "4"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "8",
+  "sents": [
+   "8"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "12",
+  "sents": [
+   "12"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "16",
+  "sents": [
+   "16"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "20",
+  "sents": [
+   "20"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "24",
+  "sents": [
+   "24"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "28",
+  "sents": [
+   "28"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "32",
+  "sents": [
+   "32"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 545.1619873046875,
+  "text": "36",
+  "sents": [
+   "36"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 531.8779907226562,
+  "y1": 562.2019653320312,
+  "text": "40 Max time(s)",
+  "sents": [
+   "40 Max time(s)"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "287",
+  "sents": [
+   "287"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "717",
+  "sents": [
+   "717"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "1188",
+  "sents": [
+   "1188"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "1469",
+  "sents": [
+   "1469"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "1856",
+  "sents": [
+   "1856"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "2193",
+  "sents": [
+   "2193"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "2518",
+  "sents": [
+   "2518"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "3035",
+  "sents": [
+   "3035"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 562.2019653320312,
+  "text": "3316",
+  "sents": [
+   "3316"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 548.91796875,
+  "y1": 578.52197265625,
+  "text": "3710 Min time(s)",
+  "sents": [
+   "3710 Min time(s)"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "283",
+  "sents": [
+   "283"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "703",
+  "sents": [
+   "703"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "1148",
+  "sents": [
+   "1148"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "1429",
+  "sents": [
+   "1429"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "1815",
+  "sents": [
+   "1815"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "2152",
+  "sents": [
+   "2152"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "2477",
+  "sents": [
+   "2477"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "2974",
+  "sents": [
+   "2974"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 578.52197265625,
+  "text": "3274",
+  "sents": [
+   "3274"
+  ],
+  "nwords": 1,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 565.2379760742188,
+  "y1": 596.52197265625,
+  "text": "3665 4. Summary of Our Model",
+  "sents": [
+   "3665 4. Summary of Our Model"
+  ],
+  "nwords": 6,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 599.3179931640625,
+  "y1": 742.9719848632812,
+  "text": "Our model starts from studying the aerobic and anaerobic respiration of the rider and determines the relationship between energy expenditure and power output. The model depicts the rider's energy profile, which is expressed externally as a power curve. For any given track, we simulate the relationship between the rider state and various resistances on the track. When combining the above models, we use dynamic programming to obtain the relationship between optimal output power and track position, which has great reference value for the rider. The best results are achieved as long as the rider performs for the given power output. In order to reduce the difficulty of the players' execution, we provide a relatively loose reference time, which can get close to the best results.",
+  "sents": [
+   "Our model starts from studying the aerobic and anaerobic respiration of the rider and determines the relationship between energy expenditure and power output.",
+   "The model depicts the rider's energy profile, which is expressed externally as a power curve.",
+   "For any given track, we simulate the relationship between the rider state and various resistances on the track.",
+   "When combining the above models, we use dynamic programming to obtain the relationship between optimal output power and track position, which has great reference value for the rider.",
+   "The best results are achieved as long as the rider performs for the given power output.",
+   "In order to reduce the difficulty of the players' execution, we provide a relatively loose reference time, which can get close to the best results."
+  ],
+  "nwords": 125,
+  "nozh": false
+ },
+ {
+  "kind": "para",
+  "page": 23,
+  "size": 12.0,
+  "y0": 746.0039672851562,
+  "y1": 759.2879638671875,
+  "text": "Team # 2209466",
+  "sents": [
+   "Team # 2209466"
+  ],
+  "nwords": 3,
+  "nozh": false
+ },
+ {
+  "kind": "heading",
+  "page": 24,
+  "size": 16.1,
+  "y0": 80.01268768310547,
+  "y1": 97.81324768066406,
+  "text": "References",
+  "sents": [
+   "References"
+  ],
+  "nwords": 1,
+  "nozh": true
+ },
+ {
+  "kind": "img",
+  "page": 24,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_24_18.png",
+  "w": 406.2,
+  "h": 177.2,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 112.30998229980469,
+  "y1": 158.40199279785156,
+  "text": "[1]. Poole, David C et al. “Critical Power: An Important Fatigue Threshold in Exercise Physiology.” Medicine and science in sports and exercise vol. 48,11 (2016): 23202334. doi:10.1249/MSS.0000000000000939",
+  "sents": [
+   "[1]. Poole, David C et al. “Critical Power: An Important Fatigue Threshold in Exercise Physiology.” Medicine and science in sports and exercise vol.",
+   "48,11 (2016): 23202334. doi:10.1249/MSS.0000000000000939"
+  ],
+  "nwords": 27,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 161.2699432373047,
+  "y1": 174.72193908691406,
+  "text": "[2]. https://commons.wikimedia.org/w/index.php?search=road+cycling",
+  "sents": [
+   "[2]. https://commons.wikimedia.org/w/index.php?search=road+cycling"
+  ],
+  "nwords": 2,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 177.34996032714844,
+  "y1": 223.4619903564453,
+  "text": "[3]. Jones, A.M., Vanhatalo, A. The ‘Critical Power’ Concept: Applications to Sports Performance with a Focus on Intermittent High-Intensity Exercise. Sports Med 47, 65– 78 (2017).",
+  "sents": [
+   "[3]. Jones, A.M., Vanhatalo, A.",
+   "The ‘Critical Power’ Concept: Applications to Sports Performance with a Focus on Intermittent High-Intensity Exercise.",
+   "Sports Med 47, 65– 78 (2017)."
+  ],
+  "nwords": 26,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 226.32994079589844,
+  "y1": 256.1019592285156,
+  "text": "[4]. Morton RH. A 3-parameter critical power model. Ergonomics. 1996 Apr;39(4):611619. DOI: 10.1080/00140139608964484. PMID: 8854981.",
+  "sents": [
+   "[4]. Morton RH. A 3-parameter critical power model.",
+   "Ergonomics. 1996 Apr;39(4):611619.",
+   "DOI: 10.1080/00140139608964484.",
+   "PMID: 8854981."
+  ],
+  "nwords": 15,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 258.969970703125,
+  "y1": 288.7419738769531,
+  "text": "[5]. Coggan, Andrew R. “Training and racing using a power meter: an introduction.” (2003).",
+  "sents": [
+   "[5]. Coggan, Andrew R. “Training and racing using a power meter: an introduction.” (2003)."
+  ],
+  "nwords": 14,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 291.63995361328125,
+  "y1": 321.4120178222656,
+  "text": "[6]. Monod, H., & Scherrer, J. (1965). The work capacity of a synergic muscular group. Ergonomics, 8(3), 329-338.",
+  "sents": [
+   "[6]. Monod, H., & Scherrer, J.",
+   "(1965). The work capacity of a synergic muscular group.",
+   "Ergonomics, 8(3), 329-338."
+  ],
+  "nwords": 18,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 324.2799987792969,
+  "y1": 354.052001953125,
+  "text": "[7]. Morton, R. H. (1986). A three component model of human bioenergetics. Journal of mathematical biology, 24(4), 451-466.",
+  "sents": [
+   "[7]. Morton, R. H. (1986). A three component model of human bioenergetics.",
+   "Journal of mathematical biology, 24(4), 451-466."
+  ],
+  "nwords": 18,
+  "nozh": true
+ },
+ {
+  "kind": "img",
+  "page": 24,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_24_19.png",
+  "w": 406.2,
+  "h": 160.8,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 356.91998291015625,
+  "y1": 386.7120056152344,
+  "text": "[8]. Crouch, T.N., Burton, D., LaBry, Z.A. et al. Riding against the wind: a review of Eng 20, 81–110",
+  "sents": [
+   "[8]. Crouch, T.N., Burton, D., LaBry, Z.A. et al. Riding against the wind: a review of Eng 20, 81–110"
+  ],
+  "nwords": 19,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 373.4280090332031,
+  "y1": 402.7919921875,
+  "text": "(2017). https://doi.org/10.1007/s12283-017-0234-1",
+  "sents": [
+   "(2017). https://doi.org/10.1007/s12283-017-0234-1"
+  ],
+  "nwords": 2,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 405.6600036621094,
+  "y1": 451.7519836425781,
+  "text": "[9]. Pierre Debraux, Frederic Grappe, Aneliya V. Manolova & William Bertucci (2011) Aerodynamic drag in cycling: methods of assessment, Sports Biomechanics, 10:3, 197-218, DOI: 10.1080/14763141.2011.592209",
+  "sents": [
+   "[9]. Pierre Debraux, Frederic Grappe, Aneliya V.",
+   "Manolova & William Bertucci (2011) Aerodynamic drag in cycling: methods of assessment, Sports Biomechanics, 10:3, 197-218, DOI: 10.1080/14763141.2011.592209"
+  ],
+  "nwords": 25,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 454.8080139160156,
+  "y1": 517.0519409179688,
+  "text": "Steyn, Wynand J. vdM, and Janike Warnich. \"Comparison of tyre rolling resistance for different mountain bike tyre diameters and surface conditions.\" South African Journal for Research in Sport, Physical Education and Recreation 36.2 (2014): 179-193.",
+  "sents": [
+   "Steyn, Wynand J. vdM, and Janike Warnich.",
+   "\"Comparison of tyre rolling resistance for different mountain bike tyre diameters and surface conditions.\" South African Journal for Research in Sport, Physical Education and Recreation 36.2 (2014): 179-193."
+  ],
+  "nwords": 35,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 24,
+  "size": 12.0,
+  "y0": 519.9199829101562,
+  "y1": 549.7219848632812,
+  "text": "[11].https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database.",
+  "sents": [
+   "[11].https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database."
+  ],
+  "nwords": 1,
+  "nozh": true
+ },
+ {
+  "kind": "img",
+  "page": 25,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_25_20.png",
+  "w": 449.4,
+  "h": 275.9,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 25,
+  "size": 12.0,
+  "y0": 129.75794982910156,
+  "y1": 143.0419464111328,
+  "text": "Introduce: Women's analysis chart",
+  "sents": [
+   "Introduce: Women's analysis chart"
+  ],
+  "nwords": 4,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 25,
+  "size": 12.0,
+  "y0": 391.4280090332031,
+  "y1": 404.7120056152344,
+  "text": "1.UCI Women's track map 2.Women’s power output 3.Women’s speed",
+  "sents": [
+   "1.UCI Women's track map 2.Women’s power output 3.Women’s speed"
+  ],
+  "nwords": 9,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 25,
+  "size": 12.0,
+  "y0": 407.7480163574219,
+  "y1": 421.0320129394531,
+  "text": "4.5.Women’s Remaining aerobic and anaerobic energy",
+  "sents": [
+   "4.5.Women’s Remaining aerobic and anaerobic energy"
+  ],
+  "nwords": 6,
+  "nozh": true
+ },
+ {
+  "kind": "img",
+  "page": 25,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_25_21.png",
+  "w": 221.4,
+  "h": 124.4,
+  "nozh": true
+ },
+ {
+  "kind": "img",
+  "page": 25,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_25_22.png",
+  "w": 188.8,
+  "h": 106.1,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 25,
+  "size": 12.0,
+  "y0": 563.7979736328125,
+  "y1": 577.0819702148438,
+  "text": "UCI Women's track map",
+  "sents": [
+   "UCI Women's track map"
+  ],
+  "nwords": 4,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 25,
+  "size": 12.0,
+  "y0": 563.7979736328125,
+  "y1": 577.0819702148438,
+  "text": "Women’s power output of Olympics",
+  "sents": [
+   "Women’s power output of Olympics"
+  ],
+  "nwords": 5,
+  "nozh": true
+ },
+ {
+  "kind": "img",
+  "page": 25,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_25_23.png",
+  "w": 204.4,
+  "h": 114.9,
+  "nozh": true
+ },
+ {
+  "kind": "img",
+  "page": 25,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_25_24.png",
+  "w": 195.2,
+  "h": 109.8,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 25,
+  "size": 12.0,
+  "y0": 724.16796875,
+  "y1": 737.4519653320312,
+  "text": "Women’s power output of UCI",
+  "sents": [
+   "Women’s power output of UCI"
+  ],
+  "nwords": 5,
+  "nozh": true
+ },
+ {
+  "kind": "para",
+  "page": 25,
+  "size": 12.0,
+  "y0": 724.16796875,
+  "y1": 737.4519653320312,
+  "text": "Women’s power output of own design",
+  "sents": [
+   "Women’s power output of own design"
+  ],
+  "nwords": 6,
+  "nozh": true
+ }
+]

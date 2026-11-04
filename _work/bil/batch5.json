@@ -1,0 +1,292 @@
+[
+ {
+  "id": "165.0",
+  "kind": "para",
+  "en": "the rider.is the slope angle, when the rider is going downhill, it is an obtuse angle."
+ },
+ {
+  "id": "166.0",
+  "kind": "para",
+  "en": "It should be pointed out that the force analysis of the rider in the process of going downhill is the same as the force analysis in the process of going uphill, and the above physical model is applicable to both scenarios."
+ },
+ {
+  "id": "167.0",
+  "kind": "para",
+  "en": "For the curve process, in order to simplify the model and calculation, we consider the process as a circular motion."
+ },
+ {
+  "id": "167.1",
+  "kind": "para",
+  "en": "We perform a simple force analysis on it, as shown in Figure 8:"
+ },
+ {
+  "id": "169",
+  "kind": "caption",
+  "en": "Figure 9: Analysis of the rider's force in the process of turning"
+ },
+ {
+  "id": "170.0",
+  "kind": "para",
+  "en": "According to the graph above, in the tangential direction of the corner, the rider is exposed to the total resistance as well as the power provided by himself."
+ },
+ {
+  "id": "170.1",
+  "kind": "para",
+  "en": "This is in line with what a rider would do when riding on straight roads."
+ },
+ {
+  "id": "171.0",
+  "kind": "para",
+  "en": "In the radial direction, the combined force of the rider's gravity and the supporting force of the road surface provides the centripetal force."
+ },
+ {
+  "id": "171.1",
+  "kind": "para",
+  "en": "However, due to the limited inclination of the rider to the road during cornering, the resultant force is limited."
+ },
+ {
+  "id": "171.2",
+  "kind": "para",
+  "en": "Therefore, during a turn, the rider's speed cannot exceed a certain threshold."
+ },
+ {
+  "id": "171.3",
+  "kind": "para",
+  "en": "In addition, we divide the corners into two categories according to the size of the turning radius, sharp turns and soft turns."
+ },
+ {
+  "id": "172.0",
+  "kind": "para",
+  "en": "From this, we get the processing method for the curve process:"
+ },
+ {
+  "id": "173.0",
+  "kind": "para",
+  "en": "• For the sharp turning process, the speed of the rider should not be too high, and the rider should reduce the output power to lower the speed below this threshold, otherwise the turning process cannot be completed."
+ },
+ {
+  "id": "173.1",
+  "kind": "para",
+  "en": "That is to say, we consider the corners to be speed checkpoints on the track, which can only be passed below the speed threshold."
+ },
+ {
+  "id": "174.0",
+  "kind": "para",
+  "en": "• For the soft turning process, we regard it as a straight course and do not do special treatment."
+ },
+ {
+  "id": "175.0",
+  "kind": "para",
+  "en": "We represent the track elevation map obtained earlier as a function of altitude as a function of the rider's position on the track."
+ },
+ {
+  "id": "175.1",
+  "kind": "para",
+  "en": "We think the rider is on an uphill course when the altitude goes up and downhill when the altitude goes down."
+ },
+ {
+  "id": "175.2",
+  "kind": "para",
+  "en": "Therefore, by taking the derivation of this function, we can get the slope angle as a function of the rider's position on the track."
+ },
+ {
+  "id": "176.0",
+  "kind": "para",
+  "en": "In the same way, since we simplified the curve model, we only consider whether the current position of the rider is a straight or a curve, and do not care about the radius of the curve."
+ },
+ {
+  "id": "176.1",
+  "kind": "para",
+  "en": "So we express the camber of the track as a binary function"
+ },
+ {
+  "id": "177.0",
+  "kind": "para",
+  "en": "，that is："
+ },
+ {
+  "id": "178.0",
+  "kind": "para",
+  "en": "(13)"
+ },
+ {
+  "id": "179.0",
+  "kind": "para",
+  "en": "where,is the position of each corner in the track."
+ },
+ {
+  "id": "180.0",
+  "kind": "para",
+  "en": "Through the above analysis, we summarize the basic idea of modeling as shown in below:"
+ },
+ {
+  "id": "182",
+  "kind": "caption",
+  "en": "Figure 10: The framework of the model"
+ },
+ {
+  "id": "183",
+  "kind": "heading",
+  "en": "5.3 Solve the Model"
+ },
+ {
+  "id": "184.0",
+  "kind": "para",
+  "en": "We need to use the existing model to obtain the optimal power distribution of the rider in a race while ensuring that the energy of the aerobic pool and the anaerobic pool is not less than zero, so that the rider can reach the destination in the shortest time."
+ },
+ {
+  "id": "184.1",
+  "kind": "para",
+  "en": "Therefore, solving the model using a dynamic programming algorithm is a good choice."
+ },
+ {
+  "id": "185.0",
+  "kind": "para",
+  "en": "The dynamic programming algorithm is an algorithm that divides the problem and defines the relationship between the state of the problem and the state, so that the problem can be solved in a recursive way."
+ },
+ {
+  "id": "185.1",
+  "kind": "para",
+  "en": "When applying this method to the above model, the main ideas are:"
+ },
+ {
+  "id": "186.0",
+  "kind": "para",
+  "en": " Break the original problem into sub-problems. Divide the track into a certain number of small sections, and find the minimum time to complete this part of the track when each section has the same amount of aerobic energy remaining, anaerobic energy remaining, and the end speed."
+ },
+ {
+  "id": "186.1",
+  "kind": "para",
+  "en": "Gradually increase with the schedule until the entire track is covered."
+ },
+ {
+  "id": "186.2",
+  "kind": "para",
+  "en": "Then the minimum time to complete the track is the minimum time calculated under the condition of any remaining aerobic energy, anaerobic energy remaining, and ending speed."
+ },
+ {
+  "id": "187.0",
+  "kind": "para",
+  "en": " Determine the status. When the remaining amount of aerobic energy is, the remaining amount of anaerobic energy is, and the end speed is, the minimum time consumed bymeters before completion."
+ },
+ {
+  "id": "188.0",
+  "kind": "para",
+  "en": " Given an initial value. The initial velocity is zero, the residual amount of aerobic energy is one, and the residual amount of anaerobic energy is one."
+ },
+ {
+  "id": "189.0",
+  "kind": "para",
+  "en": " State transition. For every segment, the value of its state function may come from all state values of the previous segment of the track."
+ },
+ {
+  "id": "189.1",
+  "kind": "para",
+  "en": "Therefore, we try all power for all state values of the previous segment of the track."
+ },
+ {
+  "id": "189.2",
+  "kind": "para",
+  "en": "If it transitions to its own state, record it."
+ },
+ {
+  "id": "189.3",
+  "kind": "para",
+  "en": "Take the minimum value after the traversal is complete."
+ },
+ {
+  "id": "190.0",
+  "kind": "para",
+  "en": "It should be noted that, except for time, all values are discretized to ensure incremental traversal. When the difference between the values is sufficiently small, the resulting value can be considered accurate."
+ },
+ {
+  "id": "191",
+  "kind": "heading",
+  "en": "5.4 Results and Analysis"
+ },
+ {
+  "id": "192.0",
+  "kind": "para",
+  "en": "Taking into account the gender and type of runners, when applying the model to the track, we discussed the Time Trial Specialists and Sprinters divided into male and female runners."
+ },
+ {
+  "id": "193.0",
+  "kind": "para",
+  "en": "In the three tracks, the power distribution strategies of the two types of male riders are shown in Figure 11 below:"
+ },
+ {
+  "id": "194.0",
+  "kind": "para",
+  "en": "Type"
+ },
+ {
+  "id": "195.0",
+  "kind": "para",
+  "en": "Sprinter"
+ },
+ {
+  "id": "196.0",
+  "kind": "para",
+  "en": "Time Trial Specialist"
+ },
+ {
+  "id": "197.0",
+  "kind": "para",
+  "en": "Tokyo"
+ },
+ {
+  "id": "198.0",
+  "kind": "para",
+  "en": "Belgium"
+ },
+ {
+  "id": "199.0",
+  "kind": "para",
+  "en": "Own design"
+ },
+ {
+  "id": "200",
+  "kind": "caption",
+  "en": "Figure 11: Men's Rider Power Distribution Strategy"
+ },
+ {
+  "id": "201.0",
+  "kind": "para",
+  "en": "Based on the graph above, we got the optimal power distribution for different types of riders."
+ },
+ {
+  "id": "201.1",
+  "kind": "para",
+  "en": "According to this strategy, the corresponding power is applied at the corresponding position of the race schedule, and the rider will complete the race in the shortest time under his own conditions."
+ },
+ {
+  "id": "201.2",
+  "kind": "para",
+  "en": "When the curve increases sharply, the rider should initiate a sprint; when the curve drops sharply, the rider should reduce the power to restore the energy of the anaerobic pool; most of the time, the curve fluctuates around the FTP, and the rider should maintain a relatively stable power to ride."
+ },
+ {
+  "id": "201.3",
+  "kind": "para",
+  "en": "We have also plotted the changes in anaerobic pool energy and aerobic pool energy to testify to this."
+ },
+ {
+  "id": "201.4",
+  "kind": "para",
+  "en": "Details can be found in the appendix."
+ },
+ {
+  "id": "201.5",
+  "kind": "para",
+  "en": "Furthermore, we can draw the following conclusions:"
+ },
+ {
+  "id": "202.0",
+  "kind": "para",
+  "en": "• The power distribution strategies of various types of riders on the same track are basically the same."
+ },
+ {
+  "id": "202.1",
+  "kind": "para",
+  "en": "It can be seen from the foregoing that different types of riders"
+ }
+]

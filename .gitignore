@@ -1,0 +1,4 @@
+# 中间产物：预览图、临时导出 PDF、中间 docx
+_work/preview/
+_work/*.pdf
+_work/*.docx

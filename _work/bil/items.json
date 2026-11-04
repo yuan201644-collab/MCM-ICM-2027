@@ -1,0 +1,489 @@
+[
+ {
+  "kind": "heading",
+  "page": 1,
+  "size": 16.1,
+  "text": "Optimal Power Distribution of a Cyclist",
+  "sents": [
+   "Optimal Power Distribution of a Cyclist"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "text": "Bicycle road races have always been popular and competitive. For the cyclists, it is of vital importance to distribute the power properly on the course. In order to help riders distribute their limited energy reasonably, we established a model to simulate the rider's power output to find the optimal distribution of their power.",
+  "sents": [
+   "Bicycle road races have always been popular and competitive.",
+   "For the cyclists, it is of vital importance to distribute the power properly on the course.",
+   "In order to help riders distribute their limited energy reasonably, we established a model to simulate the rider's power output to find the optimal distribution of their power."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "text": "Firstly, we established a Fatigue Physiological Model to characterize riders' power curve, which describes a rider's average power output as a function of sustained output time. From the perspective of aerobic respiration and anaerobic respiration, we fully consider the limitation of energy and the process of energy recovery, and establish Aerobic and Anaerobic Energy Fatigue Model. We fit the model to the obtained data using the ordinary least squares to verify the validity of the model, considering different types and genders of the riders. The power curves of different riders are provided, and the relationship between their features and model parameters was also explored. The specific results are shown in Figure 6 and its analysis.",
+  "sents": [
+   "Firstly, we established a Fatigue Physiological Model to characterize riders' power curve, which describes a rider's average power output as a function of sustained output time.",
+   "From the perspective of aerobic respiration and anaerobic respiration, we fully consider the limitation of energy and the process of energy recovery, and establish Aerobic and Anaerobic Energy Fatigue Model.",
+   "We fit the model to the obtained data using the ordinary least squares to verify the validity of the model, considering different types and genders of the riders.",
+   "The power curves of different riders are provided, and the relationship between their features and model parameters was also explored.",
+   "The specific results are shown in Figure 6 and its analysis."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "text": "Secondly, we establish an Optimal Individual Power Distribution Model to provide an optimal power allocation strategy, which describes the relationship between the power applied by the rider and the position on the track. A Single Objective Programming model is established, using the race time as the optimization objective, the rider state and track conditions as constraints, and the power applied by the rider as the decision variable. A resistance model is built to describe resistance and a track undulation and turn model are used to describe the track conditions. Based on above model and rider's power curve, we use dynamic programming to obtain the optimal power distribution strategy and corresponding shortest time. The effect of track conditions and rider status on rider power distribution was also investigated. Distribution diagrams of power output and discussions will be shown in Section 5.4.",
+  "sents": [
+   "Secondly, we establish an Optimal Individual Power Distribution Model to provide an optimal power allocation strategy, which describes the relationship between the power applied by the rider and the position on the track.",
+   "A Single Objective Programming model is established, using the race time as the optimization objective, the rider state and track conditions as constraints, and the power applied by the rider as the decision variable.",
+   "A resistance model is built to describe resistance and a track undulation and turn model are used to describe the track conditions.",
+   "Based on above model and rider's power curve, we use dynamic programming to obtain the optimal power distribution strategy and corresponding shortest time.",
+   "The effect of track conditions and rider status on rider power distribution was also investigated.",
+   "Distribution diagrams of power output and discussions will be shown in Section 5.4."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "text": "Thirdly, we performed a sensitivity analysis for weather conditions, including wind direction and wind speed. The previous resistance model was improved to wind resistance model. In 24 environments with eight directions of wind and three levels of wind speed, the shortest game time was calculated, as shown in Figure 13. Completion time has changed greatly, reaching a maximum of 16%, so the results are considered sensitive to weather conditions.",
+  "sents": [
+   "Thirdly, we performed a sensitivity analysis for weather conditions, including wind direction and wind speed.",
+   "The previous resistance model was improved to wind resistance model.",
+   "In 24 environments with eight directions of wind and three levels of wind speed, the shortest game time was calculated, as shown in Figure 13.",
+   "Completion time has changed greatly, reaching a maximum of 16%, so the results are considered sensitive to weather conditions."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "text": "Fourthly, we performed a sensitivity analysis of rider deviations from the power distribution strategy. We use MATLAB to randomly make change on optimal power distribution strategy, using the mean absolute value of the deviation between the rider's actual power output and the optimal power at each position as a measure of the degree of deviation. The relationship between completion time and degree of deviation is shown in Table 4. Completion time did not increase by 10% until the average deviation change reached 5%. Therefore, we believe that the model results are insensitive to rider deviation from target power. For a near-optimal time, the time reference ranges for each position of the track are shown in Table 5.",
+  "sents": [
+   "Fourthly, we performed a sensitivity analysis of rider deviations from the power distribution strategy.",
+   "We use MATLAB to randomly make change on optimal power distribution strategy, using the mean absolute value of the deviation between the rider's actual power output and the optimal power at each position as a measure of the degree of deviation.",
+   "The relationship between completion time and degree of deviation is shown in Table 4.",
+   "Completion time did not increase by 10% until the average deviation change reached 5%.",
+   "Therefore, we believe that the model results are insensitive to rider deviation from target power.",
+   "For a near-optimal time, the time reference ranges for each position of the track are shown in Table 5."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "text": "Finally, we consider the features of team time trial and generalize the individual game model to the Team Strategy Decision Model. We consider the effect of blocking wind among team members, modify the wind resistance model, and propose the draft strategy and drop strategy. In addition, we also provide a guidance for individual time trial.",
+  "sents": [
+   "Finally, we consider the features of team time trial and generalize the individual game model to the Team Strategy Decision Model.",
+   "We consider the effect of blocking wind among team members, modify the wind resistance model, and propose the draft strategy and drop strategy.",
+   "In addition, we also provide a guidance for individual time trial."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 1,
+  "size": 12.0,
+  "text": "Keywords: Individual Time Trial, Power Curve, Optimal Power Distribution, Dynamic Programming",
+  "sents": [
+   "Keywords: Individual Time Trial, Power Curve, Optimal Power Distribution, Dynamic Programming"
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 3,
+  "size": 16.1,
+  "text": "1 Introduction",
+  "sents": [
+   "1 Introduction"
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 3,
+  "size": 13.9,
+  "text": "1.1 Problem Background",
+  "sents": [
+   "1.1 Problem Background"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "There are many types of road cycling competitions, in which the individual time trial requires the cyclist to ride a certain distance alone, with the completion time as the result, and the one with the shortest time wins.",
+  "sents": [
+   "There are many types of road cycling competitions, in which the individual time trial requires the cyclist to ride a certain distance alone, with the completion time as the result, and the one with the shortest time wins."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "The curvilinear relationship between power output and its duration can serve as an essential feature of high-intensity exercise, a concept known as a power curve. Essentially, this concept describes the tolerable duration of high-intensity exercise. It represents the maximum power an athlete can deliver over a certain period of time and has enormous potential applications in optimizing athletic training programs and performance and improving the quality of life of individuals with chronic diseases [1].",
+  "sents": [
+   "The curvilinear relationship between power output and its duration can serve as an essential feature of high-intensity exercise, a concept known as a power curve.",
+   "Essentially, this concept describes the tolerable duration of high-intensity exercise.",
+   "It represents the maximum power an athlete can deliver over a certain period of time and has enormous potential applications in optimizing athletic training programs and performance and improving the quality of life of individuals with chronic diseases [1]."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "Different types of riders have different shapes of power curves. In a given time-trial run, they need to manage their power distribution so that to finish the race in the least amount of time. Figure 1 shows a cyclist in competition.",
+  "sents": [
+   "Different types of riders have different shapes of power curves.",
+   "In a given time-trial run, they need to manage their power distribution so that to finish the race in the least amount of time.",
+   "Figure 1 shows a cyclist in competition."
+  ]
+ },
+ {
+  "kind": "img",
+  "page": 3,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_03_1.png",
+  "w": 214.7,
+  "h": 142.9
+ },
+ {
+  "kind": "caption",
+  "page": 3,
+  "size": 12.0,
+  "text": "Figure 1: A cyclist in competition [2]",
+  "sents": [
+   "Figure 1: A cyclist in competition [2]"
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 3,
+  "size": 13.9,
+  "text": "1.2 Restatement of the Problem",
+  "sents": [
+   "1.2 Restatement of the Problem"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "Considering the background information and restricted conditions identified in the problem statement, we need to develop a model to determine the optimal power distribution of one rider for one course and solve the following problems:",
+  "sents": [
+   "Considering the background information and restricted conditions identified in the problem statement, we need to develop a model to determine the optimal power distribution of one rider for one course and solve the following problems:"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "• Problem 1: Give the definition of power profiles for both types of riders, taking into account riders of different genders. One of the riders is a time trial specialist; the other is required to be of another type.",
+  "sents": [
+   "• Problem 1: Give the definition of power profiles for both types of riders, taking into account riders of different genders.",
+   "One of the riders is a time trial specialist; the other is required to be of another type."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "• Problem 2: Apply the above model to three specific time trial courses.",
+  "sents": [
+   "• Problem 2: Apply the above model to three specific time trial courses."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "• Problem 3: Analyze the influence of weather conditions on model results and sensitivity of the model to this influence.",
+  "sents": [
+   "• Problem 3: Analyze the influence of weather conditions on model results and sensitivity of the model to this influence."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "• Problem 4: Analyze the sensitivity of the model to deviation from the result power distribution.",
+  "sents": [
+   "• Problem 4: Analyze the sensitivity of the model to deviation from the result power distribution."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 3,
+  "size": 12.0,
+  "text": "• Problem 5: Discuss how to develop the model to provide the best power usage scenario for a six-person team competing in a team time trial.",
+  "sents": [
+   "• Problem 5: Discuss how to develop the model to provide the best power usage scenario for a six-person team competing in a team time trial."
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 4,
+  "size": 13.9,
+  "text": "1.3 Literature Review",
+  "sents": [
+   "1.3 Literature Review"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "The problem that this paper aims at is the power distribution of cyclist during cycling, which has been discussed in previous studies. Andrew M. Jones et al. introduced the power curve into intermittent high-intensity exercise, and used the existing two-parameter model (hyperbolic relationship between power and duration) to make better predictions for athlete fatigue monitoring [3]. Morton extended the two-parameter model to a three-parameter model, and established a new power curve model [4]. Dr. Andrew Coggan et al. used a three-parameter model to analyze the advantages and disadvantages of different types of riders through statistical data, and obtained the corresponding power curve [5].",
+  "sents": [
+   "The problem that this paper aims at is the power distribution of cyclist during cycling, which has been discussed in previous studies.",
+   "Andrew M. Jones et al. introduced the power curve into intermittent high-intensity exercise, and used the existing two-parameter model (hyperbolic relationship between power and duration) to make better predictions for athlete fatigue monitoring [3].",
+   "Morton extended the two-parameter model to a three-parameter model, and established a new power curve model [4].",
+   "Dr. Andrew Coggan et al. used a three-parameter model to analyze the advantages and disadvantages of different types of riders through statistical data, and obtained the corresponding power curve [5]."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "There is also a lot of research on how to properly distribute power for the rider to win. The critical power model of Monod and Scherrer is a widely recognized model for optimizing pace strategy and analyzing the endurance capacity of cyclists. It consists of two parts: infinite aerobic and limited anaerobic [6]. A more complex model is the three-component Morton-Margaria model, or the 3-Tank model [7], which is another feasible bioenergy model that provides a direction for research on power distribution in bicycle racing.",
+  "sents": [
+   "There is also a lot of research on how to properly distribute power for the rider to win.",
+   "The critical power model of Monod and Scherrer is a widely recognized model for optimizing pace strategy and analyzing the endurance capacity of cyclists.",
+   "It consists of two parts: infinite aerobic and limited anaerobic [6].",
+   "A more complex model is the three-component Morton-Margaria model, or the 3-Tank model [7], which is another feasible bioenergy model that provides a direction for research on power distribution in bicycle racing."
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 4,
+  "size": 13.9,
+  "text": "1.4 Our Work",
+  "sents": [
+   "1.4 Our Work"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "We need a model that works for any type of rider to characterize the relationship between the rider's position on the track and the force applied. Our work mainly includes the following parts:",
+  "sents": [
+   "We need a model that works for any type of rider to characterize the relationship between the rider's position on the track and the force applied.",
+   "Our work mainly includes the following parts:"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "Firstly, we refer to previous literature and propose our Cyclist’s Physiological Model of Fatigue based on the three-Tank model, including aerobic energy fatigue model and anaerobic energy fatigue model. We used this model to explain the rider's power curve. After that, we performed least squares fitting on the curves of different riders, and used the obtained parameters to distinguish riders into different categories.",
+  "sents": [
+   "Firstly, we refer to previous literature and propose our Cyclist’s Physiological Model of Fatigue based on the three-Tank model, including aerobic energy fatigue model and anaerobic energy fatigue model.",
+   "We used this model to explain the rider's power curve.",
+   "After that, we performed least squares fitting on the curves of different riders, and used the obtained parameters to distinguish riders into different categories."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "Next, we established a resistance model dominated by aerodynamic resistance and rolling friction resistance, and revised the resistance model when considering the influence of weather conditions. In addition, we abstract the track as a function of ground undulation as a function of race schedule and curves as a function of race schedule. This is our Optimal Individual Power Distribution model. After that, we used the specific track data and the proposed fatigue physiological model to solve it by dynamic programming, and obtained the best power-race curve and the best finish time of the player on the track.",
+  "sents": [
+   "Next, we established a resistance model dominated by aerodynamic resistance and rolling friction resistance, and revised the resistance model when considering the influence of weather conditions.",
+   "In addition, we abstract the track as a function of ground undulation as a function of race schedule and curves as a function of race schedule.",
+   "This is our Optimal Individual Power Distribution model.",
+   "After that, we used the specific track data and the proposed fatigue physiological model to solve it by dynamic programming, and obtained the best power-race curve and the best finish time of the player on the track."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "Then, we separately conduct sensitivity analysis to wind speed and direction and power deviation, and analyze the strengths and weaknesses of the model.",
+  "sents": [
+   "Then, we separately conduct sensitivity analysis to wind speed and direction and power deviation, and analyze the strengths and weaknesses of the model."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "Finally, we generalized the model to team time trials. To account for the resistance reduction effect between teams, we reworked the resistance model for individuals in team matches. After that, we considered the possible strategies in the team game—Draft and Drop, and took the positions of these strategies as new decision variables, and theoretically the optimal solution in the team game can be obtained.",
+  "sents": [
+   "Finally, we generalized the model to team time trials.",
+   "To account for the resistance reduction effect between teams, we reworked the resistance model for individuals in team matches.",
+   "After that, we considered the possible strategies in the team game—Draft and Drop, and took the positions of these strategies as new decision variables, and theoretically the optimal solution in the team game can be obtained."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 4,
+  "size": 12.0,
+  "text": "For better understanding of the overall model, a flowchart is provided to describe our process.",
+  "sents": [
+   "For better understanding of the overall model, a flowchart is provided to describe our process."
+  ]
+ },
+ {
+  "kind": "img",
+  "page": 5,
+  "path": "D:\\26年美国大学生数学建模竞赛\\_work\\bil\\img_05_2.png",
+  "w": 411.7,
+  "h": 277.8
+ },
+ {
+  "kind": "caption",
+  "page": 5,
+  "size": 12.0,
+  "text": "Figure 2：Overview of our work",
+  "sents": [
+   "Figure 2：Overview of our work"
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 5,
+  "size": 16.1,
+  "text": "2 Assumptions and Justifications",
+  "sents": [
+   "2 Assumptions and Justifications"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "text": "Considering that practical problems always contain many complex factors, first of all, we need to make reasonable assumptions to simplify the model, and each hypothesis is closely followed by its corresponding explanation:",
+  "sents": [
+   "Considering that practical problems always contain many complex factors, first of all, we need to make reasonable assumptions to simplify the model, and each hypothesis is closely followed by its corresponding explanation:"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "text": "• Assumption 1: Cyclists will never be influenced by others during the race. According to the cycling individual time trial rules of UCI, the riders start alone at certain intervals. So, the rider will not be influenced by others during the race.",
+  "sents": [
+   "• Assumption 1: Cyclists will never be influenced by others during the race.",
+   "According to the cycling individual time trial rules of UCI, the riders start alone at certain intervals.",
+   "So, the rider will not be influenced by others during the race."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "text": "• Assumption 2: Energy of cyclists is limited during the race. On the one hand, this comes from the limitation of the topic, and on the other hand, cyclists usually do not supplement energy in actual races.",
+  "sents": [
+   "• Assumption 2: Energy of cyclists is limited during the race.",
+   "On the one hand, this comes from the limitation of the topic, and on the other hand, cyclists usually do not supplement energy in actual races."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "text": "• Assumption 3: The only sources of resistance are the viscous resistance of the air and the rolling friction of the ground. Because these two resistances account for the largest part [8], while the small resistance from the transmission efficiency of the bicycle chain can be ignored.",
+  "sents": [
+   "• Assumption 3: The only sources of resistance are the viscous resistance of the air and the rolling friction of the ground.",
+   "Because these two resistances account for the largest part [8], while the small resistance from the transmission efficiency of the bicycle chain can be ignored."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "text": "• Assumption 4: Cyclists move in one dimension along the track, regardless of track width. This is a reasonable simplification of the model. Analysis of lateral motion introduces unnecessary complexity.",
+  "sents": [
+   "• Assumption 4: Cyclists move in one dimension along the track, regardless of track width.",
+   "This is a reasonable simplification of the model.",
+   "Analysis of lateral motion introduces unnecessary complexity."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 5,
+  "size": 12.0,
+  "text": "• Assumption 5: The influence of weather on the players only exists in the wind direction and speed, and does not consider the influence of rainfall or snowfall. This is a reasonable simplification of the model, as actual races are generally not played in harsher weather conditions.",
+  "sents": [
+   "• Assumption 5: The influence of weather on the players only exists in the wind direction and speed, and does not consider the influence of rainfall or snowfall.",
+   "This is a reasonable simplification of the model, as actual races are generally not played in harsher weather conditions."
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 6,
+  "size": 16.1,
+  "text": "3 Definitions and Notations",
+  "sents": [
+   "3 Definitions and Notations"
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 6,
+  "size": 13.9,
+  "text": "3.1 Definitions",
+  "sents": [
+   "3.1 Definitions"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "text": "Power-to-weight ratio: The ratio of the rider's output power to his own body weight. The higher the value, the stronger the climbing ability.",
+  "sents": [
+   "Power-to-weight ratio: The ratio of the rider's output power to his own body weight.",
+   "The higher the value, the stronger the climbing ability."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "text": "Functional Threshold Power: The maximum average power a rider can achieve during an hour of full and steady riding. It is an important indicator of a rider's aerobic capacity. Also known as lactate threshold, it is usually determined by testing.",
+  "sents": [
+   "Functional Threshold Power: The maximum average power a rider can achieve during an hour of full and steady riding.",
+   "It is an important indicator of a rider's aerobic capacity.",
+   "Also known as lactate threshold, it is usually determined by testing."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "text": "Critical Power: The maximum average power a rider can get during a given period of time while riding with full force and stability.",
+  "sents": [
+   "Critical Power: The maximum average power a rider can get during a given period of time while riding with full force and stability."
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "text": "Sharp turn: The turning angle is greater than or equal to 90 degrees within 50 meters.",
+  "sents": [
+   "Sharp turn: The turning angle is greater than or equal to 90 degrees within 50 meters."
+  ]
+ },
+ {
+  "kind": "heading",
+  "page": 6,
+  "size": 13.9,
+  "text": "3.2 Notations",
+  "sents": [
+   "3.2 Notations"
+  ]
+ },
+ {
+  "kind": "para",
+  "page": 6,
+  "size": 12.0,
+  "text": "The key mathematical notations used in this paper are listed in Table 1.",
+  "sents": [
+   "The key mathematical notations used in this paper are listed in Table 1."
+  ]
+ }
+]

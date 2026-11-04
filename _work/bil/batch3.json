@@ -1,0 +1,307 @@
+[
+ {
+  "id": "86.0",
+  "kind": "para",
+  "en": "and anaerobic energy fatigue model, and use the least squares fitting curve to obtain the powertime curves of different types of players."
+ },
+ {
+  "id": "87",
+  "kind": "heading",
+  "en": "4.1 The Establishment of the Model"
+ },
+ {
+  "id": "88.0",
+  "kind": "para",
+  "en": "4.1.1 Power Curve Model"
+ },
+ {
+  "id": "89.0",
+  "kind": "para",
+  "en": "The three-Tank model [7] mentioned above theoretically holds that an aerobic source can provide unlimited energy."
+ },
+ {
+  "id": "89.1",
+  "kind": "para",
+  "en": "However, in the actual process, according to Assumption 2, the total energy is limited."
+ },
+ {
+  "id": "89.2",
+  "kind": "para",
+  "en": "So, we can assume that there is a negative correlation between aerobic respiratory power and duration."
+ },
+ {
+  "id": "90.0",
+  "kind": "para",
+  "en": "When a person is fully active, the power provided by aerobic respiration is limited due to the limited rate of aerobic respiration."
+ },
+ {
+  "id": "90.1",
+  "kind": "para",
+  "en": "When the output power exceeds the functional power threshold (FTP), anaerobic respiration is required to make up."
+ },
+ {
+  "id": "90.2",
+  "kind": "para",
+  "en": "So aerobic breathing power belongs to an interval with an upper limit, and the consumption rate also has an upper limit."
+ },
+ {
+  "id": "91.0",
+  "kind": "para",
+  "en": "From the above two points, combined with other energy models, we normalize the energy of the aerobic pool and define the rate at which the rider consumes the energy of the aerobic pool as:"
+ },
+ {
+  "id": "92.0",
+  "kind": "para",
+  "en": "(1) where,is aerobic respiratory energy output power.are both undetermined parameters."
+ },
+ {
+  "id": "92.1",
+  "kind": "para",
+  "en": "When the output power exceeds the functional power threshold, the aerobic respiration power reaches saturation, and the excess part needs to be supplemented by anaerobic respiration."
+ },
+ {
+  "id": "92.2",
+  "kind": "para",
+  "en": "And the initial power of anaerobic respiration can be approximated as FTP."
+ },
+ {
+  "id": "93.0",
+  "kind": "para",
+  "en": "From the two-parameter model, there is a hyperbolic relationship between the anaerobic respiration power and the duration, that is, the energy storage of the anaerobic energy pool is a fixed value."
+ },
+ {
+  "id": "93.1",
+  "kind": "para",
+  "en": "Therefore, the output power of the anaerobic respiration part can be expressed as:"
+ },
+ {
+  "id": "94.0",
+  "kind": "para",
+  "en": "(2)"
+ },
+ {
+  "id": "95.0",
+  "kind": "para",
+  "en": "where,represents the energy storage of the anaerobic energy pool. is time duration."
+ },
+ {
+  "id": "96.0",
+  "kind": "para",
+  "en": "Considering that the higher the output power of the human body is, the faster the energy consumption is."
+ },
+ {
+  "id": "96.1",
+  "kind": "para",
+  "en": "According to the two-parameter model, we normalize the anaerobic energy pool to one, and define the rate at which the rider consumes the energy of the anaerobic energy pool as:"
+ },
+ {
+  "id": "97.0",
+  "kind": "para",
+  "en": "(3) where,is the ratio of the anaerobic energy consumption rate of the human body to the anaerobic respiration output power."
+ },
+ {
+  "id": "98.0",
+  "kind": "para",
+  "en": "Additionally, a cyclist may choose to temporarily exceed the limits of their power curve."
+ },
+ {
+  "id": "98.1",
+  "kind": "para",
+  "en": "However, after the output power drops below FTP, the cyclist needs additional time to restore the energy of the anaerobic energy pool at a lower power level, and we define the speed of the rider to restore the energy ratio of the anaerobic energy pool here."
+ },
+ {
+  "id": "99.0",
+  "kind": "para",
+  "en": "(4)"
+ },
+ {
+  "id": "100.0",
+  "kind": "para",
+  "en": "where,is the coefficient of recovery, which means that when the output power exceeds the limit of the curve, the rider needs roughly twice the time to restore the stored energy in the energy pool."
+ },
+ {
+  "id": "101.0",
+  "kind": "para",
+  "en": "Therefore, when the output power is kept constant, the time for the rider to maintain the power can be expressed as:"
+ },
+ {
+  "id": "102.0",
+  "kind": "para",
+  "en": "(5)"
+ },
+ {
+  "id": "103.0",
+  "kind": "para",
+  "en": "It should be noted that the above formula does not involve the recovery of anaerobic pool energy."
+ },
+ {
+  "id": "103.1",
+  "kind": "para",
+  "en": "This is because the rider keeps the power constant."
+ },
+ {
+  "id": "103.2",
+  "kind": "para",
+  "en": "When the output power is higher than FTP, the energy of the anaerobic pool is consumed and will not recover; when the output power is lower than FTP, the energy of the anaerobic pool will not be consumed."
+ },
+ {
+  "id": "104.0",
+  "kind": "para",
+  "en": "To sum up, we can get the relationship between the total output power and the duration as:"
+ },
+ {
+  "id": "105.0",
+  "kind": "para",
+  "en": "(6)"
+ },
+ {
+  "id": "106.0",
+  "kind": "para",
+  "en": "where,are adjustment coefficients to ensure that the function satisfies . represents the rate of energy consumption when aerobic respiration supplies energy."
+ },
+ {
+  "id": "107",
+  "kind": "heading",
+  "en": "4.2 Result and Discussion"
+ },
+ {
+  "id": "108.0",
+  "kind": "para",
+  "en": "4.2.1 Model Validation"
+ },
+ {
+  "id": "109.0",
+  "kind": "para",
+  "en": "The above analysis provides a basic model for power-time curves for various types of cyclists."
+ },
+ {
+  "id": "109.1",
+  "kind": "para",
+  "en": "Parameters of different cyclists will differ due to their own conditions, thereby affecting their power-time curves."
+ },
+ {
+  "id": "109.2",
+  "kind": "para",
+  "en": "For different players, the specific power-time curve can be obtained by measurement to reflect various indicators, and then the consumption functions of the corresponding aerobic energy pool and anaerobic energy pool can be obtained, which is of great significance for fatigue monitoring and other aspects."
+ },
+ {
+  "id": "110.0",
+  "kind": "para",
+  "en": "Using the data mentioned above, we conducted the least squares method to fit the curve, and the fitting results of the power-time curve are shown in Figures 4 and 5 below:"
+ },
+ {
+  "id": "112",
+  "kind": "caption",
+  "en": "Figure 3: Curve Fitting Results for Men"
+ },
+ {
+  "id": "114",
+  "kind": "caption",
+  "en": "Figure 4: Curve Fitting Results for Women"
+ },
+ {
+  "id": "115.0",
+  "kind": "para",
+  "en": "First of all, it should be noted that since human beings have limits in power output, the output power when the output time is very short is not considered."
+ },
+ {
+  "id": "115.1",
+  "kind": "para",
+  "en": "So, the image abscissa starts at 10s."
+ },
+ {
+  "id": "115.2",
+  "kind": "para",
+  "en": "To describe the rider's power curve more fairly, we consider the power applied by the rider normalized by weight as the ordinate."
+ },
+ {
+  "id": "116.0",
+  "kind": "para",
+  "en": "From the above figure, from the fitting effect, the result curve of the two fits well with the original data, especially for segments where."
+ },
+ {
+  "id": "116.1",
+  "kind": "para",
+  "en": "The result curve of women is more in line with the original data than the result curve of men, which may be related to the accuracy and chance of the data, or it may be related to the conservative estimation of model parameters."
+ },
+ {
+  "id": "116.2",
+  "kind": "para",
+  "en": "From the fitting results, the trend of the power time curves of men and women is the same, and the power decreases in an S-shaped manner with the increase of time."
+ },
+ {
+  "id": "116.3",
+  "kind": "para",
+  "en": "This is consistent with Assumption 2."
+ },
+ {
+  "id": "116.4",
+  "kind": "para",
+  "en": "The FTP of women is slightly smaller than that of men, but the limit power in a short time is higher than that of men."
+ },
+ {
+  "id": "116.5",
+  "kind": "para",
+  "en": "This reflects the effect of rider gender on that curve."
+ },
+ {
+  "id": "116.6",
+  "kind": "para",
+  "en": "The reason may be that women are lighter in weight and have higher power bursts for short periods of time, but weaker oxygen supply capacity for long periods of time."
+ },
+ {
+  "id": "116.7",
+  "kind": "para",
+  "en": "The difference between the two curves after a certain period of time is small, which indicates that in a relatively long period of riding, the difference caused by gender can be ignored."
+ },
+ {
+  "id": "117.0",
+  "kind": "para",
+  "en": "4.2.2 Power curves of different types of riders"
+ },
+ {
+  "id": "118.0",
+  "kind": "para",
+  "en": "In addition to the gender of the rider, we should also consider the characteristics of different types of riders to determine their corresponding power-time curves."
+ },
+ {
+  "id": "118.1",
+  "kind": "para",
+  "en": "Sprinters need a lot of power against wind resistance, so they will have heavier body weight and muscle mass, and their anaerobic pools will have high energy storage, but their power-to-weight ratio will be less suitable for climbing."
+ },
+ {
+  "id": "118.2",
+  "kind": "para",
+  "en": "In order to resist gravity, the Puncheur is lighter in weight, has a low muscle limit, and a high sprinting ability, but it is inferior to sprinters."
+ },
+ {
+  "id": "118.3",
+  "kind": "para",
+  "en": "Rouleur is good in all aspects, has strong stamina, and is usually aggressive in attacking."
+ },
+ {
+  "id": "118.4",
+  "kind": "para",
+  "en": "In order to visually represent the relationship between the player's ability index and the model parameters, the radar chart of each type of rider's index is shown in Figure 5 below:"
+ },
+ {
+  "id": "120",
+  "kind": "caption",
+  "en": "Figure 5: Metrics for all types of cyclists"
+ },
+ {
+  "id": "121.0",
+  "kind": "para",
+  "en": "As shown above, select FTP, restore factor, the model parameters, body weight, anaerobic pool energyas indicators to characterize the output power of various types of riders."
+ },
+ {
+  "id": "121.1",
+  "kind": "para",
+  "en": "Different weights are given and normalized according to the characteristics of each type of rider."
+ },
+ {
+  "id": "121.2",
+  "kind": "para",
+  "en": "Based on this, we assign different parameter values to the above model to obtain the"
+ }
+]
