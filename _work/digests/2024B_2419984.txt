@@ -1,0 +1,53 @@
+### 2024B_2419984  pages=25
+TITLE: 微信公众号：数学模型 / 微信号：MATHmodels / Problem Chosen / B / 2024 / MCM/ICM / Summary Sheet / Team Control Number
+SUMMARY: After losing contact with the main ship, a suitable positioning model, search equipment, and search strategy for the submersible can signiﬁcantly reduce rescue time and increase the success rate of the rescue mission. In this paper, based on diﬀerent malfunction scenarios of the sub- mersible, a positioning model and search strategy for the submersible’s movement have been es- tablished, providing some suggestion for maritime rescue. For Problem 1, ﬁrstly, we searched for the depth and ocean current information in the Ionian Sea and ﬁtted the seaﬂoor topography. Then, a location model is conducted. Utilizing the fourth- order Runge-Kutta method, numerical solutions are obtained, and potential motion trajectories are plotted. The primary uncertainties in the model include the submersible’s initial state, ocean currents, and fault conditions. Therefore, the submersible should be equipped w
+FLOW:
+  p1: 微信公众号：数学模型 | 微信号：MATHmodels | Problem Chosen | B
+  p2: 微信公众号：数学模型 | 微信号：MATHmodels | Contents | 1
+  p3: 微信公众号：数学模型 | 微信号：MATHmodels | 1 | Introduction
+  p4: 微信公众号：数学模型 | 微信号：MATHmodels | • Taking into account costs associated with availability, maintenance, readiness, and usage of | this equipment, determi
+  p5: 微信公众号：数学模型 | 微信号：MATHmodels | • If a submersible touches the bottom during the descent process, it will be unable to | move on its own. Due to the pre
+  p6: 微信公众号：数学模型 | 微信号：MATHmodels | 4.2 | Seaﬂoor Topography
+  p7: 微信公众号：数学模型 | 微信号：MATHmodels | propulsion, and ascends promptly. According to Newton’s second law, we have: | Maz = −Mg + FB −F f
+  p8: 微信公众号：数学模型 | 微信号：MATHmodels | So far, by simultaneously combining equations (2), (3), (4), (5), and (6), the diﬀerential equa- | tion for the vertical
+  p9: 微信公众号：数学模型 | 微信号：MATHmodels | Similarly, we can obtain a similar motion model for the submersible in the y-direction. Com- | pared to the model in the
+  p10: 微信公众号：数学模型 | 微信号：MATHmodels | and the remaining terms are moved to the right side. The transformed equation is: | 
+  p11: 微信公众号：数学模型 | 微信号：MATHmodels | The selected initial point in the ﬁgure is (18, 37, -3147) (where x and y coordinates represent | longitude and latitude
+  p12: 微信公众号：数学模型 | 微信号：MATHmodels | • Initial Velocity and Acceleration: According to the safety strategy mentioned earlier, the | submersible will immediat
+  p13: 微信公众号：数学模型 | 微信号：MATHmodels | 6 | Models and Solutions of Problem 2
+  p14: 微信公众号：数学模型 | 微信号：MATHmodels | their reciprocals are written into the matrix. | X0 =
+  p15: 微信公众号：数学模型 | 微信号：MATHmodels | 6.3 | Evaluation Results and Analysis
+  p16: 微信公众号：数学模型 | 微信号：MATHmodels | locations in the ocean with varying probabilities, and these probability distributions will change | over time. To obtai
+  p17: 微信公众号：数学模型 | 微信号：MATHmodels | Figure 9: Possible trajectories of the submersible’s movement | In the left of ﬁgure 10, we speciﬁcally depict the traje
+  p18: 微信公众号：数学模型 | 微信号：MATHmodels | ment and sonar as the primary underwater search equipment. Maritime and underwater searches | should be conducted simult
+  p19: 微信公众号：数学模型 | 微信号：MATHmodels | Figure 11: Flowchart for Ant Colony Algorithm | 7.3
+  p20: 微信公众号：数学模型 | 微信号：MATHmodels | 7.3.2 | The Impact of Start Time for Searching
+  p21: 微信公众号：数学模型 | 微信号：MATHmodels | in the Caribbean Sea are more intense and complex. When simulating ocean current data in | the relevant area, it is nece
+  p22: 微信公众号：数学模型 | 微信号：MATHmodels | for timely deployment of subsequent search and rescue eﬀorts. According to the results of | the third question, this sig
+  p23: 微信公众号：数学模型 | 微信号：MATHmodels | • The paper adopts a cost-beneﬁt model based on the entropy weighting method to evaluate | sensors, ensuring more accura
+  p24: 微信公众号：数学模型 | 微信号：MATHmodels | Memo | To: The Government of Greece
+  p25: 微信公众号：数学模型 | 微信号：MATHmodels | The results suggest that the search path should be as perpendicular as possible to the curve | predicted by the dynamic 
+CAPTIONS:
+  p3 Figure 1: Beautiful Deep Sea Bottom[1]
+  p4 Figure 2: The Framework of Our Work
+  p6 Figure 3: The topographic map of the Ionian Sea
+  p6 Figure 4: The submersible[3]
+  p8 Figure 5: Currents in Ionian Sea[5]
+  p10 Figure 6: Possible trajectories of the submersible’s movement
+  p11 Figure 7: Possible trajectories of the submersible’s movement
+  p13 Table 1: Equipment and Parameters[7]
+  p15 Figure 8: Evaluation Results
+  p17 Figure 9: Possible trajectories of the submersible’s movement
+  p17 Figure 10: Some speciﬁc simulation points
+  p19 Figure 11: Flowchart for Ant Colony Algorithm
+  p19 Figure 12: Diﬀerent probabilities with diﬀerent t
+  p20 Figure 13: Planning Results of Search Route
+  p21 Figure 14: The Topography of Caribbean Sea
+  p22 Figure 15: The impact of drag coeﬃcient errors
+TOOLS: Monte Carlo, simulation, ODE, graph, entropy weight, Bayesian, sensitivity analysis
+WEAK LINES:
+  p1: and weaknesses of model.And a two-page Memo has been written for the Greek government.
+  p2: 10.2 Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  p11: ⋄When the submersible cannot resurface normally:
+  p12: • Seabed Topography: As the exact underwater topography cannot be precisely determined
+  p12: nals. However, underwater, GPS signals cannot penetrate the water surface directly, so the

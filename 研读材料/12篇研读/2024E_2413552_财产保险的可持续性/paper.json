@@ -1,0 +1,460 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024E_2413552_财产保险的可持续性\\2413552.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024E_2413552_财产保险的可持续性\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024E_2413552_财产保险的可持续性\\2413552_英中对照.docx",
+  "title": "2413552 英中对照版",
+  "footer_prefix": "2413552 英中对照版 · 第 ",
+  "subtitle": "2024 ICM Problem E · Sustainability of Property Insurance",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "en_only_pages": [
+    23
+  ],
+  "batches": 8,
+  "terms": [
+    [
+      "Property Insurance",
+      "财产保险",
+      "承保房屋等财产的险种"
+    ],
+    [
+      "Climate Change",
+      "气候变化",
+      "推高巨灾频率的长期趋势"
+    ],
+    [
+      "Risk Assessment",
+      "风险评估",
+      "量化灾害损失的可能性"
+    ],
+    [
+      "Underwriting",
+      "承保",
+      "保险公司决定是否接保及定价"
+    ],
+    [
+      "Premium",
+      "保费",
+      "投保人支付的费用"
+    ],
+    [
+      "Claim",
+      "理赔",
+      "出险后保险公司的赔付"
+    ],
+    [
+      "Catastrophe Model",
+      "巨灾模型",
+      "估计极端事件的损失分布"
+    ],
+    [
+      "Extreme Weather",
+      "极端天气",
+      "干旱、洪水、风暴等"
+    ],
+    [
+      "Community Development",
+      "社区发展",
+      "保险与社区韧性的互动"
+    ],
+    [
+      "Historical Heritage",
+      "历史遗产",
+      "需要特别保护的老城区建筑"
+    ],
+    [
+      "Multi-scale Geographically Weighted Regression",
+      "多尺度地理加权回归",
+      "MGWR，允许各因素影响随空间变化"
+    ],
+    [
+      "Entropy Weight Method",
+      "熵权法",
+      "客观赋权"
+    ],
+    [
+      "Multi-Objective Optimization",
+      "多目标优化",
+      "同时兼顾可负担性与盈利"
+    ],
+    [
+      "Insurance Gap",
+      "保障缺口",
+      "实际损失与赔付之间的差额"
+    ],
+    [
+      "Reinsurance",
+      "再保险",
+      "保险公司为自己买的保险"
+    ],
+    [
+      "Vulnerability",
+      "脆弱性",
+      "受灾后难以恢复的程度"
+    ],
+    [
+      "Sustainability",
+      "可持续性",
+      "保险体系能否长期运转"
+    ],
+    [
+      "Data Visualization",
+      "数据可视化",
+      "用图表呈现空间差异"
+    ]
+  ],
+  "gloss": [
+    [
+      "财产保险",
+      "Property Insurance"
+    ],
+    [
+      "气候变化",
+      "Climate Change"
+    ],
+    [
+      "风险评估",
+      "Risk Assessment"
+    ],
+    [
+      "承保",
+      "Underwriting"
+    ],
+    [
+      "保费",
+      "Premium"
+    ],
+    [
+      "理赔",
+      "Claim"
+    ],
+    [
+      "巨灾模型",
+      "Catastrophe Model"
+    ],
+    [
+      "极端天气",
+      "Extreme Weather"
+    ],
+    [
+      "社区发展",
+      "Community Development"
+    ],
+    [
+      "历史遗产",
+      "Historical Heritage"
+    ],
+    [
+      "多尺度地理加权回归",
+      "Multi-scale Geographically Weighted Regression"
+    ],
+    [
+      "熵权法",
+      "Entropy Weight Method"
+    ],
+    [
+      "多目标优化",
+      "Multi-Objective Optimization"
+    ],
+    [
+      "保障缺口",
+      "Insurance Gap"
+    ],
+    [
+      "再保险",
+      "Reinsurance"
+    ],
+    [
+      "脆弱性",
+      "Vulnerability"
+    ],
+    [
+      "可持续性",
+      "Sustainability"
+    ],
+    [
+      "数据可视化",
+      "Data Visualization"
+    ]
+  ],
+  "fig_texts": {
+    "img_03_2.png": [
+      [
+        "INSURED",
+        "已投保"
+      ]
+    ],
+    "img_05_5.png": [
+      [
+        "Data collection and standardization",
+        "数据收集与标准化"
+      ],
+      [
+        "Downscaling of climate features using PCA",
+        "基于 PCA 的气候特征降尺度"
+      ],
+      [
+        "Asset pricing models",
+        "资产定价模型"
+      ],
+      [
+        "Modeling MGWR",
+        "MGWR 建模"
+      ],
+      [
+        "Long-term healthy development model",
+        "长期健康发展模型"
+      ],
+      [
+        "Combined",
+        "组合（综合）"
+      ],
+      [
+        "Risk-based insurance pricing strategies",
+        "基于风险的保险定价策略"
+      ],
+      [
+        "Determination of HIC by the optimized EWM",
+        "以优化的 EWM 确定 HIC"
+      ],
+      [
+        "Input",
+        "输入"
+      ],
+      [
+        "Development of a community conservation model",
+        "社区保护模型构建"
+      ],
+      [
+        "Introducing protection measures and costs",
+        "引入保护措施与成本"
+      ],
+      [
+        "Projections of the Protection Priority Index",
+        "保护优先指数预测"
+      ],
+      [
+        "Confirmation of priority protection levels",
+        "优先保护等级确认"
+      ],
+      [
+        "Determination of protection measures",
+        "保护措施确定"
+      ]
+    ],
+    "img_11_12.png": [
+      [
+        "Probability",
+        "概率（色标：洪水／干旱发生概率）"
+      ],
+      [
+        "Drought",
+        "干旱"
+      ],
+      [
+        "Flood",
+        "洪涝"
+      ],
+      [
+        "<不可辨>",
+        "<推测：地图上方散布的装饰性字母（U E N O I O L T O A·S U M A 等），非真实单词>"
+      ]
+    ],
+    "img_12_14.png": [
+      [
+        "Extreme Weather Events (2000-2023)",
+        "极端天气事件（2000—2023）"
+      ],
+      [
+        "Predicted Weather Events (2024-2034)",
+        "预测极端天气事件（2024—2034）"
+      ],
+      [
+        "Real Insurance Performance (2000-2023)",
+        "实际保险表现（2000—2023）"
+      ],
+      [
+        "Predicted Insurance Performance (2024-2034)",
+        "预测保险表现（2024—2034）"
+      ]
+    ],
+    "img_17_21.png": [
+      [
+        "No Intervention",
+        "不干预"
+      ],
+      [
+        "Community Intervention",
+        "社区干预"
+      ],
+      [
+        "Property Owner Intervention",
+        "业主干预"
+      ]
+    ],
+    "img_17_22.png": [
+      [
+        "No Intervention",
+        "不干预"
+      ],
+      [
+        "Community Intervention",
+        "社区干预"
+      ],
+      [
+        "Property Owner Intervention",
+        "业主干预"
+      ]
+    ],
+    "img_19_25.png": [
+      [
+        "Score for each influencing factor",
+        "各影响因素的得分"
+      ],
+      [
+        "CulturalImportance",
+        "文化重要性（图例／纵轴名）"
+      ],
+      [
+        "HistoricalImportance",
+        "历史重要性（图例／纵轴名）"
+      ],
+      [
+        "EconomicImportance",
+        "经济重要性（图例／纵轴名）"
+      ],
+      [
+        "CommunityImportance",
+        "社区重要性（图例／纵轴名）"
+      ],
+      [
+        "ImportanceScore",
+        "重要性得分（图例／纵轴名）"
+      ],
+      [
+        "DecisionScore",
+        "决策得分（图例／纵轴名）"
+      ],
+      [
+        "Ernest Hemingway House",
+        "海明威故居"
+      ],
+      [
+        "The Alamo",
+        "阿拉莫要塞"
+      ],
+      [
+        "Charleston Historic District",
+        "查尔斯顿历史街区"
+      ],
+      [
+        "Everglades National Park",
+        "大沼泽地国家公园"
+      ],
+      [
+        "Monticello",
+        "蒙蒂塞洛（杰斐逊故居）"
+      ],
+      [
+        "Colonial Williamsburg",
+        "殖民地威廉斯堡"
+      ],
+      [
+        "Vizcaya Museum and Gardens",
+        "维兹卡亚博物馆与花园"
+      ],
+      [
+        "San Juan Capistrano Mission",
+        "圣胡安·卡皮斯特拉诺传教站"
+      ],
+      [
+        "Illinois State Capitol",
+        "伊利诺伊州议会大厦"
+      ],
+      [
+        "Salvador Dali Museum",
+        "萨尔瓦多·达利博物馆"
+      ]
+    ],
+    "img_20_27.png": [
+      [
+        "INSURANCE",
+        "保险"
+      ]
+    ],
+    "img_21_29.png": [
+      [
+        "terial Cost",
+        "材料成本（左缘被裁，应为 Material Cost）"
+      ],
+      [
+        "Buil",
+        "建筑类指标（右缘被裁，疑为 Building…）"
+      ],
+      [
+        "ral Complexity",
+        "复杂度（左下被裁，疑为 Operational Complexity 运营复杂度）"
+      ],
+      [
+        "<不可辨>",
+        "<推测：顶部第 2 个类目名完全在画面外>"
+      ]
+    ],
+    "img_22_31.png": [
+      [
+        "No Intervention",
+        "不干预"
+      ],
+      [
+        "Community Intervention",
+        "社区干预"
+      ],
+      [
+        "Property Owner Intervention",
+        "业主干预"
+      ]
+    ],
+    "img_22_32.png": [
+      [
+        "No Intervention",
+        "不干预"
+      ],
+      [
+        "Community Intervention",
+        "社区干预"
+      ],
+      [
+        "Property Owner Intervention",
+        "业主干预"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2413552.pdf 对照查看。）"
+}

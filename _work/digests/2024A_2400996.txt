@@ -1,0 +1,56 @@
+### 2024A_2400996  pages=24
+TITLE: Problem Chosen / A / 2024 / MCM/ICM / Summary Sheet / Team Control Number / 2400996 / Adaptive Sex of Lamprey: gift or curse?
+SUMMARY: While having great food and research value, the lamprey has long been a cause for concern because it is an invasive species in some areas. Because of this complexity, it has long been in the spotlight. Is this a gift or a curse? To explore this phenomenon, we modeled the iterative process of lamprey populations and analyzed the effects of adaptive-sex on lamprey populations and the larger ecosystem. Several models are established: Model I: Lamprey Population Iteration Model; Model II: BDS Assessment Model, etc. Before all the models are established, based on the special characteristics of lamprey metamorphosis, we divided the lamprey population into two parts: larval and adult bank, so as to simulate the ecosystem with higher simulation. In addition, we collected data and set reasonable parameters through calculation. For Model I, we established three sub-models to form the Lamprey Popul
+FLOW:
+  p1: Problem Chosen | A | 2024 | MCM/ICM
+  p2: Contents | 1 | Introduction | 3
+  p3: 1 | Introduction | 1.1 | Problem Background
+  p4: (4) Research whether an ecosystem with variable sex ratios in the lamprey population | offer advantages to others in the ecosystem, such as parasites.
+  p5: Figure 3: Our work | 2 | Model Preparation | 2.1
+  p6: • Assumption 2: Sea lampreys die immediately after spawning. | Justiﬁcation: Based on our review of the literature [7], lampreys die after spawn- | in
+  p7: Table 2: Data Source Websites | Database names | Database website | Royal Society
+  p8: 3 | Model Establishment | 3.1 | Model I: Lamprey Population Iteration Model
+  p9: l1(t) = | ∑ | i | li
+  p10: dl1 | dt = l1(t + 1) −l1(t) = kl2(t)r1 + r0 | 1l1(t) | n
+  p11: The main food source for ﬁlter feeders is the suspended organic solid in the water, and | the amount of dissolved oxygen affects the assimilation efﬁc
+  p12: of larval is shorter, the probability of their transformation into females is higher. This | conclusion is consistent with the current state of the st
+  p13: 3.2.1 | Total Ecosystem Biomass | Total ecosystem biomass is one of the most important indicators of ecosystems, | which can reﬂect the development of
+  p14: 4 | Modeling Applications and Problem Solving | 4.1 | Simulation of the Lamprey Population Iteration Model
+  p15: 4.1.2 | Model Parameter Settings | First, all the formulas in the model will be shown below: | 
+  p16: Figure 8: | Lamprey Population Iteration | Model (With Operational Sex Ratio) | Figure 9:
+  p17: the optimization rate R=202% when K decreases and R=288% when K restores. The | optimization effect is quite good. | Through this model, we can give a
+  p18: x6 for c3, c4, c5, c6. The calculation formula is shown in Eq.3. | The biomass of each population is obtained by multiplying the population density | 
+  p19: Figure 12: Multiple Population Evolutionary | Model (With Operational Sex Ratio) | Figure 13: Multiple Population Evolutionary | Model (Without Operat
+  p20: environmental holding capacity of the ecosystem is changed, in order to amplify the | effect, we chose the 300th to the 400th year for analysis. The m
+  p21: competing with them. As a result, Species 2 will recover and equilibrate with slightly | fewer species than an ecosystem without sex ratio regulation.
+  p22: spawning rate and survival rate in the population; then we adjusted b0 to 0.04, 0.05 | and 0.06 to simulate the ﬂuctuation of endowment growth rate in
+  p23: lampreys, and so on. The reality may be more complex than our modeling, as | there are often thousands of species in an ecosystem. | • We ﬁxed the env
+  p24: References | [1] JON Mallatt. Zoological Journal of the Linnean Society, 82(3):261–272, 1984. | [2] Using stable isotopes and c:n ratios to examine th
+CAPTIONS:
+  p3 Figure 1: Sea lamprey
+  p4 Figure 2: Literature Review
+  p5 Figure 3: Our work
+  p6 Table 1: Notations Table
+  p7 Table 2: Data Source Websites
+  p7 Figure 4: Lamprey samples’ distribution in the Great Lakes region
+  p8 Figure 5: Mindmap for model I
+  p10 Figure 6: Biomass Growth Model for Larval
+  p12 Figure 7: Mindmap for BDS Assessment Model
+  p15 Table 3: Parameter Settings
+  p16 Figure 8:
+  p16 Figure 9:
+  p16 Figure 10: Population size of the Experimental and Control Group
+  p18 Figure 11: Correlation matrix C
+  p19 Figure 12: Multiple Population Evolutionary
+  p19 Figure 13: Multiple Population Evolutionary
+  p19 Figure 14: Biomass Proportion in 600-th year
+  p19 Figure 15: Biomass Proportion in 600-th year
+  p19 Figure 16: Biomass and Shannon-Wiener Index in Multiple Population Evolutionary Model
+  p20 Figure 17: Species 2 Populations
+TOOLS: simulation, ODE, graph, sensitivity analysis, logistic
+WEAK LINES:
+  p1: we discussed the strengths and weaknesses of the model and made a conclusion.
+  p2: Strengths and Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  p2: Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  p9: pools, are in an interchangeable relationship. Therefore, we cannot directly decom-
+  p9: pose these two components into two species for calculation, because we cannot use the

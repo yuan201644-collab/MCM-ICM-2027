@@ -1,0 +1,53 @@
+### 2022C_2203120  pages=24
+TITLE: Problem Chosen / C / 2022 / MCM/ICM / Summary Sheet / Team Control Number / 2203120 / Trading Strategy Model Based on Dynamic
+SUMMARY: It is of great signiﬁcance for traders to buy and sell volatile assets reasonably in market transactions. Traders choose diﬀerent trading strategies and get diﬀerent beneﬁts. This paper studies the best trading strategies for diﬀerent traders based on the daily prices of gold and bitcoin in the past. For problem 1, the original data is preprocessed ﬁrstly, including ﬁlling the missing value by the daily price of gold in the past, and standardize all the original data. Following the processed data, the ARIMA model is used to establish the price prediction model. Correlation coeﬃceents between the prediction results and the price of gold and bitcoin are 0.8592 and 0.9304 respectively. The eﬀectiveness of our model is denoted. Thirdly, a dynamic programming model with largest total assets and risk as the regular termis is established, with the constraints hit rate and transaction volume lim
+FLOW:
+  p1: Problem Chosen | C | 2022 | MCM/ICM
+  p2: Contents | 1 | Introduction | 2
+  p3: 1 | Introduction | 1.1 | Problem Background
+  p4: BP neural network, RNN, encoder-decoder model, etc. In view of the simplicity and eﬃciency of | ARIMA model, which only needs endogenous variables rat
+  p5: 2 | General Assumptions and Notations | 2.1 | Assumptions
+  p6: 3.1 | Data Preprocessing | Before data analysis, the availability of data must be guaranteed. | • Missing value processing. Unlike bitcoin, which is t
+  p7: Figure 3: Structure of ARIMA model | step1 Stabilization | To use ARIMA model, the time series must be stationary. We use the Augmented Dickey- | full
+  p8: (a) ACF chart and PACF chart of gold | (b) ACF chart and PACF chart of bitcoin | Figure 4: ACF chart and PACF chart | step3 White noise test
+  p9: 3.2.2 | Trading Strategy Model | The best daily trading strategy is given only according to the price data. We need to judge | the forecast data and g
+  p10: • The Commission is deducted from the amount paid instead of being given separately. | We use i to record the cycle, in which cycle 0 is the experienc
+  p11: where, Wj represents the roportion of gold and bitcoin bought on day j, mj represents the roportion | of gold and bitcoin sought on day j, Aj represen
+  p12: step4 Determine the number of transactions. Prediction model discrimination coeﬃcient R2 | gi | can evaluate the volatility predicted by the trained m
+  p13: [C,G,B]=[22.31, 0.16, 2.84]. The changes of assets during the ﬁve-year period are shown in the | ﬁgure below. | Figure 8: The changes of total assets 
+  p14: generalization ability, robustness and proﬁt margin of the model to prove the optimization of | the strategy. | 4.1 | Generalization Ability of the Mo
+  p15: types of traders’ assets. The ﬁgure 9 shows the changes of various assets of insurance-type traders | in ﬁve years. See the Appendix A for the ﬁgures 
+  p16: seen from the number of transactions that any disturbance in the market may disturb insurance | investors. From R2, we can ﬁnd that the more traders t
+  p17: (a) gold | (b) bitcoin | Figure 13: The impact of m on total assets | As can be seen from the ﬁgure above, if these variables are disturbed, the ﬁnal 
+  p18: 5.1 | Sensitivity Diﬁnition | Set initial variable α by α0, the initial transaction frequency h is h0 . After changing K(k = | 1, 2, ..., 10) times, t
+  p19: 2. The cost increases, the transactions become less, and the possible risks are reduced. | 3. The changes of the three indicators are synchronous and 
+  p20: an investment prediction software according to the model. We only need to understand | the meaning of relevant parameters to realize asset management.
+  p21: Figure 16: Structure of transaction strategy model | • | When to trade. We measured the hit rate of the current model, the rise and fall of gold | and
+  p22: The determination of trading strategy is essentially a dynamic programming problem. We | need to maximize the return while taking into account the ris
+  p23: References | [1] Conlon. T and McGee. R. Safe haven or risky hazard? Bitcoin during the Covid-19 bear | market. FINANCE RESEARCH LETTERS, 35, 2020. | 
+  p24: Appendices | Appendix A | Changes of Various Types of Traders’ Assetes | (a) Changes of cash
+CAPTIONS:
+  p3 Figure 1. The source of gold daily prices is London Bullion Market Association and the sou
+  p3 Figure 1: The prices of two assets
+  p4 Figure 2: Overall structure
+  p5 Table 1: Notations
+  p7 Figure 3: Structure of ARIMA model
+  p7 Table 2: P value of gold and bitcoin time series before and after diﬀerence
+  p7 Table 3: Conﬁrmation method of p value and q value
+  p8 Figure 4: ACF chart and PACF chart
+  p8 Figure 5: Forecast charts in one cycle
+  p9 Table 4: Variable parameters
+  p11 Figure 6: The process of determining whether to trade
+  p12 Figure 7: The process of determining the number of transactions
+  p13 Figure 8: The changes of total assets during the ﬁve-year period
+  p14 Table 5: Adjustment of variable parameters
+  p15 Figure 9: Changes of various assets of insurance-type traders
+  p15 Figure 10: Changes in total assets of three types of traderss
+  p15 Table 6: Results of three types of strategies
+  p16 Figure 11: The impact of wL on total assets
+  p16 Figure 12: The impact of wH on total assets
+  p17 Figure 13: The impact of m on total assets
+TOOLS: dynamic programming, regression, ARIMA, LSTM, neural network, ODE, genetic algorithm
+WEAK LINES:
+  p5: normal circumstances is not considered for the universality of the model.
+  p8: extracted, and the rest are all random disturbances, which cannot be predicted and used.[9]

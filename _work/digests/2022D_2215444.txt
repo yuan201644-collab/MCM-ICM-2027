@@ -1,0 +1,37 @@
+### 2022D_2215444  pages=22
+TITLE: How Can We Realize the Full Potential of Our Data? / Summary / With the development of technology and the explosive growth of data, data is becoming an / important strategic asset in today's society, 
+SUMMARY: With the development of technology and the explosive growth of data, data is becoming an important strategic asset in today's society, and it is more and more important to establish a suitable system to manage and analyze the data. In this paper, we build a model to analyze the factors affecting the maturity of data analysis systems, revealing how to make better use of data, and for- mulate plans to maximize the potential of data assets. In Task1: First, based on the grounded theory, we comprehensively consider the ICM company requirements as well as the factors of the maturity model literature given in the title, screening out the indicators that affect data analysis to establish a data analysis system capability maturity eval- uation model (DAMM). Then we use the Analytic Hierarchy Process combined with the Entropy Weight Method (AHP-EWM) to perform a combined weighting analysis on the
+FLOW:
+  p1: How Can We Realize the Full Potential of Our Data? | Summary | With the development of technology and the explosive growth of data, data is becoming a
+  p2: Contents | 1 Introduction ...................................................................................................... 3 | 1.1 Problem Backg
+  p3: 1 Introduction | 1.1 Problem Background | With the completion of the information revolution in the 1950s, the main body represent- | ing advanced prod
+  p4: the characteristics of each maturity, and establishing a detailed evaluation method to study the | R&D quality of enterprises. process, and test the e
+  p5: the background and basis for our subsequent analysis. |  Assumption 1：It is assumed that ICM's data analysis system is comprehensive in | terms of pe
+  p6: 4 TASK 1: DAMM Based on AHP-EWM | 4.1 Indicator selection | There are many factors that describe the maturity of an enterprise data analysis system, |
+  p7: Figure 2 People-Related Metrics | Analyzing the figure 2, the data analysis system maturity evaluation model we constructed | comprehensively answered
+  p8: Figure 4 Process-Related Metrics | Comprehensive analysis of figures 2 to 4 shows that the evaluation system (DAMM) we | constructed has well answered
+  p9: 𝑃𝑃𝑖𝑖(1 ≤𝑖𝑖≤6): Number of people, Education background, IT capability, Cost, Team work and | talent management followed by 𝑃𝑃1~𝑃𝑃6; Defining factors af
+  p10: 4.2.2 AHP | First, between the same layers, we analyze the importance of indicators by constructing a | judgment matrix. | in the above formula, 𝑏𝑏𝑖𝑖𝑖
+  p11: 4.3  The Solution of Task 1 | The subjective and objective weights are combined by the AHP-EWM method, and the | weight values occupied by different i
+  p12: 5 TASK 2: Linear programming and System Dynamics | 5.1 Model Overview | For the second problem, in order to maximize the potential of ICM's D&A system
+  p13: represent the upper limit of the index improvement. | Step 3: Constraint Analysis | Ⅰ Question 2 also satisfies the assumption of task 1, so the optim
+  p14: Here is a simple data verification and analysis. According to problem 1, from the perspec- | tive of the data analysis system of five different maturi
+  p15: Figure 10 Comparison of the weight value of good grade and excellent grade | According to the analysis of the above figure, the biggest difference bet
+  p16: Table 3 Simulation data discretization results | Number | Maturity | People
+  p17: Figure 12 Apriori algorithm analysis process | The support and confidence are measured by setting thresholds. In this paper, the mini- | mum support t
+  p18: effectiveness. | (2) Rules ID4, ID5, and ID6 indicate that the third-level technical level B3 (0.6~0.8) and | the fourth-level technical level B4 (0.8
+  p19: and the actual evaluation value of DAMM is analyzed, and the error results change graph are | obtained as follows: | Figure 14 Error value between sim
+  p20: Figure 15 Advantages of the DAMM Model | 8 Model Evaluation and Further Discussion | 8.1 Strengths |  We use the AHP-EWM method to build an evaluatio
+  p21: References | [1] Paulk M. Comparing ISO 9001 and the Capability Maturity Model for Software[J]. | Kluwer Academic Publishers, 1993,2(4): 245-256 | [2]
+  p22: Dear ICM Seaport Users: | We are the researchers invited by ICM to as- | sess the maturity of its D&A system, As a large | seaport, ICM generates a la
+CAPTIONS:
+  p5 The key mathematical notations used in this paper are listed in Table 1.
+  p5 Table 1: Notations used in this paper
+TOOLS: linear programming, simulation, ODE, graph, AHP, entropy weight, TOPSIS, sensitivity analysis, system dynamics
+WEAK LINES:
+  p2: 8.2 Weaknesses .................................................................................................................... 20
+  p5: ysis found later are not considered by the system and belong to the part of maturity
+  p9: affect the maturity of data analytics systems but are not considered by ICM.
+  p13: the improvement of the index parameters cannot exceed the cost
+  p20: depth, but due to space limitations, our work can only do this for the time being.
+  p20: the model from the comparison of simulation and evaluation model, but cannot meas-

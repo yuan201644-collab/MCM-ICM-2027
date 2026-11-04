@@ -1,0 +1,227 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024D_2429211_五大湖水资源问题\\2429211.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024D_2429211_五大湖水资源问题\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024D_2429211_五大湖水资源问题\\2429211_英中对照.docx",
+  "title": "2429211 英中对照版",
+  "footer_prefix": "2429211 英中对照版 · 第 ",
+  "subtitle": "2024 ICM Problem D · Water Resources of the Great Lakes",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "en_only_pages": [
+    22,
+    23
+  ],
+  "batches": 8,
+  "terms": [
+    [
+      "Great Lakes",
+      "五大湖",
+      "北美五大湖，本文的研究对象"
+    ],
+    [
+      "Water Resources",
+      "水资源",
+      "湖区可供分配的水量"
+    ],
+    [
+      "Linear Programming",
+      "线性规划",
+      "在约束下求最优分配"
+    ],
+    [
+      "Dynamic Flow Network",
+      "动态流网络",
+      "把水的流动建成网络随时间演化"
+    ],
+    [
+      "Human-Centered",
+      "以人为本",
+      "优先满足居民与生态需求的分配取向"
+    ],
+    [
+      "Multigranular Approach",
+      "多粒度方法",
+      "在州/流域/城市等不同尺度上分析"
+    ],
+    [
+      "Water Allocation",
+      "水量分配",
+      "把有限水量分给各用水方"
+    ],
+    [
+      "Reservoir",
+      "水库",
+      "调节水量的蓄水设施"
+    ],
+    [
+      "Water Level",
+      "水位",
+      "衡量湖区水量的直接指标"
+    ],
+    [
+      "Watershed",
+      "流域",
+      "汇水的地理单元"
+    ],
+    [
+      "Stakeholder",
+      "利益相关方",
+      "居民、农业、航运、生态等用水方"
+    ],
+    [
+      "Ecosystem Service",
+      "生态系统服务",
+      "水生态给人类带来的收益"
+    ],
+    [
+      "Optimization Model",
+      "优化模型",
+      "本文的建模框架"
+    ],
+    [
+      "Constraint",
+      "约束条件",
+      "水量、预算、生态红线等限制"
+    ],
+    [
+      "Objective Function",
+      "目标函数",
+      "要最大化的综合效益"
+    ],
+    [
+      "Equity",
+      "公平性",
+      "各方获益是否均衡"
+    ],
+    [
+      "Sensitivity Analysis",
+      "灵敏度分析",
+      "改动参数看结论是否稳定"
+    ],
+    [
+      "Scenario Analysis",
+      "情景分析",
+      "设定不同未来情境比较结果"
+    ]
+  ],
+  "gloss": [
+    [
+      "五大湖",
+      "Great Lakes"
+    ],
+    [
+      "水资源",
+      "Water Resources"
+    ],
+    [
+      "线性规划",
+      "Linear Programming"
+    ],
+    [
+      "动态流网络",
+      "Dynamic Flow Network"
+    ],
+    [
+      "以人为本",
+      "Human-Centered"
+    ],
+    [
+      "多粒度方法",
+      "Multigranular Approach"
+    ],
+    [
+      "水量分配",
+      "Water Allocation"
+    ],
+    [
+      "水库",
+      "Reservoir"
+    ],
+    [
+      "水位",
+      "Water Level"
+    ],
+    [
+      "流域",
+      "Watershed"
+    ],
+    [
+      "利益相关方",
+      "Stakeholder"
+    ],
+    [
+      "生态系统服务",
+      "Ecosystem Service"
+    ],
+    [
+      "优化模型",
+      "Optimization Model"
+    ],
+    [
+      "约束条件",
+      "Constraint"
+    ],
+    [
+      "目标函数",
+      "Objective Function"
+    ],
+    [
+      "公平性",
+      "Equity"
+    ],
+    [
+      "灵敏度分析",
+      "Sensitivity Analysis"
+    ],
+    [
+      "情景分析",
+      "Scenario Analysis"
+    ]
+  ],
+  "fig_texts": {
+    "img_05_5.png": [
+      [
+        "Δh",
+        "Δh（水位变化量）"
+      ],
+      [
+        "Figure 2:",
+        "图 2："
+      ],
+      [
+        "Since water levels do not vary much relative to total depth, we can approximate the lake surface area as being constant.",
+        "由于水位相对于总深度变化不大，我们可以近似认为湖面面积保持不变。"
+      ],
+      [
+        "We can then convert flow to marginal height by dividing by surface area.",
+        "进而将流量除以水面面积，即可转换为边际水位变化量。"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2429211.pdf 对照查看。）"
+}

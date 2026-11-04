@@ -1,0 +1,55 @@
+### 2024F_2409949  pages=22
+TITLE: 微信公众号：数学模型 / 微信号：MATHmodels / Problem Chosen / F / 2024 / MCM/ICM / Summary Sheet / Team Control Number
+SUMMARY: Our work outlines a comprehensive strategy for combating illegal wildlife trade (IWT), specifically targeting the illegal trade of tigers in Southeast Asia. It is structured into several key tasks: Developing a Counter-IWT Project: We analyze trends from previous projects based on 764 former projects data and create a targeted project named “Safeguarding Tigers of Southeast Aisa”, focusing on the supply chain of illegal tiger trading. The project design employs methods like Results-Based Management (RBM) and Logic Framework Approach (LFA), all outcomes and activities follow “Specific, Measurable, Appropriate, Realistic, and Time-bound” principle (SMART), with a detailed Gantt Chart for the 5-year plan. Choosing and Convincing the Most Suitable Client: We discuss and select an appropriate international organization as our client, with the World Wildlife Fund (WWF) emerging as the top choi
+FLOW:
+  p1: 微信公众号：数学模型 | 微信号：MATHmodels | Problem Chosen | F
+  p2: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 2 of  22 | Contents
+  p3: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 3 of  22 | 1 Introduction
+  p4: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 4 of  22 | 1.3 Our Work
+  p5: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 5 of  22 | predict SEA IWT n
+  p6: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 6 of  22 | SMART
+  p7: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 7 of  22 | 3 Task1: Develop 
+  p8: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 8 of  22 | Figure 4: Regular
+  p9: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 9 of  22 | objective tree. T
+  p10: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 10 of  22 | face the lack of
+  p11: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 11 of  22 | 4.3 Analyze the 
+  p12: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 12 of  22 | 4.4 Choose and C
+  p13: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 13 of  22 | Figure 9: Global
+  p14: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 14 of  22 | Figure 10: Seque
+  p15: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 15 of  22 | global criminal 
+  p16: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 16 of  22 | Here we get the 
+  p17: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 17 of  22 | Table5: Variable
+  p18: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 18 of  22 | Figure 11: Ridge
+  p19: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 19 of  22 | As we expected i
+  p20: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 20 of  22 | where
+  p21: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 21 of  22 | Memorandum
+  p22: 微信公众号：数学模型 | 微信号：MATHmodels | Team #2409949                                                                          Page 22 of  22 | References
+CAPTIONS:
+  p3 Figure 1: Combating IWT for a better World
+  p4 Figure 2: Work Structure
+  p5 Table1: Glossary
+  p6 Table2: Data Source
+  p7 Figure 3: Project Funding Map by countries1
+  p8 Figure 4: Regular IWT industrial value chain
+  p8 Figure 5: The problem tree(left) & objective tree(right) of STSEA
+  p9 Figure 6: Logframe matrix of STSEA
+  p9 Figure 7: Gantt Chart of the 5-year schedule of STSEA
+  p10 Table3: Clients Pool
+  p10 and Special Influence. The three-levels indicators are clearly shown in Table3.
+  p10 Table4: Three-levels Indicators
+  p12 The weighted results are clearly demonstrated in Figure 8:
+  p12 Figure 8: Indicator weights for client assessment
+  p13 Figure 9: Global IWT Flow Centering SEA
+  p14 Figure 10: Sequence of Correlation Degrees
+  p17 Table5: Variable notation
+  p17 Therefore, we get results in Table6:
+  p17 Table6: Multiple linear regression results
+  p18 Figure 11: Ridge Trace
+TOOLS: regression, ODE, entropy weight, TOPSIS, sensitivity analysis
+WEAK LINES:
+  p1: Additionally, we discuss strengths and weaknesses of the approaches and models, provide a
+  p2: 7 Strength and Weakness ......................................................................................................................... 20
+  p3: limitations, we must try to develop more targeted and cooperative projects to deal with the
+  p6: some wildlife trade and trafficking data for our further research.
+  p20: Natural shortcomings of mathematic models we use will have effect on the application of
+  p21: We consider the shortcomings of WWF when it comes to actual crime crackdown. So, we give

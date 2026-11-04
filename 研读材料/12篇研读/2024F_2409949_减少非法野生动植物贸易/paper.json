@@ -1,0 +1,741 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024F_2409949_减少非法野生动植物贸易\\2409949.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024F_2409949_减少非法野生动植物贸易\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024F_2409949_减少非法野生动植物贸易\\2409949_英中对照.docx",
+  "title": "2409949 英中对照版",
+  "footer_prefix": "2409949 英中对照版 · 第 ",
+  "subtitle": "2024 ICM Problem F · Reducing Illegal Wildlife Trade",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "en_only_pages": [
+    21
+  ],
+  "batches": 8,
+  "terms": [
+    [
+      "Illegal Wildlife Trade",
+      "非法野生动植物贸易",
+      "本文要压制的对象"
+    ],
+    [
+      "Wildlife Trafficking",
+      "野生动植物贩运",
+      "跨境运输与销售链条"
+    ],
+    [
+      "Supply Chain",
+      "供应链",
+      "从偷猎到终端消费的环节"
+    ],
+    [
+      "Network Analysis",
+      "网络分析",
+      "把贩运关系建成图来分析"
+    ],
+    [
+      "System Dynamics",
+      "系统动力学",
+      "用反馈回路仿真政策效果"
+    ],
+    [
+      "Machine Learning",
+      "机器学习",
+      "从历史案件里找规律"
+    ],
+    [
+      "Enforcement",
+      "执法",
+      "巡护、查获与起诉"
+    ],
+    [
+      "Poaching",
+      "偷猎",
+      "在野外非法捕杀"
+    ],
+    [
+      "Demand Reduction",
+      "需求抑制",
+      "减少终端消费的干预"
+    ],
+    [
+      "Intervention",
+      "干预措施",
+      "政策或执法动作"
+    ],
+    [
+      "SMART",
+      "SMART 监测数据",
+      "保护区巡护的空间监测与报告工具"
+    ],
+    [
+      "Random Forest",
+      "随机森林",
+      "集成多棵决策树的分类模型"
+    ],
+    [
+      "Feature Importance",
+      "特征重要性",
+      "各变量对预测的贡献"
+    ],
+    [
+      "Simulation",
+      "仿真",
+      "在模型里试跑不同政策"
+    ],
+    [
+      "Policy Recommendation",
+      "政策建议",
+      "给 WWF 的行动清单"
+    ],
+    [
+      "Biodiversity",
+      "生物多样性",
+      "受贸易威胁的生态价值"
+    ],
+    [
+      "Ivory",
+      "象牙",
+      "最典型的非法贸易品"
+    ],
+    [
+      "Trafficking Route",
+      "贩运路线",
+      "从源头国到消费国的路径"
+    ]
+  ],
+  "gloss": [
+    [
+      "非法野生动植物贸易",
+      "Illegal Wildlife Trade"
+    ],
+    [
+      "野生动植物贩运",
+      "Wildlife Trafficking"
+    ],
+    [
+      "供应链",
+      "Supply Chain"
+    ],
+    [
+      "网络分析",
+      "Network Analysis"
+    ],
+    [
+      "系统动力学",
+      "System Dynamics"
+    ],
+    [
+      "机器学习",
+      "Machine Learning"
+    ],
+    [
+      "执法",
+      "Enforcement"
+    ],
+    [
+      "偷猎",
+      "Poaching"
+    ],
+    [
+      "需求抑制",
+      "Demand Reduction"
+    ],
+    [
+      "干预措施",
+      "Intervention"
+    ],
+    [
+      "SMART 监测数据",
+      "SMART"
+    ],
+    [
+      "随机森林",
+      "Random Forest"
+    ],
+    [
+      "特征重要性",
+      "Feature Importance"
+    ],
+    [
+      "仿真",
+      "Simulation"
+    ],
+    [
+      "政策建议",
+      "Policy Recommendation"
+    ],
+    [
+      "生物多样性",
+      "Biodiversity"
+    ],
+    [
+      "象牙",
+      "Ivory"
+    ],
+    [
+      "贩运路线",
+      "Trafficking Route"
+    ]
+  ],
+  "fig_texts": {
+    "img_03_2.png": [
+      [
+        "The annual value of the the wildlife trade globally stands at USD $30-42 billion, and $20 billion of that is estimated to be generated from the illegal trade",
+        "全球野生动植物贸易年价值达300亿至420亿美元，其中估计有200亿美元来自非法贸易"
+      ],
+      [
+        "Over 500 species of birds and 500 species of reptiles are traded around the world",
+        "全球有超过500种鸟类和500种爬行动物被交易"
+      ],
+      [
+        "At least 1/3 of the wildlife die during trade transportation each year, the post capture death rate has been as high as 90%",
+        "每年至少三分之一的野生动植物在运输途中死亡，捕获后死亡率高达90%"
+      ]
+    ],
+    "img_04_4.png": [
+      [
+        "Project Design",
+        "项目设计"
+      ],
+      [
+        "Client Choose",
+        "客户选择"
+      ],
+      [
+        "Cooperation Model",
+        "合作模式"
+      ],
+      [
+        "Our Work",
+        "我们的工作"
+      ],
+      [
+        "Impact Evaluation",
+        "影响评估"
+      ],
+      [
+        "Sensitivity Analysis",
+        "敏感性分析"
+      ],
+      [
+        "Memorandum Drafting",
+        "备忘录撰写"
+      ],
+      [
+        "Design a Southeast Asia tigers safeguarding project.",
+        "设计一个东南亚虎保护项目"
+      ],
+      [
+        "Use RBM & LFA method to develop a framework.",
+        "采用RBM（成果管理）与LFA（逻辑框架）方法构建框架"
+      ],
+      [
+        "Demonstrate 5-year arrangements in a Gantt Chart.",
+        "用甘特图展示五年期安排"
+      ],
+      [
+        "Confirm an International Organization client pool.",
+        "确定国际组织客户群"
+      ],
+      [
+        "Build a client assessment model by EWM method.",
+        "用EWM（熵权法）建立客户评估模型"
+      ],
+      [
+        "Cooperate with Interpol in complex system.",
+        "在复杂系统中与国际刑警组织合作"
+      ],
+      [
+        "Calculate sensitivity of each explanatory variable.",
+        "计算各解释变量的敏感性"
+      ],
+      [
+        "Use Ridge Regression to evaluate variables.",
+        "使用岭回归评估变量"
+      ],
+      [
+        "Predict the effects of project in 5-year.",
+        "预测项目五年内的效果"
+      ],
+      [
+        "Draft a one-page memorandum.",
+        "起草一页纸备忘录"
+      ],
+      [
+        "Communicate with our target client.",
+        "与目标客户沟通"
+      ]
+    ],
+    "img_08_10.png": [
+      [
+        "Suppliers",
+        "供应方"
+      ],
+      [
+        "Intermediaries",
+        "中间商"
+      ],
+      [
+        "Consumers",
+        "消费者"
+      ],
+      [
+        "Transport Processing",
+        "运输与加工"
+      ],
+      [
+        "Hunting Reproduction",
+        "猎捕与繁殖"
+      ],
+      [
+        "Ornaments Decorations Food Medicine Pets Specimens",
+        "装饰品 摆件 食品 药材 宠物 标本"
+      ]
+    ],
+    "img_08_11.png": [
+      [
+        "Biodiversity decline in Southeast Asia",
+        "东南亚生物多样性下降"
+      ],
+      [
+        "Rising biodiversity in Southeast Asia",
+        "东南亚生物多样性上升"
+      ],
+      [
+        "The rampant illegal trade of tigers",
+        "猖獗的老虎非法贸易"
+      ],
+      [
+        "The illegal trade of tigers has decreased",
+        "老虎非法贸易已减少"
+      ],
+      [
+        "Inadequate construction of ecological conservation areas",
+        "生态保护区建设不足"
+      ],
+      [
+        "Insufficient efforts to combat wildlife crimes",
+        "打击野生动植物犯罪的力度不足"
+      ],
+      [
+        "Lack of legal and sustainable development and utilization of wildlife resources",
+        "野生动植物资源缺乏合法可持续的开发与利用"
+      ],
+      [
+        "Lack of public awareness and protection of wildlife",
+        "公众对野生动植物的认知与保护意识不足"
+      ],
+      [
+        "Lack of monitoring of wildlife",
+        "缺乏对野生动植物的监测"
+      ],
+      [
+        "Cross-border protection has loopholes",
+        "跨境保护存在漏洞"
+      ],
+      [
+        "Lack of funding, materials, and professional talent for developing ecotourism",
+        "发展生态旅游缺乏资金、物资与专业人才"
+      ],
+      [
+        "Lack of publicity and education",
+        "缺乏宣传与教育"
+      ],
+      [
+        "Strengthen the construction of ecological conservation areas",
+        "加强生态保护区建设"
+      ],
+      [
+        "Intensify efforts to combat wildlife crimes",
+        "加大打击野生动植物犯罪力度"
+      ],
+      [
+        "Develop wildlife resources through legal and sustainable means to increase residents' income",
+        "以合法可持续方式开发野生动植物资源以增加居民收入"
+      ],
+      [
+        "Enhance public awareness and protection of wildlife",
+        "提高公众的保护意识与野生动植物保护"
+      ],
+      [
+        "Develop and implement intelligent monitoring system",
+        "开发并实施智能监测系统"
+      ],
+      [
+        "Establish a network for regional law enforcement information exchange",
+        "建立区域执法信息交流网络"
+      ]
+    ],
+    "img_09_13.png": [
+      [
+        "Objective Measurable Indicators of the STSEA Project",
+        "STSEA项目的客观可衡量指标"
+      ],
+      [
+        "Overall Goal:",
+        "总体目标："
+      ],
+      [
+        "Increase biodiversity in Southeast Asia",
+        "提升东南亚生物多样性"
+      ],
+      [
+        "Objective Verifiable Indicator:",
+        "客观可验证指标："
+      ],
+      [
+        "Southeast Asian Biodiversity Index",
+        "东南亚生物多样性指数"
+      ],
+      [
+        "Specific Goals:",
+        "具体目标："
+      ],
+      [
+        "Reduce ITT in Southeast Asia",
+        "减少东南亚非法虎贸易（ITT）"
+      ],
+      [
+        "Tiger numbers in IWT",
+        "非法野生动植物贸易中的虎数量"
+      ],
+      [
+        "Outcome Results (over the next five years):",
+        "成果结果（未来五年）："
+      ],
+      [
+        "Objective Verifiable Indicator (over the next five years):",
+        "客观可验证指标（未来五年）："
+      ],
+      [
+        "1. The total area of terrestrial protected areas will increase by 5 %",
+        "1. 陆地保护区总面积将增加5%"
+      ],
+      [
+        "2. The detection rate of illegal wildlife trade cases will increase by 25 %",
+        "2. 非法野生动植物贸易案件侦破率将提高25%"
+      ],
+      [
+        "3. Local residents' employment rate will increase by 0.5 %",
+        "3. 当地居民就业率将提高0.5%"
+      ],
+      [
+        "Expected change in OVIs over the next five years",
+        "未来五年客观可验证指标（OVIs）的预期变化"
+      ],
+      [
+        "1. The total area",
+        "1. 总面积"
+      ],
+      [
+        "2. The success rate of detecting cases",
+        "2. 案件侦破成功率"
+      ],
+      [
+        "3. Employment rate",
+        "3. 就业率"
+      ],
+      [
+        "4. The online search volume",
+        "4. 网络搜索量"
+      ]
+    ],
+    "img_09_14.png": [
+      [
+        "STSEA Project Schedule",
+        "STSEA项目进度计划"
+      ],
+      [
+        "Project Phase",
+        "项目阶段"
+      ],
+      [
+        "Project Content",
+        "项目内容"
+      ],
+      [
+        "Preparation & Initiation",
+        "准备与启动"
+      ],
+      [
+        "Team building",
+        "团队组建"
+      ],
+      [
+        "Resource preparation",
+        "资源准备"
+      ],
+      [
+        "Execution & Control",
+        "执行与控制"
+      ],
+      [
+        "LNR construction",
+        "LNR（地方自然保护区）建设"
+      ],
+      [
+        "Crime crackdown",
+        "犯罪打击"
+      ],
+      [
+        "Resource development",
+        "资源开发"
+      ],
+      [
+        "Publicity education",
+        "宣传教育"
+      ],
+      [
+        "Phase assessment",
+        "阶段评估"
+      ],
+      [
+        "Summary & Closure",
+        "总结与收尾"
+      ],
+      [
+        "Data organization",
+        "数据整理"
+      ],
+      [
+        "Project acceptance",
+        "项目验收"
+      ],
+      [
+        "Project evaluation",
+        "项目评估"
+      ]
+    ],
+    "img_13_21.png": [
+      [
+        "Scale",
+        "规模"
+      ],
+      [
+        "Exporter",
+        "出口方"
+      ],
+      [
+        "Importer",
+        "进口方"
+      ],
+      [
+        "United States",
+        "美国"
+      ],
+      [
+        "Canada",
+        "加拿大"
+      ],
+      [
+        "Brazil",
+        "巴西"
+      ],
+      [
+        "UK",
+        "英国"
+      ],
+      [
+        "Netherlands",
+        "荷兰"
+      ],
+      [
+        "China",
+        "中国"
+      ],
+      [
+        "Japan",
+        "日本"
+      ],
+      [
+        "South Korea",
+        "韩国"
+      ],
+      [
+        "India",
+        "印度"
+      ],
+      [
+        "Thailand",
+        "泰国"
+      ],
+      [
+        "Vietnam",
+        "越南"
+      ],
+      [
+        "Indonesia",
+        "印度尼西亚"
+      ],
+      [
+        "Malaysia",
+        "马来西亚"
+      ],
+      [
+        "Singapore",
+        "新加坡"
+      ],
+      [
+        "Australia",
+        "澳大利亚"
+      ]
+    ],
+    "img_14_24.png": [
+      [
+        "European eels",
+        "欧洲鳗鲡"
+      ],
+      [
+        "Rhino horns",
+        "犀牛角"
+      ],
+      [
+        "Pangolins",
+        "穿山甲"
+      ],
+      [
+        "Tigers",
+        "虎"
+      ],
+      [
+        "Live reptiles",
+        "活体爬行动物"
+      ],
+      [
+        "Elephant tusks",
+        "象牙"
+      ]
+    ],
+    "img_18_32.png": [
+      [
+        "The online search volume",
+        "网络搜索量"
+      ],
+      [
+        "The residents' employment rate",
+        "当地居民就业率"
+      ],
+      [
+        "The detection rate of cases",
+        "案件侦破率"
+      ],
+      [
+        "The terrestrial protected areas",
+        "陆地保护区"
+      ]
+    ],
+    "img_18_33.png": [
+      [
+        "True Value",
+        "真实值"
+      ],
+      [
+        "Predict Value",
+        "预测值"
+      ]
+    ],
+    "img_19_35.png": [
+      [
+        "with STSEA",
+        "采用STSEA项目"
+      ],
+      [
+        "without STSEA",
+        "不采用STSEA项目"
+      ]
+    ],
+    "img_19_36.png": [
+      [
+        "STSEA Project Execution",
+        "STSEA项目实施"
+      ],
+      [
+        "Increase in The Number of Wild Tigers",
+        "野生虎数量增加"
+      ],
+      [
+        "Reduction in ITT",
+        "非法虎贸易（ITT）减少"
+      ],
+      [
+        "The Increase in Species Diversity",
+        "物种多样性提升"
+      ],
+      [
+        "The Improvement of Biodiversity",
+        "生物多样性改善"
+      ],
+      [
+        "Improvement of Ecological Environment",
+        "生态环境改善"
+      ],
+      [
+        "Ecological Benefits",
+        "生态效益"
+      ],
+      [
+        "Economic Benefits",
+        "经济效益"
+      ],
+      [
+        "Social Benefits",
+        "社会效益"
+      ],
+      [
+        "Promote",
+        "促进"
+      ],
+      [
+        "More Support for WWF",
+        "为世界自然基金会（WWF）提供更多支持"
+      ]
+    ],
+    "img_20_38.png": [
+      [
+        "Average Prediction Impact",
+        "平均预测影响"
+      ],
+      [
+        "The terrestrial protected areas",
+        "陆地保护区"
+      ],
+      [
+        "The detection rate of cases",
+        "案件侦破率"
+      ],
+      [
+        "The residents employment rate",
+        "当地居民就业率"
+      ],
+      [
+        "The online search volume",
+        "网络搜索量"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2409949.pdf 对照查看。）"
+}

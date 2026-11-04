@@ -1,0 +1,55 @@
+### 2022F_2224021  pages=25
+TITLE: Problem Chosen / F / 2022 / MCM/ICM / Summary Sheet / Team Control Number / 2224021 / Harvest in Space! Outlook & Equity
+SUMMARY: It has always been a puzzle how to allocate resources harvested in space. The advent of asteroid mining seems to even compound the challenges of maintaining global equity. Therefore, based on reality of the current and historical situations, our goal is to propose a global equity evaluation system and study the impact of asteroid mining using it. We present our work as four phases. Firstly, we form the deﬁnition of global equity on the basis of relative literature. We establish a ﬁve-dimensional indicator system, HELEN, to evaluate global equity. The dimensions are Health & Education, Economy, Life Quality, Environment and Natural Resources. For each dimension, there are 2 to 5 indexes for quantiﬁcation. In order to combine the advantages of both empirical judgment and objective data, we decide to use Analytic Hierarchy Process (AHP) and Entropy Weight Method (EWM) to calculate the weigh
+FLOW:
+  p1: Problem Chosen | F | 2022 | MCM/ICM
+  p2: Contents | 1 | Introduction | 4
+  p3: Team # 2224021 | Page 3 | 6.3 | Impact of Changes in National Power . . . . . . . . . . . . . . . . . . . . . . .
+  p4: Team # 2224021 | Page 4 | 1 | Introduction
+  p5: Team # 2224021 | Page 5 | limited and scarce. It is scarcity that leads to inequity, makes our discussion necessary | and our economics models useful.
+  p6: Team # 2224021 | Page 6 | Figure 2: Diagram of HELEN Model | 4.2.1
+  p7: Team # 2224021 | Page 7 | 4.2.2 | Economic Equity
+  p8: Team # 2224021 | Page 8 | 4.2.5 | Health & Education Equity
+  p9: Team # 2224021 | Page 9 | Then, we calculate the information utility as: | dj = 1 −ej,
+  p10: Team # 2224021 | Page 10 | Figure 4: Piketty’s Index | Figure 5: Global equity Index
+  p11: Team # 2224021 | Page 11 | 5.1.1 | Participants
+  p12: Team # 2224021 | Page 12 | developed space technology. | 2) Advancer: China, Russia, India and other developing countries with relatively developed
+  p13: Team # 2224021 | Page 13 | 5.2.1 | Participant
+  p14: Team # 2224021 | Page 14 | wj = | λj
+  p15: Team # 2224021 | Page 15 | Figure 9: Modeling process | max
+  p16: Team # 2224021 | Page 16 | can retain minerals to meet their own needs, or else they can dump the minerals to other | countries.
+  p17: Team # 2224021 | Page 17 | In the second equation, we compute the change rate of DI caused by the asteriod mining | market. The result is shown as fol
+  p18: Team # 2224021 | Page 18 | 6 | Model Adjustment
+  p19: Team # 2224021 | Page 19 | 6.2.1 | Adjustment of Model
+  p20: Team # 2224021 | Page 20 | at 1200, which is faster than restricted condition. So we conclude that the restriction on market | share can indeed better
+  p21: Team # 2224021 | Page 21 | payment of royalties to the Regulatory Authority. | The fee is progressively charged
+  p22: Team # 2224021 | Page 22 | can predict the change direction of the global equity index in advance with the help of strict | approval procedures and ab
+  p23: Team # 2224021 | Page 23 | 9 | Strength and Weakness
+  p24: Team # 2224021 | Page 24 | References | [1] https://ourworldindata.org/
+  p25: Team # 2224021 | Page 25 | Appendices | Appendix A
+CAPTIONS:
+  p4 Figure 1: Our Work
+  p6 Figure 2: Diagram of HELEN Model
+  p9 Figure 3: Weight of Index
+  p10 Figure 4: Piketty’s Index
+  p10 Figure 5: Global equity Index
+  p10 result is shown in Figure 4. We compare our result with Piketty’s to verify the reliabilit
+  p10 In this section, we propose a likely mode of asteroid mining, as shown in Figure 6. In thi
+  p10 Figure 6: Asteroid Mining Market Model
+  p12 Figure 7: Results of Clustering
+  p12 Figure 8: Process of Clustering
+  p15 Figure 9: Modeling process
+  p15 Table 1: Market Sharing in Equilibrium Point
+  p16 Table 2: Change Rate of GDP
+  p17 Table 3: Change Rate of DI
+  p17 Table 4: Change Rate of PPI
+  p17 Table 5: Impact on Equity
+  p18 Figure 10: Model Adjustment
+  p19 Figure 11: Intuitive Analysis
+  p19 Figure 12: Result of Simulation
+  p19 The new equilibrium point is shown in Figure 11. The output is q′
+TOOLS: regression, random forest, simulation, ODE, clustering, PCA, AHP, entropy weight, sensitivity analysis
+WEAK LINES:
+  p3: Weakness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  p23: The model does not consider the impact of sudden factors. Based on Assumption 6,
+  p23: asteroid mining activityies are stable and predictable, so we did not consider the disturbance of

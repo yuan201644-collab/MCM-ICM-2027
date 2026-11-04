@@ -1,0 +1,545 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022B_2200084_水资源与水电共享\\2200084.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022B_2200084_水资源与水电共享\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022B_2200084_水资源与水电共享\\2200084_英中对照.docx",
+  "title": "2200084 英中对照版",
+  "footer_prefix": "2200084 英中对照版 · 第 ",
+  "subtitle": "2022 MCM Problem B · A Model for Better Use of Water Resources Based on Marginal Utility and Auction Theory",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23
+  ],
+  "en_only_pages": [
+    21
+  ],
+  "batches": 8,
+  "terms": [
+    [
+      "Marginal Utility",
+      "边际效用",
+      "每增一单位资源的效用增量"
+    ],
+    [
+      "Resources Allocation Network (RAN)",
+      "资源分配网络",
+      "模型一：水与电的网络流"
+    ],
+    [
+      "Lake Mead",
+      "米德湖",
+      "下游水库，胡佛坝以上"
+    ],
+    [
+      "Lake Powell",
+      "鲍威尔湖",
+      "上游水库，格伦峡谷坝以上"
+    ],
+    [
+      "hydropower",
+      "水电",
+      "下泄水流发电"
+    ],
+    [
+      "linear programming",
+      "线性规划",
+      "目标与约束均线性的优化"
+    ],
+    [
+      "Time-varying Linear Optimization Algorithm",
+      "时变线性优化算法",
+      "模型一的逐日滚动算法"
+    ],
+    [
+      "utility function",
+      "效用函数",
+      "资源量映射为满足程度"
+    ],
+    [
+      "Auction Theory",
+      "拍卖理论",
+      "模型三借用的经济学工具"
+    ],
+    [
+      "independent private value (IPV)",
+      "独立私人价值",
+      "估值私有且相互独立"
+    ],
+    [
+      "Pareto optimum",
+      "帕累托最优",
+      "无法再无损改进的配置"
+    ],
+    [
+      "Generalized Backwards-Shooting (BS) Algorithm",
+      "广义反向射击算法",
+      "由终点条件反推初值"
+    ],
+    [
+      "conservation equation",
+      "守恒方程",
+      "入流−出流−蒸发＝蓄量变化"
+    ],
+    [
+      "reservoir",
+      "水库",
+      "本文研究对象"
+    ],
+    [
+      "drought",
+      "干旱",
+      "美国西南部持续缺水"
+    ],
+    [
+      "penalty mechanism",
+      "惩罚机制",
+      "超额用水用电的加价"
+    ],
+    [
+      "flow direction",
+      "流向",
+      "五州间水与电的输送方向"
+    ],
+    [
+      "sustainability",
+      "可持续性",
+      "不损害后续年份的供水"
+    ]
+  ],
+  "gloss": [
+    [
+      "边际效用",
+      "Marginal Utility"
+    ],
+    [
+      "资源分配网络",
+      "Resources Allocation Network"
+    ],
+    [
+      "米德湖",
+      "Lake Mead"
+    ],
+    [
+      "鲍威尔湖",
+      "Lake Powell"
+    ],
+    [
+      "水电",
+      "hydropower"
+    ],
+    [
+      "线性规划",
+      "linear programming"
+    ],
+    [
+      "时变线性优化算法",
+      "Time-varying Linear Optimization Algorithm"
+    ],
+    [
+      "效用函数",
+      "utility function"
+    ],
+    [
+      "拍卖理论",
+      "Auction Theory"
+    ],
+    [
+      "独立私人价值",
+      "independent private value"
+    ],
+    [
+      "帕累托最优",
+      "Pareto optimum"
+    ],
+    [
+      "广义反向射击算法",
+      "Generalized Backwards-Shooting Algorithm"
+    ],
+    [
+      "守恒方程",
+      "conservation equation"
+    ],
+    [
+      "干旱",
+      "drought"
+    ],
+    [
+      "惩罚机制",
+      "penalty mechanism"
+    ],
+    [
+      "可持续性",
+      "sustainability"
+    ],
+    [
+      "水库",
+      "reservoir"
+    ],
+    [
+      "流向",
+      "flow direction"
+    ]
+  ],
+  "fig_texts": {
+    "img_04_2.png": [
+      [
+        "Model 1: RAN (Resources Allocation Network)",
+        "模型一：RAN（资源分配网络）"
+      ],
+      [
+        "Allocation Networks of Water Availability and Electricity Requirements",
+        "可用水量与电力需求的分配网络"
+      ],
+      [
+        "Series Configuration of Two Dam",
+        "两座大坝的串联结构"
+      ],
+      [
+        "Time-Varying Linear Optimization",
+        "时变线性优化"
+      ],
+      [
+        "Model 2: Marginal Utility Model",
+        "模型二：边际效用模型"
+      ],
+      [
+        "Introduction of Concepts",
+        "概念引入"
+      ],
+      [
+        "Build Fucntions",
+        "构造函数"
+      ],
+      [
+        "Model 3: IPV (Independent Private Value)",
+        "模型三：IPV（独立私人价值）"
+      ],
+      [
+        "Auction Theory",
+        "拍卖理论"
+      ],
+      [
+        "Generalized Backwards-Shooting(BS) Algorithm",
+        "广义反向射击（BS）算法"
+      ],
+      [
+        "Computation of Taylor-series Expansions",
+        "泰勒级数展开的计算"
+      ],
+      [
+        "Works on More Complex Situations",
+        "处理更复杂的情形"
+      ],
+      [
+        "Sensitivity Analysis",
+        "灵敏度分析"
+      ],
+      [
+        "Strengths and Weaknesses",
+        "优缺点"
+      ],
+      [
+        "Future Work",
+        "未来工作"
+      ],
+      [
+        "Shortage of water and electricity",
+        "水与电的短缺"
+      ],
+      [
+        "Waste of water and electricity",
+        "水与电的浪费"
+      ],
+      [
+        "Water and Hydroelectric resources",
+        "水资源与水电资源"
+      ],
+      [
+        "Development and exploration of renewable energy utilization",
+        "可再生能源的开发利用"
+      ],
+      [
+        "Funds for construction",
+        "建设资金"
+      ],
+      [
+        "Investment fund",
+        "投资基金"
+      ],
+      [
+        "The fine",
+        "罚款"
+      ],
+      [
+        "Auction",
+        "拍卖"
+      ],
+      [
+        "Alleviate / Help reduce / As compensation",
+        "缓解 / 帮助减少 / 作为补偿"
+      ],
+      [
+        "Primary cause / Levy / Rest of fund / Funds spent",
+        "主要原因 / 征收 / 剩余资金 / 资金支出"
+      ],
+      [
+        "To the states that lost the auction",
+        "给未中标各州"
+      ]
+    ],
+    "img_06_3.png": [
+      [
+        "Water for General Usage",
+        "一般用水"
+      ],
+      [
+        "Water for Hydropower",
+        "发电用水"
+      ],
+      [
+        "Lake Mead",
+        "米德湖"
+      ],
+      [
+        "Hoover Dam",
+        "胡佛坝"
+      ],
+      [
+        "Glen Canyon Dam",
+        "格伦峡谷坝"
+      ],
+      [
+        "Colorado River",
+        "科罗拉多河"
+      ]
+    ],
+    "img_06_4.png": [
+      [
+        "The transportation of water",
+        "水的输送"
+      ],
+      [
+        "The transportation of hydropower",
+        "水电的输送"
+      ],
+      [
+        "the Glen Canyon dam",
+        "格伦峡谷坝"
+      ],
+      [
+        "the Hoover dam",
+        "胡佛坝"
+      ],
+      [
+        "water for power generation",
+        "发电用水"
+      ],
+      [
+        "Arizona",
+        "亚利桑那州"
+      ],
+      [
+        "California",
+        "加利福尼亚州"
+      ],
+      [
+        "Wyoming",
+        "怀俄明州"
+      ],
+      [
+        "New Mexico",
+        "新墨西哥州"
+      ],
+      [
+        "Colorado",
+        "科罗拉多州"
+      ],
+      [
+        "alpha, v (yellow)",
+        "输水系数 α 与输水量 v（黄色箭头）"
+      ],
+      [
+        "gamma, w (purple)",
+        "输电系数 γ 与输电量 w（紫色箭头）"
+      ]
+    ],
+    "img_14_11.png": [
+      [
+        "Shortage of water and electricity",
+        "水与电的短缺"
+      ],
+      [
+        "Waste of water and electricity",
+        "水与电的浪费"
+      ],
+      [
+        "Water and Hydroelectric resources",
+        "水资源与水电资源"
+      ],
+      [
+        "Development and exploration of renewable energy utilization",
+        "可再生能源的开发利用"
+      ],
+      [
+        "Funds for construction",
+        "建设资金"
+      ],
+      [
+        "Investment fund",
+        "投资基金"
+      ],
+      [
+        "The fine",
+        "罚款"
+      ],
+      [
+        "Auction",
+        "拍卖"
+      ],
+      [
+        "Primary cause",
+        "主要原因"
+      ],
+      [
+        "Alleviate",
+        "缓解"
+      ],
+      [
+        "Help reduce",
+        "帮助减少"
+      ],
+      [
+        "As compensation",
+        "作为补偿"
+      ],
+      [
+        "Levy",
+        "征收"
+      ],
+      [
+        "Rest of fund",
+        "剩余资金"
+      ],
+      [
+        "Funds spent",
+        "资金支出"
+      ],
+      [
+        "To the states that lost the auction",
+        "流向未中标各州"
+      ],
+      [
+        "Help alleviate",
+        "帮助缓解"
+      ]
+    ],
+    "img_12_9.png": [
+      [
+        "The Glen Canyon Dam / The Hoover Dam",
+        "格伦峡谷坝 / 胡佛坝"
+      ],
+      [
+        "Arizona / California / Wyoming / Colorado",
+        "亚利桑那 / 加利福尼亚 / 怀俄明 / 科罗拉多"
+      ],
+      [
+        "AZ_industry / CA_industry / WY_industry / CO_industry",
+        "亚利桑那/加州/怀俄明/科罗拉多的工业用水"
+      ],
+      [
+        "agriculture",
+        "农业用水"
+      ],
+      [
+        "residential",
+        "居民用水"
+      ]
+    ],
+    "img_12_10.png": [
+      [
+        "The Glen Canyon Dam / The Hoover Dam",
+        "格伦峡谷坝 / 胡佛坝"
+      ],
+      [
+        "Arizona / California / Wyoming / Colorado",
+        "亚利桑那 / 加利福尼亚 / 怀俄明 / 科罗拉多"
+      ],
+      [
+        "industry",
+        "工业用电"
+      ],
+      [
+        "agriculture",
+        "农业用电"
+      ],
+      [
+        "residential",
+        "居民用电"
+      ],
+      [
+        "commercial",
+        "商业用电"
+      ]
+    ],
+    "img_03_1.png": [
+      [
+        "High Elevation",
+        "高水位"
+      ],
+      [
+        "Low Elevation",
+        "低水位"
+      ],
+      [
+        "Elevation (feet above mean sea level)",
+        "海拔（英尺，以平均海平面起算）"
+      ]
+    ],
+    "img_07_5.png": [
+      [
+        "Lake Powell",
+        "鲍威尔湖"
+      ],
+      [
+        "Lake Mead",
+        "米德湖"
+      ],
+      [
+        "The Glen Canyon Dam",
+        "格伦峡谷坝"
+      ],
+      [
+        "Hoover Dam",
+        "胡佛坝"
+      ],
+      [
+        "v, u",
+        "水量与水头"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2200084.pdf 对照查看。）"
+}

@@ -1,0 +1,56 @@
+### 2024C_2401298  pages=25
+TITLE: 微信公众号：数学模型 / 微信号：MATHmodels / Problem Chosen / C / 2024 / MCM/ICM / Summary Sheet / Team Control Number
+SUMMARY: This study investigates tennis match dynamics through sophisticated statistical mod- eling and a novel Dual-Temporal Bayesian Network approach. By analyzing Wimble- don data, we address five key questions: Performance Metrics (Problem 1): We introduce a server/returner reweighting strategy to accurately evaluate the performance of a player. We further utilize sliding window and Area Under Curve (AUC) methods to ensure continuity and locality, thus better capturing the fluctuations within the game. Momentum Existence (Problem 2): Rigorous hypothesis testing (Ljung-Box Q Test and Runs Test) fails to reject null hypothesis of complete randomness. But instanta- neous winning rates can reveal slight deviations from randomness, suggesting the presence of subtle momentum effects, albeit not overwhelmingly conclusive. Momentum Prediction (Problem 3): We take a 2-step approach. We first separate 
+FLOW:
+  p1: 微信公众号：数学模型 | 微信号：MATHmodels | Problem Chosen | C
+  p2: 微信公众号：数学模型 | 微信号：MATHmodels | Contents | 1
+  p3: 微信公众号：数学模型 | 微信号：MATHmodels | 1 | Introduction
+  p4: 微信公众号：数学模型 | 微信号：MATHmodels | Figure 1: Framework of Our Work | 2
+  p5: 微信公众号：数学模型 | 微信号：MATHmodels | Table 1: Notations Table | Symbol
+  p6: 微信公众号：数学模型 | 微信号：MATHmodels | A key observation is that the player currently serving has a higher chance of win- | ning the point, especially when poi
+  p7: 微信公众号：数学模型 | 微信号：MATHmodels | pluses 1 when two players finish a ball, corresponding to the column point_no in the | given data), the ordinate represe
+  p8: 微信公众号：数学模型 | 微信号：MATHmodels | methods, AUC also weights the points winning with temporal distance (this can be | easily seen by expressing ML(t) as su
+  p9: 微信公众号：数学模型 | 微信号：MATHmodels | the number of points won by Player 1 against the total serves of Player 2 to calculate | p2.
+  p10: 微信公众号：数学模型 | 微信号：MATHmodels | Figure 6: feature importance | 4.3
+  p11: 微信公众号：数学模型 | 微信号：MATHmodels | 5 | Problem 3: Momentum Prediction
+  p12: 微信公众号：数学模型 | 微信号：MATHmodels | L(λ, s|n1, n2) = | n1 + n2
+  p13: 微信公众号：数学模型 | 微信号：MATHmodels | Taking all these into account, we introduce our novel Duel-Temporal Bayesian Net- | work. As a variation of normal Dynam
+  p14: 微信公众号：数学模型 | 微信号：MATHmodels | Figure 7: Identified Variables | Due to the limitation of our data (only 31 matches), a complicated model like this
+  p15: 微信公众号：数学模型 | 微信号：MATHmodels | point outcomes. | Physical and Strategic Aspects (rally_count, p_1_net_pt_won, p_2_net_pt_won): These
+  p16: 微信公众号：数学模型 | 微信号：MATHmodels | Figure 9: One Building Block of the Bayesian Network | Using this simpler network as one building block, we can stack tw
+  p17: 微信公众号：数学模型 | 微信号：MATHmodels | 5.2.3 | Data fitting
+  p18: 微信公众号：数学模型 | 微信号：MATHmodels | M step: | θ(t+1) = arg max
+  p19: 微信公众号：数学模型 | 微信号：MATHmodels | As can be seen from the graph, the most substantial positive influence on momen- | tum is from player’s net point won, c
+  p20: 微信公众号：数学模型 | 微信号：MATHmodels | 6 | Problem 4 : Swings Prediction and Model Generaliza-
+  p21: 微信公众号：数学模型 | 微信号：MATHmodels | (a) | (b)
+  p22: 微信公众号：数学模型 | 微信号：MATHmodels | 7 | Model Analysis
+  p23: 微信公众号：数学模型 | 微信号：MATHmodels | (a) | (b)
+  p24: 微信公众号：数学模型 | 微信号：MATHmodels | Figure 17: Momentum in Tennis | "Momentum" is not an isolated concept, it represents the existence of complex la-
+  p25: 微信公众号：数学模型 | 微信号：MATHmodels | References | [1] Taylor, J., & Demick, A. (1994). A multidimensional model of momentum in
+CAPTIONS:
+  p4 Figure 1: Framework of Our Work
+  p5 Table 1: Notations Table
+  p5 Figure 2: Points Difference for Match 2023-wimbledon-1301
+  p6 Figure 3: Probability Difference for Match 2023-wimbledon-1301
+  p7 Figure 4: Performance Evaluation with Different Windows for Match 2023-wimbledon-1301
+  p8 Figure 5: AUC-Time Plot for Match 2023-wimbledon-1301
+  p10 Figure 6: feature importance
+  p10 Table 2: Probability of Winning Based on Serving State
+  p14 Figure 7: Identified Variables
+  p14 Table 3: Feature Importance
+  p15 Figure 8: Correlation Heatmap of Top-10 Features
+  p16 Figure 9: One Building Block of the Bayesian Network
+  p16 Figure 10: Duel-Temporal Bayesian Network
+  p17 Figure 11: Denoised Residual Effect Cruve
+  p18 Figure 12: Differences in Residual Effects and Entropy
+  p20 Figure 13: Predicted vs Actual
+  p21 Figure 14: Differences in Residual Effects and Entropy
+  p21 Figure 15: General Framework
+  p23 Figure 16: Differences in Residual Effects and Entropy
+  p24 Figure 17: Momentum in Tennis
+TOOLS: random forest, Markov, simulation, ODE, graph, hypothesis test, Bayesian, sensitivity analysis
+WEAK LINES:
+  p2: Strengths and Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  p6: indicating that serving alone doesn’t drastically shift match momentum. So, we cannot
+  p9: hypothesis of the points being i.i.d cannot be dismissed. The results of other matches
+  p14: Due to the limitation of our data (only 31 matches), a complicated model like this

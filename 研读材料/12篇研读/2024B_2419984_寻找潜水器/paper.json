@@ -1,0 +1,681 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024B_2419984_寻找潜水器\\2419984.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024B_2419984_寻找潜水器\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2024B_2419984_寻找潜水器\\2419984_英中对照.docx",
+  "title": "2419984 英中对照版",
+  "footer_prefix": "2419984 英中对照版 · 第 ",
+  "subtitle": "2024 MCM Problem B · Search for the Submersible",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "en_only_pages": [],
+  "batches": 8,
+  "terms": [
+    [
+      "Submersible",
+      "潜水器",
+      "失联目标，本文的搜索对象"
+    ],
+    [
+      "Search and Rescue",
+      "搜救",
+      "找到失联目标的整体行动"
+    ],
+    [
+      "Dynamics Model",
+      "动力学模型",
+      "描述潜水器运动状态的方程"
+    ],
+    [
+      "Monte Carlo Simulation",
+      "蒙特卡洛模拟",
+      "大量随机抽样估计概率分布"
+    ],
+    [
+      "Ant Colony Algorithm",
+      "蚁群算法",
+      "用信息素启发式搜索路径"
+    ],
+    [
+      "Bayesian Detection",
+      "贝叶斯检测",
+      "用后验概率更新搜索判断"
+    ],
+    [
+      "Cost-Benefit Analysis",
+      "成本收益分析",
+      "比较投入与搜救效果"
+    ],
+    [
+      "Entropy Weight Method",
+      "熵权法",
+      "客观赋权，用于综合评价"
+    ],
+    [
+      "Seafloor Topography",
+      "海底地形",
+      "影响探测与运动的起伏"
+    ],
+    [
+      "Sonar",
+      "声呐",
+      "水下探测设备"
+    ],
+    [
+      "Probability Distribution",
+      "概率分布",
+      "目标位置的置信范围"
+    ],
+    [
+      "Trajectory",
+      "轨迹",
+      "潜水器的运动路径"
+    ],
+    [
+      "Buoyancy",
+      "浮力",
+      "决定上浮下潜的力"
+    ],
+    [
+      "Drag Force",
+      "阻力",
+      "水中运动受到的阻碍"
+    ],
+    [
+      "Detection Probability",
+      "探测概率",
+      "单次搜索发现目标的概率"
+    ],
+    [
+      "Search Path",
+      "搜索路径",
+      "搜索设备的行进路线"
+    ],
+    [
+      "Resource Allocation",
+      "资源分配",
+      "把有限设备与时间分到各区域"
+    ],
+    [
+      "Bayesian Updating",
+      "贝叶斯更新",
+      "按新证据修正概率"
+    ]
+  ],
+  "gloss": [
+    [
+      "潜水器",
+      "Submersible"
+    ],
+    [
+      "搜救",
+      "Search and Rescue"
+    ],
+    [
+      "动力学模型",
+      "Dynamics Model"
+    ],
+    [
+      "蒙特卡洛模拟",
+      "Monte Carlo Simulation"
+    ],
+    [
+      "蚁群算法",
+      "Ant Colony Algorithm"
+    ],
+    [
+      "贝叶斯检测",
+      "Bayesian Detection"
+    ],
+    [
+      "成本收益分析",
+      "Cost-Benefit Analysis"
+    ],
+    [
+      "熵权法",
+      "Entropy Weight Method"
+    ],
+    [
+      "海底地形",
+      "Seafloor Topography"
+    ],
+    [
+      "声呐",
+      "Sonar"
+    ],
+    [
+      "概率分布",
+      "Probability Distribution"
+    ],
+    [
+      "轨迹",
+      "Trajectory"
+    ],
+    [
+      "浮力",
+      "Buoyancy"
+    ],
+    [
+      "阻力",
+      "Drag Force"
+    ],
+    [
+      "探测概率",
+      "Detection Probability"
+    ],
+    [
+      "搜索路径",
+      "Search Path"
+    ],
+    [
+      "资源分配",
+      "Resource Allocation"
+    ],
+    [
+      "贝叶斯更新",
+      "Bayesian Updating"
+    ]
+  ],
+  "fig_texts": {
+    "img_04_4.png": [
+      [
+        "Model 1: Location Prediction Model",
+        "模型一：位置预测模型"
+      ],
+      [
+        "Constructing a kinematic and dynamic model for a submersible",
+        "构建潜水器的运动学与动力学模型"
+      ],
+      [
+        "Considering correlated perturbations",
+        "考虑相关扰动"
+      ],
+      [
+        "Solving differential equations numerically using the Runge-Kutta method",
+        "用龙格-库塔法数值求解微分方程"
+      ],
+      [
+        "Model 2: Cost-Benefit Analysis Model",
+        "模型二：成本效益分析模型"
+      ],
+      [
+        "Selecting detectors for evaluation at various depths",
+        "选取用于不同深度评估的探测设备"
+      ],
+      [
+        "Establishing four assessment metrics and corresponding prices",
+        "建立四项评估指标及对应价格"
+      ],
+      [
+        "Cost-benefit model based on the entropy weighting method",
+        "基于熵权法的成本效益模型"
+      ],
+      [
+        "Evaluation and Extension",
+        "评价与推广"
+      ],
+      [
+        "Applying to more complex maritime areas (The Caribbean Sea)",
+        "应用于更复杂的海域（加勒比海）"
+      ],
+      [
+        "Account for multiple submersibles",
+        "考虑多艘潜水器"
+      ],
+      [
+        "Model 3: Route planning with Ant Colony Optimization",
+        "模型三：基于蚁群算法的路径规划"
+      ],
+      [
+        "Monte Carlo Simulation",
+        "蒙特卡洛模拟"
+      ],
+      [
+        "Dividing into four parallel exploration areas",
+        "划分为四个并行搜索区域"
+      ],
+      [
+        "Ant Colony Optimization",
+        "蚁群算法"
+      ],
+      [
+        "Updating the sample space according to Bayes' theorem",
+        "依据贝叶斯定理更新样本空间"
+      ],
+      [
+        "Global Pheromone Update τ_ij(t+1)=(1-ρ)·τ_ij(t)+Δτ_ij",
+        "全局信息素更新"
+      ],
+      [
+        "A memo to the Greek government",
+        "致希腊政府的一份备忘录"
+      ]
+    ],
+    "img_05_6.png": [
+      [
+        "The total mass of the submersible",
+        "潜水器的总质量（M，单位 Kg）"
+      ],
+      [
+        "The volume of the submersible.",
+        "潜水器的体积（V，单位 m³）"
+      ],
+      [
+        "The acceleration of the submersible",
+        "潜水器的加速度（a，单位 m/s²）"
+      ],
+      [
+        "Gravity Acceleration",
+        "重力加速度（g，单位 m/s²）"
+      ],
+      [
+        "The speed of the submersible",
+        "潜水器的速度（v，单位 m/s）"
+      ],
+      [
+        "Ocean Current Velocity",
+        "洋流速度（v_c，单位 m/s）"
+      ],
+      [
+        "The density of seawater.",
+        "海水密度（ρ，单位 Kg/m³）"
+      ],
+      [
+        "The resistance experienced by the submersible",
+        "潜水器所受阻力（F_f，单位 N）"
+      ],
+      [
+        "Buoyancy",
+        "浮力（F_B，单位 N）"
+      ],
+      [
+        "Coefficient of Drag",
+        "阻力系数（C_d）"
+      ],
+      [
+        "Reynolds Number",
+        "雷诺数（R_e）"
+      ],
+      [
+        "The time for search and rescue",
+        "搜救时间（t，单位 h）"
+      ]
+    ],
+    "img_06_8.png": [
+      [
+        "depth",
+        "深度"
+      ],
+      [
+        "longitude",
+        "经度"
+      ],
+      [
+        "latitude",
+        "纬度"
+      ]
+    ],
+    "img_06_9.png": [
+      [
+        "TRITON SUBMARINES",
+        "特里顿潜水器公司（船体上的品牌标识）"
+      ]
+    ],
+    "img_08_12.png": [
+      [
+        "latitude",
+        "纬度"
+      ],
+      [
+        "longitude",
+        "经度"
+      ]
+    ],
+    "img_08_13.png": [
+      [
+        "Southern Adriatic",
+        "南亚得里亚海"
+      ],
+      [
+        "Otranto Strait",
+        "奥特朗托海峡"
+      ],
+      [
+        "Sicily Channel",
+        "西西里海峡"
+      ],
+      [
+        "Ionian Sea",
+        "爱奥尼亚海"
+      ]
+    ],
+    "img_10_16.png": [
+      [
+        "depth",
+        "深度"
+      ],
+      [
+        "latitude",
+        "纬度"
+      ],
+      [
+        "longitude",
+        "经度"
+      ],
+      [
+        "Fluctuations caused by initial velocity",
+        "由初速度引起的波动"
+      ],
+      [
+        "Enlarge Image",
+        "放大图"
+      ]
+    ],
+    "img_11_18.png": [
+      [
+        "Submarine Ascent Trajectory Map",
+        "潜水器上浮轨迹图"
+      ],
+      [
+        "depth",
+        "深度"
+      ],
+      [
+        "longitude",
+        "经度"
+      ],
+      [
+        "latitude",
+        "纬度"
+      ]
+    ],
+    "img_15_23.png": [
+      [
+        "Surface Water Area",
+        "表层水域"
+      ],
+      [
+        "shallow water area",
+        "浅水水域"
+      ],
+      [
+        "deep water area",
+        "深水水域"
+      ],
+      [
+        "Scores",
+        "得分"
+      ]
+    ],
+    "img_17_26.png": [
+      [
+        "Probability distribution map of submersible",
+        "潜水器概率分布图"
+      ],
+      [
+        "depth",
+        "深度"
+      ],
+      [
+        "Distance in latitude(m)",
+        "纬度方向距离（m）"
+      ],
+      [
+        "Distance in longitude(m)",
+        "经度方向距离（m）"
+      ]
+    ],
+    "img_17_27.png": [
+      [
+        "Distance in latitude(m)",
+        "纬度方向距离（m）"
+      ],
+      [
+        "Distance in longitude(m)",
+        "经度方向距离（m）"
+      ]
+    ],
+    "img_17_28.png": [
+      [
+        "depth",
+        "深度"
+      ],
+      [
+        "Distance in latitude(m)",
+        "纬度方向距离（m）"
+      ],
+      [
+        "Distance in longitude(m)",
+        "经度方向距离（m）"
+      ]
+    ],
+    "img_17_29.png": [
+      [
+        "Time",
+        "时间"
+      ],
+      [
+        "t=1h",
+        "t=1 小时"
+      ],
+      [
+        "t=3h",
+        "t=3 小时"
+      ],
+      [
+        "t=5h",
+        "t=5 小时"
+      ],
+      [
+        "t=7h",
+        "t=7 小时"
+      ],
+      [
+        "t=9h",
+        "t=9 小时"
+      ],
+      [
+        "t=10h",
+        "t=10 小时"
+      ],
+      [
+        "Coordinates (Grid) in the x-direction",
+        "x 方向坐标（网格）"
+      ],
+      [
+        "Coordinates (Grid) in the y-direction",
+        "y 方向坐标（网格）"
+      ]
+    ],
+    "img_19_32.png": [
+      [
+        "Initialize Parmeters",
+        "初始化参数（原文拼写为 Parmeters）"
+      ],
+      [
+        "Calculating the objective function values for M ants f(t)",
+        "计算 M 只蚂蚁的目标函数值 f(t)"
+      ],
+      [
+        "Updating the sample space according to Bayes' theorem",
+        "依据贝叶斯定理更新样本空间"
+      ],
+      [
+        "Global Pheromone Update τ_ij(t+1)=(1-ρ)·τ_ij(t)+Δτ_ij",
+        "全局信息素更新"
+      ],
+      [
+        "K=K+1",
+        "迭代计数 K 加一"
+      ],
+      [
+        "Maximum number of iterations",
+        "达到最大迭代次数？"
+      ],
+      [
+        "No",
+        "否"
+      ],
+      [
+        "Yes",
+        "是"
+      ],
+      [
+        "Output Best Solution",
+        "输出最优解"
+      ],
+      [
+        "END",
+        "结束"
+      ]
+    ],
+    "img_19_33.png": [
+      [
+        "Data",
+        "数据点"
+      ],
+      [
+        "Best Fit",
+        "最优拟合线"
+      ],
+      [
+        "<不可辨>% Prediction Interval",
+        "预测区间（百分数不可辨，疑为 90%）"
+      ],
+      [
+        "Distance in latitude (m)",
+        "纬度方向距离（m）"
+      ],
+      [
+        "Distance in longitude (m)",
+        "经度方向距离（m）"
+      ],
+      [
+        "Probability of Detecting the Target within 10 Hours (On the Sea Surface)",
+        "10 小时内探测到目标的概率（海面探测）"
+      ],
+      [
+        "Ant Colony Algorithm Iteration Rounds",
+        "蚁群算法迭代轮次"
+      ]
+    ],
+    "img_20_35.png": [
+      [
+        "Probability of Detection",
+        "探测概率"
+      ],
+      [
+        "Time (hours)",
+        "时间（小时）"
+      ],
+      [
+        "Data after 1 hour of search",
+        "搜索 1 小时后的数据"
+      ],
+      [
+        "Data after 3 hour of search",
+        "搜索 3 小时后的数据"
+      ],
+      [
+        "Data after 5 hour of search",
+        "搜索 5 小时后的数据"
+      ],
+      [
+        "Fitted curve after 1 hour of search",
+        "搜索 1 小时后的拟合曲线"
+      ],
+      [
+        "Fitted curve after 3 hour of search",
+        "搜索 3 小时后的拟合曲线"
+      ],
+      [
+        "Fitted curve after 5 hour of search",
+        "搜索 5 小时后的拟合曲线"
+      ]
+    ],
+    "img_22_39.png": [
+      [
+        "depth",
+        "深度"
+      ],
+      [
+        "latitude",
+        "纬度"
+      ],
+      [
+        "longitude",
+        "经度"
+      ]
+    ],
+    "img_22_40.png": [
+      [
+        "Distance in latitude(m)",
+        "纬度方向距离（m）"
+      ],
+      [
+        "Distance in longitude(m)",
+        "经度方向距离（m）"
+      ]
+    ],
+    "img_24_43.png": [
+      [
+        "Search and Rescue Route",
+        "搜救路线"
+      ],
+      [
+        "The main path predicted for the submersible's movement",
+        "预测的潜水器运动主路径"
+      ],
+      [
+        "Prediction of Boundary",
+        "边界预测"
+      ]
+    ],
+    "img_25_45.png": [
+      [
+        "Probability of Detection after 10h",
+        "10 小时后的探测概率"
+      ],
+      [
+        "Start the search from the 1st hour.",
+        "从第 1 小时开始搜索（46%）"
+      ],
+      [
+        "Start the search from the 3rd hour.",
+        "从第 3 小时开始搜索（30%）"
+      ],
+      [
+        "Start the search from the 5th hour.",
+        "从第 5 小时开始搜索（13%）"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2419984.pdf 对照查看。）"
+}

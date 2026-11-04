@@ -1,0 +1,46 @@
+### 2022E_2223495  pages=25
+TITLE: Letting "Carbon" Stay: Forest Management for Ecological-Economic / Balance in the Perspective of Carbon Sequestration / Summary / Forests play an important role in both nature and human society. In th
+SUMMARY: Forests play an important role in both nature and human society. In the context of "car- bon peaking and carbon neutral", how to balance the economic and ecological values of forests has become an academic focus. We used differential equations, multi-objective planning, evolutionary games and simulation to find scientific management strategies for forests in different climates and to guide practice and development. First, we constructed a forest carbon sequestration model. Based on the differential equation, we investigated the carbon sequestration level under different forest management strategies, taking into account the forest area, tree age, climate environment, wood use and depreciation, and found that moderate harvesting helps to increase the carbon sequestration of the whole system. In addition, we simulated the adjustment of the harvesting rate to find the best forest management 
+FLOW:
+  p1: Letting "Carbon" Stay: Forest Management for Ecological-Economic | Balance in the Perspective of Carbon Sequestration | Summary | Forests play an impo
+  p2: Contents | 1 Introduction ...................................................................................................... 3 | 1.1 Problem Backg
+  p3: 1 Introduction | 1.1 Problem Background | Climate change is one of the central issues in international public affairs. Reduction of | greenhouse gases
+  p4: 1.4 Our Work | Figue 1: The structure and process of the full text modeling | 2 Assumptions & Reasonals | ⚫ There are no large emergencies in forest e
+  p5: Where we define the main parameters while specific value of those parameters will be given later. | 4 Whole Process Carbon Sequestration Model for Tre
+  p6: of the two systems is calculated by referring to the standard unit area of forest land sequestra- | tion level, and the sum is the carbon sequestratio
+  p7: The trees in stages A and B are in the fast growth stage and the timber stock is small, so | cutting will not bring more economic value, so it is assu
+  p8: (1) | The percentage of trees in their natural state at each age stage can be calculated from Equa- | tion (1). For each tree age, the carbon sequestr
+  p9: Forest trees and wood products. Both of these parts have carbon sequestration. In order to | study the flow of carbon in both parts, the following flo
+  p10: The initial state of the area of each tree stage is set as the area distribution in | the natural state, and the initial amount of carbon sequestered 
+  p11: Note: Simulations were performed with 100 𝑘𝑚2of forest in its natural state. t indicates | the number of tree age stages experienced. | The analysis o
+  p12: Figue 7: The value composition system of TTF | 5.1.1 Output Value (EF) | We confine the output value of forest trees to the market purchase and sale o
+  p13: Figue 8: Carbon price trends by country | 5.1.3 Biomass Value Equation (CF) | For the establishment of the biomass value equation, we mainly examine t
+  p14: link tourism value with related factors to construct the following equation. | (14) | 𝐴 in the equation is the local security factor, which is related
+  p15: 5.3 SA : Solution of Multivariate Objective Programming | The simulated annealing algorithm benefits from the results of research in statistical me- |
+  p16: In order to achieve forest value balance, forest management strategies need to be analyzed. | The managed deforestation of the forest is obtained by c
+  p17: on forest ecology, so there is no need to reduce logging rate. |  | In stage 500> | >100, the output of ecological wood is poor, which has a certain 
+  p18: The analysis shows that for tropical, subtropical, and boreal climates, there are appropriate | forest harvest management strategies, and harvesting s
+  p19: the range of 41.5% to 55% according to the carbon trading price, which is a value effective and | carbon sequestration enhancement. | It is calculated
+  p20: (25) | Figure 12: Evolutionary game of policy preference | The MATLAB program was used to perform a dynamic evolutionary game between the | two subjec
+  p21: tion cycle t (10 years longer recovery than the original cycle), the forest is allowed to grow for | a longer period of time. In order to analyze the 
+  p22: 2) For different regions and ecologies, it is necessary to find their adapted forest man- | agement strategies to better protect and develop the fores
+  p23: New discoveries in carbon sequestration | Shouldn't Any Trees Be Cut Down? Forest management: moderate | tree harvesting helps carbon sequestration. |
+  p24: New discoveries in carbon sequestration | Shouldn't Any Trees Be Cut Down? Forest management: moderate | tree harvesting helps carbon sequestration. |
+  p25: Appendix | Model Evaluation | Software & Tools | Matlab; Python; Sufer; Tableau; PowerPoint ;Origin
+CAPTIONS:
+  p4 The key mathematical notations used in this paper are listed in Table 1.
+  p4 Table 1: Notations used in this paper
+  p8 Table 2: Carbon fixation coefficient value
+  p13 Table 3: BEF value range of different forest species
+  p19 Table 4: Payment matrix between forest managers and local residents
+  p20 Figure 12: Evolutionary game of policy preference
+  p20 Figure 13: Simulation of optimization policy application from the perspective of game
+  p24 stration effect of the system is shown in Figure 2. It was found that, from the long-term
+TOOLS: linear programming, simulation, differential equation, ODE, game theory, graph, fuzzy, sensitivity analysis, simulated annealing, multi-objective, Pareto
+WEAK LINES:
+  p2: 9.2 Weaknesses .................................................................................................................... 21
+  p4: in nature and cannot be modeled. Therefore the effects of natural disasters, such as sudden
+  p4: mudslides, forest fires, pests and diseases, and volcanic eruptions, are not considered.
+  p4: ests that cannot be used by human activities are outside the scope of this model. This is
+  p9: a) Limitations on the quantity of each tree age.
+  p9: b) The maximum area stock 𝑁 of tree age stages cannot exceed the maximum value in

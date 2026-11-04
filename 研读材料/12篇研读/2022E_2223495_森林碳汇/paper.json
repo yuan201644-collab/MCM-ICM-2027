@@ -1,0 +1,372 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022E_2223495_森林碳汇\\2223495.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022E_2223495_森林碳汇\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022E_2223495_森林碳汇\\2223495_英中对照.docx",
+  "title": "2223495 英中对照版",
+  "footer_prefix": "2223495 英中对照版 · 第 ",
+  "subtitle": "2022 ICM Problem E · Forest Management for Ecological-Economic Balance in the Perspective of Carbon Sequestration",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "en_only_pages": [],
+  "batches": 8,
+  "terms": [
+    [
+      "Carbon Sequestration",
+      "固碳",
+      "森林吸收并长期储存二氧化碳"
+    ],
+    [
+      "Carbon Peaking and Carbon Neutral",
+      "碳达峰与碳中和",
+      "“双碳”目标，全文的立题背景"
+    ],
+    [
+      "Differential Equation",
+      "微分方程",
+      "描述碳储量随时间演化的工具"
+    ],
+    [
+      "Forest Management Strategy",
+      "森林管理策略",
+      "何时砍、砍多少、砍哪一类树"
+    ],
+    [
+      "Harvesting Rate",
+      "采伐率",
+      "每次采伐拿走的木材比例"
+    ],
+    [
+      "Carbon Sink",
+      "碳汇",
+      "从大气中吸收碳的载体"
+    ],
+    [
+      "Tree Age Stage",
+      "树龄阶段",
+      "幼龄/中龄/近熟/成熟等分档"
+    ],
+    [
+      "Steady-state Equilibrium",
+      "稳态平衡",
+      "各龄级面积不再变化的状态"
+    ],
+    [
+      "TEV",
+      "总经济价值",
+      "Total Economic Value，把森林价值拆成六项"
+    ],
+    [
+      "Value System Balance Model",
+      "价值体系平衡模型",
+      "在多项价值之间求平衡的模型"
+    ],
+    [
+      "Multiple Objective Programming",
+      "多目标规划",
+      "同时最大化多个目标的优化模型"
+    ],
+    [
+      "Simulated Annealing",
+      "模拟退火",
+      "SA 算法，跳出局部最优求全局最优"
+    ],
+    [
+      "TTF",
+      "森林生态系统总价值",
+      "Total Forest Ecosystem Value，模型的优化目标"
+    ],
+    [
+      "Inverse Mapping Function",
+      "逆映射函数",
+      "由目标价值反解管理策略"
+    ],
+    [
+      "Game Theory",
+      "博弈论",
+      "研究多方策略互动"
+    ],
+    [
+      "Evolutionary Game",
+      "演化博弈",
+      "策略随种群演化而收敛的博弈"
+    ],
+    [
+      "Biomass",
+      "生物量",
+      "单位面积林木的干物质重量"
+    ],
+    [
+      "Climate Zone",
+      "气候带",
+      "热带/亚热带/温带/寒带等分区"
+    ],
+    [
+      "Sensitivity Analysis",
+      "灵敏度分析",
+      "改动参数看结论是否稳定"
+    ],
+    [
+      "Logging Ban",
+      "禁伐",
+      "极地等生态脆弱区完全禁止采伐"
+    ]
+  ],
+  "gloss": [
+    [
+      "碳达峰与碳中和",
+      "Carbon Peaking and Carbon Neutral"
+    ],
+    [
+      "森林生态系统总价值",
+      "TTF"
+    ],
+    [
+      "价值体系平衡模型",
+      "Value System Balance Model"
+    ],
+    [
+      "森林管理策略",
+      "Forest Management Strategy"
+    ],
+    [
+      "碳汇",
+      "Carbon Sink"
+    ],
+    [
+      "固碳",
+      "Carbon Sequestration"
+    ],
+    [
+      "微分方程",
+      "Differential Equation"
+    ],
+    [
+      "采伐率",
+      "Harvesting Rate"
+    ],
+    [
+      "树龄阶段",
+      "Tree Age Stage"
+    ],
+    [
+      "稳态平衡",
+      "Steady-state Equilibrium"
+    ],
+    [
+      "总经济价值",
+      "TEV"
+    ],
+    [
+      "多目标规划",
+      "Multiple Objective Programming"
+    ],
+    [
+      "模拟退火",
+      "Simulated Annealing"
+    ],
+    [
+      "逆映射函数",
+      "Inverse Mapping Function"
+    ],
+    [
+      "演化博弈",
+      "Evolutionary Game"
+    ],
+    [
+      "博弈论",
+      "Game Theory"
+    ],
+    [
+      "生物量",
+      "Biomass"
+    ],
+    [
+      "气候带",
+      "Climate Zone"
+    ],
+    [
+      "灵敏度分析",
+      "Sensitivity Analysis"
+    ],
+    [
+      "禁伐",
+      "Logging Ban"
+    ]
+  ],
+  "fig_texts": {
+    "img_08_1.png": [
+      [
+        "Forest age class (A,B,C,D)",
+        "森林龄组（A、B、C、D）"
+      ],
+      [
+        "Percent (ρ = 0.05)",
+        "百分比（ρ = 0.05）"
+      ],
+      [
+        "Carbon sequestration level",
+        "固碳水平"
+      ],
+      [
+        "(A)Juvenile",
+        "（A）幼龄林"
+      ],
+      [
+        "(B)Mid-age",
+        "（B）中龄林"
+      ],
+      [
+        "(C)Near-Maturity",
+        "（C）近熟林"
+      ],
+      [
+        "(D)Mature age",
+        "（D）成熟林"
+      ]
+    ],
+    "img_10_3.png": [
+      [
+        "s.t.",
+        "约束条件（subject to）"
+      ]
+    ],
+    "img_11_4.png": [
+      [
+        "μ_a = 0.762  kton(CO₂)=1,127",
+        "参数 μa = 0.762，对应固碳量 1,127 千吨 CO₂"
+      ]
+    ],
+    "img_13_5.png": [
+      [
+        "Average world carbon tax price of 60$",
+        "全球平均碳税价格 60 美元"
+      ],
+      [
+        "World carbon trading (ETS) average price of 2$",
+        "全球碳交易（ETS）平均价格 2 美元"
+      ],
+      [
+        "The 2022 Carbon Price Corridor",
+        "2022 年碳价走廊"
+      ],
+      [
+        "2020 Talking Price Corridor:",
+        "2020 年碳价走廊（讨论建议）："
+      ],
+      [
+        "Recommendations from the World Bank's 2017 High Level Committee on Carbon Prices report",
+        "世界银行 2017 年碳价高级别委员会报告的建议"
+      ]
+    ],
+    "img_18_6.png": [
+      [
+        "Total Carbon Sequestration",
+        "总固碳量"
+      ],
+      [
+        "Wood Materials Carbon Sequestration",
+        "木质材料固碳量"
+      ],
+      [
+        "μ_a 20%reduction",
+        "μa 下降 20%"
+      ],
+      [
+        "(60$)",
+        "（60 美元情景）"
+      ],
+      [
+        "(2$)",
+        "（2 美元情景）"
+      ]
+    ],
+    "img_20_7.png": [
+      [
+        "Self-cultivation tendency",
+        "自我培育倾向"
+      ],
+      [
+        "Harvesting tendency",
+        "采伐倾向"
+      ],
+      [
+        "initial value",
+        "初始值（图例给出各策略初始组合，如 [0.2,0.8]）"
+      ]
+    ],
+    "img_20_8.png": [
+      [
+        "northern broadleaf forest",
+        "北方阔叶林"
+      ],
+      [
+        "southern economic forest",
+        "南方经济林"
+      ],
+      [
+        "southern mixed forest",
+        "南方混交林"
+      ],
+      [
+        "southern natural forest",
+        "南方天然林"
+      ],
+      [
+        "Inland coniferous forest",
+        "内陆针叶林"
+      ],
+      [
+        "extreme protected forest",
+        "极端保护林"
+      ],
+      [
+        "Strategy 1",
+        "策略 1"
+      ],
+      [
+        "Strategy 2",
+        "策略 2"
+      ],
+      [
+        "Strategy",
+        "策略（纵轴：策略选择比例）"
+      ],
+      [
+        "Time",
+        "时间"
+      ],
+      [
+        "Figure 13: Simulation of optimization policy application from the perspective of game",
+        "图 13：博弈视角下优化政策应用的仿真"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2223495.pdf 对照查看。）"
+}

@@ -1,0 +1,54 @@
+### 2024E_2413552  pages=25
+TITLE: 微信公众号：数学模型 / 微信号：MATHmodels / Problem Chosen / E / 2024 / MCM/ICM / Summary Sheet / Team Control Number
+SUMMARY: In the context of global climate change, the increasing frequency of extreme weather events poses significant challenges to the property insurance industry. This study presents a comprehensive analytical framework addressing the sustainability of the property insurance sector under extreme weather conditions. Initially, we employed a Multi-Scale Geographically Weighted Regression (MGWR) model, integrating climate data, geographical location, and insurance claims data, to analyze the impact of extreme weather on insurance payouts. The model results indicate that considering spatial heterogeneity allows for more accurate predictions of insurance claim amounts, offering insurance companies a scientific risk assessment tool. For instance, we observed a signifi- cant positive correlation between insurance payouts and the probability of extreme environmental events in certain high-risk areas. 
+FLOW:
+  p1: 微信公众号：数学模型 | 微信号：MATHmodels | Problem Chosen | E
+  p2: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Contents
+  p3: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 1
+  p4: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 2
+  p5: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 3
+  p6: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 4
+  p7: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 5
+  p8: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 6
+  p9: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 7
+  p10: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 8
+  p11: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 9
+  p12: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 10
+  p13: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 11
+  p14: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 12
+  p15: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 13
+  p16: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 14
+  p17: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 15
+  p18: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 16
+  p19: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 17
+  p20: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 18
+  p21: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 19
+  p22: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 20
+  p23: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 21
+  p24: 微信公众号：数学模型 | 微信号：MATHmodels | Team 2413552 | Page 22
+  p25: 微信公众号：数学模型 | 微信号：MATHmodels | Guardians of Liberty: Protecting America's | Icon in the Face of Extreme Weather
+CAPTIONS:
+  p3 Figure 1: Insurance strategies are all you need
+  p5 Figure 2: Flow Chart of Our Work
+  p6 Table 1: List of Symbols and Abbreviations
+  p10 past 20 years. We visualized the probabilities of drought and flood disasters, as illustra
+  p11 Figure 3: Probability statistics of extreme weather occurrences in American history.
+  p11 outcomes are illustrated in Figure 4.
+  p12 Figure 4: Future extreme weather and predictions for the insurance industry.
+  p12 Table 2: Insurance Amount Forecast by State with Fluctuations for 2023-2034
+  p13 insurance strategies for countries in Asia. The specific strategies are outlined in Table 
+  p13 Table 3: Insurance Amount Forecast by Asian Country with Fluctuations for 2024-2034
+  p15 America using scipy and present the results in Figure 5. We observed that in the face of e
+  p16 Figure 5: Visualization of Community Protection Level, Extreme Weather Risks, and Costs.
+  p16 capita, and education levels. The results of our model are presented in Table 4.
+  p16 Table 4: Entropy Weight Method Results for Socio-economic Indicators
+  p17 Figure 6: depict the potential reduction in property loss achievable through the efforts o
+  p19 Figure 7: Score for each influencing factor
+  p20 Figure 8: Using the Insurance Industry to Protect the Statue of Liberty
+  p21 regression coefficient distribution is shown in Figure 9. The regression results indicate 
+  p21 Figure 9: The distribution of the regression coefficients for the MGWR model
+  p22 the relationship between insurance losses and community interventions is presented in Figu
+TOOLS: linear programming, regression, differential equation, ODE, graph, PCA, entropy weight, sensitivity analysis, genetic algorithm, multi-objective, GWR, spatial
+WEAK LINES:
+  p2: Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  p24: and Astrid Zwick. Insurance for climate adaptation: Opportunities and limitations. 2019.

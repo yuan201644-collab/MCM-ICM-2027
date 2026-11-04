@@ -1,0 +1,723 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022F_2224021_人人为我，太空为我\\2224021.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022F_2224021_人人为我，太空为我\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022F_2224021_人人为我，太空为我\\2224021_英中对照.docx",
+  "title": "2224021 英中对照版",
+  "footer_prefix": "2224021 英中对照版 · 第 ",
+  "subtitle": "2022 ICM Problem F · Harvest in Space! Outlook & Equity",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24
+  ],
+  "en_only_pages": [
+    23
+  ],
+  "batches": 8,
+  "terms": [
+    [
+      "Global Equity",
+      "全球公平",
+      "全文的核心被解释变量"
+    ],
+    [
+      "Asteroid Mining",
+      "小行星采矿",
+      "题设的新产业，冲击既有资源分配"
+    ],
+    [
+      "Indicator System",
+      "指标体系",
+      "用多个维度量化全球公平"
+    ],
+    [
+      "HELEN",
+      "HELEN 指标体系",
+      "本文自建的五维评价体系"
+    ],
+    [
+      "Analytic Hierarchy Process",
+      "层次分析法",
+      "AHP，主观赋权"
+    ],
+    [
+      "Entropy Weight Method",
+      "熵权法",
+      "EWM，客观赋权"
+    ],
+    [
+      "Regional Comparison",
+      "区域对比",
+      "用地区间差异检验指标体系"
+    ],
+    [
+      "Asteroid Mining Market Model",
+      "小行星采矿市场模型",
+      "描述采矿市场的参与方与产出"
+    ],
+    [
+      "System Clustering",
+      "系统聚类",
+      "把参与者按相似性归并成类"
+    ],
+    [
+      "Cobb-Douglas Production Function",
+      "柯布-道格拉斯生产函数",
+      "用资本与劳动刻画产出"
+    ],
+    [
+      "Market Share",
+      "市场份额",
+      "国际组织给单个参与者设的上限"
+    ],
+    [
+      "Equilibrium Point",
+      "均衡点",
+      "供需与约束同时满足的状态"
+    ],
+    [
+      "Structural Equation Modeling",
+      "结构方程模型",
+      "SEM，分析潜变量之间的因果路径"
+    ],
+    [
+      "Public Policy",
+      "公共政策",
+      "政府用来调节公平的工具"
+    ],
+    [
+      "Royalty",
+      "权利金",
+      "开采者按比例上缴给监管方的费用"
+    ],
+    [
+      "Gini Coefficient",
+      "基尼系数",
+      "衡量财富分配不均的程度"
+    ],
+    [
+      "Piketty's Index",
+      "皮凯蒂指数",
+      "衡量资本回报与经济增长的差距"
+    ],
+    [
+      "Life Quality",
+      "生活质量",
+      "HELEN 的一个维度"
+    ],
+    [
+      "Sensitivity Analysis",
+      "灵敏度分析",
+      "改动参数看结论是否稳定"
+    ],
+    [
+      "Sustainable Development",
+      "可持续发展",
+      "兼顾当代与后代的资源使用"
+    ]
+  ],
+  "gloss": [
+    [
+      "全球公平",
+      "Global Equity"
+    ],
+    [
+      "小行星采矿市场模型",
+      "Asteroid Mining Market Model"
+    ],
+    [
+      "小行星采矿",
+      "Asteroid Mining"
+    ],
+    [
+      "指标体系",
+      "Indicator System"
+    ],
+    [
+      "HELEN 指标体系",
+      "HELEN"
+    ],
+    [
+      "层次分析法",
+      "Analytic Hierarchy Process"
+    ],
+    [
+      "熵权法",
+      "Entropy Weight Method"
+    ],
+    [
+      "区域对比",
+      "Regional Comparison"
+    ],
+    [
+      "系统聚类",
+      "System Clustering"
+    ],
+    [
+      "柯布-道格拉斯生产函数",
+      "Cobb-Douglas Production Function"
+    ],
+    [
+      "市场份额",
+      "Market Share"
+    ],
+    [
+      "均衡点",
+      "Equilibrium Point"
+    ],
+    [
+      "结构方程模型",
+      "Structural Equation Modeling"
+    ],
+    [
+      "公共政策",
+      "Public Policy"
+    ],
+    [
+      "权利金",
+      "Royalty"
+    ],
+    [
+      "基尼系数",
+      "Gini Coefficient"
+    ],
+    [
+      "皮凯蒂指数",
+      "Piketty's Index"
+    ],
+    [
+      "生活质量",
+      "Life Quality"
+    ],
+    [
+      "灵敏度分析",
+      "Sensitivity Analysis"
+    ],
+    [
+      "可持续发展",
+      "Sustainable Development"
+    ]
+  ],
+  "fig_texts": {
+    "img_04_1.png": [
+      [
+        "Building indicator system",
+        "构建指标体系"
+      ],
+      [
+        "Asteroid mining market & impact analysis model",
+        "小行星采矿市场与影响分析模型"
+      ],
+      [
+        "Asteroid mining",
+        "小行星采矿"
+      ],
+      [
+        "Defining global equity",
+        "界定全球公平"
+      ],
+      [
+        "Data collecting & processing",
+        "数据收集与处理"
+      ],
+      [
+        "Determine weights",
+        "确定权重"
+      ],
+      [
+        "Methods: · AHP & EWM",
+        "方法：AHP 层次分析法与 EWM 熵权法"
+      ],
+      [
+        "Methods and theories: · clustering ·PCA ·SEM ·regression ·production theory ·infant industry theory",
+        "方法与理论：聚类 ·主成分分析 ·结构方程模型 ·回归 ·生产理论 ·幼稚产业理论"
+      ],
+      [
+        "Propose a vision for the industry",
+        "提出行业发展愿景"
+      ],
+      [
+        "Impacts on global equity",
+        "对全球公平的影响"
+      ],
+      [
+        "Analysis of changing conditions",
+        "变化条件分析"
+      ],
+      [
+        "Model adjustment",
+        "模型调整"
+      ],
+      [
+        "Model validation",
+        "模型验证"
+      ],
+      [
+        "Model evaluation",
+        "模型评价"
+      ],
+      [
+        "Aggregate analysis results",
+        "汇总分析结果"
+      ],
+      [
+        "Policy proposal",
+        "政策建议"
+      ],
+      [
+        "Policy setting",
+        "政策制定"
+      ],
+      [
+        "Sensitivity analysis ·Conclusion",
+        "敏感性分析 ·结论"
+      ]
+    ],
+    "img_05_2.png": [
+      [
+        "life quality",
+        "生活质量"
+      ],
+      [
+        "economy",
+        "经济"
+      ],
+      [
+        "health & education",
+        "健康与教育"
+      ],
+      [
+        "environment",
+        "环境"
+      ],
+      [
+        "natural resources",
+        "自然资源"
+      ]
+    ],
+    "img_06_3.png": [
+      [
+        "global equity",
+        "全球公平"
+      ],
+      [
+        "life quality",
+        "生活质量"
+      ],
+      [
+        "economy",
+        "经济"
+      ],
+      [
+        "health & education",
+        "健康与教育"
+      ],
+      [
+        "environment",
+        "环境"
+      ],
+      [
+        "natural resources",
+        "自然资源"
+      ]
+    ],
+    "img_09_4.png": [
+      [
+        "Global Equity",
+        "全球公平"
+      ],
+      [
+        "Indicators(I)",
+        "一级指标（第 I 层）"
+      ],
+      [
+        "Indicators(II)",
+        "二级指标（第 II 层）"
+      ],
+      [
+        "Weights",
+        "权重"
+      ],
+      [
+        "Health & Education",
+        "健康与教育"
+      ],
+      [
+        "Environment",
+        "环境"
+      ],
+      [
+        "Life Quality",
+        "生活质量"
+      ],
+      [
+        "Economy",
+        "经济"
+      ],
+      [
+        "Natural Resources",
+        "自然资源"
+      ]
+    ],
+    "img_10_5.png": [
+      [
+        "Share of total (",
+        "占比（图例标题在原图右侧被截断，仅存到此）"
+      ],
+      [
+        "Global Equity Index",
+        "全球公平指数"
+      ]
+    ],
+    "img_10_6.png": [
+      [
+        "Factor market",
+        "要素市场"
+      ],
+      [
+        "Production",
+        "生产"
+      ],
+      [
+        "Government departments",
+        "政府部门"
+      ],
+      [
+        "Research organizations",
+        "科研机构"
+      ],
+      [
+        "Government departments or private enterprises",
+        "政府部门或私营企业"
+      ],
+      [
+        "Production technology",
+        "生产技术"
+      ],
+      [
+        "Market norms",
+        "市场规范"
+      ],
+      [
+        "International organizations",
+        "国际组织"
+      ],
+      [
+        "Global equity",
+        "全球公平"
+      ],
+      [
+        "Economy equity",
+        "经济公平"
+      ],
+      [
+        "Natural resources equity",
+        "自然资源公平"
+      ],
+      [
+        "Life quality equity",
+        "生活质量公平"
+      ],
+      [
+        "GDP",
+        "国内生产总值"
+      ],
+      [
+        "PPI",
+        "生产者价格指数"
+      ],
+      [
+        "IOI",
+        "进出口指数"
+      ],
+      [
+        "Economic benefits",
+        "经济效益"
+      ],
+      [
+        "Resource sharing",
+        "资源共享"
+      ],
+      [
+        "Life Quality",
+        "生活质量"
+      ]
+    ],
+    "img_12_8.png": [
+      [
+        "Clusters:",
+        "聚类类别："
+      ],
+      [
+        "Leader",
+        "领跑者"
+      ],
+      [
+        "Advancer",
+        "进阶者"
+      ],
+      [
+        "Pursuer",
+        "追赶者"
+      ],
+      [
+        "Outsider",
+        "落后者"
+      ],
+      [
+        "Others",
+        "其他"
+      ]
+    ],
+    "img_15_9.png": [
+      [
+        "q2",
+        "q2（第二种产品的产量，纵轴）"
+      ]
+    ],
+    "img_17_10.png": [
+      [
+        "Before",
+        "实施前"
+      ],
+      [
+        "After",
+        "实施后"
+      ],
+      [
+        "[H]",
+        "[H]（HELEN 体系 H 维）"
+      ],
+      [
+        "[E]",
+        "[E]（HELEN 体系 E 维）"
+      ],
+      [
+        "[N]",
+        "[N]（HELEN 体系 N 维）"
+      ],
+      [
+        "[L]",
+        "[L]（HELEN 体系 L 维）"
+      ]
+    ],
+    "img_18_11.png": [
+      [
+        "Participants",
+        "参与者"
+      ],
+      [
+        "Regulation",
+        "监管"
+      ],
+      [
+        "Power",
+        "权力"
+      ],
+      [
+        "n↑",
+        "参与者数量 n 上升"
+      ],
+      [
+        "δU→0",
+        "监管强度 δU 趋于 0"
+      ],
+      [
+        "A, K, L",
+        "技术 A、资本 K、劳动 L"
+      ],
+      [
+        "Stimulation Method",
+        "模拟方法（原文如此拼写，应为 Simulation）"
+      ],
+      [
+        "Structural Equation Model",
+        "结构方程模型"
+      ],
+      [
+        "Global Equity",
+        "全球公平"
+      ],
+      [
+        "impact",
+        "影响"
+      ],
+      [
+        "Changes of Conditions",
+        "条件变化"
+      ],
+      [
+        "Adjustment of Model",
+        "模型调整"
+      ],
+      [
+        "Analysis of Impact",
+        "影响分析"
+      ]
+    ],
+    "img_19_12.png": [
+      [
+        "q1",
+        "q1（第一种产品产量，横轴）"
+      ],
+      [
+        "q2",
+        "q2（第二种产品产量，纵轴）"
+      ],
+      [
+        "q1'",
+        "q1′（变化前的均衡产量）"
+      ],
+      [
+        "q1*",
+        "q1*（变化后的均衡产量）"
+      ],
+      [
+        "q2'",
+        "q2′（变化前的均衡产量）"
+      ],
+      [
+        "q2*",
+        "q2*（变化后的均衡产量）"
+      ],
+      [
+        "Equity Index",
+        "公平指数（右图纵轴）"
+      ],
+      [
+        "Unrestricted",
+        "无限制情形"
+      ],
+      [
+        "Restricted",
+        "受限情形"
+      ]
+    ],
+    "img_20_13.png": [
+      [
+        "Changes in national power",
+        "国家实力变化"
+      ],
+      [
+        "Global equity",
+        "全球公平"
+      ],
+      [
+        "Health & education",
+        "健康与教育"
+      ],
+      [
+        "Environment",
+        "环境"
+      ],
+      [
+        "Labor",
+        "劳动力"
+      ],
+      [
+        "Capital investment",
+        "资本投入"
+      ],
+      [
+        "Technology",
+        "技术"
+      ],
+      [
+        "Life Quality",
+        "生活质量"
+      ],
+      [
+        "Economy",
+        "经济"
+      ],
+      [
+        "Natural resources",
+        "自然资源"
+      ]
+    ],
+    "img_22_14.png": [
+      [
+        "Global Equity Index",
+        "全球公平指数"
+      ],
+      [
+        "Number of Companies",
+        "公司数量"
+      ],
+      [
+        "δU = 0.26",
+        "参数 δU = 0.26"
+      ],
+      [
+        "δU = 0.28",
+        "参数 δU = 0.28"
+      ],
+      [
+        "δU = 0.30",
+        "参数 δU = 0.30"
+      ],
+      [
+        "δU = 0.32",
+        "参数 δU = 0.32"
+      ],
+      [
+        "δU = 0.34",
+        "参数 δU = 0.34"
+      ]
+    ],
+    "img_25_15.png": [
+      [
+        "Hierarchical Clustering",
+        "层次聚类"
+      ],
+      [
+        "n observations",
+        "n 个观测样本"
+      ],
+      [
+        "Euclidean distance",
+        "欧氏距离"
+      ],
+      [
+        "pairwise dissimilarities",
+        "两两相异度"
+      ],
+      [
+        "inter-cluster dissimilarities",
+        "簇间相异度"
+      ],
+      [
+        "dendrogram",
+        "树状图"
+      ],
+      [
+        "fusion",
+        "合并（融合）"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2224021.pdf 对照查看。）"
+}

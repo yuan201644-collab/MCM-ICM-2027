@@ -1,0 +1,323 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022C_2203120_交易策略\\2203120.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022C_2203120_交易策略\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022C_2203120_交易策略\\2203120_英中对照.docx",
+  "title": "2203120 英中对照版",
+  "footer_prefix": "2203120 英中对照版 · 第 ",
+  "subtitle": "2022 MCM Problem C · Trading Strategy Model Based on Dynamic Programming",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23
+  ],
+  "en_only_pages": [
+    22
+  ],
+  "batches": 8,
+  "terms": [
+    [
+      "Trading Strategy",
+      "交易策略",
+      "本文主题：按价格决定每日买卖"
+    ],
+    [
+      "Dynamic Programming",
+      "动态规划",
+      "本文核心方法"
+    ],
+    [
+      "ARIMA",
+      "ARIMA 模型",
+      "自回归积分滑动平均"
+    ],
+    [
+      "Commission",
+      "手续费",
+      "每次交易按比例抽取"
+    ],
+    [
+      "Portfolio",
+      "投资组合",
+      "现金+黄金+比特币"
+    ],
+    [
+      "Return",
+      "收益率",
+      "期末净值与初始之比"
+    ],
+    [
+      "Risk",
+      "风险",
+      "用价格变化方差度量"
+    ],
+    [
+      "Constraint",
+      "约束条件",
+      "资金与持仓限制"
+    ],
+    [
+      "Objective Function",
+      "目标函数",
+      "最大化最终收益"
+    ],
+    [
+      "Sensitivity Analysis",
+      "灵敏度分析",
+      "扰动参数看结果变化"
+    ],
+    [
+      "Transaction",
+      "交易",
+      "买或卖一次"
+    ],
+    [
+      "Threshold",
+      "阈值",
+      "触发交易的临界值"
+    ],
+    [
+      "Volatility",
+      "波动率",
+      "价格波动的剧烈程度"
+    ],
+    [
+      "Robustness",
+      "稳健性",
+      "参数变动下结论是否稳定"
+    ],
+    [
+      "Prediction",
+      "预测",
+      "用历史价格推未来"
+    ],
+    [
+      "Backtesting",
+      "回测",
+      "用历史数据检验策略"
+    ],
+    [
+      "Trader Type",
+      "交易者类型",
+      "普通型/激进型等"
+    ],
+    [
+      "Asset",
+      "资产",
+      "可交易的标的物"
+    ]
+  ],
+  "gloss": [
+    [
+      "Trading Strategy",
+      "交易策略"
+    ],
+    [
+      "Dynamic Programming",
+      "动态规划"
+    ],
+    [
+      "ARIMA",
+      "ARIMA 模型"
+    ],
+    [
+      "Commission",
+      "手续费"
+    ],
+    [
+      "Portfolio",
+      "投资组合"
+    ],
+    [
+      "Return",
+      "收益率"
+    ],
+    [
+      "Risk",
+      "风险"
+    ],
+    [
+      "Constraint",
+      "约束条件"
+    ],
+    [
+      "Objective Function",
+      "目标函数"
+    ],
+    [
+      "Sensitivity Analysis",
+      "灵敏度分析"
+    ],
+    [
+      "Transaction",
+      "交易"
+    ],
+    [
+      "Threshold",
+      "阈值"
+    ],
+    [
+      "Volatility",
+      "波动率"
+    ],
+    [
+      "Robustness",
+      "稳健性"
+    ],
+    [
+      "Prediction",
+      "预测"
+    ],
+    [
+      "Backtesting",
+      "回测"
+    ],
+    [
+      "Trader Type",
+      "交易者类型"
+    ],
+    [
+      "Asset",
+      "资产"
+    ]
+  ],
+  "fig_texts": {
+    "img_04_3.png": [
+      [
+        "Data preprocessing",
+        "数据预处理"
+      ],
+      [
+        "ARIMA model",
+        "ARIMA 模型"
+      ],
+      [
+        "Prediction trend by cycle",
+        "按周期预测走势"
+      ],
+      [
+        "Price Prediction Model",
+        "价格预测模型"
+      ],
+      [
+        "Define variable parameters",
+        "设定可变参数"
+      ],
+      [
+        "Establish strategy model",
+        "建立策略模型"
+      ],
+      [
+        "Conservative strategy",
+        "保守策略"
+      ],
+      [
+        "Risk strategy",
+        "风险策略"
+      ],
+      [
+        "Strategy Model",
+        "策略模型"
+      ],
+      [
+        "Adjust alpha to explore the impact on insurance-type, common-type, radical-type",
+        "调整 α 以考察对保守型/普通型/激进型交易者的影响"
+      ],
+      [
+        "Impact of transaction costs on strategy",
+        "交易成本对策略的影响"
+      ],
+      [
+        "Generalization Ability",
+        "泛化能力"
+      ],
+      [
+        "Robustness",
+        "稳健性"
+      ],
+      [
+        "Yield",
+        "收益"
+      ],
+      [
+        "Prove Optimization of the Strategy",
+        "证明策略的优化"
+      ]
+    ],
+    "img_11_9.png": [
+      [
+        "X_g(i+1) − Y_gi > 0",
+        "当日价格高于昨日"
+      ],
+      [
+        "calculate the increase threshold e_g(i+1)",
+        "计算上调阈值 e"
+      ],
+      [
+        "calculate the decrease threshold f_g(i+1)",
+        "计算下调阈值 f"
+      ],
+      [
+        "calculate proportion of cash in total assets q_i",
+        "计算现金占总资产的比例 q"
+      ],
+      [
+        "q_i > q",
+        "现金比例超过阈值 q"
+      ],
+      [
+        "go to step 4(1)",
+        "转到第 4(1) 步"
+      ],
+      [
+        "go to step 4(2)",
+        "转到第 4(2) 步"
+      ],
+      [
+        "i=i+1 back to step2",
+        "令 i=i+1，返回第 2 步"
+      ],
+      [
+        "|X_gi − Y_gi| > f_g(i+1)",
+        "价差绝对值超过下调阈值"
+      ]
+    ],
+    "img_21_30.png": [
+      [
+        "When to trade",
+        "何时交易"
+      ],
+      [
+        "Trading bitcoin or gold",
+        "交易比特币还是黄金"
+      ],
+      [
+        "How much is the specific transaction",
+        "具体交易多少"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2203120.pdf 对照查看。）"
+}

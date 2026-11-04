@@ -1,0 +1,56 @@
+### 2024D_2429211  pages=25
+TITLE: 微信公众号：数学模型 / 微信号：MATHmodels / Problem Chosen / D / 2024 / MCM/ICM / Summary Sheet / Team Control Number
+SUMMARY: The Great Lakes serve as the heart of North America with their ebbs and flows providing the lifeblood of both the surrounding environment and societies. Because of the lake’s incredible importance, it is in the best interest of the world to protect them. Plan 2014, proposed by the International Joint Committee (ĲC), manages the water in the Great Lakes by building up water behind both the Compensating Works dam at the Sault St. Marie River and Moses-Saunders dam and taking action as needed. To better serve the Great Lakes region, we seek to expand Plan 2014 to regulate water levels optimizing for human needs and the preservation of ecosystems. To determine optimal dam scheduling we modeled the Great Lakes as a dynamic flow network and created two control algorithms that utilize linear programming to solve for optimal dam schedules and water levels. The first control algorithm determines 
+FLOW:
+  p1: 微信公众号：数学模型 | 微信号：MATHmodels | Problem Chosen | D
+  p2: 微信公众号：数学模型 | 微信号：MATHmodels | Contents | 1
+  p3: 微信公众号：数学模型 | 微信号：MATHmodels | 1 | Introduction
+  p4: 微信公众号：数学模型 | 微信号：MATHmodels | benefit the stakeholders subject to hard constraints on the risk of flooding and low-water levels. Our | outlook differs
+  p5: 微信公众号：数学模型 | 微信号：MATHmodels | • When a linear program is impossible to solve, it is difficult to visualize what is going wrong. | If our control algor
+  p6: 微信公众号：数学模型 | 微信号：MATHmodels | 2 | Macroschedule Model
+  p7: 微信公众号：数学模型 | 微信号：MATHmodels | 2.2 | Ideal Water Determination Algorithm
+  p8: 微信公众号：数学模型 | 微信号：MATHmodels | 0 | 50
+  p9: 微信公众号：数学模型 | 微信号：MATHmodels | All decision variables are nonnegative. The first four constraints capture how the height of | water in each lake change
+  p10: 微信公众号：数学模型 | 微信号：MATHmodels | 2.5 | Data-Based Model Of The Hydrosphere
+  p11: 微信公众号：数学模型 | 微信号：MATHmodels | 173.8 | 174.0
+  p12: 微信公众号：数学模型 | 微信号：MATHmodels | 2.6 | Additional Considerations
+  p13: 微信公众号：数学模型 | 微信号：MATHmodels | Due to lower lag times, the model cansatisfy daily requirements relatively well. This is important | because there are l
+  p14: 微信公众号：数学模型 | 微信号：MATHmodels | 4.1 | Dynamic Control Of The System
+  p15: 微信公众号：数学模型 | 微信号：MATHmodels | 4.2 | Robustness to Severe Climate Events
+  p16: 微信公众号：数学模型 | 微信号：MATHmodels | 0 | 50
+  p17: 微信公众号：数学模型 | 微信号：MATHmodels | We uniformly vary the parameter 𝜔in the range [0.7, 0.825] and observe the net error rate. We | see that:
+  p18: 微信公众号：数学模型 | 微信号：MATHmodels | 6.1 | Strengths
+  p19: 微信公众号：数学模型 | 微信号：MATHmodels | 7 | Future Exploration
+  p20: 微信公众号：数学模型 | 微信号：MATHmodels | 8 | Memo To The ĲC
+  p21: 微信公众号：数学模型 | 微信号：MATHmodels | A | Notation
+  p22: 微信公众号：数学模型 | 微信号：MATHmodels | Name | Type
+  p23: 微信公众号：数学模型 | 微信号：MATHmodels | References | [1] 2024MCM/ICM Problems. https://www.immchallenge.org/mcm/index.html.
+  p24: 微信公众号：数学模型 | 微信号：MATHmodels | [20] Charles S. Revelle, Daniel P. Loucks, and Walter R. Lynn. Linear programming applied to | water quality management.
+  p25: 微信公众号：数学模型 | 微信号：MATHmodels | Team # 2429211 | Page 25
+CAPTIONS:
+  p3 Figure 1: A cloudless view of all of the Great
+  p5 Figure 2: Since water levels do not vary
+  p6 studied as a dynamic network flow problem on the network shown in Figure 3. There are two 
+  p6 Figure 3: Network used in the model. 𝑐𝑖is the capacity of the arc and 𝑡𝑖is the transit tim
+  p8 Figure 4: Plot of the ideal water levels (solid orange lines) based on stakeholder needs f
+  p10 Michigan is given by Figure 5.
+  p10 Figure 5: Time lagged cross-correlation examples for between Lake Huron and Erie and betwe
+  p10 time-lagged correlations is given by Table 1.
+  p10 Table 1: Time lag matrix between the Great Lakes
+  p11 Figure 6: Flow along the Niagara River and Detroit River as a function of the height (rela
+  p11 on historical data. We visualize the historical rainfall that occurred during each month i
+  p11 Figure 7: 1st (in blue), 2nd (in red), and 3rd (in orange) quartiles of exogenous flow int
+  p13 Figure 8: The pipeline for using our control algorithms.
+  p14 the time lags to forecasting the dam schedules. The efficacy of our model is shown in Figu
+  p14 Figure 9: Plot of the percent error between ideal flow and the flow achieved by the micros
+  p15 Figure 10: Plots of the 1st and 2nd quartiles of the
+  p16 Figure 11: Plots of achieved water levels using the third quartile rain data (extreme rain
+  p17 Figure 12: Flow in the St. Lawrence River is sensitive to 𝜔
+  p21 Table 2: Description of variables involed in the mathematical program used to determine da
+  p22 Table 3: Microschedule LP formulation. All water levels are heights in meters, all times a
+TOOLS: linear programming, regression, ODE, network flow, graph, fuzzy, sensitivity analysis, logistic, SIR
+WEAK LINES:
+  p2: Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  p18: control algorithms can be mitigated. The weaknesses of our model are as follows:
+  p19: To address some of the weaknesses we identified, we believe that our model could be expanded
+  p20: 2014 has successfully implemented while avoiding the limitations of Plan 2014 that have allowed
