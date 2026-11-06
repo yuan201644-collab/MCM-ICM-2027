@@ -1,0 +1,311 @@
+{
+  "pdf": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022A_2209466_自行车功率曲线\\2209466.pdf",
+  "workdir": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022A_2209466_自行车功率曲线\\work",
+  "out_docx": "D:\\26年美国大学生数学建模竞赛\\研读材料\\12篇研读\\2022A_2209466_自行车功率曲线\\2209466_英中对照.docx",
+  "title": "2209466 英中对照版",
+  "footer_prefix": "2209466 英中对照版 · 第 ",
+  "subtitle": "2022 MCM Problem A · Optimal Power Distribution of a Cyclist",
+  "read_note": "读法：黑字为原文，蓝字为译文，一段英文一段中文，上下对应；蓝字里的小字括号是该术语第一次出现时的英文原词。",
+  "pages": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "en_only_pages": [
+    22,
+    23,
+    24
+  ],
+  "batches": 8,
+  "terms": [
+    [
+      "Fatigue Physiological Model",
+      "疲劳生理模型",
+      "本文两大主模型之一，描述平均输出功率与持续输出时间的关系"
+    ],
+    [
+      "power curve",
+      "功率曲线",
+      "原文另有 power profile / power-time curve / power output curve 三种写法，均指同一物"
+    ],
+    [
+      "aerobic respiration",
+      "有氧呼吸",
+      ""
+    ],
+    [
+      "anaerobic respiration",
+      "无氧呼吸",
+      ""
+    ],
+    [
+      "Aerobic and Anaerobic Energy Fatigue Model",
+      "有氧与无氧能量疲劳模型",
+      "由上面两个子模型合并而成"
+    ],
+    [
+      "ordinary least squares",
+      "普通最小二乘法（OLS）",
+      "用数据拟合模型参数的估计方法"
+    ],
+    [
+      "Single Objective Programming",
+      "单目标规划",
+      "目标函数只有完赛时间一个"
+    ],
+    [
+      "decision variable",
+      "决策变量",
+      "本文指骑行者在赛道各位置施加的功率"
+    ],
+    [
+      "constraints",
+      "约束条件",
+      "骑手状态与赛道条件"
+    ],
+    [
+      "dynamic programming",
+      "动态规划",
+      "求解功率分配最优策略的算法"
+    ],
+    [
+      "sensitivity analysis",
+      "灵敏度分析",
+      "改变输入看结果变化幅度"
+    ],
+    [
+      "wind resistance",
+      "风阻",
+      ""
+    ],
+    [
+      "rolling resistance",
+      "滚动阻力",
+      ""
+    ],
+    [
+      "FTP",
+      "功能性阈值功率（Functional Threshold Power）",
+      "有氧供能的上限功率"
+    ],
+    [
+      "time trial",
+      "个人计时赛",
+      "车手单独出发、按时间排名"
+    ],
+    [
+      "draft strategy",
+      "跟骑策略",
+      "跟在队友身后减少风阻"
+    ],
+    [
+      "camber",
+      "路拱（赛道横坡）",
+      "赛道左右倾斜的角度"
+    ],
+    [
+      "insensitive",
+      "不敏感的",
+      "结果对该因素变化不敏感＝该因素影响小"
+    ]
+  ],
+  "gloss": [
+    [
+      "疲劳生理模型",
+      "Fatigue Physiological Model"
+    ],
+    [
+      "功率曲线",
+      "power curve"
+    ],
+    [
+      "有氧呼吸",
+      "aerobic respiration"
+    ],
+    [
+      "无氧呼吸",
+      "anaerobic respiration"
+    ],
+    [
+      "有氧与无氧能量疲劳模型",
+      "Aerobic and Anaerobic Energy Fatigue Model"
+    ],
+    [
+      "普通最小二乘法",
+      "ordinary least squares"
+    ],
+    [
+      "单目标规划",
+      "Single Objective Programming"
+    ],
+    [
+      "决策变量",
+      "decision variable"
+    ],
+    [
+      "约束条件",
+      "constraints"
+    ],
+    [
+      "动态规划",
+      "dynamic programming"
+    ],
+    [
+      "灵敏度分析",
+      "sensitivity analysis"
+    ],
+    [
+      "风阻",
+      "wind resistance"
+    ],
+    [
+      "滚动摩擦",
+      "rolling resistance"
+    ],
+    [
+      "功能性阈值功率",
+      "FTP"
+    ],
+    [
+      "个人计时赛",
+      "time trial"
+    ],
+    [
+      "跟骑",
+      "draft strategy"
+    ],
+    [
+      "不敏感",
+      "insensitive"
+    ]
+  ],
+  "fig_texts": {
+    "img_05_2.png": [
+      [
+        "Part I: Model Construction",
+        "第一部分：模型构建"
+      ],
+      [
+        "Cyclist's Physiological Model of Fatigue",
+        "车手疲劳生理模型"
+      ],
+      [
+        "Aerobic Energy Fatigue Model",
+        "有氧能量疲劳模型"
+      ],
+      [
+        "Anaerobic Energy Fatigue Model",
+        "无氧能量疲劳模型"
+      ],
+      [
+        "Fit Models to Power Curve",
+        "用功率曲线拟合模型"
+      ],
+      [
+        "Define Different Types of Cyclists by Power Curves",
+        "按功率曲线划分车手类型"
+      ],
+      [
+        "Optimal Individual Power Distribution Model",
+        "最优个人功率分配模型"
+      ],
+      [
+        "Riding Resistance Model",
+        "骑行阻力模型"
+      ],
+      [
+        "Wind-Modification of Resistance Model",
+        "阻力模型的风阻修正"
+      ],
+      [
+        "Abstract Course Model",
+        "赛道抽象模型"
+      ],
+      [
+        "Gain the Height Profile of Courses",
+        "得到赛道高度剖面"
+      ],
+      [
+        "Corner Course Model",
+        "弯道模型"
+      ],
+      [
+        "Gain the Corner Profile of Courses",
+        "得到赛道弯道剖面"
+      ],
+      [
+        "Dynamic Programming for the Best Power Distribution",
+        "用动态规划求最优功率分配"
+      ],
+      [
+        "Part II: Model Evaluation",
+        "第二部分：模型评价"
+      ],
+      [
+        "Sensitivity Analysis",
+        "灵敏度分析"
+      ],
+      [
+        "Sensitivity to Changes in Wind Direction and Speed",
+        "对风向与风速变化的灵敏度"
+      ],
+      [
+        "Sensitivity to Deviation from Target Power",
+        "对偏离目标功率的灵敏度"
+      ],
+      [
+        "Strengths and Weaknesses",
+        "优缺点"
+      ],
+      [
+        "Part III: Model Extension",
+        "第三部分：模型推广"
+      ],
+      [
+        "Team Strategy Decision Model",
+        "团队策略决策模型"
+      ],
+      [
+        "Team Resistance Reduction Model",
+        "团队减阻模型"
+      ],
+      [
+        "Team Draft Strategy",
+        "团队跟骑策略"
+      ],
+      [
+        "Team Drop Strategy",
+        "团队掉队策略"
+      ],
+      [
+        "Best Power Profile and Best Team Strategy",
+        "最优功率曲线与最优团队策略"
+      ]
+    ]
+  },
+  "figure_note_for": [],
+  "figure_note": "",
+  "table_note": "",
+  "end_note": "（全文完。公式与表格在原 PDF 中是矢量图形，未纳入本对照版；可按文中「原文第 N 页」标记翻到 2209466.pdf 对照查看。）"
+}

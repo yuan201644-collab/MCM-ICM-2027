@@ -1,0 +1,346 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   4
+  ],
+  [
+   2,
+   "1.1",
+   "Background",
+   4
+  ],
+  [
+   2,
+   "1.2",
+   "Our Work",
+   4
+  ],
+  [
+   1,
+   "2",
+   "Assumptions",
+   4
+  ],
+  [
+   1,
+   "3",
+   "Notations",
+   5
+  ],
+  [
+   1,
+   "4",
+   "Global Equity Model",
+   5
+  ],
+  [
+   2,
+   "4.1",
+   "Dimensions of Global Equity",
+   5
+  ],
+  [
+   2,
+   "4.2",
+   "HELEN Model",
+   5
+  ],
+  [
+   3,
+   "4.2.1",
+   "Natural Resources Equity",
+   6
+  ],
+  [
+   3,
+   "4.2.2",
+   "Economic Equity",
+   7
+  ],
+  [
+   3,
+   "4.2.3",
+   "Life Quality Equity",
+   7
+  ],
+  [
+   3,
+   "4.2.4",
+   "Environmental Equity",
+   7
+  ],
+  [
+   3,
+   "4.2.5",
+   "Health & Education Equity",
+   8
+  ],
+  [
+   2,
+   "4.3",
+   "Weight of Index",
+   8
+  ],
+  [
+   3,
+   "4.3.1",
+   "Determining the Weights of first-level indicators by AHP",
+   8
+  ],
+  [
+   3,
+   "4.3.2",
+   "Determining the Weights of second-level indicators by EWM",
+   8
+  ],
+  [
+   3,
+   "4.3.3",
+   "Calculation of the Comprehensive Weights and Composite Score",
+   9
+  ],
+  [
+   2,
+   "4.4",
+   "Validation",
+   9
+  ],
+  [
+   1,
+   "5",
+   "Asteroid Mining Market Model",
+   10
+  ],
+  [
+   2,
+   "5.1",
+   "Factor Market of Asteroid Mining",
+   10
+  ],
+  [
+   3,
+   "5.1.1",
+   "Participants",
+   11
+  ],
+  [
+   3,
+   "5.1.2",
+   "Clustering Analysis of participants",
+   11
+  ],
+  [
+   3,
+   "5.1.3",
+   "Result of Clustering",
+   11
+  ],
+  [
+   3,
+   "5.1.4",
+   "Production Function",
+   12
+  ],
+  [
+   2,
+   "5.2",
+   "Production Side of Asteroid Mining",
+   12
+  ],
+  [
+   3,
+   "5.2.1",
+   "Participant",
+   13
+  ],
+  [
+   3,
+   "5.2.2",
+   "Upper bound of Market Share",
+   13
+  ],
+  [
+   3,
+   "5.2.3",
+   "Cost-benefit Analysis",
+   14
+  ],
+  [
+   3,
+   "5.2.4",
+   "Equilibrium Conditions for Asteroid Mining Market",
+   14
+  ],
+  [
+   2,
+   "5.3",
+   "Product Market of Asteroid Mining",
+   15
+  ],
+  [
+   3,
+   "5.3.1",
+   "Distribution of Benefits",
+   15
+  ],
+  [
+   3,
+   "5.3.2",
+   "Impact on Economy",
+   16
+  ],
+  [
+   3,
+   "5.3.3",
+   "Impact on Natural Resources",
+   16
+  ],
+  [
+   3,
+   "5.3.4",
+   "Impact on Life Quality",
+   17
+  ],
+  [
+   2,
+   "5.4",
+   "Impact on Global Equity",
+   17
+  ],
+  [
+   1,
+   "6",
+   "Model Adjustment",
+   18
+  ],
+  [
+   2,
+   "6.1",
+   "Changes of Conditions",
+   18
+  ],
+  [
+   3,
+   "6.1.1",
+   "Participants",
+   18
+  ],
+  [
+   3,
+   "6.1.2",
+   "Changes in the Regulatory System",
+   18
+  ],
+  [
+   3,
+   "6.1.3",
+   "Changes in National Power",
+   18
+  ],
+  [
+   2,
+   "6.2",
+   "Impact on Mining Patterns",
+   18
+  ],
+  [
+   3,
+   "6.2.1",
+   "Adjustment of Model",
+   19
+  ],
+  [
+   3,
+   "6.2.2",
+   "Intuitive Analysis",
+   19
+  ],
+  [
+   3,
+   "6.2.3",
+   "Result of Simulation",
+   19
+  ],
+  [
+   2,
+   "6.3",
+   "Impact of Changes in National Power",
+   20
+  ],
+  [
+   1,
+   "7",
+   "Policy Proposal",
+   20
+  ],
+  [
+   2,
+   "7.1",
+   "Collect Royalties",
+   20
+  ],
+  [
+   2,
+   "7.2",
+   "Strict Approval Procedures",
+   21
+  ],
+  [
+   2,
+   "7.3",
+   "Encourage cooperative development",
+   22
+  ],
+  [
+   1,
+   "8",
+   "Sensitivity Analysis",
+   22
+  ],
+  [
+   1,
+   "9",
+   "Strength and Weakness",
+   23
+  ],
+  [
+   2,
+   "9.1",
+   "Strength",
+   23
+  ],
+  [
+   2,
+   "9.2",
+   "Weakness",
+   23
+  ],
+  [
+   1,
+   "",
+   "Reference",
+   24
+  ],
+  [
+   1,
+   "",
+   "Appendices",
+   25
+  ],
+  [
+   1,
+   "",
+   "Appendix A First appendix",
+   25
+  ],
+  [
+   1,
+   "",
+   "Appendix B Second appendix",
+   25
+  ]
+ ]
+}

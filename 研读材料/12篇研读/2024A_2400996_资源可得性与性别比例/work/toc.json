@@ -1,0 +1,214 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   3
+  ],
+  [
+   2,
+   "1.1",
+   "Problem Background",
+   3
+  ],
+  [
+   2,
+   "1.2",
+   "Restatement of the Problem",
+   3
+  ],
+  [
+   2,
+   "1.3",
+   "Literature Review",
+   4
+  ],
+  [
+   2,
+   "1.4",
+   "Our Work",
+   4
+  ],
+  [
+   1,
+   "2",
+   "Model Preparation",
+   5
+  ],
+  [
+   2,
+   "2.1",
+   "Assumptions and Justifications",
+   5
+  ],
+  [
+   2,
+   "2.2",
+   "Notations",
+   6
+  ],
+  [
+   2,
+   "2.3",
+   "Data Collection and Visualization",
+   6
+  ],
+  [
+   1,
+   "3",
+   "Model Establishment",
+   8
+  ],
+  [
+   2,
+   "3.1",
+   "Model I: Lamprey Population Iteration Model",
+   8
+  ],
+  [
+   3,
+   "3.1.1",
+   "Research on the life cycle of lampreys",
+   8
+  ],
+  [
+   3,
+   "3.1.2",
+   "Larval versus adult fish banking",
+   8
+  ],
+  [
+   3,
+   "3.1.3",
+   "Measurement of growth rate in larval",
+   10
+  ],
+  [
+   3,
+   "3.1.4",
+   "Effects between growth rate, sex ratio and birth rate",
+   11
+  ],
+  [
+   2,
+   "3.2",
+   "Model II: BDS Assessment Model",
+   12
+  ],
+  [
+   3,
+   "3.2.1",
+   "Total Ecosystem Biomass",
+   13
+  ],
+  [
+   3,
+   "3.2.2",
+   "Shannon-Wiener Diversity Index",
+   13
+  ],
+  [
+   3,
+   "3.2.3",
+   "Ecosystem Stability Assessment",
+   13
+  ],
+  [
+   1,
+   "4",
+   "Modeling Applications and Problem Solving",
+   14
+  ],
+  [
+   2,
+   "4.1",
+   "Simulation of the Lamprey Population Iteration Model",
+   14
+  ],
+  [
+   3,
+   "4.1.1",
+   "Algorithm of the Model",
+   14
+  ],
+  [
+   3,
+   "4.1.2",
+   "Model Parameter Settings",
+   15
+  ],
+  [
+   3,
+   "4.1.3",
+   "Result of the Simulation",
+   15
+  ],
+  [
+   2,
+   "4.2",
+   "Simulation of Ecological System Assessment Model",
+   17
+  ],
+  [
+   3,
+   "4.2.1",
+   "Lamprey sex ratio and ecosystem stability",
+   17
+  ],
+  [
+   3,
+   "4.2.2",
+   "In-depth Assessment of Impacts on Ecosystem",
+   18
+  ],
+  [
+   3,
+   "4.2.3",
+   "Detailed Impacts on Other Species",
+   20
+  ],
+  [
+   1,
+   "5",
+   "Model Evaluation and Discussion",
+   21
+  ],
+  [
+   2,
+   "5.1",
+   "Sensitivity Analysis",
+   21
+  ],
+  [
+   2,
+   "5.2",
+   "Strengths and Weaknesses",
+   22
+  ],
+  [
+   3,
+   "5.2.1",
+   "Strengths",
+   22
+  ],
+  [
+   3,
+   "5.2.2",
+   "Weaknesses",
+   22
+  ],
+  [
+   2,
+   "5.3",
+   "Conclusion",
+   23
+  ],
+  [
+   1,
+   "",
+   "References",
+   24
+  ]
+ ]
+}

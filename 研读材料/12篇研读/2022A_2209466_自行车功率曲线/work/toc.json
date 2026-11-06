@@ -1,0 +1,172 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   3
+  ],
+  [
+   2,
+   "1.1",
+   "Problem Background",
+   3
+  ],
+  [
+   2,
+   "1.2",
+   "Restatement of the Problem",
+   3
+  ],
+  [
+   2,
+   "1.3",
+   "Literature Review",
+   4
+  ],
+  [
+   2,
+   "1.4",
+   "Our Work",
+   4
+  ],
+  [
+   1,
+   "2",
+   "Assumptions and Justifications",
+   5
+  ],
+  [
+   1,
+   "3",
+   "Definitions and Notations",
+   6
+  ],
+  [
+   2,
+   "3.1",
+   "Definitions",
+   6
+  ],
+  [
+   2,
+   "3.2",
+   "Notations",
+   6
+  ],
+  [
+   1,
+   "4",
+   "Cyclist’s Physiological Model of Fatigue",
+   6
+  ],
+  [
+   2,
+   "4.1",
+   "The Establishment of the Model",
+   7
+  ],
+  [
+   2,
+   "4.2",
+   "Result and Discussion",
+   8
+  ],
+  [
+   1,
+   "5",
+   "Optimal Individual Power Distribution Model",
+   10
+  ],
+  [
+   2,
+   "5.1",
+   "Data Processing",
+   10
+  ],
+  [
+   2,
+   "5.2",
+   "The Establishment of the Model",
+   11
+  ],
+  [
+   2,
+   "5.3",
+   "Solve the Model",
+   14
+  ],
+  [
+   2,
+   "5.4",
+   "Results and Analysis",
+   14
+  ],
+  [
+   1,
+   "6",
+   "Sensitivity Analysis",
+   17
+  ],
+  [
+   2,
+   "6.1",
+   "Weather and Environmental Effects",
+   17
+  ],
+  [
+   2,
+   "6.2",
+   "Deviation effects",
+   18
+  ],
+  [
+   1,
+   "7",
+   "Model Evaluation and Further Discussion",
+   19
+  ],
+  [
+   2,
+   "7.1",
+   "Strengths",
+   19
+  ],
+  [
+   2,
+   "7.2",
+   "Weaknesses",
+   19
+  ],
+  [
+   2,
+   "7.3",
+   "Model Extension",
+   20
+  ],
+  [
+   1,
+   "8",
+   "Conclusion",
+   21
+  ],
+  [
+   1,
+   "",
+   "Men Elite Individual Time Trial Guidance",
+   22
+  ],
+  [
+   1,
+   "",
+   "References",
+   24
+  ],
+  [
+   1,
+   "",
+   "Appendix",
+   25
+  ]
+ ]
+}
