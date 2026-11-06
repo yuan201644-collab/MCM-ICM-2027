@@ -1,0 +1,226 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   3
+  ],
+  [
+   2,
+   "1.1",
+   "Problem Background",
+   3
+  ],
+  [
+   2,
+   "1.2",
+   "Restatement of the Problem",
+   3
+  ],
+  [
+   2,
+   "1.3",
+   "Our Work",
+   4
+  ],
+  [
+   1,
+   "2",
+   "Assumptions and Justifications",
+   4
+  ],
+  [
+   1,
+   "3",
+   "Notations",
+   5
+  ],
+  [
+   1,
+   "4",
+   "Model Preparation",
+   5
+  ],
+  [
+   2,
+   "4.1",
+   "Safety Strategy",
+   5
+  ],
+  [
+   2,
+   "4.2",
+   "Seafloor Topography",
+   6
+  ],
+  [
+   2,
+   "4.3",
+   "The relevant parameters of the submersible",
+   6
+  ],
+  [
+   1,
+   "5",
+   "Models and Solutions of Problem 1",
+   6
+  ],
+  [
+   2,
+   "5.1",
+   "Location Model",
+   6
+  ],
+  [
+   2,
+   "5.2",
+   "Model Solving",
+   9
+  ],
+  [
+   2,
+   "5.3",
+   "Uncertainty of the Model",
+   11
+  ],
+  [
+   2,
+   "5.4",
+   "Measures and Equipment to Reduce Uncertainty",
+   12
+  ],
+  [
+   3,
+   "5.4.1",
+   "Measures",
+   12
+  ],
+  [
+   3,
+   "5.4.2",
+   "Equipment",
+   12
+  ],
+  [
+   1,
+   "6",
+   "Models and Solutions of Problem 2",
+   13
+  ],
+  [
+   2,
+   "6.1",
+   "Rescue Equipment",
+   13
+  ],
+  [
+   2,
+   "6.2",
+   "Cost-Benefit Model Based on Entropy Weight Method",
+   13
+  ],
+  [
+   2,
+   "6.3",
+   "Evaluation Results and Analysis",
+   15
+  ],
+  [
+   1,
+   "7",
+   "Models and Solutions of Problem 3",
+   15
+  ],
+  [
+   2,
+   "7.1",
+   "Model preparation",
+   15
+  ],
+  [
+   2,
+   "7.2",
+   "Model for Searching",
+   17
+  ],
+  [
+   3,
+   "7.2.1",
+   "Search Strategy",
+   17
+  ],
+  [
+   3,
+   "7.2.2",
+   "Ant Colony Algorithm for Planning Search Paths",
+   18
+  ],
+  [
+   2,
+   "7.3",
+   "Results and Analysis",
+   19
+  ],
+  [
+   3,
+   "7.3.1",
+   "Planning Results of Search Route",
+   19
+  ],
+  [
+   3,
+   "7.3.2",
+   "The Impact of Start Time for Searching",
+   20
+  ],
+  [
+   1,
+   "8",
+   "Model Expansion and Promotion for Problem 4",
+   20
+  ],
+  [
+   2,
+   "8.1",
+   "Diﬀerent Maritime Regions",
+   20
+  ],
+  [
+   2,
+   "8.2",
+   "Multiple Submersibles",
+   21
+  ],
+  [
+   1,
+   "9",
+   "Sensitivity Analysis",
+   22
+  ],
+  [
+   1,
+   "10",
+   "Strengths and Weaknesses",
+   22
+  ],
+  [
+   2,
+   "10.1",
+   "Strengths",
+   22
+  ],
+  [
+   2,
+   "10.2",
+   "Weaknesses",
+   23
+  ],
+  [
+   1,
+   "",
+   "References",
+   23
+  ]
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   2
+  ],
+  [
+   2,
+   "1.1",
+   "Problem Background",
+   2
+  ],
+  [
+   2,
+   "1.2",
+   "Restatement of the Problem",
+   2
+  ],
+  [
+   2,
+   "1.3",
+   "Problem Analysis",
+   2
+  ],
+  [
+   1,
+   "2",
+   "General Assumptions and Notations",
+   4
+  ],
+  [
+   2,
+   "2.1",
+   "Assumptions",
+   4
+  ],
+  [
+   2,
+   "2.2",
+   "Notations",
+   4
+  ],
+  [
+   1,
+   "3",
+   "Problem 1: Prediction and Strategy in the Investment",
+   4
+  ],
+  [
+   2,
+   "3.1",
+   "Data Preprocessing",
+   5
+  ],
+  [
+   2,
+   "3.2",
+   "Model Establishment of Problem 1",
+   5
+  ],
+  [
+   3,
+   "3.2.1",
+   "Price Prediction Model",
+   5
+  ],
+  [
+   3,
+   "3.2.2",
+   "Trading Strategy Model",
+   8
+  ],
+  [
+   2,
+   "3.3",
+   "Model Solving: Finding Strategies",
+   10
+  ],
+  [
+   2,
+   "3.4",
+   "Results and Model Evaluation",
+   11
+  ],
+  [
+   3,
+   "3.4.1",
+   "Model Results",
+   11
+  ],
+  [
+   3,
+   "3.4.2",
+   "Model Evaluation",
+   12
+  ],
+  [
+   1,
+   "4",
+   "Problem 2: Prove Optimization of the Strategy",
+   12
+  ],
+  [
+   2,
+   "4.1",
+   "Generalization Ability of the Model",
+   13
+  ],
+  [
+   2,
+   "4.2",
+   "Robustness of the Model",
+   15
+  ],
+  [
+   2,
+   "4.3",
+   "Yield of the Strategy",
+   16
+  ],
+  [
+   1,
+   "5",
+   "Problem 3: Sensitivity of Strategy to Transaction Cost",
+   16
+  ],
+  [
+   2,
+   "5.1",
+   "Sensitivity Difinition",
+   17
+  ],
+  [
+   2,
+   "5.2",
+   "Impact of Transaction Costs on Strategy",
+   17
+  ],
+  [
+   1,
+   "6",
+   "Conclusion",
+   18
+  ],
+  [
+   2,
+   "6.1",
+   "Strengths",
+   18
+  ],
+  [
+   2,
+   "6.2",
+   "Possible Improvements",
+   19
+  ],
+  [
+   1,
+   "7",
+   "Memorandum",
+   19
+  ],
+  [
+   1,
+   "",
+   "Appendices",
+   23
+  ]
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "entries": [
+  [
+   2,
+   "1.1",
+   "Background",
+   3
+  ],
+  [
+   2,
+   "1.2",
+   "Restatement of the Problem",
+   3
+  ],
+  [
+   2,
+   "1.3",
+   "Our Work",
+   4
+  ],
+  [
+   1,
+   "2",
+   "Model Preparation",
+   5
+  ],
+  [
+   2,
+   "2.1",
+   "Assumptions and Justification",
+   5
+  ],
+  [
+   2,
+   "2.2",
+   "Glossary",
+   5
+  ],
+  [
+   2,
+   "2.3",
+   "Data Pre-processing",
+   6
+  ],
+  [
+   3,
+   "2.3.1",
+   "Data Collection",
+   6
+  ],
+  [
+   3,
+   "2.3.2",
+   "Data Filling and Processing",
+   6
+  ],
+  [
+   1,
+   "3",
+   "Task1: Develop A Counter-IWT Project",
+   7
+  ],
+  [
+   2,
+   "3.1",
+   "Discover the Trend of Former Projects",
+   7
+  ],
+  [
+   2,
+   "3.2",
+   "Design the Project",
+   7
+  ],
+  [
+   1,
+   "4",
+   "Task2: Choose and Convince the Most Suitable Client",
+   9
+  ],
+  [
+   2,
+   "4.1",
+   "Who Can Do the Project",
+   9
+  ],
+  [
+   2,
+   "4.2",
+   "Discussion of Superior and Inferior Indicators",
+   10
+  ],
+  [
+   2,
+   "4.3",
+   "Analyze the Weights for Inferior Indicators by EWM",
+   11
+  ],
+  [
+   2,
+   "4.4",
+   "Choose and Convince the Targeting Client",
+   12
+  ],
+  [
+   3,
+   "4.4.1",
+   "Calculate Client Evaluation Score",
+   12
+  ],
+  [
+   3,
+   "4.4.2",
+   "Convince the Client",
+   12
+  ],
+  [
+   1,
+   "5",
+   "Task3: Establish a Cross-Organizations Cooperation Model",
+   14
+  ],
+  [
+   2,
+   "5.1",
+   "Extra Requirements to Execute the Project",
+   14
+  ],
+  [
+   2,
+   "5.2",
+   "A Complex System Connecting IWT with All Criminal Activities",
+   14
+  ],
+  [
+   2,
+   "5.3",
+   "How Cross-Organizations Cooperation Benefits Our Project",
+   15
+  ],
+  [
+   1,
+   "6",
+   "Task4: Evaluate the Impact of the Project",
+   16
+  ],
+  [
+   2,
+   "6.1",
+   "Construct a Ridge Regression Model to Measure Correlation",
+   16
+  ],
+  [
+   2,
+   "6.2",
+   "Predict the Effects of Project by the Regression Model",
+   18
+  ],
+  [
+   2,
+   "6.3",
+   "Sensitivity Analysis",
+   19
+  ],
+  [
+   1,
+   "7",
+   "Strength and Weakness",
+   20
+  ],
+  [
+   1,
+   "",
+   "Memorandum",
+   21
+  ],
+  [
+   1,
+   "",
+   "References",
+   22
+  ],
+  [
+   1,
+   "",
+   "Appendix",
+   22
+  ]
+ ]
+}

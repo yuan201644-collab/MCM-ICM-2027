@@ -1,0 +1,136 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   2
+  ],
+  [
+   2,
+   "1.1",
+   "Background",
+   2
+  ],
+  [
+   2,
+   "1.2",
+   "Problem Restatement and Analysis",
+   2
+  ],
+  [
+   2,
+   "1.3",
+   "Overview of our work",
+   3
+  ],
+  [
+   1,
+   "2",
+   "Assumptions",
+   4
+  ],
+  [
+   1,
+   "3",
+   "List of Notation",
+   4
+  ],
+  [
+   1,
+   "4",
+   "A Resources Allocation Network of River Colorado",
+   4
+  ],
+  [
+   2,
+   "4.1",
+   "Solution for the Allocation Network: A Pseudo-Code",
+   8
+  ],
+  [
+   2,
+   "4.2",
+   "Results and Analysis",
+   9
+  ],
+  [
+   1,
+   "5",
+   "Marginal Utility Model: Resources Interests and Valuation of Each State",
+   11
+  ],
+  [
+   1,
+   "6",
+   "Auction Theory for Competing Interests: Independent Private Value (IPV) Model",
+   12
+  ],
+  [
+   2,
+   "6.1",
+   "Solution of the Independent Private Value (IPV) Model",
+   14
+  ],
+  [
+   2,
+   "6.2",
+   "Results and Analysis –Our Model Dealing with More Complex Situations 17",
+   15
+  ],
+  [
+   2,
+   "7.1",
+   "Growth or Shrinkage in Affected Areas",
+   17
+  ],
+  [
+   2,
+   "7.2",
+   "Increase of the Proportion of Renewable Energy Technologies",
+   17
+  ],
+  [
+   2,
+   "7.3",
+   "Water and Electricity Conservation Measures",
+   18
+  ],
+  [
+   1,
+   "8",
+   "Discussion",
+   19
+  ],
+  [
+   2,
+   "8.1",
+   "Strengths and Weaknesses",
+   19
+  ],
+  [
+   3,
+   "8.1.1",
+   "Strengths",
+   19
+  ],
+  [
+   3,
+   "8.1.2",
+   "Weaknesses",
+   19
+  ],
+  [
+   2,
+   "8.2",
+   "Future Work",
+   19
+  ],
+  [
+   1,
+   "9",
+   "Conclusion",
+   20
+  ]
+ ]
+}

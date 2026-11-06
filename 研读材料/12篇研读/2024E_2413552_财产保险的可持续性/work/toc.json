@@ -1,0 +1,280 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   1
+  ],
+  [
+   2,
+   "1.1",
+   "Problem Background",
+   1
+  ],
+  [
+   2,
+   "1.2",
+   "Problem Restatement",
+   1
+  ],
+  [
+   2,
+   "1.3",
+   "Related Work",
+   2
+  ],
+  [
+   2,
+   "1.4",
+   "Our work",
+   2
+  ],
+  [
+   1,
+   "2",
+   "Preparation of the Models",
+   3
+  ],
+  [
+   2,
+   "2.1",
+   "Assumptions",
+   3
+  ],
+  [
+   2,
+   "2.2",
+   "Notations",
+   4
+  ],
+  [
+   1,
+   "3",
+   "Insurance Strategy Formulation Model",
+   4
+  ],
+  [
+   2,
+   "3.1",
+   "Data Collection",
+   5
+  ],
+  [
+   2,
+   "3.2",
+   "Data Preprocessing",
+   5
+  ],
+  [
+   2,
+   "3.3",
+   "Multi-Scale Geographically Weighted Regression (MGWR)",
+   6
+  ],
+  [
+   2,
+   "3.4",
+   "Risk-Based Insurance Pricing",
+   7
+  ],
+  [
+   2,
+   "3.5",
+   "Multi-Objective Optimization",
+   8
+  ],
+  [
+   2,
+   "3.6",
+   "Future Data Prediction",
+   8
+  ],
+  [
+   2,
+   "3.7",
+   "Solution of Insurance Strategy",
+   8
+  ],
+  [
+   3,
+   "3.7.1",
+   "Historical insurance data and climate data",
+   8
+  ],
+  [
+   3,
+   "3.7.2",
+   "Insurance Strategies for Coping with the Rise in Extreme Weather Events",
+   8
+  ],
+  [
+   3,
+   "3.7.3",
+   "Compare with North America and Asia",
+   11
+  ],
+  [
+   1,
+   "4",
+   "Community Building Protection Strategies",
+   11
+  ],
+  [
+   2,
+   "4.1",
+   "Community Protection Model",
+   12
+  ],
+  [
+   2,
+   "4.2",
+   "Property Owner Strategies",
+   12
+  ],
+  [
+   3,
+   "4.2.1",
+   "Data Normalization",
+   12
+  ],
+  [
+   3,
+   "4.2.2",
+   "Entropy Calculation",
+   13
+  ],
+  [
+   3,
+   "4.2.3",
+   "Weight Calculation",
+   13
+  ],
+  [
+   3,
+   "4.2.4",
+   "Weighted Average",
+   13
+  ],
+  [
+   3,
+   "4.2.5",
+   "Construction of the 𝑔Function",
+   13
+  ],
+  [
+   3,
+   "4.2.6",
+   "Model Training and Validation",
+   13
+  ],
+  [
+   2,
+   "4.3",
+   "Solution for Property Owners and Community Models",
+   13
+  ],
+  [
+   3,
+   "4.3.1",
+   "Strategies Implemented by the Community",
+   13
+  ],
+  [
+   3,
+   "4.3.2",
+   "Strategies Employed by Property Owners",
+   14
+  ],
+  [
+   3,
+   "4.3.3",
+   "The Final Impact of Communities and Property Owners",
+   15
+  ],
+  [
+   1,
+   "5",
+   "Preservation of Historical Landmarks",
+   16
+  ],
+  [
+   2,
+   "5.1",
+   "Construction of Model",
+   17
+  ],
+  [
+   2,
+   "5.2",
+   "Adapting Building Conservation Prioritization to MGWR Model",
+   17
+  ],
+  [
+   3,
+   "5.2.1",
+   "Define Variables",
+   18
+  ],
+  [
+   3,
+   "5.2.2",
+   "Data Collection",
+   18
+  ],
+  [
+   3,
+   "5.2.3",
+   "Construct MGWR Model",
+   18
+  ],
+  [
+   2,
+   "5.3",
+   "Preserving Historic Architecture: The Case of the Statue of Liberty",
+   18
+  ],
+  [
+   2,
+   "5.4",
+   "A Letter to the Community",
+   20
+  ],
+  [
+   1,
+   "6",
+   "Sensitivity Analysis",
+   20
+  ],
+  [
+   1,
+   "7",
+   "Strengths and Weaknesses",
+   20
+  ],
+  [
+   2,
+   "7.1",
+   "Strengths",
+   20
+  ],
+  [
+   2,
+   "7.2",
+   "Weaknesses",
+   21
+  ],
+  [
+   2,
+   "7.3",
+   "Potential Future Applications",
+   21
+  ],
+  [
+   1,
+   "8",
+   "Conclusion",
+   21
+  ]
+ ]
+}

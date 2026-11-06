@@ -2,3 +2,8 @@
 _work/preview/
 _work/*.pdf
 _work/*.docx
+
+# 各篇 work/ 只保留目录数据，其余为本地中间产物
+研读材料/12篇研读/*/work/*
+!研读材料/12篇研读/*/work/toc.json
+!研读材料/12篇研读/*/work/toc_zh.json

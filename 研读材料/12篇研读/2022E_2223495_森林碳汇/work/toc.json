@@ -1,0 +1,202 @@
+{
+ "entries": [
+  [
+   1,
+   "1",
+   "Introduction",
+   3
+  ],
+  [
+   2,
+   "1.1",
+   "Problem Background",
+   3
+  ],
+  [
+   2,
+   "1.2",
+   "Restatement of the Problem and Our works",
+   3
+  ],
+  [
+   2,
+   "1.3",
+   "Literature Review",
+   3
+  ],
+  [
+   2,
+   "1.4",
+   "Our Work",
+   4
+  ],
+  [
+   1,
+   "2",
+   "Assumptions & Reasonals",
+   4
+  ],
+  [
+   1,
+   "3",
+   "Notations",
+   4
+  ],
+  [
+   1,
+   "4",
+   "Whole Process Carbon Sequestration Model for Trees",
+   5
+  ],
+  [
+   2,
+   "4.1",
+   "Tree Age Stage Classification Model",
+   6
+  ],
+  [
+   2,
+   "4.2",
+   "Forest Ecology Model",
+   7
+  ],
+  [
+   2,
+   "4.3",
+   "Whole Process Forest Wood Model",
+   8
+  ],
+  [
+   2,
+   "4.4",
+   "Steady-state Equilibrium Model",
+   9
+  ],
+  [
+   2,
+   "4.5",
+   "Total Carbon Sequestration Measurement Model",
+   10
+  ],
+  [
+   1,
+   "5",
+   "Forest System Value Balance Model",
+   11
+  ],
+  [
+   2,
+   "5.1",
+   "TEV: Multiple Value Systems Within and Outside the Forest System",
+   11
+  ],
+  [
+   2,
+   "5.2",
+   "Value Balance Planning Model",
+   14
+  ],
+  [
+   2,
+   "5.3",
+   "SA : Solution of Multivariate Objective Programming",
+   15
+  ],
+  [
+   1,
+   "6",
+   "Forest Management Strategy Model",
+   15
+  ],
+  [
+   2,
+   "6.1",
+   "Mapping Model of Felling Rate",
+   16
+  ],
+  [
+   2,
+   "6.2",
+   "Management Strategies and Climate Types",
+   16
+  ],
+  [
+   2,
+   "6.3",
+   "Example of Subtropical Forest Management and Decision Making",
+   18
+  ],
+  [
+   1,
+   "7",
+   "Demand-sensitive Management Strategy Game",
+   19
+  ],
+  [
+   2,
+   "7.1",
+   "The Game of Forest Management Strategies",
+   19
+  ],
+  [
+   2,
+   "7.2",
+   "Evolutionary game simulation for managing plan transitions",
+   20
+  ],
+  [
+   1,
+   "8",
+   "Sensitivity Analysis",
+   21
+  ],
+  [
+   1,
+   "9",
+   "Model Evaluation and Further Discussion",
+   21
+  ],
+  [
+   2,
+   "9.1",
+   "Strengths",
+   21
+  ],
+  [
+   2,
+   "9.2",
+   "Weaknesses",
+   21
+  ],
+  [
+   2,
+   "9.3",
+   "Further Discussion",
+   21
+  ],
+  [
+   1,
+   "10",
+   "Conclusion",
+   21
+  ],
+  [
+   1,
+   "",
+   "References",
+   22
+  ],
+  [
+   1,
+   "11",
+   "Forest Carbon Sequestration Science Articles",
+   22
+  ],
+  [
+   1,
+   "",
+   "Appendix",
+   25
+  ]
+ ]
+}
